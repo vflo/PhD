@@ -1,0 +1,54 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Graphical representation of fundamental and realized niches according to Franklin 2010 and Soberón 2007}}{7}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Workflow processes in species distribution modeling (SDM) and niche characterization in the environmenta space}}{12}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Study region, monthly temperature and precipitation data during the historical 1950-2000 period}}{27}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Remaining Green Canopy (RGC) compared with historical (HCS) and episodic (ECS) climatic suitability}}{34}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Partial residual plot of Remaining Green Canopy (RGC) in relation to Historical Climatic Suitability (HCS)}}{36}{figure.caption.18}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Location map of $Pinus$ $halepensis$ studied forests}}{49}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces $P$. $halepensis$ niche determined by average cliomate and by inter-annual climatic variability}}{53}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Drought-induced affectation in $P.$ $halepensis$ populations in relation to population niche suitability}}{53}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Species niche area ratio in relation to species niche area estimated with average climate}}{55}{figure.caption.31}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of species niche in the environmental space}}{66}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Study site and its soil water content availability}}{68}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Remaining Green Canopy (RGC) and mortality in relation to population distances to species niche}}{74}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Relationship between Remaining Green Canopy (RGC) and population climatic suitability}}{75}{figure.caption.45}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Study sites and its ombrothermic diagrams}}{90}{figure.caption.57}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Example of community climate diagram}}{93}{figure.caption.62}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Community climatic disequilibrium before and after the extreme drought event}}{95}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Change in climatic disequilibrium respect to annual water deficit}}{99}{figure.caption.69}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Multivariate Environmental Similarity Surface (MESS) analyses ninyerola vs worlclim methods}}{114}{figure.caption.72}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces AUC and Boyce index per species}}{115}{figure.caption.73}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Multivariate Environmental Similarity Surface (MESS) analyses of the extreme drought year}}{116}{figure.caption.74}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Historic Climatic Suitability (HCS) averaged values of the sample plots by species for each implemented model}}{117}{figure.caption.75}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Pearson correlation values among different implemented models for HCS}}{118}{figure.caption.76}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Pearson correlation values among different implemented models for Episodic Climatic Suitability (ECS)}}{119}{figure.caption.77}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Filtered occurences of analized species}}{121}{figure.caption.78}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Suitability maps obtained from Mahalanobis distance}}{125}{figure.caption.79}%
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Suitability maps obtained from Generalize Additive Models (GAM)}}{129}{figure.caption.80}%
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Suitability maps obtained from Boosted Regression Trees (BRT)}}{133}{figure.caption.81}%
+\contentsline {figure}{\numberline {A.11}{\ignorespaces Suitability maps obtained from MaxEnt}}{137}{figure.caption.82}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Climatic anomaly of the extreme climatic year 2013-2014 in the Spanish SE}}{140}{figure.caption.85}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Correlation circle obtained from PCA calibrated with $Pinus$ $halepnsis$ occurrences}}{141}{figure.caption.86}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Populations located in the $Pinus$ niche space not shared by the average-based and the inter-annual variability-based niches}}{142}{figure.caption.87}%
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Model explained $R^2$ depending on population subset}}{143}{figure.caption.88}%
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Correlation circle obtained from PCA calibrated with occurrences of multiples mediterranean species}}{144}{figure.caption.89}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Ombrothermic diagrams for the study site}}{150}{figure.caption.93}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Soil particle composition of the study sites}}{151}{figure.caption.94}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Correlation circle obtained from PCA from the twelve selected climatic variables.}}{152}{figure.caption.95}%
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Correlation circle obtained from PCA calibrated with the five climatic variables used in SDMs}}{153}{figure.caption.96}%
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Remaining Green Canopy (RGC) and mortality percentage models}}{154}{figure.caption.97}%
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Multivariate Environmental Similarity Surface (MESS) analysis for the South East of the Iberian Peninsula.}}{155}{figure.caption.98}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Climatic anomalies for the study sites}}{164}{figure.caption.110}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Correlation circle obtained from PCA from the twelve selected climatic variables.}}{165}{figure.caption.111}%
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Univariant community climatic disequilibrium before and after drought}}{167}{figure.caption.112}%
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Soil particle composition of the three different study sites}}{168}{figure.caption.113}%
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Soil water content in percentage of volume of different studied bedrocks}}{169}{figure.caption.114}%

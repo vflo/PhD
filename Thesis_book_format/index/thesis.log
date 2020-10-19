@@ -1,0 +1,2296 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.8)  9 JAN 2020 17:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2019-10-01> patch level 3
+(./reedthesis.cls
+Document Class: reedthesis 2004/01/27 The Reed College Thesis Class
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/10/25 v1.4k Standard LaTeX document class
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.
+sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip43
+\f@nch@O@elh=\skip44
+\f@nch@O@erh=\skip45
+\f@nch@O@olh=\skip46
+\f@nch@O@orh=\skip47
+\f@nch@O@elf=\skip48
+\f@nch@O@erf=\skip49
+\f@nch@O@olf=\skip50
+\f@nch@O@orf=\skip51
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.
+sty
+Package: fancyvrb 2019/11/09
+Style option: `fancyvrb' v3.4 <2019/11/09> (tvz)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.st
+y
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\FV@CodeLineNo=\count89
+\FV@InFile=\read1
+\FV@TabBox=\box27
+\c@FancyVerbLine=\count90
+\FV@StepNumber=\count91
+\FV@OutFile=\write3
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.st
+y
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.s
+ty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fixltx2e.st
+y
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.s
+ty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/upquote/upquote.st
+y
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FEFF (decimal 65279)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color
+.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdfte
+x.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.s
+ty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip52
+\fb@frw=\dimen103
+\fb@frh=\dimen104
+\FrameRule=\dimen105
+\FrameSep=\dimen106
+) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/crop/crop.sty
+Package: crop 2003/05/20 v1.9 crop marks (mf)
+\stockwidth=\dimen107
+\stockheight=\dimen108
+\CROP@index=\count92
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.
+sty
+Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graph
+ics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\CROP@offset=\count93
+Package crop Info: Local config file crop.cfg used on input line 605.
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xetexconfig/crop
+.cfg)) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcol
+or.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color
+.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/sectsty/sectsty.st
+y
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/type1cm/type1cm.st
+y
+Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
+atched RF)
+) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/quotchap/quotchap.
+sty
+Package: quotchap 2019/07/09 v1.2 Decorative Chapter Headings with Quotes
+\@quotebox=\box28
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.
+sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box29
+\beforetitleunit=\skip53
+\aftertitleunit=\skip54
+\ttl@plus=\dimen109
+\ttl@minus=\dimen110
+\ttl@toksa=\toks17
+\titlewidth=\dimen111
+\titlewidthlast=\dimen112
+\titlewidthfirst=\dimen113
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/blindtext/blindtex
+t.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count94
+\c@Blindtext=\count95
+\c@blind@countparstart=\count96
+\blind@countxx=\count97
+\blindtext@numBlindtext=\count98
+\blind@countyy=\count99
+\c@blindlist=\count100
+\c@blindlistlevel=\count101
+\c@blindlist@level=\count102
+\blind@listitem=\count103
+\c@blind@listcount=\count104
+\c@blind@levelcount=\count105
+\blind@mathformula=\count106
+\blind@Mathformula=\count107
+\c@blind@randomcount=\count108
+\c@blind@randommax=\count109
+\c@blind@pangramcount=\count110
+\c@blind@pangrammax=\count111
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.
+sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count112
+\Gm@cntv=\count113
+\c@Gm@tempcnt=\count114
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks18
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
+sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen122
+\Gin@req@width=\dimen123
+) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/latexsym.st
+y
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.st
+y
+Package: amsmath 2019/11/16 v2.17d AMS math features
+\@mathmargin=\skip55
+For additional information on amsmath, use the `?' option.
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.st
+y
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen124
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen125
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count115
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count116
+\leftroot@=\count117
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count118
+\DOTSCASE@=\count119
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen126
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count120
+\c@MaxMatrixCols=\count121
+\dotsspace@=\muskip10
+\c@parentequation=\count122
+\dspbrk@lvl=\count123
+\tag@help=\toks20
+\row@=\count124
+\column@=\count125
+\maxfields@=\count126
+\andhelp@=\toks21
+\eqnshift@=\dimen127
+\alignsep@=\dimen128
+\tagshift@=\dimen129
+\tagwidth@=\dimen130
+\totwidth@=\dimen131
+\lineht@=\dimen132
+\@envbody=\toks22
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2858.
+LaTeX Info: Redefining \] on input line 2859.
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.s
+ty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.
+sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.s
+ty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
+\dth@everypar=\toks29
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.st
+y
+Package: longtable 2019/02/06 v4.12 Multi-page Table package (DPC)
+\LTleft=\skip61
+\LTright=\skip62
+\LTpre=\skip63
+\LTpost=\skip64
+\LTchunksize=\count127
+\LTcapwidth=\dimen133
+\LT@head=\box32
+\LT@firsthead=\box33
+\LT@foot=\box34
+\LT@lastfoot=\box35
+\LT@cols=\count128
+\LT@rows=\count129
+\c@LT@tables=\count130
+\c@LT@chunks=\count131
+\LT@p@ftn=\toks30
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.
+sty
+Package: booktabs 2019/10/08 v1.6180339 publication quality tables
+\heavyrulewidth=\dimen134
+\lightrulewidth=\dimen135
+\cmidrulewidth=\dimen136
+\belowrulesep=\dimen137
+\belowbottomsep=\dimen138
+\aboverulesep=\dimen139
+\abovetopsep=\dimen140
+\cmidrulesep=\dimen141
+\cmidrulekern=\dimen142
+\defaultaddspace=\dimen143
+\@cmidla=\count132
+\@cmidlb=\count133
+\@aboverulesep=\dimen144
+\@belowrulesep=\dimen145
+\@thisruleclass=\count134
+\@lastruleclass=\count135
+\@thisrulewidth=\dimen146
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.
+sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (./chemarr.sty
+Package: chemarr 2001/06/22 v1.1 Chemical reaction arrows (HO)
+) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.
+sty
+Package: hyperref 2019/11/10 v7.00c Hypertext links for LaTeX
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/ltxcmds
+.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdftexcmds/pdftexc
+mds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwar
+err.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/kvsetke
+ys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/etexcmd
+s.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/kvdefin
+ekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/pdfesca
+pe.sty
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/hycolor.s
+ty
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/xcolor-pa
+tch.sty
+Package: xcolor-patch 2016/05/16 xcolor patch
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/hopatch.s
+ty
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+)))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltx
+macro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.st
+y
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoption
+s.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen147
+\Hy@linkcounter=\count136
+\Hy@pagecounter=\count137
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.de
+f
+File: pd1enc.def 2019/11/10 v7.00c Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/intcalc
+.sty
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count138
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/hyperr
+ef.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4535.
+Package hyperref Info: Link nesting OFF on input line 4540.
+Package hyperref Info: Hyper index ON on input line 4543.
+Package hyperref Info: Plain pages OFF on input line 4550.
+Package hyperref Info: Backreferencing OFF on input line 4555.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4788.
+\c@Hy@tempcnt=\count139
+LaTeX Info: Redefining \url on input line 5147.
+\XeTeXLinkMargin=\dimen148
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/bitset.
+sty
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/bigintc
+alc.sty
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count140
+\Field@Width=\dimen149
+\Fld@charsize=\dimen150
+Package hyperref Info: Hyper figures OFF on input line 6418.
+Package hyperref Info: Link nesting OFF on input line 6423.
+Package hyperref Info: Hyper index ON on input line 6426.
+Package hyperref Info: backreferencing OFF on input line 6433.
+Package hyperref Info: Link coloring OFF on input line 6438.
+Package hyperref Info: Link coloring with OCG OFF on input line 6443.
+Package hyperref Info: PDF/A mode OFF on input line 6448.
+LaTeX Info: Redefining \ref on input line 6488.
+LaTeX Info: Redefining \pageref on input line 6492.
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/atbegshi/atbegsh
+i.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+Package atbegshi Info: Package `crop' patched.
+)
+\Hy@abspage=\count141
+\c@Item=\count142
+\c@Hfootnote=\count143
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.d
+ef
+File: hpdftex.def 2019/11/10 v7.00c Hyperref driver for pdfTeX
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/atveryend/atveryen
+d.sty
+Package: atveryend 2019/12/05 v1.10 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count144
+\c@bookmark@seq@number=\count145
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rer
+unfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/uniquec
+ounter.sty
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip65
+) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count146
+\float@exts=\toks31
+\float@box=\box36
+\@float@everytoks=\toks32
+\@floatcapt=\box37
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/rotating.
+sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count147
+\rotFPtop=\skip66
+\rotFPbot=\skip67
+\rot@float@box=\box38
+\rot@mess@toks=\toks33
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.st
+y
+Package: caption 2019/10/18 v3.4a Customizing captions (AR)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption3.s
+ty
+Package: caption3 2019/09/09 v1.8e caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen151
+\captionmargin@=\dimen152
+\captionwidth=\dimen153
+\caption@tempdima=\dimen154
+\caption@indent=\dimen155
+\caption@parindent=\dimen156
+\caption@hangindent=\dimen157
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count148
+\c@continuedfloat=\count149
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.
+sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/
+tikz.sty
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf
+.sty
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfr
+cs.sty
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pg
+futil-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen158
+\pgfutil@tempdimb=\dimen159
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pg
+futil-common-lists.tex))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pg
+futil-latex.def
+\pgfutil@abb=\box39
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pg
+frcs.code.tex
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision
+.tex)
+Package: pgfrcs 2019/08/03 v3.1.4b (3.1.4b)
+))
+Package: pgf 2019/08/03 v3.1.4b (3.1.4b)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf
+core.sty
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pg
+fsys.sty
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/
+pgfsys.code.tex
+Package: pgfsys 2019/08/03 v3.1.4b (3.1.4b)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pg
+fkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pg
+fkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks37
+))
+\pgf@x=\dimen160
+\pgf@y=\dimen161
+\pgf@xa=\dimen162
+\pgf@ya=\dimen163
+\pgf@xb=\dimen164
+\pgf@yb=\dimen165
+\pgf@xc=\dimen166
+\pgf@yc=\dimen167
+\pgf@xd=\dimen168
+\pgf@yd=\dimen169
+\w@pgf@writea=\write4
+\r@pgf@reada=\read2
+\c@pgf@counta=\count150
+\c@pgf@countb=\count151
+\c@pgf@countc=\count152
+\c@pgf@countd=\count153
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count154
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/
+pgf.cfg
+File: pgf.cfg 2019/08/03 v3.1.4b (3.1.4b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/
+pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2019/08/03 v3.1.4b (3.1.4b)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/
+pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2019/08/03 v3.1.4b (3.1.4b)
+)))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/
+pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfsyssoftpath@smallbuffer@items=\count155
+\pgfsyssoftpath@bigbuffer@items=\count156
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/
+pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcore.code.tex
+Package: pgfcore 2019/08/03 v3.1.4b (3.1.4b)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+.code.tex
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+calc.code.tex
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+util.code.tex)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+parser.code.tex
+\pgfmath@dimen=\dimen170
+\pgfmath@count=\count157
+\pgfmath@box=\box40
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+functions.code.tex
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+functions.basic.code.tex)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+functions.trigonometric.code.tex)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+functions.random.code.tex)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+functions.comparison.code.tex)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+functions.base.code.tex)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+functions.round.code.tex)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+functions.misc.code.tex)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+functions.integerarithmetics.code.tex)))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+float.code.tex
+\c@pgfmathroundto@lastzeros=\count158
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.
+code.tex)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@picminx=\dimen171
+\pgf@picmaxx=\dimen172
+\pgf@picminy=\dimen173
+\pgf@picmaxy=\dimen174
+\pgf@pathminx=\dimen175
+\pgf@pathmaxx=\dimen176
+\pgf@pathminy=\dimen177
+\pgf@pathmaxy=\dimen178
+\pgf@xx=\dimen179
+\pgf@xy=\dimen180
+\pgf@yx=\dimen181
+\pgf@yy=\dimen182
+\pgf@zx=\dimen183
+\pgf@zy=\dimen184
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@path@lastx=\dimen185
+\pgf@path@lasty=\dimen186
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@shorten@end@additional=\dimen187
+\pgf@shorten@start@additional=\dimen188
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfpic=\box41
+\pgf@hbox=\box42
+\pgf@layerbox@main=\box43
+\pgf@picture@serial@count=\count159
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgflinewidth=\dimen189
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@pt@x=\dimen190
+\pgf@pt@y=\dimen191
+\pgf@pt@temp=\dimen192
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcorequick.code.tex
+File: pgfcorequick.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfarrowsep=\dimen193
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@max=\dimen194
+\pgf@sys@shading@range@num=\count160
+\pgf@shadingcount=\count161
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfexternal@startupbox=\box44
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/p
+gfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfm
+oduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfnodeparttextbox=\box45
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfm
+oduleplot.code.tex
+File: pgfmoduleplot.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/
+pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@nodesepstart=\dimen195
+\pgf@nodesepend=\dimen196
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/
+pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2019/08/03 v3.1.4b (3.1.4b)
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgff
+or.sty
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfk
+eys.sty
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pg
+fkeys.code.tex))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.s
+ty
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+.code.tex))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pg
+ffor.code.tex
+Package: pgffor 2019/08/03 v3.1.4b (3.1.4b)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath
+.code.tex)
+\pgffor@iter=\dimen197
+\pgffor@skip=\dimen198
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlaye
+r/tikz/tikz.code.tex
+Package: tikz 2019/08/03 v3.1.4b (3.1.4b)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pg
+flibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@plot@mark@count=\count162
+\pgfplotmarksize=\dimen199
+)
+\tikz@lastx=\dimen256
+\tikz@lasty=\dimen257
+\tikz@lastxsaved=\dimen258
+\tikz@lastysaved=\dimen259
+\tikz@lastmovetox=\dimen260
+\tikz@lastmovetoy=\dimen261
+\tikzleveldistance=\dimen262
+\tikzsiblingdistance=\dimen263
+\tikz@figbox=\box46
+\tikz@figbox@bg=\box47
+\tikz@tempbox=\box48
+\tikz@tempbox@bg=\box49
+\tikztreelevel=\count163
+\tikznumberofchildren=\count164
+\tikznumberofcurrentchild=\count165
+\tikz@fig@count=\count166
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfm
+odulematrix.code.tex
+File: pgfmodulematrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfmatrixcurrentrow=\count167
+\pgfmatrixcurrentcolumn=\count168
+\pgf@matrix@numberofcolumns=\count169
+)
+\tikz@expandcount=\count170
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlaye
+r/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/parskip/parskip.st
+y
+Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.
+sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count171
+))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.
+sty
+Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen264
+\ar@mcellbox=\box50
+\extrarowheight=\dimen265
+\NC@list=\toks46
+\extratabsurround=\skip68
+\backup@length=\skip69
+\ar@cellbox=\box51
+)
+\everycr=\toks47
+\minrowclearance=\skip70
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/thr
+eeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box52
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscap
+e.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.st
+y
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lettrine/lettrine.
+sty
+File: lettrine.sty 2019-04-06 v2.22 (Daniel Flipo)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/minifp/minifp.st
+y
+Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
+-based programing language.
+\MFP@loopctr=\count172
+)
+\c@DefaultLines=\count173
+\c@DefaultDepth=\count174
+\DefaultFindent=\dimen266
+\DefaultNindent=\dimen267
+\DefaultSlope=\dimen268
+\DiscardVskip=\dimen269
+\L@lbox=\box53
+\L@tbox=\box54
+\c@L@lines=\count175
+\c@L@depth=\count176
+\L@Pindent=\dimen270
+\L@Findent=\dimen271
+\L@Nindent=\dimen272
+\L@lraise=\dimen273
+\L@first=\dimen274
+\L@next=\dimen275
+\L@slope=\dimen276
+\L@height=\dimen277
+\L@novskip=\dimen278
+\L@target@ht=\dimen279
+\L@target@dp=\dimen280
+\L@target@tht=\dimen281
+\LettrineWidth=\dimen282
+\LettrineHeight=\dimen283
+\LettrineDepth=\dimen284
+\Llist@everypar=\toks48
+Loading lettrine.cfg
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lettrine/lettrine.
+cfg))
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.
+sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip71
+\multirow@cntb=\count177
+\multirow@dima=\skip72
+\bigstrutjot=\dimen285
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpages.
+sty
+Package: pdfpages 2019/12/17 v0.5p Insert pages of external PDF documents (AM)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count178
+\calc@Bcount=\count179
+\calc@Adimen=\dimen286
+\calc@Bdimen=\dimen287
+\calc@Askip=\skip73
+\calc@Bskip=\skip74
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count180
+\calc@Cskip=\skip75
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.st
+y
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+)
+\AM@pagewidth=\dimen288
+\AM@pageheight=\dimen289
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pppdftex.
+def
+File: pppdftex.def 2019/12/17 v0.5p Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box55
+\AM@global@opts=\toks49
+\AM@toc@title=\toks50
+\c@AM@survey=\count181
+\AM@templatesizebox=\box56
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/subcaption
+.sty
+Package: subcaption 2019/09/01 v1.3a Sub-captions (AR)
+\c@subfigure=\count182
+\c@subtable=\count183
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.st
+y
+\wrapoverhang=\dimen290
+\WF@size=\dimen291
+\c@WF@wrappedlines=\count184
+\WF@box=\box57
+\WF@everypar=\toks51
+Package: wrapfig 2003/01/31  v 3.6
+) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.
+sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box58
+\sift@deathcycles=\count185
+\@vwid@loff=\dimen292
+\@vwid@roff=\dimen293
+)
+\c@taburow=\count186
+\tabu@nbcols=\count187
+\tabu@cnt=\count188
+\tabu@Xcol=\count189
+\tabu@alloc=\count190
+\tabu@nested=\count191
+\tabu@target=\dimen294
+\tabu@spreadtarget=\dimen295
+\tabu@naturalX=\dimen296
+\tabucolX=\dimen297
+\tabu@Xsum=\dimen298
+\extrarowdepth=\dimen299
+\abovetabulinesep=\dimen300
+\belowtabulinesep=\dimen301
+\tabustrutrule=\dimen302
+\tabu@thebody=\toks52
+\tabu@footnotes=\toks53
+\tabu@box=\box59
+\tabu@arstrutbox=\box60
+\tabu@hleads=\box61
+\tabu@vleads=\box62
+\tabu@cellskip=\skip76
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/th
+reeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.st
+y
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspa
+ces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip77
+) (c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box63
+\UL@hyphenbox=\box64
+\UL@skip=\skip78
+\UL@hook=\toks54
+\UL@height=\dimen303
+\UL@pe=\count192
+\UL@pixel=\dimen304
+\ULC@box=\box65
+Package: ulem 2012/05/18
+\ULdepth=\dimen305
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.
+sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen306
+\c@nlinenum=\count193
+\TeXr@lab=\toks55
+) (./thesis.aux
+
+LaTeX Warning: Label `tab:unnamed-chunk-13' multiply defined.
+
+)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 333.
+LaTeX Font Info:    ... okay on input line 333.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 333.
+LaTeX Font Info:    ... okay on input line 333.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 333.
+LaTeX Font Info:    ... okay on input line 333.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 333.
+LaTeX Font Info:    ... okay on input line 333.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 333.
+LaTeX Font Info:    ... okay on input line 333.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 333.
+LaTeX Font Info:    ... okay on input line 333.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 333.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+33.
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 333.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 333.
+LaTeX Font Info:    ... okay on input line 333.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 33
+3.
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epsto
+pdf-base.sty
+Package: epstopdf-base 2019-11-30 v2.9 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstop
+df-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package crop Info: requested driver: `pdftex' on input line 333.
+Package crop Info: detected driver: `pdftex' on input line 333.
+Package crop Info: using `pdftex' graphics driver on input line 333.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(68.28644pt, 367.04073pt, 42.67912pt)
+* v-part:(T,H,B)=(56.9055pt, 560.5193pt, 56.9055pt)
+* \paperwidth=478.00629pt
+* \paperheight=674.3303pt
+* \textwidth=367.04073pt
+* \textheight=560.5193pt
+* \oddsidemargin=-3.98355pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-47.23828pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=116.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=59.7508pt
+* \voffset=85.35826pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box66
+Package hyperref Info: Link coloring OFF on input line 333.
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.s
+ty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/refcount.
+sty
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+)
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/oberdiek/gettitl
+estring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count194
+)
+LaTeX Info: Redefining \ref on input line 333.
+LaTeX Info: Redefining \pageref on input line 333.
+LaTeX Info: Redefining \nameref on input line 333.
+(./thesis.out) (./thesis.out)
+\@outlinefile=\write5
+\openout5 = `thesis.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+37.
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+37.
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+337.
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+337.
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 337.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 337.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 337.
+<figure/LOGO_CREAF.png, id=179, 691.58376pt x 275.0275pt>
+File: figure/LOGO_CREAF.png Graphic file (type png)
+<use figure/LOGO_CREAF.png>
+Package pdftex.def Info: figure/LOGO_CREAF.png  used on input line 337.
+(pdftex.def)             Requested size: 73.40701pt x 29.19138pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 337.
+<figure/Logo_uab.png, id=181, 1229.59375pt x 569.12625pt>
+File: figure/Logo_uab.png Graphic file (type png)
+<use figure/Logo_uab.png>
+Package pdftex.def Info: figure/Logo_uab.png  used on input line 337.
+(pdftex.def)             Requested size: 73.40701pt x 33.97241pt.
+[1{c:/Users/mange/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdf
+tex.map}
+Non-PDF special ignored!
+<special> !% Reed College LaTeX Thesis Class 2001/12/04 SN
+Non-PDF special ignored!
+<special> rawpostscript % Reed College LaTeX Thesis Class 2001/12/04 SN
+
+
+ <./figure/LOGO_CREAF.png> <./figure/Logo_uab.png>] [2
+
+] [1
+
+
+] [2] [3] [4
+
+
+] (./thesis.toc
+Underfull \hbox (badness 1715) in paragraph at lines 12--12
+ [] [] \T1/lmr/bx/n/10.95 2: Pop-u-la-tion cli-matic suit-abil-ity and ex-treme
+ drought 
+ []
+
+
+Underfull \vbox (badness 2573) has occurred while \output is active []
+
+[5])
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
+
+[6] (./thesis.lot
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[7
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[8])
+\tf@lot=\write7
+\openout7 = `thesis.lot'.
+
+[9] [10
+
+] (./thesis.lof [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[12])
+\tf@lof=\write8
+\openout8 = `thesis.lof'.
+
+[13] [14
+
+]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 450.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <11> on input line 450.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.69997> on input line 450.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.5> on input line 450.
+[15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[16] [17] [18
+
+
+] [19] [20
+
+
+]
+ 1.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 13.59999pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.525 \newpage
+               [1
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.571 et al. 2008).\par
+                        [2] [3] [4] [5]
+<figure/intro/nichescheme.png, id=575, 408.0846pt x 217.2918pt>
+File: figure/intro/nichescheme.png Graphic file (type png)
+<use figure/intro/nichescheme.png>
+Package pdftex.def Info: figure/intro/nichescheme.png  used on input line 710.
+(pdftex.def)             Requested size: 367.04073pt x 195.44473pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 714.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 714.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 714.
+[6] [7 <./figure/intro/nichescheme.png>] [8] [9]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
+60.
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [10]
+<figure/intro/workflowseparated.png, id=600, 512.10522pt x 569.05399pt>
+File: figure/intro/workflowseparated.png Graphic file (type png)
+<use figure/intro/workflowseparated.png>
+Package pdftex.def Info: figure/intro/workflowseparated.png  used on input line
+ 882.
+(pdftex.def)             Requested size: 275.28053pt x 305.89528pt.
+[11]
+
+LaTeX Warning: Text page 12 contains only floats.
+
+[12 <./figure/intro/workflowseparated.png>] [13] [14] [15] [16] [17] [18] [19] 
+[20
+
+]
+ 2.
+[21] [22] [23] [24]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+282.
+(c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [25]
+<figure/CH1/Figure1cap1.png, id=669, 230.83038pt x 183.5658pt>
+File: figure/CH1/Figure1cap1.png Graphic file (type png)
+<use figure/CH1/Figure1cap1.png>
+Package pdftex.def Info: figure/CH1/Figure1cap1.png  used on input line 1329.
+(pdftex.def)             Requested size: 256.92738pt x 204.33183pt.
+[26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[27 <./figure/CH1/Figure1cap1.png>] [28] [29] [30] [31] [32
+
+] [33
+
+]
+<figure/CH1/Figure2cap1.png, id=712, 228.66228pt x 280.4076pt>
+File: figure/CH1/Figure2cap1.png Graphic file (type png)
+<use figure/CH1/Figure2cap1.png>
+Package pdftex.def Info: figure/CH1/Figure2cap1.png  used on input line 1571.
+(pdftex.def)             Requested size: 256.92738pt x 315.07268pt.
+[34 <./figure/CH1/Figure2cap1.png>]
+<figure/CH1/Figure3cap1.png, id=718, 468.3096pt x 325.79317pt>
+File: figure/CH1/Figure3cap1.png Graphic file (type png)
+<use figure/CH1/Figure3cap1.png>
+Package pdftex.def Info: figure/CH1/Figure3cap1.png  used on input line 1601.
+(pdftex.def)             Requested size: 367.04073pt x 255.35547pt.
+[35] [36 <./figure/CH1/Figure3cap1.png>] [37] [38
+
+
+] [39] [40] [41] [42]
+ 3.
+[43
+
+] [44] [45] [46] [47]
+<figure/CH2/mapstogheter.png, id=778, 848.9316pt x 258.9675pt>
+File: figure/CH2/mapstogheter.png Graphic file (type png)
+<use figure/CH2/mapstogheter.png>
+Package pdftex.def Info: figure/CH2/mapstogheter.png  used on input line 2046.
+(pdftex.def)             Requested size: 367.04073pt x 111.96632pt.
+[48] [49 <./figure/CH2/mapstogheter.png>] [50] [51]
+Underfull \hbox (badness 2343) in paragraph at lines 2158--2167
+[]\T1/lmr/m/n/10.95 Average and inter-annual cli-matic datasets were ob-tained 
+from
+ []
+
+<figure/CH2/nichebiplot3.png, id=800, 512.75565pt x 228.73454pt>
+File: figure/CH2/nichebiplot3.png Graphic file (type png)
+<use figure/CH2/nichebiplot3.png>
+Package pdftex.def Info: figure/CH2/nichebiplot3.png  used on input line 2197.
+(pdftex.def)             Requested size: 367.04073pt x 163.73242pt.
+<figure/CH2/modelbiplot3.png, id=801, 562.62195pt x 214.46123pt>
+File: figure/CH2/modelbiplot3.png Graphic file (type png)
+<use figure/CH2/modelbiplot3.png>
+Package pdftex.def Info: figure/CH2/modelbiplot3.png  used on input line 2206.
+(pdftex.def)             Requested size: 367.04073pt x 139.91516pt.
+[52]
+Underfull \vbox (badness 4156) has occurred while \output is active []
+
+[53 <./figure/CH2/nichebiplot3.png> <./figure/CH2/modelbiplot3.png>]
+<figure/CH2/multispeciesareas.png, id=813, 285.7074pt x 228.6141pt>
+File: figure/CH2/multispeciesareas.png Graphic file (type png)
+<use figure/CH2/multispeciesareas.png>
+Package pdftex.def Info: figure/CH2/multispeciesareas.png  used on input line 2
+246.
+(pdftex.def)             Requested size: 256.92738pt x 205.59729pt.
+[54] [55 <./figure/CH2/multispeciesareas.png>] [56] [57] [58] [59] [60
+
+]
+ 4.
+[61] [62] [63] [64]
+<figure/CH3/figure1.png, id=866, 619.5948pt x 445.9059pt>
+File: figure/CH3/figure1.png Graphic file (type png)
+<use figure/CH3/figure1.png>
+Package pdftex.def Info: figure/CH3/figure1.png  used on input line 2542.
+(pdftex.def)             Requested size: 293.6337pt x 211.32442pt.
+[65] [66 <./figure/CH3/figure1.png>]
+<figure/CH3/figure2.png, id=877, 317.988pt x 185.30028pt>
+File: figure/CH3/figure2.png Graphic file (type png)
+<use figure/CH3/figure2.png>
+Package pdftex.def Info: figure/CH3/figure2.png  used on input line 2611.
+(pdftex.def)             Requested size: 367.04073pt x 213.89665pt.
+[67] [68 <./figure/CH3/figure2.png>] [69] [70] [71] [72]
+<figure/CH3/figure3.png, id=912, 518.75406pt x 342.5598pt>
+File: figure/CH3/figure3.png Graphic file (type png)
+<use figure/CH3/figure3.png>
+Package pdftex.def Info: figure/CH3/figure3.png  used on input line 2824.
+(pdftex.def)             Requested size: 367.04073pt x 242.37236pt.
+<figure/CH3/figure4.png, id=913, 228.66228pt x 342.5598pt>
+File: figure/CH3/figure4.png Graphic file (type png)
+<use figure/CH3/figure4.png>
+Package pdftex.def Info: figure/CH3/figure4.png  used on input line 2833.
+(pdftex.def)             Requested size: 183.52036pt x 274.93678pt.
+[73] [74 <./figure/CH3/figure3.png>] [75 <./figure/CH3/figure4.png>]
+Overfull \hbox (3.59238pt too wide) in paragraph at lines 2879--2892
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[76] [77] [78] [79] [80] [81] [82]
+ 5.
+
+Underfull \hbox (badness 3803) in paragraph at lines 3130--3132
+\T1/lmr/m/n/10.95 Pérez-Navarro M.A., Serra-Diaz J.M., Sven-ning J.-C, Es-teve 
+M.A.,
+ []
+
+[83
+
+] [84] [85] [86] [87] [88]
+<figure/CH4/figure1.jpg, id=990, 454.0965pt x 313.4109pt>
+File: figure/CH4/figure1.jpg Graphic file (type jpg)
+<use figure/CH4/figure1.jpg>
+Package pdftex.def Info: figure/CH4/figure1.jpg  used on input line 3347.
+(pdftex.def)             Requested size: 367.04073pt x 253.32582pt.
+[89] [90 <./figure/CH4/figure1.jpg>] [91]
+<figure/CH4/figure2.jpg, id=1009, 524.9211pt x 374.1177pt>
+File: figure/CH4/figure2.jpg Graphic file (type jpg)
+<use figure/CH4/figure2.jpg>
+Package pdftex.def Info: figure/CH4/figure2.jpg  used on input line 3463.
+(pdftex.def)             Requested size: 403.74702pt x 287.75755pt.
+
+Overfull \hbox (36.7063pt too wide) in paragraph at lines 3463--3464
+ [][] 
+ []
+
+[92] [93 <./figure/CH4/figure2.jpg>] [94]
+<figure/CH4/figure3.jpg, id=1024, 249.8133pt x 174.1707pt>
+File: figure/CH4/figure3.jpg Graphic file (type jpg)
+<use figure/CH4/figure3.jpg>
+Package pdftex.def Info: figure/CH4/figure3.jpg  used on input line 3514.
+(pdftex.def)             Requested size: 311.98685pt x 217.51617pt.
+[95 <./figure/CH4/figure3.jpg>]
+Overfull \hbox (7.97186pt too wide) in paragraph at lines 3564--3565
+[]|\T1/lmr/m/n/7 ***|  
+ []
+
+
+Overfull \hbox (7.97186pt too wide) in paragraph at lines 3566--3567
+[]|\T1/lmr/m/n/7 ***|  
+ []
+
+[96] [97]
+<figure/CH4/figure4.jpg, id=1039, 367.6134pt x 246.1998pt>
+File: figure/CH4/figure4.jpg Graphic file (type jpg)
+<use figure/CH4/figure4.jpg>
+Package pdftex.def Info: figure/CH4/figure4.jpg  used on input line 3658.
+(pdftex.def)             Requested size: 311.98685pt x 208.95525pt.
+[98] [99 <./figure/CH4/figure4.jpg>] [100] [101] [102]
+ 6.
+[103
+
+] [104]
+
+Package Fancyhdr Warning: \headheight is too small (13.59999pt): 
+Make it at least 25.2232pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[105] [106] [107] [108] [109] [110] [111] [112]
+Appendix A.
+[113
+
+]
+<figure/appendixA1/fig1.png, id=1109, 815.08514pt x 526.8483pt>
+File: figure/appendixA1/fig1.png Graphic file (type png)
+<use figure/appendixA1/fig1.png>
+Package pdftex.def Info: figure/appendixA1/fig1.png  used on input line 4110.
+(pdftex.def)             Requested size: 504.46394pt x 326.0718pt.
+
+LaTeX Warning: Float too large for page by 58.03107pt on input line 4115.
+
+[114 <./figure/appendixA1/fig1.png>]
+<figure/appendixA1/fig2primeraparte.pdf, id=1115, 844.15375pt x 597.23125pt>
+File: figure/appendixA1/fig2primeraparte.pdf Graphic file (type pdf)
+<use figure/appendixA1/fig2primeraparte.pdf>
+Package pdftex.def Info: figure/appendixA1/fig2primeraparte.pdf  used on input 
+line 4119.
+(pdftex.def)             Requested size: 293.6337pt x 207.74913pt.
+<figure/appendixA1/fig2segundaparte.pdf, id=1116, 844.15375pt x 597.23125pt>
+File: figure/appendixA1/fig2segundaparte.pdf Graphic file (type pdf)
+<use figure/appendixA1/fig2segundaparte.pdf>
+Package pdftex.def Info: figure/appendixA1/fig2segundaparte.pdf  used on input 
+line 4126.
+(pdftex.def)             Requested size: 293.6337pt x 207.74913pt.
+[115
+
+
+ <./figure/appendixA1/fig2primeraparte.pdf> <./figure/appendixA1/fig2segundapar
+te.pdf>]
+<figure/appendixA1/fig3.png, id=1164, 3011.25pt x 2007.5pt>
+File: figure/appendixA1/fig3.png Graphic file (type png)
+<use figure/appendixA1/fig3.png>
+Package pdftex.def Info: figure/appendixA1/fig3.png  used on input line 4138.
+(pdftex.def)             Requested size: 448.41714pt x 298.93713pt.
+
+LaTeX Warning: Float too large for page by 51.89641pt on input line 4143.
+
+<figure/appendixA1/fig4.png, id=1165, 795.9336pt x 506.8536pt>
+File: figure/appendixA1/fig4.png Graphic file (type png)
+<use figure/appendixA1/fig4.png>
+Package pdftex.def Info: figure/appendixA1/fig4.png  used on input line 4146.
+(pdftex.def)             Requested size: 448.41714pt x 285.56075pt.
+[116 <./figure/appendixA1/fig3.png (PNG copy)>] [117 <./figure/appendixA1/fig4.
+png>]
+<figure/appendixA1/fig5.pdf, id=1176, 844.15375pt x 597.23125pt>
+File: figure/appendixA1/fig5.pdf Graphic file (type pdf)
+<use figure/appendixA1/fig5.pdf>
+Package pdftex.def Info: figure/appendixA1/fig5.pdf  used on input line 4154.
+(pdftex.def)             Requested size: 440.44774pt x 311.61914pt.
+
+Overfull \hbox (73.40701pt too wide) in paragraph at lines 4154--4155
+ [][] 
+ []
+
+[118
+
+
+ <./figure/appendixA1/fig5.pdf>]
+<figure/appendixA1/fig6.pdf, id=1225, 844.15375pt x 597.23125pt>
+File: figure/appendixA1/fig6.pdf Graphic file (type pdf)
+<use figure/appendixA1/fig6.pdf>
+Package pdftex.def Info: figure/appendixA1/fig6.pdf  used on input line 4162.
+(pdftex.def)             Requested size: 440.44774pt x 311.61914pt.
+
+Overfull \hbox (73.40701pt too wide) in paragraph at lines 4162--4163
+ [][] 
+ []
+
+[119 <./figure/appendixA1/fig6.pdf>]
+<figure/appendixA2/annex2fig1primeraparte.pdf, id=1282, 483.72722pt x 682.95152
+pt>
+File: figure/appendixA2/annex2fig1primeraparte.pdf Graphic file (type pdf)
+<use figure/appendixA2/annex2fig1primeraparte.pdf>
+Package pdftex.def Info: figure/appendixA2/annex2fig1primeraparte.pdf  used on 
+input line 4171.
+(pdftex.def)             Requested size: 367.04073pt x 518.21486pt.
+<figure/appendixA2/annex2fig1segundaparte.pdf, id=1283, 483.72722pt x 682.95152
+pt>
+File: figure/appendixA2/annex2fig1segundaparte.pdf Graphic file (type pdf)
+<use figure/appendixA2/annex2fig1segundaparte.pdf>
+Package pdftex.def Info: figure/appendixA2/annex2fig1segundaparte.pdf  used on 
+input line 4176.
+(pdftex.def)             Requested size: 367.04073pt x 518.21486pt.
+[120 <./figure/appendixA2/annex2fig1primeraparte.pdf>] [121 <./figure/appendixA
+2/annex2fig1segundaparte.pdf>]
+<figure/appendixA2/figure2/parte1.png, id=1351, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure2/parte1.png Graphic file (type png)
+<use figure/appendixA2/figure2/parte1.png>
+Package pdftex.def Info: figure/appendixA2/figure2/parte1.png  used on input li
+ne 4184.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+<figure/appendixA2/figure2/parte2.png, id=1352, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure2/parte2.png Graphic file (type png)
+<use figure/appendixA2/figure2/parte2.png>
+Package pdftex.def Info: figure/appendixA2/figure2/parte2.png  used on input li
+ne 4186.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[122
+
+ <./figure/appendixA2/figure2/parte1.png (PNG copy)>]
+<figure/appendixA2/figure2/parte3.png, id=1357, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure2/parte3.png Graphic file (type png)
+<use figure/appendixA2/figure2/parte3.png>
+Package pdftex.def Info: figure/appendixA2/figure2/parte3.png  used on input li
+ne 4188.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[123 <./figure/appendixA2/figure2/parte2.png (PNG copy)>]
+<figure/appendixA2/figure2/parte4.png, id=1363, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure2/parte4.png Graphic file (type png)
+<use figure/appendixA2/figure2/parte4.png>
+Package pdftex.def Info: figure/appendixA2/figure2/parte4.png  used on input li
+ne 4194.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+LaTeX Warning: Float too large for page by 32.26738pt on input line 4199.
+
+[124 <./figure/appendixA2/figure2/parte3.png (PNG copy)>] [125 <./figure/append
+ixA2/figure2/parte4.png (PNG copy)>]
+<figure/appendixA2/figure3/parte1.png, id=1372, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure3/parte1.png Graphic file (type png)
+<use figure/appendixA2/figure3/parte1.png>
+Package pdftex.def Info: figure/appendixA2/figure3/parte1.png  used on input li
+ne 4206.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+<figure/appendixA2/figure3/parte2.png, id=1373, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure3/parte2.png Graphic file (type png)
+<use figure/appendixA2/figure3/parte2.png>
+Package pdftex.def Info: figure/appendixA2/figure3/parte2.png  used on input li
+ne 4208.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[126
+
+
+ <./figure/appendixA2/figure3/parte1.png (PNG copy)>]
+<figure/appendixA2/figure3/parte3.png, id=1378, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure3/parte3.png Graphic file (type png)
+<use figure/appendixA2/figure3/parte3.png>
+Package pdftex.def Info: figure/appendixA2/figure3/parte3.png  used on input li
+ne 4210.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[127 <./figure/appendixA2/figure3/parte2.png (PNG copy)>]
+<figure/appendixA2/figure3/parte4.png, id=1383, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure3/parte4.png Graphic file (type png)
+<use figure/appendixA2/figure3/parte4.png>
+Package pdftex.def Info: figure/appendixA2/figure3/parte4.png  used on input li
+ne 4216.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+LaTeX Warning: Float too large for page by 32.26738pt on input line 4221.
+
+[128 <./figure/appendixA2/figure3/parte3.png (PNG copy)>] [129 <./figure/append
+ixA2/figure3/parte4.png (PNG copy)>]
+<figure/appendixA2/figure4/parte1.png, id=1393, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure4/parte1.png Graphic file (type png)
+<use figure/appendixA2/figure4/parte1.png>
+Package pdftex.def Info: figure/appendixA2/figure4/parte1.png  used on input li
+ne 4228.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+<figure/appendixA2/figure4/parte2.png, id=1394, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure4/parte2.png Graphic file (type png)
+<use figure/appendixA2/figure4/parte2.png>
+Package pdftex.def Info: figure/appendixA2/figure4/parte2.png  used on input li
+ne 4230.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[130
+
+
+ <./figure/appendixA2/figure4/parte1.png (PNG copy)>]
+<figure/appendixA2/figure4/parte3.png, id=1399, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure4/parte3.png Graphic file (type png)
+<use figure/appendixA2/figure4/parte3.png>
+Package pdftex.def Info: figure/appendixA2/figure4/parte3.png  used on input li
+ne 4232.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[131 <./figure/appendixA2/figure4/parte2.png (PNG copy)>]
+<figure/appendixA2/figure4/parte4.png, id=1404, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure4/parte4.png Graphic file (type png)
+<use figure/appendixA2/figure4/parte4.png>
+Package pdftex.def Info: figure/appendixA2/figure4/parte4.png  used on input li
+ne 4238.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+LaTeX Warning: Float too large for page by 32.26738pt on input line 4243.
+
+[132 <./figure/appendixA2/figure4/parte3.png (PNG copy)>] [133 <./figure/append
+ixA2/figure4/parte4.png (PNG copy)>]
+<figure/appendixA2/figure5/parte1.png, id=1413, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure5/parte1.png Graphic file (type png)
+<use figure/appendixA2/figure5/parte1.png>
+Package pdftex.def Info: figure/appendixA2/figure5/parte1.png  used on input li
+ne 4250.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+<figure/appendixA2/figure5/parte2.png, id=1414, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure5/parte2.png Graphic file (type png)
+<use figure/appendixA2/figure5/parte2.png>
+Package pdftex.def Info: figure/appendixA2/figure5/parte2.png  used on input li
+ne 4252.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[134
+
+
+ <./figure/appendixA2/figure5/parte1.png (PNG copy)>]
+<figure/appendixA2/figure5/parte3.png, id=1419, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure5/parte3.png Graphic file (type png)
+<use figure/appendixA2/figure5/parte3.png>
+Package pdftex.def Info: figure/appendixA2/figure5/parte3.png  used on input li
+ne 4254.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[135 <./figure/appendixA2/figure5/parte2.png (PNG copy)>]
+<figure/appendixA2/figure5/parte4.png, id=1425, 3011.25pt x 2007.5pt>
+File: figure/appendixA2/figure5/parte4.png Graphic file (type png)
+<use figure/appendixA2/figure5/parte4.png>
+Package pdftex.def Info: figure/appendixA2/figure5/parte4.png  used on input li
+ne 4261.
+(pdftex.def)             Requested size: 504.46394pt x 336.3081pt.
+
+LaTeX Warning: Float too large for page by 32.26738pt on input line 4266.
+
+[136 <./figure/appendixA2/figure5/parte3.png (PNG copy)>] [137 <./figure/append
+ixA2/figure5/parte4.png (PNG copy)>] [138
+
+]
+Appendix B.
+[139
+
+]
+<figure/appendixB/figure1.pdf, id=1442, 512.1534pt x 227.62039pt>
+File: figure/appendixB/figure1.pdf Graphic file (type pdf)
+<use figure/appendixB/figure1.pdf>
+Package pdftex.def Info: figure/appendixB/figure1.pdf  used on input line 4335.
+
+(pdftex.def)             Requested size: 367.04073pt x 163.13286pt.
+[140 <./figure/appendixB/figure1.pdf>]
+<figure/appendixB/figure2.pdf, id=2164, 844.15375pt x 597.23125pt>
+File: figure/appendixB/figure2.pdf Graphic file (type pdf)
+<use figure/appendixB/figure2.pdf>
+Package pdftex.def Info: figure/appendixB/figure2.pdf  used on input line 4343.
+
+(pdftex.def)             Requested size: 440.44774pt x 311.61914pt.
+
+Overfull \hbox (73.40701pt too wide) in paragraph at lines 4343--4344
+ [][] 
+ []
+
+[141 <./figure/appendixB/figure2.pdf>]
+<figure/appendixB/figure3.jpg, id=2195, 844.8363pt x 597.6729pt>
+File: figure/appendixB/figure3.jpg Graphic file (type jpg)
+<use figure/appendixB/figure3.jpg>
+Package pdftex.def Info: figure/appendixB/figure3.jpg  used on input line 4351.
+
+(pdftex.def)             Requested size: 367.04073pt x 259.66641pt.
+[142 <./figure/appendixB/figure3.jpg>]
+<figure/appendixB/figure4pp200.jpg, id=2200, 813.0375pt x 569.84895pt>
+File: figure/appendixB/figure4pp200.jpg Graphic file (type jpg)
+<use figure/appendixB/figure4pp200.jpg>
+Package pdftex.def Info: figure/appendixB/figure4pp200.jpg  used on input line 
+4359.
+(pdftex.def)             Requested size: 367.04073pt x 257.2557pt.
+[143 <./figure/appendixB/figure4pp200.jpg>]
+<figure/appendixB/figure5.pdf, id=2205, 794.97pt x 614.295pt>
+File: figure/appendixB/figure5.pdf Graphic file (type pdf)
+<use figure/appendixB/figure5.pdf>
+Package pdftex.def Info: figure/appendixB/figure5.pdf  used on input line 4367.
+
+(pdftex.def)             Requested size: 330.33441pt x 255.2651pt.
+[144 <./figure/appendixB/figure5.pdf>] [145]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[146] [147] [148
+
+]
+Appendix C.
+[149]
+<figure/appendixD/figure1.jpg, id=2257, 422.5386pt x 270.0489pt>
+File: figure/appendixD/figure1.jpg Graphic file (type jpg)
+<use figure/appendixD/figure1.jpg>
+Package pdftex.def Info: figure/appendixD/figure1.jpg  used on input line 4495.
+
+(pdftex.def)             Requested size: 367.04073pt x 234.58215pt.
+[150 <./figure/appendixD/figure1.jpg>]
+<figure/appendixD/figure2.png, id=2262, 490.4724pt x 305.82256pt>
+File: figure/appendixD/figure2.png Graphic file (type png)
+<use figure/appendixD/figure2.png>
+Package pdftex.def Info: figure/appendixD/figure2.png  used on input line 4503.
+
+(pdftex.def)             Requested size: 293.6337pt x 183.08896pt.
+[151 <./figure/appendixD/figure2.png>]
+<figure/appendixD/figure3.pdf, id=2268, 704.30829pt x 626.34pt>
+File: figure/appendixD/figure3.pdf Graphic file (type pdf)
+<use figure/appendixD/figure3.pdf>
+Package pdftex.def Info: figure/appendixD/figure3.pdf  used on input line 4511.
+
+(pdftex.def)             Requested size: 367.04073pt x 326.41545pt.
+[152 <./figure/appendixD/figure3.pdf>]
+<figure/appendixD/figure4.pdf, id=2297, 567.67282pt x 527.77174pt>
+File: figure/appendixD/figure4.pdf Graphic file (type pdf)
+<use figure/appendixD/figure4.pdf>
+Package pdftex.def Info: figure/appendixD/figure4.pdf  used on input line 4519.
+
+(pdftex.def)             Requested size: 367.04073pt x 341.24365pt.
+[153 <./figure/appendixD/figure4.pdf>]
+<figure/appendixD/figure5.png, id=2327, 518.75406pt x 342.5598pt>
+File: figure/appendixD/figure5.png Graphic file (type png)
+<use figure/appendixD/figure5.png>
+Package pdftex.def Info: figure/appendixD/figure5.png  used on input line 4527.
+
+(pdftex.def)             Requested size: 403.74702pt x 266.61536pt.
+
+Overfull \hbox (36.7063pt too wide) in paragraph at lines 4527--4528
+ [][] 
+ []
+
+[154 <./figure/appendixD/figure5.png>]
+<figure/appendixD/figure6.png, id=2334, 794.97pt x 614.295pt>
+File: figure/appendixD/figure6.png Graphic file (type png)
+<use figure/appendixD/figure6.png>
+Package pdftex.def Info: figure/appendixD/figure6.png  used on input line 4535.
+
+(pdftex.def)             Requested size: 367.04073pt x 283.62894pt.
+[155 <./figure/appendixD/figure6.png (PNG copy)>]
+Overfull \hbox (10.18414pt too wide) in paragraph at lines 4547--4562
+ [][] 
+ []
+
+[156]
+Overfull \vbox (18.26466pt too high) has occurred while \output is active []
+
+[157]
+Overfull \hbox (41.33333pt too wide) in paragraph at lines 4619--4635
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[158]
+Overfull \vbox (3.56464pt too high) has occurred while \output is active []
+
+[159]
+Underfull \vbox (badness 2600) has occurred while \output is active []
+
+[160] [161] [162
+
+]
+Appendix D.
+[163
+
+
+]
+<figure/appendixE/figure1.png, id=2372, 595.7457pt x 419.4069pt>
+File: figure/appendixE/figure1.png Graphic file (type png)
+<use figure/appendixE/figure1.png>
+Package pdftex.def Info: figure/appendixE/figure1.png  used on input line 4831.
+
+(pdftex.def)             Requested size: 367.04073pt x 258.40408pt.
+[164 <./figure/appendixE/figure1.png>]
+<figure/appendixE/figure2.jpg, id=2378, 398.4486pt x 371.9496pt>
+File: figure/appendixE/figure2.jpg Graphic file (type jpg)
+<use figure/appendixE/figure2.jpg>
+Package pdftex.def Info: figure/appendixE/figure2.jpg  used on input line 4839.
+
+(pdftex.def)             Requested size: 293.6337pt x 274.10896pt.
+[165 <./figure/appendixE/figure2.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 4845--4846
+
+ []
+
+<figure/appendixE/figure31.jpg, id=2384, 553.3473pt x 358.7001pt>
+File: figure/appendixE/figure31.jpg Graphic file (type jpg)
+<use figure/appendixE/figure31.jpg>
+Package pdftex.def Info: figure/appendixE/figure31.jpg  used on input line 4846
+.
+(pdftex.def)             Requested size: 330.33441pt x 214.13252pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4848--4849
+
+ []
+
+<figure/appendixE/figure32.jpg, id=2385, 552.8655pt x 358.7001pt>
+File: figure/appendixE/figure32.jpg Graphic file (type jpg)
+<use figure/appendixE/figure32.jpg>
+Package pdftex.def Info: figure/appendixE/figure32.jpg  used on input line 4849
+.
+(pdftex.def)             Requested size: 330.33441pt x 214.3241pt.
+[166 <./figure/appendixE/figure31.jpg> <./figure/appendixE/figure32.jpg>]
+<figure/appendixE/figure33.jpg, id=2390, 559.3698pt x 358.7001pt>
+File: figure/appendixE/figure33.jpg Graphic file (type jpg)
+<use figure/appendixE/figure33.jpg>
+Package pdftex.def Info: figure/appendixE/figure33.jpg  used on input line 4854
+.
+(pdftex.def)             Requested size: 330.33441pt x 211.83372pt.
+[167 <./figure/appendixE/figure33.jpg>]
+<figure/appendixE/figure4.png, id=2395, 490.4724pt x 305.82256pt>
+File: figure/appendixE/figure4.png Graphic file (type png)
+<use figure/appendixE/figure4.png>
+Package pdftex.def Info: figure/appendixE/figure4.png  used on input line 4862.
+
+(pdftex.def)             Requested size: 293.6337pt x 183.08896pt.
+[168 <./figure/appendixE/figure4.png>]
+<figure/appendixE/figure5.png, id=2401, 1183.42125pt x 945.5325pt>
+File: figure/appendixE/figure5.png Graphic file (type png)
+<use figure/appendixE/figure5.png>
+Package pdftex.def Info: figure/appendixE/figure5.png  used on input line 4870.
+
+(pdftex.def)             Requested size: 311.98685pt x 249.26643pt.
+[169 <./figure/appendixE/figure5.png>] [170]
+Overfull \hbox (13.02606pt too wide) in paragraph at lines 4951--4966
+ [][] 
+ []
+
+
+Overfull \vbox (18.26466pt too high) has occurred while \output is active []
+
+[171] [172]
+Underfull \hbox (badness 1430) in paragraph at lines 4970--4993
+\T1/lmr/m/n/10.95 CPH: Centre-Periphery Hy-poth-e-sis (also known as distance-a
+bundance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4970--4993
+
+ []
+
+[173
+
+] [174
+
+] [175]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[176]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[177]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[178]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[179]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[180]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[181]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[182]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[183]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[184]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[185]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[186]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[187]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[188]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[189]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[190]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[191]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[192]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[193]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[194]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[195]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[196]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[197] [198]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5693.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5693.
+(./thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5693.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5693.
+
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 3A8118CEB3DED469E2E3A6FCC92FE3E8;3248.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5693.
+ ) 
+Here is how much of TeX's memory you used:
+ 24296 strings out of 494108
+ 441368 string characters out of 6172241
+ 531555 words of memory out of 5000000
+ 27391 multiletter control sequences out of 15000+600000
+ 107931 words of font info for 99 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 60i,14n,54p,1826b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.e
+nc}{c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mat
+hit.enc}{c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/l
+m-ec.enc}{c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/
+lm-ts1.enc}<c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/publi
+c/amsfonts/latxfont/lcircle1.pfb><c:/Users/mange/AppData/Roaming/TinyTeX/texmf-
+dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/mange/AppData/Roaming/TinyTeX/t
+exmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/mange/AppData/Roaming/Tiny
+TeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/Users/mange/AppData/Roamin
+g/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/mange/AppData/R
+oaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/Users/mange/AppD
+ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/mange/
+AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/ma
+nge/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/User
+s/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/
+Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
+<c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.p
+fb><c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr
+6.pfb><c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/
+lmr7.pfb><c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/
+lm/lmr8.pfb><c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/publ
+ic/lm/lmri10.pfb><c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
+/public/lm/lmri12.pfb><c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/fonts/
+type1/public/lm/lmro10.pfb><c:/Users/mange/AppData/Roaming/TinyTeX/texmf-dist/f
+onts/type1/public/lm/lmtt10.pfb>
+Output written on thesis.pdf (220 pages, 31205347 bytes).
+PDF statistics:
+ 2691 PDF objects out of 2984 (max. 8388607)
+ 1502 compressed objects within 16 object streams
+ 380 named destinations out of 1000 (max. 500000)
+ 667 words of extra memory for PDF output out of 10000 (max. 10000000)
+

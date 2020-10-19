@@ -1,0 +1,101 @@
+"study";"method";"specie";"TC";"porosity";"DBH"
+"1";"Alarcon et al. 2005";"CHP";"Citrus limon";"whole plant";"Diffuse porous";2.5
+"2";"Ballester et al 2011";"CHP";"Citrus clementina";"whole plant";"Diffuse porous";NA
+"3";"Barret et al. 1995";"CHP";"Corymbia maculata";"without roots";"Diffuse porous";NA
+"4";"Bleby et al. 2004";"CHP";"Eucalyptus marginata";"whole plant";"Diffuse porous";10
+"5";"Bleby et al. 2004";"HR";"Eucalyptus marginata";"whole plant";"Diffuse porous";10
+"6";"Braun and Schmid 1999";"TD";"Vitis vinifera";"whole plant";"Ring porous";3.75
+"7";"Burgess et al. 2001";"HR";"Eucalyptus marginata";"whole plant";"Diffuse porous";NA
+"8";"Bush et al. 2010";"TD";"Populus fremontii";"stem segment";"Diffuse porous";5.08
+"9";"Bush et al. 2010";"TD";"Tilia cordata";"stem segment";"Diffuse porous";4.83
+"10";"Cain 2009";"TD";"Macaranga hypoleuca";"stem segment";"Diffuse porous";82
+"11";"Cain 2009";"TD";"Macaranga pearsonii";"stem segment";"Diffuse porous";67
+"12";"Caspari et al. 1993";"CHP";"Pyrus serotina";"whole plant";"Diffuse porous";6.62
+"13";"Caterina et al. 2013";"TD";"Juniperus virginiana";"stem segment";"Tracheids";8
+"14";"Chan 2015";"TD";"Abies concolor";"stem segment";"Tracheids";6
+"15";"Cohen et al. 1981";"T-max";"Platanus orientalis";"stem segment";"Diffuse porous";6.7
+"16";"Cohen et al. 1981";"T-max";"Populus alba";"stem segment";"Diffuse porous";6.7
+"17";"Cohen et al. 1998";"T-max";"Malus domestica";"whole plant";"Diffuse porous";NA
+"18";"Dragoni et al. 2005";"CHP";"Malus domestica";"whole plant";"Diffuse porous";6.5
+"19";"Dye et al. 1996";"CHP";"Pinus patula";"without roots";"Tracheids";NA
+"20";"Fernandez et al. 1999";"CHP";"Olea europaea";"stem segment";"Diffuse porous";8.8
+"21";"Fernandez et al. 1999";"CHP";"Olea europaea";"without roots";"Diffuse porous";NA
+"22";"Fernandez et al. 2006";"CHP";"Citrus sinensis";"stem segment";"Diffuse porous";7.8
+"23";"Fernandez et al. 2006";"CHP";"Citrus sinensis";"without roots";"Diffuse porous";10.4
+"24";"Fernandez et al. 2006";"CHP";"Olea europaea";"stem segment";"Diffuse porous";8.2
+"25";"Fernandez et al. 2006";"CHP";"Olea europaea";"without roots";"Diffuse porous";9.8
+"26";"Fernandez et al. 2006";"CHP";"Prunus domestica";"stem segment";"Diffuse porous";8
+"27";"Fernandez et al. 2006";"CHP";"Prunus domestica";"without roots";"Diffuse porous";7
+"28";"Fuchs et al. 2017";"HFD";"Acer pseudoplatanus";"stem segment";"Diffuse porous";10.5646666666667
+"29";"Fuchs et al. 2017";"HFD";"Fagus sylvatica";"stem segment";"Diffuse porous";9.42142857142857
+"30";"Fuchs et al. 2017";"HFD";"Tilia cordata";"stem segment";"Diffuse porous";9.28666666666667
+"31";"Fuchs et al. 2017";"HR";"Acer pseudoplatanus";"stem segment";"Diffuse porous";NA
+"32";"Fuchs et al. 2017";"HR";"Fagus sylvatica";"stem segment";"Diffuse porous";NA
+"33";"Fuchs et al. 2017";"HR";"Tilia cordata";"stem segment";"Diffuse porous";NA
+"34";"Fuchs et al. 2017";"TD";"Acer campestre";"stem segment";"Diffuse porous";11.8085714285714
+"35";"Fuchs et al. 2017";"TD";"Acer pseudoplatanus";"stem segment";"Diffuse porous";10.8033333333333
+"36";"Fuchs et al. 2017";"TD";"Fagus sylvatica";"stem segment";"Diffuse porous";9.83066666666667
+"37";"Fuchs et al. 2017";"TD";"Populus nigra";"stem segment";"Diffuse porous";10.7666666666667
+"38";"Fuchs et al. 2017";"TD";"Tilia cordata";"stem segment";"Diffuse porous";9.406
+"39";"Gonzalez-Altozano et al. 1998";"CHP";"Citrus reticulata";"whole plant";"Diffuse porous";11.5
+"40";"Gonzalez-Altozano et al. 1998";"T-max";"Citrus reticulata";"whole plant";"Diffuse porous";11.5
+"41";"Granier 1985";"TD";"Pinus nigra";"stem segment";"Tracheids";4.5
+"42";"Granier 1985";"TD";"Pseudotzuga menziesii";"stem segment";"Tracheids";4.5
+"43";"Granier 1985";"TD";"Quercus pedunculata";"stem segment";"Ring porous";4.5
+"44";"Green et al. 1988";"CHP";"Actinidia chinensis";"stem segment";"Diffuse porous";5.25
+"45";"Green et al. 1988";"CHP";"Actinidia chinensis";"whole plant";"Diffuse porous";5.4
+"46";"Green et al. 1988";"CHP";"Malus sylvestris";"whole plant";"Diffuse porous";5.6
+"47";"Gutierrez et al. 1994";"SHB";"Acacia koa";"whole plant";"Diffuse porous";NA
+"48";"Gutierrez et al. 1994";"SHB";"Coffea arabica";"whole plant";"Diffuse porous";NA
+"49";"Gutierrez-soto et al. 2012";"HR";"Carica papaya";"whole plant";"Monocot";NA
+"50";"Hatton et al. 1995";"CHP";"Eucalyptus populnea";"without roots";"Diffuse porous";5.4
+"51";"Heilman et al. 1990";"SHB";"Ligustrum japonicum";"whole plant";"Diffuse porous";1
+"52";"Herbs et al. 2007";"TD";"Acer campestre";"stem segment";"Diffuse porous";NA
+"53";"Herbs et al. 2007";"TD";"Crataegus monogina";"stem segment";"Diffuse porous";NA
+"54";"Hultine et al. 2010";"TD";"Tamarix ramossisima";"stem segment";"Ring porous";4.16363636363636
+"55";"Intrigliolo et al. 2009";"T-max";"Vitis vinifera";"whole plant";"Ring porous";NA
+"56";"Isarangkool et al. 2009";"TTD";"Citrus maxima";"stem segment";"Diffuse porous";5.14
+"57";"Isarangkool et al. 2009";"TTD";"Hevea brasiliensis";"stem segment";"Diffuse porous";4.68875
+"58";"Isarangkool et al. 2009";"TTD";"Mangifera indica";"stem segment";"Diffuse porous";4.35
+"59";"Johan Uddling et al. 2009";"TD";"Betula papyrifera";"stem segment";"Diffuse porous";NA
+"60";"Lu 2002";"TD";"Garcinia mangostana";"whole plant";"Diffuse porous";4
+"61";"Lu 2002";"TD";"Mangifera indica";"whole plant";"Diffuse porous";2.3
+"62";"Lu 2002";"TD";"Musa spp.";"whole plant";"Monocot";12
+"63";"Lu and Chacko 1998";"TD";"Mangifera indica";"whole plant";"Diffuse porous";2.3
+"64";"Madurapperuma et al. 2009";"HR";"Syagrus romanzoffiana";"whole plant";"Monocot";NA
+"65";"Michell et al. 2009";"HR";"Eucalyptus capillosa";"without roots";"Diffuse porous";6.5
+"66";"Montague et al. 2006";"TD";"Liquidambar styraciflua";"whole plant";"Diffuse porous";5.3
+"67";"Montague et al. 2006";"TD";"Populus deltoides";"whole plant";"Diffuse porous";5.6
+"68";"Montague et al. 2006";"TD";"Pyrus calleryana";"whole plant";"Diffuse porous";6.6
+"69";"Montague et al. 2006";"TD";"Quercus robur x Q. bicolor";"whole plant";"Ring porous";5.7
+"70";"Nadezhdina et al. 1998";"HFD";"Tilia cordata";"without roots";"Diffuse porous";12
+"71";"Nortes et al. 2009";"CHP";"Prunus dulcis";"whole plant";"Diffuse porous";15
+"72";"Paudel et al. 2013";"TD";"Malus domestica";"stem segment";"Diffuse porous";4.01
+"73";"Paudel et al. 2013";"TD";"Peltophorum dubium";"stem segment";"Diffuse porous";3.7
+"74";"Paudel et al. 2013";"TD";"Prunus persica";"stem segment";"Diffuse porous";4
+"75";"Paudel et al. 2013";"TTD";"Malus domestica";"stem segment";"Diffuse porous";4.01
+"76";"Paudel et al. 2013";"TTD";"Peltophorum dubium";"stem segment";"Diffuse porous";3.7
+"77";"Paudel et al. 2013";"TTD";"Prunus persica";"stem segment";"Diffuse porous";4
+"78";"Peters et al. 2017";"TD";"Larix decidua";"stem segment";"Tracheids";16.5
+"79";"Peters et al. 2017";"TD";"Picea abies";"stem segment";"Tracheids";15.9
+"80";"Prendergast et al. 2007";"T-max";"Actinidia chinensis";"stem segment";"Diffuse porous";9.5
+"81";"Shackel et al. 1992";"SHB";"Prunus persica";"whole plant";"Diffuse porous";6.25
+"82";"Smith et al. 1995";"CHP";"Acacia holosericea";"stem segment";"Diffuse porous";NA
+"83";"Smith et al. 1995";"CHP";"Acacia holosericea";"without roots";"Diffuse porous";NA
+"84";"Smith et al. 1995";"CHP";"Acacia nilotica";"stem segment";"Diffuse porous";NA
+"85";"Smith et al. 1995";"CHP";"Azadirachta indica";"stem segment";"Diffuse porous";NA
+"86";"Smith et al. 1995";"CHP";"Azadirachta indica";"without roots";"Diffuse porous";NA
+"87";"Sperling et al. 2012";"TD";"Phoenix datylifera";"whole plant";"Monocot";60
+"88";"Steppe et al. 2010";"CHP";"Fagus grandifolia";"stem segment";"Diffuse porous";18
+"89";"Steppe et al. 2010";"HFD";"Fagus grandifolia";"stem segment";"Diffuse porous";18.125
+"90";"Steppe et al. 2010";"TD";"Fagus grandifolia";"stem segment";"Diffuse porous";18
+"91";"Sun et al. 2012";"TD";"Liquidambar styraciflua";"without roots";"Diffuse porous";7.5
+"92";"Sun et al. 2012";"TD";"Pinus echinata";"without roots";"Tracheids";7.5
+"93";"Sun et al. 2012";"TD";"Pinus taeda";"without roots";"Tracheids";7.5
+"94";"Sun et al. 2012";"TD";"Populus deltoides";"without roots";"Diffuse porous";7.5
+"95";"Sun et al. 2012";"TD";"Quercus alba";"without roots";"Ring porous";7.5
+"96";"Sun et al. 2012";"TD";"Ulmus americana";"without roots";"Ring porous";7.5
+"97";"Swanson & Whitfield 1981";"CHP";"Nothofagus solandri";"whole plant";"Diffuse porous";11
+"98";"Swanson & Whitfield 1981";"CHP";"Pinus radiata";"whole plant";"Tracheids";5
+"99";"Urban et al. 2012";"SHB";"Humulus lupulus";"without roots";"Ring porous";NA
+"100";"Vellame et al. 2010";"SHB";"Citrus sinensis";"whole plant";"Diffuse porous";1.4

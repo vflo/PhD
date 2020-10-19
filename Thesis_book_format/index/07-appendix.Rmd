@@ -1,0 +1,655 @@
+`r if(knitr:::is_latex_output()) '\\appendix'`
+
+`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
+
+<!--
+If you feel it necessary to include an appendix, it goes here.
+-->
+
+
+# Appendix Chapter 2
+\newpage
+
+
+\setlength{\abovecaptionskip}{0pt}
+
+
+\newpage
+\begin{landscape}
+\setlength{\abovecaptionskip}{15pt}
+```{r apa11, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center", fig.scap="Multivariate Environmental Similarity Surface (MESS) analyses ninyerola vs worlclim methods",fig.cap=" Multivariate Environmental Similarity Surface (MESS) analysis between Worldclim data base and Spanish climatic data base following  Ninyerola and others 2000 and climatic data from iberian climatic atlas for 1950-2000 period. Negative values mean dissimilarities between the two data bases. BIO3= Isothermality, BIO4= Temperature Seasonality, BIO8= Mean Temperature of Wettest Quarter, BIO9= Mean Temperature of Driest Quarter, BIO12= Annual Precipitation and BIO15= Precipitation Seasonality."}
+knitr::include_graphics(path = "figure/appendixA1/fig1.png")
+```
+\setlength{\abovecaptionskip}{0pt}
+\newpage
+\end{landscape}
+
+
+```{r apa121, echo=FALSE,  out.width = '80%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA1/fig2primeraparte.png")
+
+```
+\setlength{\textfloatsep}{-10pt plus 1.0pt minus 2.0pt}
+
+\setlength{\abovecaptionskip}{15pt}
+```{r apa122, echo=FALSE,  out.width = '80%',fig.pos="hbt!", fig.align="center", fig.scap=" AUC and Boyce index per species",fig.cap=" Above: Area Under ROC Curve (AUC) by specie and models. Vertical lines represent AUC standard deviation interval of each model while horizontal lines show AUC mean values. Below: Boyce index values by specie and models. Vertical lines represent standard deviation for Boyce values while horizontal lines show Boyce mean values. Notice that the species order is different for each plot."}
+knitr::include_graphics(path = "figure/appendixA1/fig2segundaparte.png")
+```
+\setlength{\abovecaptionskip}{0pt}
+
+\newpage
+\begin{landscape}
+```{r apa13, echo=FALSE,  out.width = '80%',fig.pos="hbt!", fig.align="center", fig.scap="Multivariate Environmental Similarity Surface (MESS) analyses of the extreme drought year",fig.cap="Multivariate Environmental Similarity Surface (MESS) analysis for the Region of Murcia. Bio3 to Bio15 shows the similarity between the new environment (extreme episode 2013-2014) and the environments use to calibrate the model (historic period 1950-2000) for each different variables  implemented  in  the  models. BIO3= Isothermality, BIO4= Temperature Seasonality, BIO8= Mean Temperature of Wettest Quarter, BIO9= Mean Temperature of Driest Quarter, BIO12= Annual Precipitation and BIO15= Precipitation Seasonality. Negative values are  indicative  of  environmental dissimilarities  between variables.  Note that bio15 (precipitation seasonality) is  the main contributor to final MESS. Black square represents the study site location."}
+knitr::include_graphics(path = "figure/appendixA1/fig3.png")
+```
+
+
+```{r apa14, echo=FALSE,  out.width = '80%',fig.pos="hbt!", fig.align="center", fig.scap="Historic Climatic Suitability (HCS) averaged values of the sample plots by species for each implemented model",fig.cap="Historic Climatic Suitability (HCS) averaged values of the sample plots by species for each implemented model."}
+knitr::include_graphics(path = "figure/appendixA1/fig4.png")
+```
+
+\newpage
+\end{landscape}
+```{r apa15, echo=FALSE,  out.width = '120%',fig.pos="hbt!", fig.align="center", fig.scap="Pearson correlation values among different implemented models for HCS",fig.cap="Pearson correlation values among different implemented models for Historic Climatic Suitability (HCS). Significant values are highlighted in bold. Correlation plots are also shown"}
+knitr::include_graphics(path = "figure/appendixA1/fig5.png")
+```
+\newpage
+```{r apa16, echo=FALSE,  out.width = '120%',fig.pos="hbt!", fig.align="center", fig.scap="Pearson correlation values among different implemented models for Episodic Climatic Suitability (ECS)",fig.cap="Pearson correlation values among different implemented models for Episodic Climatic Suitability (ECS). Significant values are highlighted in bold. Correlation plots are also shown."}
+knitr::include_graphics(path = "figure/appendixA1/fig6.png")
+```
+
+\newpage
+
+\setlength{\abovecaptionskip}{0pt}
+```{r apa211, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/annex2fig1primeraparte.png")
+
+```
+\setlength{\textfloatsep}{-10pt plus 1.0pt minus 2.0pt}
+
+```{r apa212, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap=" Filtered occurences of analized species",fig.cap=" Filtered occurences of every analized species."}
+knitr::include_graphics(path = "figure/appendixA2/annex2fig1segundaparte.png")
+```
+
+
+\newpage
+\begin{landscape}
+```{r apa221, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure2/parte1.png")
+
+```
+
+```{r apa222, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure2/parte2.png")
+
+```
+
+```{r apa223, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure2/parte3.png")
+
+```
+\setlength{\textfloatsep}{-10pt plus 1.0pt minus 2.0pt}
+
+\setlength{\abovecaptionskip}{15pt}
+```{r apa224, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center", fig.scap="Suitability maps obtained from Mahalanobis distance",fig.cap="Suitability maps obtained from Mahalanobis distance. Note that Mediterranean basin maps were used to project the models under 1950-2000 average conditions, while Region of Murcia maps were used to project the models under extreme hydrological year 2013-2014."}
+knitr::include_graphics(path = "figure/appendixA2/figure2/parte4.png")
+
+```
+\setlength{\abovecaptionskip}{0pt}
+
+\newpage
+\end{landscape}
+
+
+
+\newpage
+\begin{landscape}
+```{r apa231, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure3/parte1.png")
+
+```
+
+```{r apa232, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure3/parte2.png")
+
+```
+
+```{r apa233, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure3/parte3.png")
+
+```
+\setlength{\textfloatsep}{-10pt plus 1.0pt minus 2.0pt}
+
+\setlength{\abovecaptionskip}{15pt}
+```{r apa234, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center", fig.scap="Suitability maps obtained from Generalize Additive Models (GAM)",fig.cap="Suitability maps obtained from Generalize Additive Models (GAM). Note that Mediterranean basin maps were used to project the models under 1950-2000 average conditions, while Region of Murcia maps were used to project the models under extreme hydrological year 2013-2014."}
+knitr::include_graphics(path = "figure/appendixA2/figure3/parte4.png")
+
+```
+\setlength{\abovecaptionskip}{0pt}
+
+\newpage
+\end{landscape}
+
+
+
+\newpage
+\begin{landscape}
+```{r apa241, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure4/parte1.png")
+
+```
+
+```{r apa242, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure4/parte2.png")
+
+```
+
+```{r apa243, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure4/parte3.png")
+
+```
+\setlength{\textfloatsep}{-10pt plus 1.0pt minus 2.0pt}
+
+\setlength{\abovecaptionskip}{15pt}
+```{r apa244, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center", fig.scap="Suitability maps obtained from Boosted Regression Trees (BRT)",fig.cap="Suitability maps obtained from Boosted Regression Trees (BRT). Note that Mediterranean basin maps were used to project the models under 1950-2000 average conditions, while Region of Murcia maps were used to project the models under extreme hydrological year 2013-2014."}
+knitr::include_graphics(path = "figure/appendixA2/figure4/parte4.png")
+
+```
+\setlength{\abovecaptionskip}{0pt}
+
+\newpage
+\end{landscape}
+
+
+
+\newpage
+\begin{landscape}
+```{r apa251, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure5/parte1.png")
+
+```
+
+```{r apa252, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure5/parte2.png")
+
+```
+
+```{r apa253, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixA2/figure5/parte3.png")
+
+```
+\setlength{\textfloatsep}{-10pt plus 1.0pt minus 2.0pt}
+
+
+\setlength{\abovecaptionskip}{15pt}
+```{r apa254, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center", fig.scap="Suitability maps obtained from MaxEnt",fig.cap="Suitability maps obtained from MaxEnt. Note that Mediterranean basin maps were used to project the models under 1950-2000 average conditions, while Region of Murcia maps were used to project the models under extreme hydrological year 2013-2014."}
+knitr::include_graphics(path = "figure/appendixA2/figure5/parte4.png")
+
+```
+\setlength{\abovecaptionskip}{0pt}
+
+\newpage
+\end{landscape}
+
+
+\setlength{\abovecaptionskip}{15pt}
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table1 <- read_delim("data/appendixA1/tableA1.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+options(knitr.kable.NA = "")
+knitr::kable(table1, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Pearson correlation values comparing visual drought estimates and defoliation",
+             caption = 'Pearson correlation values comparing visual drought estimate and defoliation directly measure by centimeters, for each measured species. N is the number of measured individual for all study site.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+\setlength{\abovecaptionskip}{0pt}
+
+\setlength{\abovecaptionskip}{15pt}
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table2 <- read_delim("data/appendixA1/tableA2.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+colnames(table2)[1] <- " "
+
+options(knitr.kable.NA = "")
+knitr::kable(table2, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Median and range values for Historical Climatic Suitability and Episode Climatic Suitability",
+             caption = 'Median and range values for Historical Climatic Suitability (HCS) and Episode Climatic Suitability (ECS) of different SDM applied for the co-occurring species in the studied community.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+\setlength{\abovecaptionskip}{0pt}
+
+
+# Appendix Chapter 3
+\newpage
+
+
+\setlength{\abovecaptionskip}{10pt}
+
+```{r apc1, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap=" Climatic anomaly of the extreme climatic year 2013-2014 in the Spanish SE",fig.cap="Climatic anomaly of the extreme climatic year 2013-2014 in the Spanish SE. Temperature anomaly is measured as degrees change respect to the average for the period 1970-2000, while precipitation anomaly is estimated as relative change (\\%) respect to the average period 1970-2000."}
+knitr::include_graphics(path = "figure/appendixB/figure1.jpg")
+```
+\newpage
+
+```{r apc2, echo=FALSE,  out.width = '120%',fig.pos="hbt!", fig.align="center", fig.scap="Correlation circle obtained from PCA calibrated with $Pinus$ $halepnsis$ occurrences",fig.cap="Correlation circle obtained from PCA from the twelve selected climatic variables. Where BIO1= Annual Mean Temperature, BIO4= Temperature Seasonality (standard deviation×100), BIO5= Max Temperature of Warmest Month, BIO6= Min Temperature of Coldest Month, BIO10= Mean Temperature of Warmest Quarter, BIO11= Mean Temperature of Coldest Quarter, BIO12= Annual Precipitation, BIO13= Precipitation of Wettest Month, BIO14= Precipitation of Driest Month, BIO15= Precipitation Seasonality (Coefficient of Variation), BIO16= Precipitation of Wettest Quarter, BIO17= Precipitation of Driest Quarter. The PCA was calibrated using climatic data from the total filtered 9,959 occurrences of $Pinus$ $halepensis$ occurrences from the Spanish National Forest Inventory (IFN).  First and second axes contained 60\\% of explained variability. The variables' color represents the percentage of each variable' contribution to the PCA."}
+knitr::include_graphics(path = "figure/appendixB/figure2.png")
+```
+\newpage
+
+
+```{r apc3, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Populations located in the $Pinus$ niche space not shared by the average-based and the inter-annual variability-based niches",fig.cap="Populations located in the niche space that is not shared by the average-based and the inter-annual variability-based niches. Orange region represents the area of the variability-based niche that is not included within the average-based niche area."}
+knitr::include_graphics(path = "figure/appendixB/figure3.jpg")
+```
+\newpage
+
+```{r apc4, echo=FALSE,  out.width = "100%" , fig.pos="hbt!", fig.align="center", fig.scap="Model explained $R^2$ depending on population subset",fig.cap="Model explained $R^2$ depending on population subset, where response variable was plot mortality percentage and explanatory variables was plot climatic suitability. X axis ranged from 0 percentage of population located in the non-shared niche space by inter-annual and average-based niches to 100. Blue color represent $R^2$ values obtained with climatic suitability derived from the average-based niche while yellow color represent $R^2$ values obtained with climatic suitability derived from the inter-annual variability-based niche."}
+knitr::include_graphics(path = "figure/appendixB/figure4pp200.jpg")
+```
+\newpage
+
+```{r apc5, echo=FALSE,  out.width = '90%',fig.pos="hbt!", fig.align="center", fig.scap="Correlation circle obtained from PCA calibrated with occurrences of multiples mediterranean species",fig.cap="Correlation circle obtained from PCA from the twelve selected climatic variables. Where BIO1= Annual Mean Temperature, BIO4= Temperature Seasonality (standard deviation×100), BIO5 = Max Temperature of Warmest Month, BIO6= Min Temperature of Coldest Month, BIO10 = Mean Temperature of Warmest Quarter, BIO11= Mean Temperature of Coldest Quarter, BIO12= Annual Precipitation, BIO13= Precipitation of Wettest Month, BIO14 = Precipitation of Driest Month, BIO15= Precipitation Seasonality (Coefficient of Variation), BIO16= Precipitation of Wettest Quarter, BIO17 = Precipitation of Driest Quarter. The PCA was calibrated using climatic data from the total filtered 116,835 occurrences from the Spanish National Forest Inventory (IFN) and gbif.org for all the 42 selected species.  First and second axes contained 60.8\\% of explained variability. The variables' color represents the percentage of each variable' contribution to the PCA."}
+knitr::include_graphics(path = "figure/appendixB/figure5.png")
+```
+\newpage
+
+
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table1 <- read_delim("data/appendixB/tableS1.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+options(knitr.kable.NA = "")
+knitr::kable(table1, escape = FALSE, linesep = "",digits = 3,booktabs = T,longtable=T,
+             caption.short = "Species used for analyses of changes in niche space depending on species climatic range",
+             caption = 'Species used for analyses of changes in niche space depending on species climatic range. Table shows area of average based-niche (niche area av), inter-annual based-niche (niche area in), niche rate (area of average based-niche/area of inter-annual variability based-niche) and species’ distribution range, where endemic SE means species endemic from the Spanish south east and mediterraneean occ means species mostly distributed in the west of the Mediterranean basin.')%>%
+  kableExtra::kable_styling(latex_options = "repeat_header",full_width = F,font_size = 7)
+```
+
+
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table2 <- read_delim("data/appendixB/tableS2.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+options(knitr.kable.NA = "")
+knitr::kable(table2, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "GLM binomial model results relating $Pinus$ decay with species climatic niche suitability",
+             caption = 'GLM binomial model results relating species decay (as binary or continuous response) with species niche suitability obtained from average-based and from inter-annual variability-based models. Models $R^2$ and AIC are given in the main text (Figure 3.3).')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table3 <- read_delim("data/appendixB/tableS3.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+colnames(table3)[5] <- "$R^2$= 0.954"
+options(knitr.kable.NA = "")
+knitr::kable(table3, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Model results relating models explanatory capacity in relation to the percentage of populations located in the non-shared niche space",
+             caption = 'Model results relating models explanatory capacity ($R^2$) in relation to the percentage of populations located in the non-shared area between the two niche estimations (average-based and inter-annual variability-based niche). $R^2$ were obtained by models that relate decay records as continuous response with different subsets of the records, in order to simulate the different percentages of population located in the non-shared area. Explanatory variables of the model are: corona percentage (percentage of population located in the non-shared niches area), niche model (averaged-based or inter-annual variability-based and n (number of records of the model, which varies from 118 to 264).')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+
+\par
+
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table4 <- read_delim("data/appendixB/tableS4.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+colnames(table4)[5] <- "$R^2 = 0.895$"
+
+options(knitr.kable.NA = "")
+knitr::kable(table4, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Model results relating relating ratio of niche area and niche average size",
+             caption = 'Model results with ratio of niche area (inter-annual variability-based niche area/average-based area) as response variable and log(average-based niche area) and distribution range as explanatory variables. ')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+
+
+
+
+
+# Appendix Chapter 4
+\newpage
+
+
+\setlength{\abovecaptionskip}{10pt}
+```{r, echo=FALSE, message=FALSE, out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Ombrothermic diagrams for the study site",fig.cap="Ombrothermic diagrams for A) Cuatro Calas, B) Moreras Mountain and C) Calblanque Natural Park, respectively. Red lines correspond to temperatures, and blue lines correspond to precipitation. Solid lines correspond to the reference climatic period (1979-2012, Chelsa v.1.2, Karger et al. 2017) and dotted lines correspond to extreme climatic year (2013-2014) (data from Spanish Weather Agency, AEMET). Vertical blue and red lines over the reference period lines show Standard Error estimated for each month in the period 1979-2012."}
+knitr::include_graphics(path = "figure/appendixD/figure1.jpg")
+```
+\newpage
+```{r, echo=FALSE, message=FALSE, out.width = '80%',fig.pos="hbt!", fig.align="center", fig.scap="Soil particle composition of the study sites", fig.cap="Soil particle composition of the three different study sites’ bedrocks (i.e., Moreras’ Mountain, Calblanque Natural Parck, and Cuatro Calas, respectively to this graphic order. Yellow colour represents the proportion of sands, orange the proportion of clays and 30 dark orange the proportion of silts."}
+knitr::include_graphics(path = "figure/appendixD/figure2.png")
+```
+\newpage
+```{r, echo=FALSE, message=FALSE,  out.width = '100%', fig.pos="hbt!", fig.align="center", fig.scap="Correlation circle obtained from PCA from the twelve selected climatic variables.", fig.cap="Correlation circle obtained from PCA from the twelve selected climatic variables. Where BIO1 = Annual Mean Temperature, BIO4 = Temperature Seasonality (standard deviation×100), BIO5 = Max Temperature of Warmest Month, BIO6 = Min Temperature of Coldest Month, BIO10= Mean Temperature of Warmest Quarter, BIO11 = Mean Temperature of Coldest Quarter, BIO12 = Annual Precipitation, BIO13 = Precipitation of Wettest Month, BIO14 = Precipitation of Driest Month, BIO15 = Precipitation Seasonality (Coefficient of Variation), BIO16 = Precipitation of Wettest Quarter, BIO17 = Precipitation of Driest Quarter. The PCA was calibrated using climatic data from the total filtered 106,876 occurrences from gbif.org for all the 38 sampled species. The first and second axes contained 60.8\\% of explained variability. The variables' colour represents the percentage of each variable' contribution to the PCA."}
+knitr::include_graphics(path = "figure/appendixD/figure3.pdf")
+```
+\newpage
+```{r, echo=FALSE, message=FALSE,   out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Correlation circle obtained from PCA calibrated with the five climatic variables used in SDMs",fig.cap="Correlation circle obtained from PCA calibrated with the five climatic variables included in SDMs (MaxEnt) using climatic data from the total filtered 106,876 occurrences from gbif.org for all the 38 sampled species. In order to discard difference between environmental spaces calibrated with the first 12 variables (Figure S3) instead of this 6 variables. We calculated the pearson correlation between the contribution of these 6 variables in both calibrated pca. We obtained a correlation of -0.9425 for axis 1, and 0.9115 for axis 2. BIO1 = Annual Mean Temperature, BIO4 = Temperature Seasonality (standard deviation×100), BIO10 = Mean Temperature of Warmest Quarter, BIO12 = Annual Precipitation, BIO15 = Precipitation Seasonality (Coefficient of Variation), BIO17 = Precipitation of Driest Quarter. The PCA was calibrated using climatic data from the total filtered 106,876 occurrences from gbif.org for all the 38 sampled species. The first and second axes contained 63.6\\% of explained variability. The variables' colour represents the percentage of each variable' contribution to the PCA. "}
+knitr::include_graphics(path = "figure/appendixD/figure4.pdf")
+```
+\newpage
+```{r, echo=FALSE, message=FALSE, out.width = '110%',fig.pos="hbt!", fig.align="center", fig.scap="Remaining Green Canopy (RGC) and mortality percentage models",fig.cap="Remaining Green Canopy (RGC) in relation to population distances during the reference period 1979-2012 to their respective species niche centroid (A) and to the closest point of the niche limit (B); Mortality percentage in relation to population distances during the reference period 1979-2012 to their respective species niche centroid (C) and to the closest point of the niche limit (D). In all four cases, only the subset of populations located within the niche were considered. Yellow dots show distances of populations located in Moreras’ Mountain (limestone bedrock), magenta dots show distances of populations located in Calblanque Natural Parck (metamorphic bedrock) and blue dots show distances of populations located in Cuatro Calas (sandstone bedrock). Yellow, magenta and blue lines represent the regression lines of the model for each bedrock type. Each panel also shows $R^2$ model values and ANOVA P-values (Pv) for testing significance of niche distances."}
+knitr::include_graphics(path = "figure/appendixD/figure5.png")
+```
+\newpage
+
+```{r, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Multivariate Environmental Similarity Surface (MESS) analysis for the South East of the Iberian Peninsula.",fig.cap="Multivariate Environmental Similarity Surface (MESS) analysis for the South East of the Iberian Peninsula. We calculated the median similarity between the new environment (extreme episode 2013-2014) and the environment used to fit each species model (average reference period 1979-2012 CHELSA database) for each variable implemented in our models. Negative values are indicative of high environmental dissimilarities between variables."}
+knitr::include_graphics(path = "figure/appendixD/figure6.png")
+```
+
+\newpage
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table1 <- read_delim("data/appendixD/tableR1.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+options(knitr.kable.NA = "")
+knitr::kable(table1, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Carbon and nitrogen content of each studied bedrock, following (Anne 1945, Duchaufour 1970) method.",
+             caption = 'Carbon and nitrogen content of each studied bedrock, following (Anne 1945, Duchaufour 1970) method.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+
+\newpage
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table2 <- read_delim("data/appendixD/tableR2.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+options(knitr.kable.NA = "")
+knitr::kable(table2, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Summary table of analysed species",
+             caption = 'Summary table of analysed species found in the different study sites. The table shows the species codes used in climatic diagrams and the species families, as well as the study area in which they were found. In the latter column, S represents Cuatro Calas area (sandstone bedrock), M Calblanque area (metamorphic bedrock) and L Moreras Mountain area (limestone bedrock).')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+
+\newpage
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table3 <- read_delim("data/appendixD/tableR3.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+options(knitr.kable.NA = "")
+knitr::kable(table3, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Final generalized mix models applied for Remaining Green Canopy (RGC) and mortality respectively.",
+             caption = 'Final generalized mix models applied for Remaining Green Canopy (RGC) and mortality respectively.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 7)
+```
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table4 <- read_delim("data/appendixD/tableR4.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+options(knitr.kable.NA = "")
+knitr::kable(table4, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Model accuracy of each sampled species distribution model estimated with MaxEnt.",
+             caption = 'Model accuracy of each sampled species distribution model estimated with MaxEnt. AUC column shows average of 5 alternative models (5-fold cross-validation) and Sd-AUC column shows the standard deviation of AUC values per species.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table5 <- read_delim("data/appendixD/tableR5.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+table5 <- table5[,-2]
+table5[4] <- table5[3]
+table5 <- table5[,-3]
+colnames(table5)[1] <-""
+colnames(table5)[7] <-""
+
+options(knitr.kable.NA = "")
+knitr::kable(table5, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of distances to niche centroid.",
+             caption = 'Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of soil bedrock and population distances to species niche centroid during the reference period 1979-2012 and the interaction between these two variables, with plot and species as crossed random effects.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 7)
+```
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table6 <- read_delim("data/appendixD/tableR6.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+colnames(table6)[1] <-""
+colnames(table6)[7] <-""
+
+options(knitr.kable.NA = "")
+knitr::kable(table6, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of distances to species niche limit.",
+             caption = 'Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of soil bedrock and populations distances to the closest point of species niche limit during the reference period 1979-2012 and the interaction between distance and population position in or out of the niche. The model corresponds to the reference period, with plot and species as crossed random effects.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table7 <- read_delim("data/appendixD/tableR7.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+colnames(table7)[1] <-""
+colnames(table7)[6] <-""
+
+options(knitr.kable.NA = "")
+knitr::kable(table7, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Results of Generalized Mixed Models explaining mortality percentage as a function of distances to species niche centroid.",
+             caption = 'Results of Generalized Mixed Models explaining mortality percentage as a function of soil bedrock and population distances to species niche centroid during the reference period 1979-2012, with plot and species as crossed random effects.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table8 <- read_delim("data/appendixD/tableR8.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+colnames(table8)[1] <-""
+colnames(table8)[6] <-""
+
+options(knitr.kable.NA = "")
+knitr::kable(table8, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Results of Generalized Mixed Models explaining mortality percentage as a function ofdistances to species niche limit.",
+             caption = 'Results of Generalized Mixed Models explaining mortality percentage as a function of soil bedrock and populations distances to the closest point of species niche limit during the reference period 1979-2012 and the interaction between distance and population position in or out of the niche during the reference period, with plot and species as crossed random effects.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table9 <- read_delim("data/appendixD/tableR9.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+colnames(table9)[1] <-""
+colnames(table9)[7] <-""
+
+options(knitr.kable.NA = "")
+knitr::kable(table9, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of soil bedrock and population climatic suitability for the extreme drought episode (2013-2014)",
+             caption = 'Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of soil bedrock and population climatic suitability estimated with MaxEnt for the extreme drought episode (2013-2014), and the interaction between these two variables, with plot and species as crossed random effects')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 7)
+```
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table10 <- read_delim("data/appendixD/tableR10.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+colnames(table10)[1] <-""
+colnames(table10)[7] <-""
+
+options(knitr.kable.NA = "")
+knitr::kable(table10, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of soil bedrock and population climatic suitability for the reference period 1979-2012",
+             caption = 'Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of soil bedrock and population climatic suitability estimated with MaxEnt for the reference period 1979-2012 and the interaction between these two variables, with plot and species as crossed random effects.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 7)
+```
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table11 <- read_delim("data/appendixD/tableR11.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+colnames(table11)[8] <-""
+
+options(knitr.kable.NA = "")
+knitr::kable(table11, escape = FALSE, linesep = "",digits = 3,booktabs = T,caption.short = "Result of lsmeans contrast between bedrock types in mortality and RGC models",caption = 'Result of lsmeans contrast (post-hoc test) between bedrock types in models relating mortality percentage or remaining green canopy with population distances to niche centroid and to the niche limit during the extreme episode (2013-2014).')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)%>%
+  column_spec(1,width = "20em") %>%
+  collapse_rows(columns = 1)%>%
+  kableExtra::landscape()
+```
+
+
+# Appendix Chapter 5
+\newpage
+
+```{r, echo=FALSE, message=FALSE, out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Climatic anomalies for the study sites",fig.cap="The graphic shows climatic anomalies for the three studied areas. Red colour represents Moreras Mountain (i.e., limestone bedrock), green colour represents Calblanque Natural Park (i.e. metamorphic bedrock) and blue colour represents Cuatro Calas area (i.e. sandstone bedrock). Yearly anomaly values were calculated as (annual rainfall – mean period rainfall)/ mean period rainfall. Moreover, mix models explaining precipitation anomaly in function of site with year as random effect were performed, showing no significant differences between sites. P value and model marginal $R^2$ are shown in the bottom left area of the graphic."}
+knitr::include_graphics(path = "figure/appendixE/figure1.png")
+```
+\newpage
+```{r, echo=FALSE, message=FALSE, out.width = '80%',fig.pos="hbt!", fig.align="center", fig.scap="Correlation circle obtained from PCA from the twelve selected climatic variables.",fig.cap="Correlation circle obtained from PCA from the twelve selected climatic variables. Where BIO1 = Annual Mean Temperature, BIO4 = Temperature Seasonality (standard deviation×100), BIO5 = Max Temperature of Warmest Month, BIO6 = Min Temperature of Coldest Month, BIO10 = Mean Temperature of Warmest Quarter, BIO11 = Mean Temperature of Coldest Quarter, BIO12 = Annual Precipitation, BIO13 = Precipitation of Wettest Month, BIO14 = Precipitation of Driest Month, BIO15 = Precipitation Seasonality (Coefficient of Variation), BIO16 = Precipitation of Wettest Quarter, BIO17 = Precipitation of Driest Quarter. The PCA was calibrated using climatic data from the total filtered 106,876 occurrences from gbif.org for all the 38 sampled species. First and second axes contained 78.5\\% of explained variability. The variables' colour represents the percentage of each variable' contribution to the PCA."}
+knitr::include_graphics(path = "figure/appendixE/figure2.jpg")
+```
+\newpage
+A)\newline
+```{r, echo=FALSE, message=FALSE, out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixE/figure31.jpg")
+```
+B)\newline
+```{r, echo=FALSE, message=FALSE, out.width = '90%',fig.pos="hbt!", fig.align="center"}
+knitr::include_graphics(path = "figure/appendixE/figure32.jpg")
+```
+\newpage
+C)\newline
+```{r, echo=FALSE, message=FALSE, out.width = '90%',fig.pos="hbt!", fig.align="center", fig.scap="Univariant community climatic disequilibrium before  and after drought",fig.cap="Univariant community climatic disequilibrium before (average period 1970-2000 Worldclim) and after drought (2013-2014) for each individual climatic variable. Community climatic disequilibrium was estimated as (CIC-OC)/OC per each variable. Variables with * showed significant changes in community disequilibrium after drought. A graphic shows univariant community climatic disequilibrium for sandstone bedrock, B graphic shows univariant community climatic disequilibrium for limestone bedrock and C graphic shows univariant community climatic disequilibrium for metamorphic bedrock."}
+knitr::include_graphics(path = "figure/appendixE/figure33.jpg")
+```
+\newpage
+```{r, echo=FALSE, message=FALSE, out.width = '80%',fig.pos="hbt!", fig.align="center", fig.scap="Soil particle composition of the three different study sites",fig.cap="Soil particle composition of the three different study sites’ bedrock (i.e., metamorphic bedrock = Calblanque, limestone bedrock = Moreras Mountain, sandstone bedrock = Cuatro Calas). Yellow colour represents the proportion of sands, orange the proportion of clays and dark orange the proportion of silts."}
+knitr::include_graphics(path = "figure/appendixE/figure4.png")
+```
+\newpage
+```{r, echo=FALSE, message=FALSE, out.width = '85%',fig.pos="hbt!", fig.align="center", fig.scap="Soil water content in percentage of volume of different studied bedrocks",fig.cap="Soil water content in percentage of volume of different bedrocks under different water potentials, simulated with \"medfate\" package (Cáceres et al. 2015) using each soil particle composition and organic matter content. In our study we used -0.5 MPa (as field capacity) and -1.5 MPa (as wilting point) but note that regardless of the water potential, limestone bedrock always shows the higher water content, followed by soils in metamorphic and sandstone bedrocks, respectively."}
+knitr::include_graphics(path = "figure/appendixE/figure5.png")
+```
+\newpage
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table1 <- read_delim("data/appendixE/tableZ1.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+
+options(knitr.kable.NA = "")
+knitr::kable(table1, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Carbon and nitrogen content of each studied bedrock.",
+             caption = 'Carbon and nitrogen content of each studied bedrock.')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 7)
+```
+\newpage
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table2 <- read_delim("data/appendixE/tableZ2.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+
+options(knitr.kable.NA = "")
+knitr::kable(table2, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Summary table of analysed species found in the different study sites.",
+             caption = 'Summary table of analysed species found in the different study sites. The table shows the species codes used in climatic diagrams and the species families, as well as the study area in which they were found. In the latter column, S represents the Cuatro calas area (sandstone bedrock), M the Calblanque area (metamorphic bedrock) and L the Moreras Mountain area (limestone bedrock).')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+table3 <- read_delim("data/appendixE/tableZ3.csv",
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+
+options(knitr.kable.NA = "")
+knitr::kable(table3, escape = FALSE, linesep = "",digits = 3,booktabs = T,
+             caption.short = "Least squared means pairwise test results",
+             caption = 'Least squared means pairwise test results. These analyses were performed controlling the effect of the rest of the factors. ')%>%
+  kableExtra::kable_styling(latex_options = "HOLD_position",full_width = F,font_size = 8)
+```

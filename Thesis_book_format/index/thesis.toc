@@ -1,0 +1,80 @@
+\contentsline {chapter}{ 1: Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Understanding species distribution in a changing climate}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Climate as driver of species distributions}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}The niche concept}{4}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Species niche and community assembly}{8}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Predicting species distribution}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Species distribution modelling}{9}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Environmental niche characterization}{15}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Thesis aims and scope}{16}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Setting the scene: the impact of extreme events}{16}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Objectives}{17}{subsection.1.3.2}%
+\contentsline {chapter}{ 2: Population climatic suitability and extreme drought responses}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{23}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Material and methods}{25}{section.2.2}%
+\contentsline {subsubsection}{Study area}{25}{subsubsection*.10}%
+\contentsline {subsubsection}{Field sampling}{26}{subsubsection*.11}%
+\contentsline {subsubsection}{Climatic suitability modelling}{28}{subsubsection*.13}%
+\contentsline {subsubsection}{Statistical analyses}{33}{subsubsection*.16}%
+\contentsline {section}{\numberline {2.3}Results}{33}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Discussion}{38}{section.2.4}%
+\contentsline {subsubsection}{Species' drought responses and climatic suitability}{38}{subsubsection*.21}%
+\contentsline {subsubsection}{SDM algorithms and demographic performance}{40}{subsubsection*.22}%
+\contentsline {subsubsection}{Conclusion}{42}{subsubsection*.23}%
+\contentsline {chapter}{ 3: Temporal variability is key to model the climatic niche}{43}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{45}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Material and methods}{48}{section.3.2}%
+\contentsline {subsubsection}{Niche suitability and demographic responses in \emph {Pinus halepenis}}{48}{subsubsection*.24}%
+\contentsline {subsubsection}{Change in niche size and species climatic range}{51}{subsubsection*.26}%
+\contentsline {section}{\numberline {3.3}Results}{52}{section.3.3}%
+\contentsline {subsubsection}{Niche suitability and demographic responses}{52}{subsubsection*.27}%
+\contentsline {subsubsection}{Change in niche size and species climatic range}{54}{subsubsection*.30}%
+\contentsline {section}{\numberline {3.4}Discussion}{54}{section.3.4}%
+\contentsline {subsubsection}{Including inter-annual variability in niche characterization}{54}{subsubsection*.32}%
+\contentsline {subsubsection}{Climatic variability improves the relationship between macroclimatic suitability and demography}{56}{subsubsection*.33}%
+\contentsline {subsubsection}{Change in niche size across species with different climatic and distribution ranges}{57}{subsubsection*.34}%
+\contentsline {subsubsection}{Other implications of inter-annual variability vs average-based climatic models}{58}{subsubsection*.35}%
+\contentsline {chapter}{ 4: Niche distance as predictor of responses to extreme climatic events}{61}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{63}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Material and methods}{66}{section.4.2}%
+\contentsline {subsubsection}{Study area}{66}{subsubsection*.37}%
+\contentsline {subsubsection}{Die-off data}{67}{subsubsection*.39}%
+\contentsline {subsubsection}{Niche characterization and distances extraction}{68}{subsubsection*.40}%
+\contentsline {subsubsection}{Species niche modelling}{70}{subsubsection*.41}%
+\contentsline {subsubsection}{Statistical analyses}{71}{subsubsection*.42}%
+\contentsline {section}{\numberline {4.3}Results}{72}{section.4.3}%
+\contentsline {subsubsection}{RGC as response variable}{72}{subsubsection*.43}%
+\contentsline {subsubsection}{Mortality as response variable}{73}{subsubsection*.46}%
+\contentsline {subsubsection}{Decay and soil bedrock}{75}{subsubsection*.47}%
+\contentsline {section}{\numberline {4.4}Discussion}{77}{section.4.4}%
+\contentsline {subsubsection}{Niche estimates and demographic responses under extreme climatic events}{77}{subsubsection*.52}%
+\contentsline {subsubsection}{Distances in the environmental space vs climatic suitability}{79}{subsubsection*.53}%
+\contentsline {subsubsection}{Soils' relevance on species decay}{81}{subsubsection*.54}%
+\contentsline {subsubsection}{Conclusion}{82}{subsubsection*.55}%
+\contentsline {chapter}{ 5: Climatic disequilibrium reduction in dryland communities}{83}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{85}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Material and methods}{87}{section.5.2}%
+\contentsline {subsubsection}{Study area and field analyses}{88}{subsubsection*.56}%
+\contentsline {subsubsection}{Community data}{89}{subsubsection*.58}%
+\contentsline {subsubsection}{Species occurrence data}{91}{subsubsection*.59}%
+\contentsline {subsubsection}{Climate data}{91}{subsubsection*.60}%
+\contentsline {subsubsection}{Community climate framework}{91}{subsubsection*.61}%
+\contentsline {subsubsection}{Statistical analyses}{93}{subsubsection*.63}%
+\contentsline {section}{\numberline {5.3}Results}{94}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Discussion}{96}{section.5.4}%
+\contentsline {subsubsection}{Impact of extreme drought on climatic disequilibrium}{96}{subsubsection*.67}%
+\contentsline {subsubsection}{Bedrock and soil modulate vegetation response to climate}{97}{subsubsection*.68}%
+\contentsline {subsubsection}{Considerations about community climate (disequilibrium) characterization}{99}{subsubsection*.70}%
+\contentsline {subsubsection}{Implications for plant communities under climate change}{101}{subsubsection*.71}%
+\contentsline {chapter}{ 6: General discussion and conclusions}{103}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Climatic suitability derived from SDMs as a proxy to explain species decay}{104}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Alternatives to overcome SDMs limitations when estimating species performance under extreme climatic conditions}{106}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Extreme climate episodes' impact on community climatic disequilibrium}{108}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Local variables relevance on species decay. The case of bedrock and soil.}{109}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Conclusions}{111}{section.6.5}%
+\contentsline {chapter}{Appendix A: Appendix Chapter 2}{113}{appendix.A}%
+\contentsline {chapter}{Appendix B: Appendix Chapter 3}{139}{appendix.B}%
+\contentsline {chapter}{Appendix C: Appendix Chapter 4}{149}{appendix.C}%
+\contentsline {chapter}{Appendix D: Appendix Chapter 5}{163}{appendix.D}%
+\contentsline {chapter}{Acronyms}{173}{appendix*.118}%
+\contentsline {chapter}{References}{175}{appendix*.119}%
