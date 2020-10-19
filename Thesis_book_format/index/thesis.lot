@@ -1,40 +1,5 @@
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Main settings used in the different SDM modeling approaches.}}{31}{table.caption.14}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Main species information and attributes used in statistical analyses}}{32}{table.caption.15}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces AIC and Adjusted $R^2$ of GLMs explaining remaining green canopy}}{36}{table.caption.19}%
-\contentsline {table}{\numberline {2.4}{\ignorespaces Results of GLMs explaining Remaining Green Canopy (RGC)}}{37}{table.caption.20}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Model result of Remaining Green Canopy (RGC) as a function of soil bedrock and populations’ distances to species niche centroid}}{76}{table.caption.48}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Model result of Remaining Green Canopy (RGC) as a function of soil bedrock and populations’ distances to the closest point of species niche limit}}{76}{table.caption.49}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Model result of mortality percentage as a function of soil bedrock and populations’ distances to species niche centroid}}{77}{table.caption.50}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Model result of mortality as a function of soil bedrock and populations’ distances to the closest point of species niche limit}}{77}{table.caption.51}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Mean and standard deviation of Climatic Disequilibrium before and after drought}}{95}{table.caption.65}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Results of mix models explaining community climatic disequilibrium (CD)}}{96}{table.caption.66}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Pearson correlation values comparing visual drought estimates and defoliation}}{138}{table.caption.83}%
-\contentsline {table}{\numberline {A.2}{\ignorespaces Median and range values for Historical Climatic Suitability and Episode Climatic Suitability}}{138}{table.caption.84}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Species used for analyses of changes in niche space depending on species climatic range}}{145}{table.B.1}%
-\contentsline {table}{\numberline {B.2}{\ignorespaces GLM binomial model results relating $Pinus$ decay with species climatic niche suitability}}{146}{table.caption.90}%
-\contentsline {table}{\numberline {B.3}{\ignorespaces Model results relating models explanatory capacity in relation to the percentage of populations located in the non-shared niche space}}{147}{table.caption.91}%
-\contentsline {table}{\numberline {B.4}{\ignorespaces Model results relating relating ratio of niche area and niche average size}}{147}{table.caption.92}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces Carbon and nitrogen content of each studied bedrock, following (Anne 1945, Duchaufour 1970) method.}}{156}{table.caption.99}%
-\contentsline {table}{\numberline {C.2}{\ignorespaces Summary table of analysed species}}{157}{table.caption.100}%
-\contentsline {table}{\numberline {C.3}{\ignorespaces Final generalized mix models applied for Remaining Green Canopy (RGC) and mortality respectively.}}{158}{table.caption.101}%
-\contentsline {table}{\numberline {C.4}{\ignorespaces Model accuracy of each sampled species distribution model estimated with MaxEnt.}}{159}{table.caption.102}%
-\contentsline {table}{\numberline {C.5}{\ignorespaces Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of distances to niche centroid.}}{160}{table.caption.103}%
-\contentsline {table}{\numberline {C.6}{\ignorespaces Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of distances to species niche limit.}}{160}{table.caption.104}%
-\contentsline {table}{\numberline {C.7}{\ignorespaces Results of Generalized Mixed Models explaining mortality percentage as a function of distances to species niche centroid.}}{160}{table.caption.105}%
-\contentsline {table}{\numberline {C.8}{\ignorespaces Results of Generalized Mixed Models explaining mortality percentage as a function ofdistances to species niche limit.}}{161}{table.caption.106}%
-\contentsline {table}{\numberline {C.9}{\ignorespaces Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of soil bedrock and population climatic suitability for the extreme drought episode (2013-2014)}}{161}{table.caption.107}%
-\contentsline {table}{\numberline {C.10}{\ignorespaces Results of Generalized Mixed Models explaining Remaining Green Canopy (RGC) as a function of soil bedrock and population climatic suitability for the reference period 1979-2012}}{161}{table.caption.108}%
-\contentsline {table}{\numberline {C.11}{\ignorespaces Result of lsmeans contrast between bedrock types in mortality and RGC models}}{162}{table.caption.109}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Carbon and nitrogen content of each studied bedrock.}}{170}{table.caption.115}%
-\contentsline {table}{\numberline {D.2}{\ignorespaces Summary table of analysed species found in the different study sites.}}{171}{table.caption.116}%
-\contentsline {table}{\numberline {D.3}{\ignorespaces Least squared means pairwise test results}}{172}{table.caption.117}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Analysis summary for the different methods and families of methods obtained from the LMM models (least-squares means). We provide the four dimensionless metrics: the Ln-ratio as a measure of accuracy, the accuracy deviation calculated as the exponential of the Ln-ratio minus one multiplied by 100, the Slope to characterize the proportional bias, the slope of the ln-ln-relationship, Slope (ln-ln), as a measure of linearity, and Z Pearson\IeC {\textquoteright }s correlation (Z-Cor) to describe overall precision; n: number of calibrations; studies: number of studies of each method; species: number of different species; r is the correlation calculated as the tanh of Z-Cor.\relax }}{15}{table.caption.9}
+\contentsline {table}{\numberline {1.2}{\ignorespaces Error analysis of different sap flow methods. The normalized root mean square error (NRMSE) is modelled as a function of method and the mean flow range for each calibration (and their interaction) using a LMM model with the same random structure as the main models (cf. section 2.3). $\beta _0$ and $\beta _1$ are the corresponding intercepts and slopes, respectively ($\beta _0$ expressed as \% NRMSE; $\beta _1$ expressed as \% NRMSE per change in $cm^3$ $cm^{-2}$ $h^{-1}$ for SFD or as \% NRMSE per change in $cm^3$ $h^{-1}$ for SF). This linear model, was also used to calculate a reference NRMSE at a sap flux equivalent to the percentile 50 of the range of the data in the calibrations (SFD: 25 $cm^3$ $cm^{-2}$ $h^{-1}$; SF: 1300 $cm^3$ $h^{-1}$). The expected NRMSE and RMSE (in brackets, in $cm^3$ $cm^{-2}$ $h^{-1}$, except for SHB that is in $cm^3$ $h^{-1}$) at a typical flow are also given.\relax }}{19}{table.caption.12}
+\contentsline {table}{\numberline {1.3}{\ignorespaces Least-squares means and 95\% CI calculated from the LMM models testing the effect of different wood porosity types (Wood porosity) on sap flow calibration performance metrics (Ln-Ratio as a proxy for accuracy, Slope for proportional bias, Slope (ln-ln) for linearity, and Z-Cor for precision) for CHP and TD methods. No differences were detected among wood anatomies. Significance levels indicate departure from an ideal calibration (Ln-Ratio = 0; Slope = 1; Slope (ln-ln) = 1)\relax }}{21}{table.caption.14}
+\contentsline {table}{\numberline {1.4}{\ignorespaces Synthesis of the potential sources of error and use adequacy for each method. Crosses indicates that the method is sensitive to the respective source of error (updated from Vandegehuchte and Steppe, 2013). Methods are classified according to their use effectiveness under different flow conditions: dark grey, light grey and white indicate highly, partially and no recommended use, respectively. When assessing use adequacy for high/low flows, dark and light gray indicate a Normalized Root Mean Square Error (NRMSE) less than a 22\% and a 44\%, respectively, calculated with the NRMSE model (Table 1.2). In Absolute flows use recommendation, dark grey shows methods with both accuracy (Ln-Ratio) and proportional bias (Slope) not significantly different from a perfect calibration. In Relative flows use recommendation, dark grey shows methods with linearity (Slope (ln-ln)) not significantly different from a perfect calibration and with reasonable precision. Potentiality of measuring small stems diameters (< 125mm) is also reported.\relax }}{23}{table.caption.16}

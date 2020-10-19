@@ -37,6 +37,8 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
+  \DeclareUnicodeCharacter{2010}{-}% support older LaTeX versions
+
 \else % if luatex or xelatex
   \ifxetex
     \usepackage{mathspec}
