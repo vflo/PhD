@@ -71,7 +71,7 @@ Z-Cor_i = \frac{1}{2}ln(\frac{1+r_i}{1-r_i})
 Low values of $Z-Cor$ correspond to low r correlations, and high values of $Z-Cor$ correspond to high $r$ correlations and thus high precision (data set range $r$ = [0.0491 – 0.9999]; $r$= 0.0491 ~ $z$ = 0.0491; $r$ = 0.9999 ~ $z$ = 5.1594).\par
 
 ```{r ch1fig1, echo=FALSE,  out.width = '55%',fig.pos="hbt!", fig.align="center", fig.cap="Graphical representation of the calibration performance metrics used in the analyses. Each panel presents the same simulated calibration points, representing plausible data. Blue dots represent an accurate, unbiased, linear and precise calibration, while red dots represent an inaccurate, biased, non-linear and imprecise calibration."}
-knitr::include_graphics(path = "figure/PLOTMETRICS.png")
+knitr::include_graphics(path = "figure/CH2/PLOTMETRICS.png")
 ```
 
 In the analysis of the absolute errors of sap flow measurements, we calculated the Normalized Root Mean Square Error (NRMSE) for each calibration ($i$) (Eq. 6), separately for SFD and SF methods, in order to obtain the percentage of absolute error at the mean range of each calibration ($i$). 
@@ -107,7 +107,7 @@ knitr::kable(Ch1T1, "latex", booktabs = T,escape = FALSE,align='l',linesep = "",
 ```
 
 ```{r ch1fig2, echo=FALSE,  out.width = '55%',fig.pos="hbt!", fig.align="center", fig.cap="Distribution of the calibration performance metrics for each method. Dots represents the value of each individual calibration metric. Crosses represent the average of the metric for each method. Horizontal, dashed lines specify reference, perfect calibration values for a given metric."}
-knitr::include_graphics(path = "figure/Distribution-metrics-orderedV4.png")
+knitr::include_graphics(path = "figure/CH2/Distribution-metrics-orderedV4.png")
 ```
 
 
@@ -119,7 +119,7 @@ Proportional bias, estimated by Slope, varied among methods and families of meth
 
 ```{r ch1fig3, echo=FALSE,  out.width = '100%', fig.pos="p", fig.align="center", fig.cap="Predictions of the LMM models calculated from least-squares means of the four calibration metrics (Ln-Ratio as a proxy for mean accuracy, Slope for proportional bias, Slope (ln-ln) for linearity and Z-Cor for precision) for (a) different families of sap flow methods or for (b) different sap flow methods and for different calibration materials (Segment: stem segment; Whole plant: whole plant on a container or lysimeter; No-roots: whole plant without roots). 95\\% confidence intervals of the estimates are also shown. Different letters indicate significant differences between factors levels evaluated with Tukey\'s test. Horizontal, dotted lines indicate reference, perfect calibration values for a given metric. Asterisks (*) indicate significant departure from those reference values."}
 
-knitr::include_graphics(path = "figure/FAMILYMETHODS.png")
+knitr::include_graphics(path = "figure/CH2/FAMILYMETHODS.png")
 ```
 
 Calibration linearity, as denoted by Slope (ln-ln), varied across methods and families of methods (p<0.001). We observed higher values of Slope (ln-ln) for the TD method compared to CHP, T-max, HR and HFD. Consistently, the Dissipation family in general also had a higher Slope (ln-ln) than the Pulse and Field families (Fig. 1.3). CHP, T-max and HFD (and Pulse and Field methods in general) had a Slope (ln-ln) significantly lower than 1 (Table 1.1 and Fig. 1.3(b)), indicating a convex relationship between reference and measured flow. Calibrations performed with whole plants suffered from lack of linearity, indicated by Slope (ln-ln) significantly lower than 1 (Fig. 1.3).\par
@@ -157,7 +157,7 @@ We did not find any significant difference among wood porosity types in calibrat
 
 ```{r ch1fig4, echo=FALSE,  out.width = '55%', fig.pos="hbt!", fig.align="center", fig.cap="Relationship between the four calibration performance metrics (Ln-Ratio as a proxy for accuracy, Slope for proportional bias, Slope (ln-ln) for linearity, and Z-Cor for precision) and wood density, for different sap flow methods. Horizontal, dashed red lines indicate reference, perfect calibration values for a given metric. Regression lines are shown for significant effects only, and the corresponding level of significance (p-value: <0.1: (.), <0.05: (*), < 0.01: (**), < 0.001: (***)) is also reported "}
 
-knitr::include_graphics(path = "figure/DENSITY.png")
+knitr::include_graphics(path = "figure/CH2/DENSITY.png")
 ```
 
 ```{r Ch1T3, echo=FALSE,message=FALSE,fig.pos="hbt!",fig.align="center"}
@@ -226,7 +226,7 @@ Our analysis did not detect the saturation effect for the HR method at high flow
 
 ```{r ch1fig5, echo=FALSE,  out.width = '100%', fig.pos="p", fig.align="center", fig.cap="Relationship between measured and reference sap-flux density (SFD) for different sap flow methods, studies and calibrations. The fits of ln-ln regressions (Eq. 4) for each calibration are also depicted. Different colors represent different studies that report results in sap-flux density units. Scales vary across panels to facilitate intra method comparison. The red dotted line indicates the 1:1 relationship."}
 
-knitr::include_graphics(path = "figure/figure-density.png")
+knitr::include_graphics(path = "figure/CH2/figure-density.png")
 ```
 
 Despite the large variability in precision within methods, our results show that calibrations performed with HFD give more precise results than those conducted using the CHP, TD and TTD methods. Although this result should be interpreted with care as it is based on 57 calibrations but only from 3 studies, the higher precision observed with HFD could lie in the second dimension included in the method, which could better capture the effect of anisotropy of the wood structure. This would also be consistent with the fact that SHB, a method that is assumed to integrate sap flow variability within the stem, was the method with the second highest precision on average, albeit precision was very variable for this method (Fig. 1.3(b)).\par
@@ -235,7 +235,7 @@ We did not detect differences in accuracy, proportional bias or linearity of the
 
 ```{r ch1fig6, echo=FALSE,  out.width = '100%', fig.pos="p", fig.align="center", fig.cap="Relationship between measured and reference sap flow (SF) for different sap flow methods, studies and calibrations. The fits of ln-ln regressions (Eq. 4) for each calibration are also depicted. Different color symbols and line types represent different studies. Scales varies across panels to facilitate intra method comparison. Insets are shown in some panels (T-max, SHB, TD) to facilitate visualization when the flow ranges differed markedly among calibrations for the same method. The red dotted line indicates 1:1 relationship."}
 
-knitr::include_graphics(path = "figure/figure-totalflow.png")
+knitr::include_graphics(path = "figure/CH2/figure-totalflow.png")
 ```
 
 ###The performance of sap flow calibrations is largely unrelated to species wood traits
