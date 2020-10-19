@@ -2,7 +2,9 @@
 
 [![License MIT](http://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
 ![Version](http://img.shields.io/badge/version-0.1-brightgreen.svg)
-** Global ecological drivers of transpiration regulation in woody plants **
+
+
+# Global ecological drivers of transpiration regulation in woody plants
 
 ## Author(s)
 *   Victor Flo. Ecology Department, CREAF, Universitat Autònoma de Barcelona.
