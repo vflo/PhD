@@ -42,7 +42,7 @@ Once datasets were received, they were stored and entered a process of data harm
 
 \setlength{\abovecaptionskip}{0pt}
 ```{r Ch2plot1, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Overview of the SAPFLUXNET data workflow. Data files are received from data contributors, and undergo several quality-control processes (QC1 and QC2). Both, QC1 and QC2 produce an .RData object of the custom-designed sfn-data S4 class storing all data, metadata and data flags for each dataset. The progress and results of the QC processes are monitored through individual reports and log files. The final outcome, is stored in a folder structure with a either single .RData file for each dataset or a set of seven csv files for each dataset."}
-knitr::include_graphics(path = "figure/CH3/Figure1.png")
+knitr::include_graphics(path = "figure/CH3/Figure1.eps")
 ```
 
 The first stage of the data QC (QC1) performed several data checks (Supplement Table S1) on received spreadsheet files and produced an interactive report in an R markdown document, which signalled possible inconsistencies in the data and warned of potential errors. These data issues were addressed, with the help of data contributors, if needed. Once no errors remained, the dataset was converted into an object of the custom-designed ‘sfn_data’ class (Supplement Fig. S2, see also section 2.5), which contained all data and metadata for a given dataset (Appendix Tables A2–A6 list all variable names). Data and metadata belonging to all Level 1 datasets were further visually inspected using an interactive R Shiny application, and, if no major issues were detected, they were subjected to the second QC process, QC2.\par
@@ -66,7 +66,7 @@ The SAPFLUXNET version 0.1.5 database harbours 202 globally distributed datasets
 
 \setlength{\abovecaptionskip}{0pt}
 ```{r Ch2plot2, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="(a) Geographic, (b) bioclimatic and (c) vegetation type distribution of SAPFLUXNET datasets. In (a) woodland area from Crowther et al. (2015) is shown in green. In (b) we represent the different datasets according to their mean annual temperature and precipitation in a Whittaker diagram showing the classification of the main terrestrial biomes. In (c) vegetation types are defined according to the International Geosphere-Biosphere Programme (IGBP) classification (ENF: Evergreen Needleleaf Forest; DBF: Deciduous Broadleaf Forest; EBF: Evergreen Broadleaf Forest; MF: Mixed Forest; DNF: Deciduous Needleleaf forest; SAV: Savannas; WSA: Woody Savannas; WET: Permanent Wetlands)."}
-knitr::include_graphics(path = "figure/CH3/Figure2.png")
+knitr::include_graphics(path = "figure/CH3/Figure2.pdf")
 ```
 
 
@@ -74,7 +74,7 @@ SAPFLUXNET contains sap flow data for 2714 individual plants (1584 angiosperms a
 
 \setlength{\abovecaptionskip}{0pt}
 ```{r Ch2plot3, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Taxonomic distribution of genera and species in SAPFLUXNET, showing (a) species and (b) genera with > 50 plants in the database. Total bar height depicts number of plants per species (a) or genera (b). Numbers on top of each bar show the number of datasets where each species (a) or genus (b) is present. Colours other than grey highlight datasets with 15 or more plants of a given species (a) or genus (b). Bar height for a given colour is proportional to the number of plants in the corresponding dataset, which is also shown in parentheses next to the dataset code."}
-knitr::include_graphics(path = "figure/CH3/Figure3.png")
+knitr::include_graphics(path = "figure/CH3/Figure3.pdf")
 ```
 
 
@@ -84,7 +84,7 @@ For more than 90% of the plants, sap flow at the whole-plant level is available 
 
 \setlength{\abovecaptionskip}{0pt}
 ```{r Ch2plot4, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Distribution of plants in SAPFLUXNET according to major taxonomic group (angiosperms, gymnosperms), sap flow method (CHD:cycling heat dissipation; CHP: compensation heat pulse; HD: heat dissipation; HFD: heat field deformation: HPTM: heat pulse T-max (HPTM): HRM: heat ratio (HR); SHB: stem heat balance; TSHB: trunk sector heat balance) and reference unit for the expression of sap flow (plant, sapwood area, leaf area). Combinations of reference units imply that data are present in multiple units."}
-knitr::include_graphics(path = "figure/CH3/Figure4.png")
+knitr::include_graphics(path = "figure/CH3/Figure4.pdf")
 ```
 
 
@@ -97,7 +97,7 @@ Plant-level metadata is almost complete (99.5% of the individuals) for diameter 
 
 \setlength{\abovecaptionskip}{0pt}
 ```{r Ch2plot5, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Characteristics of trees and stands in the SAPFLUXNET database. Panel (a) shows plant data and kernel density plots of the main plant attributes, coloured by taxonomic group (angiosperms and gymnosperms): diameter at breast height (DBH), plant height, sapwood area, sapwood depth and leaf area. The inset in the sapwood area panel zooms in values lower than 5000 cm². Panel (b) shows stand data and kernel density plots of the main stand attributes: stand age, stand height, stem density, stand basal area,leaf area index (LAI) and soil depth."}
-knitr::include_graphics(path = "figure/CH3/Figure5.png")
+knitr::include_graphics(path = "figure/CH3/Figure5.pdf")
 ```
 
 Plant size metadata in SAPFLUXNET is complemented with plant-level data of sapwood and leaf area, that provide information on the functional areas for water transport and loss (Fig. 5a). Distributions of sapwood and leaf area show highly skewed distributions, with long tails towards the largest values and slightly higher median values for gymnosperms (262 cm2 and 33.0 m2 for sapwood and leaf areas, respectively), compared to angiosperms (168 cm2 and 29.9 m2). Accordingly, median sapwood depth is also higher for gymnosperms (5.1 cm) compared to angiosperms (3.7 cm). The largest trees (Mortoniodendron, Pouteria, Agathis) with deep sapwood (17–24 cm) are also those with largest sapwood areas. Many large angiosperm trees from tropical (CRI_TAM_TOW, IDN_PON_STE, GUF_GUY_ST2; see Table S3 for dataset codes) and temperate forests (Fagus grandifolia, USA_SMIC_SCB) also show large sapwood areas (> 5000 cm2), but the plant with the deepest sapwood is a gymnosperm, an Abies pinsapo in Spain with 30.7 cm of sapwood depth.\par
@@ -114,7 +114,7 @@ The number of plants per dataset is highly variable, with most of the datasets (
 
 \setlength{\abovecaptionskip}{0pt}
 ```{r Ch2plot6, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="(a) Measurement duration of SAPFLUXNET datasets expressed in number of days with sap flow data and coloured by the number of plants measured on each day . The 30 longest datasets are labelled. For each dataset in panel (a), panel (b) shows its corresponding measurement period."}
-knitr::include_graphics(path = "figure/CH3/Figure6.png")
+knitr::include_graphics(path = "figure/CH3/Figure6.pdf")
 ```
 
 ###Temporal characteristics
@@ -126,7 +126,7 @@ SAPFLUXNET provides an unprecedented database to study the detailed temporal dyn
 
 \setlength{\abovecaptionskip}{0pt}
 ```{r Ch2plot7, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Fingerprint plots showing hourly sap flow per unit sapwood area (colour scale) as a function of hour of day (x-axis) and day of year (y-axis) for a selection of SAPFLUXNET sites with at least four co-occurring species. Panel (a) shows data from a Woodland/Shrubland forest in NE Spain (ESP_CAN), for an average (2011) and a dry (2012) year. Panel (b) shows data for a mesic Temperate forest (USA_WVF) and panel (c) shows data for a Tropical forest (CRI_TAM_TOW). For this latter site, only 4 of the 17 measured species are shown and some of them were only identified at the genus level."}
-knitr::include_graphics(path = "figure/CH3/Figure7.png")
+knitr::include_graphics(path = "figure/CH3/Figure7.pdf")
 ```
 
 ###Availability of environmental data
@@ -135,7 +135,7 @@ All SAPFLUXNET datasets contain ancillary time series of the main hydrometeorolo
 
 \setlength{\abovecaptionskip}{0pt}
 ```{r Ch2plot8, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Summary of the availability of different environmental variables in SAPFLUXNET datasets. (a) Distribution of meteorological variables according to sensor location (in brackets, names of the variables in the database), (b) Distribution of soil moisture variables according to the measurement depth (in brackets, names of the variables in the database). (c) Venn diagram showing the number of datasets where each combination of different environmental variables are present, grouping shortwave, PPFD and net radiation under ‘Radiation’ variables."}
-knitr::include_graphics(path = "figure/CH3/Figure8.png")
+knitr::include_graphics(path = "figure/CH3/Figure8.pdf")
 ```
 
 ##Potential applications
@@ -159,7 +159,7 @@ The SAPFLUXNET database will provide a long-demanded data source to be used in e
 
 \setlength{\abovecaptionskip}{0pt}
 ```{r Ch2plot9, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Potential for upscaling species-specific plant sap flow to stand-level sap flow using SAPFLUXNET datasets. Datasets are shown using an aggregated biome classification; ‘Dry and Tropical’ include: ‘Subtropical desert’, ‘Temperate grassland desert’,‘Tropical forest savanna’ and ‘Tropical rain forest’. Each panel shows the percentage of total stand basal area that is covered by sap flow measurements for each species in the dataset. Datasets are also coloured by the number of species present. Numbers on top of each bar depict the total number of plants for a given dataset. Empty bars show datasets for which sap flow data expressed at the plant level were not available."}
-knitr::include_graphics(path = "figure/CH3/Figure9.png")
+knitr::include_graphics(path = "figure/CH3/Figure9.pdf")
 ```
 
 
