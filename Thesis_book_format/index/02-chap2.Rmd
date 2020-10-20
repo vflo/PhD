@@ -4,6 +4,7 @@ Victor Flo, Jordi Martinez-Vilalta, Kathy Steppe, Bernhard Schuldt, Rafael Poyat
 \newpage
 \setlength{\parindent}{30pt}
 
+
 \section*{Abstract}
 Sap flow measurements with thermometric methods are widely used to measure transpiration in plants. Different method families exist depending on how they apply heat and track sapwood temperature (heat pulse, heat dissipation, heat field deformation or heat balance). These methods have been calibrated for many species, but a global assessment of their uncertainty and reliability has not yet been conducted. Here we perform a meta-analysis of 290 individual calibration experiments assembled from the literature to assess calibration performance and how this varies across methods, experimental conditions and wood properties (density and porosity types). We used different metrics to characterize mean accuracy (closeness of the measurements to the true, reference value), proportional bias (resulting from an effect of measured flow on the magnitude of the error), linearity in the relationship between measurements and reference values, and precision (reproducibility and repeatability). We found a large intra- and inter-method variability in calibration performance, with a low proportion of this variability explained by species. Calibration performance was best when using stem segments. We did not find evidence of strong effects of wood density or porosity type in calibration performance. Dissipation methods showed lower accuracy and higher proportional bias than the other methods but they showed relatively high linearity and precision. Pulse methods also showed significant proportional bias, driven by their overestimation of low flows. These results suggest that Dissipation methods may be more appropriate to assess relative sap flow (e.g., treatment effects within a study) and Pulse methods may be more suitable to quantify absolute flows. Nevertheless, all sap flow methods showed high precision, allowing potential correction of the measurements when a study-specific calibration is performed. Our understanding of how sap flow methods perform across species would be greatly improved if experimental conditions and wood properties, including changes in wood moisture, were better reported.\par
 
@@ -95,7 +96,7 @@ Most of the published calibrations were performed with Pulse and Dissipation met
 
 
 ```{r Ch1T1, echo=FALSE,message=FALSE,fig.pos="hbt!",fig.align="center"}
-readr::read_delim("data/Ch1T1.csv", 
+readr::read_delim("data/Ch2/Ch2T1.csv", 
     ";", escape_double = FALSE, trim_ws = TRUE)->Ch1T1
 library(tidyverse)
 library(knitr)
@@ -131,7 +132,7 @@ In all the previous models, little variability was explained by species ($\tau 0
 In addition, the analysis of the normalized absolute error for the different methods showed that NRMSE decreased linearly with increasing measured sap flow in CHP, HFD and TTD methods and increased for T-max, SHB and TD (Table 1.2 and Fig. A2).  For HR the increase in NRMSE with measured sap flow was not significant. For all the methods that measure SFD, the absolute error at a typical flow of 25 cm3 cm-2 h-1 ranged between 6.3 cm3 cm-2 h-1 for CHP and 10.7 cm3 cm-2 h-1 for the TTD method (Table 1.2).\par
 
 ```{r Ch1T2, echo=FALSE,message=FALSE,fig.pos="hbt!"}
-readr::read_delim("data/Ch1T2.csv", 
+readr::read_delim("data/Ch2/Ch2T2.csv", 
     ";", escape_double = FALSE, trim_ws = TRUE)->Ch1T2
 library(tidyverse)
 library(knitr)
@@ -161,7 +162,7 @@ knitr::include_graphics(path = "figure/CH2/DENSITY.png")
 ```
 
 ```{r Ch1T3, echo=FALSE,message=FALSE,fig.pos="hbt!",fig.align="center"}
-readr::read_delim("data/Ch1T3.csv", 
+readr::read_delim("data/Ch2/Ch2T3.csv", 
     ";", escape_double = FALSE, trim_ws = TRUE)->Ch1T3
 library(tidyverse)
 library(knitr)
@@ -182,7 +183,7 @@ Our results show a large variability in the quality of sap flow calibrations, ev
 A relatively small part of the total variability in the quality of calibrations is related to methods and families of methods and, to a lesser extent, to the calibration material (fixed effects explain 8 – 28% of the variability in calibration metrics; see $R^2_m$ values in Table A3). Despite the high variability within methods, we detected significant differences between methods. Dissipation methods were the only methods for which accuracy was significantly lower than expected for an ideal calibration. This is consistent with previous reports (@Braun1999; @Bush2010; @Caterina2014; @Chan2015; @DeOliveiraReis2006; @Fuchs2017; @Lu1998; @McCulloh2007; @Montague2006; @Rubilar2017; @Steppe2010; @Taneda2008; @Uddling2009) and our synthesis confirms that most of the individual TD and all TTD calibrations underestimate sap flow systematically (Fig. 1.5). Interestingly, however, other studies have found the opposite result (@Cain2009; @Hultine2010; @Lu2002; @Sperling2012; @Sun2012) and simulation models (@Holtta2015; @Wullschleger2011) suggest that it is difficult to state a priori whether TD will over- or underestimate flow, as the measurements obtained are highly dependent on wood properties and on flux conditions. Our results show that, globally, the conditions leading to underestimation are more frequent and support the existence of a proportional bias underlying this systematic underestimation by TD (Fig. 1.3). It must be also noted, however, that Dissipation methods have been tested against a much wider range of flow conditions compared to the rest of the methods (Fig. 1.5, Fig.6).\par
 
 ```{r Ch1T4, echo=FALSE,message=FALSE,fig.pos="hbt!",fig.align="center"}
-readr::read_delim("data/Ch1T4.csv", 
+readr::read_delim("data/Ch2/Ch2T4.csv", 
     ";", escape_double = FALSE, trim_ws = TRUE)->Ch1T4
 library(tidyverse)
 library(knitr)

@@ -1,0 +1,8 @@
+Method;Wounding;Radial velocity profile;Wood properties;Natural thermal gradients;Sensor installation;Sensor design;Baselining;Power input;Pulse length;Reverse flows;Low flows*;High flows*;Absolute flows;Relative flows;  Small stems
+CHP;x;x;x;x;x;;;;x;0;1;2;2;0;0
+T-max;x;x;x;;x;;x;;;0;1;0;2;0;0
+HR;x;x;x;;x;;;;;2;2;0;2;2;2
+HFD;x;x;;x;x;x;x;x;;2;1;2;2;0;2
+SHB;;;;x;;;x;x;;2;2;0;2;2;2
+TD;x;x;x;x;;x;x;x;;0;1;1;0;2;0
+TTD;x;x;x;x;;x;x;x;;0;0;1;0;2;0

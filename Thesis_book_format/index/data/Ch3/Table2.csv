@@ -1,0 +1,18 @@
+Method,Measured,Sensor-integrated,"Corrected, measured azimuthal variation",No azimuthal correction,Not provided
+CHD,15,0,0,0,4
+CHP,61,0,0,167,0
+HD,216,0,520,1021,46
+HFD,0,0,0,8,0
+HPTM,0,0,0,80,0
+HR,7,0,2,88,8
+SHB,0,0,0,27,0
+TSHB,0,25,191,219,9
+Method,Measured,Sensor-integrated,"Corrected, measured radial variation",No radial correction,Not provided
+CHD,0,0,6,13,0
+CHP,222,0,6,0,0
+HD,77,3,645,703,142
+HFD,2,0,0,6,0
+HPTM,0,0,0,80,0
+HR,57,1,42,3,2
+SHB,0,27,0,0,0
+TSHB,0,338,8,89,9

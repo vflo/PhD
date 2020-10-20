@@ -1,0 +1,5 @@
+Variable,Description,Type,Units
+sp_name,Identity of each measured species,Character,"Scientific name without author abbreviation, as accepted by The Plant List"
+sp_ntrees,Number of trees measured of each species,Numeric,number of trees
+sp_leaf_habit,Leaf habit of the measured species,Character,Fixed values
+sp_basal_area_perc,"Basal area occupied by each measured species, in percentage over total stand basal area",Numeric,% percentage
