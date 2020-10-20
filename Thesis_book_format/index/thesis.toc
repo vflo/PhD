@@ -14,18 +14,18 @@
 \contentsline {subsection}{\numberline {2.2.5}Data structure}{14}{subsection.2.2.5}
 \contentsline {section}{\numberline {2.3}The SAPFLUXNET database}{14}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Data coverage}{14}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Methodological aspects}{19}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Plant characteristics}{20}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Stand characteristics}{24}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Temporal characteristics}{25}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Availability of environmental data}{27}{subsection.2.3.6}
-\contentsline {section}{\numberline {2.4}Potential applications}{27}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Applications in plant ecophysiology and functional ecology}{27}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Applications in ecosystem ecology and ecohydrology}{32}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.3.2}Methodological aspects}{18}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Plant characteristics}{19}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Stand characteristics}{23}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Temporal characteristics}{24}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Availability of environmental data}{26}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}Potential applications}{26}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Applications in plant ecophysiology and functional ecology}{26}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Applications in ecosystem ecology and ecohydrology}{31}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Limitations and future developments}{35}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Limitations}{35}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Outlook}{37}{subsection.2.5.2}
-\contentsline {subsubsection}{Change in niche size and species climatic range}{38}{subsubsection*.19}
+\contentsline {subsubsection}{Change in niche size and species climatic range}{38}{subsubsection*.20}
 \contentsline {section}{\numberline {2.6}Data availability, access and feedback}{38}{section.2.6}
-\contentsline {section}{\numberline {2.7}Conclusion}{38}{section.2.7}
-\contentsline {chapter}{References}{41}{chapter*.20}
+\contentsline {section}{\numberline {2.7}Conclusion}{39}{section.2.7}
+\contentsline {chapter}{References}{41}{chapter*.21}

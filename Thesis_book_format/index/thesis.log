@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.7.24)  20 OCT 2020 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.7.24)  20 OCT 2020 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1551,21 +1551,11 @@ Non-PDF special ignored!
 
 ] [8
 
-] (./thesis.lof
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[9]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 7.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[10])
+] (./thesis.lof)
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
-[11] [12
+[9] [10
 
 ]
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 449.
@@ -1575,13 +1565,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7.69997> on input line 449.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5.5> on input line 449.
-[13]
+[11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[14] [15] [16
+[12] [13] [14
 
 
-] [17] [18
+] [15] [16
 
 
 ]
@@ -1691,7 +1681,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./figure/CH3/Figure1-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figure/CH3/Figure1-eps-converted-to.pdf, id=418, 285.065pt x 508.90125pt>
+<figure/CH3/Figure1-eps-converted-to.pdf, id=334, 285.065pt x 508.90125pt>
 File: figure/CH3/Figure1-eps-converted-to.pdf Graphic file (type pdf)
 <use figure/CH3/Figure1-eps-converted-to.pdf>
 Package pdftex.def Info: figure/CH3/Figure1-eps-converted-to.pdf used on input 
@@ -1726,29 +1716,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14] <figure/CH3/Figure2.pdf, id=443, 568.1225pt x 426.59375pt>
+[14] <figure/CH3/Figure2.pdf, id=358, 568.1225pt x 426.59375pt>
 File: figure/CH3/Figure2.pdf Graphic file (type pdf)
 <use figure/CH3/Figure2.pdf>
-Package pdftex.def Info: figure/CH3/Figure2.pdf used on input line 940.
+Package pdftex.def Info: figure/CH3/Figure2.pdf used on input line 956.
 (pdftex.def)             Requested size: 367.04073pt x 275.61626pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[15]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[16 <./figure/CH3/Figure2.pdf>] <figure/CH3/Figure3.pdf, id=464, 568.1225pt x 7
-10.655pt>
+<figure/CH3/Figure3.pdf, id=359, 568.1225pt x 710.655pt>
 File: figure/CH3/Figure3.pdf Graphic file (type pdf)
 <use figure/CH3/Figure3.pdf>
 Package pdftex.def Info: figure/CH3/Figure3.pdf used on input line 965.
@@ -1762,7 +1735,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
+[15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16 <./figure/CH3/Figure2.pdf>]
 Overfull \vbox (7.42502pt too high) has occurred while \output is active []
 
 
@@ -1771,7 +1753,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./figure/CH3/Figure3.pdf>] <figure/CH3/Figure4.pdf, id=481, 426.59375pt x 
+[17 <./figure/CH3/Figure3.pdf>] <figure/CH3/Figure4.pdf, id=391, 426.59375pt x 
 426.59375pt>
 File: figure/CH3/Figure4.pdf Graphic file (type pdf)
 <use figure/CH3/Figure4.pdf>
@@ -1786,27 +1768,37 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 1070.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[18]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./figure/CH3/Figure4.pdf>] <figure/CH3/Figure5.pdf, id=499, 568.1225pt x 5
+[19 <./figure/CH3/Figure4.pdf>] <figure/CH3/Figure5.pdf, id=410, 568.1225pt x 5
 97.23125pt>
 File: figure/CH3/Figure5.pdf Graphic file (type pdf)
 <use figure/CH3/Figure5.pdf>
-Package pdftex.def Info: figure/CH3/Figure5.pdf used on input line 1096.
+Package pdftex.def Info: figure/CH3/Figure5.pdf used on input line 1097.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 1101
+.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1820,24 +1812,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
+[22 <./figure/CH3/Figure5.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23 <./figure/CH3/Figure5.pdf>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[24] <figure/CH3/Figure6.pdf, id=533, 568.1225pt x 597.23125pt>
+[23] <figure/CH3/Figure6.pdf, id=443, 568.1225pt x 597.23125pt>
 File: figure/CH3/Figure6.pdf Graphic file (type pdf)
 <use figure/CH3/Figure6.pdf>
-Package pdftex.def Info: figure/CH3/Figure6.pdf used on input line 1162.
+Package pdftex.def Info: figure/CH3/Figure6.pdf used on input line 1163.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1845,23 +1830,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
+[24]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <./figure/CH3/Figure6.pdf>] <figure/CH3/Figure7.pdf, id=549, 568.1225pt x 5
+[25 <./figure/CH3/Figure6.pdf>] <figure/CH3/Figure7.pdf, id=459, 568.1225pt x 5
 97.23125pt>
 File: figure/CH3/Figure7.pdf Graphic file (type pdf)
 <use figure/CH3/Figure7.pdf>
-Package pdftex.def Info: figure/CH3/Figure7.pdf used on input line 1209.
+Package pdftex.def Info: figure/CH3/Figure7.pdf used on input line 1210.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
-<figure/CH3/Figure8.pdf, id=550, 568.1225pt x 597.23125pt>
+<figure/CH3/Figure8.pdf, id=460, 568.1225pt x 597.23125pt>
 File: figure/CH3/Figure8.pdf Graphic file (type pdf)
 <use figure/CH3/Figure8.pdf>
-Package pdftex.def Info: figure/CH3/Figure8.pdf used on input line 1239.
+Package pdftex.def Info: figure/CH3/Figure8.pdf used on input line 1240.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1869,29 +1854,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27]
+[26]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./figure/CH3/Figure7.pdf>]
+[27 <./figure/CH3/Figure7.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29 <./figure/CH3/Figure8.pdf>]
+[28 <./figure/CH3/Figure8.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]
-Underfull \hbox (badness 1178) in paragraph at lines 1312--1336
+[29]
+Underfull \hbox (badness 1178) in paragraph at lines 1337--1361
 []\T1/lmr/m/n/10.95 (+20) The com-bi-na-tion of SAPFLUXNET with other eco-phys-
 i-o-log-i-cal
  []
@@ -1902,34 +1887,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
+[30]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32] <figure/CH3/Figure9.pdf, id=629, 568.1225pt x 682.55pt>
+[31] <figure/CH3/Figure9.pdf, id=539, 568.1225pt x 682.55pt>
 File: figure/CH3/Figure9.pdf Graphic file (type pdf)
 <use figure/CH3/Figure9.pdf>
-Package pdftex.def Info: figure/CH3/Figure9.pdf used on input line 1394.
+Package pdftex.def Info: figure/CH3/Figure9.pdf used on input line 1419.
 (pdftex.def)             Requested size: 367.04073pt x 440.98604pt.
 
-LaTeX Warning: Float too large for page by 16.46678pt on input line 1399.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
+Overfull \vbox (16.46678pt too high) has occurred while \output is active []
 
 
-Underfull \hbox (badness 6284) in paragraph at lines 1400--1422
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33 <./figure/CH3/Figure9.pdf>]
+Underfull \hbox (badness 6284) in paragraph at lines 1425--1447
 []\T1/lmr/m/n/10.95 (+20) Stand-level tran-spi-ra-tion es-ti-mates from a large
  num-ber of
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[33]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1971,57 +1961,49 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[40 <./figure/CH3/Figure9.pdf>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[41
+[39] [40
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1628.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1628.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1653.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1653.
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1628.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1628.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1653.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1653.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 63997751F39EF1F56849C22485EA00ED;2332.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1628.
+(rerunfilecheck)             Checksum: C01866DDB89C9AA54F8B4A4786B1C419;2332.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1653.
  ) 
 Here is how much of TeX's memory you used:
- 24167 strings out of 494953
- 426283 string characters out of 6180977
- 572450 words of memory out of 5000000
- 26640 multiletter control sequences out of 15000+600000
- 106616 words of font info for 160 fonts, out of 8000000 for 9000
+ 24137 strings out of 494953
+ 425902 string characters out of 6180977
+ 561833 words of memory out of 5000000
+ 26625 multiletter control sequences out of 15000+600000
+ 99137 words of font info for 149 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,12n,54p,1031b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1
+ 55i,12n,54p,842b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/te
+xmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/latxfont/lcircle1.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (61 pages, 2383507 bytes).
+/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on thesis.pdf (59 pages, 2323585 bytes).
 PDF statistics:
- 762 PDF objects out of 1000 (max. 8388607)
- 622 compressed objects within 7 object streams
- 109 named destinations out of 1000 (max. 500000)
- 20788 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 667 PDF objects out of 1000 (max. 8388607)
+ 532 compressed objects within 6 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 16692 words of extra memory for PDF output out of 17280 (max. 10000000)
 

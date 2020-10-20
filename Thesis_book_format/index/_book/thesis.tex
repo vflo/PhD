@@ -843,7 +843,7 @@ detected, they were subjected to the second QC process, QC2.\par
 
 }
 
-\caption{Overview of the SAPFLUXNET data workflow. Data files are received from data contributors, and undergo several quality-control processes (QC1 and QC2). Both, QC1 and QC2 produce an .RData object of the custom-designed sfn-data S4 class storing all data, metadata and data flags for each dataset. The progress and results of the QC processes are monitored through individual reports and log files. The final outcome, is stored in a folder structure with a either single .RData file for each dataset or a set of seven csv files for each dataset.}\label{fig:Ch2plot1}
+\caption[Overview of the SAPFLUXNET data workflow.]{Overview of the SAPFLUXNET data workflow. Data files are received from data contributors, and undergo several quality-control processes (QC1 and QC2). Both, QC1 and QC2 produce an .RData object of the custom-designed sfn-data S4 class storing all data, metadata and data flags for each dataset. The progress and results of the QC processes are monitored through individual reports and log files. The final outcome, is stored in a folder structure with a either single .RData file for each dataset or a set of seven csv files for each dataset.}\label{fig:Ch2plot1}
 \end{figure}
 \subsection{Data harmonisation and quality control:
 QC2}\label{data-harmonisation-and-quality-control-qc2}
@@ -934,15 +934,6 @@ is the most represented vegetation type (65 datasets), followed by
 deciduous broadleaf forest (47 datasets) and evergreen broadleaf forest
 (43 datasets).\par
 
-\setlength{\abovecaptionskip}{0pt}
-\begin{figure}[H]
-
-{\centering \includegraphics[width=1\linewidth]{figure/CH3/Figure2} 
-
-}
-
-\caption{(a) Geographic, (b) bioclimatic and (c) vegetation type distribution of SAPFLUXNET datasets. In (a) woodland area from Crowther et al. (2015) is shown in green. In (b) we represent the different datasets according to their mean annual temperature and precipitation in a Whittaker diagram showing the classification of the main terrestrial biomes. In (c) vegetation types are defined according to the International Geosphere-Biosphere Programme (IGBP) classification (ENF: Evergreen Needleleaf Forest; DBF: Deciduous Broadleaf Forest; EBF: Evergreen Broadleaf Forest; MF: Mixed Forest; DNF: Deciduous Needleleaf forest; SAV: Savannas; WSA: Woody Savannas; WET: Permanent Wetlands).}\label{fig:Ch2plot2}
-\end{figure}
 SAPFLUXNET contains sap flow data for 2714 individual plants (1584
 angiosperms and 1130 gymnosperms), belonging to 174 species (141
 angiosperms and 33 gymnosperms), 95 different genera and 45 different
@@ -962,11 +953,20 @@ Table S4).\par
 \setlength{\abovecaptionskip}{0pt}
 \begin{figure}[H]
 
+{\centering \includegraphics[width=1\linewidth]{figure/CH3/Figure2} 
+
+}
+
+\caption[Geographic, bioclimatic and vegetation type distribution of SAPFLUXNET datasets.]{(a) Geographic, (b) bioclimatic and (c) vegetation type distribution of SAPFLUXNET datasets. In (a) woodland area from Crowther et al. (2015) is shown in green. In (b) we represent the different datasets according to their mean annual temperature and precipitation in a Whittaker diagram showing the classification of the main terrestrial biomes. In (c) vegetation types are defined according to the International Geosphere-Biosphere Programme (IGBP) classification (ENF: Evergreen Needleleaf Forest; DBF: Deciduous Broadleaf Forest; EBF: Evergreen Broadleaf Forest; MF: Mixed Forest; DNF: Deciduous Needleleaf forest; SAV: Savannas; WSA: Woody Savannas; WET: Permanent Wetlands).}\label{fig:Ch2plot2}
+\end{figure}
+\setlength{\abovecaptionskip}{0pt}
+\begin{figure}[H]
+
 {\centering \includegraphics[width=1\linewidth]{figure/CH3/Figure3} 
 
 }
 
-\caption{Taxonomic distribution of genera and species in SAPFLUXNET, showing (a) species and (b) genera with > 50 plants in the database. Total bar height depicts number of plants per species (a) or genera (b). Numbers on top of each bar show the number of datasets where each species (a) or genus (b) is present. Colours other than grey highlight datasets with 15 or more plants of a given species (a) or genus (b). Bar height for a given colour is proportional to the number of plants in the corresponding dataset, which is also shown in parentheses next to the dataset code.}\label{fig:Ch2plot3}
+\caption[Taxonomic distribution of genera and species in SAPFLUXNET.]{Taxonomic distribution of genera and species in SAPFLUXNET, showing (a) species and (b) genera with > 50 plants in the database. Total bar height depicts number of plants per species (a) or genera (b). Numbers on top of each bar show the number of datasets where each species (a) or genus (b) is present. Colours other than grey highlight datasets with 15 or more plants of a given species (a) or genus (b). Bar height for a given colour is proportional to the number of plants in the corresponding dataset, which is also shown in parentheses next to the dataset code.}\label{fig:Ch2plot3}
 \end{figure}
 \subsection{Methodological aspects}\label{methodological-aspects}
 
@@ -995,7 +995,7 @@ are more frequently used in gymnosperms (Fig. 4).\par
 
 }
 
-\caption{Distribution of plants in SAPFLUXNET according to major taxonomic group (angiosperms, gymnosperms), sap flow method (CHD:cycling heat dissipation; CHP: compensation heat pulse; HD: heat dissipation; HFD: heat field deformation: HPTM: heat pulse T-max (HPTM): HRM: heat ratio (HR); SHB: stem heat balance; TSHB: trunk sector heat balance) and reference unit for the expression of sap flow (plant, sapwood area, leaf area). Combinations of reference units imply that data are present in multiple units.}\label{fig:Ch2plot4}
+\caption[Distribution of plants according to major taxonomic group and sap flow method.]{Distribution of plants in SAPFLUXNET according to major taxonomic group (angiosperms, gymnosperms), sap flow method (CHD:cycling heat dissipation; CHP: compensation heat pulse; HD: heat dissipation; HFD: heat field deformation: HPTM: heat pulse T-max (HPTM): HRM: heat ratio (HR); SHB: stem heat balance; TSHB: trunk sector heat balance) and reference unit for the expression of sap flow (plant, sapwood area, leaf area). Combinations of reference units imply that data are present in multiple units.}\label{fig:Ch2plot4}
 \end{figure}
 Calibration of sap flow sensors and scaling from point measurements to
 the whole-plant can be critical steps towards accurate estimates of
@@ -1015,7 +1015,7 @@ another (Table 2). Azimuthal integration procedures are also more
 frequent when the TSHB method is used (Table 2).\par
 \begin{table}[!h]
 
-\caption{\label{tab:Ch3T1}Number of sap flow times series in SAPFLUXNET depending on whether they were calibrated (species-specific), non-calibrated or this information was not provided, for the different sap flow methods: cyclic (or transient) heat dissipation (CHD), compensation heat pulse (CHP), heat dissipation (HD), heat field deformation (HFD), heat pulse T-max (HPTM), heat ratio (HR), stem heat balance (SHB) and trunk sector heat balance (TSHB). The percentage of calibrated time series was expressed with respect to the total number of sap flow time series for each method.}
+\caption[Number of sap flow times series in SAPFLUXNET depending on whether they were calibrated for the different sap flow methods.]{\label{tab:Ch3T1}Number of sap flow times series in SAPFLUXNET depending on whether they were calibrated (species-specific), non-calibrated or this information was not provided, for the different sap flow methods: cyclic (or transient) heat dissipation (CHD), compensation heat pulse (CHP), heat dissipation (HD), heat field deformation (HFD), heat pulse T-max (HPTM), heat ratio (HR), stem heat balance (SHB) and trunk sector heat balance (TSHB). The percentage of calibrated time series was expressed with respect to the total number of sap flow time series for each method.}
 \centering
 \fontsize{10}{12}\selectfont
 \begin{tabular}[t]{ccccc}
@@ -1035,11 +1035,11 @@ SHB & 0 & 27 & 0 & 0.0\\
 \end{table}
 \begin{table}
 
-\caption{\label{tab:Ch3T2}Number of sap flow times series in SAPFLUXNET depending on whether they were calibrated (species-specific), non-calibrated or this information was not provided, for the different sap flow methods: cyclic (or transient) heat dissipation (CHD), compensation heat pulse (CHP), heat dissipation (HD), heat field deformation (HFD), heat pulse T-max (HPTM), heat ratio (HR), stem heat balance (SHB) and trunk sector heat balance (TSHB). The percentage of calibrated time series was expressed with respect to the total number of sap flow time series for each method.}
+\caption[Number of plants in the SAPFLUXNET database using different radial and azimuthal integration.]{\label{tab:Ch3T2}Number of plants in the SAPFLUXNET database using different radial and azimuthal integration approaches for the different sap flow methods: cyclic (or transient) heat dissipation (CHD), compensation heat pulse (CHP), heat dissipation (HD), heat field deformation (HFD), heat pulse T-max (HPTM), heat ratio (HR), stem heat balance (SHB) and trunk sector heat balance (TSHB).}
 \centering
 \resizebox{\linewidth}{!}{
-\fontsize{9}{11}\selectfont
-\begin{tabular}[t]{ccc>{\centering\arraybackslash}p{3cm}>{\centering\arraybackslash}p{2cm}c}
+\fontsize{10}{12}\selectfont
+\begin{tabular}[t]{ccc>{\centering\arraybackslash}p{3.5cm}>{\centering\arraybackslash}p{2.5cm}c}
 \toprule
 \multicolumn{6}{l}{\textbf{Azimuthal integration}} \\
 \cmidrule(l{3pt}r{3pt}){1-6}
@@ -1058,6 +1058,7 @@ TSHB & 0 & 25 & 191 & 219 & 9\\
 \multicolumn{6}{l}{\textbf{Radial integration}}\\
 \hline
 \hspace{1em}Method & Measured & Sensor-integrated & Corrected, measured radial variation & No radial correction & Not provided\\
+\hline
 \hspace{1em}CHD & 0 & 0 & 6 & 13 & 0\\
 \hspace{1em}CHP & 222 & 0 & 6 & 0 & 0\\
 \hspace{1em}HD & 77 & 3 & 645 & 703 & 142\\
@@ -1097,7 +1098,7 @@ a Pinus strobus from NE USA.\par
 
 }
 
-\caption{Characteristics of trees and stands in the SAPFLUXNET database. Panel (a) shows plant data and kernel density plots of the main plant attributes, coloured by taxonomic group (angiosperms and gymnosperms): diameter at breast height (DBH), plant height, sapwood area, sapwood depth and leaf area. The inset in the sapwood area panel zooms in values lower than 5000 cm². Panel (b) shows stand data and kernel density plots of the main stand attributes: stand age, stand height, stem density, stand basal area,leaf area index (LAI) and soil depth.}\label{fig:Ch2plot5}
+\caption[Characteristics of trees and stands in the SAPFLUXNET database.]{Characteristics of trees and stands in the SAPFLUXNET database. Panel (a) shows plant data and kernel density plots of the main plant attributes, coloured by taxonomic group (angiosperms and gymnosperms): diameter at breast height (DBH), plant height, sapwood area, sapwood depth and leaf area. The inset in the sapwood area panel zooms in values lower than 5000 cm². Panel (b) shows stand data and kernel density plots of the main stand attributes: stand age, stand height, stem density, stand basal area,leaf area index (LAI) and soil depth.}\label{fig:Ch2plot5}
 \end{figure}
 Plant size metadata in SAPFLUXNET is complemented with plant-level data
 of sapwood and leaf area, that provide information on the functional
@@ -1163,7 +1164,7 @@ datasets having data for at least 10 trees (Fig. 6a, see also Fig. 9).
 
 }
 
-\caption{(a) Measurement duration of SAPFLUXNET datasets expressed in number of days with sap flow data and coloured by the number of plants measured on each day . The 30 longest datasets are labelled. For each dataset in panel (a), panel (b) shows its corresponding measurement period.}\label{fig:Ch2plot6}
+\caption[Duration and number of plants mesured in each dataset.]{(a) Measurement duration of SAPFLUXNET datasets expressed in number of days with sap flow data and coloured by the number of plants measured on each day . The 30 longest datasets are labelled. For each dataset in panel (a), panel (b) shows its corresponding measurement period.}\label{fig:Ch2plot6}
 \end{figure}
 \subsection{Temporal characteristics}\label{temporal-characteristics}
 
@@ -1240,7 +1241,7 @@ available for only 27\% of the datasets.\par
 
 }
 
-\caption{Summary of the availability of different environmental variables in SAPFLUXNET datasets. (a) Distribution of meteorological variables according to sensor location (in brackets, names of the variables in the database), (b) Distribution of soil moisture variables according to the measurement depth (in brackets, names of the variables in the database). (c) Venn diagram showing the number of datasets where each combination of different environmental variables are present, grouping shortwave, PPFD and net radiation under ‘Radiation’ variables.}\label{fig:Ch2plot8}
+\caption[Summary of the availability of different environmental variables in SAPFLUXNET datasets.]{Summary of the availability of different environmental variables in SAPFLUXNET datasets. (a) Distribution of meteorological variables according to sensor location (in brackets, names of the variables in the database), (b) Distribution of soil moisture variables according to the measurement depth (in brackets, names of the variables in the database). (c) Venn diagram showing the number of datasets where each combination of different environmental variables are present, grouping shortwave, PPFD and net radiation under ‘Radiation’ variables.}\label{fig:Ch2plot8}
 \end{figure}
 \section{Potential applications}\label{potential-applications}
 
@@ -1308,7 +1309,31 @@ treatments present are related to thinning, water availability changes
 (irrigation, throughfall exclusion) and wildfire impact (Table 3),
 potentially facilitating new data syntheses and meta-analyses using
 these datasets (e.g.~Grossiord et al., 2017).\par
+\begin{table}[!h]
 
+\caption[Number of datasets, plants and species by stand-level treatment in the SAPFLUXNET database.]{\label{tab:Ch3T3}Number of datasets, plants and species by stand-level treatment in the SAPFLUXNET database.}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{tabular}[t]{cccc}
+\toprule
+Treatment & N sites & N plants & N species\\
+\midrule
+None/control & 155 & 2198 & 170\\
+Thinning & 18 & 332 & 18\\
+Irrigation & 9 & 36 & 4\\
+Post-fire & 6 & 18 & 4\\
+CO2 fertilisation & 3 & 28 & 2\\
+Drought & 3 & 9 & 2\\
+Soil fertilisation & 2 & 16 & 2\\
+Post-mortality & 1 & 22 & 5\\
+Soil fertilisation and pruning & 1 & 12 & 1\\
+Soil fertilisation and thinning & 1 & 12 & 1\\
+Pruning and thinning & 1 & 11 & 1\\
+Soil fertilisation, pruning and thinning & 1 & 11 & 1\\
+Pruning & 1 & 9 & 1\\
+\bottomrule
+\end{tabular}
+\end{table}
 The combination of SAPFLUXNET with other ecophysiological databases can
 inform on the relative sensitivity of different physiological processes
 in response to drought, for example those related to growth and carbon
@@ -1389,13 +1414,13 @@ simplifying assumptions (i.e.~applying the size distribution of measured
 individuals in the dataset) would be needed.\par
 
 \setlength{\abovecaptionskip}{0pt}
-\begin{figure}[hbt!]
+\begin{figure}[H]
 
 {\centering \includegraphics[width=1\linewidth]{figure/CH3/Figure9} 
 
 }
 
-\caption{Potential for upscaling species-specific plant sap flow to stand-level sap flow using SAPFLUXNET datasets. Datasets are shown using an aggregated biome classification; ‘Dry and Tropical’ include: ‘Subtropical desert’, ‘Temperate grassland desert’,‘Tropical forest savanna’ and ‘Tropical rain forest’. Each panel shows the percentage of total stand basal area that is covered by sap flow measurements for each species in the dataset. Datasets are also coloured by the number of species present. Numbers on top of each bar depict the total number of plants for a given dataset. Empty bars show datasets for which sap flow data expressed at the plant level were not available.}\label{fig:Ch2plot9}
+\caption[Potential for upscaling species-specific plant sap flow to stand-level.]{Potential for upscaling species-specific plant sap flow to stand-level sap flow using SAPFLUXNET datasets. Datasets are shown using an aggregated biome classification; ‘Dry and Tropical’ include: ‘Subtropical desert’, ‘Temperate grassland desert’,‘Tropical forest savanna’ and ‘Tropical rain forest’. Each panel shows the percentage of total stand basal area that is covered by sap flow measurements for each species in the dataset. Datasets are also coloured by the number of species present. Numbers on top of each bar depict the total number of plants for a given dataset. Empty bars show datasets for which sap flow data expressed at the plant level were not available.}\label{fig:Ch2plot9}
 \end{figure}
 Stand-level transpiration estimates from a large number of SAPFLUXNET
 sites can contribute to improve our understanding of the role of forest
