@@ -71,7 +71,7 @@ Z-Cor_i = \frac{1}{2}ln(\frac{1+r_i}{1-r_i})
 
 Low values of $Z-Cor$ correspond to low r correlations, and high values of $Z-Cor$ correspond to high $r$ correlations and thus high precision (data set range $r$ = [0.0491 – 0.9999]; $r$= 0.0491 ~ $z$ = 0.0491; $r$ = 0.9999 ~ $z$ = 5.1594).\par
 
-```{r ch1fig1, echo=FALSE,  out.width = '55%',fig.pos="hbt!", fig.align="center", fig.cap="Graphical representation of the calibration performance metrics used in the analyses. Each panel presents the same simulated calibration points, representing plausible data. Blue dots represent an accurate, unbiased, linear and precise calibration, while red dots represent an inaccurate, biased, non-linear and imprecise calibration."}
+```{r ch2fig1, echo=FALSE,  out.width = '55%',fig.pos="hbt!", fig.align="center", fig.scap="Graphical representation of the calibration performance metrics.", fig.cap="Graphical representation of the calibration performance metrics used in the analyses. Each panel presents the same simulated calibration points, representing plausible data. Blue dots represent an accurate, unbiased, linear and precise calibration, while red dots represent an inaccurate, biased, non-linear and imprecise calibration."}
 knitr::include_graphics(path = "figure/CH2/PLOTMETRICS.png")
 ```
 
@@ -97,17 +97,17 @@ Most of the published calibrations were performed with Pulse and Dissipation met
 
 ```{r Ch1T1, echo=FALSE,message=FALSE,fig.pos="hbt!",fig.align="center"}
 readr::read_delim("data/Ch2/Ch2T1.csv", 
-    ";", escape_double = FALSE, trim_ws = TRUE)->Ch1T1
+    ";", escape_double = FALSE, trim_ws = TRUE)->Ch2T1
 library(tidyverse)
 library(knitr)
 library(kableExtra)
-knitr::kable(Ch1T1, "latex", booktabs = T,escape = FALSE,align='l',linesep = "", caption = "Analysis summary for the different methods and families of methods obtained from the LMM models (least-squares means). We provide the four dimensionless metrics: the Ln-ratio as a measure of accuracy, the accuracy deviation calculated as the exponential of the Ln-ratio minus one multiplied by 100, the Slope to characterize the proportional bias, the slope of the ln-ln-relationship, Slope (ln-ln), as a measure of linearity, and Z Pearson’s correlation (Z-Cor) to describe overall precision; n: number of calibrations; studies: number of studies of each method; species: number of different species; r is the correlation calculated as the tanh of Z-Cor.") %>% 
-  kableExtra::kable_styling(font_size = 6,latex_options = "hold_position",position = 'left')
+knitr::kable(Ch2T1, "latex", booktabs = T,escape = FALSE,align='l',linesep = "", caption.short = "Analysis summary for the different methods and families.", caption = "Analysis summary for the different methods and families of methods obtained from the LMM models (least-squares means). We provide the four dimensionless metrics: the Ln-ratio as a measure of accuracy, the accuracy deviation calculated as the exponential of the Ln-ratio minus one multiplied by 100, the Slope to characterize the proportional bias, the slope of the ln-ln-relationship, Slope (ln-ln), as a measure of linearity, and Z Pearson’s correlation (Z-Cor) to describe overall precision; n: number of calibrations; studies: number of studies of each method; species: number of different species; r is the correlation calculated as the tanh of Z-Cor.") %>% 
+  kableExtra::kable_styling(font_size = 6,latex_options = "scale_down",position = 'left') %>% column_spec(7, width = "2cm")
    # kableExtra::kable_styling(latex_options = "HOLD_position")#%>%
    # add_footnote("Statistical significant levels: \".\" p<0.1 ; \"*\" p<0.05; \"**\" p<0.01; \"***\" p<0.001.",notation = "none")
 ```
 
-```{r ch1fig2, echo=FALSE,  out.width = '55%',fig.pos="hbt!", fig.align="center", fig.cap="Distribution of the calibration performance metrics for each method. Dots represents the value of each individual calibration metric. Crosses represent the average of the metric for each method. Horizontal, dashed lines specify reference, perfect calibration values for a given metric."}
+```{r ch2fig2, echo=FALSE,  out.width = '55%',fig.pos="hbt!", fig.align="center", fig.scap = "Distribution of the calibration performance metrics for each method.". fig.cap="Distribution of the calibration performance metrics for each method. Dots represents the value of each individual calibration metric. Crosses represent the average of the metric for each method. Horizontal, dashed lines specify reference, perfect calibration values for a given metric."}
 knitr::include_graphics(path = "figure/CH2/Distribution-metrics-orderedV4.png")
 ```
 
@@ -118,7 +118,7 @@ The average accuracy deviation across sap flow methods (properly applied) ranged
 
 Proportional bias, estimated by Slope, varied among methods and families of methods (p<0.01). Among families, Dissipation methods showed a significantly smaller Slope than Pulse and Field methods (Fig. 1.3(a)), which was largely driven by the low value of TD (Fig. 1.3(b)). Also, both Pulse and Dissipation families had slopes significantly different from 1 (p<0.01 and p<0.001, respectively), but only the slope of the TD method was significantly lower than 1 (p<0.001) (Fig. 1.3). As for the effects of calibration material, calibrations made with whole plants had a significant proportional bias (Slope < 1, p<0.001) (Fig. 1.3).
 
-```{r ch1fig3, echo=FALSE,  out.width = '100%', fig.pos="p", fig.align="center", fig.cap="Predictions of the LMM models calculated from least-squares means of the four calibration metrics (Ln-Ratio as a proxy for mean accuracy, Slope for proportional bias, Slope (ln-ln) for linearity and Z-Cor for precision) for (a) different families of sap flow methods or for (b) different sap flow methods and for different calibration materials (Segment: stem segment; Whole plant: whole plant on a container or lysimeter; No-roots: whole plant without roots). 95\\% confidence intervals of the estimates are also shown. Different letters indicate significant differences between factors levels evaluated with Tukey\'s test. Horizontal, dotted lines indicate reference, perfect calibration values for a given metric. Asterisks (*) indicate significant departure from those reference values."}
+```{r ch2fig3, echo=FALSE,  out.width = '100%', fig.pos="p", fig.align="center", fig.scap = "Predictions of the LMM models of the four calibration metrics.", fig.cap="Predictions of the LMM models calculated from least-squares means of the four calibration metrics (Ln-Ratio as a proxy for mean accuracy, Slope for proportional bias, Slope (ln-ln) for linearity and Z-Cor for precision) for (a) different families of sap flow methods or for (b) different sap flow methods and for different calibration materials (Segment: stem segment; Whole plant: whole plant on a container or lysimeter; No-roots: whole plant without roots). 95\\% confidence intervals of the estimates are also shown. Different letters indicate significant differences between factors levels evaluated with Tukey\'s test. Horizontal, dotted lines indicate reference, perfect calibration values for a given metric. Asterisks (*) indicate significant departure from those reference values."}
 
 knitr::include_graphics(path = "figure/CH2/FAMILYMETHODS.png")
 ```
@@ -131,17 +131,17 @@ In all the previous models, little variability was explained by species ($\tau 0
 
 In addition, the analysis of the normalized absolute error for the different methods showed that NRMSE decreased linearly with increasing measured sap flow in CHP, HFD and TTD methods and increased for T-max, SHB and TD (Table 1.2 and Fig. A2).  For HR the increase in NRMSE with measured sap flow was not significant. For all the methods that measure SFD, the absolute error at a typical flow of 25 cm3 cm-2 h-1 ranged between 6.3 cm3 cm-2 h-1 for CHP and 10.7 cm3 cm-2 h-1 for the TTD method (Table 1.2).\par
 
-```{r Ch1T2, echo=FALSE,message=FALSE,fig.pos="hbt!"}
+```{r Ch2T2, echo=FALSE,message=FALSE,fig.pos="hbt!"}
 readr::read_delim("data/Ch2/Ch2T2.csv", 
-    ";", escape_double = FALSE, trim_ws = TRUE)->Ch1T2
+    ";", escape_double = FALSE, trim_ws = TRUE)->Ch2T2
 library(tidyverse)
 library(knitr)
 library(kableExtra)
 
-Ch1T2 <- Ch1T2 %>% mutate(`$\\beta_0$\\; \\%` = gsub("\\","",x=`$\\beta_0$\\; \\%`,fixed=TRUE),
+Ch2T2 <- Ch2T2 %>% mutate(`$\\beta_0$\\; \\%` = gsub("\\","",x=`$\\beta_0$\\; \\%`,fixed=TRUE),
                           `$\\beta_1$` = gsub("\\","",x=`$\\beta_1$`,fixed=TRUE))
 
-knitr::kable(Ch1T2, "latex", booktabs = T,escape = FALSE,align='c',linesep = "", caption = "Error analysis of different sap flow methods. The normalized root mean square error (NRMSE) is modelled as a function of method and the mean flow range for each calibration (and their interaction) using a LMM model with the same random structure as the main models (cf. section 2.3). $\\beta_0$ and $\\beta_1$ are the corresponding intercepts and slopes, respectively ($\\beta_0$ expressed as \\% NRMSE; $\\beta_1$ expressed as \\% NRMSE per change in $cm^3$ $cm^{-2}$ $h^{-1}$ for SFD or as \\% NRMSE per change in $cm^3$ $h^{-1}$ for SF). This linear model, was also used to calculate a reference NRMSE at a sap flux equivalent to the percentile 50 of the range of the data in the calibrations (SFD: 25 $cm^3$ $cm^{-2}$ $h^{-1}$; SF: 1300 $cm^3$ $h^{-1}$). The expected NRMSE and RMSE (in brackets, in $cm^3$ $cm^{-2}$ $h^{-1}$, except for SHB that is in $cm^3$ $h^{-1}$) at a typical flow are also given.") %>% 
+knitr::kable(Ch1T2, "latex", booktabs = T,escape = FALSE,align='c',linesep = "", caption.short = "Error analysis of different sap flow methods.", caption = "Error analysis of different sap flow methods. The normalized root mean square error (NRMSE) is modelled as a function of method and the mean flow range for each calibration (and their interaction) using a LMM model with the same random structure as the main models (cf. section 2.3). $\\beta_0$ and $\\beta_1$ are the corresponding intercepts and slopes, respectively ($\\beta_0$ expressed as \\% NRMSE; $\\beta_1$ expressed as \\% NRMSE per change in $cm^3$ $cm^{-2}$ $h^{-1}$ for SFD or as \\% NRMSE per change in $cm^3$ $h^{-1}$ for SF). This linear model, was also used to calculate a reference NRMSE at a sap flux equivalent to the percentile 50 of the range of the data in the calibrations (SFD: 25 $cm^3$ $cm^{-2}$ $h^{-1}$; SF: 1300 $cm^3$ $h^{-1}$). The expected NRMSE and RMSE (in brackets, in $cm^3$ $cm^{-2}$ $h^{-1}$, except for SHB that is in $cm^3$ $h^{-1}$) at a typical flow are also given.") %>% 
   kableExtra::kable_styling(font_size = 10,latex_options = "hold_position",position = 'center') %>% 
   add_header_above(c(" ", "NRMSE" = 3)) %>% 
   # kableExtra::kable_styling(latex_options = "HOLD_position")#%>%
@@ -156,19 +156,19 @@ We did not find any significant influence of wood density on accuracy and linear
 
 We did not find any significant difference among wood porosity types in calibration metrics for studies using the TD or CHP methods. Nevertheless, the non-linearity (Slope (ln-ln) < 1) observed in general for the CHP method (Fig. 1.3(b)) was only significant for species with diffuse-porous wood, not for conifer species (Table 1.3).\par
 
-```{r ch1fig4, echo=FALSE,  out.width = '55%', fig.pos="hbt!", fig.align="center", fig.cap="Relationship between the four calibration performance metrics (Ln-Ratio as a proxy for accuracy, Slope for proportional bias, Slope (ln-ln) for linearity, and Z-Cor for precision) and wood density, for different sap flow methods. Horizontal, dashed red lines indicate reference, perfect calibration values for a given metric. Regression lines are shown for significant effects only, and the corresponding level of significance (p-value: <0.1: (.), <0.05: (*), < 0.01: (**), < 0.001: (***)) is also reported "}
+```{r ch2fig4, echo=FALSE,  out.width = '55%', fig.pos="hbt!", fig.align="center", fig.scap = "Relationship between the four calibration performance and wood density, for different sap flow methods.", fig.cap="Relationship between the four calibration performance metrics (Ln-Ratio as a proxy for accuracy, Slope for proportional bias, Slope (ln-ln) for linearity, and Z-Cor for precision) and wood density, for different sap flow methods. Horizontal, dashed red lines indicate reference, perfect calibration values for a given metric. Regression lines are shown for significant effects only, and the corresponding level of significance (p-value: <0.1: (.), <0.05: (*), < 0.01: (**), < 0.001: (***)) is also reported "}
 
 knitr::include_graphics(path = "figure/CH2/DENSITY.png")
 ```
 
-```{r Ch1T3, echo=FALSE,message=FALSE,fig.pos="hbt!",fig.align="center"}
+```{r Ch2T3, echo=FALSE,message=FALSE,fig.pos="hbt!",fig.align="center"}
 readr::read_delim("data/Ch2/Ch2T3.csv", 
-    ";", escape_double = FALSE, trim_ws = TRUE)->Ch1T3
+    ";", escape_double = FALSE, trim_ws = TRUE)->Ch2T3
 library(tidyverse)
 library(knitr)
 library(kableExtra)
-knitr::kable(Ch1T3, "latex", booktabs = T,escape = FALSE,align='c',linesep = "", caption = "Least-squares means and 95\\% CI calculated from the LMM models testing the effect of different wood porosity types (Wood porosity) on sap flow calibration performance metrics (Ln-Ratio as a proxy for accuracy, Slope for proportional bias, Slope (ln-ln) for linearity, and Z-Cor for precision) for CHP and TD methods. No differences were detected among wood anatomies. Significance levels indicate departure from an ideal calibration (Ln-Ratio = 0; Slope = 1; Slope (ln-ln) = 1)") %>% 
-  kableExtra::kable_styling(font_size = 7,latex_options = "hold_position",position = 'center') %>% 
+knitr::kable(Ch2T3, "latex", booktabs = T,escape = FALSE,align='c',linesep = "", caption.short = "Least-squares means and 95\\% CI calculated from the LMM models testing the effect of different wood porosity types", caption = "Least-squares means and 95\\% CI calculated from the LMM models testing the effect of different wood porosity types (Wood porosity) on sap flow calibration performance metrics (Ln-Ratio as a proxy for accuracy, Slope for proportional bias, Slope (ln-ln) for linearity, and Z-Cor for precision) for CHP and TD methods. No differences were detected among wood anatomies. Significance levels indicate departure from an ideal calibration (Ln-Ratio = 0; Slope = 1; Slope (ln-ln) = 1)") %>% 
+  kableExtra::kable_styling(font_size = 6,latex_options = "scale_down",position = 'center') %>% column_spec(2, width = "1.5cm") %>%
   # collapse_rows(columns = 1, valign = "middle")%>%
   add_header_above(c(" "," "," ", "Accuracy" = 1, "Proportional bias" = 1,"Linearity" = 1, "Precision" = 1)) %>% 
   # kableExtra::kable_styling(latex_options = "HOLD_position")#%>%
@@ -182,16 +182,15 @@ Our results show a large variability in the quality of sap flow calibrations, ev
 
 A relatively small part of the total variability in the quality of calibrations is related to methods and families of methods and, to a lesser extent, to the calibration material (fixed effects explain 8 – 28% of the variability in calibration metrics; see $R^2_m$ values in Table A3). Despite the high variability within methods, we detected significant differences between methods. Dissipation methods were the only methods for which accuracy was significantly lower than expected for an ideal calibration. This is consistent with previous reports (@Braun1999; @Bush2010; @Caterina2014; @Chan2015; @DeOliveiraReis2006; @Fuchs2017; @Lu1998; @McCulloh2007; @Montague2006; @Rubilar2017; @Steppe2010; @Taneda2008; @Uddling2009) and our synthesis confirms that most of the individual TD and all TTD calibrations underestimate sap flow systematically (Fig. 1.5). Interestingly, however, other studies have found the opposite result (@Cain2009; @Hultine2010; @Lu2002; @Sperling2012; @Sun2012) and simulation models (@Holtta2015; @Wullschleger2011) suggest that it is difficult to state a priori whether TD will over- or underestimate flow, as the measurements obtained are highly dependent on wood properties and on flux conditions. Our results show that, globally, the conditions leading to underestimation are more frequent and support the existence of a proportional bias underlying this systematic underestimation by TD (Fig. 1.3). It must be also noted, however, that Dissipation methods have been tested against a much wider range of flow conditions compared to the rest of the methods (Fig. 1.5, Fig.6).\par
 
-```{r Ch1T4, echo=FALSE,message=FALSE,fig.pos="hbt!",fig.align="center"}
+```{r Ch2T4, echo=FALSE,message=FALSE,fig.pos="hbt!",fig.align="center"}
 readr::read_delim("data/Ch2/Ch2T4.csv", 
-    ";", escape_double = FALSE, trim_ws = TRUE)->Ch1T4
+    ";", escape_double = FALSE, trim_ws = TRUE)->Ch2T4
 library(tidyverse)
 library(knitr)
 library(kableExtra)
 
 options(knitr.kable.NA = '')
-Ch1T4 <-
-Ch1T4 %>%
+Ch2T4 <- Ch2T4 %>%
   mutate_at(c(11:16),~as.factor(.x)) %>%
   mutate_at(
     c(11:16),
@@ -205,7 +204,7 @@ Ch1T4 %>%
                )
              )
   
-knitr::kable(Ch1T4, "latex", booktabs = T,escape = FALSE, align='c', linesep = "", caption = "Synthesis of the potential sources of error and use adequacy for each method. Crosses indicates that the method is sensitive to the respective source of error (updated from Vandegehuchte and Steppe, 2013). Methods are classified according to their use effectiveness under different flow conditions: dark grey, light grey and white indicate highly, partially and no recommended use, respectively. When assessing use adequacy for high/low flows, dark and light gray indicate a Normalized Root Mean Square Error (NRMSE) less than a 22\\% and a 44\\%, respectively, calculated with the NRMSE model (Table 1.2). In Absolute flows use recommendation, dark grey shows methods with both accuracy (Ln-Ratio) and proportional bias (Slope) not significantly different from a perfect calibration. In Relative flows use recommendation, dark grey shows methods with linearity (Slope (ln-ln)) not significantly different from a perfect calibration and with reasonable precision. Potentiality of measuring small stems diameters (< 125mm) is also reported.") %>%
+knitr::kable(Ch2T4, "latex", booktabs = T,escape = FALSE, align='c', linesep = "", caption.short = "Synthesis of the potential sources of error and use adequacy for each method.", caption = "Synthesis of the potential sources of error and use adequacy for each method. Crosses indicates that the method is sensitive to the respective source of error (updated from Vandegehuchte and Steppe, 2013). Methods are classified according to their use effectiveness under different flow conditions: dark grey, light grey and white indicate highly, partially and no recommended use, respectively. When assessing use adequacy for high/low flows, dark and light gray indicate a Normalized Root Mean Square Error (NRMSE) less than a 22\\% and a 44\\%, respectively, calculated with the NRMSE model (Table 1.2). In Absolute flows use recommendation, dark grey shows methods with both accuracy (Ln-Ratio) and proportional bias (Slope) not significantly different from a perfect calibration. In Relative flows use recommendation, dark grey shows methods with linearity (Slope (ln-ln)) not significantly different from a perfect calibration and with reasonable precision. Potentiality of measuring small stems diameters (< 125mm) is also reported.") %>%
   kableExtra::kable_styling(font_size = 10,latex_options = "hold_position", position = 'center') %>%
   row_spec(0, angle = 90, italic = TRUE) %>%
   # collapse_rows(columns = 1, valign = "middle")%>%
@@ -225,7 +224,7 @@ In addition to Dissipation methods, Pulse methods also suffer proportional bias,
 
 Our analysis did not detect the saturation effect for the HR method at high flows that has been reported elsewhere (@Bleby2008; @Green2009; @Steppe2015). This is likely due to the fact that HR calibrations considered here include few observations in the region where this overestimation occurs (> ~45 cm3 cm-2 h-1; Figs 5 and 6). Moreover, the high variability in the calibrations probably precluded detection of the saturation effect (Fig. 1.3 and 1.5) and of the apparent trend of increasing NRMSE with sap flow range for HR (Table 1.3 and Fig. A2). A lack of linearity can also be observed for HFD, consistent with the suggested tendency of this method to underestimate at high flows (@Vandegehuchte2012c).\par
 
-```{r ch1fig5, echo=FALSE,  out.width = '100%', fig.pos="p", fig.align="center", fig.cap="Relationship between measured and reference sap-flux density (SFD) for different sap flow methods, studies and calibrations. The fits of ln-ln regressions (Eq. 4) for each calibration are also depicted. Different colors represent different studies that report results in sap-flux density units. Scales vary across panels to facilitate intra method comparison. The red dotted line indicates the 1:1 relationship."}
+```{r ch2fig5, echo=FALSE,  out.width = '100%', fig.pos="p", fig.align="center", fig.scap= "Relationship between measured and reference sap-flux density (SFD) for different sap flow methods, studies and calibrations.", fig.cap="Relationship between measured and reference sap-flux density (SFD) for different sap flow methods, studies and calibrations. The fits of ln-ln regressions (Eq. 4) for each calibration are also depicted. Different colors represent different studies that report results in sap-flux density units. Scales vary across panels to facilitate intra method comparison. The red dotted line indicates the 1:1 relationship."}
 
 knitr::include_graphics(path = "figure/CH2/figure-density.png")
 ```
@@ -234,7 +233,7 @@ Despite the large variability in precision within methods, our results show that
 
 We did not detect differences in accuracy, proportional bias or linearity of the calibrations across calibration materials. However, compared to an ideal calibration, we did find proportional bias and lack of linearity in calibrations performed on whole plants, probably because these calibrations use large scales whose sensitivity and resolution are usually low, potentially affecting low-flow measurements and leading to artefactual overestimation at low flows. Poor linearity may also be due to non-linear changes in belowground hydraulic resistance as the sap flow increases (@Martinez-Vilalta2007). In cut plants, we may have two opposite effects, as cutting could eliminate belowground resistance (favoring flow) but add resistance due to putative embolism formation after cutting. Similarly, the higher precision of calibrations conducted on cut stems relative to those conducted on whole plants (with and without roots), likely reflects that cut stem calibrations are normally conducted in laboratories with precision scales and under controlled conditions that minimize experimental random errors.\par
 
-```{r ch1fig6, echo=FALSE,  out.width = '100%', fig.pos="p", fig.align="center", fig.cap="Relationship between measured and reference sap flow (SF) for different sap flow methods, studies and calibrations. The fits of ln-ln regressions (Eq. 4) for each calibration are also depicted. Different color symbols and line types represent different studies. Scales varies across panels to facilitate intra method comparison. Insets are shown in some panels (T-max, SHB, TD) to facilitate visualization when the flow ranges differed markedly among calibrations for the same method. The red dotted line indicates 1:1 relationship."}
+```{r ch2fig6, echo=FALSE,  out.width = '100%', fig.pos="p", fig.align="center", fig.scap="Relationship between measured and reference sap flow (SF) for different sap flow methods, studies and calibrations.", fig.cap="Relationship between measured and reference sap flow (SF) for different sap flow methods, studies and calibrations. The fits of ln-ln regressions (Eq. 4) for each calibration are also depicted. Different color symbols and line types represent different studies. Scales varies across panels to facilitate intra method comparison. Insets are shown in some panels (T-max, SHB, TD) to facilitate visualization when the flow ranges differed markedly among calibrations for the same method. The red dotted line indicates 1:1 relationship."}
 
 knitr::include_graphics(path = "figure/CH2/figure-totalflow.png")
 ```

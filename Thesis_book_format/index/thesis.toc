@@ -1,31 +1,38 @@
-\contentsline {chapter}{ 1: division: `Biology'}{1}{chapter.1}
-\contentsline {subsection}{\numberline {1.0.1}Sap flow calibration datasets}{1}{subsection.1.0.1}
-\contentsline {subsection}{\numberline {1.0.2}Calibration assessment}{1}{subsection.1.0.2}
-\contentsline {subsection}{\numberline {1.0.3}Statistical analyses}{1}{subsection.1.0.3}
-\contentsline {subsection}{\numberline {1.0.4}Calibration performance compared among methods and families of methods}{1}{subsection.1.0.4}
-\contentsline {subsection}{\numberline {1.0.5}Influence of wood traits}{1}{subsection.1.0.5}
-\contentsline {chapter}{ 2: The SAPFLUXNET database}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}The SAPFLUXNET data workflow}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}An overview of sap flow measurements}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Data compilation}{10}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Data harmonisation and quality control: QC1}{11}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Data harmonisation and quality control: QC2}{13}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Data structure}{14}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}The SAPFLUXNET database}{14}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Data coverage}{14}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Methodological aspects}{18}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Plant characteristics}{19}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Stand characteristics}{23}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Temporal characteristics}{24}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Availability of environmental data}{26}{subsection.2.3.6}
-\contentsline {section}{\numberline {2.4}Potential applications}{26}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Applications in plant ecophysiology and functional ecology}{26}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Applications in ecosystem ecology and ecohydrology}{31}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Limitations and future developments}{35}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Limitations}{35}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Outlook}{37}{subsection.2.5.2}
-\contentsline {subsubsection}{Change in niche size and species climatic range}{38}{subsubsection*.20}
-\contentsline {section}{\numberline {2.6}Data availability, access and feedback}{38}{section.2.6}
-\contentsline {section}{\numberline {2.7}Conclusion}{39}{section.2.7}
-\contentsline {chapter}{References}{41}{chapter*.21}
+\contentsline {chapter}{ 1: Bias and uncertainty in sap flow methods}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Material and methods}{7}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Sap flow calibration datasets}{7}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Calibration assessment}{9}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Statistical analyses}{13}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Results}{14}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Calibration performance compared among methods and families of methods}{15}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Influence of wood traits}{18}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Discussion}{19}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Sap flow measurement errors across methods and methodological families}{21}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}The performance of sap flow calibrations is largely unrelated to species wood traits}{26}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Implications and recommendations}{29}{subsection.1.4.3}
+\contentsline {section}{\numberline {1.5}Conclusions}{31}{section.1.5}
+\contentsline {chapter}{ 2: The SAPFLUXNET database}{33}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{35}{section.2.1}
+\contentsline {section}{\numberline {2.2}The SAPFLUXNET data workflow}{38}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}An overview of sap flow measurements}{38}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Data compilation}{40}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Data harmonisation and quality control: QC1}{41}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Data harmonisation and quality control: QC2}{43}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Data structure}{44}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}The SAPFLUXNET database}{44}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Data coverage}{44}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Methodological aspects}{48}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Plant characteristics}{49}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Stand characteristics}{53}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Temporal characteristics}{54}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Availability of environmental data}{56}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}Potential applications}{56}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Applications in plant ecophysiology and functional ecology}{56}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Applications in ecosystem ecology and ecohydrology}{61}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Limitations and future developments}{65}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Limitations}{65}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Outlook}{67}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Data availability, access and feedback}{68}{section.2.6}
+\contentsline {section}{\numberline {2.7}Conclusion}{69}{section.2.7}
+\contentsline {chapter}{References}{71}{chapter*.31}
