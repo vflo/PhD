@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.21)  22 OCT 2020 20:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.21)  3 NOV 2020 09:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -948,8 +948,8 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \c@nlinenum=\count355
 \TeXr@lab=\toks56
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 33
-2.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 32
+0.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -983,22 +983,22 @@ LaTeX Warning: Label `conclusions' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 320.
+LaTeX Font Info:    ... okay on input line 320.
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.st
 y
@@ -1009,9 +1009,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package crop Info: requested driver: `pdftex' on input line 332.
-Package crop Info: detected driver: `pdftex' on input line 332.
-Package crop Info: using `pdftex' graphics driver on input line 332.
+Package crop Info: requested driver: `pdftex' on input line 320.
+Package crop Info: detected driver: `pdftex' on input line 320.
+Package crop Info: using `pdftex' graphics driver on input line 320.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1046,7 +1046,7 @@ Package crop Info: using `pdftex' graphics driver on input line 332.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 332.
+Package hyperref Info: Link coloring OFF on input line 320.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1058,9 +1058,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count357
 )
-LaTeX Info: Redefining \ref on input line 332.
-LaTeX Info: Redefining \pageref on input line 332.
-LaTeX Info: Redefining \nameref on input line 332.
+LaTeX Info: Redefining \ref on input line 320.
+LaTeX Info: Redefining \pageref on input line 320.
+LaTeX Info: Redefining \nameref on input line 320.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
@@ -1070,42 +1070,42 @@ Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-36.
+24.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-36.
+24.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-336.
+324.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-336.
+324.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 336.
+(Font)              <12> on input line 324.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 336.
+(Font)              <8> on input line 324.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 336.
+(Font)              <6> on input line 324.
 <figure/LOGO_CREAF.png, id=232, 691.58376pt x 275.0275pt>
 File: figure/LOGO_CREAF.png Graphic file (type png)
 <use figure/LOGO_CREAF.png>
-Package pdftex.def Info: figure/LOGO_CREAF.png  used on input line 336.
+Package pdftex.def Info: figure/LOGO_CREAF.png  used on input line 324.
 (pdftex.def)             Requested size: 73.40701pt x 29.19138pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 336.
+(Font)              <10.95> on input line 324.
 <figure/Logo_uab.png, id=234, 1229.59375pt x 569.12625pt>
 File: figure/Logo_uab.png Graphic file (type png)
 <use figure/Logo_uab.png>
-Package pdftex.def Info: figure/Logo_uab.png  used on input line 336.
+Package pdftex.def Info: figure/Logo_uab.png  used on input line 324.
 (pdftex.def)             Requested size: 73.40701pt x 33.97241pt.
 [1
 Non-PDF special ignored!
@@ -1129,7 +1129,10 @@ Underfull \hbox (badness 1377) in paragraph at lines 11--11
 
  []
 
-[5] [6])
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[6])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
@@ -1141,21 +1144,21 @@ Underfull \hbox (badness 1377) in paragraph at lines 11--11
 
 [9] [10
 
-] (./thesis.lof)
+] (./thesis.lof [11])
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
-[11] [12
+[12]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 424.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <11> on input line 424.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.69997> on input line 424.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.5> on input line 424.
+[13
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 449.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11> on input line 449.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.69997> on input line 449.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.5> on input line 449.
-[13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [14] [15] [16
@@ -1176,14 +1179,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.522 ...Bernhard Schuldt, Rafael Poyatos \newpage
+l.498 ...Bernhard Schuldt, Rafael Poyatos \newpage
                                                    [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.559 \newpage
+l.535 \newpage
                [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1203,29 +1206,29 @@ Underfull \vbox (badness 2556) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [10]
-<figure/CH2/PLOTMETRICS.png, id=511, 244.9953pt x 484.4499pt>
+<figure/CH2/PLOTMETRICS.png, id=536, 244.9953pt x 484.4499pt>
 File: figure/CH2/PLOTMETRICS.png Graphic file (type png)
 <use figure/CH2/PLOTMETRICS.png>
-Package pdftex.def Info: figure/CH2/PLOTMETRICS.png  used on input line 893.
+Package pdftex.def Info: figure/CH2/PLOTMETRICS.png  used on input line 869.
 (pdftex.def)             Requested size: 201.8735pt x 399.1956pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [11] [12 <./figure/CH2/PLOTMETRICS.png>] [13]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 991.
-<figure/CH2/Distribution-metrics-orderedV4.png, id=531, 261.3765pt x 486.1362pt
+(Font)              <5> on input line 967.
+<figure/CH2/Distribution-metrics-orderedV4.png, id=556, 261.3765pt x 486.1362pt
 >
 File: figure/CH2/Distribution-metrics-orderedV4.png Graphic file (type png)
 <use figure/CH2/Distribution-metrics-orderedV4.png>
 Package pdftex.def Info: figure/CH2/Distribution-metrics-orderedV4.png  used on
- input line 995.
+ input line 971.
 (pdftex.def)             Requested size: 201.8735pt x 375.46095pt.
 [14]
-<figure/CH2/FAMILYMETHODS.png, id=536, 541.5432pt x 419.6478pt>
+<figure/CH2/FAMILYMETHODS.png, id=561, 541.5432pt x 419.6478pt>
 File: figure/CH2/FAMILYMETHODS.png Graphic file (type png)
 <use figure/CH2/FAMILYMETHODS.png>
-Package pdftex.def Info: figure/CH2/FAMILYMETHODS.png  used on input line 1026.
+Package pdftex.def Info: figure/CH2/FAMILYMETHODS.png  used on input line 1002.
 
 (pdftex.def)             Requested size: 367.04073pt x 284.42825pt.
 [15]
@@ -1234,22 +1237,22 @@ Underfull \vbox (badness 3557) has occurred while \output is active []
 [16 <./figure/CH2/Distribution-metrics-orderedV4.png>] [17 <./figure/CH2/FAMILY
 METHODS.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1070.
+(Font)              <10> on input line 1046.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1070.
+(Font)              <7> on input line 1046.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figure/CH2/DENSITY.png, id=553, 263.7855pt x 401.0985pt>
+<figure/CH2/DENSITY.png, id=578, 263.7855pt x 401.0985pt>
 File: figure/CH2/DENSITY.png Graphic file (type png)
 <use figure/CH2/DENSITY.png>
-Package pdftex.def Info: figure/CH2/DENSITY.png  used on input line 1106.
+Package pdftex.def Info: figure/CH2/DENSITY.png  used on input line 1082.
 (pdftex.def)             Requested size: 201.8735pt x 306.96175pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [18] [19]
-Underfull \hbox (badness 1515) in paragraph at lines 1154--1154
+Underfull \hbox (badness 1515) in paragraph at lines 1130--1130
 |[]\T1/lmr/bx/n/12 Sap flow mea-sure-ment er-rors across meth-ods and
  []
 
@@ -1267,21 +1270,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [23]
-<figure/CH2/figure-density.png, id=585, 867.24pt x 722.7pt>
+<figure/CH2/figure-density.png, id=610, 867.24pt x 722.7pt>
 File: figure/CH2/figure-density.png Graphic file (type png)
 <use figure/CH2/figure-density.png>
-Package pdftex.def Info: figure/CH2/figure-density.png  used on input line 1264
+Package pdftex.def Info: figure/CH2/figure-density.png  used on input line 1240
 .
 (pdftex.def)             Requested size: 367.04073pt x 305.86975pt.
 
 Underfull \vbox (badness 1270) has occurred while \output is active []
 
 [24] [25 <./figure/CH2/figure-density.png (PNG copy)>]
-<figure/CH2/figure-totalflow.png, id=594, 867.24pt x 722.7pt>
+<figure/CH2/figure-totalflow.png, id=619, 867.24pt x 722.7pt>
 File: figure/CH2/figure-totalflow.png Graphic file (type png)
 <use figure/CH2/figure-totalflow.png>
-Package pdftex.def Info: figure/CH2/figure-totalflow.png  used on input line 13
-01.
+Package pdftex.def Info: figure/CH2/figure-totalflow.png  used on input line 12
+77.
 (pdftex.def)             Requested size: 367.04073pt x 305.86975pt.
 [26] [27 <./figure/CH2/figure-totalflow.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1292,7 +1295,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  2.
 [33]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-467.
+443.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [34] [35] [36]
@@ -1313,31 +1316,31 @@ Package epstopdf Info: Source file: <figure/CH3/Figure1.eps>
 (epstopdf)                    size: 18882 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure/CH3/Figure1-eps-con
 verted-to.pdf figure/CH3/Figure1.eps>
-(epstopdf)             \includegraphics on input line 1756.
+(epstopdf)             \includegraphics on input line 1732.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figure/CH3/Figure1-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figure/CH3/Figure1-eps-converted-to.pdf, id=661, 285.065pt x 508.90125pt>
+<figure/CH3/Figure1-eps-converted-to.pdf, id=686, 285.065pt x 508.90125pt>
 File: figure/CH3/Figure1-eps-converted-to.pdf Graphic file (type pdf)
 <use figure/CH3/Figure1-eps-converted-to.pdf>
 Package pdftex.def Info: figure/CH3/Figure1-eps-converted-to.pdf  used on input
- line 1756.
+ line 1732.
 (pdftex.def)             Requested size: 256.92738pt x 458.66693pt.
 [41]
 Overfull \vbox (6.94766pt too high) has occurred while \output is active []
 
 [42 <./figure/CH3/Figure1-eps-converted-to.pdf>] [43] [44]
-<figure/CH3/Figure2.pdf, id=685, 568.1225pt x 426.59375pt>
+<figure/CH3/Figure2.pdf, id=710, 568.1225pt x 426.59375pt>
 File: figure/CH3/Figure2.pdf Graphic file (type pdf)
 <use figure/CH3/Figure2.pdf>
-Package pdftex.def Info: figure/CH3/Figure2.pdf  used on input line 1870.
+Package pdftex.def Info: figure/CH3/Figure2.pdf  used on input line 1846.
 (pdftex.def)             Requested size: 367.04073pt x 275.61626pt.
-<figure/CH3/Figure3.pdf, id=686, 568.1225pt x 710.655pt>
+<figure/CH3/Figure3.pdf, id=711, 568.1225pt x 710.655pt>
 File: figure/CH3/Figure3.pdf Graphic file (type pdf)
 <use figure/CH3/Figure3.pdf>
-Package pdftex.def Info: figure/CH3/Figure3.pdf  used on input line 1879.
+Package pdftex.def Info: figure/CH3/Figure3.pdf  used on input line 1855.
 (pdftex.def)             Requested size: 367.04073pt x 459.14429pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1349,10 +1352,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (7.42502pt too high) has occurred while \output is active []
 
 [47 <./figure/CH3/Figure3.pdf>]
-<figure/CH3/Figure4.pdf, id=719, 426.59375pt x 426.59375pt>
+<figure/CH3/Figure4.pdf, id=745, 426.59375pt x 426.59375pt>
 File: figure/CH3/Figure4.pdf Graphic file (type pdf)
 <use figure/CH3/Figure4.pdf>
-Package pdftex.def Info: figure/CH3/Figure4.pdf  used on input line 1908.
+Package pdftex.def Info: figure/CH3/Figure4.pdf  used on input line 1884.
 (pdftex.def)             Requested size: 367.04073pt x 367.06525pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1361,54 +1364,54 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 1953) has occurred while \output is active []
 
 [49 <./figure/CH3/Figure4.pdf>]
-<figure/CH3/Figure5.pdf, id=738, 568.1225pt x 597.23125pt>
+<figure/CH3/Figure5.pdf, id=763, 568.1225pt x 597.23125pt>
 File: figure/CH3/Figure5.pdf Graphic file (type pdf)
 <use figure/CH3/Figure5.pdf>
-Package pdftex.def Info: figure/CH3/Figure5.pdf  used on input line 2011.
+Package pdftex.def Info: figure/CH3/Figure5.pdf  used on input line 1987.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-015.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+991.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [50] [51] [52 <./figure/CH3/Figure5.pdf>]
-Underfull \hbox (badness 1264) in paragraph at lines 2045--2058
+Underfull \hbox (badness 1264) in paragraph at lines 2021--2034
 \T1/lmr/m/n/10.95 from Mediter-ranean forests (FRA_PUE, ESP_TIL_OAK), species-r
 ich
  []
 
 
-Underfull \hbox (badness 2310) in paragraph at lines 2060--2067
+Underfull \hbox (badness 2310) in paragraph at lines 2036--2043
 \T1/lmr/m/n/10.95 HUN_SIK) and trop-i-cal (GUF_GUY_GUY, COL_MAC_SAF_RAD)
  []
 
 [53]
-<figure/CH3/Figure6.pdf, id=771, 568.1225pt x 597.23125pt>
+<figure/CH3/Figure6.pdf, id=796, 568.1225pt x 597.23125pt>
 File: figure/CH3/Figure6.pdf Graphic file (type pdf)
 <use figure/CH3/Figure6.pdf>
-Package pdftex.def Info: figure/CH3/Figure6.pdf  used on input line 2077.
+Package pdftex.def Info: figure/CH3/Figure6.pdf  used on input line 2053.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
 [54] [55 <./figure/CH3/Figure6.pdf>]
-<figure/CH3/Figure7.pdf, id=786, 568.1225pt x 597.23125pt>
+<figure/CH3/Figure7.pdf, id=811, 568.1225pt x 597.23125pt>
 File: figure/CH3/Figure7.pdf Graphic file (type pdf)
 <use figure/CH3/Figure7.pdf>
-Package pdftex.def Info: figure/CH3/Figure7.pdf  used on input line 2124.
+Package pdftex.def Info: figure/CH3/Figure7.pdf  used on input line 2100.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
-<figure/CH3/Figure8.pdf, id=787, 568.1225pt x 597.23125pt>
+<figure/CH3/Figure8.pdf, id=812, 568.1225pt x 597.23125pt>
 File: figure/CH3/Figure8.pdf Graphic file (type pdf)
 <use figure/CH3/Figure8.pdf>
-Package pdftex.def Info: figure/CH3/Figure8.pdf  used on input line 2154.
+Package pdftex.def Info: figure/CH3/Figure8.pdf  used on input line 2130.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
 [56] [57 <./figure/CH3/Figure7.pdf>] [58 <./figure/CH3/Figure8.pdf>] [59]
-Underfull \hbox (badness 2189) in paragraph at lines 2251--2275
+Underfull \hbox (badness 2189) in paragraph at lines 2227--2251
 []\T1/lmr/m/n/10.95 The com-bi-na-tion of SAPFLUXNET with other eco-phys-i-o-lo
 g-i-cal
  []
 
 [60] [61]
-<figure/CH3/Figure9.pdf, id=866, 568.1225pt x 682.55pt>
+<figure/CH3/Figure9.pdf, id=892, 568.1225pt x 682.55pt>
 File: figure/CH3/Figure9.pdf Graphic file (type pdf)
 <use figure/CH3/Figure9.pdf>
-Package pdftex.def Info: figure/CH3/Figure9.pdf  used on input line 2333.
+Package pdftex.def Info: figure/CH3/Figure9.pdf  used on input line 2309.
 (pdftex.def)             Requested size: 367.04073pt x 440.98604pt.
 
 Underfull \vbox (badness 2617) has occurred while \output is active []
@@ -1417,13 +1420,13 @@ Underfull \vbox (badness 2617) has occurred while \output is active []
 Overfull \vbox (16.46678pt too high) has occurred while \output is active []
 
 [63 <./figure/CH3/Figure9.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2339--2361
+Underfull \hbox (badness 10000) in paragraph at lines 2315--2337
 []\T1/lmr/m/n/10.95 Stand-level tran-spi-ra-tion es-ti-mates from a large num-b
 er of
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 2339--2361
+Underfull \hbox (badness 1400) in paragraph at lines 2315--2337
 \T1/lmr/m/n/10.95 SAPFLUXNET sites can con-tribute to im-prove our un-der-stand
 -ing of
  []
@@ -1432,34 +1435,66 @@ Underfull \hbox (badness 1400) in paragraph at lines 2339--2361
 
 ]
  3.
-[71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86]
-[87] [88] [89] [90] [91
-
-]
+[71] [72] [73] [74] [75] [76]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[92]
+[77]
+<figure/CH5/Figure_1.pdf, id=975, 625.33624pt x 255.95625pt>
+File: figure/CH5/Figure_1.pdf Graphic file (type pdf)
+<use figure/CH5/Figure_1.pdf>
+Package pdftex.def Info: figure/CH5/Figure_1.pdf  used on input line 2766.
+(pdftex.def)             Requested size: 367.04073pt x 150.23566pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[93]
+[78 <./figure/CH5/Figure_1.pdf>] [79] [80]
+Underfull \vbox (badness 1831) has occurred while \output is active []
+
+[81] [82]
+<figure/CH5/Figure_2.pdf, id=1014, 226.8475pt x 597.23125pt>
+File: figure/CH5/Figure_2.pdf Graphic file (type pdf)
+<use figure/CH5/Figure_2.pdf>
+Package pdftex.def Info: figure/CH5/Figure_2.pdf  used on input line 2968.
+(pdftex.def)             Requested size: 183.52036pt x 483.16231pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[94]
+[83]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[95]
+[84 <./figure/CH5/Figure_2.pdf>]
+<figure/CH5/Figure_3.pdf, id=1057, 625.33624pt x 226.8475pt>
+File: figure/CH5/Figure_3.pdf Graphic file (type pdf)
+<use figure/CH5/Figure_3.pdf>
+Package pdftex.def Info: figure/CH5/Figure_3.pdf  used on input line 3015.
+(pdftex.def)             Requested size: 367.04073pt x 133.15004pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[96]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[85] [86 <./figure/CH5/Figure_3.pdf>] [87]
+<figure/CH5/Figure_4.pdf, id=1096, 625.33624pt x 226.8475pt>
+File: figure/CH5/Figure_4.pdf Graphic file (type pdf)
+<use figure/CH5/Figure_4.pdf>
+Package pdftex.def Info: figure/CH5/Figure_4.pdf  used on input line 3103.
+(pdftex.def)             Requested size: 367.04073pt x 133.15004pt.
+[88 <./figure/CH5/Figure_4.pdf>]
+<figure/CH5/Figure_5.pdf, id=1134, 625.33624pt x 226.8475pt>
+File: figure/CH5/Figure_5.pdf Graphic file (type pdf)
+<use figure/CH5/Figure_5.pdf>
+Package pdftex.def Info: figure/CH5/Figure_5.pdf  used on input line 3127.
+(pdftex.def)             Requested size: 367.04073pt x 133.15004pt.
+[89 <./figure/CH5/Figure_5.pdf>] [90]
+<figure/CH5/Figure_6.pdf, id=1178, 578.16pt x 361.35pt>
+File: figure/CH5/Figure_6.pdf Graphic file (type pdf)
+<use figure/CH5/Figure_6.pdf>
+Package pdftex.def Info: figure/CH5/Figure_6.pdf  used on input line 3222.
+(pdftex.def)             Requested size: 293.6337pt x 183.51965pt.
+[91]
+Underfull \vbox (badness 1590) has occurred while \output is active []
 
-[97]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[92 <./figure/CH5/Figure_6.pdf>] [93] [94] [95] [96] [97] [98
 
-[98]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[99]
+] [99]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [100]
@@ -1529,7 +1564,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [122]
-Overfull \hbox (203.511pt too wide) in paragraph at lines 4420--4425
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[123]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[124]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[125]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[126]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[127]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[128]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[129]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[130]
+Overfull \hbox (203.511pt too wide) in paragraph at lines 4586--4591
  \T1/lmr/m/n/10.95 13. Re-trieved from []http://citeseerx.ist.psu.edu/viewdoc/d
 ownload?doi=10.1.1.155.4926{\&}rep=rep1{\&}type=pdf[] 
  []
@@ -1537,11 +1596,11 @@ ownload?doi=10.1.1.155.4926{\&}rep=rep1{\&}type=pdf[]
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[123]
+[131]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[124]
-Underfull \hbox (badness 1454) in paragraph at lines 4497--4501
+[132]
+Underfull \hbox (badness 1454) in paragraph at lines 4663--4667
  \T1/lmr/m/it/10.95 and For-est Me-te-o-rol-ogy\T1/lmr/m/n/10.95 , \T1/lmr/m/it
 /10.95 160\T1/lmr/m/n/10.95 , 90--99. []$\T1/lmtt/m/n/10.95 http : / / doi . or
 g / 10 . 1016 / j .
@@ -1550,32 +1609,32 @@ g / 10 . 1016 / j .
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[125]
-Underfull \hbox (badness 1043) in paragraph at lines 4565--4571
+[133]
+Underfull \hbox (badness 1043) in paragraph at lines 4731--4737
  []\T1/lmr/m/n/10.95 Wilson, K. B., Han-son, P. J., Mul-hol-land, P. J., Bal-do
 c-chi, D. D.,
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 4565--4571
+Underfull \hbox (badness 1102) in paragraph at lines 4731--4737
  \T1/lmr/m/n/10.95 & Wullschleger, S. D. (2001). A com-par-i-son of meth-ods fo
 r de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4565--4571
+Underfull \hbox (badness 10000) in paragraph at lines 4731--4737
  \T1/lmr/m/n/10.95 ter-min-ing for-est evap-o-tran-spi-ra-tion and its com-po-n
 ents: Sap-
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 4565--4571
+Underfull \hbox (badness 5050) in paragraph at lines 4731--4737
  \T1/lmr/m/n/10.95 flow, soil wa-ter bud-get, eddy co-vari-ance and catch-ment 
 wa-ter
  []
 
 
-Underfull \hbox (badness 3838) in paragraph at lines 4565--4571
+Underfull \hbox (badness 3838) in paragraph at lines 4731--4737
  \T1/lmr/m/n/10.95 bal-ance. \T1/lmr/m/it/10.95 Agri-cul-tural and For-est Me-t
 e-o-rol-ogy\T1/lmr/m/n/10.95 , \T1/lmr/m/it/10.95 106\T1/lmr/m/n/10.95 (2), 153
 --168.
@@ -1584,51 +1643,54 @@ e-o-rol-ogy\T1/lmr/m/n/10.95 , \T1/lmr/m/it/10.95 106\T1/lmr/m/n/10.95 (2), 153
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[126] [127] (./thesis.aux)
+[134] [135] (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 830B4530BDBB763E61B60B38B6C873C7;4521.
+(rerunfilecheck)             Checksum: 4A1026533BCACE0C5836BCA4B4D2F368;4577.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 23743 strings out of 481865
- 430070 string characters out of 5930521
- 755781 words of memory out of 5000000
- 39126 multiletter control sequences out of 15000+600000
- 639009 words of font info for 113 fonts, out of 8000000 for 9000
+ 23820 strings out of 481865
+ 431639 string characters out of 5930521
+ 758088 words of memory out of 5000000
+ 39176 multiletter control sequences out of 15000+600000
+ 648352 words of font info for 117 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 85i,14n,96p,1196b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,18n,96p,1196b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/data/r_users/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/da
-ta/r_users/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/data/r_user
-s/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/data/r_users/vflo/.Ti
-nyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/data/r_users/vflo/.TinyTeX/texm
-f-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/data/r_users/vflo/.TinyTeX/texmf-dist
+ta/r_users/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/data/r_u
+sers/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/data/r_users/vflo
+/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/data/r_users/vflo/.TinyTeX/
+texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/data/r_users/vflo/.TinyTeX/texmf-dist
 /fonts/enc/dvips/lm/lm-mathex.enc}</data/r_users/vflo/.TinyTeX/texmf-dist/fonts
 /type1/public/amsfonts/latxfont/lcircle1.pfb></data/r_users/vflo/.TinyTeX/texmf
 -dist/fonts/type1/public/lm/lmbx10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/
 fonts/type1/public/lm/lmbx12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/
-type1/public/lm/lmex10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/
-public/lm/lmmi10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public
-/lm/lmmi12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lm
-mi6.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
-></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></data
-/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></data/r_user
-s/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></data/r_users/vflo/
-.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></data/r_users/vflo/.TinyTeX
-/texmf-dist/fonts/type1/public/lm/lmr7.pfb></data/r_users/vflo/.TinyTeX/texmf-d
-ist/fonts/type1/public/lm/lmr8.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/font
-s/type1/public/lm/lmri10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type
-1/public/lm/lmri12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/publ
-ic/lm/lmro10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/
-lmsy10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.
-pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></d
-ata/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></data/r_u
-sers/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (147 pages, 4545645 bytes).
+type1/public/lm/lmbx8.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/p
+ublic/lm/lmex10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/
+lm/lmmi10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmm
+i12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
+></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></data
+/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></data/r_user
+s/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></data/r_users/vflo/
+.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></data/r_users/vflo/.TinyTe
+X/texmf-dist/fonts/type1/public/lm/lmr17.pfb></data/r_users/vflo/.TinyTeX/texmf
+-dist/fonts/type1/public/lm/lmr6.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fo
+nts/type1/public/lm/lmr7.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type
+1/public/lm/lmr8.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public
+/lm/lmri10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lm
+ri12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.p
+fb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></d
+ata/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></data/r_u
+sers/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></data/r_users/vf
+lo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></data/r_users/vflo/.Tin
+yTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></data/r_users/vflo/.TinyTeX/te
+xmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on thesis.pdf (155 pages, 8558322 bytes).
 PDF statistics:
- 1565 PDF objects out of 1728 (max. 8388607)
- 1314 compressed objects within 14 object streams
- 343 named destinations out of 1000 (max. 500000)
- 546 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1804 PDF objects out of 2073 (max. 8388607)
+ 1487 compressed objects within 15 object streams
+ 360 named destinations out of 1000 (max. 500000)
+ 576 words of extra memory for PDF output out of 10000 (max. 10000000)
 

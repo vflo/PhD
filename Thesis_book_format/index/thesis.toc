@@ -35,22 +35,22 @@
 \contentsline {subsection}{\numberline {2.5.2}Outlook}{67}{subsection.2.5.2}%
 \contentsline {section}{\numberline {2.6}Data availability, access and feedback}{68}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Conclusion}{69}{section.2.7}%
-\contentsline {chapter}{ 3: Climate, functional traits and water use strategies}{71}{chapter.3}%
+\contentsline {chapter}{ 3: Climate and functional traits jointly mediate tree water use strategies}{71}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduction}{73}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Material and methods}{76}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Sap flow data}{77}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Evaporative demand and soil water availability data}{77}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Data filtering}{78}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Whole-tree canopy conductance calculation}{79}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Traits and climatic data}{80}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}\(G_{Asw}\) sensitivity to soil water availability and water demand}{80}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Statistical analyses}{81}{subsection.3.2.7}%
-\contentsline {section}{\numberline {3.3}Results}{82}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Water use parameters and differences between angiosperms and gymnosperms}{82}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Coordination with hydraulic and allocation traits}{83}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Discussion}{85}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Climate influence on water use strategies across species}{86}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Water use parameters}{87}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Coordination between water use parameters and water relations traits}{88}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Conclusions}{90}{subsection.3.4.4}%
-\contentsline {chapter}{References}{91}{chapter*.31}%
+\contentsline {subsection}{\numberline {3.2.2}Evaporative demand and soil water availability data}{78}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Data filtering}{79}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Whole-tree canopy conductance calculation}{80}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Traits and climatic data}{81}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}\(\textbf {G}_{\textbf {Asw}}\) sensitivity to soil water availability and water demand}{82}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Statistical analyses}{82}{subsection.3.2.7}%
+\contentsline {section}{\numberline {3.3}Results}{85}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Water use parameters and differences between angiosperms and gymnosperms}{85}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Coordination with hydraulic and allocation traits}{86}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Discussion}{92}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Climate influence on water use strategies across species}{93}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Water use parameters}{93}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Coordination between water use parameters and water relations traits}{94}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Conclusions}{97}{subsection.3.4.4}%
+\contentsline {chapter}{References}{99}{chapter*.40}%

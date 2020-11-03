@@ -1,0 +1,25 @@
+Variable,Description,Units
+VPD,Vapour pressure deficit,kPa
+SWC,Soil water content,$\text{m}^{3}_{\text{water}} \: \text{m}^{-3}_{\text{soil}}$
+REW,Relative extractable water,
+Asw,Sapwood area,$\text{m}^{2}$
+SF,Sap flow,$\text{cm}^{3} \: \text{h}^{-1}$
+SFD,Sap flux density,$\text{cm}^3 \: \text{cm}_{\text{Asw}}^{-2} \: \text{h}^{-1}$
+$G$,Whole-tree canopy conductance,$\text{mol} \: \text{s}^{-1}$
+$G_{\text{Asw}}$,Whole-tree canopy conductance per unit of sapwood area,$\text{mol} \: \text{m}_{\text{Asw}}^{-2} \: \text{s}^{-1}$
+$G^{'™}_{\text{Asw}}$,"Whole-tree stomatal conductance (i.e., $G_{\text{Asw}}$ without aerodynamic conductance)",$\text{mol} \: \text{m}_{\text{Asw}}^{-2} \: \text{s}^{-1}$
+MAP,Mean annual precipitation,mm
+MAT,Mean annual temperature,\textdegree C
+PPET,Mean annual precipitation over potential evapotranspiration,$\text{mm} \: \text{mm}^{-1}$
+$H$,Tree height,m
+$\Psi_{P50}$,water potential at which half of Ks is lost,Mpa
+$K_{\text{s}}$,Maximum sapwood hydraulic conductivity,$\text{kg} \: \text{m}^{-1} \: \text{MPa}^{-1} \: \text{s}^{-1}$
+$Hv$,Huber  value:  ratio of cross-sectional sapwood area to leaf area,$\text{cm}^{2}_{\text{Asw}} \: \text{m}^{-2}_{\text{leaf area}}$
+$\Psi_{\text{TLP}}$,Water potential at leaf turgor-lost point,Mpa
+$R_{\text{depth}}$,Rooting depth,m
+$L_{\text{s}}$,Individual leaf size,$\text{cm}^2$
+$T$,Temperature,\textdegree C
+$h$,Plot altitude,m
+$G_{\text{REF}}$,Reference $G_{\text{Asw}}$ at VPD = 1 kPa and SWC = 0.5 $\text{m}^3 \: \text{m}^{-3}$,$\text{mol} \: \text{m}_{\text{Asw}}^{-2} \: \text{s}^{-1}$
+$\beta_{\text{VPD}}$,$G_{\text{Asw}}$ sensitivity to ln(VPD),$\text{mol} \: \text{m}_{\text{Asw}}^{-2} \: \text{s}^{-1}$
+$\beta_{\text{SWC}}$,$G_{\text{Asw}}$ sensitivity to ln(SWC),$\text{mol} \: \text{m}_{\text{Asw}}^{-2} \: \text{s}^{-1}$

@@ -1,0 +1,19 @@
+Water use parameter,Water relations Traits,N species,Intercept,Slope,$R^{2}$
+$G_{\text{REF}}$,$ln(\rvert\Psi_{\text{P50}}\rvert)$,55,210.701***,-62.724 ***,0.282
+$G_{\text{REF}}$,$ln(K_\text{s})$,43,135.527***,33.614 ***,0.338
+$G_{\text{REF}}$,$ln(Hv)$,49,189.439***,-37.602 ***,0.285
+$G_{\text{REF}}$,$\rvert\Psi_{\text{TLP}}\rvert$,48,191.764***,-22.702 *,0.112
+$G_{\text{REF}}$,$R_{\text{depth}}$,37,56.204**,109.296 ***,0.366
+$G_{\text{REF}}$,$ln(L_\text{s})$,86,115.537***,15.28 ***,0.391
+$\beta_{\text{VPD}}$,$ln(\rvert\Psi_{\text{P50}}\rvert)$,55,109.201***,-47.716 ***,0.24
+$\beta_{\text{VPD}}$,$ln(K_\text{s})$,43,50.199***,20.427 **,0.18
+$\beta_{\text{VPD}}$,$ln(Hv)$,49,96.503***,-33.817 ***,0.363
+$\beta_{\text{VPD}}$,$\rvert\Psi_{\text{TLP}}\rvert$,48,80.321***,-12.209 .,0.04
+$\beta_{\text{VPD}}$,$R_{\text{depth}}$,37,-2.190 ns,80.383 ***,0.26
+$\beta_{\text{VPD}}$,$ln(L_\text{s})$,86,34.577***,11.219 ***,0.327
+$\beta_{\text{SWC}}$,$ln(\rvert\Psi_{\text{P50}}\rvert)$,55,16.103 ns,19.327 *,0.059
+$\beta_{\text{SWC}}$,$ln(K_\text{s})$,43,42.113***,-5.021 ns,0
+$\beta_{\text{SWC}}$,$ln(Hv)$,49,23.952**,13.586 *,0.088
+$\beta_{\text{SWC}}$,$\rvert\Psi_{\text{TLP}}\rvert$,48,40.468**,1.052 ns,0
+$\beta_{\text{SWC}}$,$R_{\text{depth}}$,37,53.851***,-28.471 .,0.051
+$\beta_{\text{SWC}}$,$ln(L_\text{s})$,86,51.112***,-4.095 **,0.087
