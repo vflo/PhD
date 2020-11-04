@@ -10,17 +10,14 @@ library(rlang)
 library(GSIF)
 library(sp)
 library(mgcv)
-source('sfn_NN.R')
 source('maps_functions.R')
 source('calc_relip_mm.R')
 library(partR2)
-#Set the default theme for ggplot objects to theme_bw()
 library(extrafont)
 # font_import()
 loadfonts()
 library(ggplot2)
 theme_set(theme_bw())
-# theme_update(panel.grid = element_blank())
 library(viridis)
 library(gtable)
 library(stringr)
@@ -179,8 +176,8 @@ load("data/complete_gam_results.RData")
 #   filter(si_code %in% plant_sites)
 
 # metadata <- bind_rows(metadata_sapwood, metadata_plant)
-# save(metadata, file="~/Chapter_2/data/metadata.RData")
-load("~/Chapter_2/data/metadata.RData")
+# save(metadata, file="~/Chapter4/data/metadata.RData")
+load("~/Chapter4/data/metadata.RData")
 
 
 ## import CHELSA BIOS
@@ -191,24 +188,24 @@ chelsa <- read_csv("data/clim_biomes_chelsa.csv") %>%
 biomes <- read.csv("data/biome.csv")
 
 
-BIOS <- read_csv("~/Chapter_2/data/CHELSA_BIOS.csv") %>%
+BIOS <- read_csv("~/Chapter4/data/CHELSA_BIOS.csv") %>%
   dplyr::select(-lon,-lat,MAT = MAT, MAP = MAP,BIO_4,BIO_15,si_code) %>% 
   mutate(BIO_4 = BIO_4/1000,
          MAT = MAT/10)
 
 
-load("~/Chapter_2/data/LAI_google.RData")
+load("~/Chapter4/data/LAI_google.RData")
 LAI_google <- LAI
 colnames(LAI_google) <- c("si_code","lon","lat","LAI_google")
-load("~/Chapter_2/data/LAI.RData")
-load("~/Chapter_2/data/canopy_height.RData")
+load("~/Chapter4/data/LAI.RData")
+load("~/Chapter4/data/canopy_height.RData")
 
 ## import Data Soil
-load("~/Chapter_2/data/clay.RData")
-load("~/Chapter_2/data/sand.RData")
-load("~/Chapter_2/data/nitrogen.RData")
-load("~/Chapter_2/data/ph.RData")
-load("~/Chapter_2/data/bedrock.RData")
+load("~/Chapter4/data/clay.RData")
+load("~/Chapter4/data/sand.RData")
+load("~/Chapter4/data/nitrogen.RData")
+load("~/Chapter4/data/ph.RData")
+load("~/Chapter4/data/bedrock.RData")
 
 ## Joining and mutate
 data <- models %>% 
@@ -261,20 +258,6 @@ data_plant <- data %>%
                            `bor` = "BOR",
                            `tro` = "TROP",
                            `dry` = 'DRY')
-         # si_biome = coalesce(si_biome_cal,si_biome),
-         # si_biome = coalesce(si_biome,si_biome_chelsa),
-         # si_biome = recode(si_biome,
-         #                   `Woodland/shrubland` = 'WOOD',
-         #                   `Temperate forest` = "TEMP",
-         #                   `Boreal forest` = "BOR",
-         #                   `Tundra` = "BOR",
-         #                   `Tropical seasonal forest/savanna` = "TROP",
-         #                   `Tropical rain forest` = 'TROP',
-         #                   `Tropical forest savanna` = 'TROP',
-         #                   `Temperate grassland/desert` = 'DRY',
-         #                   `Temperate grassland desert` = 'DRY',
-         #                   `Subtropical desert` = 'DRY',
-         #                   `Desert` = 'DRY')
          )
 
 
@@ -1009,7 +992,7 @@ mod_G_log_vpd <- lmer(G_pred~log_vpd_mean*si_biome+(1|si_code/pl_code),
                           control = lmerControl(optimizer ="Nelder_Mead"))
 
 
-save(mod_G_log_vpd,file="~/Chapter_2/data/spa_model_G_log_vpd.RData")
+save(mod_G_log_vpd,file="~/Chapter4/data/spa_model_G_log_vpd.RData")
 
 gg2_G_log_vpd <- pred_G_log_vpd %>% 
   split(.[['si_biome']],drop = FALSE) %>%
@@ -1030,8 +1013,8 @@ gg2_G_log_vpd <- pred_G_log_vpd %>%
     return(res)}) %>% bind_rows()
 
 
-save(gg2_G_log_vpd,file="~/Chapter_2/data/gg2_G_log_vpd.RData")
-load(file="~/Chapter_2/data/gg2_G_log_vpd.RData")
+save(gg2_G_log_vpd,file="~/Chapter4/data/gg2_G_log_vpd.RData")
+load(file="~/Chapter4/data/gg2_G_log_vpd.RData")
 
 fuu <- arrange(mutate(pred_G_log_vpd,si_biome=factor(si_biome,levels=neworder)),si_biome)
 
@@ -1103,7 +1086,7 @@ mod_G_log_swc <- lmer(G_pred~log_swc*si_biome+(1|si_code/pl_code),
                           control = lmerControl(optimizer ="Nelder_Mead"))
 
 
-save(mod_G_log_swc,file="~/Chapter_2/data/spa_model_G_log_swc.RData")
+save(mod_G_log_swc,file="~/Chapter4/data/spa_model_G_log_swc.RData")
 
 
 gg2_G_log_swc <- pred_G_log_swc %>% 
@@ -1123,8 +1106,8 @@ gg2_G_log_swc <- pred_G_log_swc %>%
                   si_biome = x$si_biome %>% unique())
     return(res)}) %>% bind_rows()
 
-save(gg2_G_log_swc,file="~/Chapter_2/data/gg2_G_log_swc.RData")
-load(file="~/Chapter_2/data/gg2_G_log_swc.RData")
+save(gg2_G_log_swc,file="~/Chapter4/data/gg2_G_log_swc.RData")
+load(file="~/Chapter4/data/gg2_G_log_swc.RData")
 
 fuu <- arrange(mutate(pred_G_log_swc,si_biome=factor(si_biome,levels=neworder)),si_biome)
 
@@ -1194,7 +1177,7 @@ mod_G_log_ppfd <- lmer(G_pred~log_ppfd*si_biome+(1|si_code/pl_code),
                            control = lmerControl(optimizer ="Nelder_Mead"))
 
 
-save(mod_G_log_ppfd,file="~/Chapter_2/data/spa_model_G_log_ppfd.RData")
+save(mod_G_log_ppfd,file="~/Chapter4/data/spa_model_G_log_ppfd.RData")
 
 gg2_G_log_ppfd <- pred_G_log_ppfd %>% 
   split(.[['si_biome']],drop = FALSE) %>%
@@ -1212,8 +1195,8 @@ gg2_G_log_ppfd <- pred_G_log_ppfd %>%
                   si_biome = x$si_biome %>% unique())
     return(res)}) %>% bind_rows()
 
-save(gg2_G_log_ppfd,file="~/Chapter_2/data/gg2_G_log_ppfd.RData")
-load(file="~/Chapter_2/data/gg2_G_log_ppfd.RData")
+save(gg2_G_log_ppfd,file="~/Chapter4/data/gg2_G_log_ppfd.RData")
+load(file="~/Chapter4/data/gg2_G_log_ppfd.RData")
 
 fuu <- arrange(mutate(pred_G_log_ppfd,si_biome=factor(si_biome,levels=neworder)),si_biome)
 
@@ -1268,33 +1251,23 @@ library(RColorBrewer)
 
 crowther <- raster('~/[databases]/Crowther/Crowther_Nature_Files_Revision_01_WGS84_GeoTiff/Crowther_Nature_Biome_Revision_01_WGS84_GeoTiff.tif')
 
-MAP <- raster("~/Chapter_2/data/rasters/MAP_resample.tif")
-MAT <- raster("~/Chapter_2/data/rasters/MAT_resample.tif")
+MAP <- raster("~/Chapter4/data/rasters/MAP_resample.tif")
+MAT <- raster("~/Chapter4/data/rasters/MAT_resample.tif")
 MAT <- MAT/10
-BIO_4 <- raster("~/Chapter_2/data/rasters/BIO_4_resample.tif")
-BIO_15 <- raster("~/Chapter_2/data/rasters/BIO_15_resample.tif")
+BIO_4 <- raster("~/Chapter4/data/rasters/BIO_4_resample.tif")
+BIO_15 <- raster("~/Chapter4/data/rasters/BIO_15_resample.tif")
 BIO_4 <- BIO_4/1000
-# LAI <- raster("~/Chapter_2/data/rasters/LAI_resample.tif")
-LAI <- raster("~/Chapter_2/data/rasters/LAI_google_resample.tif")
-st_height <- raster("~/Chapter_2/data/rasters/st_height_resample.tif")
-clay <- raster("~/Chapter_2/data/rasters/clay_resample.tif")
-sand <- raster("~/Chapter_2/data/rasters/sand_resample.tif")
-bedrock <- raster("~/Chapter_2/data/rasters/bedrock_resample.tif")
-nitrogen <- raster("~/Chapter_2/data/rasters/nitrogen_resample.tif")
-ph <- raster("~/Chapter_2/data/rasters/ph_resample.tif")
-# MO <- raster("~/Chapter_2/data/rasters/MO_resample.tif")
-# PPET <- raster("~/Chapter_2/data/rasters/PPET_resample.tif")
-# TOTN <- raster("~/Chapter_2/data/rasters/TOTN_resample.tif")
-# si_elev<-raster("~/Chapter_2/data/rasters/elevation_resample.tif")
-
-# crowther_mask <- crowther
-# crowther_mask[crowther_mask < 400] <- NA
-# crowther_mask_ext <- crop(crowther_mask, clay)
+LAI <- raster("~/Chapter4/data/rasters/LAI_google_resample.tif")
+st_height <- raster("~/Chapter4/data/rasters/st_height_resample.tif")
+clay <- raster("~/Chapter4/data/rasters/clay_resample.tif")
+sand <- raster("~/Chapter4/data/rasters/sand_resample.tif")
+bedrock <- raster("~/Chapter4/data/rasters/bedrock_resample.tif")
+nitrogen <- raster("~/Chapter4/data/rasters/nitrogen_resample.tif")
+ph <- raster("~/Chapter4/data/rasters/ph_resample.tif")
 
 data_stack <- stack(st_height,MAT,MAP,clay,sand,
                     LAI,nitrogen,ph,bedrock,
                     BIO_4,BIO_15)
-# data_stack <- mask(data_stack,crowther)
 
 names(data_stack) <- c('st_height','MAT','MAP','clay','sand',
                        'LAI','nitrogen','ph','bedrock',
@@ -1442,1045 +1415,3 @@ triplot_map <- plot_grid(triplot_map)
 pdf(file ="triplot_map.pdf",width=10,height=5)
 triplot_map
 dev.off()
-
-
-
-# library(ggtern)
-# 
-# data_plant %>%filter(!is.na(r2_G_log_ppfd)) %>% 
-# ggtern::ggtern(mapping=aes(x = r2_G_log_vpd,
-#                    y = r2_G_log_swc,
-#                    z = r2_G_log_ppfd))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..),
-#                     fill="red",
-#                     show.legend = FALSE) +
-#   geom_point(shape=21,alpha = 0.2,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   facet_wrap(.~si_biome)+
-#   # facet_wrap(.~sp_leaf_habit)+
-#   NULL
-
-# 
-# data_plant %>% filter(!is.na(pl_social)) %>% 
-#   ggtern::ggtern(aes(x = vpd_comp_imp, 
-#                      y = swc_comp_imp,
-#                      z = ppfd_comp_imp))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..,
-#                         color = pl_social),
-#                     fill = "transparent",
-#                     show.legend = FALSE) +
-#   geom_point(aes(size=r2_comp,color = pl_social),shape=21,alpha = 0.2,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   facet_wrap(.~pl_social)+
-#   NULL
-# 
-# 
-# 
-# data_plant %>% filter(!is.na(sp_leaf_habit)) %>% 
-#   ggtern::ggtern(aes(x = vpd_comp_imp, 
-#                      y = swc_comp_imp,
-#                      z = ppfd_comp_imp))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..,
-#                         color = sp_leaf_habit),
-#                     fill = "transparent",
-#                     show.legend = FALSE) +
-#   geom_point(aes(size=r2_comp,color = sp_leaf_habit),shape=21,alpha = 0.2,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   facet_wrap(.~sp_leaf_habit)+
-#   NULL
-# 
-# 
-# data_plant %>% 
-#   mutate(PPET_quant = cut(PPET,breaks=quantile(PPET, 
-#                                                probs = seq(0,1,0.25)),
-#                           include.lowest = TRUE)) -> data_plant
-# levels(data_plant$PPET_quant) <- c("LOW PPET", "LOW-MED PPET", "HIGH-MED PPET", "HIGH PPET")
-# 
-# data_plant%>% 
-#   ggtern::ggtern(aes(x = vpd_comp_imp, 
-#                      y = swc_comp_imp,
-#                      z = ppfd_comp_imp))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..,
-#                         color=PPET_quant),
-#                     show.legend = FALSE) +
-#   geom_point(aes(size=r2_comp,color=PPET_quant),shape=21,alpha = 0.3,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   viridis::scale_fill_viridis(discrete = TRUE)+
-#   facet_wrap(.~PPET_quant)+
-#   # facet_wrap(.~sp_leaf_habit)+
-#   NULL
-# 
-# 
-# 
-# data_plant %>% 
-#   mutate(MAT_quant = cut(MAT,breaks=quantile(MAT, 
-#                                                probs = seq(0,1,0.25)),
-#                           include.lowest = TRUE)) -> data_plant
-# levels(data_plant$MAT_quant) <- c("LOW MAT", "LOW-MED MAT", "HIGH-MED MAT", "HIGH MAT")
-# 
-# data_plant%>% 
-#   ggtern::ggtern(aes(x = vpd_comp_imp, 
-#                      y = swc_comp_imp,
-#                      z = ppfd_comp_imp))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..,
-#                         color=MAT_quant),
-#                     show.legend = FALSE) +
-#   geom_point(aes(size=r2_comp,color=MAT_quant),shape=21,alpha = 0.3,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   viridis::scale_fill_viridis(discrete = TRUE)+
-#   facet_wrap(.~MAT_quant)+
-#   # facet_wrap(.~sp_leaf_habit)+
-#   NULL
-# 
-# 
-# 
-# data_plant %>% 
-#   mutate(MAP_quant = cut(MAP,breaks=quantile(MAP, 
-#                                              probs = seq(0,1,0.25)),
-#                          include.lowest = TRUE)) -> data_plant
-# levels(data_plant$MAP_quant) <- c("LOW MAP", "LOW-MED MAP", "HIGH-MED MAP", "HIGH MAP")
-# 
-# data_plant%>% 
-#   ggtern::ggtern(aes(x = vpd_comp_imp, 
-#                      y = swc_comp_imp,
-#                      z = ppfd_comp_imp))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..,
-#                         color=MAP_quant),
-#                     show.legend = FALSE) +
-#   geom_point(aes(size=r2_comp,color=MAP_quant),shape=21,alpha = 0.3,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   viridis::scale_fill_viridis(discrete = TRUE)+
-#   facet_wrap(.~MAP_quant)+
-#   # facet_wrap(.~sp_leaf_habit)+
-#   NULL
-# 
-# 
-# 
-# data_plant %>% 
-#   mutate(pl_height_quant = cut(pl_height,breaks=quantile(pl_height, 
-#                                              probs = seq(0,1,0.25),
-#                                              na.rm = TRUE),
-#                          include.lowest = TRUE)) -> data_plant
-# levels(data_plant$pl_height_quant) <- c("LOW pl_height", "LOW-MED pl_height", "HIGH-MED pl_height", "HIGH pl_height")
-# 
-# data_plant%>% 
-#   ggtern::ggtern(aes(x = vpd_comp_imp, 
-#                      y = swc_comp_imp,
-#                      z = ppfd_comp_imp))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..,
-#                         color=pl_height_quant),
-#                     show.legend = FALSE) +
-#   geom_point(aes(size=r2_comp,color=pl_height_quant),shape=21,alpha = 0.3,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   viridis::scale_fill_viridis(discrete = TRUE)+
-#   facet_wrap(.~pl_height_quant)+
-#   # facet_wrap(.~sp_leaf_habit)+
-#   NULL
-# 
-# 
-# 
-# data_plant %>% 
-#   mutate(clay_quant = cut(clay,breaks=quantile(clay, 
-#                                                          probs = seq(0,1,0.25),
-#                                                          na.rm = TRUE),
-#                                include.lowest = TRUE)) -> data_plant
-# levels(data_plant$clay_quant) <- c("LOW clay", "LOW-MED clay", "HIGH-MED clay", "HIGH clay")
-# 
-# data_plant%>% 
-#   ggtern::ggtern(aes(x = vpd_comp_imp, 
-#                      y = swc_comp_imp,
-#                      z = ppfd_comp_imp))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..,
-#                         color=clay_quant),
-#                     show.legend = FALSE) +
-#   geom_point(aes(size=r2_comp,color=clay_quant),shape=21,alpha = 0.3,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   viridis::scale_fill_viridis(discrete = TRUE)+
-#   facet_wrap(.~clay_quant)+
-#   # facet_wrap(.~sp_leaf_habit)+
-#   NULL
-# 
-# 
-# data_plant %>% 
-#   mutate(BIO_5_quant = cut(BIO_5,breaks=quantile(BIO_5, 
-#                                                probs = seq(0,1,0.25),
-#                                                na.rm = TRUE),
-#                           include.lowest = TRUE)) -> data_plant
-# levels(data_plant$BIO_5_quant) <- c("LOW BIO_5", "LOW-MED BIO_5", "HIGH-MED BIO_5", "HIGH BIO_5")
-# 
-# data_plant%>% 
-#   ggtern::ggtern(aes(x = vpd_comp_imp, 
-#                      y = swc_comp_imp,
-#                      z = ppfd_comp_imp))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..,
-#                         color=BIO_5_quant),
-#                     show.legend = FALSE) +
-#   geom_point(aes(size=r2_comp,color=BIO_5_quant),shape=21,alpha = 0.3,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   viridis::scale_fill_viridis(discrete = TRUE)+
-#   facet_wrap(.~BIO_5_quant)+
-#   # facet_wrap(.~sp_leaf_habit)+
-#   NULL
-# 
-# 
-# 
-# data_plant %>% 
-#   mutate(BIO_6_quant = cut(BIO_6,breaks=quantile(BIO_6, 
-#                                                  probs = seq(0,1,0.25),
-#                                                  na.rm = TRUE),
-#                            include.lowest = TRUE)) -> data_plant
-# levels(data_plant$BIO_6_quant) <- c("LOW BIO_6", "LOW-MED BIO_6", "HIGH-MED BIO_6", "HIGH BIO_6")
-# 
-# data_plant%>% 
-#   ggtern::ggtern(aes(x = vpd_comp_imp, 
-#                      y = swc_comp_imp,
-#                      z = ppfd_comp_imp))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..,
-#                         color=BIO_6_quant),
-#                     show.legend = FALSE) +
-#   geom_point(aes(size=r2_comp,color=BIO_6_quant),shape=21,alpha = 0.3,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   viridis::scale_fill_viridis(discrete = TRUE)+
-#   facet_wrap(.~BIO_6_quant)+
-#   # facet_wrap(.~sp_leaf_habit)+
-#   NULL
-# 
-# 
-# 
-# data_plant %>% 
-#   mutate(BIO_4_quant = cut(BIO_4,breaks=quantile(BIO_4, 
-#                                                  probs = seq(0,1,0.25),
-#                                                  na.rm = TRUE),
-#                            include.lowest = TRUE)) -> data_plant
-# levels(data_plant$BIO_4_quant) <- c("LOW BIO_4", "LOW-MED BIO_4", "HIGH-MED BIO_4", "HIGH BIO_4")
-# 
-# data_plant%>% 
-#   ggtern::ggtern(aes(x = vpd_comp_imp, 
-#                      y = swc_comp_imp,
-#                      z = ppfd_comp_imp))+
-#   geom_mask() +
-#   stat_density_tern(geom='polygon',
-#                     n         = 100,
-#                     aes(alpha = ..level..,
-#                         color=BIO_4_quant),
-#                     show.legend = FALSE) +
-#   geom_point(aes(size=r2_comp,color=BIO_4_quant),shape=21,alpha = 0.3,show.legend = FALSE) +
-#   theme_bw() +
-#   theme_showarrows() +
-#   theme_clockwise()+
-#   viridis::scale_color_viridis(discrete = TRUE)+
-#   viridis::scale_fill_viridis(discrete = TRUE)+
-#   facet_wrap(.~BIO_4_quant)+
-#   # facet_wrap(.~sp_leaf_habit)+
-#   NULL
-# 
-
-
-#### NOT INCLUDED PCA CALCULATION ####
-
-# library(ade4)
-# library(factoextra)
-# library(tidypaleo) #nested pca
-# library(tidyr)
-# library(magrittr)
-# 
-# pca_data <- data_plant %>% mutate(log_pl_dbh = log(pl_dbh),
-#                                   log_BIO_15 = log(BIO_15),
-#                                   log_BIO_13 = log(BIO_13)) %>% 
-#   dplyr::select(si_code,BIO_5,BIO_6,BIO_14,log_BIO_15,PPET,MAT,MAP
-#   ) %>% 
-#   gather(key="variable",value = "value",BIO_5,BIO_6,BIO_14,log_BIO_15,PPET,MAT,MAP
-#   )
-# # sites <- c(unique(pca_data[which(is.na(pca_data$value)),'si_code']))
-# # pca_data <- pca_data %>% 
-# #   filter(!si_code %in% sites$si_code)
-# 
-# nested_pca <- pca_data %>%
-#   nested_data(
-#     qualifiers = c(pl_code, si_code),
-#     key = variable,
-#     value = value,
-#     trans = scale
-#   ) %>%
-#   nested_prcomp()
-# 
-# # get variance info
-# nested_pca %>% unnest(variance)
-# 
-# # get loadings info
-# nested_pca %>% unnest(loadings)
-# 
-# # plot PCA
-# nested_pca %>% PCbiplot(values=TRUE,x='PC1',y='PC2')#+xlab("PC1 0.348%")+ylab('PC2 0.271%')
-# nested_pca %>% PCbiplot(values=TRUE,x='PC3',y='PC2')#+xlab("PC3 0.135%")+ylab('PC2 0.271%')
-# 
-# # scores, requalified
-# nested_pca %>% 
-#   unnest(qualifiers, scores) %>% 
-#   dplyr::select(pl_code,si_code,PC1,PC2,PC3) ->pca_mod_li
-# 
-# data_plant %<>% 
-#   left_join(pca_mod_li)
-# 
-
-
-
-
-
-
-
-
-## COMPLETE -> VPD
-# path <- "data/daily_0.1/complete_models/"
-# plant_names <- list.files(path = path)
-# max_biome <- purrr::map(plant_names, function(x){
-#   load(paste0(path,x))
-#   vpd <- model$nn_model$trainingData$vpd_mean
-#   swc <- model$nn_model$trainingData$swc_shallow_mean
-#   ppfd <- model$nn_model$trainingData$ppfd_in_mean
-#   df <- data_frame(pl_code = gsub(".RData","",x),
-#                    vpd,swc,ppfd)
-#   return(df)
-# }) %>% bind_rows() %>% 
-#   left_join(data_plant %>% dplyr::select(pl_code,si_biome)) %>% 
-#   group_by(si_biome) %>% 
-#   mutate(max_vpd = max(vpd),
-#          med_swc = median(swc),
-#          med_ppfd = median(ppfd)) %>% 
-#   group_by(pl_code) %>% 
-#   summarise(max_vpd = unique(max_vpd),med_swc = unique(med_swc),med_ppfd = unique(med_ppfd))
-# 
-# pred_vpd <- purrr::map(plant_names, function(x){
-#   load(paste0(path,x))
-#   r2 <- model$r2
-#   pl_code <- tibble(pl_code = gsub(".RData","",x))
-#   vpd_max <- left_join(pl_code,max_biome)
-#   # vpd <- seq(0.3,vpd_max$max_vpd,0.05)
-#   swc <-  vpd_max$med_swc
-#   ppfd <-  vpd_max$med_ppfd
-#   vpd <- model$nn_model$trainingData$vpd_mean
-#   # predict <-model$vals
-#   data_comp <- tibble(vpd_mean = vpd,swc_shallow_mean = swc,ppfd_in_mean = ppfd)
-#   predict <- predict(model$nn_model,newdata = data_comp)
-#   df <- data_frame(pl_code = gsub(".RData","",x),
-#                    predict,
-#                    max_vpd = vpd_max$max_vpd,
-#                    vpd,
-#                    r2,
-#                    time_scale = "daily")
-#   return(df)
-# }) %>% bind_rows()
-# 
-# pred <- pred_vpd %>% left_join(data_plant %>% dplyr::select(pl_code,si_biome, pl_dbh))%>% 
-#   mutate(predict = predict/(pi*(pl_dbh/2)^2))
-# 
-# 
-# gg2 <- pred %>% split(.[['si_biome']],drop = FALSE)
-# gg2 <- gg2 %>% purrr::map(function(x){
-#   si_biome <- x$si_biome %>% unique()
-#   max_vpd <- max(x$vpd) %>% unique()
-#   x$vpd <- log(x$vpd)
-#   mod <- lmer(predict~vpd+(1|pl_code), data = x)
-#   vpd <- data.frame(vpd=seq(0.3,max_vpd,0.05))
-#   vpd_mod <- data.frame(vpd=log(vpd$vpd))
-#   res <- predict(object = mod, newdata= vpd_mod,re.form=NA,se.fit=TRUE)
-#   res <- data.frame(vpd = vpd$vpd ,predi = res$fit,se = res$se.fit,si_biome = si_biome)
-#   return(res)
-# }
-# ) %>% bind_rows()
-# 
-# pred %>% filter(!is.na(si_biome),pl_code !='AUS_WOM_Eru_Js_2') %>%
-#   ggplot()+
-#   geom_line(aes(x=vpd,y=predict,group = pl_code,alpha = r2), color = 'grey',show.legend =FALSE)+
-#   geom_line(data = gg2,aes(x=vpd,y=predi,group = si_biome, color = si_biome),size=1,show.legend=FALSE)+
-#   ggplot2::geom_line(data = gg2, aes(x = vpd, y = predi + se,group = si_biome), size = 0.3,linetype=2) +
-#   ggplot2::geom_line(data = gg2, aes(x = vpd, y = predi - se,group = si_biome), size = 0.3,linetype=2) +
-#   # geom_smooth(aes(x=vpd,y=predict),method="lm",formula = y~log(x))+
-#   facet_wrap(.~si_biome,scales = 'free',nrow = 1)+
-#   scale_color_viridis(discrete = TRUE)+
-#   theme(legend.position = c(0.85, 0.25))+
-#   ylim(0,NA)+
-#   labs(y = expression(paste("Predicted conductance ", "mmol ", s^{-1} ,m^{-2})), x = 'VPD')+
-#   guides(color=guide_legend(title="Biome"))+
-#   scale_alpha_continuous(range = c(0, 0.4),
-#                          guide = 'none'
-#   )+
-#   theme(strip.background =element_blank())
-# 
-# 
-# 
-# # 
-# # g <- pred %>% filter(!is.na(si_biome)) %>%
-# #   ggplot()+
-# #   geom_smooth(aes(x=vpd,y=predict,group = si_biome, weight = r2, color = si_biome),
-# #               method = 'lm',formula = y~log(x))+
-# #   facet_wrap(.~si_biome,scales = 'free')+
-# #   scale_color_viridis(discrete = TRUE)+ 
-# #   theme(legend.position = c(0.85, 0.25))
-# # 
-# # gg_data <- ggplot_build(g)
-# # head(gg_data$data[[1]])
-# # gg2 <- gg_data$data[[1]]
-# # gg2 <- gg2 %>% rename(si_biome = group) %>% 
-# #   mutate(si_biome = as.factor(si_biome), si_biome = dplyr::recode(si_biome,
-# #                                                                   `3` = 'MED',
-# #                                                                   `4` = "TEMP",
-# #                                                                   `1` = "BOR",
-# #                                                                   `5` = 'TROP',
-# #                                                                   `2` = 'DRY'))
-# # 
-# # pred %>% filter(!is.na(si_biome)) %>%
-# #   ggplot()+
-# #   geom_line(aes(x=vpd,y=predict,group = pl_code,alpha = 0.05*r2), color = 'grey',show.legend=FALSE)+
-# #   geom_line(data = gg2,aes(x=x,y=y,group = si_biome, color = si_biome),size=1,show.legend=FALSE)+
-# #   ggplot2::geom_line(data = gg2, aes(x = x, y = ymin,group = colour), size = 0.3,linetype=2) +
-# #   ggplot2::geom_line(data = gg2, aes(x = x, y = ymax,group = colour), size = 0.3,linetype=2) +
-# #   ylim(0,NA)+
-# #   facet_wrap(.~si_biome,scales = 'free',nrow = 1)+
-# #   scale_color_viridis(discrete = TRUE)+ 
-# #   theme(legend.position = c(0.85, 0.25))+
-# #   ylim(0,NA)+
-# #   labs(y = expression(paste("Predicted conductance ", "mmol ", s^{-1})), x = 'VPD')+ 
-# #   guides(color=guide_legend(title="Biome"))+
-# #   scale_alpha_continuous(range = c(0, 0.3),
-# #                          guide = 'none'
-# #   )+
-# #   theme(strip.background =element_blank())
-# 
-# # pred %>% filter(!is.na(si_biome)) %>%
-# #   ggplot()+
-# #   geom_line(aes(x=vpd,y=predict,group = pl_code,alpha = 0.05*r2, color =si_biome),show.legend=TRUE)+
-# #   geom_line(data = gg2,aes(x=x,y=y,group = si_biome, color = si_biome),size=1,show.legend=FALSE)+
-# #   # ggplot2::geom_line(data = gg2, aes(x = x, y = ymin,group = colour), size = 0.3,linetype=2) +
-# #   # ggplot2::geom_line(data = gg2, aes(x = x, y = ymax,group = colour), size = 0.3,linetype=2) +
-# #   # facet_wrap(.~si_biome,scales = 'free',nrow = 1)+
-# #   scale_color_viridis(discrete = TRUE)+ 
-# #   theme(legend.position = c(0.85, 0.5))+
-# #   ylim(0,1.5)+
-# #   labs(y = expression(paste("Predicted conductance ", "mmol ", s^{-1})), x = 'VPD')+ 
-# #   guides(color=guide_legend(title="Biome"))+
-# #   scale_alpha_continuous(range = c(0, 0.2),
-# #                          guide = 'none'
-# #   )+
-# #   theme(strip.background =element_blank())
-# 
-# ## COMPLETE -> SWC
-# path <- "data/daily_0.1/complete_models/"
-# plant_names <- list.files(path = path)
-# max_biome <- purrr::map(plant_names, function(x){
-#   load(paste0(path,x))
-#   vpd <- model$nn_model$trainingData$vpd_mean
-#   swc <- model$nn_model$trainingData$swc_shallow_mean
-#   ppfd <- model$nn_model$trainingData$ppfd_in_mean
-#   df <- tibble(pl_code = gsub(".RData","",x),
-#                    vpd,swc,ppfd)
-#   return(df)
-# }) %>% bind_rows() %>% 
-#   left_join(data_plant %>% dplyr::select(pl_code,si_biome)) %>% 
-#   group_by(si_biome) %>%
-#   filter(swc>0) %>% 
-#   mutate(max_swc = max(swc),
-#          min_swc = min(swc),
-#          med_vpd = 1,
-#          med_ppfd = 500) %>% 
-#   group_by(pl_code) %>%
-#   summarise(max_swc = unique(max_swc),
-#             min_swc = unique(min_swc),
-#             med_vpd = unique(med_vpd),
-#             med_ppfd = unique(med_ppfd))
-# 
-# pred_swc <- purrr::map(plant_names, function(x){
-#   load(paste0(path,x))
-#   print(x)
-#   pl_code <- tibble(pl_code = gsub(".RData","",x))
-#   r2 <- model$r2
-#   imp_swc <- caret::varImp(model$nn_model, scale =FALSE) 
-#   imp_swc <- imp_swc$importance %>% as_tibble(rownames = "var") %>% 
-#     filter(var == "swc_shallow_mean") %>% select(Overall) 
-#   swc_max_min <- left_join(pl_code,max_biome)
-#   # swc <- seq(swc_max_min$min_swc,swc_max_min$max_swc,0.01)
-#   # med_vpd <-  swc_max_min$med_vpd
-#   # med_ppfd <-  swc_max_min$med_ppfd
-#   vpd <- model$nn_model$trainingData$vpd_mean
-#   swc <- model$nn_model$trainingData$swc_shallow_mean
-#   ppfd <- model$nn_model$trainingData$ppfd_in_mean
-#   med_ppfd <- median(ppfd)
-#   cond <- model$nn_model$trainingData$.outcome
-#   
-#   range_vpd <- max(vpd,na.rm = TRUE)-min(vpd,na.rm =TRUE)
-#   seq_vpd <- seq(min(vpd,na.rm =TRUE), max(vpd,na.rm = TRUE), range_vpd/6)
-#   # seq_vpd[5]<-seq_vpd[5]+0.02
-#   # seq_vpd[1]<-seq_vpd[1]-0.02
-#   vpd %>% as_tibble() %>%  rename('vpd' = 'value') %>% 
-#     mutate(cuts=cut(vpd,seq_vpd, include.lowest = TRUE)) -> vpd_cuts
-#   RcppRoll::roll_mean(seq_vpd,2)-> seq_vpd2
-#   seq_vpd2 <- tibble(seq_vpd2=seq_vpd2,cuts = cut(vpd,seq_vpd, include.lowest = TRUE) %>% levels())
-#   vpd_cuts%>% 
-#     cbind(swc) %>% group_by(cuts) %>% 
-#     summarise(max_swc = max(swc,na.rm = TRUE),
-#               min_swc = min(swc, na.rm = TRUE)) %>% 
-#     left_join(seq_vpd2)-> fil
-#   
-#   data_comp <- expand.grid(seq_vpd2=seq_vpd2$seq_vpd2,swc=swc,ppfd_in_mean = med_ppfd)
-#   data_comp %>% left_join(fil) %>% filter(swc<=max_swc & swc >=min_swc) %>% 
-#     select(seq_vpd2,swc,ppfd_in_mean)->data_comp
-#   colnames(data_comp) <- c('vpd_mean',"swc_shallow_mean",'ppfd_in_mean')
-#   # data_comp <- tibble(vpd_mean = med_vpd,swc_shallow_mean = swc,ppfd_in_mean = med_ppfd)
-#   predict <- predict(model$nn_model,newdata = data_comp)
-#   
-#   df <- data_comp %>% as_tibble() %>% bind_cols(tibble(pred=predict)) %>% merge( data_frame(pl_code =(gsub(".RData","",x))))
-#   return(df)
-# }) %>% bind_rows()
-# 
-# orig_swc <- purrr::map(plant_names, function(x){
-#   load(paste0(path,x))
-#   pl_code <- tibble(pl_code = gsub(".RData","",x))
-#   r2 <- model$r2
-#   imp_swc <- caret::varImp(model$nn_model, scale =FALSE) 
-#   imp_swc <- imp_swc$importance %>% as_tibble(rownames = "var") %>% 
-#     filter(var == "swc_shallow_mean") %>% select(Overall) 
-#   swc_max_min <- left_join(pl_code,max_biome)
-#   # swc <- seq(swc_max_min$min_swc,swc_max_min$max_swc,0.01)
-#   # med_vpd <-  swc_max_min$med_vpd
-#   # med_ppfd <-  swc_max_min$med_ppfd
-#   vpd <- model$nn_model$trainingData$vpd_mean
-#   swc <- model$nn_model$trainingData$swc_shallow_mean
-#   ppfd <- model$nn_model$trainingData$ppfd_in_mean
-#   med_ppfd <- median(ppfd)
-#   cond <- model$nn_model$trainingData$.outcome
-# 
-#     df <- data_frame(pl_code = gsub(".RData","",x),
-#                    swc,
-#                    vpd,
-#                    cond,
-#                    r2,
-#                    imp_swc = imp_swc$Overall)
-#   return(df)
-# }) %>% bind_rows()
-# 
-# orig <- orig_swc %>% left_join(data_plant %>% dplyr::select(pl_code,si_biome,pl_dbh))%>% 
-#   filter(swc>0) %>% 
-#   mutate(cond = cond/(pi*(pl_dbh/2)^2) ) %>% 
-#   group_by(pl_code) %>% 
-#   mutate(max_cond = max(cond,na.rm = TRUE),
-#          max_swc_swc = max(swc,na.rm = TRUE))
-# 
-# pred <- pred_swc %>% left_join(data_plant %>% dplyr::select(pl_code,si_biome,pl_dbh), by="pl_code")%>% 
-#   filter(swc_shallow_mean>0) %>% 
-#   mutate(pred = pred/(pi*(pl_dbh/2)^2) )
-# 
-# gg2 <- pred %>% split(.[['si_biome']],drop = FALSE)
-# gg2 <- gg2 %>% purrr::map(function(x){
-#   si_biome <- x$si_biome %>% unique()
-#   x$swc <- log(x$swc)
-#   mod <- lmer(predict~swc+(1|pl_code), data = x ,weights = r2)
-#   max_swc <- x[['max_swc']] %>% unique()
-#   min_swc <- x[['min_swc']] %>% unique()
-#   swc <- data.frame(swc=seq(min_swc,max_swc,0.01))
-#   swc_mod <- data.frame(swc=log(swc$swc))
-#   res <- predict(object = mod, newdata= swc_mod,re.form=NA,se.fit=TRUE)
-#   res <- data.frame(swc = swc$swc ,predi = res$fit,se = res$se.fit,si_biome = si_biome)
-#   return(res)
-# }
-# ) %>% bind_rows()
-# 
-# pred %>% filter(!is.na(si_biome)) %>%
-#   ggplot()+
-#   geom_line(aes(x=swc,y=predict,group = pl_code, alpha = r2), color = 'grey',show.legend =FALSE)+
-#   geom_line(data = gg2,aes(x=swc,y=predi,group = si_biome, color = si_biome),size=1,show.legend=FALSE)+
-#   ggplot2::geom_line(data = gg2, aes(x = swc, y = predi + se,group = si_biome), size = 0.3,linetype=2) +
-#   ggplot2::geom_line(data = gg2, aes(x = swc, y = predi - se,group = si_biome), size = 0.3,linetype=2) +
-#   # geom_smooth(aes(x=swc,y=predict),method="lm",formula = y~log(x))+
-#   facet_wrap(.~si_biome,scales = 'free', nrow = 1)+
-#   scale_color_viridis(discrete = TRUE)+
-#   theme(legend.position = c(0.85, 0.25))+
-#   ylim(0,NA)+
-#   labs(y = expression(paste("Predicted conductance ", "mmol ", s^{-1}, m^{-2})), x = 'SWC')+
-#   guides(color=guide_legend(title="Biome"))+
-#   scale_alpha_continuous(range = c(0, 0.4),
-#                          guide = 'none'
-#   )+
-#   theme(strip.background =element_blank())
-
-
-# 
-# g <- pred %>% filter(!is.na(si_biome),swc >0, !(pl_code %in% c('PRT_LEZ_ARN_Qsu_Js_1','PRT_LEZ_ARN_Qsu_Js_2',
-#                                                                'PRT_LEZ_ARN_Qsu_Js_3','PRT_LEZ_ARN_Qsu_Js_4','CZE_LAN_Qro_Jt_5',
-#                                                                'CZE_LAN_Qro_Jt_6', 'DEU_STE_4P5_Fsy_Jt_2', 'DEU_STE_4P5_Fsy_Jt_7',
-#                                                                'DEU_STE_4P5_Fsy_Jt_9'))) %>%
-#   ggplot()+
-#   geom_smooth(aes(x=swc,y=predict,group = si_biome, weight = r2, color = si_biome),
-#               method="lm",formula=y~log(x))+
-#   facet_wrap(.~si_biome,scales = 'free')+
-#   scale_color_viridis(discrete = TRUE)+ 
-#   theme(legend.position = c(0.85, 0.25))
-# 
-# gg_data <- ggplot_build(g)
-# head(gg_data$data[[1]])
-# gg2 <- gg_data$data[[1]]
-# gg2 <- gg2 %>% rename(si_biome = group) %>% 
-#   mutate(si_biome = as.factor(si_biome), si_biome = dplyr::recode(si_biome,
-#                                                                   `3` = 'MED',
-#                                                                   `4` = "TEMP",
-#                                                                   `1` = "BOR",
-#                                                                   `5` = 'TROP',
-#                                                                   `2` = 'DRY'))
-# 
-# pred %>% filter(!is.na(si_biome),swc > 0,!(pl_code %in% c('PRT_LEZ_ARN_Qsu_Js_1','PRT_LEZ_ARN_Qsu_Js_2',
-#                                                           'PRT_LEZ_ARN_Qsu_Js_3','PRT_LEZ_ARN_Qsu_Js_4','CZE_LAN_Qro_Jt_5',
-#                                                           'CZE_LAN_Qro_Jt_6', 'DEU_STE_4P5_Fsy_Jt_2', 'DEU_STE_4P5_Fsy_Jt_7',
-#                                                           'DEU_STE_4P5_Fsy_Jt_9'))) %>%
-#   ggplot()+
-#   geom_line(aes(x=swc,y=predict,group = pl_code,alpha = 0.05*r2), color = 'grey',show.legend=FALSE)+
-#   geom_line(data = gg2,aes(x=x,y=y,group = si_biome, color = si_biome),size=1,show.legend=FALSE)+
-#   ggplot2::geom_line(data = gg2, aes(x = x, y = ymin,group = colour), size = 0.3,linetype=2) +
-#   ggplot2::geom_line(data = gg2, aes(x = x, y = ymax,group = colour), size = 0.3,linetype=2) +
-#   ylim(0,NA)+
-#   facet_wrap(.~si_biome,scales = 'free',nrow = 1)+
-#   scale_color_viridis(discrete = TRUE)+ 
-#   theme(legend.position = c(0.85, 0.25))+
-#   labs(y = expression(paste("Predicted conductance ", "mmol ", s^{-1})), x = 'SM')+ 
-#   guides(color=guide_legend(title="Biome"))+
-#   theme(strip.background =element_blank())+
-#   scale_alpha_continuous(range = c(0, 0.3),
-#                          guide = 'none'
-#   )+
-#   # scale_y_log10()+
-#   NULL
-
-
-
-# 
-# library(ggforce)
-# orig %>% filter(!is.na(si_biome), si_biome == "MED") %>% 
-# ggplot()+
-#   geom_point(aes(x=swc,y = cond,color=vpd))+
-#   geom_line(data = pred %>% filter(!is.na(si_biome)) %>%
-#               filter(si_biome == "MED"),
-#             aes(x=swc_shallow_mean, y=pred, group=vpd_mean, color = (vpd_mean)), show.legend =TRUE, inherit.aes = FALSE)+
-#   geom_text(aes(x = (max_swc_swc*0.8), y = max_cond*0.8, label = paste0("r2 = ", as.character(round(r2,3)))))+
-#   geom_text(aes(x = (max_swc_swc*0.8), y = max_cond*0.6, label = paste0("Imp = ", as.character(round(imp_swc,2)))))+
-#   scale_color_viridis(discrete = FALSE)+
-#   facet_wrap_paginate(~pl_code,nrow=6,ncol=6,scales="free")
-# 
-# pred %>% filter(!is.na(si_biome)) %>%
-#   filter(si_biome == "MED") %>% 
-#   ggplot()+
-#   geom_point(aes(x=swc,y = cond),color='grey')+
-#   geom_line(aes(x=swc,y=predict,group = pl_code), color = 'red',show.legend =FALSE)+
-#   geom_text(aes(x = (max_swc_swc*0.8), y = max_cond*0.8, label = paste0("r2", " = ", as.character(round(r2,3)))), parse = TRUE)+
-#   facet_wrap_paginate(~pl_code,nrow=6,ncol=6,scales="free",page=2)
-# pred %>% filter(!is.na(si_biome)) %>%
-#   filter(si_biome == "MED") %>% 
-#   ggplot()+
-#   geom_point(aes(x=swc,y = cond),color='grey')+
-#   geom_line(aes(x=swc,y=predict,group = pl_code), color = 'red',show.legend =FALSE)+
-#   geom_text(aes(x = (max_swc_swc*0.8), y = max_cond*0.8, label = paste0("r2", " = ", as.character(round(r2,3)))), parse = TRUE)+
-#   facet_wrap_paginate(~pl_code,nrow=6,ncol=6,scales="free",page=3)
-# pred %>% filter(!is.na(si_biome)) %>%
-#   filter(si_biome == "MED") %>% 
-#   ggplot()+
-#   geom_point(aes(x=swc,y = cond),color='grey')+
-#   geom_line(aes(x=swc,y=predict,group = pl_code), color = 'red',show.legend =FALSE)+
-#   geom_text(aes(x = (max_swc_swc*0.8), y = max_cond*0.8, label = paste0("r2", " = ", as.character(round(r2,3)))), parse = TRUE)+
-#   facet_wrap_paginate(~pl_code,nrow=6,ncol=6,scales="free",page=4)
-# pred %>% filter(!is.na(si_biome)) %>%
-#   filter(si_biome == "MED") %>% 
-#   ggplot()+
-#   geom_point(aes(x=swc,y = cond),color='grey')+
-#   geom_line(aes(x=swc,y=predict,group = pl_code), color = 'red',show.legend =FALSE)+
-#   geom_text(aes(x = (max_swc_swc*0.8), y = max_cond*0.8, label = paste0("r2", " = ", as.character(round(r2,3)))), parse = TRUE)+
-#   facet_wrap_paginate(~pl_code,nrow=6,ncol=6,scales="free",page=5)
-# pred %>% filter(!is.na(si_biome)) %>%
-#   filter(si_biome == "MED") %>% 
-#   ggplot()+
-#   geom_point(aes(x=swc,y = cond),color='grey')+
-#   geom_line(aes(x=swc,y=predict,group = pl_code), color = 'red',show.legend =FALSE)+
-#   geom_text(aes(x = (max_swc_swc*0.8), y = max_cond*0.8, label = paste0("r2", " = ", as.character(round(r2,3)))), parse = TRUE)+
-#   facet_wrap_paginate(~pl_code,nrow=6,ncol=6,scales="free",page=6)
-# pred %>% filter(!is.na(si_biome)) %>%
-#   filter(si_biome == "MED") %>% 
-#   ggplot()+
-#   geom_point(aes(x=swc,y = cond),color='grey')+
-#   geom_line(aes(x=swc,y=predict,group = pl_code), color = 'red',show.legend =FALSE)+
-#   geom_text(aes(x = (max_swc_swc*0.8), y = max_cond*0.8, label = paste0("r2", " = ", as.character(round(r2,3)))), parse = TRUE)+
-#   facet_wrap_paginate(~pl_code,nrow=6,ncol=6,scales="free",page=7)
-# pred %>% filter(!is.na(si_biome)) %>%
-#   filter(si_biome == "MED") %>% 
-#   ggplot()+
-#   geom_point(aes(x=swc,y = cond),color='grey')+
-#   geom_line(aes(x=swc,y=predict,group = pl_code), color = 'red',show.legend =FALSE)+
-#   geom_text(aes(x = (max_swc_swc*0.8), y = max_cond*0.8, label = paste0("r2", " = ", as.character(round(r2,3)))), parse = TRUE)+
-#   facet_wrap_paginate(~pl_code,nrow=6,ncol=6,scales="free",page=8)
-# pred %>% filter(!is.na(si_biome)) %>%
-#   filter(si_biome == "MED") %>% 
-#   ggplot()+
-#   geom_point(aes(x=swc,y = cond),color='grey')+
-#   geom_line(aes(x=swc,y=predict,group = pl_code), color = 'red',show.legend =FALSE)+
-#   geom_text(aes(x = (max_swc_swc*0.8), y = max_cond*0.8, label = paste0("r2", " = ", as.character(round(r2,3)))), parse = TRUE)+
-#   facet_wrap_paginate(~pl_code,nrow=6,ncol=6,scales="free",page=9)
-# 
-# ## COMPLETE -> PPFD
-# path <- "data/daily_0.1/complete_models/"
-# plant_names <- list.files(path = path)
-# max_biome <- purrr::map(plant_names, function(x){
-#   load(paste0(path,x))
-#   vpd <- model$nn_model$trainingData$vpd_mean
-#   swc <- model$nn_model$trainingData$swc_shallow_mean
-#   ppfd <- model$nn_model$trainingData$ppfd_in_mean
-#   df <- data_frame(pl_code = gsub(".RData","",x),
-#                    vpd,swc,ppfd)
-#   return(df)
-# }) %>% bind_rows() %>% 
-#   left_join(data_plant %>% dplyr::select(pl_code,si_biome)) %>% 
-#   group_by(si_biome) %>% 
-#   filter(ppfd>0) %>% 
-#   mutate(max_ppfd = max(ppfd),
-#          min_ppfd = min(ppfd),
-#          med_vpd = 1,
-#          med_swc = 0.2) %>% 
-#   group_by(pl_code) %>% 
-#   summarise(max_ppfd = unique(max_ppfd),
-#             min_ppfd = unique(min_ppfd),
-#             med_vpd = unique(med_vpd),
-#             med_swc = unique(med_swc))
-# 
-# pred_comp <- purrr::map(plant_names, function(x){
-#   load(paste0(path,x))
-#   r2 <- model$r2
-#   pl_code <- tibble(pl_code = gsub(".RData","",x))
-#   ppfd_max_min <- left_join(pl_code,max_biome)
-#   # swc <- seq(swc_max_min$min_swc,swc_max_min$max_swc,0.01)
-#   vpd <-  ppfd_max_min$med_vpd
-#   swc <-  ppfd_max_min$med_swc
-#   ppfd <- model$nn_model$trainingData$ppfd_in_mean
-#   # predict <-model$vals
-#   data_comp <- tibble(vpd_mean = vpd,swc_shallow_mean = swc,ppfd_in_mean = ppfd)
-#   predict <- predict(model$nn_model,newdata = data_comp)
-#   df <- data_frame(pl_code = gsub(".RData","",x),
-#                    predict,
-#                    max_ppfd = ppfd_max_min$max_ppfd,
-#                    min_ppfd = ppfd_max_min$min_ppfd,
-#                    ppfd,
-#                    r2,
-#                    time_scale = "daily")
-#   return(df)
-# }) %>% bind_rows()
-# pred <- pred_comp %>% left_join(data_plant %>% dplyr::select(pl_code,si_biome,pl_dbh))%>%
-#   filter(ppfd>0) %>% 
-#   mutate(predict = predict/(pi*(pl_dbh/2)^2))
-# 
-# 
-# gg2 <- pred %>% split(.[['si_biome']],drop = FALSE)
-# gg2 <- gg2 %>% purrr::map(function(x){
-#   si_biome <- x$si_biome %>% unique()
-#   x$ppfd <- log(x$ppfd)
-#   mod <- lmer(predict~ppfd+(1|pl_code), data = x ,weights = r2)
-#   max_ppfd <- x[['max_ppfd']] %>% unique()
-#   min_ppfd <- x[['min_ppfd']] %>% unique()
-#   ppfd <- data.frame(ppfd=seq(min_ppfd,max_ppfd,0.01))
-#   ppfd_mod <- data.frame(ppfd=log(ppfd$ppfd))
-#   res <- predict(object = mod, newdata= ppfd_mod,re.form=NA,se.fit=TRUE)
-#   res <- data.frame(ppfd = ppfd$ppfd ,predi = res$fit,se = res$se.fit,si_biome = si_biome)
-#   return(res)
-# }
-# ) %>% bind_rows()
-# 
-# pred %>% filter(!is.na(si_biome)) %>%
-#   ggplot()+
-#   geom_line(aes(x=ppfd,y=predict,group = pl_code, alpha = r2), color = 'grey',show.legend =FALSE)+
-#   geom_line(data = gg2,aes(x=ppfd,y=predi,group = si_biome, color = si_biome),size=1,show.legend=FALSE)+
-#   ggplot2::geom_line(data = gg2, aes(x = ppfd, y = predi + se,group = si_biome), size = 0.3,linetype=2) +
-#   ggplot2::geom_line(data = gg2, aes(x = ppfd, y = predi - se,group = si_biome), size = 0.3,linetype=2) +
-#   # geom_smooth(aes(x=ppfd,y=predict),method="lm",formula = y~log(x))+
-#   facet_wrap(.~si_biome,scales = 'free', nrow = 1)+
-#   scale_color_viridis(discrete = TRUE)+
-#   theme(legend.position = c(0.85, 0.25))+
-#   ylim(0,NA)+
-#   labs(y = expression(paste("Predicted conductance ", "mmol ", s^{-1}, m^{-2})), x = 'PPFD')+
-#   guides(color=guide_legend(title="Biome"))+
-#   scale_alpha_continuous(range = c(0, 0.4),
-#                          guide = 'none'
-#   )+
-#   theme(strip.background =element_blank())
-
-
-# g <- pred %>% filter(!is.na(si_biome),!(pl_code %in% c('PRT_LEZ_ARN_Qsu_Js_1','PRT_LEZ_ARN_Qsu_Js_2',
-#                                                        'PRT_LEZ_ARN_Qsu_Js_3','PRT_LEZ_ARN_Qsu_Js_4','CZE_LAN_Qro_Jt_5',
-#                                                        'CZE_LAN_Qro_Jt_6', 'DEU_STE_4P5_Fsy_Jt_2', 'DEU_STE_4P5_Fsy_Jt_7',
-#                                                        'DEU_STE_4P5_Fsy_Jt_9'))) %>%
-#   ggplot()+
-#   geom_smooth(aes(x=ppfd,y=predict,group = si_biome, weight = r2, color = si_biome),
-#               method="lm",formula=y~log(x))+
-#   ylim(0.01,NA)+
-#   xlim(0.01,NA)+
-#   facet_wrap(.~si_biome,scales = 'free')+
-#   scale_color_viridis(discrete = TRUE)+ 
-#   theme(legend.position = c(0.85, 0.25))
-# 
-# gg_data <- ggplot_build(g)
-# head(gg_data$data[[1]])
-# gg2 <- gg_data$data[[1]]
-# gg2 <- gg2 %>% rename(si_biome = group) %>% 
-#   mutate(si_biome = as.factor(si_biome), si_biome = dplyr::recode(si_biome,
-#                                                                   `3` = 'MED',
-#                                                                   `4` = "TEMP",
-#                                                                   `1` = "BOR",
-#                                                                   `5` = 'TROP',
-#                                                                   `2` = 'DRY'))
-# 
-# pred %>% filter(!is.na(si_biome),!(pl_code %in% c('PRT_LEZ_ARN_Qsu_Js_1','PRT_LEZ_ARN_Qsu_Js_2',
-#                                                   'PRT_LEZ_ARN_Qsu_Js_3','PRT_LEZ_ARN_Qsu_Js_4','CZE_LAN_Qro_Jt_5',
-#                                                   'CZE_LAN_Qro_Jt_6', 'DEU_STE_4P5_Fsy_Jt_2', 'DEU_STE_4P5_Fsy_Jt_7',
-#                                                   'DEU_STE_4P5_Fsy_Jt_9'))) %>%
-#   ggplot()+
-#   geom_line(aes(x=ppfd,y=predict,group = pl_code,alpha = 0.05*r2), color = 'grey',show.legend = FALSE)+
-#   geom_line(data = gg2,aes(x=x,y=y,group = si_biome, color = si_biome),size=1,show.legend = FALSE)+
-#   ggplot2::geom_line(data = gg2, aes(x = x, y = ymin,group = colour), size = 0.3,linetype=2) +
-#   ggplot2::geom_line(data = gg2, aes(x = x, y = ymax,group = colour), size = 0.3,linetype=2) +
-#   ylim(0,NA)+
-#   facet_wrap(.~si_biome,scales = 'free',nrow = 1)+
-#   scale_color_viridis(discrete = TRUE)+ 
-#   theme(legend.position = c(0.85, 0.25))+
-#   labs(y = expression(paste("Predicted conductance ", "mmol ", s^{-1})), x = 'PPFD')+ 
-#   # guides(color=guide_legend(title="Biome"))+
-#   scale_alpha_continuous(range = c(0, 0.3),
-#                          guide = 'none'
-#   )+
-#   theme(strip.background =element_blank())
-
-
-#### NOT INCLUDED PREDICTED-OBSERVED PLOTS ####
-# 
-# library(MASS)
-# library(ggplot2)
-# library(viridis)
-# #> Loading required package: viridisLite
-# theme_set(theme_bw(base_size = 16))
-# 
-# # Get density of points in 2 dimensions.
-# # @param x A numeric vector.
-# # @param y A numeric vector.
-# # @param n Create a square n by n grid to compute density.
-# # @return The density within each square.
-# get_density <- function(x, y, ...) {
-#   dens <- MASS::kde2d(x, y, ...)
-#   ix <- findInterval(x, dens$x)
-#   iy <- findInterval(y, dens$y)
-#   ii <- cbind(ix, iy)
-#   return(dens$z[ii])
-# }
-# 
-# 
-# #DAILY NN COMPLETE MODELS DATA
-# path <- "data/models/complete_GAMM_models/"
-# site_names <- list.files(path = path)
-# pred_comp <-purrr::map(site_names, function(x){
-#   load(paste0(path,x))
-#   print(x)
-#   data <- data_plant %>% filter(si_code == gsub(".RData","",x)) 
-#   model <- model[[1]]
-#   df <- model$model
-#   predict <- predict(model,newdata = df)
-#   df <- df %>% cbind(predict = predict) %>% cbind(data)
-#   return(df)
-# }) %>% bind_rows()
-# 
-# pred_comp <- pred_comp %>% mutate(actual = G_sw)
-# 
-# lm(predict~G_sw,data=pred_comp) %>% summary()
-# mix_comp <-lmer(predict~actual+(actual|pl_code),data=pred_comp)
-# summary(mix_comp)
-# plot(mix_comp)
-# MuMIn::r.squaredGLMM(mix_comp)
-# RMSE(pred_comp$predict,pred_comp$actual)
-# 
-# 
-# pred_comp$density <- get_density(pred_comp$actual, pred_comp$predict, n = 100)
-# ggplot(pred_comp) + 
-#   geom_point(aes(actual, predict, color = (density^(1/8))),show.legend=FALSE) + 
-#   geom_segment(aes(x = 0, xend = 8000, y = 0, yend = 8000),linetype = 2)+
-#   scale_color_viridis()
-# ggplot(pred_act_comp) + 
-#   geom_point(aes(actual, predict,color=r2),show.legend=FALSE) +
-#   geom_smooth(aes(actual, predict,group=pl_code,color=r2),method="lm",se=FALSE)+
-#   scale_color_viridis()
-# 
-# pred_act_comp %>% filter(pl_code == 'SWE_NOR_ST3_Pab_Jt_14') %>% 
-#   ggplot()+
-#   geom_point(aes(y = actual), color = "purple")+
-#   geom_point(aes(y = predict), color = "yellow")
-# 
-# 
-# #DAILY NN VPD MODELS DATA
-# path <- "data/daily_0.1/vpd_models/"
-# plant_names <- list.files(path = path)
-# pred_act_vpd <- purrr::map(plant_names, function(x){
-#   load(paste0(path,x))
-#   r2 <- model$r2
-#   predict <-model$vals
-#   actual <- model$nn_model$trainingData$.outcome
-#   df <- data_frame(pl_code = gsub(".RData","",x),
-#                    predict,
-#                    actual,
-#                    r2,
-#                    time_scale = "daily")
-#   return(df)
-# }) %>% bind_rows()
-# 
-# lm(predict~actual,data=pred_act_vpd) %>% summary()
-# mix_vpd <-lmer(predict~actual+(actual|pl_code),data=pred_act_vpd)
-# summary(mix_vpd)
-# plot(mix_vpd)
-# MuMIn::r.squaredGLMM(mix_vpd)
-# RMSE(pred_act_vpd$predict,pred_act_vpd$actual)
-# 
-# 
-# pred_act_vpd$density <- get_density(pred_act_vpd$actual, pred_act_vpd$predict, n = 100)
-# ggplot(pred_act_vpd) + 
-#   geom_point(aes(actual, predict, color = (density^(1/8))),show.legend=FALSE) + 
-#   geom_segment(aes(x = 0, xend = 120, y = 0, yend = 120),linetype = 2)+
-#   scale_color_viridis()
-# ggplot(pred_act_vpd) + 
-#   geom_point(aes(actual, predict,color=r2),show.legend=FALSE) +
-#   geom_smooth(aes(actual, predict,group=pl_code,color=r2),method="lm",se=FALSE)+
-#   scale_color_viridis()
-# 
-# 
-# #DAILY NN SWC MODELS DATA
-# path <- "data/daily_0.1/swc_models/"
-# plant_names <- list.files(path = path)
-# pred_act_swc <- purrr::map(plant_names, function(x){
-#   load(paste0(path,x))
-#   r2 <- model$r2
-#   predict <-model$vals
-#   actual <- model$nn_model$trainingData$.outcome
-#   df <- data_frame(pl_code = gsub(".RData","",x),
-#                    r2,
-#                    predict,
-#                    actual,
-#                    time_scale = "daily")
-#   return(df)
-# }) %>% bind_rows()
-# 
-# lm(predict~actual,data=pred_act_swc) %>% summary()
-# mix_swc <-lmer(predict~actual+(actual|pl_code),data=pred_act_swc)
-# summary(mix_swc)
-# plot(mix_swc)
-# MuMIn::r.squaredGLMM(mix_swc)
-# RMSE(pred_act_swc$predict,pred_act_swc$actual)
-# 
-# pred_act_swc$density <- get_density(pred_act_swc$actual, pred_act_swc$predict, n = 100)
-# ggplot(pred_act_swc) + 
-#   geom_point(aes(actual, predict, color = (density^(1/8))),show.legend=FALSE) + 
-#   geom_segment(aes(x = 0, xend = 120, y = 0, yend = 120),linetype = 2)+
-#   scale_color_viridis()
-# ggplot(pred_act_swc) + 
-#   geom_point(aes(actual, predict,color=r2),show.legend=FALSE) +
-#   geom_smooth(aes(actual, predict,group=pl_code,color=r2),method="lm",se=FALSE)+
-#   scale_color_viridis()
-# 
-# pred_act_swc %>% filter(pl_code == 'SWE_NOR_ST3_Pab_Jt_14') %>% 
-#   ggplot(aes(actual, predict))+
-#   geom_point()+
-#   geom_smooth(method="lm")
-# 
-# pred_act_swc %>% filter(pl_code == 'SWE_NOR_ST3_Pab_Jt_14') %>% 
-#   ggplot()+
-#   geom_line(aes(seq(1,length(predict),1), predict))+
-#   geom_line(aes(seq(1,length(predict),1), actual),color="red")
-# 
-# 
-# #DAILY NN PPFD MODELS DATA
-# path <- "data/daily_0.1/ppfd_models/"
-# plant_names <- list.files(path = path)
-# pred_act_ppfd <- purrr::map(plant_names, function(x){
-#   load(paste0(path,x))
-#   r2 <- model$r2
-#   predict <-model$vals
-#   actual <- model$nn_model$trainingData$.outcome
-#   df <- data_frame(pl_code = gsub(".RData","",x),
-#                    r2,
-#                    predict,
-#                    actual,
-#                    time_scale = "daily")
-#   return(df)
-# }) %>% bind_rows()
-# 
-# lm(predict~actual,data=pred_act_ppfd) %>% summary()
-# mix_ppfd <-lmer(predict~actual+(actual|pl_code),data=pred_act_vpd)
-# summary(mix_ppfd)
-# plot(mix_ppfd)
-# MuMIn::r.squaredGLMM(mix_ppfd)
-# RMSE(pred_act_ppfd$predict,pred_act_ppfd$actual)
-# 
-# 
-# pred_act_ppfd$density <- get_density(pred_act_ppfd$actual, pred_act_ppfd$predict, n = 100)
-# ggplot(pred_act_ppfd) + 
-#   geom_point(aes(actual, predict, color = (density^(1/8))),show.legend=FALSE) + 
-#   geom_segment(aes(x = 0, xend = 120, y = 0, yend = 120),linetype = 2)+
-#   scale_color_viridis()
-# ggplot(pred_act_ppfd) + 
-#   geom_point(aes(actual, predict,color=r2),show.legend=FALSE) +
-#   geom_smooth(aes(actual, predict,group=pl_code,color=r2),method="lm",se=FALSE)+
-#   scale_color_viridis()

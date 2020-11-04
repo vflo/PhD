@@ -1,20 +1,11 @@
-# library(sjstats)
 library(tidyverse)
-# library(randomForest)
-# library(nnet)
-# require(caret)
 library(taxonlookup)
 library(broom)
 library(magrittr)
 library(rjson)
 library(sp)
-# library(GSIF)
-# library(AICcmodavg)
-# library(lmerTest)
 library(lme4)
-# library(medfate)
-source("~/Chapter_3_mod/soil_functions.R")
-# source('sfn_NN.R') # for the analysis
+source("~/Chapter4/soil_functions.R")
 library(purrr)
 library(future)
 library(furrr)
@@ -31,44 +22,30 @@ num_NA <- function(x, ...) {
 
 ## 0.1 Plant names to be modelized ---------------
 
-# path <- "~/Chapter_3/data/site_species/"
-path <- "~/Chapter_2/data/site_daylight/"
+path <- "~/Chapter4/data/site_daylight/"
 site_names <- list.files(path = path)
 
-# source('~/Chapter_2/Individual_plant_analyses/treatment_list_filter.R')
-source('~/Chapter_3_mod/treatment_filter_only_control.R')
+source('~/Chapter4/treatment_filter_only_control.R')
 
-load("~/Chapter_2/data/swc_ERA5_land.RData") #nearest cell extract ERA5 land 9x9km 1980 to present
+load("~/Chapter4/data/swc_ERA5_land.RData") #nearest cell extract ERA5 land 9x9km 1980 to present
 
 ERA5_land_data <- swc_ERA5_land %>% 
   rename(ERA5_swc = swc_ERA5_land,
          TIMESTAMP = TIMESTAMP_daylight) %>% 
   mutate(TIMESTAMP = lubridate::as_date(TIMESTAMP))
-# ERA5_land_data %>%
-#   group_by(si_code) %>% 
-#   mutate(lead_ERA5_swc = lead(ERA5_swc),
-#          n_ERA5 = n(),
-#          D_ind = log(lead_ERA5_swc+1/ERA5_swc+1),
-#          D_sum = sum(D_ind,na.rm = TRUE),
-#          D = 1/(n_ERA5-1)*D_sum) -> ERA5_land_data
-# D_data <- ERA5_land_data %>% dplyr::select(si_code,D) %>% unique()
 
 dbh_sapw_mod <- readRDS(file="~/Chapter_3_mod/dbh_sapw_area_model.rds")
-# load(file = '~/Chapter_3/filter_sites_sapw_units_wrong.Rdata')
-# soilgrids.r <- REST.SoilGrids(c('SNDPPT', 'SLTPPT', 'CLYPPT', 'ORCDRC', 'BLD', 'CEC', 'PHIHOX','CRFVOL'))
-# soilgrids.r <- REST.SoilGrids(c('bdod'))
+
 ## import PET
-PET <- read_csv('~/Chapter_2/data/PET.csv') %>% 
+PET <- read_csv('~/Chapter4/data/PET.csv') %>% 
   dplyr::rename(si_lat = lati,si_long = long)
-BIOS <- read_csv("~/Chapter_2/data/CHELSA_BIOS.csv") %>% mutate(si_long = lon, si_lat = lat)
+BIOS <- read_csv("~/Chapter4/data/CHELSA_BIOS.csv") %>% mutate(si_long = lon, si_lat = lat)
 
-load("~/Chapter_2/data/sand.RData")
-load("~/Chapter_2/data/clay.RData")
-load("~/Chapter_2/data/elevation.RData")
-
-load("~/Chapter_2/data/sw_ERA5_18.RData")
-load("~/Chapter_2/data/sw_ERA5_6.RData")
-
+load("~/Chapter4/data/sand.RData")
+load("~/Chapter4/data/clay.RData")
+load("~/Chapter4/data/elevation.RData")
+load("~/Chapter4/data/sw_ERA5_18.RData")
+load("~/Chapter4/data/sw_ERA5_6.RData")
 
 sw <- sw_ERA5_18 %>% 
   left_join(sw_ERA5_6) %>% 
@@ -80,18 +57,11 @@ sw <- sw_ERA5_18 %>%
 rm(sw_ERA5_18)
 rm(sw_ERA5_6)
 
-# site_names <- site_names[!site_names %in%
-#                              list.files("data/models/complete_bin_gam_models/")] %>%
-#   sort(decreasing =TRUE)
-# 
-# site_names <- site_names[-which(site_names == "ISR_YAT_YAT.RData")]
-
 site_names <- sample(site_names)
 
 
 ## 0.2 MODELIZATION ----------------------
 
-# furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
 furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
 # purrr::map(site_names,function(.x){
   ## 1.0 Data load -----------------------
@@ -333,16 +303,6 @@ furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
                 si_biome = unique(si_biome),
                 min_timestamp = min(TIMESTAMP,na.rm=TRUE),
                 max_timestamp = max(TIMESTAMP,na.rm=TRUE),
-                # clay = unique(clay),
-                # bdod = unique(bdod),  
-                # cec = unique(cec), 
-                # cfvo = unique(cfvo),
-                # nitrogen = unique(nitrogen),  
-                # ocd = unique(ocd), 
-                # phh2o = unique(phh2o), 
-                # silt  = unique(silt),
-                # sand  = unique(sand),
-                # soc  = unique(soc),
                 pl_sap_units = unique(pl_sap_units),
                 swc_shallow = ifelse(all(is.na(swc_shallow_mean)),
                                      NA_integer_,
@@ -372,27 +332,16 @@ furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
     
     faa %>% 
       group_by(pl_code) %>% 
-      # mutate(
-      #        quan_filter = 'NO',
-      #        quan_filter = 
-      #          case_when(
-      #            G_sw<quantile(G_sw,0.99,na.rm = TRUE) ~ 'YES',
-      #            G_sw>quantile(G_sw,0.01,na.rm = TRUE) ~ 'YES')) %>% 
       mutate(
         log_swc = log(swc),
         min_swc = min(log_swc,na.rm = TRUE),
         max_swc = max(log_swc,na.rm = TRUE)) %>% 
-      # filter(quan_filter == "YES") %>%
-      # filter(log_swc>=-3) %>%
       ungroup() ->faa2
     
     if(nrow(faa2)>1){
       
       faa2%>%
-        mutate(#ppfd = ppfd/1000,
-               # vpd_cut=cut(vpd_mean, 10),
-               vpd_cut=cut(vpd_mean, seq(0.3, 9.9, by=0.2)),
-               # swp_cut=cut(log_swc, c(-12,-3,-2.5,-2,-1.5,-1,-0.5,0,0.5,1,100)),
+        mutate(vpd_cut=cut(vpd_mean, seq(0.3, 9.9, by=0.2)),
                swc_cut=cut(swc, 5),
                ppfd_cut=cut(ppfd, seq(0, 1750, by=250)),
                max_vpd = max(vpd_mean,na.rm=TRUE),
@@ -404,12 +353,6 @@ furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
                range_vpd = max_vpd - min_vpd,
                range_swc = max_swc - min_swc,
                range_ppfd = max_ppfd - min_ppfd,
-               # vpd_cut_mean = sapply(str_extract_all(vpd_cut,"-?[0-9]+(\\.[0-9]+)?"), 
-               #                       function(x) mean(as.numeric(x))),
-               # swc_cut_mean = sapply(str_extract_all(swc_cut,"-?[0-9]+(\\.[0-9]+)?"), 
-               #                       function(x) mean(as.numeric(x))),
-               # ppfd_cut_mean = sapply(str_extract_all(ppfd_cut,"-?[0-9]+(\\.[0-9]+)?"), 
-               #                       function(x) mean(as.numeric(x))),
                n_day_plant = n_distinct(vpd_mean)  
                  )%>%
         filter(n_day_plant>=10,
@@ -426,7 +369,6 @@ furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
           group_by(pl_code,vpd_cut,swc_cut,ppfd_cut) %>% 
           summarise(G_sw = mean(G_sw,na.rm = TRUE),
                     sapflow_mean = mean(sapflow_mean,na.rm = TRUE),
-                    # G_sw = quantile(G_sw,0.95,na.rm = TRUE),
                     n_dist_G_cut = n_distinct(G_sw),
                     log_vpd_mean = log(mean(vpd_mean)),
                     log_swc = log(mean(swc)),
@@ -477,11 +419,7 @@ furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
         if(test_1 & !test_2){
           
           type = 2
-# 
-#           model_G_sw_log_null <- lmer(G_sw~ 1 +
-#                                         (1|pl_species),
-#                                       data = faa2)
-          
+
           model_G_sw_log <- try(lmer(G_sw~log_vpd_mean+log_swc+log_ppfd+
                                        (log_vpd_mean+log_swc+log_ppfd|pl_species),REML = TRUE,
                                      data = faa2))
@@ -500,10 +438,6 @@ furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
         if(!test_1 & test_2){
 
            type = 3
-# 
-#            model_G_sw_log_null <- lmer(G_sw~ 1 +
-#                                          (1|pl_code),
-#                                        data = faa2)
            
              model_G_sw_log <- try(lmer(G_sw~log_vpd_mean+log_swc+log_ppfd+
                                           (1|pl_code),REML = TRUE,
@@ -537,12 +471,6 @@ furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
         
         lm_model <- lm(G_sw~log_vpd_mean+log_swc+log_ppfd, data = faa2)
         
-        # partR2(model_G_sw_log,
-        #        partvars = c("log_vpd_mean", "log_swc", "log_ppfd"),
-        #        R2_type = "marginal", nboot = 100, CI = 0.95,
-        #        data = faa2)
-        # r2glmm::r2beta(model_G_sw_log,method="nsj")
-        
         print(unique(x2$si_code))
         
         model <- list(env_data,type,faa2,
@@ -551,7 +479,6 @@ furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
                       model_G_sw_log_swc,
                       model_G_sw_log_ppfd,
                       lm_model
-                      # model_G_sw_log_null
                       )
         
         save(model,file=paste0(getwd(),"/data/models/complete_G_log/",unique(x2$si_code),".RData"))

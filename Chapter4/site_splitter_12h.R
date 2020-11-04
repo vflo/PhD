@@ -48,7 +48,7 @@ purrr::map(site_names,function(x){
 
   x2 <- faa
   
-  save(x2, file=paste0('~/Chapter_2/data/site_daylight/',
+  save(x2, file=paste0('~/Chapter4/data/site_daylight/',
                        unique(x2$si_code), '.RData'))
   
   }
