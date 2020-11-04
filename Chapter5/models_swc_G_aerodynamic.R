@@ -10,7 +10,7 @@ library(AICcmodavg)
 library(lmerTest)
 source("resistance_neutral.R")
 # library(medfate)
-source("~/Chapter_3_mod/soil_functions.R")
+source("~/Chapter5/soil_functions.R")
 library(purrr)
 library(future)
 library(furrr)
@@ -20,44 +20,31 @@ options('future.global.maxsize'=2*1024*1024^2)
 
 ## 0.1 Plant names to be modelized ---------------
 
-# path <- "~/Chapter_3_mod/data/species_data_subdaily/"
-path <- "~/Chapter_3_mod/data/species_data/"
-# path <- "~/Chapter_2/data/site_daylight/"
+path <- "~/Chapter5/data/species_data/"
 site_names <- list.files(path = path)
 
-# source('~/Chapter_2/Individual_plant_analyses/treatment_list_filter.R')
-source('~/Chapter_3_mod/treatment_filter_only_control.R')
+source('~/Chapter5/treatment_filter_only_control.R')
 
-load("~/Chapter_2/data/swc_ERA5_land.RData") #nearest cell extract ERA5 land 9x9km 2001 to present
+load("~/Chapter5/data/swc_ERA5_land.RData") #nearest cell extract ERA5 land 9x9km 2001 to present
 
 ERA5_land_data <- swc_ERA5_land %>% 
   rename(ERA5_swc = swc_ERA5_land,
          TIMESTAMP = TIMESTAMP_daylight) %>% 
   mutate(TIMESTAMP = lubridate::as_date(TIMESTAMP))
-# ERA5_land_data %>%
-#   group_by(si_code) %>% 
-#   mutate(lead_ERA5_swc = lead(ERA5_swc),
-#          n_ERA5 = n(),
-#          D_ind = log(lead_ERA5_swc+1/ERA5_swc+1),
-#          D_sum = sum(D_ind,na.rm = TRUE),
-#          D = 1/(n_ERA5-1)*D_sum) -> ERA5_land_data
-# D_data <- ERA5_land_data %>% dplyr::select(si_code,D) %>% unique()
 
-dbh_sapw_mod <- readRDS(file="~/Chapter_3_mod/dbh_sapw_area_model.rds")
-# load(file = '~/Chapter_3/filter_sites_sapw_units_wrong.Rdata')
-# soilgrids.r <- REST.SoilGrids(c('SNDPPT', 'SLTPPT', 'CLYPPT', 'ORCDRC', 'BLD', 'CEC', 'PHIHOX','CRFVOL'))
-# soilgrids.r <- REST.SoilGrids(c('bdod'))
+dbh_sapw_mod <- readRDS(file="~/Chapter5/dbh_sapw_area_model.rds")
+
 ## import PET
-PET <- read_csv('~/Chapter_2/data/PET.csv') %>% 
+PET <- read_csv('~/Chapter5/data/PET.csv') %>% 
   dplyr::rename(si_lat = lati,si_long = long)
-BIOS <- read_csv("~/Chapter_2/data/CHELSA_BIOS.csv") %>% mutate(si_long = lon, si_lat = lat)
+BIOS <- read_csv("~/Chapter5/data/CHELSA_BIOS.csv") %>% mutate(si_long = lon, si_lat = lat)
 
-load("~/Chapter_2/data/sand.RData")
-load("~/Chapter_2/data/clay.RData")
-load("~/Chapter_2/data/elevation.RData")
+load("~/Chapter5/data/sand.RData")
+load("~/Chapter5/data/clay.RData")
+load("~/Chapter5/data/elevation.RData")
 
-load("~/Chapter_2/data/sw_ERA5_18.RData")
-load("~/Chapter_2/data/sw_ERA5_6.RData")
+load("~/Chapter5/data/sw_ERA5_18.RData")
+load("~/Chapter5/data/sw_ERA5_6.RData")
 
 
 sw <- sw_ERA5_18 %>% 
@@ -70,10 +57,6 @@ sw <- sw_ERA5_18 %>%
 rm(sw_ERA5_18)
 rm(sw_ERA5_6)
 
-# site_names <- site_names[!site_names %in%
-#                              list.files("data/models/complete_bin_gam_models/")] %>%
-#   sort(decreasing =TRUE)
-# 
 site_names <- sample(site_names)
 
 ## 0.2 MODELIZATION ----------------------
@@ -304,63 +287,21 @@ furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
              swc <= 0.3
              # swc < swc_q_50
       )-> faa
-    
 
-    # faa %>% 
-    #   ungroup() %>% 
-    #   summarise(si_code = unique(si_code),
-    #             pl_dbh = weighted.mean(pl_dbh,n),
-    #             pl_height = weighted.mean(pl_height,n),
-    #             si_long = unique(si_long),
-    #             si_lat = unique(si_lat),
-    #             MAP = unique(MAP),
-    #             MAT = unique(MAT)/10,
-    #             PET = unique(PET),
-    #             PPET = MAP/PET,
-    #             D = unique(D),
-    #             si_biome = unique(si_biome)
-    #   )-> env_data
     
     ## 3.0 GAM calculation -----------------  
     
       faa2 <- faa
-    
-      # faa %>%
-      #   group_by(pl_code) %>%
-      # mutate(
-      #        quan_filter = 'NO',
-      #        quan_filter =
-      #          case_when(
-      #            G_sw<quantile(G_sw,0.99,na.rm = TRUE) ~ 'YES',
-      #            G_sw>quantile(G_sw,0.01,na.rm = TRUE) ~ 'YES')) %>%
-      # # mutate(
-      # #        # log_swp = log(-swp),
-      # #        min_swc = min(swc,na.rm = TRUE),
-      # #        max_swc = max(swc,na.rm = TRUE)) %>%
-      # filter(quan_filter == "YES") %>%
-      # # filter(rew>0) %>%
-      # ungroup() ->faa2
 
-    
     
     if(nrow(faa2)>1){
     
     faa2%>%
         ungroup() %>% 
         mutate(vpd_cut=cut(vpd_mean, seq(0.3, 9.9, by=0.2)),
-               # swc_cut=cut(swc, seq(0, 1, by=0.05)),
-               # vpd_cut=cut(vpd_mean, 10),
-               # vpd_cut=cut(vpd_mean, seq(0, 10, by=0.3)),
-               # swp_cut=cut(log_swp, seq(unique(min_swp), unique(max_swp), by=1)),
-               # swp_cut=cut(log_swp, c(-12,-3,-2.5,-2,-1.5,-1,-0.5,0,0.5,1,100)),
-               # swp_cut=cut(log_swp, c(-3,-2.5,-2,-1.5,-1,-0.5,0,0.5,1,100)),
                swc_cut=cut(swc, 5),
-               # rew_cut=cut(rew, 10),
-               # vpd_cut_mean = sapply(str_extract_all(vpd_cut,"-?[0-9]+(\\.[0-9]+)?"), 
-               #                       function(x) mean(as.numeric(x))),
                swc_cut_mean = sapply(str_extract_all(swc_cut,"-?[0-9]+(\\.[0-9]+)?"),
                                      function(x) mean(as.numeric(x))),
-               # cor_vpd_swc = cor(vpd_mean,swc),
                n_day_plant = n_distinct(vpd_mean)  
                  )->faa2
 
@@ -458,23 +399,14 @@ furrr::future_map(site_names,.progress=TRUE,.f=function(.x){
 ) %>% bind_rows()-> df      
 
 df2 <- df %>% filter(
-  # !pl_code %in% c('RUS_CHE_Y4_Lca_Jt_4',
-  #                 'RUS_CHE_Y4_Lca_Jt_5',
-  #                 'RUS_CHE_Y4_Lca_Jt_8',
-  #                 'RUS_CHE_Y4_Lca_Jt_9'),
   !si_code %in% c('ISR_YAT_YAT'),
   !is.na(vpd_mean),
   G_sw < 50000,
   log(swc) >= -5 ,
-  range_swc>0.05|range_vpd>0.5)#%>%
-# dplyr::select(-rew) %>%
-# mutate(G_sw=G_sw/1000,
-#        G_sw_q=G_sw_q/1000)
-# df2 <- df
-# df <- df2
+  range_swc>0.05|range_vpd>0.5)
 
-save(df2,file = "~/Chapter_3_mod/data/species_data_binned_swc_G_aero.RData")    
-load(file = "~/Chapter_3_mod/data/species_data_binned_swc_G_aero.RData")  
+save(df2,file = "~/Chapter5/data/species_data_binned_swc_G_aero.RData")    
+load(file = "~/Chapter5/data/species_data_binned_swc_G_aero.RData")  
 
 
 library(optimx)
@@ -489,7 +421,7 @@ model <- lmer(G_sw~log(vpd_mean)+log(swc)+(log(vpd_mean)+log(swc)||pl_species)+(
 relgrad <- with(model@optinfo$derivs,solve(Hessian,gradient))
 max(abs(relgrad))
 
-save(model,file='~/Chapter_3_mod/data/model_G_aero.RData')
+save(model,file='~/Chapter5/data/model_G_aero.RData')
 
 
 model_log <- lmer(log(G_sw)~log(vpd_mean)+log(swc)+(log(vpd_mean)+log(swc)||pl_species)+
@@ -499,206 +431,4 @@ model_log <- lmer(log(G_sw)~log(vpd_mean)+log(swc)+(log(vpd_mean)+log(swc)||pl_s
 relgrad <- with(model_log@optinfo$derivs,solve(Hessian,gradient))
 max(abs(relgrad))
 
-save(model_log,file='~/Chapter_3_mod/data/model_log_G_aero.RData')
-
-# 
-# 
-# 
-# 
-# 
-# 
-#         output_lmer <- function( model,faa, env_data, type){ 
-#           #model
-#           suma_mod <- summary(model)
-#           r2 <- r2(model)
-#           Vcov <- vcov(model, useScale = FALSE)
-#           betas <- fixef(model)
-#           se <- sqrt(diag(Vcov))
-#           tval <- betas / se
-#           pval <- 2 * pnorm(abs(tval), lower.tail = FALSE)
-#           pred_Gref <- predictSE(model,newdata=tibble(log_vpd = 0,
-#                                                       log_rew = 0))
-#           se_Gref <- pred_Gref$se.fit
-#           Gref <- pred_Gref$fit
-#           range_rew <- max(faa$rew,na.rm = TRUE)-min(faa$rew, na.rm = TRUE)
-#           mean_rew <- mean(faa$rew,na.rm = TRUE)
-#           range_vpd <- max(faa$vpd_mean,na.rm = TRUE)-min(faa$vpd_mean, na.rm = TRUE)
-#           mean_vpd <- mean(faa$vpd_mean,na.rm = TRUE)
-#           
-#           
-#           df <- tibble(specie_code = gsub(".RData","",.x),
-#                        pl_height = env_data$pl_height,
-#                        pl_dbh = env_data$pl_dbh,
-#                        MAT =  env_data$MAT,
-#                        MAP =  env_data$MAP,
-#                        PET =  env_data$PET,
-#                        PPET =  env_data$PPET,
-#                        D = env_data$D,
-#                        si_lat =  env_data$si_lat,
-#                        si_long = env_data$si_long,
-#                        r2_cond = r2$R2_conditional,  
-#                        r2 = r2$R2_marginal,
-#                        Gref = Gref,
-#                        e_Gref = exp(Gref),
-#                        b0 = betas[1],
-#                        b1 = betas[2],
-#                        b2 = betas[3],
-#                        se_Gref = se_Gref,
-#                        e_se_Gref = exp(se_Gref),
-#                        se_b0 = se[1],
-#                        se_b1 = se[2],
-#                        se_b2 = se[3],
-#                        n = model@frame %>% nrow(),
-#                        pval_b0 = pval[[1]],
-#                        pval_b1 = pval[[2]],
-#                        pval_b2 = pval[[3]],
-#                        range_rew = range_rew,
-#                        mean_rew = mean_rew,
-#                        range_vpd = range_vpd,
-#                        mean_vpd = mean_vpd,
-#                        median_vpd = median(faa$vpd_mean,na.rm = TRUE),
-#                        median_rew = median(faa$rew, na.rm = TRUE),
-#                        max_swc = faa$max_swc %>% mean(na.rm = TRUE),
-#                        min_swc = faa$min_swc %>% mean(na.rm = TRUE),
-#                        max_max_swc = faa$max_swc %>% max(na.rm = TRUE),
-#                        min_min_swc = faa$min_swc %>% min(na.rm = TRUE),
-#                        model_type = type
-#           )
-#           
-#           return(df)
-#           
-#         }
-#         
-#         
-#         output_lm <- function(model, faa, env_data, type){ 
-#           #model
-#           suma_mod <- summary(model)
-#           r2 <- r2(model)
-#           Vcov <- vcov(model, useScale = FALSE)
-#           betas <- coef(model)
-#           se <- sqrt(diag(Vcov))
-#           tval <- betas / se
-#           pval <- 2 * pnorm(abs(tval), lower.tail = FALSE)
-#           pred_Gref <- predict.lm(model,newdata=tibble(log_vpd = 0,
-#                                                        log_rew = 0),
-#                                   type='response',
-#                                   se.fit = TRUE)
-#           Gref <- pred_Gref$fit
-#           se_Gref <- pred_Gref$se.fit
-#           range_rew <- max(faa$rew,na.rm = TRUE)-min(faa$rew, na.rm = TRUE)
-#           mean_rew <- mean(faa$rew,na.rm = TRUE)
-#           range_vpd <- max(faa$vpd_mean,na.rm = TRUE)-min(faa$vpd_mean, na.rm = TRUE)
-#           mean_vpd <- mean(faa$vpd_mean,na.rm = TRUE)
-#           
-#           df <- tibble(specie_code = gsub(".RData","",.x),
-#                        pl_height = env_data$pl_height,
-#                        pl_dbh = env_data$pl_dbh,
-#                        MAT =  env_data$MAT,
-#                        MAP =  env_data$MAP,
-#                        PET =  env_data$PET,
-#                        PPET =  env_data$PPET,
-#                        D = env_data$D,
-#                        si_lat =  env_data$si_lat,
-#                        si_long = env_data$si_long,
-#                        r2_cond = r2$R2_adjusted,
-#                        r2 = r2$R2_adjusted,
-#                        Gref = Gref,
-#                        e_Gref = exp(Gref),
-#                        b0 = betas[1],
-#                        b1 = betas[2],
-#                        b2 = betas[3],
-#                        se_Gref = se_Gref,
-#                        e_se_Gref = exp(se_Gref),
-#                        se_b0 = se[1],
-#                        se_b1 = se[2],
-#                        se_b2 = se[3],
-#                        n = model$model %>% nrow(),
-#                        pval_b0 = pval[[1]],
-#                        pval_b1 = pval[[2]],
-#                        pval_b2 = pval[[3]],
-#                        range_rew = range_rew,
-#                        mean_rew = mean_rew,
-#                        range_vpd = range_vpd,
-#                        mean_vpd = mean_vpd,
-#                        median_vpd = median(faa$vpd_mean,na.rm = TRUE),
-#                        median_rew = median(faa$rew, na.rm = TRUE),
-#                        max_swc = faa$max_swc %>% mean(na.rm = TRUE),
-#                        min_swc = faa$min_swc %>% mean(na.rm = TRUE),
-#                        max_max_swc = faa$max_swc %>% max(na.rm = TRUE),
-#                        min_min_swc = faa$min_swc %>% min(na.rm = TRUE),
-#                        model_type = type
-#           )
-#           
-#           return(df)
-#           
-#         }
-#         
-#         
-#         
-#         
-#         ## 3.2 without transformation -----------------
-#         
-#         test_1 <- unique(faa$pl_code) %>% length()>1
-#         test_2 <- unique(faa$si_code) %>% length()>1
-#         if(test_1 & test_2){
-#           test_2_1 <- isSingular(lmer(log_G ~ log_vpd + log_rew + (1|si_code/pl_code), data = faa))
-#           test_2_3 <- performance::check_convergence(lmer(log_G ~ log_vpd + log_rew + (1|si_code/pl_code), data = faa))
-#           test_2 <- all(!test_2_1, test_2_3)
-#         }#more than 1 site and plant
-#         
-#         
-#         if(test_1 & !test_2){ 
-#           test_1_1 <- isSingular(lmer(log_G ~ log_vpd + log_rew + (1|pl_code), data = faa))
-#           test_1_3 <- performance::check_convergence(lmer(log_G ~ log_vpd + log_rew + (1|pl_code), data = faa))
-#           test_1 <- all(!test_1_1, test_1_3)
-#         }#one site more than 1 plant
-#         
-#         if(test_1 & test_2){
-#           
-#           model <- lmer(log_G ~ log_vpd + log_rew + ( 1|si_code/pl_code), data = faa)
-#           
-#           type = 1
-#           
-#           df <- output_lmer(model, faa, env_data, type)
-#           
-#         }
-#         
-#         if(test_1 & !test_2){
-#           
-#           model <- lmer(log_G ~ log_vpd + log_rew + (1|pl_code), data = faa)
-#           
-#           type = 2
-#           
-#           df <- output_lmer(model, faa, env_data, type)
-#           
-#         }
-#         if(!test_1 & !test_2){
-#           
-#           model <- lm(log_G ~ log_vpd + log_rew, data = faa)
-#           
-#           type = 3
-#           
-#           df <- output_lm(model, faa, env_data, type)
-#           
-#         } 
-#         
-#         ## 3.3 List output creation --------------------------
-#         n_trees <- faa %>% dplyr::select(pl_code) %>% unique() %>% nrow()
-#         n_days_tree <- faa %>% group_by(pl_code) %>% summarise(n = n())
-#         pl_species <- faa %>% summarise(pl_species = unique(pl_species))
-#         
-#         x_models <- list(
-#           model = model,
-#           model_output = df,
-#           n_trees = n_trees,
-#           n_days_tree = n_days_tree,
-#           pl_species = pl_species)
-#         
-#         print(unique(.x))
-#         save(x_models,
-#              file=paste0(getwd(),
-#                          "/data/models_1_0_daylight/",
-#                          .x))
-#         
-# 
-# 
+save(model_log,file='~/Chapter5/data/model_log_G_aero.RData')

@@ -19,12 +19,9 @@ options('future.global.maxsize'=2*1024*1024^2)
 
 ## 0.1 Plant names to be modelized ---------------
 
-# path <- "~/Chapter_3_mod/data/species_data_subdaily/"
 path <- "~/Chapter5/data/species_data/"
-# path <- "~/Chapter_2/data/site_daylight/"
 site_names <- list.files(path = path)
 
-# source('~/Chapter_2/Individual_plant_analyses/treatment_list_filter.R')
 source('~/Chapter5/treatment_filter_only_control.R')
 
 load("~/Chapter5/data/swc_ERA5_land.RData") #nearest cell extract ERA5 land 9x9km 1980 to present
@@ -34,19 +31,9 @@ ERA5_land_data <- swc_ERA5_land %>%
   rename(ERA5_swc = swc_ERA5_land,
          TIMESTAMP = TIMESTAMP_daylight) %>% 
   mutate(TIMESTAMP = lubridate::as_date(TIMESTAMP))
-# ERA5_land_data %>%
-#   group_by(si_code) %>% 
-#   mutate(lead_ERA5_swc = lead(ERA5_swc),
-#          n_ERA5 = n(),
-#          D_ind = log(lead_ERA5_swc+1/ERA5_swc+1),
-#          D_sum = sum(D_ind,na.rm = TRUE),
-#          D = 1/(n_ERA5-1)*D_sum) -> ERA5_land_data
-# D_data <- ERA5_land_data %>% dplyr::select(si_code,D) %>% unique()
 
 dbh_sapw_mod <- readRDS(file="~/Chapter5/dbh_sapw_area_model.rds")
-# load(file = '~/Chapter_3/filter_sites_sapw_units_wrong.Rdata')
-# soilgrids.r <- REST.SoilGrids(c('SNDPPT', 'SLTPPT', 'CLYPPT', 'ORCDRC', 'BLD', 'CEC', 'PHIHOX','CRFVOL'))
-# soilgrids.r <- REST.SoilGrids(c('bdod'))
+
 ## import PET
 PET <- read_csv('~/Chapter5/data/PET.csv') %>% 
   dplyr::rename(si_lat = lati,si_long = long)
@@ -59,7 +46,6 @@ load("~/Chapter5/data/elevation.RData")
 load("~/Chapter5/data/sw_ERA5_18.RData")
 load("~/Chapter5/data/sw_ERA5_6.RData")
 
-
 sw <- sw_ERA5_18 %>% 
   left_join(sw_ERA5_6) %>% 
   mutate(sw = sw_ERA5_18 - sw_ERA5_6,
@@ -70,13 +56,7 @@ sw <- sw_ERA5_18 %>%
 rm(sw_ERA5_18)
 rm(sw_ERA5_6)
 
-# site_names <- site_names[!site_names %in%
-#                              list.files("data/models/complete_bin_gam_models/")] %>%
-#   sort(decreasing =TRUE)
-# 
 species_names <- sample(site_names)
-
-# .x <- "Pinus canariensis.RData"
 
 ## 0.2 MODELIZATION ----------------------
 
@@ -297,61 +277,20 @@ furrr::future_map(species_names,.progress=TRUE,.f=function(.x){
       )-> faa
     
 
-    # faa %>% 
-    #   ungroup() %>% 
-    #   summarise(si_code = unique(si_code),
-    #             pl_dbh = weighted.mean(pl_dbh,n),
-    #             pl_height = weighted.mean(pl_height,n),
-    #             si_long = unique(si_long),
-    #             si_lat = unique(si_lat),
-    #             MAP = unique(MAP),
-    #             MAT = unique(MAT)/10,
-    #             PET = unique(PET),
-    #             PPET = MAP/PET,
-    #             D = unique(D),
-    #             si_biome = unique(si_biome)
-    #   )-> env_data
-    
+
     ## 3.0 GAM calculation -----------------  
     
       faa2 <- faa
-    
-      # faa %>%
-      #   group_by(pl_code) %>%
-      # mutate(
-      #        quan_filter = 'NO',
-      #        quan_filter =
-      #          case_when(
-      #            G_sw<quantile(G_sw,0.99,na.rm = TRUE) ~ 'YES',
-      #            G_sw>quantile(G_sw,0.01,na.rm = TRUE) ~ 'YES')) %>%
-      # # mutate(
-      # #        # log_swp = log(-swp),
-      # #        min_swc = min(swc,na.rm = TRUE),
-      # #        max_swc = max(swc,na.rm = TRUE)) %>%
-      # filter(quan_filter == "YES") %>%
-      # # filter(rew>0) %>%
-      # ungroup() ->faa2
 
-    
     
     if(nrow(faa2)>1){
     
     faa2%>%
         ungroup() %>% 
         mutate(vpd_cut=cut(vpd_mean, seq(0.3, 9.9, by=0.2)),
-               # swc_cut=cut(swc, seq(0, 1, by=0.05)),
-               # vpd_cut=cut(vpd_mean, 10),
-               # vpd_cut=cut(vpd_mean, seq(0, 10, by=0.3)),
-               # swp_cut=cut(log_swp, seq(unique(min_swp), unique(max_swp), by=1)),
-               # swp_cut=cut(log_swp, c(-12,-3,-2.5,-2,-1.5,-1,-0.5,0,0.5,1,100)),
-               # swp_cut=cut(log_swp, c(-3,-2.5,-2,-1.5,-1,-0.5,0,0.5,1,100)),
                swc_cut=cut(swc, 5),
-               # rew_cut=cut(rew, 10),
-               # vpd_cut_mean = sapply(str_extract_all(vpd_cut,"-?[0-9]+(\\.[0-9]+)?"), 
-               #                       function(x) mean(as.numeric(x))),
                swc_cut_mean = sapply(str_extract_all(swc_cut,"-?[0-9]+(\\.[0-9]+)?"),
                                      function(x) mean(as.numeric(x))),
-               # cor_vpd_swc = cor(vpd_mean,swc),
                n_day_plant = n_distinct(vpd_mean)  
                  )->faa2
 

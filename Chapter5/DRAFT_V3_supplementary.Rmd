@@ -31,15 +31,11 @@ library(sapfluxnetr)
 library(tidyverse)
 library(taxonlookup)
 library(lubridate)
-source('~/Chapter_3_mod/weighted_var.R')
-source('~/Chapter_3_mod/table_results_traits_param.R')
-# source('~/Chapter_3_mod/table_results_traits_param_PPET_DBH.R')
-source('~/Chapter_3_mod/table_results_traits_param_PPET_height.R')
-source('~/Chapter_3_mod/table_results_traits_param_MAP_height.R')
-source('~/Chapter_3_mod/table_results_traits_param_PPET_height_clay.R')
-source('~/Chapter_3_mod/table_results_group_param.R')
-source('~/Chapter_3_mod/plot_traits_function.R')
-source('~/Chapter_3_mod/plot_traits_no_se_function.R')
+source('~/Chapter5/weighted_var.R')
+source('~/Chapter5/table_results_traits_param.R')
+source('~/Chapter5/table_results_traits_param_MAP_height.R')
+source('~/Chapter5/table_results_group_param.R')
+source('~/Chapter5/plot_traits_function.R')
 library(lmerTest)
 library(magrittr)
 library(rlang)
@@ -68,13 +64,13 @@ library(semTools)
 
 
 #### 0.1 DATA PROCESS ------------
-# load(file = "~/Chapter_3_mod/data/model_G_aero.RData")
+# load(file = "~/Chapter5/data/model_G_aero.RData")
 #   # df_estimates <- ranef(model)[['pl_species']]
 #   df_estimates_G_Aero <- coef(model)[['pl_species']]
 #   df_estimates_G_Aero <- df_estimates_G_Aero %>% rownames_to_column(var='pl_species')
 #   colnames(df_estimates_G_Aero) <- c("pl_species","Int_G_aero","b1_G_aero","b2_G_aero")
 # 
-# load(file = "~/Chapter_3_mod/data/model.RData")
+# load(file = "~/Chapter5/data/model.RData")
 #   # df_estimates <- ranef(model)[['pl_species']]
 #   df_estimates <- coef(model)[['pl_species']]
 #   df_estimates <- df_estimates %>% rownames_to_column(var='pl_species')
@@ -107,7 +103,7 @@ library(semTools)
 # #   mutate(`(Intercept)` = `(Intercept)` + int + int_pl)
 # #
 # 
-# load(file = "~/Chapter_3_mod/data/species_data_binned_swc_G_aero.RData")
+# load(file = "~/Chapter5/data/species_data_binned_swc_G_aero.RData")
 #   df3 <- df2 %>%
 #     group_by(pl_code) %>%
 #     summarise( pl_species = unique(pl_species),
@@ -116,7 +112,7 @@ library(semTools)
 #     summarise(n_trees_G_aero = n_distinct(pl_code),
 #               n_G_aero = sum(n_day_plant))
 # 
-# load(file = "~/Chapter_3_mod/data/species_data_binned_swc.RData")
+# load(file = "~/Chapter5/data/species_data_binned_swc.RData")
 #   df2 <- df2 %>%
 #     group_by(pl_code) %>%
 #     summarise(pl_species = unique(pl_species),
@@ -293,8 +289,8 @@ library(semTools)
 #        )
 # 
 # 
-# save(data_hydra, file = "~/Chapter_3_mod/data/data_hydra.RData")
-load(file = "~/Chapter_3_mod/data/data_hydra.RData")
+# save(data_hydra, file = "~/Chapter5/data/data_hydra.RData")
+load(file = "~/Chapter5/data/data_hydra.RData")
 
 data_hydra2 <- data_hydra %>% filter(Gref<quantile(Gref,0.999),
                                      b1<quantile(b1,0.999),
@@ -347,7 +343,7 @@ Being $G_{Asw}$ in [$m \ s^{-1}$]. Finally, $G'_{Asw}$ was transformed to [$mol 
 
 ```{r plottreatment, echo=F, message = FALSE, warning=FALSE}
 
-plot_treat <- readr::read_csv(file="~/Chapter_3_mod/data/plot_treatment.csv")
+plot_treat <- readr::read_csv(file="~/Chapter5/data/plot_treatment.csv")
 
     knitr::kable(plot_treat,"latex",booktabs = T, escape = FALSE,longtable = FALSE,linesep = "",
                  caption = "SAPFLUXNET plot treatments included in this study (Poyatos $et al.$ 2020).") %>% 
@@ -358,7 +354,7 @@ plot_treat <- readr::read_csv(file="~/Chapter_3_mod/data/plot_treatment.csv")
 
 ```{r tabledata, echo=F, message = FALSE}
 
-load(file='~/Chapter_3_mod/data/species_data_binned_swc.RData')
+load(file='~/Chapter5/data/species_data_binned_swc.RData')
 
 n_sites <- df2 %>% group_by(pl_species) %>% summarise(n_sites=n_distinct(si_code))
 
@@ -451,7 +447,7 @@ df <- df[order(df$`$\\text{Species}$`),]
 
 ```{r tablaresultados, echo=FALSE}
 
-load(file = "~/Chapter_3_mod/data/data_hydra2_rew.RData")
+load(file = "~/Chapter5/data/data_hydra2_rew.RData")
 
   table_results_traits_param(data_hydra2_rew,
                              c("Gref","b1","b2"),
@@ -641,7 +637,7 @@ knitr::include_graphics(c("images/fig17.pdf"))
 
 <!-- ```{r , echo =FALSE,include=FALSE,message=FALSE,warnings=FALSE} -->
 
-<!-- load(file = "~/Chapter_3_mod/data/model.RData") -->
+<!-- load(file = "~/Chapter5/data/model.RData") -->
 
 <!-- # int <- model %>% fixef() -->
 <!-- # -->
@@ -1457,681 +1453,6 @@ ggsave("images/figanggym.png",figanggym,device = 'png',units = "cm",width = 16,h
 ```{r angiogymnoplotsAOVplot, echo=FALSE, fig.cap="Boxplots of water relations traits for angiosperms and gymnosperms. Statistical significance level is showed as symbols: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001. Crosses are weighted means of each trait by groups", fig.align='center',out.width = '100%'}
 knitr::include_graphics(c("images/figanggym.pdf"))
 ```
-
-
-
-<!-- ```{r , echo =FALSE,include=FALSE} -->
-
-<!-- data_hydra2 %>% filter(!is.na(b1)) %>%  -->
-<!--   ggplot(aes(x=Gref, y=b2, color = group))+ -->
-<!--   # geom_vline(aes(xintercept = 0),color="grey40",alpha = 0.7,linetype = 2)+ -->
-<!--   geom_point(aes(size = n),show.legend = FALSE,alpha=0.5)+ -->
-<!--   geom_smooth(aes(weight = n), method = "lm",color = 'grey40',fill="grey60")+ -->
-<!--   geom_smooth(aes(color = group, weight = n,fill=group), method = "lm",show.legend = FALSE,alpha=0.5)+ -->
-<!-- # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
-<!--   scale_color_npg()+ -->
-<!--   xlab(bquote(G[REF]~"[mol "~m^{-2}~" "~s^{-1}~"]"))+ -->
-<!--   ylab(bquote(~beta[SWC]~"[mol "~m^{-2}~" "~s^{-1}~"]"))->fig_Gref_b2 -->
-
-<!--   ggsave("images/fig_Gref_b2.pdf",fig_Gref_b2,device = 'pdf',units = "cm",width = 8,height=8) -->
-
-<!-- ``` -->
-
-<!-- ```{r figGrefb2plot, echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!-- knitr::include_graphics(c("images/fig_Gref_b2.pdf")) -->
-<!-- ``` -->
-
-<!-- ```{r , echo =FALSE,include=FALSE} -->
-
-<!-- data_hydra2 %>% filter(!is.na(b1)) %>%  -->
-<!--   ggplot(aes(x=b2, y=b1, color = group))+ -->
-<!--   # geom_vline(aes(xintercept = 0),color="grey40",alpha = 0.7,linetype = 2)+ -->
-<!--   geom_point(aes(size = n),show.legend = FALSE,alpha=0.5)+ -->
-<!--   geom_smooth(aes(weight = n), method = "lm",color = 'grey40',fill="grey60")+ -->
-<!--   geom_smooth(aes(color = group, weight = n,fill=group), method = "lm",show.legend = FALSE,alpha=0.5)+ -->
-<!-- # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
-<!--   scale_color_npg()+ -->
-<!--   xlab(bquote(~beta[SWC]~"[mol "~m^{-2}~" "~s^{-1}~"]"))+ -->
-<!--   ylab(bquote(~beta[VPD]~"[mol "~m^{-2}~" "~s^{-1}~"]"))->fig_b2_b1 -->
-
-<!--   ggsave("images/fig_b2_b1.pdf",fig_b2_b1,device = 'pdf',units = "cm",width = 8,height=8) -->
-
-<!-- ``` -->
-
-<!-- ```{r figb2b1plot, echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!-- knitr::include_graphics(c("images/fig_b2_b1.pdf")) -->
-<!-- ``` -->
-
-
-<!-- ```{r , echo =FALSE,include=FALSE} -->
-<!-- load(file = "~/Chapter_3_mod/data/species_data_binned_swc.RData") -->
-
-<!-- df2 %>%  -->
-<!--   group_by(pl_species) %>%  -->
-<!--   summarise(max_swc = max(swc), -->
-<!--             min_swc = min(swc), -->
-<!--             swc_R = max_swc - min_swc) %>%  -->
-<!--   dplyr::select(pl_species,swc_R)->swc_R -->
-
-<!-- data_hydra2 %>% left_join(swc_R) %>% filter(!is.na(b1)) %>%  -->
-<!--   ggplot(aes(x=swc_R, y=b2, color = group))+ -->
-<!--   # geom_vline(aes(xintercept = 0),color="grey40",alpha = 0.7,linetype = 2)+ -->
-<!--   geom_point(aes(size = n),show.legend = FALSE,alpha=0.5)+ -->
-<!--   geom_smooth(aes(weight = n), method = "lm",color = 'grey40',fill="grey60")+ -->
-<!-- # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
-<!--   scale_color_npg()+ -->
-<!--   xlab(bquote(SWC[Range]~"["~m^3~" "~m^-{3}~"]"))+ -->
-<!--   ylab(bquote(~beta[SWC]~"[mol "~m^{-2}~" "~s^{-1}~"]"))->fig_swc_b2 -->
-
-<!--   ggsave("images/fig_swc_b2.pdf",fig_swc_b2,device = 'pdf',units = "cm",width = 8,height=8) -->
-
-<!-- ``` -->
-
-<!-- ```{r figswcb2plot, echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!-- knitr::include_graphics(c("images/fig_swc_b2.pdf")) -->
-<!-- ``` -->
-
-
-
-<!-- ```{r , echo =FALSE,include=FALSE} -->
-
-<!-- data_hydra3 %>% filter(!is.na(b1)) %>% -->
-<!--   ggplot(aes(x=G_ref_G_aero, y=Gref, color = group))+ -->
-<!--   # geom_vline(aes(xintercept = 0),color="grey40",alpha = 0.7,linetype = 2)+ -->
-<!--   geom_point(aes(size = n_G_aero),show.legend = FALSE,alpha=0.5)+ -->
-<!--   geom_smooth( method = "lm",color = 'grey40',fill="grey60")+ -->
-<!--   geom_abline(slope=1)+ -->
-<!--   # geom_smooth(aes(color = group, weight = n,fill=group), method = "lm",show.legend = FALSE,alpha=0.5)+ -->
-<!-- # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
-<!--   scale_color_npg()+ -->
-<!--   xlab(bquote(~G[REF]~"' [mol "~m^{-2}~" "~s^{-1}~"]"))+ -->
-<!--   ylab(bquote(~G[REF]~"[mol "~m^{-2}~" "~s^{-1}~"]"))->fig_Gref_G_aero_Gref -->
-
-<!--   ggsave("images/fig_Gref_G_aero_Gref.pdf",fig_Gref_G_aero_Gref,device = 'pdf',units = "cm",width = 8,height=8) -->
-
-<!-- ``` -->
-
-<!-- ```{r figGrefGrefplot, echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!-- knitr::include_graphics(c("images/fig_Gref_G_aero_Gref.pdf")) -->
-<!-- ``` -->
-
-
-<!-- ```{r , echo =FALSE,include=FALSE} -->
-
-<!-- data_hydra3 %>% filter(!is.na(b1)) %>% -->
-<!--   ggplot(aes(x=b1_G_aero, y=b1, color = group))+ -->
-<!--   # geom_vline(aes(xintercept = 0),color="grey40",alpha = 0.7,linetype = 2)+ -->
-<!--   geom_point(aes(size = n_G_aero),show.legend = FALSE,alpha=0.5)+ -->
-<!--   geom_smooth( method = "lm",color = 'grey40',fill="grey60")+ -->
-<!--   geom_abline(slope=1)+ -->
-<!--   # geom_smooth(aes(color = group, weight = n,fill=group), method = "lm",show.legend = FALSE,alpha=0.5)+ -->
-<!-- # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
-<!--   scale_color_npg()+ -->
-<!--   xlab(bquote(~beta[VPD]~"'"~" [mol "~m^{-2}~" "~s^{-1}~"]"))+ -->
-<!--   ylab(bquote(~beta[VPD]~"[mol "~m^{-2}~" "~s^{-1}~"]"))->fig_b1_G_aero_b1 -->
-
-<!--   ggsave("images/fig_b1_G_aero_b1.pdf",fig_b1_G_aero_b1,device = 'pdf',units = "cm",width = 8,height=8) -->
-
-<!-- ``` -->
-
-<!-- ```{r figb1b1plot, echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!-- knitr::include_graphics(c("images/fig_b1_G_aero_b1.pdf")) -->
-<!-- ``` -->
-
-
-<!-- ```{r , echo =FALSE,include=FALSE} -->
-
-<!-- data_hydra3 %>% filter(!is.na(b1)) %>% -->
-<!--   ggplot(aes(x=b2_G_aero, y=b2, color = group))+ -->
-<!--   # geom_vline(aes(xintercept = 0),color="grey40",alpha = 0.7,linetype = 2)+ -->
-<!--   geom_point(aes(size = n_G_aero),show.legend = FALSE,alpha=0.5)+ -->
-<!--   geom_smooth( method = "lm",color = 'grey40',fill="grey60")+ -->
-<!--   geom_abline(slope=1)+ -->
-<!--   # geom_smooth(aes(color = group, weight = n,fill=group), method = "lm",show.legend = FALSE,alpha=0.5)+ -->
-<!-- # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
-<!--   scale_color_npg()+ -->
-<!--   xlab(bquote(~beta[SWC]~"'"~" [mol "~m^{-2}~" "~s^{-1}~"]"))+ -->
-<!--   ylab(bquote(~beta[SWC]~"[mol "~m^{-2}~" "~s^{-1}~"]"))->fig_b2_G_aero_b2 -->
-
-<!--   ggsave("images/fig_b2_G_aero_b2.pdf",fig_b2_G_aero_b2,device = 'pdf',units = "cm",width = 8,height=8) -->
-
-<!-- ``` -->
-
-<!-- ```{r figb2b2plot, echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!-- knitr::include_graphics(c("images/fig_b2_G_aero_b2.pdf")) -->
-<!-- ``` -->
-
-
-<!-- ```{r , echo =FALSE,include=FALSE} -->
-
-<!-- data_hydra3 %>% filter(!is.na(b1)) %>%  -->
-<!--   ggplot(aes(x=G_ref_G_aero-Gref, y=leaf_size, color = group))+ -->
-<!--   # geom_vline(aes(xintercept = 0),color="grey40",alpha = 0.7,linetype = 2)+ -->
-<!--   geom_point(aes(size = n_G_aero),show.legend = FALSE,alpha=0.5)+ -->
-<!--   geom_smooth( aes(weight=n_G_aero ),method = "lm",color = 'grey40',fill="grey60")+ -->
-<!--   geom_abline(slope=1)+ -->
-<!--   # geom_smooth(aes(color = group, weight = n,fill=group), method = "lm",show.legend = FALSE,alpha=0.5)+ -->
-<!-- # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
-<!--   scale_color_npg()+ -->
-<!--   xlab(bquote(~G[REF] - G[REF]~"'"~" [mol "~m^{-2}~" "~s^{-1}~"]"))+ -->
-<!--   ylab(bquote(~L[s]~"["~cm^{2}~"]"))->fig_Gref_G_aero_Gref_leaf -->
-
-<!--   ggsave("images/fig_Gref_G_aero_Gref_leaf.pdf",fig_Gref_G_aero_Gref_leaf,device = 'pdf',units = "cm",width = 8,height=8) -->
-
-<!-- ``` -->
-
-<!-- ```{r figGrefGrefplotleaf, echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!-- knitr::include_graphics(c("images/fig_Gref_G_aero_Gref_leaf.pdf")) -->
-<!-- ``` -->
-
-
-
-
-
-<!-- ```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!--  knitr::include_graphics(c("images/ggg16.pdf")) -->
-<!-- ``` -->
-
-
-<!-- ```{r , echo =FALSE,include=FALSE} -->
-
-<!-- # Calculate correlation for each group -->
-<!-- path <- "data/models_1_0_raw_data/" -->
-<!-- plant_names <- list.files(path = path) -->
-
-<!-- sites <- map(plant_names, function(x){ -->
-<!--   load(paste0(path,x)) -->
-<!--   print(x) -->
-<!--   if(any(colnames(faa) == "G_sw")){ -->
-<!--     res <- faa #%>% select(TIMESTAMP,G_sw,rew,si_code,pl_code,pl_species,vpd_mean) -->
-<!--   }else{res <- NULL} -->
-<!--   return(res) -->
-<!-- })%>% bind_rows() -->
-
-
-<!-- sites %>% group_by(pl_species) %>%  -->
-<!--   summarise(mean_swp = -mean(swp,na.rm =TRUE) %>% log(), -->
-<!--             median_swp = -median(swp,na.rm = TRUE) %>% log(), -->
-<!--             range_swp = (quantile(swp,0.95,na.rm =TRUE) - quantile(swp,0.05,na.rm =TRUE)) %>% log()) %>%  -->
-<!--   left_join(data_hydra)->data_hydra3 -->
-
-<!-- data_hydra3 %>% filter(r2>0) %>% -->
-<!--   ggplot(aes(range_swp,b2))+ -->
-<!--   # geom_vline(aes(xintercept = 0),color="grey40",alpha = 0.7,linetype = 2)+ -->
-<!--   # geom_hline(aes(yintercept = 0),color="grey40",alpha = 0.7,linetype = 2)+ -->
-<!--   # geom_text_repel(parse = TRUE,arrow = arrow(length = unit(0.01, "npc"),angle = 20),show.legend =FALSE)+ -->
-<!--   geom_point()+ -->
-<!--   geom_smooth(method = "lm",color = 'grey40')+ -->
-<!--   # scale_color_gradient2( high = "#00afbb",mid = "#6400bb",low="#bb3200",midpoint = 1.25)+ -->
-<!--   ylab(bquote(~beta[SWC]))+ -->
-<!--   xlab(bquote(~SWP[median]))->fig_b2_swp -->
-
-<!--   ggsave("images/fig_b2_swp.pdf",fig_b2_swp,device = 'pdf',units = "cm",width = 8,height=8) -->
-
-<!-- ``` -->
-
-<!-- ```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!-- knitr::include_graphics(c("images/fig_b2_swp.pdf")) -->
-<!-- ``` -->
-
-
-<!-- # ```{r fig_swc_ERA5, echo =FALSE,include=FALSE} -->
-<!-- #  -->
-<!-- # path <- "~/Chapter_3/data/models_1_0_raw_data/" -->
-<!-- # plant_names <- list.files(path = path) -->
-<!-- #  -->
-<!-- # sites <- map(plant_names, function(x){ -->
-<!-- #   load(paste0(path,x)) -->
-<!-- #   print(x) -->
-<!-- #   res <- faa -->
-<!-- #   return(res) -->
-<!-- # }) %>% bind_rows() %>% split(.[['si_code']],drop = TRUE) -->
-<!-- #  -->
-<!-- #  -->
-<!-- # swc_ERA5 <- purrr::map(sites, function(x){ -->
-<!-- #   faa <- x -->
-<!-- #  if(all(nrow(faa)>0 , -->
-<!-- #     !is.na(faa$swc_shallow_mean) , -->
-<!-- #     !is.na(faa$ERA5_land_swc))){ -->
-<!-- #   lm.mod <- faa %>% lm(swc_shallow_mean~ERA5_land_swc, data = ., na.action = na.omit) -->
-<!-- #   lm.r2 <- summary(lm.mod)$adj.r.squared -->
-<!-- #   is.ERA5.land <- faa$ERA5_land_swc == faa$swc -->
-<!-- #   is.ERA5 <- faa$ERA5_swc == faa$swc -->
-<!-- #   is.swc.shallow <-  faa$swc_shallow_mean == faa$swc -->
-<!-- #   res <- tibble(r2_ERA5 = lm.r2, -->
-<!-- #                 is_ERA5_land = any(is.ERA5.land), -->
-<!-- #                 is_ERA5 = any(is.ERA5), -->
-<!-- #                 is_swc_shallow = any(is.swc.shallow), -->
-<!-- #                 si_code = faa$si_code %>% unique()) -->
-<!-- #  -->
-<!-- #  }else{res = NULL} -->
-<!-- #  -->
-<!-- #   return(res) -->
-<!-- #  -->
-<!-- # }) %>% bind_rows() -->
-<!-- #  -->
-<!-- # swc_ERA5 %>% -->
-<!-- #   filter(r2_ERA5 != 1, r2_ERA5 > 0) %>% -->
-<!-- #   select(r2_ERA5) %>% -->
-<!-- #   summarise(mean_r = mean(r2_ERA5,na.rm=TRUE)) -> mean_r -->
-<!-- #  -->
-<!-- # swc_ERA5 %>% filter(r2_ERA5 != 1, r2_ERA5 > 0) %>% -->
-<!-- #   ggplot(aes(x = r2_ERA5))+ -->
-<!-- #   geom_histogram(aes(y = ..density..),bins = 10, color = 'white',fill = "#00afbb")+ -->
-<!-- #   geom_density(fill="grey60", alpha = 0.2)+ -->
-<!-- #   geom_vline(xintercept = mean_r$mean_r, -->
-<!-- #              linetype=2,color = "grey40", size = 1.5) + -->
-<!-- #   xlab(bquote('ERA5 land ~ on-site SWC'~R^2))->fig_r2_ERA5 -->
-<!-- #  -->
-<!-- # get_density <- function(x, y, ...) { -->
-<!-- #   dens <- MASS::kde2d(x, y, ...) -->
-<!-- #   ix <- findInterval(x, dens$x) -->
-<!-- #   iy <- findInterval(y, dens$y) -->
-<!-- #   ii <- cbind(ix, iy) -->
-<!-- #   return(dens$z[ii]) -->
-<!-- # } -->
-<!-- #  -->
-<!-- # extrafont::loadfonts() -->
-<!-- # # extrafont::font_import() -->
-<!-- #  -->
-<!-- # sites %>% bind_rows() %>% group_by(si_code) %>% -->
-<!-- #   mutate(swc_shallow_mean = swc_shallow_mean %>% scale(), -->
-<!-- #          ERA5_land_swc = ERA5_land_swc %>% scale()) %>% -->
-<!-- #   filter(!is.na(swc_shallow_mean),!is.na(ERA5_land_swc)) %>% -->
-<!-- #   mutate(dens_raw = get_density(swc_shallow_mean, ERA5_land_swc, n = 100) %>% log()) %>% -->
-<!-- #   left_join(swc_ERA5,by = "si_code") %>% -->
-<!-- #   filter(r2_ERA5 != 1, r2_ERA5 > 0) %>% -->
-<!-- #   ggplot(aes(x = swc_shallow_mean, y=ERA5_land_swc))+ -->
-<!-- #   geom_point(aes(color=dens_raw))+ -->
-<!-- #   geom_abline(slope=1,intercept=0,linetype = 2)+ -->
-<!-- #   viridis::scale_color_viridis()+ -->
-<!-- #   xlab(bquote('scaled on-site SWC'))+ -->
-<!-- #   ylab(bquote('scaled site ERA5 land'))+ -->
-<!-- #   labs(color = 'Data density')->fig_raw -->
-<!-- #  -->
-<!-- #   ggsave("images/fig_r2_ERA5_plot.pdf",fig_r2_ERA5,device = 'pdf',units = "cm",width = 8,height=8) -->
-<!-- #  ggsave("images/fig_r2_ERA5_raw_plot.pdf", fig_raw, device = 'pdf',units = "cm",width = 16,height=8) -->
-<!-- #  -->
-<!-- # ``` -->
-
-<!-- # ```{r figswcERA5plot, echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!-- # knitr::include_graphics(c("images/fig_r2_ERA5_plot.pdf")) -->
-<!-- # ``` -->
-<!-- #  -->
-<!-- # ```{r figswcERA5rawplot, echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"} -->
-<!-- # knitr::include_graphics(c("images/fig_r2_ERA5_raw_plot.pdf")) -->
-<!-- # ``` -->
-
-
-
-<!-- # ```{r tabler2, echo = FALSE} -->
-<!-- # data_hydra %>% filter(model_type==3) %>% summarise(weighted.mean(r2,n))%>% round(digits = 3)->a1 -->
-<!-- # data_hydra %>% filter(model_type==3) %>% summarise(min(r2))%>% round(digits = 3)->a2 -->
-<!-- # data_hydra %>% filter(model_type==3) %>% summarise(max(r2))%>% round(digits = 3)->a3 -->
-<!-- # data_hydra %>% filter(model_type==2) %>% summarise(weighted.mean(r2,n))%>% round(digits = 3)->b1 -->
-<!-- # data_hydra %>% filter(model_type==2) %>% summarise(min(r2))%>% round(digits = 3)->b2 -->
-<!-- # data_hydra %>% filter(model_type==2) %>% summarise(max(r2))%>% round(digits = 3)->b3 -->
-<!-- # data_hydra %>% filter(model_type==1) %>% summarise(weighted.mean(r2,n))%>% round(digits = 3)->c1 -->
-<!-- # data_hydra %>% filter(model_type==1) %>% summarise(min(r2))%>% round(digits = 3)->c2 -->
-<!-- # data_hydra %>% filter(model_type==1) %>% summarise(max(r2))%>% round(digits = 3)->c3 -->
-<!-- # data_hydra %>% filter(model_type==2) %>% summarise(weighted.mean(r2_cond,n))%>% round(digits = 3)->d1 -->
-<!-- # data_hydra %>% filter(model_type==2) %>% summarise(min(r2_cond))%>% round(digits = 3)->d2 -->
-<!-- # data_hydra %>% filter(model_type==2) %>% summarise(max(r2_cond))%>% round(digits = 3)->d3 -->
-<!-- # data_hydra %>% filter(model_type==1) %>% summarise(weighted.mean(r2_cond,n)) %>% round(digits = 3)->e1 -->
-<!-- # data_hydra %>% filter(model_type==1) %>% summarise(min(r2_cond))%>% round(digits = 3)->e2 -->
-<!-- # data_hydra %>% filter(model_type==1) %>% summarise(max(r2_cond))%>% round(digits = 3)->e3 -->
-<!-- # tibble(`Model type` = c("LM","LMM (1|tree)","LMM (1|site/tree)"), -->
-<!-- #        `N Species`  = data_hydra$model_type %>% table() %>% rev(), -->
-<!-- #        `Average marginal $R^2$` = c(paste0(a1[[1]]," [",a2[[1]], " , ", a3[[1]],"]"), -->
-<!-- #                                     paste0(b1[[1]]," [",b2[[1]], " , ", b3[[1]],"]"), -->
-<!-- #                                     paste0(c1[[1]]," [",c2[[1]], " , ", c3[[1]],"]")), -->
-<!-- #        `Average conditional $R^2$` = c("NA", -->
-<!-- #                                        paste0(d1[[1]]," [",d2[[1]], " , ", d3[[1]],"]"), -->
-<!-- #                                        paste0(e1[[1]]," [",e2[[1]], " , ", e3[[1]],"]")) -->
-<!-- #        )->table_r2_r2 -->
-<!-- # knitr::kable(table_r2_r2,booktabs = T, escape = FALSE,linesep = "", -->
-<!-- #                  caption = "$R^2$ of the species responses to VPD and REW models. Range is presented between braquets. Marginal $R^2$ of the LM is equal to adjusted $R^2$")%>% -->
-<!-- #     kableExtra::kable_styling(latex_options = "HOLD_position") -->
-<!-- #  -->
-<!-- # ``` -->
-
-
-
-
-
-
-<!-- # ```{r tablaresultados2, echo=FALSE} -->
-<!-- # data_hydra2 <- data_hydra %>%  -->
-<!-- #   filter(b2_neutral>0) %>% -->
-<!-- #   mutate(rew_50_neutral = rew_50_neutral^(1/4)) -->
-<!-- #   table_results_traits_param(data_hydra%>%  -->
-<!-- #                                filter(r2_neutral>0,  b2_neutral>0) %>%  -->
-<!-- #                                mutate(b2_neutral = log(b2_neutral), -->
-<!-- #                                       b2_b0_neutral = log(b2_b0_neutral)), -->
-<!-- #                              c("Gref_neutral","b1_neutral","b2_neutral"), -->
-<!-- #                              c("-P50",'Ks','Hv','PItlp','Rd','leaf_size'), -->
-<!-- #                              c(FALSE,FALSE,FALSE), -->
-<!-- #                              c(TRUE,TRUE,TRUE,FALSE,FALSE,TRUE), -->
-<!-- #                              "n_neutral") %>%  -->
-<!-- #     mutate(Parameter = recode_factor(Parameter, -->
-<!-- #                                      `Gref_neutral` = "$G_{REF}$", -->
-<!-- #                                      `b1_neutral` = "$\\beta_{VPD}$", -->
-<!-- #                                      `b2_neutral` = "$ln(\\beta_{swc})$" -->
-<!-- #                                      ), -->
-<!-- #            Trait = recode_factor(Trait, -->
-<!-- #                                  `ln(-P50)` = "$ln(-P50)$", -->
-<!-- #                                  `Rd` = "$R_{depth}$", -->
-<!-- #                                  `ln(Hv)` = "$ln(Hv)$", -->
-<!-- #                                  `ln(Ks)` = "$ln(K_s)$", -->
-<!-- #                                  `PItlp` = "$TLP$", -->
-<!-- #                                  `ln(leaf_size)`= "$ln(L_{s})$" -->
-<!-- #                                  ), -->
-<!-- #            R2 = case_when(R2<0~0, -->
-<!-- #                           R2>=0~R2) -->
-<!-- #                                                      -->
-<!-- #                              )-> table_res -->
-<!-- #  -->
-<!-- #   table_results_traits_param(data_hydra %>% filter(r2_neutral>0,vpd_50_neutral<31,vpd_50_neutral>0.5), -->
-<!-- #                              c('vpd_50_neutral'), -->
-<!-- #                              c("-P50",'Ks','Hv','PItlp','Rd','leaf_size'), -->
-<!-- #                              c(TRUE), -->
-<!-- #                              c(TRUE,TRUE,TRUE,FALSE,FALSE,TRUE), -->
-<!-- #                              "n_neutral") %>%  -->
-<!-- #     mutate(Parameter = recode_factor(Parameter, -->
-<!-- #                                      `ln(vpd_50_neutral)` = "$ln(VPD_{50})$"), -->
-<!-- #            Trait = recode_factor(Trait, -->
-<!-- #                                  `ln(-P50)` = "$ln(-P50)$", -->
-<!-- #                                  `Rd` = "$R_{depth}$", -->
-<!-- #                                  `ln(Hv)` = "$ln(Hv)$", -->
-<!-- #                                  `ln(Ks)` = "$ln(K_s)$", -->
-<!-- #                                  `PItlp` = "$TLP$", -->
-<!-- #                                  `ln(leaf_size)`= "$ln(L_{s})$" -->
-<!-- #                                  ), -->
-<!-- #            R2 = case_when(R2<0~0, -->
-<!-- #                           R2>=0~R2) -->
-<!-- #                                                      -->
-<!-- #                              )-> table_res_2 -->
-<!-- #    -->
-<!-- #     table_results_traits_param(data_hydra2 %>% filter(r2_neutral>0,rew_50_neutral>0,rew_50_neutral<1), -->
-<!-- #                              c('rew_50_neutral'), -->
-<!-- #                              c("-P50",'Ks','Hv','PItlp','Rd','leaf_size'), -->
-<!-- #                              c(FALSE), -->
-<!-- #                              c(TRUE,TRUE,TRUE,FALSE,FALSE,TRUE), -->
-<!-- #                              "n_neutral") %>%  -->
-<!-- #     mutate(Parameter = recode_factor(Parameter, -->
-<!-- #                                      `rew_50_neutral` = "$REW_{50}^{(1/4)}$"), -->
-<!-- #            Trait = recode_factor(Trait, -->
-<!-- #                                  `ln(-P50)` = "$ln(-P50)$", -->
-<!-- #                                  `Rd` = "$R_{depth}$", -->
-<!-- #                                  `ln(Hv)` = "$ln(Hv)$", -->
-<!-- #                                  `ln(Ks)` = "$ln(K_s)$", -->
-<!-- #                                  `PItlp` = "$TLP$", -->
-<!-- #                                  `ln(leaf_size)` = "$ln(L_{s})$" -->
-<!-- #                                  ), -->
-<!-- #            R2 = case_when(R2<0~0, -->
-<!-- #                           R2>=0~R2) -->
-<!-- #                                                      -->
-<!-- #                              )-> table_res_3 -->
-<!-- #     table_total <- table_res -->
-<!-- #     # table_total <- rbind(table_res,table_res_2) %>% rbind(table_res_3) -->
-<!-- #    -->
-<!-- #   colnames(table_total)[6] <- "$R^2$" -->
-<!-- #   colnames(table_total)[3] <- "$N Species$" -->
-<!-- #    -->
-<!-- #   knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "", -->
-<!-- #                  caption = "Parameters calculated from models without aerodynamic conductivity, related to hydraulic traits.")%>% -->
-<!-- #     kableExtra::kable_styling(latex_options = "HOLD_position")%>% -->
-<!-- #    add_footnote("Statistical significant levels: \".\" p<0.1 ; \"*\" p<0.05; \"**\" p<0.01; \"***\" p<0.001.",notation = "none") -->
-<!-- #  -->
-<!-- #  -->
-<!-- # ``` -->
-
-
-
-
-<!-- # ```{r fig2PM , echo = FALSE, include=FALSE} -->
-<!-- #  ## 2.1 Gref ------ -->
-<!-- #   plot_traits(data_hydra,"-P50","Gref_neutral", "se_Gref_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!-- #   g1 <- g+ylab(bquote("ln("~G[REF]~")"))+xlab(bquote("ln(-P50)")) -->
-<!-- #   # mod1 <- lm(Gref ~ log(-P50), data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #   plot_traits(data_hydra,"Ks","Gref_neutral", "se_Gref_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!-- #   g2 <- g+ylab(bquote("ln("~G[REF]~")"))+xlab(bquote("ln("~K[s]~")")) -->
-<!-- #   # mod1 <- lm(Gref ~ log(Ks), data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"Hv","Gref_neutral", "se_Gref_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!-- #   g3 <- g+ylab(bquote("ln("~G[REF]~")"))+xlab(bquote("ln(Hv)")) -->
-<!-- #   # mod1 <- lm(Gref ~ Hv, data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"PItlp","Gref_neutral", "se_Gref_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',FALSE,FALSE,TRUE)->g -->
-<!-- #   g4 <- g+ylab(bquote("ln("~G[REF]~")"))+xlab(bquote("TLP [MPa]")) -->
-<!-- #   # mod1 <- lm(Gref ~ log(SLA), data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"Rd","Gref_neutral", "se_Gref_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',FALSE,FALSE,TRUE)->g -->
-<!-- #   g5 <- g+ylab(bquote("ln("~G[REF]~")"))+xlab(bquote(~R[depth]~ "[m]")) -->
-<!-- #   # mod1 <- lm(Gref ~ PItlp, data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"leaf_size","Gref_neutral", "se_Gref_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!-- #   g6 <- g+ylab(bquote("ln("~G[REF]~")"))+xlab(bquote(~ln(L[s]))) -->
-<!-- #   mod1 <- lm(Gref ~leaf_size %>% log()*group, data = data_hydra, weight=n) -->
-<!-- #   summary(mod1) -->
-<!-- #   anova(mod1) -->
-<!-- #    -->
-<!-- #   gridExtra::grid.arrange(g1,g2,g3,g4,g5,g6) ->fig2 -->
-<!-- #  -->
-<!-- #   ggsave("images/fig2PM.pdf",fig2,device = 'pdf',units = "cm",width = 14,height=12) -->
-<!-- #  -->
-<!-- # ``` -->
-<!-- #  -->
-<!-- # ```{r fig2plotPM, echo=FALSE, fig.cap="$ln(G_{ref})$, calculated from models without aerodynamic conductivity, related to hydraulic traits. Grey continuous lines are significant (p<0.05) weighted relationship and dashed lines are the Standard Error of the models. Red dots are angiosperms and blue dots are gymnosperms. Size of the points is equivalent to the number of tree-days of the species. Vertical lines are standard error of the modeled parameter. ",fig.align='center',out.width="0.7\\linewidth"} -->
-<!-- # knitr::include_graphics(c("images/fig2PM.pdf")) -->
-<!-- # ``` -->
-
-
-<!-- # ```{r fig2b1PM , echo = FALSE, include=FALSE} -->
-<!-- #  ## 2.2 b1 ------ -->
-<!-- #   plot_traits(data_hydra,"-P50","b1_neutral", "se_b1_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!-- #   g1 <- g+ylab(bquote(~beta[VPD]))+xlab(bquote("ln(-P50)")) -->
-<!-- #   # mod1 <- lm(b1 ~ log(-P50), data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #   plot_traits(data_hydra,"Ks","b1_neutral", "se_b1_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!-- #   g2 <- g+ylab(bquote(~beta[VPD]))+xlab(bquote("ln("~K[s]~")")) -->
-<!-- #   # mod1 <- lm(b1 ~ log(Ks), data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"Hv","b1_neutral", "se_b1_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!-- #   g3 <- g+ylab(bquote(~beta[VPD]))+xlab(bquote("ln(Hv)")) -->
-<!-- #   # mod1 <- lm(b1 ~ Hv, data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"PItlp","b1_neutral", "se_b1_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',FALSE,FALSE,TRUE)->g -->
-<!-- #   g4 <- g+ylab(bquote(~beta[VPD]))+xlab(bquote("TLP [MPa]")) -->
-<!-- #   # mod1 <- lm(b1 ~ log(SLA), data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"Rd","b1_neutral", "se_b1_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',FALSE,FALSE,TRUE)->g -->
-<!-- #   g5 <- g+ylab(bquote(~beta[VPD]))+xlab(bquote(~R[depth]~ "[m]")) -->
-<!-- #   # mod1 <- lm(b1 ~ PItlp, data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"leaf_size","b1_neutral", "se_b1_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!-- #   g6 <- g+ylab(bquote(~beta[VPD]))+xlab(bquote(~ln(L[s]))) -->
-<!-- #   # mod1 <- lm(b1 ~ PItlp, data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #    -->
-<!-- #   gridExtra::grid.arrange(g1,g2,g3,g4,g5,g6) ->fig2b1 -->
-<!-- #  -->
-<!-- #   ggsave("images/fig2b1PM.pdf",fig2b1,device = 'pdf',units = "cm",width = 14,height=12) -->
-<!-- #  -->
-<!-- # ``` -->
-<!-- #  -->
-<!-- # ```{r fig2b1plotPM, echo=FALSE, fig.cap="$\\beta_{vpd}$  calculated from models without aerodynamic conductivity, related to hydraulic traits. Grey continuous lines are significant (p<0.05) weighted relationship and dashed lines are the Standard Error of the models.  Red dots are angiosperms and blue dots are gymnosperms. Size of the points is equivalent to the number of tree-days of the species. Vertical lines are standard error of the modeled parameter.",fig.align='center',out.width="0.7\\linewidth"} -->
-<!-- # knitr::include_graphics(c("images/fig2b1PM.pdf")) -->
-<!-- # ``` -->
-
-
-<!-- # ```{r fig2b2PM , echo = FALSE, include=FALSE} -->
-<!-- #  ## 2.2 b2 ------ -->
-<!-- #   plot_traits(data_hydra,"-P50","b2_neutral", "se_b2_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,TRUE,TRUE)->g -->
-<!-- #   g1 <- g+ylab(bquote("ln("~beta[SWC]~")"))+xlab(bquote("ln(-P50)")) -->
-<!-- #   # mod1 <- lm(b2 ~ log(-P50), data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #   plot_traits(data_hydra,"Ks","b2_neutral", "se_b2_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,TRUE,TRUE)->g -->
-<!-- #   g2 <- g+ylab(bquote("ln("~beta[SWC]~")"))+xlab(bquote("ln("~K[s]~")")) -->
-<!-- #   # mod1 <- lm(b2 ~ log(Ks), data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"Hv","b2_neutral", "se_b2_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,TRUE,TRUE)->g -->
-<!-- #   g3 <- g+ylab(bquote("ln("~beta[SWC]~")"))+xlab(bquote("ln(Hv)")) -->
-<!-- #   # mod1 <- lm(b2 ~ Hv, data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"PItlp","b2_neutral", "se_b2_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',FALSE,TRUE,TRUE)->g -->
-<!-- #   g4 <- g+ylab(bquote("ln("~beta[SWC]~")"))+xlab(bquote("TLP [MPa]")) -->
-<!-- #   # mod1 <- lm(b2 ~ log(SLA), data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #  -->
-<!-- #   plot_traits(data_hydra,"Rd","b2_neutral", "se_b2_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',FALSE,TRUE,TRUE)->g -->
-<!-- #   g5 <- g+ylab(bquote("ln("~beta[SWC]~")"))+xlab(bquote(~R[depth]~ "[m]")) -->
-<!-- #   # mod1 <- lm(b2 ~ PItlp, data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #    -->
-<!-- #   plot_traits(data_hydra,"leaf_size","b2_neutral", "se_b2_neutral", 'n_neutral', -->
-<!-- #               'r2_neutral',TRUE,TRUE,TRUE)->g -->
-<!-- #   g6 <- g+ylab(bquote("ln("~beta[SWC]~")"))+xlab(bquote(~ln(L[s]))) -->
-<!-- #   # mod1 <- lm(b2 ~ PItlp, data = data_hydra, weight=n) -->
-<!-- #   # summary(mod1) -->
-<!-- #    -->
-<!-- #   gridExtra::grid.arrange(g1,g2,g3,g4,g5,g6) ->fig2b2 -->
-<!-- #  -->
-<!-- #   ggsave("images/fig2b2PM.pdf",fig2b2,device = 'pdf',units = "cm",width = 14,height=12) -->
-<!-- #  -->
-<!-- # ``` -->
-<!-- #  -->
-<!-- # ```{r fig2b2plotPM, echo=FALSE, fig.cap="$\\beta_{swc}$ calculated from models without aerodynamic conductivity, related to hydraulic traits. Grey continuous lines are significant (p<0.05) weighted relationship and dashed lines are the Standard Error of the models.  Red dots are angiosperms and blue dots are gymnosperms. Size of the points is equivalent to the number of tree-days of the species. Vertical lines are standard error of the modeled parameter.",fig.align='center',out.width="0.7\\linewidth"} -->
-<!-- # knitr::include_graphics(c("images/fig2b2PM.pdf")) -->
-<!-- # ``` -->
-
-
-<!-- ```{r fig_vpd_50PM, echo = FALSE,include=FALSE} -->
-<!--   ## 2.6 vpd_50 ----------------------- -->
-
-<!--   plot_traits_no_se(data_hydra %>% filter(r2_neutral>0, vpd_50_neutral>0.5, vpd_50_neutral<31),"-P50","vpd_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',TRUE,TRUE,TRUE)->g -->
-<!--   g1 <- g+ylab(bquote(~ln(VPD["50"])))+xlab(bquote("ln(-P50)")) -->
-<!--   # mod1 <- lm(vpd_50 ~ log(-P50), data = data_hydra, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--   plot_traits_no_se(data_hydra %>% filter(r2_neutral>0, vpd_50_neutral>0.5, vpd_50_neutral<31),"Ks","vpd_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',TRUE,TRUE,TRUE)->g -->
-<!--   g2 <- g+ylab(bquote(~ln(VPD["50"])))+xlab(bquote("ln("~K[s]~")")) -->
-<!--   # mod1 <- lm(vpd_50 ~ log(Ks), data = data_hydra, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--   plot_traits_no_se(data_hydra %>% filter(r2_neutral>0, vpd_50_neutral>0.5, vpd_50_neutral<31),"Hv","vpd_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',TRUE,TRUE,TRUE)->g -->
-<!--   g3 <- g+ylab(bquote(~ln(VPD["50"])))+xlab(bquote("ln(Hv)")) -->
-<!--   # mod1 <- lm(vpd_50 ~ Hv, data = data_hydra, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--   plot_traits_no_se(data_hydra %>% filter(r2_neutral>0, vpd_50_neutral>0.5, vpd_50_neutral<31),"PItlp","vpd_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',FALSE,TRUE,TRUE)->g -->
-<!--   g4 <- g+ylab(bquote(~ln(VPD["50"])))+xlab(bquote('TLP [MPa]')) -->
-<!--   # mod1 <- lm(vpd_50 ~ log(SLA), data = data_hydra, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--   plot_traits_no_se(data_hydra %>% filter(r2_neutral>0, vpd_50_neutral>0.5, vpd_50_neutral<31),"Rd","vpd_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',FALSE,TRUE,TRUE)->g -->
-<!--   g5 <- g+ylab(bquote(~ln(VPD["50"])))+xlab(bquote(~R[depth]~ "[m]")) -->
-<!--   # mod1 <- lm(vpd_50 ~ PItlp, data = data_hydra, weight=n) -->
-<!--   # summary(mod1)ç -->
-
-<!--   plot_traits_no_se(data_hydra %>% filter(r2_neutral>0, vpd_50_neutral>0.5, vpd_50_neutral<31),"leaf_size","vpd_50_neutral", 'n_neutral','r2_neutral',TRUE,TRUE,TRUE)->g -->
-<!--   g6 <- g+ylab(bquote(~ln(VPD["50"])))+xlab(bquote(~ln(L[s]))) -->
-<!--   # mod1 <- lm(vpd_50 ~ PItlp, data = data_hydra, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--   gridExtra::grid.arrange(g1,g2,g3,g4,g5,g6)->fig_vpd_50 -->
-
-<!--   ggsave("images/fig_vpd_50PM.pdf",fig_vpd_50,device = 'pdf',units = "cm",width = 14,height=12) -->
-
-<!-- ``` -->
-
-<!-- ```{r figvpd50plotPM, echo=FALSE, fig.cap="Neutral $VPD_{50}$ relationships to hydraulic traits. Grey continuous lines are significant (p<0.05) weighted relationship and dashed lines are the Standard Error of the models.  Red dots are angiosperms and blue dots are gymnosperms. Size of the points is equivalent to the number of tree-days of the species.",fig.align='center',out.width="0.7\\linewidth"} -->
-<!-- knitr::include_graphics(c("images/fig_vpd_50PM.pdf")) -->
-<!-- ``` -->
-
-
-<!-- ```{r fig_rew_50PM, echo = FALSE,include=FALSE} -->
-<!--   ## 2.5 rew_50 ----------------------- -->
-<!-- data_hydra2 <- data_hydra %>% filter(rew_50_neutral>=0,rew_50_neutral<=1) %>% mutate(rew_50_neutral = rew_50_neutral^(1/4)) -->
-
-<!--   plot_traits_no_se(data_hydra2 ,"-P50","rew_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!--   g1 <- g+ylab(bquote(~REW["50"]^{(1/4)}))+xlab(bquote("ln(-P50)")) -->
-<!--   # mod1 <- glm(rew_50 ~ P50, data = data_hydra2, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--   plot_traits_no_se(data_hydra2 %>% filter(rew_50_neutral>=0,rew_50_neutral<=1),"Ks","rew_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!--   g2 <- g+ylab(bquote(~REW["50"]^{(1/4)}))+xlab(bquote("ln("~K[s]~")")) -->
-<!--   # mod1 <- lm(rew_50 ~ log(Ks), data = data_hydra, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--   plot_traits_no_se(data_hydra2 %>% filter(rew_50_neutral>=0,rew_50_neutral<=1),"Hv","rew_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!--   g3 <- g+ylab(bquote(~REW["50"]^{(1/4)}))+xlab(bquote("ln(Hv)")) -->
-<!--   # mod1 <- lm(rew_50 ~ Hv, data = data_hydra, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--   plot_traits_no_se(data_hydra2 %>% filter(rew_50_neutral>=0,rew_50_neutral<=1),"PItlp","rew_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',FALSE,FALSE,TRUE)->g -->
-<!--   g4 <- g+ylab(bquote(~REW["50"]^{(1/4)}))+xlab(bquote("TLP [MPa]")) -->
-<!--   # mod1 <- lm(rew_50 ~ log(SLA), data = data_hydra, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--   plot_traits_no_se(data_hydra2 %>% filter(rew_50_neutral>=0,rew_50_neutral<=1),"Rd","rew_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',FALSE,FALSE,TRUE)->g -->
-<!--   g5 <- g+ylab(bquote(~REW["50"]^{(1/4)}))+xlab(bquote(~R[depth]~ "[m]")) -->
-<!--   # mod1 <- lm(rew_50 ~ PItlp, data = data_hydra, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--     plot_traits_no_se(data_hydra2 %>% filter(rew_50_neutral>=0,rew_50_neutral<=1),"leaf_size","rew_50_neutral", 'n_neutral', -->
-<!--               'r2_neutral',TRUE,FALSE,TRUE)->g -->
-<!--   g6 <- g+ylab(bquote(~REW["50"]^{(1/4)}))+xlab(bquote(~ln(L[s]))) -->
-<!--   # mod1 <- lm(rew_50 ~ PItlp, data = data_hydra, weight=n) -->
-<!--   # summary(mod1) -->
-
-<!--   gridExtra::grid.arrange(g1,g2,g3,g4,g5,g6)->fig_rew_50 -->
-
-<!--   ggsave("images/fig_rew_50PM.pdf",fig_rew_50,device = 'pdf',units = "cm",width = 14,height=12) -->
-
-<!-- ``` -->
-
-<!-- ```{r figrew50plotPM, echo=FALSE, fig.cap="Neutral $REW_{50}$ relationships to hydraulic traits. $REW_{50}$ were elevated to (1/4) to achive normality. Grey continuous line is the weighted linear relationship and dashed lines are the Standard Error of the model. Red dots are angiosperms and blue dots are gymnosperms. Size of the points is equivalent to the number of tree-days of the species.",fig.align='center',out.width="0.7\\linewidth"} -->
-<!-- knitr::include_graphics(c("images/fig_rew_50PM.pdf")) -->
-<!-- ``` -->
 
 
 
