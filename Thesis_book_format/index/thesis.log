@@ -1,26 +1,26 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.21)  3 NOV 2020 09:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.8)  13 DEC 2020 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
-LaTeX2e <2020-10-01> patch level 1
-L3 programming layer <2020-10-05> xparse <2020-03-03> (./reedthesis.cls
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-07> xparse <2020-03-03> (./reedthesis.cls
 Document Class: reedthesis 2004/01/27 The Reed College Thesis Class
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/base/bk11.clo
 File: bk11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count175
-\c@chapter=\count176
-\c@section=\count177
-\c@subsection=\count178
-\c@subsubsection=\count179
-\c@paragraph=\count180
-\c@subparagraph=\count181
-\c@figure=\count182
-\c@table=\count183
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -42,11 +42,11 @@ Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-\FV@CodeLineNo=\count184
+\FV@CodeLineNo=\count186
 \FV@InFile=\read2
 \FV@TabBox=\box47
-\c@FancyVerbLine=\count185
-\FV@StepNumber=\count186
+\c@FancyVerbLine=\count187
+\FV@StepNumber=\count188
 \FV@OutFile=\write3
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
@@ -90,7 +90,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 Package: crop 2017/11/19 1.10 crop marks (mf)
 \stockwidth=\dimen143
 \stockheight=\dimen144
-\CROP@index=\count187
+\CROP@index=\count189
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
@@ -100,7 +100,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\CROP@offset=\count188
+\CROP@offset=\count190
 Package crop Info: Local config file crop.cfg used on input line 622.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/xelatex/xetexconfig/crop.cfg)) (/da
 ta/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -136,7 +136,7 @@ atched RF)
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/quotchap/quotchap.sty
-Package: quotchap 2019/07/09 v1.2 Decorative Chapter Headings with Quotes
+Package: quotchap 2020/11/13 v1.3 Decorative Chapter Headings with Quotes
 \@quotebox=\box48
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
@@ -154,32 +154,32 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count189
-\c@Blindtext=\count190
-\c@blind@countparstart=\count191
-\blind@countxx=\count192
-\blindtext@numBlindtext=\count193
-\blind@countyy=\count194
-\c@blindlist=\count195
-\c@blindlistlevel=\count196
-\c@blindlist@level=\count197
-\blind@listitem=\count198
-\c@blind@listcount=\count199
-\c@blind@levelcount=\count266
-\blind@mathformula=\count267
-\blind@Mathformula=\count268
-\c@blind@randomcount=\count269
-\c@blind@randommax=\count270
-\c@blind@pangramcount=\count271
-\c@blind@pangrammax=\count272
+\c@blindtext=\count191
+\c@Blindtext=\count192
+\c@blind@countparstart=\count193
+\blind@countxx=\count194
+\blindtext@numBlindtext=\count195
+\blind@countyy=\count196
+\c@blindlist=\count197
+\c@blindlistlevel=\count198
+\c@blindlist@level=\count199
+\blind@listitem=\count266
+\c@blind@listcount=\count267
+\c@blind@levelcount=\count268
+\blind@mathformula=\count269
+\blind@Mathformula=\count270
+\c@blind@randomcount=\count271
+\c@blind@randommax=\count272
+\c@blind@pangramcount=\count273
+\c@blind@pangrammax=\count274
 )) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count273
-\Gm@cntv=\count274
-\c@Gm@tempcnt=\count275
+\Gm@cnth=\count275
+\Gm@cntv=\count276
+\c@Gm@tempcnt=\count277
 \Gm@bindingoffset=\dimen150
 \Gm@wd@mp=\dimen151
 \Gm@odd@mp=\dimen152
@@ -214,13 +214,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count276
+\inf@bad=\count278
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count277
-\leftroot@=\count278
+\uproot@=\count279
+\leftroot@=\count280
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count279
-\DOTSCASE@=\count280
+\classnum@=\count281
+\DOTSCASE@=\count282
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -229,15 +229,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen162
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count281
-\c@MaxMatrixCols=\count282
+\macc@depth=\count283
+\c@MaxMatrixCols=\count284
 \dotsspace@=\muskip16
-\c@parentequation=\count283
-\dspbrk@lvl=\count284
+\c@parentequation=\count285
+\dspbrk@lvl=\count286
 \tag@help=\toks21
-\row@=\count285
-\column@=\count286
-\maxfields@=\count287
+\row@=\count287
+\column@=\count288
+\maxfields@=\count289
 \andhelp@=\toks22
 \eqnshift@=\dimen163
 \alignsep@=\dimen164
@@ -277,16 +277,16 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip68
 \LTpre=\skip69
 \LTpost=\skip70
-\LTchunksize=\count288
+\LTchunksize=\count290
 \LTcapwidth=\dimen169
 \LT@head=\box52
 \LT@firsthead=\box53
 \LT@foot=\box54
 \LT@lastfoot=\box55
-\LT@cols=\count289
-\LT@rows=\count290
-\c@LT@tables=\count291
-\c@LT@chunks=\count292
+\LT@cols=\count291
+\LT@rows=\count292
+\c@LT@tables=\count293
+\c@LT@chunks=\count294
 \LT@p@ftn=\toks31
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
@@ -300,12 +300,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen177
 \cmidrulekern=\dimen178
 \defaultaddspace=\dimen179
-\@cmidla=\count293
-\@cmidlb=\count294
+\@cmidla=\count295
+\@cmidlb=\count296
 \@aboverulesep=\dimen180
 \@belowrulesep=\dimen181
-\@thisruleclass=\count295
-\@lastruleclass=\count296
+\@thisruleclass=\count297
+\@lastruleclass=\count298
 \@thisrulewidth=\dimen182
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -345,8 +345,8 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen183
-\Hy@linkcounter=\count297
-\Hy@pagecounter=\count298
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -356,7 +356,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count299
+\Hy@SavedSpaceFactor=\count301
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
 Package hyperref Info: Hyper index ON on input line 4472.
@@ -364,7 +364,7 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count300
+\c@Hy@tempcnt=\count302
 LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen184
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
@@ -373,7 +373,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count301
+\Fld@menulength=\count303
 \Field@Width=\dimen185
 \Fld@charsize=\dimen186
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -390,9 +390,9 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count302
-\c@Item=\count303
-\c@Hfootnote=\count304
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -402,8 +402,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count305
-\c@bookmark@seq@number=\count306
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck
 .sty
@@ -453,7 +453,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count307
+\c@float@type=\count309
 \float@exts=\toks32
 \float@box=\box56
 \@float@everytoks=\toks33
@@ -463,15 +463,15 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count308
+\c@r@tfl@t=\count310
 \rotFPtop=\skip72
 \rotFPbot=\skip73
 \rot@float@box=\box58
 \rot@mess@toks=\toks34
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/09/12 v3.5b Customizing captions (AR)
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/09/17 v2.1b caption3 kernel (AR)
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen187
 \captionmargin@=\dimen188
 \captionwidth=\dimen189
@@ -481,8 +481,8 @@ Package: caption3 2020/09/17 v2.1b caption3 kernel (AR)
 \caption@hangindent=\dimen193
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count309
-\c@continuedfloat=\count310
+\c@caption@flags=\count311
+\c@continuedfloat=\count312
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -507,14 +507,14 @@ n-lists.tex))
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.t
 ex (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfrcs 2020/12/01 v3.1.7a (3.1.7a)
 ))
-Package: pgf 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgf 2020/12/01 v3.1.7a (3.1.7a)
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/
 data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code
 .tex
-Package: pgfsys 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfsys 2020/12/01 v3.1.7a (3.1.7a)
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.
 tex
@@ -537,40 +537,40 @@ ed.code.tex
 \pgf@yd=\dimen261
 \w@pgf@writea=\write4
 \r@pgf@reada=\read3
-\c@pgf@counta=\count311
-\c@pgf@countb=\count312
-\c@pgf@countc=\count313
-\c@pgf@countd=\count314
+\c@pgf@counta=\count313
+\c@pgf@countb=\count314
+\c@pgf@countc=\count315
+\c@pgf@countd=\count316
 \t@pgf@toka=\toks39
 \t@pgf@tokb=\toks40
 \t@pgf@tokc=\toks41
-\pgf@sys@id@count=\count315
+\pgf@sys@id@count=\count317
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2020/10/01 v3.1.6a (3.1.6a)
+File: pgf.cfg 2020/12/01 v3.1.7a (3.1.7a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdft
 ex.def
-File: pgfsys-pdftex.def 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfsys-pdftex.def 2020/12/01 v3.1.7a (3.1.7a)
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-comm
 on-pdf.def
-File: pgfsys-common-pdf.def 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfsys-common-pdf.def 2020/12/01 v3.1.7a (3.1.7a)
 )))
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftp
 ath.code.tex
-File: pgfsyssoftpath.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgfsyssoftpath@smallbuffer@items=\count316
-\pgfsyssoftpath@bigbuffer@items=\count317
+File: pgfsyssoftpath.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfsyssoftpath@smallbuffer@items=\count318
+\pgfsyssoftpath@bigbuffer@items=\count319
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysproto
 col.code.tex
-File: pgfsysprotocol.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfsysprotocol.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 ))
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code
 .tex
-Package: pgfcore 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfcore 2020/12/01 v3.1.7a (3.1.7a)
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.t
 ex
@@ -579,7 +579,7 @@ ex)
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code
 .tex
 \pgfmath@dimen=\dimen262
-\pgfmath@count=\count318
+\pgfmath@count=\count320
 \pgfmath@box=\box60
 \pgfmath@toks=\toks42
 \pgfmath@stack@operand=\toks43
@@ -605,12 +605,12 @@ isc.code.tex)
 ntegerarithmetics.code.tex)))
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.
 tex
-\c@pgfmathroundto@lastzeros=\count319
+\c@pgfmathroundto@lastzeros=\count321
 )) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoint
 s.code.tex
-File: pgfcorepoints.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorepoints.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgf@picminx=\dimen263
 \pgf@picmaxx=\dimen264
 \pgf@picminy=\dimen265
@@ -628,103 +628,103 @@ File: pgfcorepoints.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathc
 onstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorepathconstruct.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgf@path@lastx=\dimen277
 \pgf@path@lasty=\dimen278
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathu
 sage.code.tex
-File: pgfcorepathusage.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorepathusage.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgf@shorten@end@additional=\dimen279
 \pgf@shorten@start@additional=\dimen280
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescope
 s.code.tex
-File: pgfcorescopes.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorescopes.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgfpic=\box61
 \pgf@hbox=\box62
 \pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count320
+\pgf@picture@serial@count=\count322
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraph
 icstate.code.tex
-File: pgfcoregraphicstate.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoregraphicstate.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgflinewidth=\dimen281
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretrans
 formations.code.tex
-File: pgfcoretransformations.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoretransformations.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgf@pt@x=\dimen282
 \pgf@pt@y=\dimen283
 \pgf@pt@temp=\dimen284
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick
 .code.tex
-File: pgfcorequick.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorequick.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjec
 ts.code.tex
-File: pgfcoreobjects.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoreobjects.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathp
 rocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorepathprocessing.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrow
 s.code.tex
-File: pgfcorearrows.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorearrows.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgfarrowsep=\dimen285
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade
 .code.tex
-File: pgfcoreshade.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoreshade.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgf@max=\dimen286
-\pgf@sys@shading@range@num=\count321
-\pgf@shadingcount=\count322
+\pgf@sys@shading@range@num=\count323
+\pgf@shadingcount=\count324
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage
 .code.tex
-File: pgfcoreimage.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoreimage.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexter
 nal.code.tex
-File: pgfcoreexternal.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoreexternal.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgfexternal@startupbox=\box64
 ))
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayer
 s.code.tex
-File: pgfcorelayers.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorelayers.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretrans
 parency.code.tex
-File: pgfcoretransparency.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoretransparency.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatte
 rns.code.tex
-File: pgfcorepatterns.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorepatterns.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.c
 ode.tex
-File: pgfcorerdf.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorerdf.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 )))
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes
 .code.tex
-File: pgfmoduleshapes.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfmoduleshapes.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgfnodeparttextbox=\box65
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.c
 ode.tex
-File: pgfmoduleplot.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfmoduleplot.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-ver
 sion-0-65.sty
-Package: pgfcomp-version-0-65 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfcomp-version-0-65 2020/12/01 v3.1.7a (3.1.7a)
 \pgf@nodesepstart=\dimen287
 \pgf@nodesepend=\dimen288
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-ver
 sion-1-18.sty
-Package: pgfcomp-version-1-18 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfcomp-version-1-18 2020/12/01 v3.1.7a (3.1.7a)
 )) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (
 /data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.
@@ -732,7 +732,7 @@ tex)) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/
 data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.t
 ex
-Package: pgffor 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgffor 2020/12/01 v3.1.7a (3.1.7a)
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen289
 \pgffor@skip=\dimen290
@@ -741,12 +741,12 @@ Package: pgffor 2020/10/01 v3.1.6a (3.1.6a)
 ))
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz
 .code.tex
-Package: tikz 2020/10/01 v3.1.6a (3.1.6a)
+Package: tikz 2020/12/01 v3.1.7a (3.1.7a)
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplo
 thandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgf@plot@mark@count=\count323
+File: pgflibraryplothandlers.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@plot@mark@count=\count325
 \pgfplotmarksize=\dimen291
 )
 \tikz@lastx=\dimen292
@@ -761,28 +761,28 @@ File: pgflibraryplothandlers.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 \tikz@figbox@bg=\box67
 \tikz@tempbox=\box68
 \tikz@tempbox@bg=\box69
-\tikztreelevel=\count324
-\tikznumberofchildren=\count325
-\tikznumberofcurrentchild=\count326
-\tikz@fig@count=\count327
+\tikztreelevel=\count326
+\tikznumberofchildren=\count327
+\tikznumberofcurrentchild=\count328
+\tikz@fig@count=\count329
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix
 .code.tex
-File: pgfmodulematrix.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgfmatrixcurrentrow=\count328
-\pgfmatrixcurrentcolumn=\count329
-\pgf@matrix@numberofcolumns=\count330
+File: pgfmodulematrix.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfmatrixcurrentrow=\count330
+\pgfmatrixcurrentcolumn=\count331
+\pgf@matrix@numberofcolumns=\count332
 )
-\tikz@expandcount=\count331
+\tikz@expandcount=\count333
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libr
 aries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibrarytopaths.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 ))) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count332
+\etb@tempcnta=\count334
 )) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
@@ -813,18 +813,18 @@ File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/generic/minifp/minifp.sty
 Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 -based programing language.
-\MFP@loopctr=\count333
+\MFP@loopctr=\count335
 )
-\c@DefaultLines=\count334
-\c@DefaultDepth=\count335
+\c@DefaultLines=\count336
+\c@DefaultDepth=\count337
 \DefaultFindent=\dimen302
 \DefaultNindent=\dimen303
 \DefaultSlope=\dimen304
 \DiscardVskip=\dimen305
 \L@lbox=\box73
 \L@tbox=\box74
-\c@L@lines=\count336
-\c@L@depth=\count337
+\c@L@lines=\count338
+\c@L@depth=\count339
 \L@Pindent=\dimen306
 \L@Findent=\dimen307
 \L@Nindent=\dimen308
@@ -846,22 +846,22 @@ Loading lettrine.cfg
 a/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip77
-\multirow@cntb=\count338
+\multirow@cntb=\count340
 \multirow@dima=\skip78
 \bigstrutjot=\dimen321
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count339
-\calc@Bcount=\count340
+\calc@Acount=\count341
+\calc@Bcount=\count342
 \calc@Adimen=\dimen322
 \calc@Bdimen=\dimen323
 \calc@Askip=\skip79
 \calc@Bskip=\skip80
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count341
+\calc@Ccount=\count343
 \calc@Cskip=\skip81
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
@@ -875,18 +875,18 @@ File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box75
 \AM@global@opts=\toks50
-\AM@pagecnt=\count342
+\AM@pagecnt=\count344
 \AM@toc@title=\toks51
-\c@AM@survey=\count343
+\c@AM@survey=\count345
 \AM@templatesizebox=\box76
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2020/08/23 v1.3g Sub-captions (AR)
-\c@subfigure=\count344
-\c@subtable=\count345
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count346
+\c@subtable=\count347
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen328
 \WF@size=\dimen329
-\c@WF@wrappedlines=\count346
+\c@WF@wrappedlines=\count348
 \WF@box=\box77
 \WF@everypar=\toks52
 Package: wrapfig 2003/01/31  v 3.6
@@ -895,16 +895,16 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box78
-\sift@deathcycles=\count347
+\sift@deathcycles=\count349
 \@vwid@loff=\dimen330
 \@vwid@roff=\dimen331
 )
-\c@taburow=\count348
-\tabu@nbcols=\count349
-\tabu@cnt=\count350
-\tabu@Xcol=\count351
-\tabu@alloc=\count352
-\tabu@nested=\count353
+\c@taburow=\count350
+\tabu@nbcols=\count351
+\tabu@cnt=\count352
+\tabu@Xcol=\count353
+\tabu@alloc=\count354
+\tabu@nested=\count355
 \tabu@target=\dimen332
 \tabu@spreadtarget=\dimen333
 \tabu@naturalX=\dimen334
@@ -937,7 +937,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \UL@skip=\skip84
 \UL@hook=\toks55
 \UL@height=\dimen341
-\UL@pe=\count354
+\UL@pe=\count356
 \UL@pixel=\dimen342
 \ULC@box=\box85
 Package: ulem 2019/11/18
@@ -945,60 +945,45 @@ Package: ulem 2019/11/18
 ) (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen344
-\c@nlinenum=\count355
+\c@nlinenum=\count357
 \TeXr@lab=\toks56
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 32
-0.
+1.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 f
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count356
+\l__kernel_color_stack_int=\count358
 \l__pdf_internal_box=\box86
 ) (./thesis.aux
 
-LaTeX Warning: Label `introduction' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-1' multiply defined.
 
 
-LaTeX Warning: Label `introduction' multiply defined.
-
-
-LaTeX Warning: Label `material-and-methods' multiply defined.
-
-
-LaTeX Warning: Label `statistical-analyses' multiply defined.
-
-
-LaTeX Warning: Label `results' multiply defined.
-
-
-LaTeX Warning: Label `discussion' multiply defined.
-
-
-LaTeX Warning: Label `conclusions' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-1' multiply defined.
 
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 320.
-LaTeX Font Info:    ... okay on input line 320.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 320.
-LaTeX Font Info:    ... okay on input line 320.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 320.
-LaTeX Font Info:    ... okay on input line 320.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 320.
-LaTeX Font Info:    ... okay on input line 320.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 320.
-LaTeX Font Info:    ... okay on input line 320.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 320.
-LaTeX Font Info:    ... okay on input line 320.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 320.
-LaTeX Font Info:    ... okay on input line 320.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 320.
-LaTeX Font Info:    ... okay on input line 320.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 321.
+LaTeX Font Info:    ... okay on input line 321.
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.st
 y
@@ -1009,9 +994,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package crop Info: requested driver: `pdftex' on input line 320.
-Package crop Info: detected driver: `pdftex' on input line 320.
-Package crop Info: using `pdftex' graphics driver on input line 320.
+Package crop Info: requested driver: `pdftex' on input line 321.
+Package crop Info: detected driver: `pdftex' on input line 321.
+Package crop Info: using `pdftex' graphics driver on input line 321.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1046,7 +1031,7 @@ Package crop Info: using `pdftex' graphics driver on input line 320.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 320.
+Package hyperref Info: Link coloring OFF on input line 321.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1056,11 +1041,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ng.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count357
+\c@section@level=\count359
 )
-LaTeX Info: Redefining \ref on input line 320.
-LaTeX Info: Redefining \pageref on input line 320.
-LaTeX Info: Redefining \nameref on input line 320.
+LaTeX Info: Redefining \ref on input line 321.
+LaTeX Info: Redefining \pageref on input line 321.
+LaTeX Info: Redefining \nameref on input line 321.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
@@ -1070,42 +1055,42 @@ Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-24.
+25.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-24.
+25.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-324.
+325.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-324.
+325.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 324.
+(Font)              <12> on input line 325.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 324.
+(Font)              <8> on input line 325.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 324.
-<figure/LOGO_CREAF.png, id=232, 691.58376pt x 275.0275pt>
+(Font)              <6> on input line 325.
+<figure/LOGO_CREAF.png, id=39, 691.58376pt x 275.0275pt>
 File: figure/LOGO_CREAF.png Graphic file (type png)
 <use figure/LOGO_CREAF.png>
-Package pdftex.def Info: figure/LOGO_CREAF.png  used on input line 324.
+Package pdftex.def Info: figure/LOGO_CREAF.png  used on input line 325.
 (pdftex.def)             Requested size: 73.40701pt x 29.19138pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 324.
-<figure/Logo_uab.png, id=234, 1229.59375pt x 569.12625pt>
+(Font)              <10.95> on input line 325.
+<figure/Logo_uab.png, id=41, 1229.59375pt x 569.12625pt>
 File: figure/Logo_uab.png Graphic file (type png)
 <use figure/Logo_uab.png>
-Package pdftex.def Info: figure/Logo_uab.png  used on input line 324.
+Package pdftex.def Info: figure/Logo_uab.png  used on input line 325.
 (pdftex.def)             Requested size: 73.40701pt x 33.97241pt.
 [1
 Non-PDF special ignored!
@@ -1123,52 +1108,47 @@ Non-PDF special ignored!
 ] [2] [3] [4
 
 
-] (./thesis.toc
-Underfull \hbox (badness 1377) in paragraph at lines 11--11
- [][] [][]\T1/lmr/m/n/10.95 Sap flow mea-sure-ment er-rors across meth-ods and 
-
- []
-
-[5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[6])
+] (./thesis.toc)
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
-[7] [8
+[5] [6
 
 ] (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
-[9] [10
+[7] [8
 
-] (./thesis.lof [11])
+] (./thesis.lof)
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
-[12]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 424.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11> on input line 424.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.69997> on input line 424.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.5> on input line 424.
-[13
+[9] [10
 
 ]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 426.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <11> on input line 426.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.69997> on input line 426.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.5> on input line 426.
+[11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[14] [15] [16
+[12] [13] [14
 
 
-] [17] [18
+] [15] [16
 
 
 ]
  1.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 503.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
@@ -1179,518 +1159,174 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.498 ...Bernhard Schuldt, Rafael Poyatos \newpage
-                                                   [1
+l.517 \chapter
+              {Appendix Chapter 2}\label{appendix-chapter-2} [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.535 \newpage
-               [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+l.517 \chapter
+              {Appendix Chapter 2}\label{appendix-chapter-2} [2
 
+]
+Appendix A.
 [3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<figure/appendixA1/fig1.png, id=175, 256.3176pt x 239.4546pt>
+File: figure/appendixA1/fig1.png Graphic file (type png)
+<use figure/appendixA1/fig1.png>
+Package pdftex.def Info: figure/appendixA1/fig1.png  used on input line 528.
+(pdftex.def)             Requested size: 293.6337pt x 274.31836pt.
+[4 <./figure/appendixA1/fig1.png>]
+<figure/appendixA1/fig2.png, id=182, 385.44pt x 374.5995pt>
+File: figure/appendixA1/fig2.png Graphic file (type png)
+<use figure/appendixA1/fig2.png>
+Package pdftex.def Info: figure/appendixA1/fig2.png  used on input line 539.
+(pdftex.def)             Requested size: 367.04073pt x 356.71347pt.
+[5 <./figure/appendixA1/fig2.png>]
+<figure/appendixA1/fig3.png, id=188, 477.7047pt x 187.6611pt>
+File: figure/appendixA1/fig3.png Graphic file (type png)
+<use figure/appendixA1/fig3.png>
+Package pdftex.def Info: figure/appendixA1/fig3.png  used on input line 550.
+(pdftex.def)             Requested size: 367.04073pt x 144.19023pt.
+[6 <./figure/appendixA1/fig3.png>]
+Overfull \hbox (2.68365pt too wide) in paragraph at lines 560--560
+[]|\T1/lmr/m/n/6 Method|  
+ []
 
-[4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (7.60603pt too wide) in paragraph at lines 560--561
+ []|\T1/lmr/m/n/6 Diameter
+ []
 
-[6] [7]
-Underfull \vbox (badness 2556) has occurred while \output is active []
+
+Overfull \hbox (8.7043pt too wide) in alignment at lines 557--562
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.68365pt too wide) in paragraph at lines 565--565
+[]|\T1/lmr/m/n/6 Method|  
+ []
+
+
+Overfull \hbox (7.60603pt too wide) in paragraph at lines 565--566
+ []|\T1/lmr/m/n/6 Diameter
+ []
+
+
+Overfull \hbox (8.7043pt too wide) in alignment at lines 562--567
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (8.7043pt too wide) in alignment at lines 567--569
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (8.7043pt too wide) in alignment at lines 569--571
+ [] [] [] [] [] [] 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 572.
+
+Overfull \hbox (8.7043pt too wide) in alignment at lines 571--592
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (8.7043pt too wide) in alignment at lines 592--612
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (8.7043pt too wide) in alignment at lines 612--632
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (5.16885pt too wide) in paragraph at lines 635--635
+[]|$\OML/lmm/m/it/6 Syagrus  romanzoffiana$|  
+ []
+
+
+Overfull \hbox (6.01338pt too wide) in paragraph at lines 637--637
+[]|$\OML/lmm/m/it/6 Liquidambar  styraciflua$|  
+ []
+
+
+Overfull \hbox (17.98375pt too wide) in paragraph at lines 640--640
+[]|$\OML/lmm/m/it/6 Quercus  robur  x  Q:  Bicolor$|  
+ []
+
+
+Overfull \hbox (8.7043pt too wide) in alignment at lines 632--652
+ [] [] [] [] [] [] 
+ []
+
+[7]
+Overfull \hbox (6.01338pt too wide) in paragraph at lines 662--662
+[]|$\OML/lmm/m/it/6 Liquidambar  styraciflua$|  
+ []
+
+
+Overfull \hbox (8.7043pt too wide) in alignment at lines 652--672
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (8.7043pt too wide) in alignment at lines 672--672
+ [] [] [] [] [] [] 
+ []
 
 [8] [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[10]
-<figure/CH2/PLOTMETRICS.png, id=536, 244.9953pt x 484.4499pt>
-File: figure/CH2/PLOTMETRICS.png Graphic file (type png)
-<use figure/CH2/PLOTMETRICS.png>
-Package pdftex.def Info: figure/CH2/PLOTMETRICS.png  used on input line 869.
-(pdftex.def)             Requested size: 201.8735pt x 399.1956pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[11] [12 <./figure/CH2/PLOTMETRICS.png>] [13]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 967.
-<figure/CH2/Distribution-metrics-orderedV4.png, id=556, 261.3765pt x 486.1362pt
->
-File: figure/CH2/Distribution-metrics-orderedV4.png Graphic file (type png)
-<use figure/CH2/Distribution-metrics-orderedV4.png>
-Package pdftex.def Info: figure/CH2/Distribution-metrics-orderedV4.png  used on
- input line 971.
-(pdftex.def)             Requested size: 201.8735pt x 375.46095pt.
-[14]
-<figure/CH2/FAMILYMETHODS.png, id=561, 541.5432pt x 419.6478pt>
-File: figure/CH2/FAMILYMETHODS.png Graphic file (type png)
-<use figure/CH2/FAMILYMETHODS.png>
-Package pdftex.def Info: figure/CH2/FAMILYMETHODS.png  used on input line 1002.
-
-(pdftex.def)             Requested size: 367.04073pt x 284.42825pt.
-[15]
-Underfull \vbox (badness 3557) has occurred while \output is active []
-
-[16 <./figure/CH2/Distribution-metrics-orderedV4.png>] [17 <./figure/CH2/FAMILY
-METHODS.png>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1046.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1046.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figure/CH2/DENSITY.png, id=578, 263.7855pt x 401.0985pt>
-File: figure/CH2/DENSITY.png Graphic file (type png)
-<use figure/CH2/DENSITY.png>
-Package pdftex.def Info: figure/CH2/DENSITY.png  used on input line 1082.
-(pdftex.def)             Requested size: 201.8735pt x 306.96175pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[18] [19]
-Underfull \hbox (badness 1515) in paragraph at lines 1130--1130
-|[]\T1/lmr/bx/n/12 Sap flow mea-sure-ment er-rors across meth-ods and
+Overfull \hbox (5.33412pt too wide) in paragraph at lines 681--718
+ [][] 
  []
 
+[10] [11] [12
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[20 <./figure/CH2/DENSITY.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[21]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[23]
-<figure/CH2/figure-density.png, id=610, 867.24pt x 722.7pt>
-File: figure/CH2/figure-density.png Graphic file (type png)
-<use figure/CH2/figure-density.png>
-Package pdftex.def Info: figure/CH2/figure-density.png  used on input line 1240
-.
-(pdftex.def)             Requested size: 367.04073pt x 305.86975pt.
-
-Underfull \vbox (badness 1270) has occurred while \output is active []
-
-[24] [25 <./figure/CH2/figure-density.png (PNG copy)>]
-<figure/CH2/figure-totalflow.png, id=619, 867.24pt x 722.7pt>
-File: figure/CH2/figure-totalflow.png Graphic file (type png)
-<use figure/CH2/figure-totalflow.png>
-Package pdftex.def Info: figure/CH2/figure-totalflow.png  used on input line 12
-77.
-(pdftex.def)             Requested size: 367.04073pt x 305.86975pt.
-[26] [27 <./figure/CH2/figure-totalflow.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[28] [29] [30] [31] [32
-
-]
- 2.
-[33]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-443.
-(/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [34] [35] [36]
-Underfull \vbox (badness 2617) has occurred while \output is active []
-
-[37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[38] [39]
-Underfull \vbox (badness 1831) has occurred while \output is active []
-
-[40]
-Package epstopdf Info: Source file: <figure/CH3/Figure1.eps>
-(epstopdf)                    date: 2020-10-20 10:59:04
-(epstopdf)                    size: 54306 bytes
-(epstopdf)             Output file: <figure/CH3/Figure1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-10-20 13:09:10
-(epstopdf)                    size: 18882 bytes
-(epstopdf)             Command: <repstopdf --outfile=figure/CH3/Figure1-eps-con
-verted-to.pdf figure/CH3/Figure1.eps>
-(epstopdf)             \includegraphics on input line 1732.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./figure/CH3/Figure1-eps-converted-to.pdf): PDF 
-inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figure/CH3/Figure1-eps-converted-to.pdf, id=686, 285.065pt x 508.90125pt>
-File: figure/CH3/Figure1-eps-converted-to.pdf Graphic file (type pdf)
-<use figure/CH3/Figure1-eps-converted-to.pdf>
-Package pdftex.def Info: figure/CH3/Figure1-eps-converted-to.pdf  used on input
- line 1732.
-(pdftex.def)             Requested size: 256.92738pt x 458.66693pt.
-[41]
-Overfull \vbox (6.94766pt too high) has occurred while \output is active []
-
-[42 <./figure/CH3/Figure1-eps-converted-to.pdf>] [43] [44]
-<figure/CH3/Figure2.pdf, id=710, 568.1225pt x 426.59375pt>
-File: figure/CH3/Figure2.pdf Graphic file (type pdf)
-<use figure/CH3/Figure2.pdf>
-Package pdftex.def Info: figure/CH3/Figure2.pdf  used on input line 1846.
-(pdftex.def)             Requested size: 367.04073pt x 275.61626pt.
-<figure/CH3/Figure3.pdf, id=711, 568.1225pt x 710.655pt>
-File: figure/CH3/Figure3.pdf Graphic file (type pdf)
-<use figure/CH3/Figure3.pdf>
-Package pdftex.def Info: figure/CH3/Figure3.pdf  used on input line 1855.
-(pdftex.def)             Requested size: 367.04073pt x 459.14429pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[46 <./figure/CH3/Figure2.pdf>]
-Overfull \vbox (7.42502pt too high) has occurred while \output is active []
-
-[47 <./figure/CH3/Figure3.pdf>]
-<figure/CH3/Figure4.pdf, id=745, 426.59375pt x 426.59375pt>
-File: figure/CH3/Figure4.pdf Graphic file (type pdf)
-<use figure/CH3/Figure4.pdf>
-Package pdftex.def Info: figure/CH3/Figure4.pdf  used on input line 1884.
-(pdftex.def)             Requested size: 367.04073pt x 367.06525pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[48]
-Underfull \vbox (badness 1953) has occurred while \output is active []
-
-[49 <./figure/CH3/Figure4.pdf>]
-<figure/CH3/Figure5.pdf, id=763, 568.1225pt x 597.23125pt>
-File: figure/CH3/Figure5.pdf Graphic file (type pdf)
-<use figure/CH3/Figure5.pdf>
-Package pdftex.def Info: figure/CH3/Figure5.pdf  used on input line 1987.
-(pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-991.
-(/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [50] [51] [52 <./figure/CH3/Figure5.pdf>]
-Underfull \hbox (badness 1264) in paragraph at lines 2021--2034
-\T1/lmr/m/n/10.95 from Mediter-ranean forests (FRA_PUE, ESP_TIL_OAK), species-r
-ich
- []
-
-
-Underfull \hbox (badness 2310) in paragraph at lines 2036--2043
-\T1/lmr/m/n/10.95 HUN_SIK) and trop-i-cal (GUF_GUY_GUY, COL_MAC_SAF_RAD)
- []
-
-[53]
-<figure/CH3/Figure6.pdf, id=796, 568.1225pt x 597.23125pt>
-File: figure/CH3/Figure6.pdf Graphic file (type pdf)
-<use figure/CH3/Figure6.pdf>
-Package pdftex.def Info: figure/CH3/Figure6.pdf  used on input line 2053.
-(pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
-[54] [55 <./figure/CH3/Figure6.pdf>]
-<figure/CH3/Figure7.pdf, id=811, 568.1225pt x 597.23125pt>
-File: figure/CH3/Figure7.pdf Graphic file (type pdf)
-<use figure/CH3/Figure7.pdf>
-Package pdftex.def Info: figure/CH3/Figure7.pdf  used on input line 2100.
-(pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
-<figure/CH3/Figure8.pdf, id=812, 568.1225pt x 597.23125pt>
-File: figure/CH3/Figure8.pdf Graphic file (type pdf)
-<use figure/CH3/Figure8.pdf>
-Package pdftex.def Info: figure/CH3/Figure8.pdf  used on input line 2130.
-(pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
-[56] [57 <./figure/CH3/Figure7.pdf>] [58 <./figure/CH3/Figure8.pdf>] [59]
-Underfull \hbox (badness 2189) in paragraph at lines 2227--2251
-[]\T1/lmr/m/n/10.95 The com-bi-na-tion of SAPFLUXNET with other eco-phys-i-o-lo
-g-i-cal
- []
-
-[60] [61]
-<figure/CH3/Figure9.pdf, id=892, 568.1225pt x 682.55pt>
-File: figure/CH3/Figure9.pdf Graphic file (type pdf)
-<use figure/CH3/Figure9.pdf>
-Package pdftex.def Info: figure/CH3/Figure9.pdf  used on input line 2309.
-(pdftex.def)             Requested size: 367.04073pt x 440.98604pt.
-
-Underfull \vbox (badness 2617) has occurred while \output is active []
-
-[62]
-Overfull \vbox (16.46678pt too high) has occurred while \output is active []
-
-[63 <./figure/CH3/Figure9.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2315--2337
-[]\T1/lmr/m/n/10.95 Stand-level tran-spi-ra-tion es-ti-mates from a large num-b
-er of
- []
-
-
-Underfull \hbox (badness 1400) in paragraph at lines 2315--2337
-\T1/lmr/m/n/10.95 SAPFLUXNET sites can con-tribute to im-prove our un-der-stand
--ing of
- []
-
-[64] [65] [66] [67] [68] [69] [70
-
-]
- 3.
-[71] [72] [73] [74] [75] [76]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[77]
-<figure/CH5/Figure_1.pdf, id=975, 625.33624pt x 255.95625pt>
-File: figure/CH5/Figure_1.pdf Graphic file (type pdf)
-<use figure/CH5/Figure_1.pdf>
-Package pdftex.def Info: figure/CH5/Figure_1.pdf  used on input line 2766.
-(pdftex.def)             Requested size: 367.04073pt x 150.23566pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[78 <./figure/CH5/Figure_1.pdf>] [79] [80]
-Underfull \vbox (badness 1831) has occurred while \output is active []
-
-[81] [82]
-<figure/CH5/Figure_2.pdf, id=1014, 226.8475pt x 597.23125pt>
-File: figure/CH5/Figure_2.pdf Graphic file (type pdf)
-<use figure/CH5/Figure_2.pdf>
-Package pdftex.def Info: figure/CH5/Figure_2.pdf  used on input line 2968.
-(pdftex.def)             Requested size: 183.52036pt x 483.16231pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[83]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[84 <./figure/CH5/Figure_2.pdf>]
-<figure/CH5/Figure_3.pdf, id=1057, 625.33624pt x 226.8475pt>
-File: figure/CH5/Figure_3.pdf Graphic file (type pdf)
-<use figure/CH5/Figure_3.pdf>
-Package pdftex.def Info: figure/CH5/Figure_3.pdf  used on input line 3015.
-(pdftex.def)             Requested size: 367.04073pt x 133.15004pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[85] [86 <./figure/CH5/Figure_3.pdf>] [87]
-<figure/CH5/Figure_4.pdf, id=1096, 625.33624pt x 226.8475pt>
-File: figure/CH5/Figure_4.pdf Graphic file (type pdf)
-<use figure/CH5/Figure_4.pdf>
-Package pdftex.def Info: figure/CH5/Figure_4.pdf  used on input line 3103.
-(pdftex.def)             Requested size: 367.04073pt x 133.15004pt.
-[88 <./figure/CH5/Figure_4.pdf>]
-<figure/CH5/Figure_5.pdf, id=1134, 625.33624pt x 226.8475pt>
-File: figure/CH5/Figure_5.pdf Graphic file (type pdf)
-<use figure/CH5/Figure_5.pdf>
-Package pdftex.def Info: figure/CH5/Figure_5.pdf  used on input line 3127.
-(pdftex.def)             Requested size: 367.04073pt x 133.15004pt.
-[89 <./figure/CH5/Figure_5.pdf>] [90]
-<figure/CH5/Figure_6.pdf, id=1178, 578.16pt x 361.35pt>
-File: figure/CH5/Figure_6.pdf Graphic file (type pdf)
-<use figure/CH5/Figure_6.pdf>
-Package pdftex.def Info: figure/CH5/Figure_6.pdf  used on input line 3222.
-(pdftex.def)             Requested size: 293.6337pt x 183.51965pt.
-[91]
-Underfull \vbox (badness 1590) has occurred while \output is active []
-
-[92 <./figure/CH5/Figure_6.pdf>] [93] [94] [95] [96] [97] [98
-
-] [99]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[100]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[101]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[102]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[103]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[104]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[105]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[106]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[107]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[108]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[109]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[110]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[111]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[112]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[113]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[114]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[115]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[116]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[117]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[118]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[119]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[120]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[121]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[122]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[123]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[124]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[125]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[126]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[127]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[128]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[129]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[130]
-Overfull \hbox (203.511pt too wide) in paragraph at lines 4586--4591
- \T1/lmr/m/n/10.95 13. Re-trieved from []http://citeseerx.ist.psu.edu/viewdoc/d
-ownload?doi=10.1.1.155.4926{\&}rep=rep1{\&}type=pdf[] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[131]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[132]
-Underfull \hbox (badness 1454) in paragraph at lines 4663--4667
- \T1/lmr/m/it/10.95 and For-est Me-te-o-rol-ogy\T1/lmr/m/n/10.95 , \T1/lmr/m/it
-/10.95 160\T1/lmr/m/n/10.95 , 90--99. []$\T1/lmtt/m/n/10.95 http : / / doi . or
-g / 10 . 1016 / j .
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[133]
-Underfull \hbox (badness 1043) in paragraph at lines 4731--4737
- []\T1/lmr/m/n/10.95 Wilson, K. B., Han-son, P. J., Mul-hol-land, P. J., Bal-do
-c-chi, D. D.,
- []
-
-
-Underfull \hbox (badness 1102) in paragraph at lines 4731--4737
- \T1/lmr/m/n/10.95 & Wullschleger, S. D. (2001). A com-par-i-son of meth-ods fo
-r de-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4731--4737
- \T1/lmr/m/n/10.95 ter-min-ing for-est evap-o-tran-spi-ra-tion and its com-po-n
-ents: Sap-
- []
-
-
-Underfull \hbox (badness 5050) in paragraph at lines 4731--4737
- \T1/lmr/m/n/10.95 flow, soil wa-ter bud-get, eddy co-vari-ance and catch-ment 
-wa-ter
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 4731--4737
- \T1/lmr/m/n/10.95 bal-ance. \T1/lmr/m/it/10.95 Agri-cul-tural and For-est Me-t
-e-o-rol-ogy\T1/lmr/m/n/10.95 , \T1/lmr/m/it/10.95 106\T1/lmr/m/n/10.95 (2), 153
---168.
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[134] [135] (./thesis.aux)
+] [13] (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4A1026533BCACE0C5836BCA4B4D2F368;4577.
+(rerunfilecheck)             Checksum: 3C7034D732D0E2E87CA0E0FC9829B235;618.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 23820 strings out of 481865
- 431639 string characters out of 5930521
- 758088 words of memory out of 5000000
- 39176 multiletter control sequences out of 15000+600000
- 648352 words of font info for 117 fonts, out of 8000000 for 9000
+ 23062 strings out of 481331
+ 416858 string characters out of 5917183
+ 812310 words of memory out of 5000000
+ 39310 multiletter control sequences out of 15000+600000
+ 479186 words of font info for 91 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 85i,18n,96p,1196b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/data/r_users/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/da
-ta/r_users/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/data/r_u
-sers/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/data/r_users/vflo
-/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/data/r_users/vflo/.TinyTeX/
-texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/data/r_users/vflo/.TinyTeX/texmf-dist
-/fonts/enc/dvips/lm/lm-mathex.enc}</data/r_users/vflo/.TinyTeX/texmf-dist/fonts
-/type1/public/amsfonts/latxfont/lcircle1.pfb></data/r_users/vflo/.TinyTeX/texmf
--dist/fonts/type1/public/lm/lmbx10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/
-fonts/type1/public/lm/lmbx12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/
-type1/public/lm/lmbx8.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/p
-ublic/lm/lmex10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/
-lm/lmmi10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmm
-i12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
-></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></data
-/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></data/r_user
-s/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></data/r_users/vflo/
-.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></data/r_users/vflo/.TinyTe
-X/texmf-dist/fonts/type1/public/lm/lmr17.pfb></data/r_users/vflo/.TinyTeX/texmf
--dist/fonts/type1/public/lm/lmr6.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fo
-nts/type1/public/lm/lmr7.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type
-1/public/lm/lmr8.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public
-/lm/lmri10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lm
-ri12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.p
-fb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></d
-ata/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></data/r_u
-sers/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></data/r_users/vf
-lo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></data/r_users/vflo/.Tin
-yTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></data/r_users/vflo/.TinyTeX/te
-xmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (155 pages, 8558322 bytes).
+ 81i,12n,85p,1195b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/data/r_users/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/data/r
+_users/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/data/r_users
+/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</data/r_users/vflo/.Tin
+yTeX/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb></data/r_user
+s/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></data/r_users/vflo
+/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></data/r_users/vflo/.Tiny
+TeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></data/r_users/vflo/.TinyTeX/te
+xmf-dist/fonts/type1/public/lm/lmmi12.pfb></data/r_users/vflo/.TinyTeX/texmf-di
+st/fonts/type1/public/lm/lmmi5.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/font
+s/type1/public/lm/lmmi6.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1
+/public/lm/lmr10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public
+/lm/lmr12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr
+17.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb><
+/data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></data/r_
+users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></data/r_users/vf
+lo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></data/r_users/vflo/.Ti
+nyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></data/r_users/vflo/.TinyTeX/
+texmf-dist/fonts/type1/public/lm/lmro10.pfb>
+Output written on thesis.pdf (31 pages, 593956 bytes).
 PDF statistics:
- 1804 PDF objects out of 2073 (max. 8388607)
- 1487 compressed objects within 15 object streams
- 360 named destinations out of 1000 (max. 500000)
- 576 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 

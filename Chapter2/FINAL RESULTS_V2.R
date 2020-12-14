@@ -5,10 +5,14 @@ source('data preparation 1-1.R')
 subdata1 <- filter(Bar,calibrated=="no",CORRECT_APLICATION == "yes")
 
 #resume table
- resume_table <- subdata1 %>% dplyr::select(study,method,specie,porosity,TC,DBH) %>% 
-  group_by(study,method,specie,TC) %>% 
-  dplyr::summarise(porosity = unique(porosity),
-                   DBH = mean(DBH))
+ resume_table <- subdata1 %>% dplyr::select(study,method,specie,porosity,TC,DBH) %>%
+   rename(`Calibration material` = TC,
+          Study = study,
+          Species = specie,
+          Method = method) %>% 
+  group_by(Study,Method,Species,`Calibration material`) %>% 
+  dplyr::summarise(`Wood porosity` = unique(porosity),
+                   `Diameter (cm)` = mean(DBH))
 write.table(resume_table,file='resume_table.csv',dec='.',sep=';')
 
 #Clearwater and not clearwater aplication on TD calibrations. Is there any difference?

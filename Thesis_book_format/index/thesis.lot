@@ -1,13 +1,5 @@
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Analysis summary for the different methods and families.}}{15}{table.caption.9}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces Error analysis of different sap flow methods.}}{19}{table.caption.12}%
-\contentsline {table}{\numberline {1.3}{\ignorespaces Least-squares means and 95\% CI calculated from the LMM models testing the effect of different wood porosity types}}{21}{table.caption.14}%
-\contentsline {table}{\numberline {1.4}{\ignorespaces Synthesis of the potential sources of error and use adequacy for each method.}}{23}{table.caption.15}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Number of sap flow times series in SAPFLUXNET depending on whether they were calibrated for the different sap flow methods.}}{50}{table.caption.23}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Number of plants in the SAPFLUXNET database using different radial and azimuthal integration.}}{51}{table.caption.24}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Number of datasets, plants and species by stand-level treatment in the SAPFLUXNET database.}}{60}{table.caption.29}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Description of variables and units in this study.}}{77}{table.caption.31}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Results of the bi-variate linear models relating water use parameters and water relations traits}}{87}{table.caption.35}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Results of the bi-variate linear models relating water use parameters, water relations traits, climate and tree height.}}{90}{table.caption.38}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces Summary table of the studies used in the analyses.}}{7}{table.A.1}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Anova summary of the LMM models.}}{10}{table.caption.11}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Summary of the LMM models of Ln-Ratio (accuracy), Slope (proportional bias), Slope (ln-ln) (linearity) and Z-Cor (precision) as a function of Methods and Calibration material.}}{11}{table.caption.12}%

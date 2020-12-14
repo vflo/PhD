@@ -16,7 +16,7 @@ library(MuMIn)
 # sjp.setTheme(base = theme_bw(),axis.textsize = .75)
 
 
-Data <- read.csv ("~/PHD/Chapter1/Methods meta-analysis V6.csv",sep = ";")
+Data <- read.csv ("~/PhD/Chapter1/Methods_meta_analysis_V6.csv",sep = ";")
 
 ########################
 ### DATA PREPARATION ###
@@ -41,7 +41,7 @@ var <- ifelse(Data$Clearwater.correction=="yes", 1, 0)+ ifelse(Data$wound.correc
 var <- ifelse(var == "1", "corrected", "uncorrected")
 new_methods <- paste(Data$method, var, sep = ".")
 
-#Different agrupations of calibrations
+#Diferent agrupations of calibrations
 calibrations_pairs <- paste(Data$study,Data$calibration,sep="_")
 calibrations_calibrated <- paste(calibrations_pairs,Data$calibrated,sep="_")
 calibrations_corrected <- paste(calibrations_pairs,Data$correction,sep='_')
@@ -65,16 +65,15 @@ gsub2 <- function(pattern, replacement, x, ...) {
 subdata$porosity <- gsub2(from, to, subdata$porosity)
 
 #### !!!!!Atention if we are using density (actual.density ...) or total flow (actual.totalflow ...)!!!!!
-# subdata$actual.density <- subdata$actual.density
-# subdata$measured.density <- subdata$measured.density
-subdata$actual.density[subdata$actual.density <= 0] <- NA
-subdata$measured.density[subdata$measured.density <= 0 ] <- NA
-subdata <- subdata[!is.na(subdata$actual.density),]
-subdata <- subdata[!is.na(subdata$measured.density),]
-# subdata <- subdata[which(subdata$measuring.type == 'Sapflux density'),]
 
-real <- (subdata$actual.density)
-measured <- (subdata$measured.density)
+subdata$actual.totalflow[subdata$actual.totalflow <= 0] <- NA
+subdata$measured.totalflow[subdata$measured.totalflow <= 0 ] <- NA
+subdata <- subdata[!is.na(subdata$actual.totalflow),]
+subdata <- subdata[!is.na(subdata$measured.totalflow),]
+# subdata <- subdata[which(subdata$measuring.type == 'Tree sapflow'),]
+
+real <- (subdata$actual.totalflow)
+measured <- (subdata$measured.totalflow)
 
 subdata <- cbind(subdata,real,measured)
 

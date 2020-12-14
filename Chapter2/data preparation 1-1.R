@@ -16,7 +16,7 @@ library(MuMIn)
 # sjp.setTheme(base = theme_bw(),axis.textsize = .75)
 
 
-Data <- read.csv ("~/PHD/Chapter1/Methods meta-analysis V6.csv",sep = ";")
+Data <- read.csv ("~/PhD/Chapter1/Methods_meta_analysis_V6.csv",sep = ";")
 
 ########################
 ### DATA PREPARATION ###
