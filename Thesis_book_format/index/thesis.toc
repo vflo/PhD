@@ -5,4 +5,13 @@
 \contentsline {subsection}{\numberline {1.0.4}Calibration performance compared among methods and families of methods}{1}{subsection.1.0.4}%
 \contentsline {subsection}{\numberline {1.0.5}Influence of wood traits}{1}{subsection.1.0.5}%
 \contentsline {chapter}{Appendix A: Appendix Chapter 2}{3}{appendix.A}%
-\contentsline {chapter}{References}{13}{appendix*.13}%
+\contentsline {section}{\numberline {A.1}Figures A}{4}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Tables A}{7}{section.A.2}%
+\contentsline {chapter}{Appendix B: Appendix Chapter 4}{13}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Figures C}{14}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Tables C}{18}{section.B.2}%
+\contentsline {chapter}{Appendix C: Appendix Chapter 5}{29}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Notes D}{30}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Figures D}{31}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Tables D}{51}{section.C.3}%
+\contentsline {chapter}{References}{59}{appendix*.44}%
