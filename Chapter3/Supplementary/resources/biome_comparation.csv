@@ -1,0 +1,203 @@
+si_code,biome_whittaker,biome
+ARG_MAZ,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+ARG_TRE,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+AUS_BRI_BRI,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+AUS_CAN_ST1_EUC,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+AUS_CAN_ST2_MIX,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+AUS_CAN_ST3_ACA,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+AUS_CAR_THI_00F,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_CAR_THI_0P0,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_CAR_THI_0PF,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_CAR_THI_CON,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_CAR_THI_T00,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_CAR_THI_T0F,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_CAR_THI_TP0,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_CAR_THI_TPF,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_ELL_HB_HIG,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_ELL_MB_MOD,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_ELL_UNB,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_KAR,Desert,Deserts & Xeric Shrublands
+AUS_MAR_HSD_HIG,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_MAR_HSW_HIG,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_MAR_MSD_MOD,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_MAR_MSW_MOD,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_MAR_UBD,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_MAR_UBW,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUS_RIC_EUC_ELE,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+AUS_WOM,Temperate forest,Temperate Broadleaf & Mixed Forests
+AUT_PAT_FOR,Boreal forest,Temperate Conifer Forests
+AUT_PAT_KRU,Boreal forest,Temperate Conifer Forests
+AUT_PAT_TRE,Boreal forest,Temperate Conifer Forests
+AUT_TSC,Woodland/shrubland,Temperate Conifer Forests
+BRA_CAM,Temperate forest,Tropical & Subtropical Moist Broadleaf Forests
+BRA_CAX_CON,Tropical seasonal forest/savanna,Tropical & Subtropical Moist Broadleaf Forests
+BRA_SAN,Temperate forest,Tropical & Subtropical Moist Broadleaf Forests
+CAN_TUR_P39_POS,Temperate forest,Temperate Broadleaf & Mixed Forests
+CAN_TUR_P39_PRE,Temperate forest,Temperate Broadleaf & Mixed Forests
+CAN_TUR_P74,Temperate forest,Temperate Broadleaf & Mixed Forests
+CHE_DAV_SEE,Temperate forest,Temperate Conifer Forests
+CHE_LOT_NOR,Temperate forest,Temperate Conifer Forests
+CHE_PFY_CON,Woodland/shrubland,Temperate Conifer Forests
+CHE_PFY_IRR,Woodland/shrubland,Temperate Conifer Forests
+CHN_ARG_GWD,Desert,Deserts & Xeric Shrublands
+CHN_ARG_GWS,Temperate grassland desert,Deserts & Xeric Shrublands
+CHN_HOR_AFF,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+CHN_YIN_ST1,Desert,Montane Grasslands & Shrublands
+CHN_YIN_ST2_DRO,Desert,Deserts & Xeric Shrublands
+CHN_YIN_ST3_DRO,Desert,Deserts & Xeric Shrublands
+CHN_YUN_YUN,Tropical seasonal forest/savanna,Tropical & Subtropical Moist Broadleaf Forests
+COL_MAC_SAF_RAD,Tropical rain forest,Tropical & Subtropical Moist Broadleaf Forests
+CRI_TAM_TOW,Tropical rain forest,Tropical & Subtropical Moist Broadleaf Forests
+CZE_BIK,Temperate forest,Temperate Conifer Forests
+CZE_BIL_BIL,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+CZE_KRT_KRT,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+CZE_LAN,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+CZE_LIZ_LES,Temperate forest,Temperate Broadleaf & Mixed Forests
+CZE_RAJ_RAJ,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+CZE_SOB_SOB,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+CZE_STI,Temperate forest,Temperate Broadleaf & Mixed Forests
+CZE_UTE_BEE,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+CZE_UTE_BNA,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+CZE_UTE_BPO,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+CZE_UTE_SPR,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+DEU_HIN_OAK,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+DEU_HIN_TER,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+DEU_MER_BEE_NON,Temperate forest,Temperate Broadleaf & Mixed Forests
+DEU_MER_BEE_THI,Temperate forest,Temperate Broadleaf & Mixed Forests
+DEU_MER_DOU_NON,Temperate forest,Temperate Broadleaf & Mixed Forests
+DEU_MER_DOU_THI,Temperate forest,Temperate Broadleaf & Mixed Forests
+DEU_MER_MIX_NON,Temperate forest,Temperate Broadleaf & Mixed Forests
+DEU_MER_MIX_THI,Temperate forest,Temperate Broadleaf & Mixed Forests
+DEU_STE_2P3,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+DEU_STE_4P5,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+ESP_ALT_ARM,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_ALT_HUE,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_ALT_TRI,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_CAN,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_GUA_VAL,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_LAH_COM,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_LAS,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_MAJ_MAI,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_MAJ_NOR_LM1,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_MON_SIE_NAT,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_RIN,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_RON_PIL,Temperate forest,"Mediterranean Forests, Woodlands & Scrub"
+ESP_SAN_A2_45I,Tropical seasonal forest/savanna,"Mediterranean Forests, Woodlands & Scrub"
+ESP_SAN_A_45I,Tropical seasonal forest/savanna,"Mediterranean Forests, Woodlands & Scrub"
+ESP_SAN_B_100,Tropical seasonal forest/savanna,"Mediterranean Forests, Woodlands & Scrub"
+ESP_SAN_B2_100,Tropical seasonal forest/savanna,"Mediterranean Forests, Woodlands & Scrub"
+ESP_TIL_MIX,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_TIL_OAK,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_TIL_PIN,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_VAL_BAR,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_VAL_SOR,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_YUN_C1,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_YUN_C2,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_YUN_T1_THI,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ESP_YUN_T3_THI,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+FIN_HYY_SME,Temperate forest,Boreal Forests/Taiga
+FIN_PET,Woodland/shrubland,Boreal Forests/Taiga
+FRA_FON,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+FRA_HES_HE1_NON,Temperate forest,Temperate Broadleaf & Mixed Forests
+FRA_HES_HE2_NON,Temperate forest,Temperate Broadleaf & Mixed Forests
+FRA_PUE,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+GBR_ABE_PLO,Temperate forest,Temperate Conifer Forests
+GBR_DEV_CON,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+GBR_DEV_DRO,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+GBR_GUI_ST1,Temperate forest,Temperate Conifer Forests
+GBR_GUI_ST2,Temperate forest,Temperate Conifer Forests
+GBR_GUI_ST3,Temperate forest,Temperate Conifer Forests
+GUF_GUY_GUY,Tropical rain forest,Tropical & Subtropical Moist Broadleaf Forests
+GUF_GUY_ST2,Tropical rain forest,Tropical & Subtropical Moist Broadleaf Forests
+GUF_NOU_PET,Tropical rain forest,Tropical & Subtropical Moist Broadleaf Forests
+HUN_SIK,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+IDN_JAM_OIL,Tropical rain forest,Tropical & Subtropical Moist Broadleaf Forests
+IDN_JAM_RUB,Tropical rain forest,Tropical & Subtropical Moist Broadleaf Forests
+IDN_PON_STE,Tropical seasonal forest/savanna,Tropical & Subtropical Moist Broadleaf Forests
+ISR_YAT_YAT,Desert,"Mediterranean Forests, Woodlands & Scrub"
+ITA_FEI_S17,Temperate forest,Temperate Conifer Forests
+ITA_KAE_S20,Boreal forest,Temperate Conifer Forests
+ITA_MAT_S21,Boreal forest,Temperate Conifer Forests
+ITA_MUN,Woodland/shrubland,Temperate Conifer Forests
+ITA_REN,Temperate forest,Temperate Conifer Forests
+ITA_RUN_N20,Boreal forest,Temperate Conifer Forests
+ITA_TOR,Temperate forest,Temperate Conifer Forests
+JPN_EBE_HYB,Temperate forest,Temperate Broadleaf & Mixed Forests
+JPN_EBE_SUG,Temperate forest,Temperate Broadleaf & Mixed Forests
+KOR_TAE_TC1_LOW,Temperate forest,Temperate Broadleaf & Mixed Forests
+KOR_TAE_TC2_MED,Temperate forest,Temperate Broadleaf & Mixed Forests
+KOR_TAE_TC3_EXT,Temperate forest,Temperate Broadleaf & Mixed Forests
+MDG_SEM_TAL,Tropical seasonal forest/savanna,Tropical & Subtropical Moist Broadleaf Forests
+MDG_YOU_SHO,Temperate forest,Tropical & Subtropical Moist Broadleaf Forests
+MEX_COR_YP,Temperate forest,Tropical & Subtropical Moist Broadleaf Forests
+MEX_VER_BSJ,Temperate forest,Tropical & Subtropical Moist Broadleaf Forests
+MEX_VER_BSM,Temperate forest,Tropical & Subtropical Moist Broadleaf Forests
+NLD_LOO,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+NLD_SPE_DOU,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+NZL_HUA_HUA,Temperate forest,Temperate Broadleaf & Mixed Forests
+PRT_LEZ_ARN,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+PRT_MIT,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+PRT_PIN,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+RUS_CHE_LOW,Tundra,Boreal Forests/Taiga
+RUS_CHE_Y4,Tundra,Boreal Forests/Taiga
+RUS_FYO,Temperate forest,Temperate Broadleaf & Mixed Forests
+RUS_POG_VAR,Woodland/shrubland,"Temperate Grasslands, Savannas & Shrublands"
+SEN_SOU_IRR,Desert,"Tropical & Subtropical Grasslands, Savannas & Shrublands"
+SEN_SOU_POS,Desert,"Tropical & Subtropical Grasslands, Savannas & Shrublands"
+SEN_SOU_PRE,Desert,"Tropical & Subtropical Grasslands, Savannas & Shrublands"
+SWE_NOR_ST1_AF1,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+SWE_NOR_ST1_AF2,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+SWE_NOR_ST1_BEF,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+SWE_NOR_ST2,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+SWE_NOR_ST3,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+SWE_NOR_ST4_AFT,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+SWE_NOR_ST4_BEF,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+SWE_NOR_ST5_REF,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+SWE_SKO_MIN,Temperate forest,Temperate Broadleaf & Mixed Forests
+SWE_SKY_38Y,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+SWE_SKY_68Y,Woodland/shrubland,Temperate Broadleaf & Mixed Forests
+SWE_SVA_MIX_NON,Temperate forest,Boreal Forests/Taiga
+THA_KHU,Tropical seasonal forest/savanna,Tropical & Subtropical Dry Broadleaf Forests
+USA_BNZ_BLA,Woodland/shrubland,Boreal Forests/Taiga
+USA_CHE_ASP,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_CHE_MAP,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_DUK_HAR,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_HIL_HF1_POS,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_HIL_HF1_PRE,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_HIL_HF2,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_HUY_LIN_NON,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_INM,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_MOR_SF,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_NWH,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_ORN_ST1_AMB,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_ORN_ST2_AMB,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_ORN_ST3_ELE,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_ORN_ST4_ELE,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_PAR_FER,Temperate forest,"Temperate Grasslands, Savannas & Shrublands"
+USA_PER_PER,Tropical seasonal forest/savanna,"Temperate Grasslands, Savannas & Shrublands"
+USA_PJS_P04_AMB,Desert,Temperate Conifer Forests
+USA_PJS_P08_AMB,Desert,Temperate Conifer Forests
+USA_PJS_P12_AMB,Desert,Temperate Conifer Forests
+USA_SIL_OAK_1PR,Temperate forest,Temperate Conifer Forests
+USA_SIL_OAK_2PR,Temperate forest,Temperate Conifer Forests
+USA_SIL_OAK_POS,Temperate forest,Temperate Conifer Forests
+USA_SMI_SCB,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_SMI_SER,Woodland/shrubland,"Temperate Grasslands, Savannas & Shrublands"
+USA_SWH,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_SYL_HL1,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_SYL_HL2,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_TNB,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_TNO,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_TNP,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_TNY,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_UMB_CON,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_UMB_GIR,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_WIL_WC1,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_WIL_WC2,Temperate forest,Temperate Broadleaf & Mixed Forests
+USA_WVF,Temperate forest,Temperate Broadleaf & Mixed Forests
+UZB_YAN_DIS,Desert,Deserts & Xeric Shrublands
+ZAF_FRA_FRA,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ZAF_NOO_E3_IRR,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ZAF_RAD,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ZAF_SOU_SOU,Woodland/shrubland,"Mediterranean Forests, Woodlands & Scrub"
+ZAF_WEL_SOR,Tropical seasonal forest/savanna,"Mediterranean Forests, Woodlands & Scrub"

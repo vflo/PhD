@@ -72,7 +72,7 @@
 % Syntax highlighting #22
 
 % To pass between YAML and LaTeX the dollar signs are added by CII
-\title{Global ecological drivers of transpiration regulation in woody plants}
+\title{Global ecological drivers of transpiration regulation in trees}
 \author{Víctor Flo Sierra}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
 \date{Dec 2020}
@@ -755,6 +755,583 @@ Observations &  & 290 &  &  & 290 &  &  & 290 &  &  & 290 & \\
 \end{landscape}
 \newpage
 
+\chapter{Appendix Chapter 3}\label{appendix-chapter-3}
+
+\newpage
+
+\section{Figures B}\label{figures-b}
+
+\setlength{\abovecaptionskip}{15pt}
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{figure/appendixB/QCsummary2} 
+
+}
+
+\caption[Overview of the data QC process.]{Overview of the data QC process, showing file management and identifying automatic (in yellow) and manual steps (in red).  The column on the left shows the different updates of the status file for each dataset and the column on the right shows generated data reports and steps requiring feedback or manual changes.}\label{fig:unnamed-chunk-5}
+\end{figure}
+\setlength{\abovecaptionskip}{0pt} \newpage
+
+\setlength{\abovecaptionskip}{15pt}
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{figure/appendixB/schematics} 
+
+}
+
+\caption[Structure of sfn\_data objects.]{(a) Structure of sfn\_data objects, which are based on the S4 class. Boxes in the figure represent different slots where data are stored. Each object is identified by the 'si\_code', stored as a slot in the object, with the format of a character vector. Slots storing time series of data and the associated data flags are of class 'tibble' and have all the same number of rows (\textit{i}), corresponding to the the number of timesteps in the dataset and labelled with two POSIXct timestamp vectors TIMESTAMP, solar\_TIMESTAMP).The slot storing sap flow data, 'sapf\_data' contains(\textit{j}) columns and environmental data ('env\_data') contains \textit{k} columns, corresponding to the number of environmental variables present. Slots with the suffix 'md' refer to the different metadata and all are objects of class 'tibble' with different dimensions. For example, the number of rows in plant\_md' depends on the number of plants in the dataset (and this is depicted by the different length of the box). More information on the 'sfn\_data' class objects can be found in the vignette 'sfn-data-classes' of the package \textit{sapfluxnetr} (Granda et al. 2020). (b) Summary of an sfn\_data object, showing highlights of site metadata, data dimensions, timestamp span and flags present on the data.}\label{fig:unnamed-chunk-6}
+\end{figure}
+\setlength{\abovecaptionskip}{0pt} \newpage
+
+\setlength{\abovecaptionskip}{15pt}
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/appendixB/outapp} 
+
+}
+
+\caption[Example screenshot of the app used for handling outliers and out of range values in time series.]{Example screenshot of the app used for handling outliers and out of range values in time series. The left column shows dataset and variable selection. The central part shows the time series, with out of range values in red and possible outliers in yellow. Rows to replace or remove are selected in a table and written to a text file when done.}\label{fig:unnamed-chunk-7}
+\end{figure}
+\setlength{\abovecaptionskip}{0pt} \newpage
+
+\setlength{\abovecaptionskip}{15pt}
+\begin{figure}
+\includegraphics[width=1\linewidth]{figure/appendixB/regionalmaps} \caption[Detailed geographic distribution of SAPFLUXNET datasets]{Detailed geographic distribution of SAPFLUXNET datasets. Datasets are labelled by dataset number in Table S4. Woodland area from Crowther et al. (2015) shown in green.}\label{fig:regionalmaps}
+\end{figure}
+\setlength{\abovecaptionskip}{0pt}
+
+\section{Tables B}\label{tables-b}
+\begin{table}[H]
+
+\caption[Data checks implemented in the first level of data quality control (QC1).]{\label{tab:tableQC1}Data checks implemented in the first level of data quality control (QC1).}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{c>{\centering\arraybackslash}p{20em}}
+\toprule
+Check & Description\\
+\midrule
+Metadata variables & All metadata variables are checked for presence and expected class (numeric, character, logical…).\\
+Character variables values & All metadata character variables are checked against the possible values (factor levels) for that variable, raising a warning if some value is out of the expected.\\
+E-mail check & E-mail provided by contributors is checked for validity\\
+Coordinates and biome & Site coordinates are checked for correctness (are they inside the specified country?) and fixed if needed and possible. MAT and MAP values are obtained for that coordinates and the biome is calculated from that values.\\
+Soil texture & Percentages of soil textures are used to calculate the USDA classification category if possible.\\
+Species names & Species names in plant and species metadata are checked for spelling errors and the concordance between both metadata is also checked\\
+Plant treatments & Check for uniformity in the treatment declared by plant.\\
+Environmental variables presence & Check for concordance between the declared variables in the environmental metadata and the environmental data.\\
+Timestamp & Format, NA presence (there is data, but there is no timestamp), concordance and continuity are checked.\\
+Gap presence: & Data gaps (There is TIMESTAMP but there is no data) are summarised and visualized.\\
+Soil water content & Check for percentage swc values and transform them to cm3/cm3\\
+\bottomrule
+\end{tabular}}
+\end{table}
+\newpage
+\begin{table}[H]
+
+\caption[Description of site metadata variables.]{\label{tab:tabsitemd}Description of site metadata variables.}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{c>{\centering\arraybackslash}p{20em}c>{\centering\arraybackslash}p{8em}}
+\toprule
+Variable & Description & Type & Units\\
+\midrule
+si\_name & Site name given by contributors & Character & None\\
+si\_country & Country code (ISO) & Character & Fixed values\\
+si\_contact\_firstname & Contributor first name & Character & None\\
+si\_contact\_lastname & Contributor last name & Character & None\\
+si\_contact\_email & Contributor email & Character & None\\
+si\_contact\_institution & Contributor affiliation & Character & None\\
+si\_addcontr\_firstname & Additional contributor first name & Character & None\\
+si\_addcontr\_lastname & Additional contributor last name & Character & None\\
+si\_addcontr\_email & Additional contributor email & Character & None\\
+si\_addcontr\_institution & Additional contributor affiliation & Character & None\\
+si\_lat & Site latitude (i.e. 42.36) & Numeric & Latitude, decimal format (WGS84)\\
+si\_long & Site longitude (i.e. -8.23) & Numeric & Longitude, decimal format (WGS84)\\
+si\_elev & Elevation above sea level & Numeric & meters\\
+si\_paper & Paper with relevant information to understand the site as DOI links or DOI codes & Character & DOI link\\
+si\_dist\_mgmt & Recent and historic disturbance and management events that affected the measurement years & Character & Fixed values\\
+si\_igbp & Vegetation type based on IGBP classification & Character & Fixed values\\
+si\_flux\_network & Logical indicating if site is participating in the FLUXNET network & Logical & Fixed values\\
+si\_dendro\_network & Logical indicating if site is participating in the DENDROGLOBAL network & Logical & Fixed values\\
+si\_remarks & Remarks and commentaries useful to grasp some site-specific peculiarities & Character & None\\
+si\_code & sapfluxnet site code, unique for each site & Character & Fixed value\\
+si\_mat & Site annual mean temperature, as obtained from WorldClim & Numeric & Celsius degrees\\
+si\_map & Site annual mean precipitation, as obtained from WorldClim & Numeric & mm\\
+si\_biome & Biome classification as per Whittaker diagram, based on mat and map obtained from WorldClim & Character & sapfluxnet calculated\\
+\bottomrule
+\end{tabular}}
+\end{table}\newpage
+\begin{table}[H]
+
+\caption[Description of site metadata variables.]{\label{tab:tabstandmd}Description of site metadata variables.}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{c>{\centering\arraybackslash}p{20em}cc}
+\toprule
+Variable & Description & Type & Units\\
+\midrule
+st\_name & Stand name given by contributors & Character & None\\
+st\_growth\_condition & Growth condition with respect to stand origin and management & Character & Fixed values\\
+st\_treatment & Treatment applied at stand level & Character & None\\
+st\_age & Mean stand age at the moment of sap flow measurements & Numeric & years\\
+st\_height & Canopy height & Numeric & meters\\
+st\_density & Total stem density for stand & Numeric & stems $\text{ha}^-1$\\
+st\_basal\_area & Total stand basal area & Numeric & $\text{m}^2$ $\text{ha}^{-1}$\\
+st\_lai & Total maximum stand leaf area (one-sided, projected) & Numeric & $\text{m}^2$ $\text{m}^{-2}$\\
+st\_aspect & Aspect the stand is facing (exposure) & Character & Fixed values\\
+st\_terrain & Slope and/or relief of the stand & Character & Fixed values\\
+st\_soil\_depth & Soil total depth & Numeric & cm\\
+st\_soil\_texture & Soil texture class, based on simplified USDA classification & Character & Fixed values\\
+st\_sand\_perc & Soil sand content, \% mass & Numeric & \% percentage\\
+st\_silt\_perc & Soil silt content, \% mass & Numeric & \% percentage\\
+st\_clay\_perc & Soil clay content, \% mass & Numeric & \% percentage\\
+st\_remarks & Remarks and commentaries useful to grasp some stand-specific peculiarities & Character & None\\
+st\_USDA\_soil\_texture & USDA soil classification based on the percentages provided by the contributor & Character & sapfluxnet calculated\\
+\bottomrule
+\end{tabular}}
+\end{table}\newpage
+\begin{table}[H]
+
+\caption[Description of species metadata variables.]{\label{tab:tabspeciesmd}Description of species metadata variables.}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{c>{\centering\arraybackslash}p{20em}c>{\centering\arraybackslash}p{20em}}
+\toprule
+Variable & Description & Type & Units\\
+\midrule
+sp\_name & Identity of each measured species & Character & Scientific name without author abbreviation, as accepted by The Plant List\\
+sp\_ntrees & Number of trees measured of each species & Numeric & number of trees\\
+sp\_leaf\_habit & Leaf habit of the measured species & Character & Fixed values\\
+sp\_basal\_area\_perc & Basal area occupied by each measured species, in percentage over total stand basal area & Numeric & \% percentage\\
+\bottomrule
+\end{tabular}}
+\end{table}
+\begin{table}[H]
+
+\caption[Description of plant metadata variables.]{\label{tab:tabplantmd}Description of plant metadata variables.}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{c>{\centering\arraybackslash}p{20em}c>{\centering\arraybackslash}p{12em}}
+\toprule
+Variable & Description & Type & Units\\
+\midrule
+pl\_name & Plant code assigned by contributors & Character & None\\
+pl\_species & Species identity of the measured plant & Character & Scientific name without author abbreviation, as accepted by The Plant List\\
+pl\_treatment & Experimental treatment (if any) & Character & None\\
+pl\_dbh & Diameter at breast height of measured plants & Numeric & cm\\
+pl\_height & Height of measured plants & Numeric & m\\
+pl\_age & Plant age at the moment of measure & Numeric & years\\
+pl\_social & Plant social status & Character & Fixed values\\
+pl\_sapw\_area & Cross-sectional sapwood area & Numeric & $\text{cm}^2$\\
+pl\_sapw\_depth & Sapwood depth, measured at breast height & Numeric & cm\\
+pl\_bark\_thick & Plant bark thickness & Numeric & mm\\
+pl\_leaf\_area & Leaf area of eachvvmeasured plant & Numeric & $\text{m}^2$\\
+pl\_sens\_meth & Sap flow measures method & Character & Fixed values\\
+pl\_sens\_man & Sap flow measures sensor manufacturer & Character & Fixed values\\
+pl\_sens\_cor\_grad & Correction for natural temperature gradients method & Character & Fixed values\\
+pl\_sens\_cor\_zero & Zero flow determination method & Character & Fixed values\\
+pl\_sens\_calib & Was species-specific calibration used? & Logical & Fixed values\\
+pl\_sap\_units & Uniformized sapfluxnet units for sapwood, leaf and plant level & Character & Fixed values\\
+pl\_sap\_units\_orig & Original contribution units (at sapwood or plant level) & Character & Fixed values\\
+pl\_sens\_length & Length of the needles or electrodes forming the sensor & Numeric & mm\\
+pl\_sens\_hgt & Sensor installation height, measured from the ground & Numeric & m\\
+pl\_sens\_timestep & Subdaily time step of sensor measures & Numeric & minutes\\
+pl\_radial\_int &  & Character & Fixed values\\
+pl\_azimut\_int &  & Character & Fixed values\\
+pl\_remarks & Remarks and commentaries useful to grasp some plant-specific peculiarities & Character & None\\
+pl\_code & sapfluxnet plant code, unique for each plant & Character & Fixed value\\
+\bottomrule
+\end{tabular}}
+\end{table}\newpage
+\begin{table}[H]
+
+\caption[Description of environmental metadata variables.]{\label{tab:tabenvmd}Description of environmental metadata variables.}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{c>{\centering\arraybackslash}p{20em}cc}
+\toprule
+Variable & Description & Type & Units\\
+\midrule
+env\_time\_zone & Time zone of site used in the TIMESTAMPS & Character & Fixed values\\
+env\_time\_daylight & Is daylight saving time applied to the original timestamp? & Logical & Fixed values\\
+env\_timestep & Subdaily timestep of environmental measures & Numeric & minutes\\
+env\_ta & Location of air temperature sensor & Character & Fixed values\\
+env\_rh & Location of relative humidity sensor & Character & Fixed values\\
+env\_vpd & Location of relative vapour pressure decifit sensor & Character & Fixed values\\
+env\_sw\_in & Location of shortwave incoming radiation sensor & Character & Fixed values\\
+env\_ppfd\_in & Location of incoming photosynthetic photon flux density sensor & Character & Fixed values\\
+env\_netrad & Location of net radiation sensor & Character & Fixed values\\
+env\_ws & Location of wind speed sensor & Character & Fixed values\\
+env\_precip & Location of precipitation sensor & Character & Fixed values\\
+env\_swc\_shallow\_depth & Average depth for shallow soil water content measures & Numeric & cm\\
+env\_swc\_deep\_depth & Average depth for deep soil water content measures & Numeric & cm\\
+env\_plant\_watpot & Availability of water potential values for the same measured plants during the sap flow measurements period & Character & Fixed values\\
+env\_leafarea\_seasonal & Availability of seasonal course leaf area data and level & Character & Fixed values\\
+env\_remarks & Remarks and commentaries useful to grasp some environmental-specific peculiarities & Character & None\\
+\bottomrule
+\end{tabular}}
+\end{table}\newpage
+\begin{table}[H]
+
+\caption[Data checks implemented in the second level of data quality control (QC2).]{\label{tab:tableQC2}Data checks implemented in the second level of data quality control (QC2).}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{c>{\centering\arraybackslash}p{20em}}
+\toprule
+Data check & Description\\
+\midrule
+Sap flow units harmonisation & Sap flow expressed in $\text{cm}^3$ $\text{h}^{-1}$, sap flow per unit leaf\/sapwood area in $\text{cm}^3$ $\text{cm}^{-2}$ $\text{h}^{-1}$\\
+Out of range detection & Out of range values are flagged automatically, examined in a visual app and removed if confirmed\\
+Outlier detection & Outliers are flagged automatically, examined in a visual app and removed if confirmed\\
+Radiation transformations & Interconversion between global radiation (sw\_in) and photosynthetically active radiation (ppfd\_in)\\
+VPD and relative humidity & Interconversion between VPD and relative humidity\\
+Extraterrestrial radiation and solar timestamp & Calculation of extraterrestrial radiation and solar timestamp from timestamp and geographical data\\
+Sap flow interconversions & When sapwood or leaf areas were available, interconversions were applied between the different expression levels for sap flow (per plant, per sapwood area or per leaf area)\\
+\bottomrule
+\end{tabular}}
+\end{table}\newpage
+\begingroup\fontsize{7}{9}\selectfont
+\begin{longtable}[t]{l>{\centering\arraybackslash}p{12em}cccc}
+\caption[Datasets in the SAPFLUXNET database identified by numeric code, dataset code and site name.]{\label{tab:tabsites}Datasets in the SAPFLUXNET database identified by numeric code, dataset code and site name. Number of species per dataset, geographic coordinates and elevation are also shown. Negative coordinate values are shown for Southern and Western Hemispheres.}\\
+\toprule
+si\_code & si\_name & si\_lat & si\_long & si\_elev & \# species\\
+\midrule
+\endfirsthead
+\caption[]{\label{tab:tabsites}Datasets in the SAPFLUXNET database identified by numeric code, dataset code and site name. Number of species per dataset, geographic coordinates and elevation are also shown. Negative coordinate values are shown for Southern and Western Hemispheres. \textit{(continued)}}\\
+\toprule
+si\_code & si\_name & si\_lat & si\_long & si\_elev & \# species\\
+\midrule
+\endhead
+\
+\endfoot
+\bottomrule
+\endlastfoot
+ARG\_MAZ & Mazaruca\_Patagonia & -51.58 & -72.29 & 550 & 1\\
+ARG\_TRE & Tres Marias & -51.32 & -72.19 & 460 & 1\\
+AUS\_BRI\_BRI & Britannia Creek & -37.87 & 145.85 & 707 & 1\\
+AUS\_CAN\_ST1\_EUC & Cann River & -37.58 & 149.17 & 180 & 1\\
+AUS\_CAN\_ST2\_MIX & Cann River & -37.58 & 149.17 & 180 & 2\\
+AUS\_CAN\_ST3\_ACA & Cann River & -37.58 & 149.17 & 180 & 1\\
+AUS\_CAR\_THI\_00F & Carrajung & -38.38 & 146.68 & 610 & 1\\
+AUS\_CAR\_THI\_0P0 & Carrajung & -38.38 & 146.68 & 610 & 1\\
+AUS\_CAR\_THI\_0PF & Carrajung & -38.38 & 146.68 & 610 & 1\\
+AUS\_CAR\_THI\_CON & Carrajung & -38.38 & 146.68 & 610 & 1\\
+AUS\_CAR\_THI\_T00 & Carrajung & -38.38 & 146.68 & 610 & 1\\
+AUS\_CAR\_THI\_T0F & Carrajung & -38.38 & 146.68 & 610 & 1\\
+AUS\_CAR\_THI\_TP0 & Carrajung & -38.38 & 146.68 & 610 & 1\\
+AUS\_CAR\_THI\_TPF & Carrajung & -38.38 & 146.68 & 610 & 1\\
+AUS\_ELL\_HB\_HIG & Ella & -36.78 & 146.58 & 705 & 2\\
+AUS\_ELL\_MB\_MOD & Ella & -36.78 & 146.58 & 693 & 1\\
+AUS\_ELL\_UNB & Ella & -36.78 & 146.58 & 737 & 1\\
+AUS\_KAR & Karijini NP & -22.62 & 118.22 & 710 & 1\\
+AUS\_MAR\_HSD\_HIG & Maroondah & -37.64 & 145.58 & 468 & 2\\
+AUS\_MAR\_HSW\_HIG & Maroondah & -37.65 & 145.57 & 297 & 2\\
+AUS\_MAR\_MSD\_MOD & Maroondah & -37.64 & 145.58 & 467 & 2\\
+AUS\_MAR\_MSW\_MOD & Maroondah & -37.65 & 145.57 & 261 & 2\\
+AUS\_MAR\_UBD & Maroondah & -37.69 & 145.56 & 303 & 3\\
+AUS\_MAR\_UBW & Maroondah & -37.89 & 145.57 & 336 & 3\\
+AUS\_RIC\_EUC\_ELE & Richmond NSW EucFACE & -33.62 & 150.74 & 23 & 1\\
+AUS\_WOM & WombatStateForest & -37.42 & 144.09 & 705 & 2\\
+AUT\_PAT\_FOR & Patscherkofel & 47.21 & 11.45 & 1950 & 1\\
+AUT\_PAT\_KRU & Patscherkofel & 47.21 & 11.45 & 2180 & 1\\
+AUT\_PAT\_TRE & Patscherkofel & 47.21 & 11.45 & 2110 & 1\\
+AUT\_TSC & Tschirgant south & 47.23 & 10.84 & 750 & 1\\
+BRA\_CAM & Campos do Jordão & -22.69 & -45.52 & 2000 & 1\\
+BRA\_CAX\_CON & Caxiuana & -1.79 & -51.43 & 15 & 8\\
+BRA\_SAN & Santa Virgínia (PESM) & -23.28 & -45.18 & 1000 & 4\\
+CAN\_TUR\_P39\_POS & TUR & 42.71 & -80.36 & 184 & 1\\
+CAN\_TUR\_P39\_PRE & TUR & 42.71 & -80.36 & 184 & 1\\
+CAN\_TUR\_P74 & TUR & 42.71 & -80.35 & 184 & 1\\
+CHE\_DAV\_SEE & Davos & 46.82 & 9.86 & 1650 & 1\\
+CHE\_LOT\_NOR & Lotschental & 46.39 & 7.76 & 1300 & 2\\
+CHE\_PFY\_CON & Pfynwald & 46.30 & 7.60 & 615 & 1\\
+CHE\_PFY\_IRR & Pfynwald & 46.30 & 7.60 & 615 & 1\\
+CHN\_ARG\_GWD & Arghan & 40.75 & 89.99 & 830 & 1\\
+CHN\_ARG\_GWS & Arghan & 41.38 & 89.94 & 830 & 1\\
+CHN\_HOR\_AFF & Horqin & 42.72 & 122.37 & 226 & 1\\
+CHN\_YIN\_ST1 & Yingbazar & 42.45 & 85.72 & 900 & 1\\
+CHN\_YIN\_ST2\_DRO & Yingbazar & 42.11 & 85.13 & 930 & 1\\
+CHN\_YIN\_ST3\_DRO & Yingbazar & 42.29 & 85.99 & 930 & 1\\
+CHN\_YUN\_YUN & Yunxiao & 23.92 & 117.42 & 0 & 2\\
+COL\_MAC\_SAF\_RAD & Macagual Universidad de la Amazonia & 1.50 & -75.36 & 360 & 1\\
+CRI\_TAM\_TOW & TAMU Soltis Center & 10.39 & -84.63 & 600 & 17\\
+CZE\_BIK & Bik & 49.49 & 18.53 & 875 & 1\\
+CZE\_BIL\_BIL & Bilovice & 49.25 & 16.69 & 320 & 1\\
+CZE\_KRT\_KRT & Krtiny & 49.32 & 16.75 & 480 & 1\\
+CZE\_LAN & Lanžhot & 48.68 & 16.95 & 150 & 3\\
+CZE\_LIZ\_LES & Liz & 49.07 & 13.68 & 858 & 1\\
+CZE\_RAJ\_RAJ & Rajec & 49.44 & 16.70 & 600 & 1\\
+CZE\_SOB\_SOB & Sobesice & 49.25 & 16.69 & 320 & 1\\
+CZE\_STI & Stitna nad Vlari & 49.04 & 17.97 & 550 & 1\\
+CZE\_UTE\_BEE & Utechov & 49.28 & 16.65 & 420 & 1\\
+CZE\_UTE\_BNA & Utechov & 49.28 & 16.65 & 390 & 1\\
+CZE\_UTE\_BPO & Utechov & 49.28 & 16.65 & 370 & 1\\
+CZE\_UTE\_SPR & Utechov & 49.28 & 16.65 & 360 & 1\\
+DEU\_HIN\_OAK & Hinnensee & 53.33 & 13.19 & 90 & 1\\
+DEU\_HIN\_TER & Hinnensee & 53.33 & 13.19 & 95 & 2\\
+DEU\_MER\_BEE\_NON & Merzalben & 49.27 & 7.81 & 550 & 1\\
+DEU\_MER\_BEE\_THI & Merzalben & 49.27 & 7.81 & 550 & 1\\
+DEU\_MER\_DOU\_NON & Merzalben & 49.27 & 7.81 & 550 & 1\\
+DEU\_MER\_DOU\_THI & Merzalben & 49.27 & 7.81 & 550 & 1\\
+DEU\_MER\_MIX\_NON & Merzalben & 49.27 & 7.81 & 550 & 2\\
+DEU\_MER\_MIX\_THI & Merzalben & 49.27 & 7.81 & 550 & 2\\
+DEU\_STE\_2P3 & Stechlin & 53.10 & 13.00 & 78 & 1\\
+DEU\_STE\_4P5 & Stechlin & 53.10 & 13.00 & 78 & 1\\
+ESP\_ALT\_ARM & Alto Tajo & 40.78 & -2.33 & 1079 & 3\\
+ESP\_ALT\_HUE & Alto Tajo & 40.79 & -2.29 & 907 & 2\\
+ESP\_ALT\_TRI & Alto Tajo & 40.80 & -2.23 & 981 & 2\\
+ESP\_CAN & Can Balasc & 41.43 & 2.07 & 270 & 4\\
+ESP\_GUA\_VAL & Guadarrama & 40.90 & -4.03 & 1140 & 1\\
+ESP\_LAH\_COM & LaHarina & 37.74 & -3.38 & 180 & 1\\
+ESP\_LAS & Las Canadas, Teide natinal park tenerife & 28.31 & -16.57 & 2070 & 1\\
+ESP\_MAJ\_MAI & Majadas del Tietar & 39.94 & -5.77 & 260 & 1\\
+ESP\_MAJ\_NOR\_LM1 & Majadas del Tietar & 39.94 & -5.77 & 260 & 1\\
+ESP\_MON\_SIE\_NAT & Montejo & 41.12 & -3.50 & 1400 & 3\\
+ESP\_RIN & Rinconada experimental catchment & 40.60 & -6.02 & 1200 & 1\\
+ESP\_RON\_PIL & Ronda & 36.69 & -5.02 & 1734 & 2\\
+ESP\_SAN\_A2\_45I & Sanabria orchard & 37.25 & -5.80 & 49 & 1\\
+ESP\_SAN\_A\_45I & Sanabria orchard & 37.25 & -5.80 & 49 & 1\\
+ESP\_SAN\_B\_100 & Sanabria orchard & 37.25 & -5.80 & 49 & 1\\
+ESP\_SAN\_B2\_100 & Sanabria orchard & 37.25 & -5.80 & 49 & 1\\
+ESP\_TIL\_MIX & Tillar & 41.33 & 1.01 & 1018 & 2\\
+ESP\_TIL\_OAK & Tillar & 41.33 & 1.01 & 1011 & 1\\
+ESP\_TIL\_PIN & Tillar & 41.33 & 1.01 & 1065 & 1\\
+ESP\_VAL\_BAR & Vallcebre & 42.20 & 1.82 & 1102 & 1\\
+ESP\_VAL\_SOR & Vallcebre & 42.20 & 1.81 & 1257 & 1\\
+ESP\_YUN\_C1 & Yunquera & 36.72 & -4.97 & 1220 & 1\\
+ESP\_YUN\_C2 & Yunquera & 36.72 & -4.97 & 1180 & 1\\
+ESP\_YUN\_T1\_THI & Yunquera & 36.72 & -4.97 & 1190 & 1\\
+ESP\_YUN\_T3\_THI & Yunquera & 36.72 & -4.97 & 1185 & 1\\
+FIN\_HYY\_SME & Hyytiala Forest Field Station & 61.85 & 24.29 & 185 & 2\\
+FIN\_PET & Petsikko & 69.49 & 27.23 & 251 & 1\\
+FRA\_FON & Fontainebleau-Barbeau & 48.48 & 2.78 & 105 & 2\\
+FRA\_HES\_HE1\_NON & Hesse & 48.67 & 7.06 & 300 & 1\\
+FRA\_HES\_HE2\_NON & Hesse & 48.67 & 7.06 & 300 & 1\\
+FRA\_PUE & Puechabon & 43.74 & 3.60 & 270 & 1\\
+GBR\_ABE\_PLO & Aberfeldy & 56.62 & -3.80 & 340 & 1\\
+GBR\_DEV\_CON & Devilla & 56.03 & -3.72 & 75 & 1\\
+GBR\_DEV\_DRO & Devilla & 56.03 & -3.72 & 75 & 1\\
+GBR\_GUI\_ST1 & Guisachan & 57.27 & -4.82 & 300 & 1\\
+GBR\_GUI\_ST2 & Guisachan & 57.27 & -4.82 & 300 & 1\\
+GBR\_GUI\_ST3 & Guisachan & 57.27 & -4.82 & 300 & 1\\
+GUF\_GUY\_GUY & Guyaflux & 5.28 & -52.92 & 40 & 6\\
+GUF\_GUY\_ST2 & Guyaflux & 5.28 & -52.91 & 45 & 7\\
+GUF\_NOU\_PET & Nouragues station & 4.08 & -52.68 & 120 & 10\\
+HUN\_SIK & Sikfokut & 47.93 & 20.44 & 330 & 2\\
+IDN\_JAM\_OIL & Jambi & -2.07 & 102.79 & 71 & 1\\
+IDN\_JAM\_RUB & Jambi & -2.10 & 102.78 & 90 & 1\\
+IDN\_PON\_STE & Pono & -1.49 & 120.06 & 1050 & 8\\
+ISR\_YAT\_YAT & Yatir & 31.34 & 35.05 & 650 & 1\\
+ITA\_FEI\_S17 & Feichtwald-Matsch & 46.69 & 10.61 & 1715 & 1\\
+ITA\_KAE\_S20 & Kaelbergangl-Matsch & 46.70 & 10.61 & 1990 & 1\\
+ITA\_MAT\_S21 & Matscher Alm-Matsch & 46.74 & 10.69 & 2100 & 2\\
+ITA\_MUN & Muntatschinig-Matsch & 46.68 & 10.58 & 1160 & 1\\
+ITA\_REN & Renon & 46.59 & 11.43 & 1794 & 3\\
+ITA\_RUN\_N20 & Runer Koepfl-Matsch & 46.70 & 10.64 & 2030 & 2\\
+ITA\_TOR & Torgnon & 45.82 & 7.56 & 2100 & 1\\
+JPN\_EBE\_HYB & Ebetsu & 43.08 & 141.52 & 40 & 1\\
+JPN\_EBE\_SUG & Ebetsu & 43.08 & 141.52 & 40 & 1\\
+KOR\_TAE\_TC1\_LOW & Taehwa & 37.30 & 127.32 & 160 & 1\\
+KOR\_TAE\_TC2\_MED & Taehwa & 37.30 & 127.32 & 160 & 1\\
+KOR\_TAE\_TC3\_EXT & Taehwa & 37.30 & 127.32 & 160 & 1\\
+MDG\_SEM\_TAL & Semi-mature forest & -18.93 & 48.71 & 950 & 6\\
+MDG\_YOU\_SHO & Young secondary forest & -18.95 & 48.40 & 990 & 1\\
+MEX\_COR\_YP & Cortadura & 19.49 & -97.04 & 2180 & 1\\
+MEX\_VER\_BSJ & VERACRUZ\_BSJ & 19.51 & -96.98 & 1440 & 5\\
+MEX\_VER\_BSM & VERACRUZ\_BSM & 19.53 & -96.99 & 1524 & 2\\
+NLD\_LOO & Loobos & 52.17 & 5.74 & 25 & 1\\
+NLD\_SPE\_DOU & Speulderbos & 52.25 & 5.69 & 50 & 1\\
+NZL\_HUA\_HUA & Huapai & -36.80 & 174.49 & 90 & 1\\
+PRT\_LEZ\_ARN & LEZIRIAS & 38.83 & -8.82 & 15 & 1\\
+PRT\_MIT & MITRA II & 38.54 & -8.00 & 235 & 1\\
+PRT\_PIN & Pinheiro da Cruz & 38.25 & -8.76 & 5 & 2\\
+RUS\_CHE\_LOW & Cherskii & 68.74 & 161.50 & 90 & 1\\
+RUS\_CHE\_Y4 & CHE & 68.74 & 161.41 & 6 & 1\\
+RUS\_FYO & Fyodorovskoye & 56.46 & 32.92 & 260 & 3\\
+RUS\_POG\_VAR & Pogorelsky Bor & 56.36 & 92.95 & 243 & 3\\
+SEN\_SOU\_IRR & Souilène & 16.34 & -15.43 & 10 & 1\\
+SEN\_SOU\_POS & Souilène & 16.34 & -15.43 & 10 & 1\\
+SEN\_SOU\_PRE & Souilène & 16.34 & -15.43 & 10 & 1\\
+SWE\_NOR\_ST1\_AF1 & Norunda & 60.09 & 17.48 & 45 & 2\\
+SWE\_NOR\_ST1\_AF2 & Norunda & 60.09 & 17.48 & 45 & 2\\
+SWE\_NOR\_ST1\_BEF & Norunda & 60.09 & 17.48 & 45 & 2\\
+SWE\_NOR\_ST2 & Norunda & 60.09 & 17.48 & 45 & 2\\
+SWE\_NOR\_ST3 & Norunda & 60.09 & 17.48 & 45 & 2\\
+SWE\_NOR\_ST4\_AFT & Norunda & 60.08 & 17.48 & 45 & 3\\
+SWE\_NOR\_ST4\_BEF & Norunda & 60.08 & 17.48 & 45 & 2\\
+SWE\_NOR\_ST5\_REF & Norunda & 60.08 & 17.48 & 45 & 3\\
+SWE\_SKO\_MIN & Skogaryd & 58.36 & 12.15 & 76 & 1\\
+SWE\_SKY\_38Y & Skyttorp & 60.13 & 17.84 & 50 & 1\\
+SWE\_SKY\_68Y & Skyttorp & 60.10 & 17.83 & 50 & 2\\
+SWE\_SVA\_MIX\_NON & Svartberget & 64.26 & 19.77 & 267 & 2\\
+THA\_KHU & Khu-Muang & 15.27 & 103.08 & 150 & 1\\
+USA\_BNZ\_BLA & BNZSPRC1 & 64.70 & -148.32 & 50 & 1\\
+USA\_CHE\_ASP & ChEAS & 45.94 & -90.27 & 477 & 6\\
+USA\_CHE\_MAP & ChEAS & 45.95 & -90.26 & 1565 & 2\\
+USA\_DUK\_HAR & Duke Blackwood Hardwood & 36.98 & -79.09 & 163 & 6\\
+USA\_HIL\_HF1\_POS & Hill Demonstration Forest & 36.22 & -78.86 & 174 & 5\\
+USA\_HIL\_HF1\_PRE & Hill Demonstration Forest & 36.22 & -78.86 & 174 & 5\\
+USA\_HIL\_HF2 & Hill Demonstration Forest & 36.22 & -78.86 & 174 & 7\\
+USA\_HUY\_LIN\_NON & Huyck Preserve  Lincoln Pond & 42.53 & -74.16 &  & 1\\
+USA\_INM & INMMSF & 39.32 & -86.41 & 286 & 6\\
+USA\_MOR\_SF & Morgan-Monroe State Forest & 39.32 & -86.41 & 275 & 4\\
+USA\_NWH & NWhiteRiver & 34.58 & -91.26 & 48 & 2\\
+USA\_ORN\_ST1\_AMB & ORNL-FACE & 35.90 & -84.33 & 227 & 1\\
+USA\_ORN\_ST2\_AMB & ORNL-FACE & 35.90 & -84.33 & 227 & 1\\
+USA\_ORN\_ST3\_ELE & ORNL-FACE & 35.90 & -84.33 & 227 & 1\\
+USA\_ORN\_ST4\_ELE & ORNL-FACE & 35.90 & -84.33 & 227 & 1\\
+USA\_PAR\_FER & Parker Tract & 35.80 & -76.67 & 5 & 1\\
+USA\_PER\_PER & Perry & 30.21 & -83.87 & 14 & 1\\
+USA\_PJS\_P04\_AMB & PJSEV -Rainfall Manipulation Experiment - Sevilleta NWR, USA & 34.39 & -106.53 & 1911 & 2\\
+USA\_PJS\_P08\_AMB & PJSEV -Rainfall Manipulation Experiment - Sevilleta NWR, USA & 34.39 & -106.53 & 1911 & 2\\
+USA\_PJS\_P12\_AMB & PJSEV -Rainfall Manipulation Experiment - Sevilleta NWR, USA & 34.39 & -106.53 & 1911 & 2\\
+USA\_SIL\_OAK\_1PR & Silas Little Experimental Forest premortality & 39.92 & -74.60 & 33 & 4\\
+USA\_SIL\_OAK\_2PR & Silas Little Experimental Forest premortality & 39.92 & -74.60 & 33 & 4\\
+USA\_SIL\_OAK\_POS & Silas Little Experimental Forest premortality & 39.92 & -74.60 & 33 & 5\\
+USA\_SMI\_SCB & Smithsonian Conservation Biology Insitute & 38.89 & -78.15 & 273 & 3\\
+USA\_SMI\_SER & Smithsonian Environmental Research Center & 38.89 & -76.56 & 19 & 5\\
+USA\_SWH & SWhiteRiver & 34.11 & -91.13 & 44 & 2\\
+USA\_SYL\_HL1 & Sylvania Wilderness & 46.24 & -89.35 & 500 & 3\\
+USA\_SYL\_HL2 & Sylvania Wilderness & 46.24 & -89.35 & 500 & 4\\
+USA\_TNB & TNBSF & 36.47 & -84.70 & 454 & 4\\
+USA\_TNO & TNOAK & 35.97 & -84.28 & 340 & 5\\
+USA\_TNP & TNPINE & 35.96 & -84.29 & 342 & 5\\
+USA\_TNY & TNYPOP & 35.69 & -83.50 & 850 & 3\\
+USA\_UMB\_CON & UMBS & 45.56 & -84.71 & 236 & 5\\
+USA\_UMB\_GIR & UMB & 45.56 & -84.70 & 239 & 4\\
+USA\_WIL\_WC1 & Willow Creek & 45.81 & -90.09 & 520 & 5\\
+USA\_WIL\_WC2 & Willow Creek & 45.81 & -90.09 & 520 & 4\\
+USA\_WVF & WVFEF & 39.06 & -79.69 & 844 & 5\\
+UZB\_YAN\_DIS & Yangibazar & 41.65 & 60.62 & 101 & 2\\
+ZAF\_FRA\_FRA & Franshoek South Africa & -33.88 & 19.06 & 190 & 1\\
+ZAF\_NOO\_E3\_IRR & Nooitgedacht farm & -33.20 & 19.34 & 1089 & 1\\
+ZAF\_RAD & Radyn EGVV & -34.08 & 19.11 & 409 & 1\\
+ZAF\_SOU\_SOU & Southfield EGVV & -34.09 & 19.09 & 389 & 1\\
+ZAF\_WEL\_SOR & Wellington Western Cape & -33.48 & 18.96 & 81 & 1\\*
+\end{longtable}
+\endgroup{} \newpage
+\begin{landscape}
+\begingroup\fontsize{7}{9}\selectfont
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{12em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\raggedright\arraybackslash}p{12em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\raggedright\arraybackslash}p{12em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}}
+\caption[Number of plants and number of datasets for each species present in the SAPFLUXNET database.]{\label{tab:tabntreesspecies}Number of plants and number of datasets for each species present in the SAPFLUXNET database.}\\
+\toprule
+Species & \# trees & \# sites & Species & \# trees & \# sites & Species & \# trees & \# sites\\
+\midrule
+\endfirsthead
+\caption[]{\label{tab:tabntreesspecies}Number of plants and number of datasets for each species present in the SAPFLUXNET database. \textit{(continued)}}\\
+\toprule
+Species & \# trees & \# sites & Species & \# trees & \# sites & Species & \# trees & \# sites\\
+\midrule
+\endhead
+\
+\endfoot
+\bottomrule
+\endlastfoot
+$Pinus$ $sylvestris$ & 290 & 28 & $Acacia$ $tortilis$ & 9 & 3 & $Prunus$ $serotina$ & 3 & 2\\
+$Picea$ $abies$ & 178 & 19 & $Quercus$ $spp.$ & 9 & 2 & $Populus$ $canescens$ & 3 & 1\\
+$Acer$ $saccharum$ & 162 & 9 & $Kandelia$ $obovata$ & 8 & 1 & $Eucalyptus$ $camaldulensis$ & 3 & 1\\
+$Fagus$ $sylvatica$ & 116 & 16 & $Carpinus$ $betulus$ & 8 & 2 & $Qualea$ $rosea$ & 3 & 1\\
+$Pinus$ $taeda$ & 107 & 6 & $Castanopsis$ $acuminatissima$ & 8 & 1 & $Licania$ $alba$ & 3 & 1\\
+$Populus$ $tremuloides$ & 104 & 1 & $Pinus$ $patula$ & 8 & 1 & $Eucalyptus$ $dives$ & 2 & 1\\
+$Pinus$ $koraiensis$ & 96 & 3 & $Eucalyptus$ $radiata$ & 7 & 5 & $Licania$ $octandra$ & 2 & 1\\
+$Eucalyptus$ $nitens$ & 89 & 8 & $Betula$ $pubescens$ $subsp.$ $czerepanovii$ & 7 & 1 & $Swartzia$ $racemosa$ & 2 & 1\\
+$Pinus$ $strobus$ & 75 & 5 & $Avicennia$ $marina$ & 6 & 1 & $Manilkara$ $bidentata$ & 2 & 1\\
+$Liquidambar$ $styraciflua$ & 69 & 10 & $Quercus$ $robur$ & 6 & 1 & $Licania$ $membranacea$ & 2 & 2\\
+$Quercus$ $ilex$ & 62 & 6 & $Fraxinus$ $excelsior$ & 6 & 1 & $Eschweilera$ $grandiflora$ & 2 & 1\\
+$Acer$ $rubrum$ & 62 & 12 & $Cryptocarya$ $laevigata$ & 6 & 1 & $Pouteria$ $viridis$ & 2 & 1\\
+$Liriodendron$ $tulipifera$ & 51 & 11 & $Myrtaceae$ $fam.$ & 6 & 1 & $Ampelocera$ $macrocarpa$ & 2 & 1\\
+$Fagus$ $grandifolia$ & 48 & 4 & $Palaquium$ $luzoniense$ & 6 & 1 & $Otoba$ $novogranatensis$ & 2 & 1\\
+$Pinus$ $resinosa$ & 43 & 1 & $Platea$ $excelsa$ & 6 & 1 & $Mortoniodendron$ $anisophyllum$ & 2 & 1\\
+$Eucalyptus$ $globulus$ & 35 & 2 & $Pouteria$ $firma$ & 6 & 1 & $Meliosma$ $idiopoda$ & 2 & 1\\
+$Larix$ $decidua$ & 34 & 8 & $Agathis$ $australis$ & 6 & 1 & $Taxus$ $baccata$ & 2 & 1\\
+$Abies$ $pinsapo$ & 34 & 5 & $Ostrya$ $virginiana$ & 6 & 3 & $Sloanea$ $sp$ & 2 & 2\\
+$Acacia$ $mearnsii$ & 33 & 2 & $Picea$ $mariana$ & 6 & 1 & $Betula$ $sp.$ & 2 & 1\\
+$Quercus$ $pyrenaica$ & 32 & 2 & $Nothofagus$ $pumilio$ & 5 & 1 & $Picea$ $glauca$ & 2 & 1\\
+$Quercus$ $rubra$ & 32 & 6 & $Nothofagus$ $cunninghamii$ & 5 & 1 & $Fraxinus$ $americana$ & 2 & 1\\
+$Quercus$ $petraea$ & 31 & 5 & $Eucalyptus$ $cypellocarpa$ & 5 & 4 & $Carya$ $cordiformis$ & 2 & 1\\
+$Pseudotsuga$ $menziesii$ & 29 & 5 & $Eucalyptus$ $rubida$ & 5 & 1 & $Quercus$ $prinus$ & 2 & 1\\
+$Pinus$ $halepensis$ & 27 & 2 & $Drimys$ $brasiliensis$ & 5 & 1 & $Elaeagnus$ $angustifolia$ & 2 & 1\\
+$Quercus$ $velutina$ & 24 & 4 & $Alchornea$ $triplinervia$ & 5 & 1 & $Qualea$ $tricolor$ & 2 & 1\\
+$Tsuga$ $canadensis$ & 24 & 2 & $Santiria$ $apiculata$ & 5 & 1 & $Lecythis$ $poiteaui$ & 2 & 1\\
+$Larix$ $cajanderi$ & 23 & 2 & $Quercus$ $michauxii$ & 5 & 1 & $Quercus$ $cerris$ & 2 & 1\\
+$Betula$ $papyrifera$ & 21 & 2 & $Quercus$ $phellos$ & 5 & 1 & $Pleuranthodendron$ $lindenii$ & 1 & 1\\
+$Quercus$ $montana$ & 21 & 3 & $Pinus$ $rigida$ & 5 & 3 & $Inga$ $sp.$ & 1 & 1\\
+$Quercus$ $pubescens$ & 19 & 2 & $Tilia$ $americana$ & 5 & 2 & $Cupania$ $macrophylla$ & 1 & 1\\
+$Abies$ $balsamea$ & 19 & 1 & $Nothofagus$ $antarctica$ & 4 & 1 & $Genipa$ $americana$ & 1 & 1\\
+$Quercus$ $alba$ & 19 & 7 & $Eucalyptus$ $baxteri$ & 4 & 2 & $Brosimum$ $alicastrum$ & 1 & 1\\
+$Pinus$ $cembra$ & 18 & 6 & $Coprosma$ $quadrifida$ & 4 & 2 & $Pouteria$ $sp.$ & 1 & 1\\
+$Populus$ $euphratica$ & 16 & 6 & $Eschweilera$ $coriacea$ & 4 & 2 & $Macrolobium$ $costaricense$ & 1 & 1\\
+$Olea$ $europaea$ & 16 & 5 & $Arbutus$ $unedo$ & 4 & 1 & $Eschweilera$ $sp.$ & 1 & 1\\
+$Quercus$ $rotundifolia$ & 16 & 3 & $Psiadia$ $altissima$ & 4 & 1 & $Aspidosperma$ $desmanthum$ & 1 & 1\\
+$Hevea$ $brasiliensis$ & 16 & 2 & $Quercus$ $suber$ & 4 & 1 & $Trophis$ $mexicana$ & 1 & 1\\
+$Betula$ $alleghaniensis$ & 16 & 2 & $Betula$ $pubescens$ & 4 & 2 & $Betula$ $pendula$ & 1 & 1\\
+$Pinus$ $nigra$ & 15 & 3 & $Fraxinus$ $pennsylvanica$ & 4 & 2 & $Iryanthera$ $sagotiana$ & 1 & 1\\
+$Picea$ $sitchensis$ & 15 & 1 & $Pouteria$ $anomala$ & 3 & 1 & $Vantanea$ $sp$ & 1 & 1\\
+$Pinus$ $edulis$ & 15 & 3 & $Protium$ $tenuifolium$ & 3 & 1 & $Recordoxylon$ $speciosum$ & 1 & 1\\
+$Juniperus$ $monosperma$ & 15 & 3 & $Hieronyma$ $alchorneoides$ & 3 & 1 & $Larix$ $kaempferi$ $x$ $Larix$ $gmelinii$ & 1 & 1\\
+$Eucalyptus$ $victrix$ & 14 & 1 & $Mollinedia$ $schottiana$ & 3 & 1 & $Cryptomeria$ $japonica$ & 1 & 1\\
+$Eucalyptus$ $obliqua$ & 14 & 5 & $Rustia$ $formosa$ & 3 & 1 & $Eugenia$ $spp.$ & 1 & 1\\
+$Quercus$ $lyrata$ & 13 & 2 & $Theobroma$ $cacao$ & 3 & 1 & $Ocotea$ $samosa$ & 1 & 1\\
+$Celtis$ $laevigata$ & 13 & 2 & $Carapa$ $guianensis$ & 3 & 1 & $Leptolaena$ $sp.$ & 1 & 1\\
+$Quercus$ $coccinea$ & 13 & 4 & $Gymnanthes$ $riparia$ & 3 & 1 & $Abrahamia$ $ditimena$ & 1 & 1\\
+$Populus$ $grandidentata$ & 12 & 1 & $Ilex$ $aquifolium$ & 3 & 1 & $Brachylaena$ $ramiflora$ & 1 & 1\\
+$Malus$ $domestica$ & 11 & 3 & $Vouacapoua$ $americana$ & 3 & 3 & $Cryptocarya$ $sp.$ & 1 & 1\\
+$Eucalyptus$ $tereticornis$ & 10 & 1 & $Oxandra$ $asbeckii$ & 3 & 2 & $Saurauia$ $pedunculata$ & 1 & 1\\
+$Quercus$ $faginea$ & 10 & 2 & $Goupia$ $glabra$ & 3 & 3 & $Turpinia$ $insignis$ & 1 & 1\\
+$Pinus$ $canariensis$ & 10 & 1 & $Vernonia$ $arborea$ & 3 & 1 & $Sassafras$ $albidum$ & 1 & 1\\
+$Elaeis$ $guineensis$ & 10 & 1 & $Platanus$ $mexicana$ & 3 & 1 & $Ulmus$ $americana$ & 1 & 1\\
+$Acacia$ $longifolia$ & 10 & 1 & $Clethra$ $macrophylla$ & 3 & 2 & $Carya$ $glabra$ & 1 & 1\\
+$Pinus$ $pinaster$ & 10 & 1 & $Larix$ $sibirica$ & 3 & 1 & $Quercus$ $falcata$ & 1 & 1\\
+$Thuja$ $occidentalis$ & 10 & 1 & $Larix$ $gmelinii$ & 3 & 1 & $Cornus$ $florida$ & 1 & 1\\
+$Carya$ $tomentosa$ & 10 & 2 & $Pinus$ $sibirica$ & 3 & 1 & $Licania$ $rodriguesii$ & 1 & 1\\
+$Dicorynia$ $guianensis$ & 9 & 2 & $Pinus$ $virginiana$ & 3 & 1 & $Sextonia$ $rubra$ & 1 & 1\\*
+\end{longtable}
+\endgroup{}
+\newpage
+\end{landscape}
+\begin{table}[H]
+
+\caption[Number of plants per genus present in the SAPFLUXNET database.]{\label{tab:tabntreesgenus}Number of plants per genus present in the SAPFLUXNET database.}
+\centering
+\fontsize{8}{10}\selectfont
+\begin{tabular}[t]{lclclc}
+\toprule
+Genus & \# trees & Genus & \# trees & Genus & \# trees\\
+\midrule
+$Pinus$ & 725 & $Cryptocarya$ & 7 & $Ampelocera$ & 2\\
+$Quercus$ & 326 & $Avicennia$ & 6 & $Otoba$ & 2\\
+$Acer$ & 224 & $Myrtaceae fam.$ & 6 & $Mortoniodendron$ & 2\\
+$Picea$ & 201 & $Palaquium$ & 6 & $Meliosma$ & 2\\
+$Eucalyptus$ & 188 & $Platea$ & 6 & $Taxus$ & 2\\
+$Fagus$ & 164 & $Agathis$ & 6 & $Sloanea$ & 2\\
+$Populus$ & 135 & $Ostrya$ & 6 & $Elaeagnus$ & 2\\
+$Liquidambar$ & 69 & $Drimys$ & 5 & $Lecythis$ & 2\\
+$Larix$ & 64 & $Alchornea$ & 5 & $Pleuranthodendron$ & 1\\
+$Abies$ & 53 & $Santiria$ & 5 & $Inga$ & 1\\
+$Acacia$ & 52 & $Tilia$ & 5 & $Cupania$ & 1\\
+$Betula$ & 51 & $Qualea$ & 5 & $Genipa$ & 1\\
+$Liriodendron$ & 51 & $Coprosma$ & 4 & $Brosimum$ & 1\\
+$Pseudotsuga$ & 29 & $Arbutus$ & 4 & $Macrolobium$ & 1\\
+$Tsuga$ & 24 & $Psiadia$ & 4 & $Aspidosperma$ & 1\\
+$Olea$ & 16 & $Protium$ & 3 & $Trophis$ & 1\\
+$Hevea$ & 16 & $Hieronyma$ & 3 & $Iryanthera$ & 1\\
+$Juniperus$ & 15 & $Mollinedia$ & 3 & $Vantanea$ & 1\\
+$Nothofagus$ & 14 & $Rustia$ & 3 & $Recordoxylon$ & 1\\
+$Carya$ & 13 & $Theobroma$ & 3 & $Cryptomeria$ & 1\\
+$Celtis$ & 13 & $Carapa$ & 3 & $Eugenia$ & 1\\
+$Pouteria$ & 12 & $Gymnanthes$ & 3 & $Ocotea$ & 1\\
+$Fraxinus$ & 12 & $Ilex$ & 3 & $Leptolaena$ & 1\\
+$Malus$ & 11 & $Vouacapoua$ & 3 & $Abrahamia$ & 1\\
+$Elaeis$ & 10 & $Oxandra$ & 3 & $Brachylaena$ & 1\\
+$Thuja$ & 10 & $Goupia$ & 3 & $Saurauia$ & 1\\
+$Dicorynia$ & 9 & $Vernonia$ & 3 & $Turpinia$ & 1\\
+$Licania$ & 8 & $Platanus$ & 3 & $Sassafras$ & 1\\
+$Kandelia$ & 8 & $Clethra$ & 3 & $Ulmus$ & 1\\
+$Carpinus$ & 8 & $Prunus$ & 3 & $Cornus$ & 1\\
+$Castanopsis$ & 8 & $Swartzia$ & 2 & $Sextonia$ & 1\\
+$Eschweilera$ & 7 & $Manilkara$ & 2 &  & \\
+\bottomrule
+\end{tabular}
+\end{table}\newpage
 \chapter{Appendix Chapter 4}\label{appendix-chapter-4}
 
 \newpage
@@ -768,7 +1345,7 @@ Observations &  & 290 &  &  & 290 &  &  & 290 &  &  & 290 & \\
 
 }
 
-\caption[SAPFLUXNET global scaling relationship between basal area and sapwood area. Shaded areas are 95\% model confidence interval.]{SAPFLUXNET global scaling relationship between basal area and sapwood area. Shaded areas are 95\% model confidence interval.}\label{fig:unnamed-chunk-4}
+\caption[SAPFLUXNET global scaling relationship between basal area and sapwood area. Shaded areas are 95\% model confidence interval.]{SAPFLUXNET global scaling relationship between basal area and sapwood area. Shaded areas are 95\% model confidence interval.}\label{fig:unnamed-chunk-8}
 \end{figure}
 \setlength{\abovecaptionskip}{0pt}
 
@@ -781,7 +1358,7 @@ Observations &  & 290 &  &  & 290 &  &  & 290 &  &  & 290 & \\
 
 }
 
-\caption[Bioclimatic distribution of the SAPFLUXNET datasets used in the study.]{Bioclimatic distribution of the SAPFLUXNET datasets used in the study. Points show the different datasets in a Whittaker diagram showing the classification of the aggregated biomes used in the study.}\label{fig:unnamed-chunk-5}
+\caption[Bioclimatic distribution of the SAPFLUXNET datasets used in the study.]{Bioclimatic distribution of the SAPFLUXNET datasets used in the study. Points show the different datasets in a Whittaker diagram showing the classification of the aggregated biomes used in the study.}\label{fig:unnamed-chunk-9}
 \end{figure}
 \setlength{\abovecaptionskip}{0pt}
 
@@ -794,7 +1371,7 @@ Observations &  & 290 &  &  & 290 &  &  & 290 &  &  & 290 & \\
 
 }
 
-\caption[Global projection of climatic, soil and stand structure variables.]{Global projection of climatic, soil and stand structure variables. log(PPET): logarithm of precipitation over potential evapotraspiration [log(mm \text{$mm^{-1}$})]; log(\text{$P-PET_{sd}$}): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration [log(mm)]; Clay: percentage of clay in the soil; Total N: total nitrogen in the soil [g \text{$kg^{-1}$}];  Bedrock [cm]; Stand height [m]; LAI: leaf area index [\text{$m^2$ $m^{-2}$}]. Total N values above 5 g \text{$kg^{-1}$} were truncated.}\label{fig:unnamed-chunk-6}
+\caption[Global projection of climatic, soil and stand structure variables.]{Global projection of climatic, soil and stand structure variables. log(PPET): logarithm of precipitation over potential evapotraspiration [log(mm \text{$mm^{-1}$})]; log(\text{$P-PET_{sd}$}): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration [log(mm)]; Clay: percentage of clay in the soil; Total N: total nitrogen in the soil [g \text{$kg^{-1}$}];  Bedrock [cm]; Stand height [m]; LAI: leaf area index [\text{$m^2$ $m^{-2}$}]. Total N values above 5 g \text{$kg^{-1}$} were truncated.}\label{fig:unnamed-chunk-10}
 \end{figure}
 \setlength{\abovecaptionskip}{0pt}
 
@@ -807,7 +1384,7 @@ Observations &  & 290 &  &  & 290 &  &  & 290 &  &  & 290 & \\
 
 }
 
-\caption[Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome.]{Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome. Coloured lines are biome average models calculated from the Log-linear models predictions using LMM with Gs as response variable and the neperian logarithm of the environmental constrains as explanatory variables. Dashed line shows standard error of the average models calculated with bootstrap prediction using 100 simulations.}\label{fig:unnamed-chunk-7}
+\caption[Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome.]{Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome. Coloured lines are biome average models calculated from the Log-linear models predictions using LMM with Gs as response variable and the neperian logarithm of the environmental constrains as explanatory variables. Dashed line shows standard error of the average models calculated with bootstrap prediction using 100 simulations.}\label{fig:unnamed-chunk-11}
 \end{figure}
 \setlength{\abovecaptionskip}{0pt} \newpage
 
@@ -815,12 +1392,12 @@ Observations &  & 290 &  &  & 290 &  &  & 290 &  &  & 290 & \\
 
 \begingroup\fontsize{6}{8}\selectfont
 \begin{longtable}[t]{ccccccc}
-\caption[SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram.]{\label{tab:unnamed-chunk-8}SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram. *Indicates that the biome was manually adjusted and confirmed by SAPFLUXNET contributors.}\\
+\caption[SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram.]{\label{tab:unnamed-chunk-12}SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram. *Indicates that the biome was manually adjusted and confirmed by SAPFLUXNET contributors.}\\
 \toprule
 Site code & Latitude & Longitude & Biome & \# Tree-days & \# Species & \# Trees\\
 \midrule
 \endfirsthead
-\caption[]{\label{tab:unnamed-chunk-8}SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram. *Indicates that the biome was manually adjusted and confirmed by SAPFLUXNET contributors. \textit{(continued)}}\\
+\caption[]{\label{tab:unnamed-chunk-12}SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram. *Indicates that the biome was manually adjusted and confirmed by SAPFLUXNET contributors. \textit{(continued)}}\\
 \toprule
 Site code & Latitude & Longitude & Biome & \# Tree-days & \# Species & \# Trees\\
 \midrule
@@ -953,12 +1530,12 @@ ZAF\_SOU\_SOU & -34.09 & 19.09 & WOOD & 198 & 1 & 2\\
 ZAF\_WEL\_SOR & -33.48 & 18.96 & WOOD & 356 & 1 & 3\\*
 \end{longtable}
 \endgroup{} \newpage
-\begin{table}
+\begin{table}[H]
 
-\caption[SAPFLUXNET stand treatments included in the this study (Poyatos $et al.$ 2020).]{\label{tab:unnamed-chunk-9}SAPFLUXNET stand treatments included in the this study (Poyatos $et al.$ 2020).}
+\caption[SAPFLUXNET stand treatments included in the this study (Poyatos $et$ $al.$ 2020).]{\label{tab:unnamed-chunk-13}SAPFLUXNET stand treatments included in the this study (Poyatos $et$ $al.$ 2020).}
 \centering
-\fontsize{6}{8}\selectfont
-\begin{tabular}[t]{c}
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{l}
 \toprule
 Plot treatment\\
 \midrule
@@ -987,17 +1564,17 @@ MixtureEucalyptusAndAcacia\\
 EucalyptusMonoculture\\
 Pre Irrigation\\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}\newpage
 \begin{landscape}
 \begingroup\fontsize{5}{7}\selectfont
 \begin{longtable}[t]{>{\centering\arraybackslash}p{8em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}>{\centering\arraybackslash}p{3.5em}c}
-\caption[Summary table of plot level.]{\label{tab:unnamed-chunk-10}Summary table of site level \text{$R^2_{VPD}$}, \text{$R^2_{SWC}$}, \text{$R^2_{PPFD}$}, climate, soil properties and vegetation structure data. PPET is in [mm \text{$mm^{-1}$}]; \text{$P-PET_{sd}$} is in [mm]; Clay and Sand are in [\%]; Total N is in [g \text{$kg^{-1}$}]; Stand height is in [m]; LAI is in [\text{$m^2_{leaves}\;m^2_{soil}$}]. Letters show data source: a = SAPFLUXNET, b = Global rasters, c = SAPFLUXNET plant height.}\\
+\caption[Summary table of plot level.]{\label{tab:unnamed-chunk-14}Summary table of site level $\text{R}^2_{\text{VPD}}$, $\text{R}^2_{\text{SWC}}$, $\text{R}^2_{\text{PPFD}}$, climate, soil properties and vegetation structure data. PPET is in [mm $\text{mm}^{-1}$], $\text{P-PET}_{\text{sd}}$ is in [mm], Clay and Sand are in [\%], Total N is in [g $\text{kg}^{-1}$], Stand height is in [m], LAI is in [$\text{m}^2_{\text{leaves}}\;\text{m}^2_{\text{soil}}$]. Letters show data source: a = SAPFLUXNET, b = Global rasters, c = SAPFLUXNET plant height.}\\
 \toprule
 \rotatebox{45}{Site code} & \rotatebox{45}{\text{$R^2_{vpd}$}} & \rotatebox{45}{\text{$R^2_{swc}$}} & \rotatebox{45}{\text{$R^2_{ppfd}$}} & \rotatebox{45}{Relimp VPD} & \rotatebox{45}{Relimp SWC} & \rotatebox{45}{Relimp PPFD} & \rotatebox{45}{PPET} & \rotatebox{45}{\text{$P-PET_{sd}$}} & \rotatebox{45}{Clay} & \rotatebox{45}{Sand} & \rotatebox{45}{Total N} & \rotatebox{45}{Bedrock} & \rotatebox{45}{Stand height} & \rotatebox{45}{LAI}\\
 \midrule
 \endfirsthead
-\caption[]{\label{tab:unnamed-chunk-10}Summary table of site level \text{$R^2_{VPD}$}, \text{$R^2_{SWC}$}, \text{$R^2_{PPFD}$}, climate, soil properties and vegetation structure data. PPET is in [mm \text{$mm^{-1}$}]; \text{$P-PET_{sd}$} is in [mm]; Clay and Sand are in [\%]; Total N is in [g \text{$kg^{-1}$}]; Stand height is in [m]; LAI is in [\text{$m^2_{leaves}\;m^2_{soil}$}]. Letters show data source: a = SAPFLUXNET, b = Global rasters, c = SAPFLUXNET plant height. \textit{(continued)}}\\
+\caption[]{\label{tab:unnamed-chunk-14}Summary table of site level $\text{R}^2_{\text{VPD}}$, $\text{R}^2_{\text{SWC}}$, $\text{R}^2_{\text{PPFD}}$, climate, soil properties and vegetation structure data. PPET is in [mm $\text{mm}^{-1}$], $\text{P-PET}_{\text{sd}}$ is in [mm], Clay and Sand are in [\%], Total N is in [g $\text{kg}^{-1}$], Stand height is in [m], LAI is in [$\text{m}^2_{\text{leaves}}\;\text{m}^2_{\text{soil}}$]. Letters show data source: a = SAPFLUXNET, b = Global rasters, c = SAPFLUXNET plant height. \textit{(continued)}}\\
 \toprule
 \rotatebox{45}{Site code} & \rotatebox{45}{\text{$R^2_{vpd}$}} & \rotatebox{45}{\text{$R^2_{swc}$}} & \rotatebox{45}{\text{$R^2_{ppfd}$}} & \rotatebox{45}{Relimp VPD} & \rotatebox{45}{Relimp SWC} & \rotatebox{45}{Relimp PPFD} & \rotatebox{45}{PPET} & \rotatebox{45}{\text{$P-PET_{sd}$}} & \rotatebox{45}{Clay} & \rotatebox{45}{Sand} & \rotatebox{45}{Total N} & \rotatebox{45}{Bedrock} & \rotatebox{45}{Stand height} & \rotatebox{45}{LAI}\\
 \midrule
@@ -1130,13 +1707,14 @@ ZAF\_SOU\_SOU & 0.43 & 0.18 & 0.17 & 0.58 & 0.05 & 0.38 & 0.97 & 86.39 & 23.00 b
 ZAF\_WEL\_SOR & 0.63 & 0.29 & 0.32 & 0.66 & 0.05 & 0.29 & 0.50 & 79.71 & 20.00 a & 60.00 a & 0.81 & 179 & 25.00 a & 1.80 a\\*
 \end{longtable}
 \endgroup{}
-\end{landscape}\newpage
+\end{landscape}
+\newpage
 \begin{table}
 
-\caption[Table of equivalence between Whittaker biomes and the groups of biomes used in the study.]{\label{tab:unnamed-chunk-11}Table of equivalence between Whittaker biomes and the groups of biomes used in the study.}
+\caption[Table of equivalence between Whittaker biomes and the groups of biomes used in the study.]{\label{tab:unnamed-chunk-15}Table of equivalence between Whittaker biomes and the groups of biomes used in the study.}
 \centering
 \fontsize{6}{8}\selectfont
-\begin{tabular}[t]{cc}
+\begin{tabular}[t]{lc}
 \toprule
 Original biome name & Study biome group\\
 \midrule
@@ -1154,17 +1732,17 @@ Tropical seasonal forest/savanna & TROP\\
 \end{table}\newpage
 \begin{table}
 
-\caption[Table of equivalence between Whittaker biomes and the groups of biomes used in the study.]{\label{tab:unnamed-chunk-12}Average contribution of the predictors in models of individual coupling (\text{$R^2_{VPD}$}, \text{$R^2_{swc}$}, \text{$R^2_{PPFD}$} and \text{$R^2_{TOTAL}$}) estimated using dominance analysis. log(PPET): logarithm of precipitation over potential evapotraspiration; log(\text{$P-PET_{sd}$}): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration; LAI: leaf area index. NI means that the variable was not included in the model after model selection.}
+\caption[Table of equivalence between Whittaker biomes and the groups of biomes used in the study.]{\label{tab:unnamed-chunk-16}Average contribution of the predictors in models of individual coupling ($\text{R}^2_{\text{VPD}}$, $\text{R}^2_{\text{SWC}}$, $\text{R}^2_{\text{PPFD}}$ and $\text{R}^2_{\text{TOTAL}}$) estimated using dominance analysis. log(PPET): logarithm of precipitation over potential evapotraspiration, log($\text{P-PET}_{\text{sd}}$): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration, LAI: leaf area index. NI means that the variable was not included in the model after model selection.}
 \centering
 \fontsize{6}{8}\selectfont
 \begin{tabular}[t]{cccccccc}
 \toprule
 $G_{\text{Asw}}$ coupling & log(PPET) & log(\text{$P-PET_{sd}$}) & Clay & Total Nitrogen & Bedrock depth & Stand Height & LAI\\
 \midrule
-R2VPD & 0.04 & 0.003 & 0.04 & 0.029 & NI & 0.06 & 0.015\\
-R2SWC & 0.11 & NI & 0.05 & NI & 0.002 & 0.05 & NI\\
-R2PPFD & 0.08 & 0.002 & 0.04 & 0.052 & NI & 0.11 & 0.017\\
-R2TOTAL & 0.04 & NI & 0.06 & 0.031 & NI & 0.01 & NI\\
+$\text{R}^2_{\text{VPD}}$ & 0.04 & 0.003 & 0.04 & 0.029 & NI & 0.06 & 0.015\\
+$\text{R}^2_{\text{SWC}}$ & 0.11 & NI & 0.05 & NI & 0.002 & 0.05 & NI\\
+$\text{R}^2_{\text{PPFD}}$ & 0.08 & 0.002 & 0.04 & 0.052 & NI & 0.11 & 0.017\\
+$\text{R}^2_{\text{TOTAL}}$ & 0.04 & NI & 0.06 & 0.031 & NI & 0.01 & NI\\
 \bottomrule
 \end{tabular}
 \end{table}\newpage
@@ -1196,7 +1774,7 @@ z = tree\ height\ + 2,\ d = 0.6(tree\ height),\ z_{0M}= 0.1(tree\ height),\ z_{0
 Lately, we calculated the boundary layer conductance following eq. 10 in
 Tan \emph{et al.} (2019):
 \begin{equation}
-g_{bN} = {\kappa\ u* \over ln\left({z_{0M} \over z_{0H}}\right)}
+g_{bN} = {{\kappa\ u*} \over {ln\left({z_{0M}} \over {z_{0H}}\right)}}
 \end{equation}
 Where \(u*\) {[}\(m\ s^{-1}\){]} is the friction velocity calculated
 inverting eq. 2 in Chu \emph{et al.} 2018:
@@ -1205,7 +1783,7 @@ u* = {\kappa \ u \over {ln[(z-d)/z_{0M}] + ln(1.25)}}
 \end{equation}
 Ultimately, \(G'_{Asw}\) was calculated as:
 \begin{equation}
-G'_{Asw}=G_{Asw} \ - \left({1 \over 1/g_{aM} + 1/g_{bN}}\right)
+G'_{Asw}= \left({1 \over 1/G_{Asw} \ - (1/g_{aM} + 1/g_{bN})}\right)
 \end{equation}
 Being \(G_{Asw}\) in {[}\(m \ s^{-1}\){]}. Finally, \(G'_{Asw}\) was
 transformed to {[}\(mol \ m^{-2}_{Asw} \ s^{-1}\){]}.
@@ -1219,13 +1797,12 @@ transformed to {[}\(mol \ m^{-2}_{Asw} \ s^{-1}\){]}.
 
 }
 
-\caption{PCA plot of water relations traits using imputations. $ln(|\Psi_{\text{P50}}|)$: logarithm of absolute water potential at 50\% water conductivity loss; $ln(K_{\text{s}})$: logarithm of maximum sapwood water conductivity; $ln(Hv)$: logarithm of Huber value; $|\Psi_{\text{TLP}}|$: absolute water potential at turgor-loss point; $R_{\text{depth}}$: rooting depth; $ln(L_{\text{s}})$: logarithm of individual leaf area.}\label{fig:unnamed-chunk-14}
+\caption{PCA plot of water relations traits using imputations. $ln(|\Psi_{\text{P50}}|)$: logarithm of absolute water potential at 50\% water conductivity loss; $ln(K_{\text{s}})$: logarithm of maximum sapwood water conductivity; $ln(Hv)$: logarithm of Huber value; $|\Psi_{\text{TLP}}|$: absolute water potential at turgor-loss point; $R_{\text{depth}}$: rooting depth; $ln(L_{\text{s}})$: logarithm of individual leaf area.}\label{fig:unnamed-chunk-18}
 \end{figure}
-\newgeometry{layout=a4paper,left=1in,right=0.2in,top=0.2in,bottom=0.2in,nohead}
 \begin{landscape}
 \begin{figure}[H]
 
-{\centering \includegraphics{figure/appendixD/fig17} 
+{\centering \includegraphics[width=0.9\linewidth]{figure/appendixD/fig17} 
 
 }
 
@@ -1233,7 +1810,6 @@ transformed to {[}\(mol \ m^{-2}_{Asw} \ s^{-1}\){]}.
 \end{figure}
 
 \end{landscape}
-\restoregeometry
 \begin{figure}[H]
 
 {\centering \includegraphics[width=1\linewidth]{figure/appendixD/ggg1} 
@@ -1282,7 +1858,7 @@ transformed to {[}\(mol \ m^{-2}_{Asw} \ s^{-1}\){]}.
 
 }
 
-\caption{Species $G_{Asw}$ responses to VPD. Each species have different curves representing distinct levels of SWC (from dark to light, 0.1, 0.2, 0.3 [$m^3 m^{-3}$]).}\label{fig:unnamed-chunk-21}
+\caption{Species $G_{Asw}$ responses to VPD. Each species have different curves representing distinct levels of SWC (from dark to light, 0.1, 0.2, 0.3 [$m^3 m^{-3}$]).}\label{fig:unnamed-chunk-25}
 \end{figure}
 \begin{figure}[H]
 
@@ -1332,7 +1908,7 @@ transformed to {[}\(mol \ m^{-2}_{Asw} \ s^{-1}\){]}.
 
 }
 
-\caption{Species $G_{Asw}$ responses to SWC. Curves are fitted using a VPD reference level of 1 kPa.}\label{fig:unnamed-chunk-28}
+\caption{Species $G_{Asw}$ responses to SWC. Curves are fitted using a VPD reference level of 1 kPa.}\label{fig:unnamed-chunk-32}
 \end{figure}
 \begin{figure}[H]
 
@@ -1371,7 +1947,7 @@ transformed to {[}\(mol \ m^{-2}_{Asw} \ s^{-1}\){]}.
 \section{Tables D}\label{tables-d}
 \begin{table}[H]
 
-\caption{\label{tab:plottreatment}SAPFLUXNET plot treatments included in this study (Poyatos $et al.$ 2020).}
+\caption{\label{tab:plottreatment}SAPFLUXNET plot treatments included in this study (Poyatos $et$ $al.$ 2020).}
 \centering
 \begin{tabular}[t]{l}
 \toprule
@@ -1406,12 +1982,12 @@ Pre Irrigation\\
 \end{table}
 \begingroup\fontsize{4.5}{6.5}\selectfont
 \begin{longtable}[t]{>{\em\raggedright\arraybackslash}p{10em}>{\raggedright\arraybackslash}p{4em}>{\raggedright\arraybackslash}p{4em}>{\raggedleft\arraybackslash}p{3em}>{\raggedleft\arraybackslash}p{2em}>{\raggedleft\arraybackslash}p{2em}>{\raggedleft\arraybackslash}p{3em}>{\raggedleft\arraybackslash}p{3em}>{\raggedleft\arraybackslash}p{3em}>{\raggedleft\arraybackslash}p{3em}>{\raggedleft\arraybackslash}p{3em}>{\raggedleft\arraybackslash}p{3em}}
-\caption{\label{tab:tabledata}Species resume table. CEP names are Cornell Ecology Programs species names. $\Psi_{\text{P50}}$: water potential at 50\% water conductivity loss [\text{$MPa$}]; $K_\text{s}$: maximum sapwood water conductivity[\text{$Kg\;m^{-1}\;MPa^{-1}\;s^{-1}$}]; $Hv$: Huber value [\text{$cm^2_{Asw}\;m^{-2}_{leaf\;area}$}]; $\Psi_{\text{TLP}}$: water potential at turgor-loss point[\text{$MPa$}]; $R_{\text{depth}}$: rooting depth [\text{$m$}]; $L_{\text{s}}$: individual leaf area [\text{$cm^2$}].}\\
+\caption{\label{tab:tabledata}Species resume table. CEP names are Cornell Ecology Programs species names. $\Psi_{\text{P50}}$: water potential at 50\% water conductivity loss [MPa], $K_\text{s}$: maximum sapwood water conductivity[Kg\;$\text{m}^{-1}\;\text{MPa}^{-1}\;\text{s}^{-1}$], $Hv$: Huber value [$\text{cm}^2_{\text{Asw}}\;\text{m}^{-2}_{\text{leaf}\;\text{area}}$], $\Psi_{\text{TLP}}$: water potential at turgor-loss point [MPa], $R_{\text{depth}}$: rooting depth [m], $L_{\text{s}}$: individual leaf area [$\text{cm}^2$].}\\
 \toprule
 \rotatebox{45}{$\text{Species}$} & \rotatebox{45}{$\text{CEP names}$} & \rotatebox{45}{$\text{Group}$} & \rotatebox{45}{$\# \; \text{tree-days}$} & \rotatebox{45}{$\# \; \text{trees}$} & \rotatebox{45}{$\# \; \text{plots}$} & \rotatebox{45}{$\Psi_{\text{P50}}$} & \rotatebox{45}{$K_{\text{s}}$} & \rotatebox{45}{$\Psi_{\text{TLP}}$} & \rotatebox{45}{$Hv$} & \rotatebox{45}{$R_{\text{depth}}$} & \rotatebox{45}{$L_{\text{s}}$}\\
 \midrule
 \endfirsthead
-\caption[]{\label{tab:tabledata}Species resume table. CEP names are Cornell Ecology Programs species names. $\Psi_{\text{P50}}$: water potential at 50\% water conductivity loss [\text{$MPa$}]; $K_\text{s}$: maximum sapwood water conductivity[\text{$Kg\;m^{-1}\;MPa^{-1}\;s^{-1}$}]; $Hv$: Huber value [\text{$cm^2_{Asw}\;m^{-2}_{leaf\;area}$}]; $\Psi_{\text{TLP}}$: water potential at turgor-loss point[\text{$MPa$}]; $R_{\text{depth}}$: rooting depth [\text{$m$}]; $L_{\text{s}}$: individual leaf area [\text{$cm^2$}]. \textit{(continued)}}\\
+\caption[]{\label{tab:tabledata}Species resume table. CEP names are Cornell Ecology Programs species names. $\Psi_{\text{P50}}$: water potential at 50\% water conductivity loss [MPa], $K_\text{s}$: maximum sapwood water conductivity[Kg\;$\text{m}^{-1}\;\text{MPa}^{-1}\;\text{s}^{-1}$], $Hv$: Huber value [$\text{cm}^2_{\text{Asw}}\;\text{m}^{-2}_{\text{leaf}\;\text{area}}$], $\Psi_{\text{TLP}}$: water potential at turgor-loss point [MPa], $R_{\text{depth}}$: rooting depth [m], $L_{\text{s}}$: individual leaf area [$\text{cm}^2$]. \textit{(continued)}}\\
 \toprule
 \rotatebox{45}{$\text{Species}$} & \rotatebox{45}{$\text{CEP names}$} & \rotatebox{45}{$\text{Group}$} & \rotatebox{45}{$\# \; \text{tree-days}$} & \rotatebox{45}{$\# \; \text{trees}$} & \rotatebox{45}{$\# \; \text{plots}$} & \rotatebox{45}{$\Psi_{\text{P50}}$} & \rotatebox{45}{$K_{\text{s}}$} & \rotatebox{45}{$\Psi_{\text{TLP}}$} & \rotatebox{45}{$Hv$} & \rotatebox{45}{$R_{\text{depth}}$} & \rotatebox{45}{$L_{\text{s}}$}\\
 \midrule

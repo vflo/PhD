@@ -65,7 +65,7 @@ knitr::kable(table1,"latex",booktabs = T, escape = FALSE,longtable = TRUE,linese
 \newpage
 
 
-```{r, echo = FALSE, message=FALSE,warning=FALSE}
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
 
 library(readr)
 library(tidyverse)
@@ -94,10 +94,8 @@ knitr::kable(table2, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE
     collapse_rows(columns = 1:2, valign = "top", latex_hline = "full")
 ```
 
-
-
-
 \newpage
+<!-- \newgeometry{layout=a4paper,left=1in,right=0.2in,top=0.2in,bottom=0.2in,nohead} -->
 \begin{landscape}
 
 ```{r, echo = FALSE, message=FALSE,warning=FALSE}
@@ -124,8 +122,495 @@ knitr::kable(table3, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE
 ```
 
 \end{landscape}
+<!-- \restoregeometry -->
+
+\newpage
+
+# Appendix Chapter 3
+\newpage
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# library(raster)
+library(flextable)
+library(pander)
+library(magrittr)
+library(readxl)
+library(tidyverse)
+library(ggrepel)
+library(cowplot)
+library(ggspatial)
+
+CapStr <- function(y) {
+  c <- strsplit(y, " ")[[1]]
+  paste(toupper(substring(y, 1,1)), substring(y, 2),
+      sep="", collapse=" ")
+}
+
+capitalize_str <- function(charcter_string){
+  sapply(charcter_string, CapStr)
+}
+
+source('~/PhD/Chapter3/Supplementary/metadata_wrangling.R')
+load('~/PhD/Chapter3/Supplementary/maps_base.RData')
+```
 
 
+
+##Figures B
+
+\setlength{\abovecaptionskip}{15pt}
+```{r, echo=FALSE,fig.align='center',out.width = '80%', fig.scap="Overview of the data QC process.", fig.cap='Overview of the data QC process, showing file management and identifying automatic (in yellow) and manual steps (in red).  The column on the left shows the different updates of the status file for each dataset and the column on the right shows generated data reports and steps requiring feedback or manual changes.'}
+# Doesn't work for Word visualisation
+#knitr::include_graphics('resources/QC_summary2.svg')
+
+knitr::include_graphics('figure/appendixB/QCsummary2.png')
+
+```
+\setlength{\abovecaptionskip}{0pt}
+\newpage
+
+\setlength{\abovecaptionskip}{15pt}
+```{r, echo=FALSE,  out.width = '70%', fig.align='center', fig.scap="Structure of sfn\\_data objects.", fig.cap="(a) Structure of sfn\\_data objects, which are based on the S4 class. Boxes in the figure represent different slots where data are stored. Each object is identified by the 'si\\_code', stored as a slot in the object, with the format of a character vector. Slots storing time series of data and the associated data flags are of class 'tibble' and have all the same number of rows (\\textit{i}), corresponding to the the number of timesteps in the dataset and labelled with two POSIXct timestamp vectors TIMESTAMP, solar\\_TIMESTAMP).The slot storing sap flow data, 'sapf\\_data' contains(\\textit{j}) columns and environmental data ('env\\_data') contains \\textit{k} columns, corresponding to the number of environmental variables present. Slots with the suffix 'md' refer to the different metadata and all are objects of class 'tibble' with different dimensions. For example, the number of rows in plant\\_md' depends on the number of plants in the dataset (and this is depicted by the different length of the box). More information on the 'sfn\\_data' class objects can be found in the vignette 'sfn-data-classes' of the package \\textit{sapfluxnetr} (Granda et al. 2020). (b) Summary of an sfn\\_data object, showing highlights of site metadata, data dimensions, timestamp span and flags present on the data."}
+# Doesn't work for Word visualisation
+
+#knitr::include_graphics('resources/QC_summary2.svg')
+
+knitr::include_graphics('figure/appendixB/schematics.png')
+
+```
+\setlength{\abovecaptionskip}{0pt}
+\newpage
+
+\setlength{\abovecaptionskip}{15pt}
+```{r, echo=FALSE,  out.width = '100%', fig.align='center', fig.scap="Example screenshot of the app used for handling outliers and out of range values in time series.", fig.cap='Example screenshot of the app used for handling outliers and out of range values in time series. The left column shows dataset and variable selection. The central part shows the time series, with out of range values in red and possible outliers in yellow. Rows to replace or remove are selected in a table and written to a text file when done.'}
+# Doesn't work for Word visualisation
+
+#knitr::include_graphics('resources/QC_summary2.svg')
+
+knitr::include_graphics('figure/appendixB/outapp.png')
+
+```
+\setlength{\abovecaptionskip}{0pt}
+\newpage
+
+\setlength{\abovecaptionskip}{15pt}
+```{r regionalmaps, out.width = '100%',echo=FALSE, message=FALSE, warning=FALSE,fig.scap='Detailed geographic distribution of SAPFLUXNET datasets', fig.cap="Detailed geographic distribution of SAPFLUXNET datasets. Datasets are labelled by dataset number in Table S4. Woodland area from Crowther et al. (2015) shown in green."}
+
+source('~/PhD/Chapter3/Supplementary/sfn_datapaper_functions.R')
+# a) Site labels
+
+# b) Select countries to plot
+#
+# countries_sfn <- unique(sapply(strsplit(sfn_allsites$si_code,"_"),"[[",1))
+# countries_label <- c('ARG','BRA','COL','CRI','CHN','GUF','IDN','ISR','JPN','KOR','MDG','MEX','NZL','RUS','SEN','THA','UZB')
+# countries_europe <- c('AUT','CHE','CZE','DEU','ESP','FIN','FRA','GBR','HUN','ITA','NLD','PRT','SWE')
+# countries_america <- c('CAN','USA')
+# countries_austral <- c('AUS')
+# countries_africa <- c('MDG','ZAF')
+#
+#
+# # c) Add numeric codes
+#
+# sfn_allsites_country<- sfn_allsites %>%
+#   mutate(country=sapply(strsplit(si_code,"_"),"[[",1),
+#          num_code = as.integer(factor(si_code)))
+#
+#
+# sfn_allsites_country %>%
+#   dplyr::filter(country%in%countries_europe | si_code%in%c('RUS_FYO')) %>%
+#   dplyr::filter(si_code%ni%c('ESP_LAS','FIN_PET')) -> sfn_sites_europe
+#
+#
+# sfn_allsites_country %>%
+#   dplyr::filter(country%in%countries_label
+#                 | si_code%in%c('ESP_LAS','FIN_PET','USA_BNZ_BLA','AUS_KAR')) -> sfn_sites_world
+#
+# sfn_allsites_country %>%
+#   dplyr::filter(country%in%countries_america & si_code%ni%c('USA_BNZ_BLA')) -> sfn_sites_america
+#
+# # 3. Map, numeric codes, ggrepel not aligned ------------------------------------------------------
+#
+# # world
+# sfnsites_world_dr <- globforest_rec_0_1  +
+#   geom_point(data=sfn_allsites,aes(x=si_long,y=si_lat),shape=21,color='black',fill='royalblue',alpha=0.5)+
+#   geom_text_repel(data = sfn_sites_world,
+#                   aes(si_long, si_lat, label = num_code), size = 3,
+#                   segment.alpha=0.5,  nudge_x = -0.35,direction = "both",
+#                   box.padding = unit(0.1, 'lines'), force = 0.5)+geom_label_repel()+guides(fill='none')+xlab(NULL)+ylab(NULL)
+#
+# # europe
+# sfnsites_europe_dr<- globforest_rec_0_1  +
+#   geom_point(data=sfn_allsites,aes(x=si_long,y=si_lat),shape=21,color='black',fill='royalblue',alpha=0.5)+
+#   geom_text_repel(data = sfn_sites_europe,
+#                   aes(si_long, si_lat, label = num_code), size = 3,
+#                   segment.alpha=0.5,  nudge_y = -0.35,direction = "both",
+#                   box.padding = unit(0.1, 'lines'), force = 0.5)+
+#   coord_sf(xlim = c(-20, 40), ylim = c(32, 67), expand = FALSE)+
+#   geom_label_repel()+guides(fill='none')+xlab(NULL)+ylab(NULL)
+#
+# # america
+# sfnsites_america_dr<- globforest_rec_0_1  +
+#   geom_point(data=sfn_allsites,aes(x=si_long,y=si_lat),shape=21,color='black',fill='royalblue',alpha=0.5)+
+#   geom_text_repel(data = sfn_sites_america,
+#                   aes(si_long, si_lat, label = num_code), size = 3,
+#                   segment.alpha=0.5,  nudge_x = -0.35,direction = "both",
+#                   box.padding = unit(0.1, 'lines'), force = 0.5)+
+#   coord_sf(xlim = c(-130, -60), ylim = c(30, 55), expand = FALSE)+
+#   geom_label_repel()+guides(fill='none')+xlab(NULL)+ylab(NULL)
+#
+# # austral
+# sfnsites_austral_dr<- globforest_rec_0_1  +
+#   geom_point(data=sfn_allsites,aes(x=si_long,y=si_lat),shape=21,color='black',fill='royalblue',alpha=0.5)+
+#   geom_text_repel(data = subset(sfn_allsites_country,country%in%countries_austral),
+#                   aes(si_long, si_lat, label = num_code), size = 3,
+#                   segment.alpha=0.5,  nudge_x = -0.35,
+#                   box.padding = unit(0.1, 'lines'), force = 0.5)+
+#   coord_sf(xlim = c(110, 155), ylim = c(-45, -10), expand = FALSE)+
+#   geom_label_repel()+guides(fill='none')+xlab(NULL)+ylab(NULL)
+#
+# # africa
+# sfnsites_africa_dr<- globforest_rec_0_1  +
+#   geom_point(data=sfn_allsites,aes(x=si_long,y=si_lat),shape=21,color='black',fill='royalblue',alpha=0.5)+
+#   geom_text_repel(data = subset(sfn_allsites_country,country%in%countries_africa), aes(si_long, si_lat, label = num_code), size = 3,
+#                   box.padding = unit(0.1, 'lines'), force = 0.5)+
+#   coord_sf(xlim = c(10, 50), ylim = c(-40, -10), expand = FALSE)+
+#   geom_label_repel()+guides(fill='none')+xlab(NULL)+ylab(NULL)
+#
+#
+#
+# # e) Build figure
+#
+# plot_grid(
+#   plot_grid(sfnsites_world_dr,ncol=1,nrow=1,labels=c('a)')),
+#   plot_grid(sfnsites_europe_dr,sfnsites_austral_dr,ncol=2,nrow=1,rel_widths=c(1,0.7),labels=c('b)','c)')), #problem here?
+#   plot_grid(sfnsites_america_dr,sfnsites_africa_dr,ncol=2,nrow=1,rel_widths=c(1,0.7),labels=c('d)','e)')),
+#   nrow=3,rel_heights=c(1,1,0.7))
+
+knitr::include_graphics('figure/appendixB/regionalmaps.png')
+
+```
+\setlength{\abovecaptionskip}{0pt}
+
+##Tables B
+
+```{r tableQC1, echo=FALSE}
+
+readxl::read_xlsx('~/PhD/Chapter3/Supplementary/resources/table_QC1_checks.xlsx',1) %>%
+  knitr::kable("latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Data checks implemented in the first level of data quality control (QC1).", caption = "Data checks implemented in the first level of data quality control (QC1).")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>% 
+    column_spec(c(2), width = '20em') 
+
+```
+
+\newpage
+
+```{r tabsitemd, echo=FALSE}
+
+sapfluxnetr:::.metadata_architecture() %>%
+  magrittr::extract2(., 'site_md') %>%
+  purrr::map_dfr(magrittr::extract, c('description', 'type', 'units')) %>%
+  dplyr::mutate(
+    variable = sapfluxnetr:::.metadata_architecture() %>%
+      magrittr::extract2(., 'site_md') %>%
+      names()
+  ) %>%
+  dplyr::select(variable, everything()) -> table2
+table2$variable <- c('si\\_name',
+                     'si\\_country',
+                     'si\\_contact\\_firstname',
+                     'si\\_contact\\_lastname',	
+                     'si\\_contact\\_email',	
+                     'si\\_contact\\_institution',
+                     'si\\_addcontr\\_firstname',	
+                     'si\\_addcontr\\_lastname',
+                     'si\\_addcontr\\_email',
+                     'si\\_addcontr\\_institution',
+                     'si\\_lat',	
+                     'si\\_long',	
+                     'si\\_elev',	
+                     'si\\_paper',	
+                     'si\\_dist\\_mgmt',	
+                     'si\\_igbp',	
+                     'si\\_flux\\_network',
+                     'si\\_dendro\\_network',	
+                     'si\\_remarks',	
+                     'si\\_code',
+                     'si\\_mat',	
+                     'si\\_map',	
+                     'si\\_biome')
+  
+colnames(table2) <- capitalize_str(colnames(table2))
+  # mutate_all(~gsub("_", "\\_", .)) %>% 
+  knitr::kable(table2,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Description of site metadata variables.", caption = "Description of site metadata variables.")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>% 
+    column_spec(c(2), width = '20em') %>% 
+    column_spec(c(4), width = '8em')
+
+```
+\newpage
+
+```{r tabstandmd, echo=FALSE}
+
+sapfluxnetr:::.metadata_architecture() %>%
+  magrittr::extract2(., 'stand_md') %>%
+  purrr::map_dfr(magrittr::extract, c('description', 'type', 'units')) %>%
+  dplyr::mutate(
+    variable = sapfluxnetr:::.metadata_architecture() %>%
+      magrittr::extract2(., 'stand_md') %>%
+      names()
+  )  %>%
+  dplyr::select(variable, everything()) -> table3
+  
+table3$variable <- c('st\\_name',
+                     'st\\_growth\\_condition',
+                     'st\\_treatment',
+                     'st\\_age',
+                     'st\\_height',
+                     'st\\_density',
+                     'st\\_basal\\_area',
+                     'st\\_lai',
+                     'st\\_aspect',
+                     'st\\_terrain',
+                     'st\\_soil\\_depth',
+                     'st\\_soil\\_texture',
+                     'st\\_sand\\_perc',
+                     'st\\_silt\\_perc',
+                     'st\\_clay\\_perc',
+                     'st\\_remarks',
+                     'st\\_USDA\\_soil\\_texture')
+
+table3[c(13:15),2]<-c('Soil sand content, \\% mass',
+                      'Soil silt content, \\% mass',
+                      'Soil clay content, \\% mass')
+
+table3[c(13:15),4]<-c('\\% percentage',
+                      '\\% percentage',
+                      '\\% percentage')
+
+table3[c(6:8),4]<-c('stems $\\text{ha}^-1$',
+                      '$\\text{m}^2$ $\\text{ha}^{-1}$',
+                      '$\\text{m}^2$ $\\text{m}^{-2}$')
+
+colnames(table3) <- capitalize_str(colnames(table3))
+
+  knitr::kable(table3,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Description of site metadata variables.", caption = "Description of site metadata variables.")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>% 
+    column_spec(c(2), width = '20em')
+
+```
+\newpage
+
+```{r tabspeciesmd, echo=FALSE}
+
+sapfluxnetr:::.metadata_architecture() %>%
+  magrittr::extract2(., 'species_md') %>%
+  purrr::map_dfr(magrittr::extract, c('description', 'type', 'units')) %>%
+  dplyr::mutate(
+    variable = sapfluxnetr:::.metadata_architecture() %>%
+      magrittr::extract2(., 'species_md') %>%
+      names()
+  ) %>%
+  dplyr::select(variable, everything()) -> table4
+
+table4$variable <- c('sp\\_name',
+                     'sp\\_ntrees',
+                     'sp\\_leaf\\_habit',
+                     'sp\\_basal\\_area\\_perc')
+
+table4[4,4]<-c('\\% percentage')
+
+colnames(table4) <- capitalize_str(colnames(table4))
+
+    knitr::kable(table4,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Description of species metadata variables.", caption = "Description of species metadata variables.")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>%
+    column_spec(c(2,4), width = '20em')
+
+```
+
+
+```{r tabplantmd, echo=FALSE}
+
+sapfluxnetr:::.metadata_architecture() %>%
+  magrittr::extract2(., 'plant_md') %>%
+  purrr::map_dfr(magrittr::extract, c('description', 'type', 'units')) %>%
+  dplyr::mutate(
+    variable = sapfluxnetr:::.metadata_architecture() %>%
+      magrittr::extract2(., 'plant_md') %>%
+      names()
+  ) %>%
+  dplyr::select(variable, everything())-> table5
+
+table5$variable <- c('pl\\_name',
+                     'pl\\_species',
+                     'pl\\_treatment',
+                     'pl\\_dbh',
+                     'pl\\_height',
+                     'pl\\_age',
+                     'pl\\_social',
+                     'pl\\_sapw\\_area',
+                     'pl\\_sapw\\_depth',
+                     'pl\\_bark\\_thick',
+                     'pl\\_leaf\\_area',
+                     'pl\\_sens\\_meth',
+                     'pl\\_sens\\_man',
+                     'pl\\_sens\\_cor\\_grad',
+                     'pl\\_sens\\_cor\\_zero',
+                     'pl\\_sens\\_calib',
+                     'pl\\_sap\\_units',
+                     'pl\\_sap\\_units\\_orig',
+                     'pl\\_sens\\_length',
+                     'pl\\_sens\\_hgt',
+                     'pl\\_sens\\_timestep',
+                     'pl\\_radial\\_int',
+                     'pl\\_azimut\\_int',
+                     'pl\\_remarks',
+                     'pl\\_code')
+
+table5[c(8,11),4]<-c('$\\text{cm}^2$',
+                      '$\\text{m}^2$')
+
+colnames(table5) <- capitalize_str(colnames(table5))
+
+    knitr::kable(table5,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Description of plant metadata variables.", caption = "Description of plant metadata variables.")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>%
+    column_spec(c(2), width = '20em')%>%
+    column_spec(c(4), width = '12em')
+
+```
+\newpage
+
+```{r tabenvmd, echo=FALSE}
+
+sapfluxnetr:::.metadata_architecture() %>%
+  magrittr::extract2(., 'env_md') %>%
+  purrr::map_dfr(magrittr::extract, c('description', 'type', 'units')) %>%
+  dplyr::mutate(
+    variable = sapfluxnetr:::.metadata_architecture() %>%
+      magrittr::extract2(., 'env_md') %>%
+      names()
+  ) %>%
+  dplyr::select(variable, everything()) -> table6
+
+table6$variable <- c('env\\_time\\_zone',
+                     'env\\_time\\_daylight',
+                     'env\\_timestep',
+                     'env\\_ta',
+                     'env\\_rh',
+                     'env\\_vpd',
+                     'env\\_sw\\_in',
+                     'env\\_ppfd\\_in',
+                     'env\\_netrad',
+                     'env\\_ws',
+                     'env\\_precip',
+                     'env\\_swc\\_shallow\\_depth',
+                     'env\\_swc\\_deep\\_depth',
+                     'env\\_plant\\_watpot',
+                     'env\\_leafarea\\_seasonal',
+                     'env\\_remarks'
+                    )
+
+colnames(table6) <- capitalize_str(colnames(table6))
+
+    knitr::kable(table6,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Description of environmental metadata variables.", caption = "Description of environmental metadata variables.")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>%
+    column_spec(c(2), width = '20em')
+
+
+
+
+```
+\newpage
+
+```{r tableQC2, echo=FALSE}
+
+readxl::read_xlsx('~/PhD/Chapter3/Supplementary/resources/table_QC2_checks.xlsx',1)->table7
+table7[1,2] <-"Sap flow expressed in $\\text{cm}^3$ $\\text{h}^{-1}$, sap flow per unit leaf\\/sapwood area in $\\text{cm}^3$ $\\text{cm}^{-2}$ $\\text{h}^{-1}$" 
+
+table7[4,2] <-"Interconversion between global radiation (sw\\_in) and photosynthetically active radiation (ppfd\\_in)"
+
+  knitr::kable(table7, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Data checks implemented in the second level of data quality control (QC2).", caption = "Data checks implemented in the second level of data quality control (QC2).")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>% 
+    column_spec(c(2), width = '20em') 
+```
+\newpage
+
+```{r tabsites, echo=FALSE, message=FALSE, warning=FALSE}
+
+#  sfn_sites_nspecies %>%
+#    left_join(sfn_allsites %>% dplyr::select(si_code,si_name,si_elev)) %>%
+#    mutate(country=sapply(strsplit(si_code,"_"),"[[",1),
+#           si_elev=as.integer(si_elev),
+#           num_code = as.integer(factor(si_code)))%>%
+#    mutate_at(vars(si_lat,si_long),round,2) %>%
+#    dplyr::select(num_code,si_code,si_name,si_lat, si_long,si_elev,nspecies) -> table8
+# #underbars must be modified manually as \\_
+# write_csv(table8,path = "data/table8B.csv")
+
+table8 <- read_csv("data/appendixB/table8B.csv")
+
+colnames(table8) <- c(colnames(table8)[-6],"\\# species")
+
+  knitr::kable(table8, "latex", booktabs = TRUE, escape = FALSE, longtable = TRUE, linesep = "",
+             digits=2 , align = c('l',rep('c',5)), caption.short = "Datasets in the SAPFLUXNET database identified by numeric code, dataset code and site name.", caption = "Datasets in the SAPFLUXNET database identified by numeric code, dataset code and site name. Number of species per dataset, geographic coordinates and elevation are also shown. Negative coordinate values are shown for Southern and Western Hemispheres.")%>%
+    kableExtra::kable_styling(latex_options = c("repeat_header","HOLD_position"),font_size = 7) %>% 
+    column_spec(c(2), width = '12em')
+
+```
+\newpage
+
+<!-- \newgeometry{layout=a4paper,left=2in,right=0.2in,top=0.2in,bottom=0.2in,nohead} -->
+\begin{landscape}
+```{r tabntreesspecies, echo=FALSE, message=FALSE, warning=FALSE}
+
+sfn_species_ntrees %>%
+  left_join(sfn_nspecies_dataset,by=c('species'='sp_name')) %>%
+  dplyr::select(species,n_trees,n_sites) -> sfn_species_ntrees_reduced
+
+sfn_species_ntrees_reduced$species <- paste0("$",
+                                             gsub(" ","$ $",sfn_species_ntrees_reduced$species),
+                                             "$")
+
+colnames(sfn_species_ntrees_reduced) <- c("Species", "\\# trees", "\\# sites")
+
+data.frame(sfn_species_ntrees_reduced[1:58,],
+          sfn_species_ntrees_reduced[59:116,],
+           sfn_species_ntrees_reduced[117:174,],check.names = FALSE) %>% 
+  knitr::kable("latex", booktabs = TRUE, escape = FALSE, longtable = TRUE, linesep = "",
+             digits=2 , align = rep(c('l','c','c'),3), caption.short = "Number of plants and number of datasets for each species present in the SAPFLUXNET database.", caption = "Number of plants and number of datasets for each species present in the SAPFLUXNET database.")%>%
+    kableExtra::kable_styling(latex_options = c("repeat_header","HOLD_position"),font_size = 7,
+                              position = "center") %>% 
+  column_spec(c(1,4,7),width = "12em") %>%
+  column_spec(c(2,3,5,6,8,9),width = "3.5em")
+
+```
+\newpage
+\end{landscape}
+<!-- \restoregeometry -->
+```{r tabntreesgenus, echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE, results="asis"}
+sfn_genus_ntrees$genus_f<- paste0("$",sfn_genus_ntrees$genus_f,"$")
+
+table10 <- data.frame(sfn_genus_ntrees[1:32,],
+          sfn_genus_ntrees[33:64,],
+        rbind(sfn_genus_ntrees[65:95,],as_tibble_row(c(genus_f=NA,n_trees=''))),
+        check.names = FALSE)
+
+
+colnames(table10) <- c("Genus", "\\# trees","Genus", "\\# trees","Genus", "\\# trees")
+
+knitr::kable(table10,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = rep(c('l','c'),3), caption.short = "Number of plants per genus present in the SAPFLUXNET database.", caption = "Number of plants per genus present in the SAPFLUXNET database.")%>%
+    kableExtra::kable_styling(latex_options = c("repeat_header","HOLD_position"),font_size = 8,
+                              position = "center")
+
+```
 \newpage
 
 # Appendix Chapter 4
@@ -211,11 +696,12 @@ table2 <- read_delim("data/appendixC/plot_treatment.csv",
 
 
 knitr::kable(table2, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
-             digits=2 , align = 'c', caption.short = "SAPFLUXNET stand treatments included in the this study (Poyatos $et al.$ 2020).", caption = "SAPFLUXNET stand treatments included in the this study (Poyatos $et al.$ 2020).")%>%
-    kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 6)
+             digits=2 , align = 'l', caption.short = "SAPFLUXNET stand treatments included in the this study (Poyatos $et$ $al.$ 2020).", caption = "SAPFLUXNET stand treatments included in the this study (Poyatos $et$ $al.$ 2020).")%>%
+    kableExtra::kable_styling(latex_options = c("HOLD_position","scale_down"))
 ```
 \newpage
 
+<!-- \newgeometry{layout=a4paper,left=1in,right=0.2in,top=0.2in,bottom=0.2in,nohead} -->
 \begin{landscape}
 ```{r, echo = FALSE, message=FALSE,warning=FALSE}
 
@@ -233,13 +719,14 @@ table3 <- read_delim("data/appendixC/resume_table2.csv",
 
 
 knitr::kable(table3, "latex", booktabs = TRUE, escape = FALSE, longtable = TRUE, linesep = "",
-             digits=2 , align = 'c', caption.short = "Summary table of plot level.", caption = "Summary table of site level \\text{$R^2_{VPD}$}, \\text{$R^2_{SWC}$}, \\text{$R^2_{PPFD}$}, climate, soil properties and vegetation structure data. PPET is in [mm \\text{$mm^{-1}$}]; \\text{$P-PET_{sd}$} is in [mm]; Clay and Sand are in [\\%]; Total N is in [g \\text{$kg^{-1}$}]; Stand height is in [m]; LAI is in [\\text{$m^2_{leaves}\\;m^2_{soil}$}]. Letters show data source: a = SAPFLUXNET, b = Global rasters, c = SAPFLUXNET plant height.")%>%
+             digits=2 , align = 'c', caption.short = "Summary table of plot level.", caption = "Summary table of site level $\\text{R}^2_{\\text{VPD}}$, $\\text{R}^2_{\\text{SWC}}$, $\\text{R}^2_{\\text{PPFD}}$, climate, soil properties and vegetation structure data. PPET is in [mm $\\text{mm}^{-1}$], $\\text{P-PET}_{\\text{sd}}$ is in [mm], Clay and Sand are in [\\%], Total N is in [g $\\text{kg}^{-1}$], Stand height is in [m], LAI is in [$\\text{m}^2_{\\text{leaves}}\\;\\text{m}^2_{\\text{soil}}$]. Letters show data source: a = SAPFLUXNET, b = Global rasters, c = SAPFLUXNET plant height.")%>%
     kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 5) %>% 
   row_spec(0, angle = 45) %>% 
   column_spec(c(2:14), width = "3.5em")%>% 
   column_spec(c(1), width = "8em")
 ```
 \end{landscape}
+<!-- \restoregeometry -->
 \newpage
 
 
@@ -259,7 +746,7 @@ table4 <- read_delim("data/appendixC/tableS4.csv",
 
 
 knitr::kable(table4, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
-             digits=2 , align = 'c', caption.short = "Table of equivalence between Whittaker biomes and the groups of biomes used in the study.", caption = "Table of equivalence between Whittaker biomes and the groups of biomes used in the study.")%>%
+             digits=2 , align = c('l','c'), caption.short = "Table of equivalence between Whittaker biomes and the groups of biomes used in the study.", caption = "Table of equivalence between Whittaker biomes and the groups of biomes used in the study.")%>%
     kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 6)
 ```
 \newpage
@@ -279,9 +766,14 @@ table5 <- read_delim("data/appendixC/TableS5.csv",
     ",", escape_double = FALSE, 
     trim_ws = TRUE)
 
+table5[,1] <- c('$\\text{R}^2_{\\text{VPD}}$',
+                '$\\text{R}^2_{\\text{SWC}}$',
+                '$\\text{R}^2_{\\text{PPFD}}$',
+                '$\\text{R}^2_{\\text{TOTAL}}$')
+
 
 knitr::kable(table5, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
-             digits=2 , align = 'c', caption.short = "Table of equivalence between Whittaker biomes and the groups of biomes used in the study.", caption = "Average contribution of the predictors in models of individual coupling (\\text{$R^2_{VPD}$}, \\text{$R^2_{swc}$}, \\text{$R^2_{PPFD}$} and \\text{$R^2_{TOTAL}$}) estimated using dominance analysis. log(PPET): logarithm of precipitation over potential evapotraspiration; log(\\text{$P-PET_{sd}$}): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration; LAI: leaf area index. NI means that the variable was not included in the model after model selection.")%>%
+             digits=2 , align = 'c', caption.short = "Table of equivalence between Whittaker biomes and the groups of biomes used in the study.", caption = "Average contribution of the predictors in models of individual coupling ($\\text{R}^2_{\\text{VPD}}$, $\\text{R}^2_{\\text{SWC}}$, $\\text{R}^2_{\\text{PPFD}}$ and $\\text{R}^2_{\\text{TOTAL}}$) estimated using dominance analysis. log(PPET): logarithm of precipitation over potential evapotraspiration, log($\\text{P-PET}_{\\text{sd}}$): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration, LAI: leaf area index. NI means that the variable was not included in the model after model selection.")%>%
     kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 6)
 ```
 \newpage
@@ -593,7 +1085,7 @@ z = tree\ height\ + 2,\ d = 0.6(tree\ height),\ z_{0M}= 0.1(tree\ height),\ z_{0
 \end{equation}
 Lately, we calculated the boundary layer conductance following eq. 10 in Tan *et al.* (2019):
 \begin{equation}
-g_{bN} = {\kappa\ u* \over ln\left({z_{0M} \over z_{0H}}\right)}
+g_{bN} = {{\kappa\ u*} \over {ln\left({z_{0M}} \over {z_{0H}}\right)}}
 \end{equation}
 Where $u*$ [$m\ s^{-1}$] is the friction velocity calculated inverting eq. 2 in Chu *et al.* 2018:
 \begin{equation}
@@ -601,7 +1093,7 @@ u* = {\kappa \ u \over {ln[(z-d)/z_{0M}] + ln(1.25)}}
 \end{equation}
 Ultimately, $G'_{Asw}$ was calculated as:
 \begin{equation}
-G'_{Asw}=G_{Asw} \ - \left({1 \over 1/g_{aM} + 1/g_{bN}}\right)
+G'_{Asw}= \left({1 \over 1/G_{Asw} \ - (1/g_{aM} + 1/g_{bN})}\right)
 \end{equation}
 Being $G_{Asw}$ in [$m \ s^{-1}$]. Finally, $G'_{Asw}$ was transformed to [$mol \ m^{-2}_{Asw} \ s^{-1}$].
 
@@ -694,16 +1186,16 @@ knitr::include_graphics(c("figure/appendixD/figpca.pdf"))
 <!-- ``` -->
 
 
-\newgeometry{layout=a4paper,left=1in,right=0.2in,top=0.2in,bottom=0.2in,nohead}
+<!-- \newgeometry{layout=a4paper,left=1in,right=0.2in,top=0.2in,bottom=0.2in,nohead} -->
 \begin{landscape}
 
-```{r spparamplot, echo=FALSE, fig.cap="Water use parameters at the species level. Grey dashed lines are the weighted mean of the parameters",  fig.align='center'}
+```{r spparamplot, echo=FALSE, out.width = '90%', fig.cap="Water use parameters at the species level. Grey dashed lines are the weighted mean of the parameters",  fig.align='center'}
 knitr::include_graphics(c("figure/appendixD/fig17.pdf"))
 ```
 
 
 \end{landscape}
-\restoregeometry
+<!-- \restoregeometry -->
 
 
 
@@ -1537,7 +2029,7 @@ knitr::include_graphics(c("figure/appendixD/figanggym.pdf"))
 plot_treat <- readr::read_csv(file="~/PhD/Thesis_book_format/index/data/appendixD/plot_treatment.csv")
 
     knitr::kable(plot_treat,"latex",booktabs = T, escape = FALSE,longtable = FALSE,linesep = "",
-                 caption = "SAPFLUXNET plot treatments included in this study (Poyatos $et al.$ 2020).") %>% 
+                 caption = "SAPFLUXNET plot treatments included in this study (Poyatos $et$ $al.$ 2020).") %>% 
       kableExtra::kable_styling(latex_options = "HOLD_position")
 
 ```
@@ -1586,8 +2078,10 @@ df[is.nan(df)] <- NA
 df <- df[order(df$`$\\text{Species}$`),]
 
     knitr::kable(df,"latex",booktabs = T, escape = FALSE,longtable = TRUE,linesep = "",
-                 caption = "Species resume table. CEP names are Cornell Ecology Programs species names. $\\Psi_{\\text{P50}}$: water potential at 50\\% water conductivity loss [\\text{$MPa$}]; $K_\\text{s}$: maximum sapwood water conductivity[\\text{$Kg\\;m^{-1}\\;MPa^{-1}\\;s^{-1}$}]; $Hv$: Huber value [\\text{$cm^2_{Asw}\\;m^{-2}_{leaf\\;area}$}]; $\\Psi_{\\text{TLP}}$: water potential at turgor-loss point[\\text{$MPa$}]; $R_{\\text{depth}}$: rooting depth [\\text{$m$}]; $L_{\\text{s}}$: individual leaf area [\\text{$cm^2$}].") %>%
-    kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 4.5)%>%
+                 caption = "Species resume table. CEP names are Cornell Ecology Programs species names. $\\Psi_{\\text{P50}}$: water potential at 50\\% water conductivity loss [MPa], $K_\\text{s}$: maximum sapwood water conductivity[Kg\\;$\\text{m}^{-1}\\;\\text{MPa}^{-1}\\;\\text{s}^{-1}$], $Hv$: Huber value [$\\text{cm}^2_{\\text{Asw}}\\;\\text{m}^{-2}_{\\text{leaf}\\;\\text{area}}$], $\\Psi_{\\text{TLP}}$: water potential at turgor-loss point [MPa], $R_{\\text{depth}}$: rooting depth [m], $L_{\\text{s}}$: individual leaf area [$\\text{cm}^2$].") %>%
+    kableExtra::kable_styling(latex_options = c("repeat_header"),
+                              font_size = 4.5,
+                              position = "center")%>%
       row_spec(0, angle = 45) %>%
       column_spec(1, italic =T,width = "10em") %>% 
       column_spec(c(4),width = "3em")%>% 

@@ -7,11 +7,14 @@
 \contentsline {chapter}{Appendix A: Appendix Chapter 2}{3}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Figures A}{4}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Tables A}{7}{section.A.2}%
-\contentsline {chapter}{Appendix B: Appendix Chapter 4}{13}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Figures C}{14}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Tables C}{18}{section.B.2}%
-\contentsline {chapter}{Appendix C: Appendix Chapter 5}{29}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Notes D}{30}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Figures D}{31}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Tables D}{51}{section.C.3}%
-\contentsline {chapter}{References}{59}{appendix*.44}%
+\contentsline {chapter}{Appendix B: Appendix Chapter 3}{13}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Figures B}{15}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Tables B}{20}{section.B.2}%
+\contentsline {chapter}{Appendix C: Appendix Chapter 4}{37}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Figures C}{38}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Tables C}{42}{section.C.2}%
+\contentsline {chapter}{Appendix D: Appendix Chapter 5}{53}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Notes D}{54}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Figures D}{55}{section.D.2}%
+\contentsline {section}{\numberline {D.3}Tables D}{76}{section.D.3}%
+\contentsline {chapter}{References}{83}{appendix*.56}%

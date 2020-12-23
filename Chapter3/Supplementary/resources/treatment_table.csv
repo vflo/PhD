@@ -1,0 +1,14 @@
+st_treatment,n_sites,n_plants,n_species
+None/control,155,2198,170
+Thinning,18,332,18
+Irrigation,9,36,4
+Post-fire,6,18,4
+CO2 fertilisation,3,28,2
+Drought,3,9,2
+Soil fertilisation,2,16,2
+Post-mortality,1,22,5
+Soil fertilisation and pruning,1,12,1
+Soil fertilisation and thinning,1,12,1
+Pruning and thinning,1,11,1
+"Soil fertilisation, pruning and thinning",1,11,1
+Pruning,1,9,1

@@ -8,7 +8,7 @@ advisor: 'Rafael Poyatos López'
 altadvisor: 'Jordi Martínez Vilalta'
 department: 'Centre de Recerca Ecològica i Aplicacions Forestals'
 degree: 'DOCTORADO EN ECOLOGIA TERRESTRE'
-title: 'Global ecological drivers of transpiration regulation in woody plants'
+title: 'Global ecological drivers of transpiration regulation in trees'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 #geometry: paperheight=237mm,paperwidth=168mm

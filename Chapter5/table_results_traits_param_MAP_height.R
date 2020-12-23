@@ -30,7 +30,7 @@ table_results_traits_param_MAP_height <- function(data,
                log_trait = log(.data[[trai]]),
                n_weight = .data[[weight]])
       lm(log_par ~ log_trait + MAP + pl_height , data = data%>% 
-           select(log_par,log_trait,MAP,pl_height,n_weight)%>% drop_na(), weight=n_weight) -> res_m
+           dplyr::select(log_par,log_trait,MAP,pl_height,n_weight)%>% drop_na(), weight=n_weight) -> res_m
       stats::step(res_m,trace=0)->res_m
       res_m%>% 
         summary() -> res_mod
@@ -69,7 +69,7 @@ table_results_traits_param_MAP_height <- function(data,
                log_trait = log(.data[[trai]]),
                n_weight = .data[[weight]])
       lm(parame ~ log_trait + MAP + pl_height, data = data %>% 
-           select(parame,log_trait,MAP,pl_height,n_weight)%>% drop_na(), weight=n_weight) -> res_m
+           dplyr::select(parame,log_trait,MAP,pl_height,n_weight)%>% drop_na(), weight=n_weight) -> res_m
       stats::step(res_m,trace=0)->res_m
       res_m%>% 
         summary() -> res_mod
@@ -108,7 +108,7 @@ table_results_traits_param_MAP_height <- function(data,
                trait = .data[[trai]],
                n_weight = .data[[weight]])
       lm(log_par ~ trait + MAP + pl_height, data = data%>% 
-           select(log_par,trait,MAP,pl_height,n_weight)%>% drop_na(), weight=n_weight) -> res_m
+           dplyr::select(log_par,trait,MAP,pl_height,n_weight)%>% drop_na(), weight=n_weight) -> res_m
       stats::step(res_m,trace=0)->res_m
       res_m %>% 
         summary() -> res_mod
@@ -147,7 +147,7 @@ table_results_traits_param_MAP_height <- function(data,
                trait = .data[[trai]],
                n_weight = .data[[weight]])
       lm(parame ~ trait + MAP + pl_height, data = data%>% 
-           select(parame,trait,MAP,pl_height,n_weight)%>% drop_na(), weight=n_weight) -> res_m
+           dplyr::select(parame,trait,MAP,pl_height,n_weight)%>% drop_na(), weight=n_weight) -> res_m
       stats::step(res_m,trace=0)->res_m
       res_m%>% 
         summary() -> res_mod
