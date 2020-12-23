@@ -1,24 +1,48 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Representation of the cumulative number of studies using different sap flow methods between 1957 and 2017}}{4}{figure.caption.8}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Relationship between root mean square error (RMSE) and sap flux density.}}{5}{figure.caption.9}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Predictions of the LMM models calculated from least-squares means of the intercept ($\beta _{0}$) of the linear model.}}{6}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical representation of the calibration performance metrics.}}{26}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Distribution of the calibration performance metrics for each method.}}{29}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Predictions of the LMM models of the four calibration metrics.}}{31}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Relationship between the four calibration performance and wood density, for different sap flow methods.}}{33}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Relationship between measured and reference sap-flux density (SFD) for different sap flow methods, studies and calibrations.}}{38}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Relationship between measured and reference sap flow (SF) for different sap flow methods, studies and calibrations.}}{40}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Overview of the data QC process.}}{15}{figure.caption.13}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Structure of sfn\_data objects.}}{16}{figure.caption.14}%
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Example screenshot of the app used for handling outliers and out of range values in time series.}}{17}{figure.caption.15}%
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Detailed geographic distribution of SAPFLUXNET datasets}}{18}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of the SAPFLUXNET data workflow.}}{54}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Geographic, bioclimatic and vegetation type distribution of SAPFLUXNET datasets.}}{58}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Taxonomic distribution of genera and species in SAPFLUXNET.}}{59}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of plants according to major taxonomic group and sap flow method.}}{61}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Characteristics of trees and stands in the SAPFLUXNET database.}}{64}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Duration and number of plants mesured in each dataset.}}{67}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Fingerprint plots showing hourly sap flow per unit sapwood area.}}{69}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Summary of the availability of different environmental variables in SAPFLUXNET datasets.}}{70}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Potential for upscaling species-specific plant sap flow to stand-level.}}{75}{figure.caption.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces SAPFLUXNET global scaling relationship between basal area and sapwood area. Shaded areas are 95\% model confidence interval.}}{38}{figure.caption.25}%
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Bioclimatic distribution of the SAPFLUXNET datasets used in the study.}}{39}{figure.caption.26}%
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Global projection of climatic, soil and stand structure variables.}}{40}{figure.caption.27}%
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome.}}{41}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Distribution of the plots from the SAPFLUXNET database included in this study.}}{90}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Boxplots of water use parameters for both Angiosperms and Gymnosperms.}}{96}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Bi-variate relationships between $G_{\text {REF}}$ water relations traits.}}{98}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Bi-variate relationships between $\beta _{\text {VPD}}$ water relations traits.}}{100}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Bi-variate relationships between $\beta _{\text {SWC}}$ water relations traits.}}{101}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Path analyses of species-specific water use parameters.}}{103}{figure.caption.39}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces PCA plot of water relations traits using imputations. $ln(|\Psi _{\text {P50}}|)$: logarithm of absolute water potential at 50\% water conductivity loss; $ln(K_{\text {s}})$: logarithm of maximum sapwood water conductivity; $ln(Hv)$: logarithm of Huber value; $|\Psi _{\text {TLP}}|$: absolute water potential at turgor-loss point; $R_{\text {depth}}$: rooting depth; $ln(L_{\text {s}})$: logarithm of individual leaf area.\relax }}{55}{figure.caption.32}%
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Water use parameters at the species level. Grey dashed lines are the weighted mean of the parameters\relax }}{57}{figure.caption.33}%
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Species $G_{Asw}$ responses to VPD. Each species have different curves representing distinct levels of SWC (from dark to light, 0.1, 0.2, 0.3 [$m^3 m^{-3}$]).\relax }}{64}{figure.caption.40}%
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Species $G_{Asw}$ responses to SWC. Curves are fitted using a VPD reference level of 1 kPa.\relax }}{71}{figure.caption.47}%
-\contentsline {figure}{\numberline {D.5}{\ignorespaces Scatterplot between $G_{\text {REF}}$ and $\beta _{\text {VPD}}$ parameters. Grey line is global relationship. Blue and red lines are angiosperms and gymnosperms relationships, respectively. Shadow areas are 95\% confidence interval.\relax }}{72}{figure.caption.48}%
-\contentsline {figure}{\numberline {D.6}{\ignorespaces Species' climatic variables and water relations traits relationships. MAP: mean annual precipitation, MAT: mean annual temperature, PPET: mean annual precipitation over potential evapotranspiration. All climatic variables were calculated as the weighted average of the characteristic plots of the trees of each species, using tree-days as weighting factor.\relax }}{73}{figure.caption.49}%
-\contentsline {figure}{\numberline {D.7}{\ignorespaces Species' climatic variables and water use parameters relationships. MAP: mean annual precipitation, MAT: mean annual temperature, PPET: mean annual precipitation over potential evapotranspiration. All climatic variables were calculated as the weighted average of the characteristic plots of the trees of each species, using tree-days as weighting factor.\relax }}{74}{figure.caption.50}%
-\contentsline {figure}{\numberline {D.8}{\ignorespaces Boxplots of water relations traits for angiosperms and gymnosperms. Statistical significance level is showed as symbols: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001. Crosses are weighted means of each trait by groups\relax }}{75}{figure.caption.51}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Representation of the cumulative number of studies using different sap flow methods between 1957 and 2017}}{112}{figure.caption.40}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Relationship between root mean square error (RMSE) and sap flux density.}}{113}{figure.caption.41}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Predictions of the LMM models calculated from least-squares means of the intercept ($\beta _{0}$) of the linear model.}}{114}{figure.caption.42}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Overview of the data QC process.}}{123}{figure.caption.45}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Structure of sfn\_data objects.}}{124}{figure.caption.46}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Example screenshot of the app used for handling outliers and out of range values in time series.}}{125}{figure.caption.47}%
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Detailed geographic distribution of SAPFLUXNET datasets}}{126}{figure.caption.48}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces SAPFLUXNET global scaling relationship between basal area and sapwood area. Shaded areas are 95\% model confidence interval.}}{146}{figure.caption.57}%
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Bioclimatic distribution of the SAPFLUXNET datasets used in the study.}}{147}{figure.caption.58}%
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Global projection of climatic, soil and stand structure variables.}}{148}{figure.caption.59}%
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome.}}{149}{figure.caption.60}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces PCA plot of water relations traits using imputations. $ln(|\Psi _{\text {P50}}|)$: logarithm of absolute water potential at 50\% water conductivity loss; $ln(K_{\text {s}})$: logarithm of maximum sapwood water conductivity; $ln(Hv)$: logarithm of Huber value; $|\Psi _{\text {TLP}}|$: absolute water potential at turgor-loss point; $R_{\text {depth}}$: rooting depth; $ln(L_{\text {s}})$: logarithm of individual leaf area.\relax }}{163}{figure.caption.64}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Water use parameters at the species level. Grey dashed lines are the weighted mean of the parameters\relax }}{165}{figure.caption.65}%
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Species $G_{Asw}$ responses to VPD. Each species have different curves representing distinct levels of SWC (from dark to light, 0.1, 0.2, 0.3 [$m^3 m^{-3}$]).\relax }}{172}{figure.caption.72}%
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Species $G_{Asw}$ responses to SWC. Curves are fitted using a VPD reference level of 1 kPa.\relax }}{179}{figure.caption.79}%
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Scatterplot between $G_{\text {REF}}$ and $\beta _{\text {VPD}}$ parameters. Grey line is global relationship. Blue and red lines are angiosperms and gymnosperms relationships, respectively. Shadow areas are 95\% confidence interval.\relax }}{180}{figure.caption.80}%
+\contentsline {figure}{\numberline {D.6}{\ignorespaces Species' climatic variables and water relations traits relationships. MAP: mean annual precipitation, MAT: mean annual temperature, PPET: mean annual precipitation over potential evapotranspiration. All climatic variables were calculated as the weighted average of the characteristic plots of the trees of each species, using tree-days as weighting factor.\relax }}{181}{figure.caption.81}%
+\contentsline {figure}{\numberline {D.7}{\ignorespaces Species' climatic variables and water use parameters relationships. MAP: mean annual precipitation, MAT: mean annual temperature, PPET: mean annual precipitation over potential evapotranspiration. All climatic variables were calculated as the weighted average of the characteristic plots of the trees of each species, using tree-days as weighting factor.\relax }}{182}{figure.caption.82}%
+\contentsline {figure}{\numberline {D.8}{\ignorespaces Boxplots of water relations traits for angiosperms and gymnosperms. Statistical significance level is showed as symbols: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001. Crosses are weighted means of each trait by groups\relax }}{183}{figure.caption.83}%
