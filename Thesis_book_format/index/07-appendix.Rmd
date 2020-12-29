@@ -642,7 +642,7 @@ knitr::include_graphics(path = "figure/appendixC/var_maps.png")
 \newpage
 
 \setlength{\abovecaptionskip}{15pt}
-```{r , echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome.",fig.cap="Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome. Coloured lines are biome average models calculated from the Log-linear models predictions using LMM with Gs as response variable and the neperian logarithm of the environmental constrains as explanatory variables. Dashed line shows standard error of the average models calculated with bootstrap prediction using 100 simulations."}
+```{r , echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome.",fig.cap="Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome. Coloured lines are biome average models calculated from the models predictions using LMM with $G_{Asw}$ as response variable and the neperian logarithm of the environmental constrains as explanatory variables. Dashed line shows standard error of the average models calculated with bootstrap prediction using 100 simulations."}
 knitr::include_graphics(path = "figure/appendixC/spa_plots.pdf")
 ```
 \setlength{\abovecaptionskip}{0pt}
@@ -752,31 +752,31 @@ knitr::kable(table4, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE
 \newpage
 
 
-```{r, echo = FALSE, message=FALSE,warning=FALSE}
+<!-- ```{r, echo = FALSE, message=FALSE,warning=FALSE} -->
 
-library(readr)
-library(tidyverse)
-library(knitr)
-library(kableExtra)
-# table1 <- read_delim("data/appendixA/tableS1.csv",
-#     ",", escape_double = FALSE, col_types = cols(X1 = col_skip()),
-#     trim_ws = TRUE)#be careful now is sep"," change it if you prefer
+<!-- library(readr) -->
+<!-- library(tidyverse) -->
+<!-- library(knitr) -->
+<!-- library(kableExtra) -->
+<!-- # table1 <- read_delim("data/appendixA/tableS1.csv", -->
+<!-- #     ",", escape_double = FALSE, col_types = cols(X1 = col_skip()), -->
+<!-- #     trim_ws = TRUE)#be careful now is sep"," change it if you prefer -->
 
-table5 <- read_delim("data/appendixC/TableS5.csv",
-    ",", escape_double = FALSE, 
-    trim_ws = TRUE)
+<!-- table5 <- read_delim("data/appendixC/TableS5.csv", -->
+<!--     ",", escape_double = FALSE,  -->
+<!--     trim_ws = TRUE) -->
 
-table5[,1] <- c('$\\text{R}^2_{\\text{VPD}}$',
-                '$\\text{R}^2_{\\text{SWC}}$',
-                '$\\text{R}^2_{\\text{PPFD}}$',
-                '$\\text{R}^2_{\\text{TOTAL}}$')
+<!-- table5[,1] <- c('$\\text{R}^2_{\\text{VPD}}$', -->
+<!--                 '$\\text{R}^2_{\\text{SWC}}$', -->
+<!--                 '$\\text{R}^2_{\\text{PPFD}}$', -->
+<!--                 '$\\text{R}^2_{\\text{TOTAL}}$') -->
 
 
-knitr::kable(table5, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
-             digits=2 , align = 'c', caption.short = "Table of equivalence between Whittaker biomes and the groups of biomes used in the study.", caption = "Average contribution of the predictors in models of individual coupling ($\\text{R}^2_{\\text{VPD}}$, $\\text{R}^2_{\\text{SWC}}$, $\\text{R}^2_{\\text{PPFD}}$ and $\\text{R}^2_{\\text{TOTAL}}$) estimated using dominance analysis. log(PPET): logarithm of precipitation over potential evapotraspiration, log($\\text{P-PET}_{\\text{sd}}$): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration, LAI: leaf area index. NI means that the variable was not included in the model after model selection.")%>%
-    kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 6)
-```
-\newpage
+<!-- knitr::kable(table5, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "", -->
+<!--              digits=2 , align = 'c', caption.short = "Average contribution of the predictors in models of individual coupling ($\\text{R}^2_{\\text{VPD}}$, $\\text{R}^2_{\\text{SWC}}$, $\\text{R}^2_{\\text{PPFD}}$ and $\\text{R}^2_{\\text{TOTAL}}$) estimated using dominance analysis.", caption = "Average contribution of the predictors in models of individual coupling ($\\text{R}^2_{\\text{VPD}}$, $\\text{R}^2_{\\text{SWC}}$, $\\text{R}^2_{\\text{PPFD}}$ and $\\text{R}^2_{\\text{TOTAL}}$) estimated using dominance analysis. log(PPET): logarithm of precipitation over potential evapotraspiration, log($\\text{P-PET}_{\\text{sd}}$): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration, LAI: leaf area index. NI means that the variable was not included in the model after model selection.")%>% -->
+<!--     kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 6) -->
+<!-- ``` -->
+<!-- \newpage -->
 
 # Appendix Chapter 5
 \newpage
@@ -1104,7 +1104,7 @@ Being $G_{Asw}$ in [$m \ s^{-1}$]. Finally, $G'_{Asw}$ was transformed to [$mol 
 
 
 
-```{r echo=FALSE, fig.cap= "PCA plot of water relations traits using imputations. $ln(|\\Psi_{\\text{P50}}|)$: logarithm of absolute water potential at 50\\% water conductivity loss; $ln(K_{\\text{s}})$: logarithm of maximum sapwood water conductivity; $ln(Hv)$: logarithm of Huber value; $|\\Psi_{\\text{TLP}}|$: absolute water potential at turgor-loss point; $R_{\\text{depth}}$: rooting depth; $ln(L_{\\text{s}})$: logarithm of individual leaf area.",  fig.align='center'}
+```{r echo=FALSE,fig.scap="PCA plot of water relations traits using imputations.", fig.cap= "PCA plot of water relations traits using imputations. $ln(|\\Psi_{\\text{P50}}|)$: logarithm of absolute water potential at 50\\% water conductivity loss; $ln(K_{\\text{s}})$: logarithm of maximum sapwood water conductivity; $ln(Hv)$: logarithm of Huber value; $|\\Psi_{\\text{TLP}}|$: absolute water potential at turgor-loss point; $R_{\\text{depth}}$: rooting depth; $ln(L_{\\text{s}})$: logarithm of individual leaf area.",  fig.align='center'}
 knitr::include_graphics(c("figure/appendixD/figpca.pdf"))
 ```
 
@@ -1189,7 +1189,7 @@ knitr::include_graphics(c("figure/appendixD/figpca.pdf"))
 <!-- \newgeometry{layout=a4paper,left=1in,right=0.2in,top=0.2in,bottom=0.2in,nohead} -->
 \begin{landscape}
 
-```{r spparamplot, echo=FALSE, out.width = '90%', fig.cap="Water use parameters at the species level. Grey dashed lines are the weighted mean of the parameters",  fig.align='center'}
+```{r spparamplot, echo=FALSE, out.width = '90%', fig.scap="Water use parameters at the species level.", fig.cap="Water use parameters at the species level. Grey dashed lines are the weighted mean of the parameters",  fig.align='center'}
 knitr::include_graphics(c("figure/appendixD/fig17.pdf"))
 ```
 
@@ -1595,7 +1595,7 @@ knitr::include_graphics(c("figure/appendixD/ggg14.pdf"))
 <!-- ``` -->
 
 
-```{r corrplot, echo=FALSE, fig.cap="Scatterplot between $G_{\\text{REF}}$ and $\\beta_{\\text{VPD}}$ parameters. Grey line is global relationship. Blue and red lines are angiosperms and gymnosperms relationships, respectively. Shadow areas are 95\\% confidence interval.", fig.align='center',out.width = '100%'}
+```{r corrplot, echo=FALSE,  fig.scap="Scatterplot between $G_{\\text{REF}}$ and $\\beta_{\\text{VPD}}$ parameters.", fig.cap="Scatterplot between $G_{\\text{REF}}$ and $\\beta_{\\text{VPD}}$ parameters. Grey line is global relationship. Blue and red lines are angiosperms and gymnosperms relationships, respectively. Shadow areas are 95\\% confidence interval.", fig.align='center',out.width = '100%'}
 knitr::include_graphics(c("figure/appendixD/fig_Gref_b1.pdf"))
 ```
 
@@ -1709,7 +1709,7 @@ knitr::include_graphics(c("figure/appendixD/fig_Gref_b1.pdf"))
 
 <!-- ``` -->
 
-```{r climatetraitsplot, echo=FALSE, fig.cap="Species' climatic variables and water relations traits relationships. MAP: mean annual precipitation, MAT: mean annual temperature, PPET: mean annual precipitation over potential evapotranspiration. All climatic variables were calculated as the weighted average of the characteristic plots of the trees of each species, using tree-days as weighting factor.", fig.align='center',out.width = '100%'}
+```{r climatetraitsplot, echo=FALSE, fig.scap="Species' climatic variables and water relations traits relationships.",fig.cap="Species' climatic variables and water relations traits relationships. MAP: mean annual precipitation, MAT: mean annual temperature, PPET: mean annual precipitation over potential evapotranspiration. All climatic variables were calculated as the weighted average of the characteristic plots of the trees of each species, using tree-days as weighting factor.", fig.align='center',out.width = '100%'}
 knitr::include_graphics(c("figure/appendixD/fig7.pdf"))
 ```
 
@@ -1811,7 +1811,7 @@ knitr::include_graphics(c("figure/appendixD/fig7.pdf"))
 
 <!-- ``` -->
 
-```{r climateparamplot, echo=FALSE, fig.cap="Species' climatic variables and water use parameters relationships. MAP: mean annual precipitation, MAT: mean annual temperature, PPET: mean annual precipitation over potential evapotranspiration. All climatic variables were calculated as the weighted average of the characteristic plots of the trees of each species, using tree-days as weighting factor.", fig.align='center',out.width = '100%'}
+```{r climateparamplot, echo=FALSE, fig.scap="Species' climatic variables and water use parameters relationships.",fig.cap="Species' climatic variables and water use parameters relationships. MAP: mean annual precipitation, MAT: mean annual temperature, PPET: mean annual precipitation over potential evapotranspiration. All climatic variables were calculated as the weighted average of the characteristic plots of the trees of each species, using tree-days as weighting factor.", fig.align='center',out.width = '100%'}
 knitr::include_graphics(c("figure/appendixD/fig22.pdf"))
 ```
 
@@ -2013,7 +2013,7 @@ knitr::include_graphics(c("figure/appendixD/fig22.pdf"))
 
 <!-- ``` -->
 
-```{r angiogymnoplotsAOVplot, echo=FALSE, fig.cap="Boxplots of water relations traits for angiosperms and gymnosperms. Statistical significance level is showed as symbols: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001. Crosses are weighted means of each trait by groups", fig.align='center',out.width = '100%'}
+```{r angiogymnoplotsAOVplot, echo=FALSE,fig.scap="Boxplots of water relations traits for angiosperms and gymnosperms.", fig.cap="Boxplots of water relations traits for angiosperms and gymnosperms. Statistical significance level is showed as symbols: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001. Crosses are weighted means of each trait by groups", fig.align='center',out.width = '100%'}
 knitr::include_graphics(c("figure/appendixD/figanggym.pdf"))
 ```
 
@@ -2077,7 +2077,7 @@ is.nan.data.frame <- function(x)
 df[is.nan(df)] <- NA
 df <- df[order(df$`$\\text{Species}$`),]
 
-    knitr::kable(df,"latex",booktabs = T, escape = FALSE,longtable = TRUE,linesep = "",
+    knitr::kable(df,"latex",booktabs = T, escape = FALSE,longtable = TRUE,linesep = "",caption.short = "Species resume table.",
                  caption = "Species resume table. CEP names are Cornell Ecology Programs species names. $\\Psi_{\\text{P50}}$: water potential at 50\\% water conductivity loss [MPa], $K_\\text{s}$: maximum sapwood water conductivity[Kg\\;$\\text{m}^{-1}\\;\\text{MPa}^{-1}\\;\\text{s}^{-1}$], $Hv$: Huber value [$\\text{cm}^2_{\\text{Asw}}\\;\\text{m}^{-2}_{\\text{leaf}\\;\\text{area}}$], $\\Psi_{\\text{TLP}}$: water potential at turgor-loss point [MPa], $R_{\\text{depth}}$: rooting depth [m], $L_{\\text{s}}$: individual leaf area [$\\text{cm}^2$].") %>%
     kableExtra::kable_styling(latex_options = c("repeat_header"),
                               font_size = 4.5,
@@ -2125,7 +2125,7 @@ df <- df[order(df$`$\\text{Species}$`),]
   colnames(table_total)[6] <- "$R^2$"
   colnames(table_total)[3] <- "$\\text{N}\\;\\text{Species}$"
 
-  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "",caption = "Results of the linear models relating water use parameters calculated using $G'_{Asw}$ to water relations traits. Parameters are explained by individual traits using simple linear models with number of species-days as weighting factor.")%>%
+  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "",caption.short = "Results of the linear models relating water use parameters calculated using $G'_{Asw}$ to water relations traits.", caption = "Results of the linear models relating water use parameters calculated using $G'_{Asw}$ to water relations traits. Parameters are explained by individual traits using simple linear models with number of species-days as weighting factor.")%>%
     kableExtra::kable_styling(latex_options = "scale_down")%>%
     collapse_rows(1) %>%
    add_footnote("Statistical significant levels: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001.",notation = "none")
@@ -2165,8 +2165,7 @@ load(file = "~/PhD/Thesis_book_format/index/data/appendixD/data_hydra2_rew.RData
   colnames(table_total)[6] <- "$R^2$"
   colnames(table_total)[3] <- "$\\text{N}\\;\\text{Species}$"
 
-  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "",
-                 caption = "Results of the linear models relating water use parameters to water relations traits using REW instead of SWC. Parameters are explained by individual traits using simple linear models with number of species-days as weighting factor.")%>%
+  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "", caption.short = "Results of the linear models relating water use parameters to water relations traits using REW instead of SWC.", caption = "Results of the linear models relating water use parameters to water relations traits using REW instead of SWC. Parameters are explained by individual traits using simple linear models with number of species-days as weighting factor.")%>%
     kableExtra::kable_styling(latex_options = "scale_down")%>%
     collapse_rows(1) %>%
    add_footnote("Statistical significant levels: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001.",notation = "none")
@@ -2209,8 +2208,7 @@ load(file = "~/PhD/Thesis_book_format/index/data/appendixD/data_hydra2_rew.RData
   colnames(table_total)[7] <- "$\\beta_{\\text{H}}$"
   colnames(table_total)[3] <- "$\\text{N}\\;\\text{Species}$"
 
-  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "",
-                 caption = "Results of the linear models relating water use parameters calculated using $G'_{Asw}$, water relations traits, climate  and tree height. Water use parameters are explained by individual traits, MAP (mean annual precipitation) and $H$ (tree height) using simple linear models using number of species-days as weighting factor. $\\beta$ values are the slopes for each explanatory variable. NI = not included variable after model selection.")%>%
+  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "", caption.short = "Results of the linear models relating water use parameters calculated using $G'_{Asw}$, water relations traits, climate  and tree height.",caption = "Results of the linear models relating water use parameters calculated using $G'_{Asw}$, water relations traits, climate  and tree height. Water use parameters are explained by individual traits, MAP (mean annual precipitation) and $H$ (tree height) using simple linear models using number of species-days as weighting factor. $\\beta$ values are the slopes for each explanatory variable. NI = not included variable after model selection.")%>%
     kableExtra::kable_styling(latex_options = "scale_down")%>%
     collapse_rows(1) %>%
    add_footnote("Statistical significant levels: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001.",notation = "none")

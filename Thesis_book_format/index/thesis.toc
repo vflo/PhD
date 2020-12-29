@@ -43,35 +43,53 @@
 \contentsline {subsection}{\numberline {3.5.2}Outlook}{79}{subsection.3.5.2}%
 \contentsline {section}{\numberline {3.6}Data availability, access and feedback}{80}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Conclusion}{81}{section.3.7}%
-\contentsline {chapter}{ 4: Climate and functional traits jointly mediate tree water use strategies}{83}{chapter.4}%
+\contentsline {chapter}{ 4: Analysis of hydrometeorological drivers.}{83}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{85}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Material and methods}{88}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Sap flow data}{89}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Evaporative demand and soil water availability data}{90}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Data filtering}{91}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Whole-tree canopy conductance calculation}{92}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Traits and climatic data}{93}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}\(\textbf {G}_{\textbf {Asw}}\) sensitivity to soil water availability and water demand}{94}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}Statistical analyses}{94}{subsection.4.2.7}%
-\contentsline {section}{\numberline {4.3}Results}{97}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Water use parameters and differences between angiosperms and gymnosperms}{97}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Coordination with hydraulic and allocation traits}{98}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Discussion}{104}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Climate influence on water use strategies across species}{105}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Water use parameters}{105}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Coordination between water use parameters and water relations traits}{106}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Conclusions}{108}{subsection.4.4.4}%
-\contentsline {chapter}{Appendix A: Appendix Chapter 2}{111}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Figures A}{112}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Tables A}{115}{section.A.2}%
-\contentsline {chapter}{Appendix B: Appendix Chapter 3}{121}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Figures B}{123}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Tables B}{128}{section.B.2}%
-\contentsline {chapter}{Appendix C: Appendix Chapter 4}{145}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Figures C}{146}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Tables C}{150}{section.C.2}%
-\contentsline {chapter}{Appendix D: Appendix Chapter 5}{161}{appendix.D}%
-\contentsline {section}{\numberline {D.1}Notes D}{162}{section.D.1}%
-\contentsline {section}{\numberline {D.2}Figures D}{163}{section.D.2}%
-\contentsline {section}{\numberline {D.3}Tables D}{184}{section.D.3}%
-\contentsline {chapter}{References}{191}{appendix*.88}%
+\contentsline {section}{\numberline {4.2}Material and methods}{87}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Sapflow and environmental data}{87}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Data filtering}{88}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Whole-tree canopy conductance calculation}{88}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Hydrometeorological coupling quantification}{88}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Biome classification and site-level bioclimatic data}{90}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Statistical analyses}{91}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Results}{92}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Discussion}{95}{section.4.4}%
+\contentsline {chapter}{ 5: Climate and functional traits jointly mediate tree water use strategies}{101}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{103}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Material and methods}{106}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Sap flow data}{107}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Evaporative demand and soil water availability data}{108}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Data filtering}{109}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Whole-tree canopy conductance calculation}{110}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Traits and climatic data}{111}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}\(\textbf {G}_{\textbf {Asw}}\) sensitivity to soil water availability and water demand}{112}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}Statistical analyses}{112}{subsection.5.2.7}%
+\contentsline {section}{\numberline {5.3}Results}{115}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Water use parameters and differences between angiosperms and gymnosperms}{115}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Coordination with hydraulic and allocation traits}{116}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Discussion}{122}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Climate influence on water use strategies across species}{123}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Water use parameters}{123}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Coordination between water use parameters and water relations traits}{124}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Conclusions}{126}{subsection.5.4.4}%
+\contentsline {chapter}{ 6: General discussion and conclusions}{129}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Improving sap flow techniques to obtain reliable estimates of tree level transpiration}{130}{section.6.1}%
+\contentsline {section}{\numberline {6.2}The SAPLUXNET database. What next?}{132}{section.6.2}%
+\contentsline {section}{\numberline {6.3}The hydroclimatic drivers of transpiration and their complexity}{133}{section.6.3}%
+\contentsline {section}{\numberline {6.4}On the use of plant traits to characterize water use strategies at the global level}{135}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Towards a global characterization of plant water use strategies.}{136}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Conclusions}{138}{section.6.6}%
+\contentsline {chapter}{Appendix A: Appendix Chapter 2}{141}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Figures A}{142}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Tables A}{145}{section.A.2}%
+\contentsline {chapter}{Appendix B: Appendix Chapter 3}{151}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Figures B}{153}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Tables B}{158}{section.B.2}%
+\contentsline {chapter}{Appendix C: Appendix Chapter 4}{175}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Figures C}{176}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Tables C}{180}{section.C.2}%
+\contentsline {chapter}{Appendix D: Appendix Chapter 5}{191}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Notes D}{192}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Figures D}{193}{section.D.2}%
+\contentsline {section}{\numberline {D.3}Tables D}{214}{section.D.3}%
+\contentsline {chapter}{References}{221}{appendix*.92}%

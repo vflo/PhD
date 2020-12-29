@@ -53,4 +53,8 @@ In this thesis I address the question of whether we can find global patterns in 
 
 **Chapter 5**: To explore water use strategies across tree species using a trait-based approach, by parameterizing the response of $G$ to vapour pressure deficit and soil water content at the species level and for major taxonomic groups (Angiosperms vs. Gymnosperms). I aim to understand how water use strategies emerge from the covariation between traits, accounting for the influence of tree size and climate. I also characterize the relationships between transpiration regulation parameters and key hydraulic and allocation traits among species, controlling also for the effect produced by differences in precipitation.\par
 
+\vspace{4cm}
+
+\* A reproducible copy of the thesis can be found online at https://github.com/vflo/PhD
+
 <!-- \changelocaltocdepth{2} -->

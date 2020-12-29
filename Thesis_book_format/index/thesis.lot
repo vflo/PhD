@@ -9,33 +9,36 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces Number of plants in the SAPFLUXNET database using different radial and azimuthal integration.}}{63}{table.caption.24}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces Number of datasets, plants and species by stand-level treatment in the SAPFLUXNET database.}}{72}{table.caption.29}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Description of variables and units in this study.}}{89}{table.caption.31}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Results of the bi-variate linear models relating water use parameters and water relations traits}}{99}{table.caption.35}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Results of the bi-variate linear models relating water use parameters, water relations traits, climate and tree height.}}{102}{table.caption.38}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Analysis of variance testing differences among biomes in the coupling of tree-level water conductance to each of the main hydrometeorological drivers.}}{93}{table.caption.31}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Parameters of the models explaining GAsw coupling to VPD, SWC, PPFD and to all three hydrometeorological drivers.}}{95}{table.caption.33}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Summary table of the studies used in the analyses.}}{115}{table.A.1}%
-\contentsline {table}{\numberline {A.2}{\ignorespaces Anova summary of the LMM models.}}{118}{table.caption.43}%
-\contentsline {table}{\numberline {A.3}{\ignorespaces Summary of the LMM models of Ln-Ratio (accuracy), Slope (proportional bias), Slope (ln-ln) (linearity) and Z-Cor (precision) as a function of Methods and Calibration material.}}{119}{table.caption.44}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Description of variables and units in this study.}}{107}{table.caption.36}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Results of the bi-variate linear models relating water use parameters and water relations traits}}{117}{table.caption.40}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Results of the bi-variate linear models relating water use parameters, water relations traits, climate and tree height.}}{120}{table.caption.43}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Data checks implemented in the first level of data quality control (QC1).}}{128}{table.caption.49}%
-\contentsline {table}{\numberline {B.2}{\ignorespaces Description of site metadata variables.}}{129}{table.caption.50}%
-\contentsline {table}{\numberline {B.3}{\ignorespaces Description of site metadata variables.}}{130}{table.caption.51}%
-\contentsline {table}{\numberline {B.4}{\ignorespaces Description of species metadata variables.}}{131}{table.caption.52}%
-\contentsline {table}{\numberline {B.5}{\ignorespaces Description of plant metadata variables.}}{131}{table.caption.53}%
-\contentsline {table}{\numberline {B.6}{\ignorespaces Description of environmental metadata variables.}}{132}{table.caption.54}%
-\contentsline {table}{\numberline {B.7}{\ignorespaces Data checks implemented in the second level of data quality control (QC2).}}{133}{table.caption.55}%
-\contentsline {table}{\numberline {B.8}{\ignorespaces Datasets in the SAPFLUXNET database identified by numeric code, dataset code and site name.}}{134}{table.B.8}%
-\contentsline {table}{\numberline {B.9}{\ignorespaces Number of plants and number of datasets for each species present in the SAPFLUXNET database.}}{140}{table.B.9}%
-\contentsline {table}{\numberline {B.10}{\ignorespaces Number of plants per genus present in the SAPFLUXNET database.}}{143}{table.caption.56}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram.}}{150}{table.C.1}%
-\contentsline {table}{\numberline {C.2}{\ignorespaces SAPFLUXNET stand treatments included in the this study (Poyatos $et$ $al.$ 2020).}}{153}{table.caption.61}%
-\contentsline {table}{\numberline {C.3}{\ignorespaces Summary table of plot level.}}{154}{table.C.3}%
-\contentsline {table}{\numberline {C.4}{\ignorespaces Table of equivalence between Whittaker biomes and the groups of biomes used in the study.}}{159}{table.caption.62}%
-\contentsline {table}{\numberline {C.5}{\ignorespaces Table of equivalence between Whittaker biomes and the groups of biomes used in the study.}}{159}{table.caption.63}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces Summary table of the studies used in the analyses.}}{145}{table.A.1}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Anova summary of the LMM models.}}{148}{table.caption.48}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Summary of the LMM models of Ln-Ratio (accuracy), Slope (proportional bias), Slope (ln-ln) (linearity) and Z-Cor (precision) as a function of Methods and Calibration material.}}{149}{table.caption.49}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces SAPFLUXNET plot treatments included in this study (Poyatos $et$ $al.$ 2020).\relax }}{184}{table.caption.84}%
-\contentsline {table}{\numberline {D.2}{\ignorespaces Species resume table. CEP names are Cornell Ecology Programs species names. $\Psi _{\text {P50}}$: water potential at 50\% water conductivity loss [MPa], $K_\text {s}$: maximum sapwood water conductivity[Kg\tmspace +\thickmuskip {.2777em}$\text {m}^{-1}\tmspace +\thickmuskip {.2777em}\text {MPa}^{-1}\tmspace +\thickmuskip {.2777em}\text {s}^{-1}$], $Hv$: Huber value [$\text {cm}^2_{\text {Asw}}\tmspace +\thickmuskip {.2777em}\text {m}^{-2}_{\text {leaf}\tmspace +\thickmuskip {.2777em}\text {area}}$], $\Psi _{\text {TLP}}$: water potential at turgor-loss point [MPa], $R_{\text {depth}}$: rooting depth [m], $L_{\text {s}}$: individual leaf area [$\text {cm}^2$].\relax }}{185}{table.D.2}%
-\contentsline {table}{\numberline {D.3}{\ignorespaces Results of the linear models relating water use parameters calculated using $G'_{Asw}$ to water relations traits. Parameters are explained by individual traits using simple linear models with number of species-days as weighting factor.\relax }}{188}{table.caption.85}%
-\contentsline {table}{\numberline {D.4}{\ignorespaces Results of the linear models relating water use parameters to water relations traits using REW instead of SWC. Parameters are explained by individual traits using simple linear models with number of species-days as weighting factor.\relax }}{189}{table.caption.86}%
-\contentsline {table}{\numberline {D.5}{\ignorespaces Results of the linear models relating water use parameters calculated using $G'_{Asw}$, water relations traits, climate and tree height. Water use parameters are explained by individual traits, MAP (mean annual precipitation) and $H$ (tree height) using simple linear models using number of species-days as weighting factor. $\beta $ values are the slopes for each explanatory variable. NI = not included variable after model selection.\relax }}{190}{table.caption.87}%
+\contentsline {table}{\numberline {B.1}{\ignorespaces Data checks implemented in the first level of data quality control (QC1).}}{158}{table.caption.54}%
+\contentsline {table}{\numberline {B.2}{\ignorespaces Description of site metadata variables.}}{159}{table.caption.55}%
+\contentsline {table}{\numberline {B.3}{\ignorespaces Description of site metadata variables.}}{160}{table.caption.56}%
+\contentsline {table}{\numberline {B.4}{\ignorespaces Description of species metadata variables.}}{161}{table.caption.57}%
+\contentsline {table}{\numberline {B.5}{\ignorespaces Description of plant metadata variables.}}{161}{table.caption.58}%
+\contentsline {table}{\numberline {B.6}{\ignorespaces Description of environmental metadata variables.}}{162}{table.caption.59}%
+\contentsline {table}{\numberline {B.7}{\ignorespaces Data checks implemented in the second level of data quality control (QC2).}}{163}{table.caption.60}%
+\contentsline {table}{\numberline {B.8}{\ignorespaces Datasets in the SAPFLUXNET database identified by numeric code, dataset code and site name.}}{164}{table.B.8}%
+\contentsline {table}{\numberline {B.9}{\ignorespaces Number of plants and number of datasets for each species present in the SAPFLUXNET database.}}{170}{table.B.9}%
+\contentsline {table}{\numberline {B.10}{\ignorespaces Number of plants per genus present in the SAPFLUXNET database.}}{173}{table.caption.61}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {C.1}{\ignorespaces SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram.}}{180}{table.C.1}%
+\contentsline {table}{\numberline {C.2}{\ignorespaces SAPFLUXNET stand treatments included in the this study (Poyatos $et$ $al.$ 2020).}}{183}{table.caption.66}%
+\contentsline {table}{\numberline {C.3}{\ignorespaces Summary table of plot level.}}{184}{table.C.3}%
+\contentsline {table}{\numberline {C.4}{\ignorespaces Table of equivalence between Whittaker biomes and the groups of biomes used in the study.}}{189}{table.caption.67}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {D.1}{\ignorespaces SAPFLUXNET plot treatments included in this study (Poyatos $et$ $al.$ 2020).\relax }}{214}{table.caption.88}%
+\contentsline {table}{\numberline {D.2}{\ignorespaces Species resume table.}}{215}{table.D.2}%
+\contentsline {table}{\numberline {D.3}{\ignorespaces Results of the linear models relating water use parameters calculated using $G'_{Asw}$ to water relations traits.}}{218}{table.caption.89}%
+\contentsline {table}{\numberline {D.4}{\ignorespaces Results of the linear models relating water use parameters to water relations traits using REW instead of SWC.}}{219}{table.caption.90}%
+\contentsline {table}{\numberline {D.5}{\ignorespaces Results of the linear models relating water use parameters calculated using $G'_{Asw}$, water relations traits, climate and tree height.}}{220}{table.caption.91}%

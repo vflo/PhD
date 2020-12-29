@@ -131,6 +131,9 @@ In all the previous models, little variability was explained by species ($\tau 0
 
 In addition, the analysis of the normalized absolute error for the different methods showed that NRMSE decreased linearly with increasing measured sap flow in CHP, HFD and TTD methods and increased for T-max, SHB and TD (Table 1.2 and Fig. A2).  For HR the increase in NRMSE with measured sap flow was not significant. For all the methods that measure SFD, the absolute error at a typical flow of 25 cm3 cm-2 h-1 ranged between 6.3 cm3 cm-2 h-1 for CHP and 10.7 cm3 cm-2 h-1 for the TTD method (Table 1.2).\par
 
+\par
+
+
 ```{r Ch2T2, echo=FALSE,message=FALSE,fig.pos="hbt!"}
 readr::read_delim("data/Ch2/Ch2T2.csv", 
     ";", escape_double = FALSE, trim_ws = TRUE)->Ch2T2
