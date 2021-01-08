@@ -1,13 +1,13 @@
 ---
 author: 'Víctor Flo Sierra'
-date: 'Dec 2020'
+date: 'January 2021'
 institution: 'Autonomous University of Barcelona'
 # division: 'Biology'
 advisor: 'Rafael Poyatos López'
 # If you have more two advisors, un-silence line 7
 altadvisor: 'Jordi Martínez Vilalta'
 department: 'Centre de Recerca Ecològica i Aplicacions Forestals'
-degree: 'DOCTORADO EN ECOLOGIA TERRESTRE'
+degree: 'Program: Doctorat en Ecologia Terretre'
 title: 'Global ecological drivers of transpiration regulation in trees'
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site

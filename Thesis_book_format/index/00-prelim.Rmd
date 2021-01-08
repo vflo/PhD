@@ -3,27 +3,9 @@
 <!-- # Acknowledgements {-} -->
 \setlength{\parindent}{30pt}
 \setlength{\parskip}{0.4cm plus4mm minus3mm}
-
-A pesar de ser firme defensora de que la tesis no supone un mérito excepcional digno de especiales reconocimientos, no desperdiciaré la oportunidad de agradecer todo lo vivido durante estos años y dejar grabado lo mucho que deben estas páginas a las personas que me rodean.\par
-
-Durante esta etapa, que empezó cuando llegué a Barcelona, he tenido la suerte de encontrar a personas maravillosas, de viajar por el mundo y de aprender sobre diferentes aspectos de la vida. Quiero agradecer en primer lugar, a la que fue mi primera familia en Catalunya, mis compañeros de máster, en especial a Estrella, Aida, Alba, Aina, Carla, Enrique, John y Gustavo y a mis compañeros de piso Laura y Josan. Gracias por los ratos en el césped, las visitas a Mataró y las noches arreglando el mundo en el *Cop de ma*, gracias, en definitiva, por hacerme sentir en casa.\par
-
-Cuando una empieza la tesis le dicen que debería preocuparse de escoger bien a sus directores porque son personas con las que tendrá que compartir cuatro años y ver más a menudo que a sus propios padres. Yo con Paco apenas tuve dos reuniones antes de solicitar el doctorado. Después de estos más de cuatro años trabajando juntos sé que si volviese atrás volvería a elegirte. Gracias Paco por el ejemplo, por las charlas en los viajes, por tu forma de pensar tan crítica y profunda, por enseñarme tanto más allá de lo estrictamente académico… A Miguel Ángel lo conocía más. Fui su alumna durante la carrera y sé que pocas personas tienen un conocimiento más holístico de la naturaleza murciana, mayor integridad y devoción por su trabajo. Gracias por aportar siempre la perspectiva más naturalista y aplicada, gracias por las charlas de política y las explicaciones sobre el Mar Menor. Durante estos años he crecido con y gracias a vosotros, y no podría sentirme más afortunada.\par
-
-Además esta tesis no hubiese tenido los mismos resultados sino hubiese compartido las dudas, preocupaciones, alegrías y el desánimo con tantos buenos compañeros. Gracias a los compañeros de despacho, a Anna, Javi, Judit, Carlos, Manu, Marta, Pere y Pol. Sin duda las penas han sido menos penas con vosotros y las fiestas, almuerzos y barbacoas mucho más divertidas. Gracias por las risas y la terapia de grupo. No me acostumbro a pensar en un trabajo sin vosotros.\par
-
-Gracias también a los compañeros de grupo. Enric, Jordi, Luciana y Nuria, el *phoskitos lab* no podría tener mejor plantilla. Con vosotros se demuestra que hacer ciencia no está reñido con un ambiente laboral de calidad, colaborativo, respetuoso y divertido. Gracias por tantos buenos momentos, por las salidas a la montaña y las jornadas de convivencia en los congresos. Quiero agradecer también a mis compañeros de departamento en Murcia. Gracias a Paqui, Jose Miguel y Pablo por el trabajo de campo y de despacho, por las discusiones académicas y las no tan académicas, por no haber dudado en ayudar siempre que lo he necesitado. Gracias también a Guillem por las semanas de trabajo y convivencia en Murcia y tus dosis de amabilidad y optimismo, a Pep Serra y Gerard Sapes por los sabios consejos y la inspiración.\par
-
-Durante estos últimos años también he tenido la oportunidad de librarme de los calurosos veranos catalanes y murcianos escapándome de estancia a otros países. Gracias a Jens-Christian por la acogida en Aarhus y a Antoine y Olivier por la estancia en Suiza. Me quedo con el recuerdo de los paseos en bici por Dinamarca y la estampa de los Alpes por la ventana del despacho y las barbacoas en el lago Leman. 
-Gracias también a los que han estado siempre ahí, a los amigos de toda la vida,  Jose, Maria José, Mari Nieves, Maria Victoria, Álvaro y Pedro. Gracias por estar tan cerca a pesar de los kilómetros, gracias por las visitas, por aguantar con paciencia mis quejas sobre política y ciencia, por los cafés, las terapias y el consuelo. Gracias también a Victor M. por el tiempo que hemos pasado juntos en Barcelona, por las horas de desahogo mutuo y los planes culturales.\par
-
-Quiero agradecer también a mi hermano mayor, por plantar la semilla del amor por la naturaleza, sin tu ejemplo no hubiese dado los primeros pasos del camino que ahora completo. Gracias también a mi hermano mellizo por la ayuda incondicional e implicación, llegando incluso a armarte con botas y cinta métrica para echar una mano en el trabajo de campo.\par
-
-Gracias sobre todo a quien desde hace más de tres años es mucho más que un compañero de despacho. Gracias Víctor por tu compresión, tu paciencia, tus consejos y buenas ideas. Gracias literalmente por tu ayuda. Gracias por animarme y hacerme ver siempre el vaso medio lleno. Por darme una segunda familia en Catalunya.\par
-
-Gracias finalmente a mis padres, a quienes una época cruel y la falta de recursos les despojó de la oportunidad para completar etapas académicas más allá de los estudios más elementales. Sabed que habría sido posible llegar hasta aquí sin vosotros.\par
-
-
+\vspace*{4.5cm}
+A reproducible copy of the thesis can be found online at https://github.com/vflo/PhD
+\vspace*{\fill}
 <!-- ## Preface {-} -->
 
 <!-- This is an example of a thesis setup to use the reed thesis document class -->
