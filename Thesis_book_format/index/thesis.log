@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.6)  8 JAN 2021 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.6)  10 JAN 2021 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -948,8 +948,8 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \c@nlinenum=\count357
 \TeXr@lab=\toks56
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 25
-6.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 30
+1.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1062,22 +1062,22 @@ LaTeX Warning: Label `tab:tabledata' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 256.
-LaTeX Font Info:    ... okay on input line 256.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 256.
-LaTeX Font Info:    ... okay on input line 256.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 256.
-LaTeX Font Info:    ... okay on input line 256.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 256.
-LaTeX Font Info:    ... okay on input line 256.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 256.
-LaTeX Font Info:    ... okay on input line 256.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 256.
-LaTeX Font Info:    ... okay on input line 256.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 256.
-LaTeX Font Info:    ... okay on input line 256.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 256.
-LaTeX Font Info:    ... okay on input line 256.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 301.
+LaTeX Font Info:    ... okay on input line 301.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 301.
+LaTeX Font Info:    ... okay on input line 301.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 301.
+LaTeX Font Info:    ... okay on input line 301.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 301.
+LaTeX Font Info:    ... okay on input line 301.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 301.
+LaTeX Font Info:    ... okay on input line 301.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 301.
+LaTeX Font Info:    ... okay on input line 301.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 301.
+LaTeX Font Info:    ... okay on input line 301.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 301.
+LaTeX Font Info:    ... okay on input line 301.
 
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.st
 y
@@ -1088,9 +1088,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package crop Info: requested driver: `pdftex' on input line 256.
-Package crop Info: detected driver: `pdftex' on input line 256.
-Package crop Info: using `pdftex' graphics driver on input line 256.
+Package crop Info: requested driver: `pdftex' on input line 301.
+Package crop Info: detected driver: `pdftex' on input line 301.
+Package crop Info: using `pdftex' graphics driver on input line 301.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1125,7 +1125,7 @@ Package crop Info: using `pdftex' graphics driver on input line 256.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 256.
+Package hyperref Info: Link coloring OFF on input line 301.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1137,9 +1137,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count359
 )
-LaTeX Info: Redefining \ref on input line 256.
-LaTeX Info: Redefining \pageref on input line 256.
-LaTeX Info: Redefining \nameref on input line 256.
+LaTeX Info: Redefining \ref on input line 301.
+LaTeX Info: Redefining \pageref on input line 301.
+LaTeX Info: Redefining \nameref on input line 301.
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
@@ -1148,43 +1148,43 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-60.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+05.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-60.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+05.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-260.
+305.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-260.
+305.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 260.
+(Font)              <12> on input line 305.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 260.
+(Font)              <8> on input line 305.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 260.
+(Font)              <6> on input line 305.
 <figure/LOGO_CREAF.png, id=388, 691.58376pt x 275.0275pt>
 File: figure/LOGO_CREAF.png Graphic file (type png)
 <use figure/LOGO_CREAF.png>
-Package pdftex.def Info: figure/LOGO_CREAF.png  used on input line 260.
+Package pdftex.def Info: figure/LOGO_CREAF.png  used on input line 305.
 (pdftex.def)             Requested size: 73.40701pt x 29.19138pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 260.
+(Font)              <10.95> on input line 305.
 <figure/Logo_uab.png, id=390, 1229.59375pt x 569.12625pt>
 File: figure/Logo_uab.png Graphic file (type png)
 <use figure/Logo_uab.png>
-Package pdftex.def Info: figure/Logo_uab.png  used on input line 260.
+Package pdftex.def Info: figure/Logo_uab.png  used on input line 305.
 (pdftex.def)             Requested size: 73.40701pt x 33.97241pt.
 [1
 Non-PDF special ignored!
@@ -1198,7 +1198,7 @@ Non-PDF special ignored!
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 263.
+Package xcolor Warning: Incompatible color definition on input line 308.
 
 [1
 
@@ -1208,7 +1208,7 @@ Package xcolor Warning: Incompatible color definition on input line 263.
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 337.
+Package xcolor Warning: Incompatible color definition on input line 382.
 
 (./thesis.toc
 Underfull \hbox (badness 1377) in paragraph at lines 19--19
@@ -1222,7 +1222,7 @@ Underfull \hbox (badness 1377) in paragraph at lines 19--19
 
 [8]
 
-Package xcolor Warning: Incompatible color definition on input line 339.
+Package xcolor Warning: Incompatible color definition on input line 384.
 
 (./thesis.lot [9
 
@@ -1237,7 +1237,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 341.
+Package xcolor Warning: Incompatible color definition on input line 386.
 
 (./thesis.lof [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1250,21 +1250,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 342.
+Package xcolor Warning: Incompatible color definition on input line 387.
 
-[17] [18
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 420.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <11> on input line 420.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.69997> on input line 420.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.5> on input line 420.
+[17] [18]
+
+Package xcolor Warning: Incompatible color definition on input line 444.
+
+[19
+
+
+] [20
 
 
 ]
-
-Package xcolor Warning: Incompatible color definition on input line 354.
-
-[19] [20
-
-
-]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-70.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+60.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1280,22 +1287,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.375 \chapter
+l.465 \chapter
               {Introduction}\label{introduction} [1]pdfTeX warning (ext4): dest
 ination with the same identifier (name{page.2}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.375 \chapter
+l.465 \chapter
               {Introduction}\label{introduction} [2
 
 ]
  1.
 
-Package xcolor Warning: Incompatible color definition on input line 375.
+Package xcolor Warning: Incompatible color definition on input line 465.
 
 
-Package xcolor Warning: Incompatible color definition on input line 375.
+Package xcolor Warning: Incompatible color definition on input line 465.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1351,7 +1358,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [8]
-Underfull \hbox (badness 1043) in paragraph at lines 586--603
+Underfull \hbox (badness 1043) in paragraph at lines 676--693
 \T1/lmr/m/n/10.95 canopies also re-quire a care-ful con-sid-er-a-tion of aero-d
 y-namic pro-cesses
  []
@@ -1423,10 +1430,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
  2.
 
-Package xcolor Warning: Incompatible color definition on input line 838.
+Package xcolor Warning: Incompatible color definition on input line 928.
 
 
-Package xcolor Warning: Incompatible color definition on input line 838.
+Package xcolor Warning: Incompatible color definition on input line 928.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1520,10 +1527,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [26]
-<figure/CH2/PLOTMETRICS.png, id=937, 244.9953pt x 484.4499pt>
+<figure/CH2/PLOTMETRICS.png, id=939, 244.9953pt x 484.4499pt>
 File: figure/CH2/PLOTMETRICS.png Graphic file (type png)
 <use figure/CH2/PLOTMETRICS.png>
-Package pdftex.def Info: figure/CH2/PLOTMETRICS.png  used on input line 1215.
+Package pdftex.def Info: figure/CH2/PLOTMETRICS.png  used on input line 1304.
 (pdftex.def)             Requested size: 201.8735pt x 399.1956pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1555,13 +1562,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [29]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 1313.
-<figure/CH2/Distribution-metrics-orderedV4.png, id=958, 261.3765pt x 486.1362pt
+(Font)              <5> on input line 1402.
+<figure/CH2/Distribution-metrics-orderedV4.png, id=960, 261.3765pt x 486.1362pt
 >
 File: figure/CH2/Distribution-metrics-orderedV4.png Graphic file (type png)
 <use figure/CH2/Distribution-metrics-orderedV4.png>
 Package pdftex.def Info: figure/CH2/Distribution-metrics-orderedV4.png  used on
- input line 1317.
+ input line 1406.
 (pdftex.def)             Requested size: 201.8735pt x 375.46095pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1581,10 +1588,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [31 <./figure/CH2/Distribution-metrics-orderedV4.png>]
-<figure/CH2/FAMILYMETHODS.png, id=969, 541.5432pt x 419.6478pt>
+<figure/CH2/FAMILYMETHODS.png, id=971, 541.5432pt x 419.6478pt>
 File: figure/CH2/FAMILYMETHODS.png Graphic file (type png)
 <use figure/CH2/FAMILYMETHODS.png>
-Package pdftex.def Info: figure/CH2/FAMILYMETHODS.png  used on input line 1348.
+Package pdftex.def Info: figure/CH2/FAMILYMETHODS.png  used on input line 1437.
 
 (pdftex.def)             Requested size: 367.04073pt x 284.42825pt.
 
@@ -1606,9 +1613,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [33 <./figure/CH2/FAMILYMETHODS.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1393.
+(Font)              <10> on input line 1482.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1393.
+(Font)              <7> on input line 1482.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1618,10 +1625,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [34]
-<figure/CH2/DENSITY.png, id=985, 263.7855pt x 401.0985pt>
+<figure/CH2/DENSITY.png, id=987, 263.7855pt x 401.0985pt>
 File: figure/CH2/DENSITY.png Graphic file (type png)
 <use figure/CH2/DENSITY.png>
-Package pdftex.def Info: figure/CH2/DENSITY.png  used on input line 1429.
+Package pdftex.def Info: figure/CH2/DENSITY.png  used on input line 1518.
 (pdftex.def)             Requested size: 201.8735pt x 306.96175pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1632,7 +1639,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [35 <./figure/CH2/DENSITY.png>]
-Underfull \hbox (badness 1515) in paragraph at lines 1477--1477
+Underfull \hbox (badness 1515) in paragraph at lines 1566--1566
 |[]\T1/lmr/bx/n/12 Sap flow mea-sure-ment er-rors across meth-ods and
  []
 
@@ -1668,10 +1675,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [38]
-<figure/CH2/figure-density.png, id=1006, 867.24pt x 722.7pt>
+<figure/CH2/figure-density.png, id=1008, 867.24pt x 722.7pt>
 File: figure/CH2/figure-density.png Graphic file (type png)
 <use figure/CH2/figure-density.png>
-Package pdftex.def Info: figure/CH2/figure-density.png  used on input line 1589
+Package pdftex.def Info: figure/CH2/figure-density.png  used on input line 1678
 .
 (pdftex.def)             Requested size: 367.04073pt x 305.86975pt.
 
@@ -1692,11 +1699,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [40 <./figure/CH2/figure-density.png (PNG copy)>]
-<figure/CH2/figure-totalflow.png, id=1016, 867.24pt x 722.7pt>
+<figure/CH2/figure-totalflow.png, id=1018, 867.24pt x 722.7pt>
 File: figure/CH2/figure-totalflow.png Graphic file (type png)
 <use figure/CH2/figure-totalflow.png>
-Package pdftex.def Info: figure/CH2/figure-totalflow.png  used on input line 16
-26.
+Package pdftex.def Info: figure/CH2/figure-totalflow.png  used on input line 17
+15.
 (pdftex.def)             Requested size: 367.04073pt x 305.86975pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1754,10 +1761,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [46]
  3.
 
-Package xcolor Warning: Incompatible color definition on input line 1778.
+Package xcolor Warning: Incompatible color definition on input line 1867.
 
 
-Package xcolor Warning: Incompatible color definition on input line 1778.
+Package xcolor Warning: Incompatible color definition on input line 1867.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1850,17 +1857,17 @@ Package epstopdf Info: Source file: <figure/CH3/Figure1.eps>
 (epstopdf)                    size: 18882 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure/CH3/Figure1-eps-con
 verted-to.pdf figure/CH3/Figure1.eps>
-(epstopdf)             \includegraphics on input line 2093.
+(epstopdf)             \includegraphics on input line 2181.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figure/CH3/Figure1-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figure/CH3/Figure1-eps-converted-to.pdf, id=1085, 285.065pt x 508.90125pt>
+<figure/CH3/Figure1-eps-converted-to.pdf, id=1087, 285.065pt x 508.90125pt>
 File: figure/CH3/Figure1-eps-converted-to.pdf Graphic file (type pdf)
 <use figure/CH3/Figure1-eps-converted-to.pdf>
 Package pdftex.def Info: figure/CH3/Figure1-eps-converted-to.pdf  used on input
- line 2093.
+ line 2181.
 (pdftex.def)             Requested size: 256.92738pt x 458.66693pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1903,15 +1910,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [59]
-<figure/CH3/Figure2.pdf, id=1109, 568.1225pt x 426.59375pt>
+<figure/CH3/Figure2.pdf, id=1111, 568.1225pt x 426.59375pt>
 File: figure/CH3/Figure2.pdf Graphic file (type pdf)
 <use figure/CH3/Figure2.pdf>
-Package pdftex.def Info: figure/CH3/Figure2.pdf  used on input line 2206.
+Package pdftex.def Info: figure/CH3/Figure2.pdf  used on input line 2294.
 (pdftex.def)             Requested size: 367.04073pt x 275.61626pt.
-<figure/CH3/Figure3.pdf, id=1110, 568.1225pt x 710.655pt>
+<figure/CH3/Figure3.pdf, id=1112, 568.1225pt x 710.655pt>
 File: figure/CH3/Figure3.pdf Graphic file (type pdf)
 <use figure/CH3/Figure3.pdf>
-Package pdftex.def Info: figure/CH3/Figure3.pdf  used on input line 2215.
+Package pdftex.def Info: figure/CH3/Figure3.pdf  used on input line 2303.
 (pdftex.def)             Requested size: 367.04073pt x 459.14429pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1947,10 +1954,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [62 <./figure/CH3/Figure3.pdf>]
-<figure/CH3/Figure4.pdf, id=1142, 426.59375pt x 426.59375pt>
+<figure/CH3/Figure4.pdf, id=1144, 426.59375pt x 426.59375pt>
 File: figure/CH3/Figure4.pdf Graphic file (type pdf)
 <use figure/CH3/Figure4.pdf>
-Package pdftex.def Info: figure/CH3/Figure4.pdf  used on input line 2244.
+Package pdftex.def Info: figure/CH3/Figure4.pdf  used on input line 2332.
 (pdftex.def)             Requested size: 367.04073pt x 367.06525pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1973,13 +1980,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [64 <./figure/CH3/Figure4.pdf>]
-<figure/CH3/Figure5.pdf, id=1161, 568.1225pt x 597.23125pt>
+<figure/CH3/Figure5.pdf, id=1163, 568.1225pt x 597.23125pt>
 File: figure/CH3/Figure5.pdf Graphic file (type pdf)
 <use figure/CH3/Figure5.pdf>
-Package pdftex.def Info: figure/CH3/Figure5.pdf  used on input line 2348.
+Package pdftex.def Info: figure/CH3/Figure5.pdf  used on input line 2436.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-352.
+440.
 (/data/r_users/vflo/.TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -2012,7 +2019,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [67 <./figure/CH3/Figure5.pdf>]
-Underfull \hbox (badness 2310) in paragraph at lines 2400--2408
+Underfull \hbox (badness 2310) in paragraph at lines 2488--2496
 \T1/lmr/m/n/10.95 HUN_SIK) and trop-i-cal (GUF_GUY_GUY, COL_MAC_SAF_RAD)
  []
 
@@ -2025,10 +2032,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [68]
-<figure/CH3/Figure6.pdf, id=1194, 568.1225pt x 597.23125pt>
+<figure/CH3/Figure6.pdf, id=1196, 568.1225pt x 597.23125pt>
 File: figure/CH3/Figure6.pdf Graphic file (type pdf)
 <use figure/CH3/Figure6.pdf>
-Package pdftex.def Info: figure/CH3/Figure6.pdf  used on input line 2418.
+Package pdftex.def Info: figure/CH3/Figure6.pdf  used on input line 2506.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2050,15 +2057,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [70 <./figure/CH3/Figure6.pdf>]
-<figure/CH3/Figure7.pdf, id=1210, 568.1225pt x 597.23125pt>
+<figure/CH3/Figure7.pdf, id=1212, 568.1225pt x 597.23125pt>
 File: figure/CH3/Figure7.pdf Graphic file (type pdf)
 <use figure/CH3/Figure7.pdf>
-Package pdftex.def Info: figure/CH3/Figure7.pdf  used on input line 2467.
+Package pdftex.def Info: figure/CH3/Figure7.pdf  used on input line 2555.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
-<figure/CH3/Figure8.pdf, id=1211, 568.1225pt x 597.23125pt>
+<figure/CH3/Figure8.pdf, id=1213, 568.1225pt x 597.23125pt>
 File: figure/CH3/Figure8.pdf Graphic file (type pdf)
 <use figure/CH3/Figure8.pdf>
-Package pdftex.def Info: figure/CH3/Figure8.pdf  used on input line 2497.
+Package pdftex.def Info: figure/CH3/Figure8.pdf  used on input line 2585.
 (pdftex.def)             Requested size: 367.04073pt x 385.86278pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2100,13 +2107,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [74]
-Underfull \hbox (badness 2189) in paragraph at lines 2600--2627
+Underfull \hbox (badness 2189) in paragraph at lines 2688--2715
 []\T1/lmr/m/n/10.95 The com-bi-na-tion of SAPFLUXNET with other eco-phys-i-o-lo
 g-i-cal
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 2600--2627
+Underfull \hbox (badness 1424) in paragraph at lines 2688--2715
 \T1/lmr/m/n/10.95 com-bin-ing SAPFLUXNET with data from the Den-droglobal datab
 ase
  []
@@ -2129,10 +2136,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [76]
-<figure/CH3/Figure9.pdf, id=1290, 568.1225pt x 682.55pt>
+<figure/CH3/Figure9.pdf, id=1292, 568.1225pt x 682.55pt>
 File: figure/CH3/Figure9.pdf Graphic file (type pdf)
 <use figure/CH3/Figure9.pdf>
-Package pdftex.def Info: figure/CH3/Figure9.pdf  used on input line 2676.
+Package pdftex.def Info: figure/CH3/Figure9.pdf  used on input line 2764.
 (pdftex.def)             Requested size: 367.04073pt x 440.98604pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2146,13 +2153,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [77]
-Underfull \hbox (badness 10000) in paragraph at lines 2682--2707
+Underfull \hbox (badness 10000) in paragraph at lines 2770--2795
 []\T1/lmr/m/n/10.95 Stand-level tran-spi-ra-tion es-ti-mates from a large num-b
 er of
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 2682--2707
+Underfull \hbox (badness 1400) in paragraph at lines 2770--2795
 \T1/lmr/m/n/10.95 SAPFLUXNET sites can con-tribute to im-prove our un-der-stand
 -ing of
  []
@@ -2205,7 +2212,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [82]
-Underfull \hbox (badness 1810) in paragraph at lines 2855--2873
+Underfull \hbox (badness 1810) in paragraph at lines 2943--2961
 \T1/lmr/m/n/10.95 in the Zen-odo repos-i-tory ([]$\T1/lmtt/m/n/10.95 https : / 
 / doi . org / 10 . 5281 / zenodo . 3971689$[]\T1/lmr/m/n/10.95 ,
  []
@@ -2230,10 +2237,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [84]
  4.
 
-Package xcolor Warning: Incompatible color definition on input line 2893.
+Package xcolor Warning: Incompatible color definition on input line 2981.
 
 
-Package xcolor Warning: Incompatible color definition on input line 2893.
+Package xcolor Warning: Incompatible color definition on input line 2981.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2318,192 +2325,192 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [93]
-Overfull \hbox (2.03438pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (2.03438pt too wide) in paragraph at lines 3346--3346
 []|\T1/lmr/m/n/7 Biome|  
  []
 
 
-Overfull \hbox (0.79887pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (0.79887pt too wide) in paragraph at lines 3346--3346
  []|$[][]$| 
  []
 
 
-Overfull \hbox (1.38194pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (1.38194pt too wide) in paragraph at lines 3346--3346
  []|$[][]$| 
  []
 
 
-Overfull \hbox (4.72235pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (4.72235pt too wide) in paragraph at lines 3346--3346
  []|$[][]$| 
  []
 
 
-Overfull \hbox (9.63237pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (9.63237pt too wide) in paragraph at lines 3346--3346
  []|$[][]$| 
  []
 
 
-Overfull \hbox (8.05566pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (8.05566pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 Number 
  []
 
 
-Overfull \hbox (3.6804pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.6804pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.439$[]$| 
  []
 
 
-Overfull \hbox (3.6804pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.6804pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.225$[]$| 
  []
 
 
-Overfull \hbox (3.6804pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.6804pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.210$[]$| 
  []
 
 
-Overfull \hbox (3.6804pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.6804pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.502$[]$| 
  []
 
 
-Overfull \hbox (3.68004pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.68004pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.215$[][][][]$| 
  []
 
 
-Overfull \hbox (8.35403pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (8.35403pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.229$[][][][]$| 
  []
 
 
-Overfull \hbox (6.20862pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (6.20862pt too wide) in paragraph at lines 3346--3346
 []|\T1/lmr/m/n/7 WOOD|  
  []
 
 
-Overfull \hbox (8.3544pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (8.3544pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.514$[]$| 
  []
 
 
-Overfull \hbox (3.4514pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.4514pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.390$[]$| 
  []
 
 
-Overfull \hbox (8.3544pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (8.3544pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.295$[]$| 
  []
 
 
-Overfull \hbox (3.4514pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.4514pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.652$[]$| 
  []
 
 
-Overfull \hbox (3.68004pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.68004pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.124$[][][][]$| 
  []
 
 
-Overfull \hbox (3.45103pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.45103pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.219$[][][][]$| 
  []
 
 
-Overfull \hbox (3.45103pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.45103pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.095$[][][][]$| 
  []
 
 
-Overfull \hbox (3.72241pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.72241pt too wide) in paragraph at lines 3346--3346
 []|\T1/lmr/m/n/7 TEMP|  
  []
 
 
-Overfull \hbox (3.4514pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.4514pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.567$[]$| 
  []
 
 
-Overfull \hbox (3.4514pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.4514pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.452$[]$| 
  []
 
 
-Overfull \hbox (3.56906pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.56906pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.417$[]$| 
  []
 
 
-Overfull \hbox (3.4514pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.4514pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.666$[]$| 
  []
 
 
-Overfull \hbox (3.68004pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.68004pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.116$[][][][]$| 
  []
 
 
-Overfull \hbox (3.68004pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.68004pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.150$[][][][]$| 
  []
 
 
-Overfull \hbox (8.3544pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (8.3544pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.622$[]$| 
  []
 
 
-Overfull \hbox (8.3544pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (8.3544pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.453$[]$| 
  []
 
 
-Overfull \hbox (8.24306pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (8.24306pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.499$[]$| 
  []
 
 
-Overfull \hbox (8.3544pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (8.3544pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.650$[]$| 
  []
 
 
-Overfull \hbox (2.8821pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (2.8821pt too wide) in paragraph at lines 3346--3346
 []|\T1/lmr/m/n/7 TROP|  
  []
 
 
-Overfull \hbox (3.4514pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.4514pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.651$[]$| 
  []
 
 
-Overfull \hbox (3.4514pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.4514pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.413$[]$| 
  []
 
 
-Overfull \hbox (3.56906pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.56906pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.444$[]$| 
  []
 
 
-Overfull \hbox (8.3544pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (8.3544pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.696$[]$| 
  []
 
 
-Overfull \hbox (3.68004pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (3.68004pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.238$[][][][]$| 
  []
 
 
-Overfull \hbox (8.35403pt too wide) in paragraph at lines 3258--3258
+Overfull \hbox (8.35403pt too wide) in paragraph at lines 3346--3346
  []|\T1/lmr/m/n/7 0.203$[][][][]$| 
  []
 
@@ -2519,10 +2526,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [94]
-<figure/CH4/Figure1.pdf, id=1380, 469.755pt x 469.755pt>
+<figure/CH4/Figure1.pdf, id=1382, 469.755pt x 469.755pt>
 File: figure/CH4/Figure1.pdf Graphic file (type pdf)
 <use figure/CH4/Figure1.pdf>
-Package pdftex.def Info: figure/CH4/Figure1.pdf  used on input line 3276.
+Package pdftex.def Info: figure/CH4/Figure1.pdf  used on input line 3364.
 (pdftex.def)             Requested size: 367.04073pt x 367.03821pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2547,10 +2554,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [96 <./figure/CH4/Figure1.pdf>]
-<figure/CH4/Figure2.png, id=1398, 768.10965pt x 569.0058pt>
+<figure/CH4/Figure2.png, id=1400, 768.10965pt x 569.0058pt>
 File: figure/CH4/Figure2.png Graphic file (type png)
 <use figure/CH4/Figure2.png>
-Package pdftex.def Info: figure/CH4/Figure2.png  used on input line 3318.
+Package pdftex.def Info: figure/CH4/Figure2.png  used on input line 3406.
 (pdftex.def)             Requested size: 367.04073pt x 271.89548pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2561,10 +2568,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [97]
-<figure/CH4/Figure3.png, id=1405, 853.5087pt x 426.75435pt>
+<figure/CH4/Figure3.png, id=1407, 853.5087pt x 426.75435pt>
 File: figure/CH4/Figure3.png Graphic file (type png)
 <use figure/CH4/Figure3.png>
-Package pdftex.def Info: figure/CH4/Figure3.png  used on input line 3350.
+Package pdftex.def Info: figure/CH4/Figure3.png  used on input line 3438.
 (pdftex.def)             Requested size: 367.04073pt x 183.52032pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2615,10 +2622,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [102]
  5.
 
-Package xcolor Warning: Incompatible color definition on input line 3489.
+Package xcolor Warning: Incompatible color definition on input line 3577.
 
 
-Package xcolor Warning: Incompatible color definition on input line 3489.
+Package xcolor Warning: Incompatible color definition on input line 3577.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2681,10 +2688,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figure/CH5/Figure_1.pdf, id=1453, 625.33624pt x 255.95625pt>
+<figure/CH5/Figure_1.pdf, id=1455, 625.33624pt x 255.95625pt>
 File: figure/CH5/Figure_1.pdf Graphic file (type pdf)
 <use figure/CH5/Figure_1.pdf>
-Package pdftex.def Info: figure/CH5/Figure_1.pdf  used on input line 3746.
+Package pdftex.def Info: figure/CH5/Figure_1.pdf  used on input line 3834.
 (pdftex.def)             Requested size: 367.04073pt x 150.23566pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2744,10 +2751,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [114]
-<figure/CH5/Figure_2.pdf, id=1497, 226.8475pt x 597.23125pt>
+<figure/CH5/Figure_2.pdf, id=1499, 226.8475pt x 597.23125pt>
 File: figure/CH5/Figure_2.pdf Graphic file (type pdf)
 <use figure/CH5/Figure_2.pdf>
-Package pdftex.def Info: figure/CH5/Figure_2.pdf  used on input line 3952.
+Package pdftex.def Info: figure/CH5/Figure_2.pdf  used on input line 4040.
 (pdftex.def)             Requested size: 183.52036pt x 483.16231pt.
 
 Underfull \vbox (badness 4096) has occurred while \output is active []
@@ -2772,10 +2779,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [116 <./figure/CH5/Figure_2.pdf>]
-<figure/CH5/Figure_3.pdf, id=1539, 625.33624pt x 226.8475pt>
+<figure/CH5/Figure_3.pdf, id=1541, 625.33624pt x 226.8475pt>
 File: figure/CH5/Figure_3.pdf Graphic file (type pdf)
 <use figure/CH5/Figure_3.pdf>
-Package pdftex.def Info: figure/CH5/Figure_3.pdf  used on input line 4000.
+Package pdftex.def Info: figure/CH5/Figure_3.pdf  used on input line 4088.
 (pdftex.def)             Requested size: 367.04073pt x 133.15004pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2807,10 +2814,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [119]
-<figure/CH5/Figure_4.pdf, id=1580, 625.33624pt x 226.8475pt>
+<figure/CH5/Figure_4.pdf, id=1582, 625.33624pt x 226.8475pt>
 File: figure/CH5/Figure_4.pdf Graphic file (type pdf)
 <use figure/CH5/Figure_4.pdf>
-Package pdftex.def Info: figure/CH5/Figure_4.pdf  used on input line 4090.
+Package pdftex.def Info: figure/CH5/Figure_4.pdf  used on input line 4178.
 (pdftex.def)             Requested size: 367.04073pt x 133.15004pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2821,10 +2828,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [120 <./figure/CH5/Figure_4.pdf>]
-<figure/CH5/Figure_5.pdf, id=1618, 625.33624pt x 226.8475pt>
+<figure/CH5/Figure_5.pdf, id=1620, 625.33624pt x 226.8475pt>
 File: figure/CH5/Figure_5.pdf Graphic file (type pdf)
 <use figure/CH5/Figure_5.pdf>
-Package pdftex.def Info: figure/CH5/Figure_5.pdf  used on input line 4115.
+Package pdftex.def Info: figure/CH5/Figure_5.pdf  used on input line 4203.
 (pdftex.def)             Requested size: 367.04073pt x 133.15004pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2844,10 +2851,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [122]
-<figure/CH5/Figure_6.pdf, id=1660, 578.16pt x 361.35pt>
+<figure/CH5/Figure_6.pdf, id=1662, 578.16pt x 361.35pt>
 File: figure/CH5/Figure_6.pdf Graphic file (type pdf)
 <use figure/CH5/Figure_6.pdf>
-Package pdftex.def Info: figure/CH5/Figure_6.pdf  used on input line 4211.
+Package pdftex.def Info: figure/CH5/Figure_6.pdf  used on input line 4299.
 (pdftex.def)             Requested size: 293.6337pt x 183.51965pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2916,10 +2923,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
  6.
 
-Package xcolor Warning: Incompatible color definition on input line 4447.
+Package xcolor Warning: Incompatible color definition on input line 4534.
 
 
-Package xcolor Warning: Incompatible color definition on input line 4447.
+Package xcolor Warning: Incompatible color definition on input line 4534.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3026,10 +3033,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Appendix A.
 
-Package xcolor Warning: Incompatible color definition on input line 4799.
+Package xcolor Warning: Incompatible color definition on input line 4886.
 
 
-Package xcolor Warning: Incompatible color definition on input line 4799.
+Package xcolor Warning: Incompatible color definition on input line 4886.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3040,10 +3047,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [143]
-<figure/appendixA/fig1.png, id=1771, 256.3176pt x 239.4546pt>
+<figure/appendixA/fig1.png, id=1773, 256.3176pt x 239.4546pt>
 File: figure/appendixA/fig1.png Graphic file (type png)
 <use figure/appendixA/fig1.png>
-Package pdftex.def Info: figure/appendixA/fig1.png  used on input line 4810.
+Package pdftex.def Info: figure/appendixA/fig1.png  used on input line 4897.
 (pdftex.def)             Requested size: 293.6337pt x 274.31836pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3054,10 +3061,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [144 <./figure/appendixA/fig1.png>]
-<figure/appendixA/fig2.png, id=1777, 385.44pt x 374.5995pt>
+<figure/appendixA/fig2.png, id=1779, 385.44pt x 374.5995pt>
 File: figure/appendixA/fig2.png Graphic file (type png)
 <use figure/appendixA/fig2.png>
-Package pdftex.def Info: figure/appendixA/fig2.png  used on input line 4821.
+Package pdftex.def Info: figure/appendixA/fig2.png  used on input line 4908.
 (pdftex.def)             Requested size: 367.04073pt x 356.71347pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3068,10 +3075,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [145 <./figure/appendixA/fig2.png>]
-<figure/appendixA/fig3.png, id=1783, 477.7047pt x 187.6611pt>
+<figure/appendixA/fig3.png, id=1785, 477.7047pt x 187.6611pt>
 File: figure/appendixA/fig3.png Graphic file (type png)
 <use figure/appendixA/fig3.png>
-Package pdftex.def Info: figure/appendixA/fig3.png  used on input line 4832.
+Package pdftex.def Info: figure/appendixA/fig3.png  used on input line 4919.
 (pdftex.def)             Requested size: 367.04073pt x 144.19023pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3082,62 +3089,62 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [146 <./figure/appendixA/fig3.png>]
-Overfull \hbox (2.68365pt too wide) in paragraph at lines 4844--4844
+Overfull \hbox (2.68365pt too wide) in paragraph at lines 4931--4931
 []|\T1/lmr/m/n/6 Method|  
  []
 
 
-Overfull \hbox (7.60603pt too wide) in paragraph at lines 4844--4845
+Overfull \hbox (7.60603pt too wide) in paragraph at lines 4931--4932
  []|\T1/lmr/m/n/6 Diameter
  []
 
 
-Overfull \hbox (26.68805pt too wide) in alignment at lines 4841--4846
+Overfull \hbox (26.68805pt too wide) in alignment at lines 4928--4933
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (2.68365pt too wide) in paragraph at lines 4849--4849
+Overfull \hbox (2.68365pt too wide) in paragraph at lines 4936--4936
 []|\T1/lmr/m/n/6 Method|  
  []
 
 
-Overfull \hbox (7.60603pt too wide) in paragraph at lines 4849--4850
+Overfull \hbox (7.60603pt too wide) in paragraph at lines 4936--4937
  []|\T1/lmr/m/n/6 Diameter
  []
 
 
-Overfull \hbox (26.68805pt too wide) in alignment at lines 4846--4851
+Overfull \hbox (26.68805pt too wide) in alignment at lines 4933--4938
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68805pt too wide) in alignment at lines 4851--4853
+Overfull \hbox (26.68805pt too wide) in alignment at lines 4938--4940
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68805pt too wide) in alignment at lines 4853--4855
+Overfull \hbox (26.68805pt too wide) in alignment at lines 4940--4942
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68805pt too wide) in alignment at lines 4855--4876
+Overfull \hbox (26.68805pt too wide) in alignment at lines 4942--4963
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68805pt too wide) in alignment at lines 4876--4896
+Overfull \hbox (26.68805pt too wide) in alignment at lines 4963--4983
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68805pt too wide) in alignment at lines 4896--4916
+Overfull \hbox (26.68805pt too wide) in alignment at lines 4983--5003
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68805pt too wide) in alignment at lines 4916--4936
+Overfull \hbox (26.68805pt too wide) in alignment at lines 5003--5023
  [] [] [] [] [] [] 
  []
 
@@ -3150,12 +3157,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [147]
-Overfull \hbox (26.68805pt too wide) in alignment at lines 4936--4956
+Overfull \hbox (26.68805pt too wide) in alignment at lines 5023--5043
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68805pt too wide) in alignment at lines 4956--4956
+Overfull \hbox (26.68805pt too wide) in alignment at lines 5043--5043
  [] [] [] [] [] [] 
  []
 
@@ -3177,7 +3184,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [149]
-Overfull \hbox (5.33412pt too wide) in paragraph at lines 4965--5002
+Overfull \hbox (5.33412pt too wide) in paragraph at lines 5052--5089
  [][] 
  []
 
@@ -3205,10 +3212,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Appendix B.
 
-Package xcolor Warning: Incompatible color definition on input line 5040.
+Package xcolor Warning: Incompatible color definition on input line 5127.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5040.
+Package xcolor Warning: Incompatible color definition on input line 5127.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3219,11 +3226,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [153]
-<figure/appendixB/QCsummary2.png, id=1819, 603.0028pt x 973.38657pt>
+<figure/appendixB/QCsummary2.png, id=1821, 603.0028pt x 973.38657pt>
 File: figure/appendixB/QCsummary2.png Graphic file (type png)
 <use figure/appendixB/QCsummary2.png>
-Package pdftex.def Info: figure/appendixB/QCsummary2.png  used on input line 50
-49.
+Package pdftex.def Info: figure/appendixB/QCsummary2.png  used on input line 51
+36.
 (pdftex.def)             Requested size: 293.6337pt x 473.99307pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3248,11 +3255,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [155 <./figure/appendixB/QCsummary2.png>]
-<figure/appendixB/schematics.png, id=1830, 498.41379pt x 660.39827pt>
+<figure/appendixB/schematics.png, id=1832, 498.41379pt x 660.39827pt>
 File: figure/appendixB/schematics.png Graphic file (type png)
 <use figure/appendixB/schematics.png>
-Package pdftex.def Info: figure/appendixB/schematics.png  used on input line 50
-60.
+Package pdftex.def Info: figure/appendixB/schematics.png  used on input line 51
+47.
 (pdftex.def)             Requested size: 256.92738pt x 340.42633pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3263,10 +3270,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [156 <./figure/appendixB/schematics.png>]
-<figure/appendixB/outapp.png, id=1836, 1927.2pt x 921.4425pt>
+<figure/appendixB/outapp.png, id=1838, 1927.2pt x 921.4425pt>
 File: figure/appendixB/outapp.png Graphic file (type png)
 <use figure/appendixB/outapp.png>
-Package pdftex.def Info: figure/appendixB/outapp.png  used on input line 5071.
+Package pdftex.def Info: figure/appendixB/outapp.png  used on input line 5158.
 (pdftex.def)             Requested size: 367.04073pt x 175.48363pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3277,11 +3284,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [157 <./figure/appendixB/outapp.png>]
-<figure/appendixB/regionalmaps.png, id=1842, 1084.05pt x 1300.86pt>
+<figure/appendixB/regionalmaps.png, id=1844, 1084.05pt x 1300.86pt>
 File: figure/appendixB/regionalmaps.png Graphic file (type png)
 <use figure/appendixB/regionalmaps.png>
 Package pdftex.def Info: figure/appendixB/regionalmaps.png  used on input line 
-5081.
+5168.
 (pdftex.def)             Requested size: 367.04073pt x 440.44055pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3416,37 +3423,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [171]
-Overfull \hbox (1.89775pt too wide) in alignment at lines 5496--5501
+Overfull \hbox (1.89775pt too wide) in alignment at lines 5583--5588
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (1.89775pt too wide) in alignment at lines 5501--5506
+Overfull \hbox (1.89775pt too wide) in alignment at lines 5588--5593
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (1.89775pt too wide) in alignment at lines 5506--5508
+Overfull \hbox (1.89775pt too wide) in alignment at lines 5593--5595
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (1.89775pt too wide) in alignment at lines 5508--5510
+Overfull \hbox (1.89775pt too wide) in alignment at lines 5595--5597
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (1.89775pt too wide) in alignment at lines 5510--5531
+Overfull \hbox (1.89775pt too wide) in alignment at lines 5597--5618
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (1.89775pt too wide) in alignment at lines 5531--5551
+Overfull \hbox (1.89775pt too wide) in alignment at lines 5618--5638
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (1.89775pt too wide) in alignment at lines 5551--5569
+Overfull \hbox (1.89775pt too wide) in alignment at lines 5638--5656
  [] [] [] [] [] [] [] [] [] 
  []
 
@@ -3494,10 +3501,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Appendix C.
 
-Package xcolor Warning: Incompatible color definition on input line 5617.
+Package xcolor Warning: Incompatible color definition on input line 5704.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5617.
+Package xcolor Warning: Incompatible color definition on input line 5704.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3508,10 +3515,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [177]
-<figure/appendixC/dbh_sw.pdf, id=1927, 433.62pt x 289.08pt>
+<figure/appendixC/dbh_sw.pdf, id=1929, 433.62pt x 289.08pt>
 File: figure/appendixC/dbh_sw.pdf Graphic file (type pdf)
 <use figure/appendixC/dbh_sw.pdf>
-Package pdftex.def Info: figure/appendixC/dbh_sw.pdf  used on input line 5626.
+Package pdftex.def Info: figure/appendixC/dbh_sw.pdf  used on input line 5713.
 (pdftex.def)             Requested size: 367.04073pt x 244.70462pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3522,11 +3529,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [178 <./figure/appendixC/dbh_sw.pdf>]
-<figure/appendixC/gg_biomes.pdf, id=1943, 433.62pt x 361.35pt>
+<figure/appendixC/gg_biomes.pdf, id=1945, 433.62pt x 361.35pt>
 File: figure/appendixC/gg_biomes.pdf Graphic file (type pdf)
 <use figure/appendixC/gg_biomes.pdf>
-Package pdftex.def Info: figure/appendixC/gg_biomes.pdf  used on input line 563
-9.
+Package pdftex.def Info: figure/appendixC/gg_biomes.pdf  used on input line 572
+6.
 (pdftex.def)             Requested size: 367.04073pt x 305.88078pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3537,10 +3544,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [179 <./figure/appendixC/gg_biomes.pdf>]
-<figure/appendixC/var_maps.png, id=1956, 540.5796pt x 569.0058pt>
+<figure/appendixC/var_maps.png, id=1958, 540.5796pt x 569.0058pt>
 File: figure/appendixC/var_maps.png Graphic file (type png)
 <use figure/appendixC/var_maps.png>
-Package pdftex.def Info: figure/appendixC/var_maps.png  used on input line 5652
+Package pdftex.def Info: figure/appendixC/var_maps.png  used on input line 5739
 .
 (pdftex.def)             Requested size: 367.04073pt x 386.3458pt.
 
@@ -3552,11 +3559,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [180 <./figure/appendixC/var_maps.png (PNG copy)>]
-<figure/appendixC/spa_plots.pdf, id=1961, 867.24pt x 469.755pt>
+<figure/appendixC/spa_plots.pdf, id=1963, 867.24pt x 469.755pt>
 File: figure/appendixC/spa_plots.pdf Graphic file (type pdf)
 <use figure/appendixC/spa_plots.pdf>
-Package pdftex.def Info: figure/appendixC/spa_plots.pdf  used on input line 566
-5.
+Package pdftex.def Info: figure/appendixC/spa_plots.pdf  used on input line 575
+2.
 (pdftex.def)             Requested size: 367.04073pt x 198.81534pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3603,147 +3610,147 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [185]
-Overfull \hbox (6.139pt too wide) in paragraph at lines 5856--5856
+Overfull \hbox (6.139pt too wide) in paragraph at lines 5943--5943
  []|[]| 
  []
 
 
-Overfull \hbox (6.5513pt too wide) in paragraph at lines 5856--5856
+Overfull \hbox (6.5513pt too wide) in paragraph at lines 5943--5943
  []|[]| 
  []
 
 
-Overfull \hbox (8.91327pt too wide) in paragraph at lines 5856--5856
+Overfull \hbox (8.91327pt too wide) in paragraph at lines 5943--5943
  []|[]| 
  []
 
 
-Overfull \hbox (5.4167pt too wide) in paragraph at lines 5856--5856
+Overfull \hbox (5.4167pt too wide) in paragraph at lines 5943--5943
  []|[]| 
  []
 
 
-Overfull \hbox (6.33539pt too wide) in paragraph at lines 5856--5856
+Overfull \hbox (6.33539pt too wide) in paragraph at lines 5943--5943
  []|[]| 
  []
 
 
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5853--5858
+Overfull \hbox (1.9137pt too wide) in alignment at lines 5940--5945
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (6.139pt too wide) in paragraph at lines 5861--5861
+Overfull \hbox (6.139pt too wide) in paragraph at lines 5948--5948
  []|[]| 
  []
 
 
-Overfull \hbox (6.5513pt too wide) in paragraph at lines 5861--5861
+Overfull \hbox (6.5513pt too wide) in paragraph at lines 5948--5948
  []|[]| 
  []
 
 
-Overfull \hbox (8.91327pt too wide) in paragraph at lines 5861--5861
+Overfull \hbox (8.91327pt too wide) in paragraph at lines 5948--5948
  []|[]| 
  []
 
 
-Overfull \hbox (5.4167pt too wide) in paragraph at lines 5861--5861
+Overfull \hbox (5.4167pt too wide) in paragraph at lines 5948--5948
  []|[]| 
  []
 
 
-Overfull \hbox (6.33539pt too wide) in paragraph at lines 5861--5861
+Overfull \hbox (6.33539pt too wide) in paragraph at lines 5948--5948
  []|[]| 
  []
 
 
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5858--5863
+Overfull \hbox (1.9137pt too wide) in alignment at lines 5945--5950
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5863--5865
+Overfull \hbox (1.9137pt too wide) in alignment at lines 5950--5952
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5865--5867
+Overfull \hbox (1.9137pt too wide) in alignment at lines 5952--5954
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (14.38362pt too wide) in paragraph at lines 5868--5868
+Overfull \hbox (14.38362pt too wide) in paragraph at lines 5955--5955
  []|\T1/lmr/m/n/5 AUS_CAN_ST1_EUC| 
  []
 
 
-Overfull \hbox (13.50871pt too wide) in paragraph at lines 5869--5869
+Overfull \hbox (13.50871pt too wide) in paragraph at lines 5956--5956
  []|\T1/lmr/m/n/5 AUS_CAN_ST2_MIX| 
  []
 
 
-Overfull \hbox (14.613pt too wide) in paragraph at lines 5870--5870
+Overfull \hbox (14.613pt too wide) in paragraph at lines 5957--5957
  []|\T1/lmr/m/n/5 AUS_CAN_ST3_ACA| 
  []
 
 
-Overfull \hbox (15.18921pt too wide) in paragraph at lines 5871--5871
+Overfull \hbox (15.18921pt too wide) in paragraph at lines 5958--5958
  []|\T1/lmr/m/n/5 AUS_CAR_THI_CON| 
  []
 
 
-Overfull \hbox (0.65451pt too wide) in paragraph at lines 5874--5874
+Overfull \hbox (0.65451pt too wide) in paragraph at lines 5961--5961
  []|\T1/lmr/m/n/5 AUS_MAR_UBW| 
  []
 
 
-Overfull \hbox (14.55724pt too wide) in paragraph at lines 5881--5881
+Overfull \hbox (14.55724pt too wide) in paragraph at lines 5968--5968
  []|\T1/lmr/m/n/5 CAN_TUR_P39_PRE| 
  []
 
 
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5867--5888
+Overfull \hbox (1.9137pt too wide) in alignment at lines 5954--5975
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (18.59906pt too wide) in paragraph at lines 5896--5896
+Overfull \hbox (18.59906pt too wide) in paragraph at lines 5983--5983
  []|\T1/lmr/m/n/5 DEU_MER_BEE_NON| 
  []
 
 
-Overfull \hbox (19.98808pt too wide) in paragraph at lines 5897--5897
+Overfull \hbox (19.98808pt too wide) in paragraph at lines 5984--5984
  []|\T1/lmr/m/n/5 DEU_MER_DOU_NON| 
  []
 
 
-Overfull \hbox (18.24483pt too wide) in paragraph at lines 5898--5898
+Overfull \hbox (18.24483pt too wide) in paragraph at lines 5985--5985
  []|\T1/lmr/m/n/5 DEU_MER_MIX_NON| 
  []
 
 
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5888--5908
+Overfull \hbox (1.9137pt too wide) in alignment at lines 5975--5995
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (13.7998pt too wide) in paragraph at lines 5908--5908
+Overfull \hbox (13.7998pt too wide) in paragraph at lines 5995--5995
  []|\T1/lmr/m/n/5 ESP_MON_SIE_NAT| 
  []
 
 
-Overfull \hbox (15.2451pt too wide) in paragraph at lines 5921--5921
+Overfull \hbox (15.2451pt too wide) in paragraph at lines 6008--6008
  []|\T1/lmr/m/n/5 FRA_HES_HE1_NON| 
  []
 
 
-Overfull \hbox (15.2451pt too wide) in paragraph at lines 5922--5922
+Overfull \hbox (15.2451pt too wide) in paragraph at lines 6009--6009
  []|\T1/lmr/m/n/5 FRA_HES_HE2_NON| 
  []
 
 
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5908--5928
+Overfull \hbox (1.9137pt too wide) in alignment at lines 5995--6015
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -3758,7 +3765,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [186
 
 ]
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5928--5948
+Overfull \hbox (1.9137pt too wide) in alignment at lines 6015--6035
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -3771,57 +3778,57 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [187]
-Overfull \hbox (15.48776pt too wide) in paragraph at lines 5950--5950
+Overfull \hbox (15.48776pt too wide) in paragraph at lines 6037--6037
  []|\T1/lmr/m/n/5 SWE_NOR_ST1_BEF| 
  []
 
 
-Overfull \hbox (15.6611pt too wide) in paragraph at lines 5953--5953
+Overfull \hbox (15.6611pt too wide) in paragraph at lines 6040--6040
  []|\T1/lmr/m/n/5 SWE_NOR_ST5_REF| 
  []
 
 
-Overfull \hbox (16.27957pt too wide) in paragraph at lines 5957--5957
+Overfull \hbox (16.27957pt too wide) in paragraph at lines 6044--6044
  []|\T1/lmr/m/n/5 SWE_SVA_MIX_NON| 
  []
 
 
-Overfull \hbox (16.1758pt too wide) in paragraph at lines 5967--5967
+Overfull \hbox (16.1758pt too wide) in paragraph at lines 6054--6054
  []|\T1/lmr/m/n/5 USA_ORN_ST1_AMB| 
  []
 
 
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5948--5968
+Overfull \hbox (1.9137pt too wide) in alignment at lines 6035--6055
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (12.3561pt too wide) in paragraph at lines 5970--5970
+Overfull \hbox (12.3561pt too wide) in paragraph at lines 6057--6057
  []|\T1/lmr/m/n/5 USA_PJS_P04_AMB| 
  []
 
 
-Overfull \hbox (12.3561pt too wide) in paragraph at lines 5971--5971
+Overfull \hbox (12.3561pt too wide) in paragraph at lines 6058--6058
  []|\T1/lmr/m/n/5 USA_PJS_P08_AMB| 
  []
 
 
-Overfull \hbox (12.3561pt too wide) in paragraph at lines 5972--5972
+Overfull \hbox (12.3561pt too wide) in paragraph at lines 6059--6059
  []|\T1/lmr/m/n/5 USA_PJS_P12_AMB| 
  []
 
 
-Overfull \hbox (11.89072pt too wide) in paragraph at lines 5973--5973
+Overfull \hbox (11.89072pt too wide) in paragraph at lines 6060--6060
  []|\T1/lmr/m/n/5 USA_SIL_OAK_1PR| 
  []
 
 
-Overfull \hbox (11.89072pt too wide) in paragraph at lines 5974--5974
+Overfull \hbox (11.89072pt too wide) in paragraph at lines 6061--6061
  []|\T1/lmr/m/n/5 USA_SIL_OAK_2PR| 
  []
 
 
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5968--5988
+Overfull \hbox (1.9137pt too wide) in alignment at lines 6055--6075
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -3834,7 +3841,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [188]
-Overfull \hbox (1.9137pt too wide) in alignment at lines 5988--5990
+Overfull \hbox (1.9137pt too wide) in alignment at lines 6075--6077
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -3870,10 +3877,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Appendix D.
 
-Package xcolor Warning: Incompatible color definition on input line 6015.
+Package xcolor Warning: Incompatible color definition on input line 6102.
 
 
-Package xcolor Warning: Incompatible color definition on input line 6015.
+Package xcolor Warning: Incompatible color definition on input line 6102.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3887,10 +3894,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 6033.
+(amsmath)                 on input line 6120.
 
 
-Overfull \hbox (33.25339pt too wide) detected at line 6039
+Overfull \hbox (33.25339pt too wide) detected at line 6126
 []\OML/lmm/m/it/10.95 z \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 tree height  \
 OT1/lmr/m/n/10.95 + 2\OML/lmm/m/it/10.95 ;  d \OT1/lmr/m/n/10.95 = 0\OML/lmm/m/
 it/10.95 :\OT1/lmr/m/n/10.95 6(\OML/lmm/m/it/10.95 tree height\OT1/lmr/m/n/10.9
@@ -3909,10 +3916,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [194]
-<figure/appendixD/figpca.pdf, id=2107, 226.8475pt x 226.8475pt>
+<figure/appendixD/figpca.pdf, id=2109, 226.8475pt x 226.8475pt>
 File: figure/appendixD/figpca.pdf Graphic file (type pdf)
 <use figure/appendixD/figpca.pdf>
-Package pdftex.def Info: figure/appendixD/figpca.pdf  used on input line 6062.
+Package pdftex.def Info: figure/appendixD/figpca.pdf  used on input line 6149.
 (pdftex.def)             Requested size: 226.84694pt x 226.84694pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3923,10 +3930,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [195 <./figure/appendixD/figpca.pdf>]
-<figure/appendixD/fig17.pdf, id=2139, 682.55pt x 482.80376pt>
+<figure/appendixD/fig17.pdf, id=2141, 682.55pt x 482.80376pt>
 File: figure/appendixD/fig17.pdf Graphic file (type pdf)
 <use figure/appendixD/fig17.pdf>
-Package pdftex.def Info: figure/appendixD/fig17.pdf  used on input line 6071.
+Package pdftex.def Info: figure/appendixD/fig17.pdf  used on input line 6158.
 (pdftex.def)             Requested size: 504.46394pt x 356.8419pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3953,20 +3960,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [197 <./figure/appendixD/fig17.pdf>]
-<figure/appendixD/ggg1.pdf, id=2182, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg1.pdf, id=2184, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg1.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg1.pdf>
-Package pdftex.def Info: figure/appendixD/ggg1.pdf  used on input line 6081.
+Package pdftex.def Info: figure/appendixD/ggg1.pdf  used on input line 6168.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
-<figure/appendixD/ggg2.pdf, id=2183, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg2.pdf, id=2185, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg2.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg2.pdf>
-Package pdftex.def Info: figure/appendixD/ggg2.pdf  used on input line 6088.
+Package pdftex.def Info: figure/appendixD/ggg2.pdf  used on input line 6175.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
-<figure/appendixD/ggg3.pdf, id=2184, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg3.pdf, id=2186, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg3.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg3.pdf>
-Package pdftex.def Info: figure/appendixD/ggg3.pdf  used on input line 6095.
+Package pdftex.def Info: figure/appendixD/ggg3.pdf  used on input line 6182.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3982,10 +3989,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [198
 
  <./figure/appendixD/ggg1.pdf>]
-<figure/appendixD/ggg4.pdf, id=2201, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg4.pdf, id=2203, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg4.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg4.pdf>
-Package pdftex.def Info: figure/appendixD/ggg4.pdf  used on input line 6102.
+Package pdftex.def Info: figure/appendixD/ggg4.pdf  used on input line 6189.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3999,10 +4006,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [199 <./figure/appendixD/ggg2.pdf>]
-<figure/appendixD/ggg5.pdf, id=2218, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg5.pdf, id=2220, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg5.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg5.pdf>
-Package pdftex.def Info: figure/appendixD/ggg5.pdf  used on input line 6109.
+Package pdftex.def Info: figure/appendixD/ggg5.pdf  used on input line 6196.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4016,10 +4023,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [200 <./figure/appendixD/ggg3.pdf>]
-<figure/appendixD/ggg6.pdf, id=2235, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg6.pdf, id=2237, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg6.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg6.pdf>
-Package pdftex.def Info: figure/appendixD/ggg6.pdf  used on input line 6116.
+Package pdftex.def Info: figure/appendixD/ggg6.pdf  used on input line 6203.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4033,10 +4040,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [201 <./figure/appendixD/ggg4.pdf>]
-<figure/appendixD/ggg7.pdf, id=2253, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg7.pdf, id=2255, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg7.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg7.pdf>
-Package pdftex.def Info: figure/appendixD/ggg7.pdf  used on input line 6123.
+Package pdftex.def Info: figure/appendixD/ggg7.pdf  used on input line 6210.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4050,10 +4057,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [202 <./figure/appendixD/ggg5.pdf>]
-<figure/appendixD/ggg9.pdf, id=2270, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg9.pdf, id=2272, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg9.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg9.pdf>
-Package pdftex.def Info: figure/appendixD/ggg9.pdf  used on input line 6131.
+Package pdftex.def Info: figure/appendixD/ggg9.pdf  used on input line 6218.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4067,10 +4074,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [203 <./figure/appendixD/ggg6.pdf>]
-<figure/appendixD/ggg10.pdf, id=2287, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg10.pdf, id=2289, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg10.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg10.pdf>
-Package pdftex.def Info: figure/appendixD/ggg10.pdf  used on input line 6138.
+Package pdftex.def Info: figure/appendixD/ggg10.pdf  used on input line 6225.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4084,10 +4091,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [204 <./figure/appendixD/ggg7.pdf>]
-<figure/appendixD/ggg11.pdf, id=2303, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg11.pdf, id=2305, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg11.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg11.pdf>
-Package pdftex.def Info: figure/appendixD/ggg11.pdf  used on input line 6145.
+Package pdftex.def Info: figure/appendixD/ggg11.pdf  used on input line 6232.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4101,10 +4108,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [205 <./figure/appendixD/ggg9.pdf>]
-<figure/appendixD/ggg12.pdf, id=2321, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg12.pdf, id=2323, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg12.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg12.pdf>
-Package pdftex.def Info: figure/appendixD/ggg12.pdf  used on input line 6152.
+Package pdftex.def Info: figure/appendixD/ggg12.pdf  used on input line 6239.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4118,10 +4125,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [206 <./figure/appendixD/ggg10.pdf>]
-<figure/appendixD/ggg13.pdf, id=2338, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg13.pdf, id=2340, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg13.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg13.pdf>
-Package pdftex.def Info: figure/appendixD/ggg13.pdf  used on input line 6159.
+Package pdftex.def Info: figure/appendixD/ggg13.pdf  used on input line 6246.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4135,10 +4142,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [207 <./figure/appendixD/ggg11.pdf>]
-<figure/appendixD/ggg14.pdf, id=2356, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg14.pdf, id=2358, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg14.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg14.pdf>
-Package pdftex.def Info: figure/appendixD/ggg14.pdf  used on input line 6166.
+Package pdftex.def Info: figure/appendixD/ggg14.pdf  used on input line 6253.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4152,10 +4159,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [208 <./figure/appendixD/ggg12.pdf>]
-<figure/appendixD/ggg15.pdf, id=2373, 454.69875pt x 625.33624pt>
+<figure/appendixD/ggg15.pdf, id=2375, 454.69875pt x 625.33624pt>
 File: figure/appendixD/ggg15.pdf Graphic file (type pdf)
 <use figure/appendixD/ggg15.pdf>
-Package pdftex.def Info: figure/appendixD/ggg15.pdf  used on input line 6173.
+Package pdftex.def Info: figure/appendixD/ggg15.pdf  used on input line 6260.
 (pdftex.def)             Requested size: 367.04073pt x 504.79251pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4169,11 +4176,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [209 <./figure/appendixD/ggg13.pdf>]
-<figure/appendixD/fig_Gref_b1.pdf, id=2390, 226.8475pt x 226.8475pt>
+<figure/appendixD/fig_Gref_b1.pdf, id=2392, 226.8475pt x 226.8475pt>
 File: figure/appendixD/fig_Gref_b1.pdf Graphic file (type pdf)
 <use figure/appendixD/fig_Gref_b1.pdf>
 Package pdftex.def Info: figure/appendixD/fig_Gref_b1.pdf  used on input line 6
-181.
+268.
 (pdftex.def)             Requested size: 367.04073pt x 367.0444pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4187,10 +4194,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [210 <./figure/appendixD/ggg14.pdf>]
-<figure/appendixD/fig7.pdf, id=2407, 511.9125pt x 653.44125pt>
+<figure/appendixD/fig7.pdf, id=2409, 511.9125pt x 653.44125pt>
 File: figure/appendixD/fig7.pdf Graphic file (type pdf)
 <use figure/appendixD/fig7.pdf>
-Package pdftex.def Info: figure/appendixD/fig7.pdf  used on input line 6189.
+Package pdftex.def Info: figure/appendixD/fig7.pdf  used on input line 6276.
 (pdftex.def)             Requested size: 367.04073pt x 468.5131pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4204,10 +4211,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [211 <./figure/appendixD/ggg15.pdf>]
-<figure/appendixD/fig22.pdf, id=2423, 511.9125pt x 625.33624pt>
+<figure/appendixD/fig22.pdf, id=2425, 511.9125pt x 625.33624pt>
 File: figure/appendixD/fig22.pdf Graphic file (type pdf)
 <use figure/appendixD/fig22.pdf>
-Package pdftex.def Info: figure/appendixD/fig22.pdf  used on input line 6197.
+Package pdftex.def Info: figure/appendixD/fig22.pdf  used on input line 6284.
 (pdftex.def)             Requested size: 367.04073pt x 448.36201pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4221,11 +4228,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [212 <./figure/appendixD/fig_Gref_b1.pdf>]
-<figure/appendixD/figanggym.pdf, id=2462, 454.69875pt x 511.9125pt>
+<figure/appendixD/figanggym.pdf, id=2464, 454.69875pt x 511.9125pt>
 File: figure/appendixD/figanggym.pdf Graphic file (type pdf)
 <use figure/appendixD/figanggym.pdf>
-Package pdftex.def Info: figure/appendixD/figanggym.pdf  used on input line 620
-5.
+Package pdftex.def Info: figure/appendixD/figanggym.pdf  used on input line 629
+2.
 (pdftex.def)             Requested size: 367.04073pt x 413.23305pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4259,712 +4266,61 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [215 <./figure/appendixD/figanggym.pdf>]
-LaTeX Font Info:    Calculating math sizes for size <4.5> on input line 6253.
+LaTeX Font Info:    Calculating math sizes for size <4.5> on input line 6340.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.5> on input line 6253.
+(Font)              <4.5> on input line 6340.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.14998> on input line 6253.
+(Font)              <3.14998> on input line 6340.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <2.25> on input line 6253.
+(Font)              <2.25> on input line 6340.
 
-Overfull \hbox (6.52989pt too wide) in paragraph at lines 6253--6253
+Overfull \hbox (6.52989pt too wide) in paragraph at lines 6340--6340
  []|[]|
  []
 
 
-Overfull \hbox (4.43475pt too wide) in paragraph at lines 6253--6253
+Overfull \hbox (4.43475pt too wide) in paragraph at lines 6340--6340
  []|[]|
  []
 
 
-Overfull \hbox (4.6559pt too wide) in paragraph at lines 6253--6253
+Overfull \hbox (4.6559pt too wide) in paragraph at lines 6340--6340
  []|[]|
  []
 
 
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6250--6255
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6337--6342
  [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (6.52989pt too wide) in paragraph at lines 6258--6258
+Overfull \hbox (6.52989pt too wide) in paragraph at lines 6345--6345
  []|[]|
  []
 
 
-Overfull \hbox (4.43475pt too wide) in paragraph at lines 6258--6258
+Overfull \hbox (4.43475pt too wide) in paragraph at lines 6345--6345
  []|[]|
  []
 
 
-Overfull \hbox (4.6559pt too wide) in paragraph at lines 6258--6258
+Overfull \hbox (4.6559pt too wide) in paragraph at lines 6345--6345
  []|[]|
  []
 
 
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6255--6260
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6342--6347
  [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6260--6262
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6347--6349
  [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6262--6264
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6349--6351
  [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6265--6265
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6266--6266
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6267--6267
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.50667pt too wide) in paragraph at lines 6268--6268
-[]|\T1/lmr/m/n/4.5 Acacmear|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6268--6268
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6269--6269
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6270--6270
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6271--6271
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6272--6272
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (4.31885pt too wide) in paragraph at lines 6273--6273
-[]|\T1/lmr/m/n/4.5 Ampemacr|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6273--6273
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6273--6274
- []|\T1/lmr/m/n/4.5 103.560|
- []
-
-
-Overfull \hbox (1.97508pt too wide) in paragraph at lines 6274--6274
-[]|\T1/lmr/m/n/4.5 Arbuuned|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6274--6274
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.09998pt too wide) in paragraph at lines 6275--6275
-[]|\T1/lmr/m/n/4.5 Aspidesm|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6275--6275
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6276--6276
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6277--6277
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.14427pt too wide) in paragraph at lines 6278--6278
-[]|\T1/lmr/m/n/4.5 Betupapy|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6278--6278
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.30026pt too wide) in paragraph at lines 6279--6279
-[]|\T1/lmr/m/n/4.5 Betupend|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6279--6279
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.30026pt too wide) in paragraph at lines 6280--6280
-[]|\T1/lmr/m/n/4.5 Betupube|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6280--6280
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6281--6281
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6282--6282
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6283--6283
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (0.78133pt too wide) in paragraph at lines 6284--6284
-[]|\T1/lmr/m/n/4.5 Carpbetu|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6284--6284
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6264--6285
- [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[216]
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6285--6285
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6285--6286
- []|\T1/lmr/m/n/4.5 324.425|
- []
-
-
-Overfull \hbox (1.71902pt too wide) in paragraph at lines 6286--6286
-[]|\T1/lmr/m/n/4.5 Carytome|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6286--6286
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.90637pt too wide) in paragraph at lines 6287--6287
-[]|\T1/lmr/m/n/4.5 Castacum|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6287--6287
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6288--6288
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.71912pt too wide) in paragraph at lines 6289--6289
-[]|\T1/lmr/m/n/4.5 Coprquad|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6289--6289
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6290--6290
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6291--6291
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (2.81268pt too wide) in paragraph at lines 6292--6292
-[]|\T1/lmr/m/n/4.5 Cupamacr|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6292--6292
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6293--6293
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6293--6294
- []|\T1/lmr/m/n/4.5 717.500|
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6294--6294
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6295--6295
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6296--6296
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6297--6297
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6298--6298
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (0.83163pt too wide) in paragraph at lines 6299--6299
-[]|\T1/lmr/m/n/4.5 Eucabaxt|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6299--6299
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (2.55042pt too wide) in paragraph at lines 6300--6300
-[]|\T1/lmr/m/n/4.5 Eucacama|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6300--6300
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (0.98776pt too wide) in paragraph at lines 6301--6301
-[]|\T1/lmr/m/n/4.5 Eucacype|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6301--6301
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6302--6302
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6303--6303
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6304--6304
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6285--6305
- [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6305--6305
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6306--6306
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6307--6307
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6308--6308
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (0.83162pt too wide) in paragraph at lines 6309--6309
-[]|\T1/lmr/m/n/4.5 Fraxamer|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6309--6309
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6309--6310
- []|\T1/lmr/m/n/4.5 339.552|
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6310--6310
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6310--6311
- []|\T1/lmr/m/n/4.5 133.800|
- []
-
-
-Overfull \hbox (0.6753pt too wide) in paragraph at lines 6311--6311
-[]|\T1/lmr/m/n/4.5 Fraxpenn|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6311--6311
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.27512pt too wide) in paragraph at lines 6312--6312
-[]|\T1/lmr/m/n/4.5 Geniamer|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6312--6312
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6312--6313
- []|\T1/lmr/m/n/4.5 242.210|
- []
-
-
-Overfull \hbox (1.27557pt too wide) in paragraph at lines 6313--6313
-[]|\T1/lmr/m/n/4.5 Goupglab|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6313--6313
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (2.36891pt too wide) in paragraph at lines 6314--6314
-[]|\T1/lmr/m/n/4.5 Gymnripa|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6314--6314
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6315--6315
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6316--6316
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6317--6317
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6318--6318
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.61276pt too wide) in paragraph at lines 6319--6319
-[]|\T1/lmr/m/n/4.5 Junimono|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6319--6319
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (2.60066pt too wide) in paragraph at lines 6320--6320
-[]|\T1/lmr/m/n/4.5 Kandobov|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6320--6320
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6321--6321
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6322--6322
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6323--6323
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6324--6324
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6305--6325
- [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6325--6325
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6325--6326
- []|\T1/lmr/m/n/4.5 157.435|
- []
-
-
-Overfull \hbox (2.70645pt too wide) in paragraph at lines 6326--6326
-[]|\T1/lmr/m/n/4.5 Licamemb|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6326--6326
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6327--6327
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6328--6328
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6329--6329
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6330--6330
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6330--6331
- []|\T1/lmr/m/n/4.5 116.933|
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6331--6331
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (3.22536pt too wide) in paragraph at lines 6332--6332
-[]|\T1/lmr/m/n/4.5 Maludome|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6332--6332
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6333--6333
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6334--6334
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6335--6335
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6336--6336
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6337--6337
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.40689pt too wide) in paragraph at lines 6338--6338
-[]|\T1/lmr/m/n/4.5 Otobnovo|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6338--6338
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6338--6339
- []|\T1/lmr/m/n/4.5 196.140|
- []
-
-
-Overfull \hbox (1.59421pt too wide) in paragraph at lines 6339--6339
-[]|\T1/lmr/m/n/4.5 Oxanasbe|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6339--6339
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6340--6340
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6341--6341
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6342--6342
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6343--6343
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (1.6124pt too wide) in paragraph at lines 6344--6344
-[]|\T1/lmr/m/n/4.5 Pinucemb|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6344--6344
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6325--6345
- [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[217]
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6345--6345
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6346--6346
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6347--6347
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6348--6348
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6349--6349
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6350--6350
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6351--6351
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
  []
 
 
@@ -4978,13 +4334,18 @@ Overfull \hbox (13.33736pt too wide) in paragraph at lines 6353--6353
  []
 
 
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6354--6354
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6354--6354
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
  []
 
 
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6355--6355
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+Overfull \hbox (1.50667pt too wide) in paragraph at lines 6355--6355
+[]|\T1/lmr/m/n/4.5 Acacmear|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6355--6355
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
  []
 
 
@@ -4998,28 +4359,18 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6357--6357
  []
 
 
-Overfull \hbox (1.14406pt too wide) in paragraph at lines 6358--6358
-[]|\T1/lmr/m/n/4.5 Popucane|  
- []
-
-
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6358--6358
 []|\T1/lmr/m/n/4.5 Angiosperms|  
  []
 
 
-Overfull \hbox (2.08133pt too wide) in paragraph at lines 6359--6359
-[]|\T1/lmr/m/n/4.5 Popueuph|  
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6359--6359
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
  []
 
 
-Overfull \hbox (9.8191pt too wide) in paragraph at lines 6359--6359
-[]|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.14418pt too wide) in paragraph at lines 6360--6360
-[]|\T1/lmr/m/n/4.5 Popugran|  
+Overfull \hbox (4.31885pt too wide) in paragraph at lines 6360--6360
+[]|\T1/lmr/m/n/4.5 Ampemacr|  
  []
 
 
@@ -5028,8 +4379,13 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6360--6360
  []
 
 
-Overfull \hbox (1.76869pt too wide) in paragraph at lines 6361--6361
-[]|\T1/lmr/m/n/4.5 Poputrem|  
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6360--6361
+ []|\T1/lmr/m/n/4.5 103.560|
+ []
+
+
+Overfull \hbox (1.97508pt too wide) in paragraph at lines 6361--6361
+[]|\T1/lmr/m/n/4.5 Arbuuned|  
  []
 
 
@@ -5038,8 +4394,8 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6361--6361
  []
 
 
-Overfull \hbox (2.70657pt too wide) in paragraph at lines 6362--6362
-[]|\T1/lmr/m/n/4.5 Poutanom|  
+Overfull \hbox (1.09998pt too wide) in paragraph at lines 6362--6362
+[]|\T1/lmr/m/n/4.5 Aspidesm|  
  []
 
 
@@ -5058,8 +4414,8 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6364--6364
  []
 
 
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6345--6365
- [] [] [] [] [] [] [] [] [] [] [] [] 
+Overfull \hbox (1.14427pt too wide) in paragraph at lines 6365--6365
+[]|\T1/lmr/m/n/4.5 Betupapy|  
  []
 
 
@@ -5068,13 +4424,18 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6365--6365
  []
 
 
+Overfull \hbox (1.30026pt too wide) in paragraph at lines 6366--6366
+[]|\T1/lmr/m/n/4.5 Betupend|  
+ []
+
+
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6366--6366
 []|\T1/lmr/m/n/4.5 Angiosperms|  
  []
 
 
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6366--6367
- []|\T1/lmr/m/n/4.5 413.810|
+Overfull \hbox (1.30026pt too wide) in paragraph at lines 6367--6367
+[]|\T1/lmr/m/n/4.5 Betupube|  
  []
 
 
@@ -5083,13 +4444,8 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6367--6367
  []
 
 
-Overfull \hbox (1.95604pt too wide) in paragraph at lines 6368--6368
-[]|\T1/lmr/m/n/4.5 Pseumenz|  
- []
-
-
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6368--6368
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6368--6368
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
  []
 
 
@@ -5103,13 +4459,41 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6370--6370
  []
 
 
+Overfull \hbox (0.78133pt too wide) in paragraph at lines 6371--6371
+[]|\T1/lmr/m/n/4.5 Carpbetu|  
+ []
+
+
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6371--6371
 []|\T1/lmr/m/n/4.5 Angiosperms|  
  []
 
 
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6351--6372
+ [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[216]
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6372--6372
 []|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6372--6373
+ []|\T1/lmr/m/n/4.5 324.425|
+ []
+
+
+Overfull \hbox (1.71902pt too wide) in paragraph at lines 6373--6373
+[]|\T1/lmr/m/n/4.5 Carytome|  
  []
 
 
@@ -5118,8 +4502,8 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6373--6373
  []
 
 
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6373--6374
- []|\T1/lmr/m/n/4.5 121.678|
+Overfull \hbox (1.90637pt too wide) in paragraph at lines 6374--6374
+[]|\T1/lmr/m/n/4.5 Castacum|  
  []
 
 
@@ -5133,6 +4517,11 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6375--6375
  []
 
 
+Overfull \hbox (1.71912pt too wide) in paragraph at lines 6376--6376
+[]|\T1/lmr/m/n/4.5 Coprquad|  
+ []
+
+
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6376--6376
 []|\T1/lmr/m/n/4.5 Angiosperms|  
  []
@@ -5143,18 +4532,13 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6377--6377
  []
 
 
-Overfull \hbox (1.40627pt too wide) in paragraph at lines 6378--6378
-[]|\T1/lmr/m/n/4.5 Quermich|  
- []
-
-
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6378--6378
 []|\T1/lmr/m/n/4.5 Angiosperms|  
  []
 
 
-Overfull \hbox (2.34381pt too wide) in paragraph at lines 6379--6379
-[]|\T1/lmr/m/n/4.5 Quermont|  
+Overfull \hbox (2.81268pt too wide) in paragraph at lines 6379--6379
+[]|\T1/lmr/m/n/4.5 Cupamacr|  
  []
 
 
@@ -5168,6 +4552,11 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6380--6380
  []
 
 
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6380--6381
+ []|\T1/lmr/m/n/4.5 717.500|
+ []
+
+
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6381--6381
 []|\T1/lmr/m/n/4.5 Angiosperms|  
  []
@@ -5175,11 +4564,6 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6381--6381
 
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6382--6382
 []|\T1/lmr/m/n/4.5 Angiosperms|  
- []
-
-
-Overfull \hbox (1.71878pt too wide) in paragraph at lines 6383--6383
-[]|\T1/lmr/m/n/4.5 Querpube|  
  []
 
 
@@ -5193,18 +4577,13 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6384--6384
  []
 
 
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6365--6385
- [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (0.93768pt too wide) in paragraph at lines 6385--6385
-[]|\T1/lmr/m/n/4.5 Querrobu|  
- []
-
-
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6385--6385
 []|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (0.83163pt too wide) in paragraph at lines 6386--6386
+[]|\T1/lmr/m/n/4.5 Eucabaxt|  
  []
 
 
@@ -5213,13 +4592,18 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6386--6386
  []
 
 
+Overfull \hbox (2.55042pt too wide) in paragraph at lines 6387--6387
+[]|\T1/lmr/m/n/4.5 Eucacama|  
+ []
+
+
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6387--6387
 []|\T1/lmr/m/n/4.5 Angiosperms|  
  []
 
 
-Overfull \hbox (0.81247pt too wide) in paragraph at lines 6388--6388
-[]|\T1/lmr/m/n/4.5 Quersube|  
+Overfull \hbox (0.98776pt too wide) in paragraph at lines 6388--6388
+[]|\T1/lmr/m/n/4.5 Eucacype|  
  []
 
 
@@ -5233,11 +4617,6 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6389--6389
  []
 
 
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6389--6390
- []|\T1/lmr/m/n/4.5 110.450|
- []
-
-
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6390--6390
 []|\T1/lmr/m/n/4.5 Angiosperms|  
  []
@@ -5245,6 +4624,11 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6390--6390
 
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6391--6391
 []|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6372--6392
+ [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
@@ -5268,23 +4652,33 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6395--6395
  []
 
 
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6395--6396
- []|\T1/lmr/m/n/4.5 246.450|
+Overfull \hbox (0.83162pt too wide) in paragraph at lines 6396--6396
+[]|\T1/lmr/m/n/4.5 Fraxamer|  
  []
 
 
-Overfull \hbox (0.93794pt too wide) in paragraph at lines 6396--6396
-[]|\T1/lmr/m/n/4.5 Taxubacc|  
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6396--6396
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
  []
 
 
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6396--6396
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6396--6397
+ []|\T1/lmr/m/n/4.5 339.552|
  []
 
 
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6397--6397
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6397--6397
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6397--6398
+ []|\T1/lmr/m/n/4.5 133.800|
+ []
+
+
+Overfull \hbox (0.6753pt too wide) in paragraph at lines 6398--6398
+[]|\T1/lmr/m/n/4.5 Fraxpenn|  
  []
 
 
@@ -5293,13 +4687,8 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6398--6398
  []
 
 
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6398--6399
- []|\T1/lmr/m/n/4.5 130.715|
- []
-
-
-Overfull \hbox (0.9377pt too wide) in paragraph at lines 6399--6399
-[]|\T1/lmr/m/n/4.5 Tropmexi|  
+Overfull \hbox (1.27512pt too wide) in paragraph at lines 6399--6399
+[]|\T1/lmr/m/n/4.5 Geniamer|  
  []
 
 
@@ -5308,18 +4697,23 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6399--6399
  []
 
 
-Overfull \hbox (0.50044pt too wide) in paragraph at lines 6400--6400
-[]|\T1/lmr/m/n/4.5 Tsugcana|  
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6399--6400
+ []|\T1/lmr/m/n/4.5 242.210|
  []
 
 
-Overfull \hbox (13.33736pt too wide) in paragraph at lines 6400--6400
-[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+Overfull \hbox (1.27557pt too wide) in paragraph at lines 6400--6400
+[]|\T1/lmr/m/n/4.5 Goupglab|  
  []
 
 
-Overfull \hbox (3.06891pt too wide) in paragraph at lines 6401--6401
-[]|\T1/lmr/m/n/4.5 Ulmuamer|  
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6400--6400
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (2.36891pt too wide) in paragraph at lines 6401--6401
+[]|\T1/lmr/m/n/4.5 Gymnripa|  
  []
 
 
@@ -5338,22 +4732,635 @@ Overfull \hbox (9.8191pt too wide) in paragraph at lines 6403--6403
  []
 
 
-Overfull \hbox (2.13182pt too wide) in paragraph at lines 6404--6404
-[]|\T1/lmr/m/n/4.5 Vouaamer|  
- []
-
-
 Overfull \hbox (9.8191pt too wide) in paragraph at lines 6404--6404
 []|\T1/lmr/m/n/4.5 Angiosperms|  
  []
 
 
-Overfull \hbox (1.8137pt too wide) in paragraph at lines 6404--6405
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6405--6405
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.61276pt too wide) in paragraph at lines 6406--6406
+[]|\T1/lmr/m/n/4.5 Junimono|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6406--6406
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (2.60066pt too wide) in paragraph at lines 6407--6407
+[]|\T1/lmr/m/n/4.5 Kandobov|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6407--6407
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6408--6408
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6409--6409
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6410--6410
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6411--6411
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6392--6412
+ [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6412--6412
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6412--6413
+ []|\T1/lmr/m/n/4.5 157.435|
+ []
+
+
+Overfull \hbox (2.70645pt too wide) in paragraph at lines 6413--6413
+[]|\T1/lmr/m/n/4.5 Licamemb|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6413--6413
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6414--6414
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6415--6415
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6416--6416
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6417--6417
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6417--6418
+ []|\T1/lmr/m/n/4.5 116.933|
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6418--6418
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (3.22536pt too wide) in paragraph at lines 6419--6419
+[]|\T1/lmr/m/n/4.5 Maludome|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6419--6419
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6420--6420
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6421--6421
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6422--6422
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6423--6423
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6424--6424
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.40689pt too wide) in paragraph at lines 6425--6425
+[]|\T1/lmr/m/n/4.5 Otobnovo|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6425--6425
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6425--6426
+ []|\T1/lmr/m/n/4.5 196.140|
+ []
+
+
+Overfull \hbox (1.59421pt too wide) in paragraph at lines 6426--6426
+[]|\T1/lmr/m/n/4.5 Oxanasbe|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6426--6426
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6427--6427
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6428--6428
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6429--6429
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6430--6430
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (1.6124pt too wide) in paragraph at lines 6431--6431
+[]|\T1/lmr/m/n/4.5 Pinucemb|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6431--6431
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6412--6432
+ [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[217]
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6432--6432
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6433--6433
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6434--6434
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6435--6435
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6436--6436
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6437--6437
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6438--6438
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6439--6439
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6440--6440
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6441--6441
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6442--6442
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6443--6443
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6444--6444
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.14406pt too wide) in paragraph at lines 6445--6445
+[]|\T1/lmr/m/n/4.5 Popucane|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6445--6445
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (2.08133pt too wide) in paragraph at lines 6446--6446
+[]|\T1/lmr/m/n/4.5 Popueuph|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6446--6446
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.14418pt too wide) in paragraph at lines 6447--6447
+[]|\T1/lmr/m/n/4.5 Popugran|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6447--6447
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.76869pt too wide) in paragraph at lines 6448--6448
+[]|\T1/lmr/m/n/4.5 Poputrem|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6448--6448
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (2.70657pt too wide) in paragraph at lines 6449--6449
+[]|\T1/lmr/m/n/4.5 Poutanom|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6449--6449
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6450--6450
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6451--6451
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6432--6452
+ [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6452--6452
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6453--6453
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6453--6454
+ []|\T1/lmr/m/n/4.5 413.810|
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6454--6454
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.95604pt too wide) in paragraph at lines 6455--6455
+[]|\T1/lmr/m/n/4.5 Pseumenz|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6455--6455
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6456--6456
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6457--6457
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6458--6458
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6459--6459
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6460--6460
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6460--6461
+ []|\T1/lmr/m/n/4.5 121.678|
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6461--6461
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6462--6462
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6463--6463
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6464--6464
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.40627pt too wide) in paragraph at lines 6465--6465
+[]|\T1/lmr/m/n/4.5 Quermich|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6465--6465
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (2.34381pt too wide) in paragraph at lines 6466--6466
+[]|\T1/lmr/m/n/4.5 Quermont|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6466--6466
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6467--6467
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6468--6468
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6469--6469
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.71878pt too wide) in paragraph at lines 6470--6470
+[]|\T1/lmr/m/n/4.5 Querpube|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6470--6470
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6471--6471
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6452--6472
+ [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (0.93768pt too wide) in paragraph at lines 6472--6472
+[]|\T1/lmr/m/n/4.5 Querrobu|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6472--6472
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6473--6473
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6474--6474
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (0.81247pt too wide) in paragraph at lines 6475--6475
+[]|\T1/lmr/m/n/4.5 Quersube|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6475--6475
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6476--6476
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6476--6477
+ []|\T1/lmr/m/n/4.5 110.450|
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6477--6477
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6478--6478
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6479--6479
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6480--6480
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6481--6481
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6482--6482
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6482--6483
+ []|\T1/lmr/m/n/4.5 246.450|
+ []
+
+
+Overfull \hbox (0.93794pt too wide) in paragraph at lines 6483--6483
+[]|\T1/lmr/m/n/4.5 Taxubacc|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6483--6483
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6484--6484
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6485--6485
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6485--6486
+ []|\T1/lmr/m/n/4.5 130.715|
+ []
+
+
+Overfull \hbox (0.9377pt too wide) in paragraph at lines 6486--6486
+[]|\T1/lmr/m/n/4.5 Tropmexi|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6486--6486
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (0.50044pt too wide) in paragraph at lines 6487--6487
+[]|\T1/lmr/m/n/4.5 Tsugcana|  
+ []
+
+
+Overfull \hbox (13.33736pt too wide) in paragraph at lines 6487--6487
+[]|\T1/lmr/m/n/4.5 Gymnosperms|  
+ []
+
+
+Overfull \hbox (3.06891pt too wide) in paragraph at lines 6488--6488
+[]|\T1/lmr/m/n/4.5 Ulmuamer|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6488--6488
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6489--6489
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6490--6490
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (2.13182pt too wide) in paragraph at lines 6491--6491
+[]|\T1/lmr/m/n/4.5 Vouaamer|  
+ []
+
+
+Overfull \hbox (9.8191pt too wide) in paragraph at lines 6491--6491
+[]|\T1/lmr/m/n/4.5 Angiosperms|  
+ []
+
+
+Overfull \hbox (1.8137pt too wide) in paragraph at lines 6491--6492
  []|\T1/lmr/m/n/4.5 353.583|
  []
 
 
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6385--6405
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6472--6492
  [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -5366,7 +5373,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [218]
-Overfull \hbox (40.33559pt too wide) in alignment at lines 6405--6405
+Overfull \hbox (40.33559pt too wide) in alignment at lines 6492--6492
  [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -5407,7 +5414,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [222]
 
-Package xcolor Warning: Incompatible color definition on input line 6553.
+Package xcolor Warning: Incompatible color definition on input line 6640.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -5431,7 +5438,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [224]
-Underfull \hbox (badness 1596) in paragraph at lines 6686--6690
+Underfull \hbox (badness 1596) in paragraph at lines 6767--6771
  \T1/lmr/m/it/10.95 10\T1/lmr/m/n/10.95 (9), 777--782. []$\T1/lmtt/m/n/10.95 ht
 tp : / / doi . org / https : / / doi . org / 10 . 1111 / 1365 -[]
  []
@@ -5459,13 +5466,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [226]
-Underfull \hbox (badness 1584) in paragraph at lines 6792--6796
+Underfull \hbox (badness 1584) in paragraph at lines 6874--6878
  \T1/lmr/m/it/10.95 Carbon--Water Flux Cou-pling Un-der Pro-gres-sive Drought \
 T1/lmr/m/n/10.95 (preprint).
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 6792--6796
+Underfull \hbox (badness 1796) in paragraph at lines 6874--6878
  \T1/lmr/m/n/10.95 Bio-geo-chem-istry: Air - Land Ex-change. Re-trieved from []
 $\T1/lmtt/m/n/10.95 https :
  []
@@ -5493,13 +5500,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [228]
-Underfull \hbox (badness 1082) in paragraph at lines 6884--6889
+Underfull \hbox (badness 1082) in paragraph at lines 6966--6971
  []\T1/lmr/m/n/10.95 Buckley, T. N., Turn-bull, T. L., & Adams, M. A. (2012). S
 im-ple
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6884--6889
+Underfull \hbox (badness 10000) in paragraph at lines 6966--6971
  \T1/lmr/m/n/10.95 1647--1662. []$\T1/lmtt/m/n/10.95 http : / / doi . org / htt
 ps : / / doi . org / 10 . 1111 / j . 1365 -[]
  []
@@ -5560,19 +5567,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [233]
-Underfull \hbox (badness 2564) in paragraph at lines 7092--7098
+Underfull \hbox (badness 2564) in paragraph at lines 7168--7174
  []\T1/lmr/m/n/10.95 de Cáceres, M., Men-cuc-cini, M., Martin-StPaul, N., Limou
 sin, J.-
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 7092--7098
+Underfull \hbox (badness 2401) in paragraph at lines 7168--7174
  \T1/lmr/m/n/10.95 rav-el-ling the ef-fect of species mix-ing on wa-ter use and
  drought
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 7092--7098
+Underfull \hbox (badness 1688) in paragraph at lines 7168--7174
  \T1/lmr/m/n/10.95 stress in mediter-ranean forests: A mod-elling ap-proach. \T
 1/lmr/m/it/10.95 Agri-cul-
  []
@@ -5622,13 +5629,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [237]
-Underfull \hbox (badness 1895) in paragraph at lines 7306--7310
+Underfull \hbox (badness 1895) in paragraph at lines 7357--7361
  \T1/lmr/m/n/10.95 (2019). A syn-the-sis of bias and un-cer-tainty in sap flow 
 meth-
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 7306--7310
+Underfull \hbox (badness 1661) in paragraph at lines 7357--7361
  \T1/lmr/m/n/10.95 ods. \T1/lmr/m/it/10.95 Agri-cul-tural and For-est Me-te-o-r
 ol-ogy\T1/lmr/m/n/10.95 , \T1/lmr/m/it/10.95 271\T1/lmr/m/n/10.95 , 362--374. [
 ]$\T1/lmtt/m/n/10.95 http :
@@ -5646,18 +5653,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [238]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[239]
-Overfull \hbox (22.73685pt too wide) in paragraph at lines 7393--7398
+Overfull \hbox (22.73685pt too wide) in paragraph at lines 7444--7449
  \T1/lmr/m/n/10.95 project. \T1/lmr/m/it/10.95 [on-line] Avail-able from: https
 ://github.com/sapfluxnet/sapfluxnetQC1\T1/lmr/m/n/10.95 .
  []
@@ -5673,10 +5669,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
+[239]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
 [240]
-Underfull \hbox (badness 1152) in paragraph at lines 7451--7456
- \T1/lmr/m/n/10.95 ell, N. G. (2019a). Pre-cip-i-ta-tion me-di-ates sap flux se
-n-si-tiv-ity to
+Underfull \hbox (badness 1609) in paragraph at lines 7502--7507
+ \T1/lmr/m/n/10.95 ell, N. G. (2019). Pre-cip-i-ta-tion me-di-ates sap flux sen
+-si-tiv-ity to
  []
 
 
@@ -5691,12 +5698,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [241]
-Underfull \hbox (badness 1107) in paragraph at lines 7458--7463
- \T1/lmr/m/n/10.95 ell, N. G. (2019b). Pre-cip-i-ta-tion me-di-ates sap flux se
-n-si-tiv-ity to
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -5719,7 +5720,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [243]
-Underfull \hbox (badness 1127) in paragraph at lines 7587--7590
+Underfull \hbox (badness 1127) in paragraph at lines 7637--7640
  \T1/lmr/m/n/10.95 Mod-els. \T1/lmr/m/it/10.95 CRAN Ver-sion 0.1.2. \T1/lmr/m/n
 /10.95 Re-trieved from []$\T1/lmtt/m/n/10.95 https : / / CRAN . R -[]
  []
@@ -5846,6 +5847,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [254]
+Underfull \hbox (badness 2020) in paragraph at lines 8183--8188
+ \T1/lmr/m/it/10.95 133\T1/lmr/m/n/10.95 (2), 369--382. Re-trieved from []$\T1/
+lmtt/m/n/10.95 https : / / search . proquest . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8183--8188
+ \T1/lmtt/m/n/10.95 scholarly -[] journals / effects -[] past -[] growth -[] tr
+ends -[] current -[] water -[]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -5857,18 +5870,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [255]
-Underfull \hbox (badness 2020) in paragraph at lines 8134--8139
- \T1/lmr/m/it/10.95 133\T1/lmr/m/n/10.95 (2), 369--382. Re-trieved from []$\T1/
-lmtt/m/n/10.95 https : / / search . proquest . com /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8134--8139
- \T1/lmtt/m/n/10.95 scholarly -[] journals / effects -[] past -[] growth -[] tr
-ends -[] current -[] water -[]
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -5902,13 +5903,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [258]
-Underfull \hbox (badness 3907) in paragraph at lines 8297--8300
+Underfull \hbox (badness 3907) in paragraph at lines 8346--8349
  []\T1/lmr/m/n/10.95 Pebesma, E. (2020). Stars: Spa-tiotem-po-ral Ar-rays, Rast
 er and
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 8297--8300
+Underfull \hbox (badness 1629) in paragraph at lines 8346--8349
  \T1/lmr/m/n/10.95 Vec-tor Data Cubes. \T1/lmr/m/it/10.95 R Pack-age Ver-sion 0
 .4-3\T1/lmr/m/n/10.95 . Re-trieved from
  []
@@ -5991,6 +5992,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [265]
+Overfull \hbox (203.511pt too wide) in paragraph at lines 8699--8704
+ \T1/lmr/m/n/10.95 13. Re-trieved from []http://citeseerx.ist.psu.edu/viewdoc/d
+ownload?doi=10.1.1.155.4926{\&}rep=rep1{\&}type=pdf[] 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -6002,12 +6009,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [266]
-Overfull \hbox (203.511pt too wide) in paragraph at lines 8650--8655
- \T1/lmr/m/n/10.95 13. Re-trieved from []http://citeseerx.ist.psu.edu/viewdoc/d
-ownload?doi=10.1.1.155.4926{\&}rep=rep1{\&}type=pdf[] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -6052,6 +6053,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [270]
+Underfull \hbox (badness 1454) in paragraph at lines 8935--8939
+ \T1/lmr/m/it/10.95 and For-est Me-te-o-rol-ogy\T1/lmr/m/n/10.95 , \T1/lmr/m/it
+/10.95 160\T1/lmr/m/n/10.95 , 90--99. []$\T1/lmtt/m/n/10.95 http : / / doi . or
+g / 10 . 1016 / j .
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -6063,13 +6071,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [271]
-Underfull \hbox (badness 1454) in paragraph at lines 8891--8895
- \T1/lmr/m/it/10.95 and For-est Me-te-o-rol-ogy\T1/lmr/m/n/10.95 , \T1/lmr/m/it
-/10.95 160\T1/lmr/m/n/10.95 , 90--99. []$\T1/lmtt/m/n/10.95 http : / / doi . or
-g / 10 . 1016 / j .
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -6114,31 +6115,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [275]
-Underfull \hbox (badness 1043) in paragraph at lines 9075--9081
+Underfull \hbox (badness 1043) in paragraph at lines 9119--9125
  []\T1/lmr/m/n/10.95 Wilson, K. B., Han-son, P. J., Mul-hol-land, P. J., Bal-do
 c-chi, D. D.,
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 9075--9081
+Underfull \hbox (badness 1102) in paragraph at lines 9119--9125
  \T1/lmr/m/n/10.95 & Wullschleger, S. D. (2001). A com-par-i-son of meth-ods fo
 r de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9075--9081
+Underfull \hbox (badness 10000) in paragraph at lines 9119--9125
  \T1/lmr/m/n/10.95 ter-min-ing for-est evap-o-tran-spi-ra-tion and its com-po-n
 ents: Sap-
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 9075--9081
+Underfull \hbox (badness 5050) in paragraph at lines 9119--9125
  \T1/lmr/m/n/10.95 flow, soil wa-ter bud-get, eddy co-vari-ance and catch-ment 
 wa-ter
  []
 
 
-Underfull \hbox (badness 3838) in paragraph at lines 9075--9081
+Underfull \hbox (badness 3838) in paragraph at lines 9119--9125
  \T1/lmr/m/n/10.95 bal-ance. \T1/lmr/m/it/10.95 Agri-cul-tural and For-est Me-t
 e-o-rol-ogy\T1/lmr/m/n/10.95 , \T1/lmr/m/it/10.95 106\T1/lmr/m/n/10.95 (2), 153
 --168.
@@ -6194,11 +6195,11 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 89631BB20A696B2698B03744D452E123;7509.
  ) 
 Here is how much of TeX's memory you used:
- 24839 strings out of 481258
- 449607 string characters out of 5915198
- 934269 words of memory out of 5000000
- 40199 multiletter control sequences out of 15000+600000
- 538392 words of font info for 121 fonts, out of 8000000 for 9000
+ 24856 strings out of 481258
+ 449810 string characters out of 5915198
+ 937445 words of memory out of 5000000
+ 40223 multiletter control sequences out of 15000+600000
+ 556736 words of font info for 141 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  83i,18n,82p,1422b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/data/r_users/vflo/.TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/data/r
@@ -6213,29 +6214,30 @@ fonts/type1/public/lm/lmbx12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/
 type1/public/lm/lmbx8.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/p
 ublic/lm/lmex10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/
 lm/lmmi10.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmm
-i5.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb>
-</data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></data/
-r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></data/r_users
-/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></data/r_users/vflo/.
-TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></data/r_users/vflo/.TinyTeX
-/texmf-dist/fonts/type1/public/lm/lmr17.pfb></data/r_users/vflo/.TinyTeX/texmf-
-dist/fonts/type1/public/lm/lmr5.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fon
-ts/type1/public/lm/lmr6.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1
-/public/lm/lmr7.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/
-lm/lmr8.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri1
-0.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-</data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb></data/
-r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.pfb></data/r_user
-s/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></data/r_users/vflo
-/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></data/r_users/vflo/.TinyT
-eX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></data/r_users/vflo/.TinyTeX/texm
-f-dist/fonts/type1/public/lm/lmsy7.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/
-fonts/type1/public/lm/lmsy8.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/t
-ype1/public/lm/lmtt10.pfb>
-Output written on thesis.pdf (301 pages, 38047031 bytes).
+i12.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb
+></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></data
+/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></data/r_user
+s/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></data/r_users/vflo/
+.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></data/r_users/vflo/.TinyTe
+X/texmf-dist/fonts/type1/public/lm/lmr12.pfb></data/r_users/vflo/.TinyTeX/texmf
+-dist/fonts/type1/public/lm/lmr17.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/f
+onts/type1/public/lm/lmr5.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/typ
+e1/public/lm/lmr6.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/publi
+c/lm/lmr7.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmr
+8.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
+</data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></data
+/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb></data/r_user
+s/vflo/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.pfb></data/r_users/vflo
+/.TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></data/r_users/vflo/.Tiny
+TeX/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></data/r_users/vflo/.TinyTeX/tex
+mf-dist/fonts/type1/public/lm/lmsy6.pfb></data/r_users/vflo/.TinyTeX/texmf-dist
+/fonts/type1/public/lm/lmsy7.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/
+type1/public/lm/lmsy8.pfb></data/r_users/vflo/.TinyTeX/texmf-dist/fonts/type1/p
+ublic/lm/lmtt10.pfb>
+Output written on thesis.pdf (301 pages, 38055166 bytes).
 PDF statistics:
- 4270 PDF objects out of 4296 (max. 8388607)
- 3671 compressed objects within 37 object streams
- 928 named destinations out of 1000 (max. 500000)
+ 4308 PDF objects out of 5155 (max. 8388607)
+ 3707 compressed objects within 38 object streams
+ 921 named destinations out of 1000 (max. 500000)
  1058 words of extra memory for PDF output out of 10000 (max. 10000000)
 

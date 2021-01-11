@@ -1071,15 +1071,15 @@ data_hydra3 <- data_hydra2 %>% filter(G_ref_G_aero<546.5,
 ##Notes D
 \normalsize
 
-Notes S1: Whole-tree stomatal conductance ($G'_{Asw}$) calculation procedure.
+Notes S1: Whole-tree stomatal conductance ($G'_{\text{Asw}}$) calculation procedure.
 
-To account for aerodynamic effect on whole-tree canopy conductance ($G_{Asw}$) in trees were wind speed was available, we substracted from $G_{Asw}$ (calculated with eq. 2 of the main text) the aerodynamic conductance calculated following Tan *et al*. 2019. We first calculate the aerodynamic conductance for momentum (eq. 14 in Tan *et al.* 2019):
+To account for aerodynamic effect on whole-tree canopy conductance ($G_{\text{Asw}}$) in trees were wind speed was available, we substracted from $G_{\text{Asw}}$ (calculated with eq. 2 of the main text) the aerodynamic conductance calculated following Tan *et al*. 2019. We first calculate the aerodynamic conductance for momentum (eq. 14 in Tan *et al.* 2019):
 
 \begin{equation}
 g_{aM} = {{\kappa^{2}\ u} \over{ln[(z-d)/z_{0M}]\ ln[(z-d)/z_{0H}]}}
 \end{equation}
 
-Where $\kappa$ is the Von Karman constant and equivalent to 0.41 and $u$ is wind speed [$m\ s^{-1}$] and:
+Where $\kappa$ is the Von Karman constant and equivalent to 0.41 and $u$ is wind speed [$\text{m}\ \text{s}^{-1}$] and:
 \begin{equation}
 z = tree\ height\ + 2,\ d = 0.6(tree\ height),\ z_{0M}= 0.1(tree\ height),\ z_{0H}= 0.135(z_{0M})
 \end{equation}
@@ -1087,15 +1087,15 @@ Lately, we calculated the boundary layer conductance following eq. 10 in Tan *et
 \begin{equation}
 g_{bN} = {{\kappa\ u*} \over {ln\left({z_{0M}} \over {z_{0H}}\right)}}
 \end{equation}
-Where $u*$ [$m\ s^{-1}$] is the friction velocity calculated inverting eq. 2 in Chu *et al.* 2018:
+Where $u*$ [$\text{m}\ \text{s}^{-1}$] is the friction velocity calculated inverting eq. 2 in Chu *et al.* 2018:
 \begin{equation}
 u* = {\kappa \ u \over {ln[(z-d)/z_{0M}] + ln(1.25)}}
 \end{equation}
-Ultimately, $G'_{Asw}$ was calculated as:
+Ultimately, $G'_{\text{Asw}}$ was calculated as:
 \begin{equation}
 G'_{Asw}= \left({1 \over 1/G_{Asw} \ - (1/g_{aM} + 1/g_{bN})}\right)
 \end{equation}
-Being $G_{Asw}$ in [$m \ s^{-1}$]. Finally, $G'_{Asw}$ was transformed to [$mol \ m^{-2}_{Asw} \ s^{-1}$].
+Being $G_{Asw}$ in [$\text{m} \ \text{s}^{-1}$]. Finally, $G'_{Asw}$ was transformed to [$\text{mol} \ \text{m}^{-2}_{\text{Asw}} \ \text{s}^{-1}$].
 
 
 \newpage
@@ -1538,7 +1538,7 @@ knitr::include_graphics(c("figure/appendixD/ggg5.pdf"))
 knitr::include_graphics(c("figure/appendixD/ggg6.pdf"))
 ```
 
-```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center", fig.cap="Species $G_{Asw}$ responses to VPD. Each species have different curves representing distinct levels of SWC (from dark to light, 0.1, 0.2, 0.3 [$m^3 m^{-3}$])."}
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center", fig.cap="Species $G_{\\text{Asw}}$ responses to VPD. Each species have different curves representing distinct levels of SWC (from dark to light, 0.1, 0.2, 0.3 [$\\text{m}^3\\; \\text{m}^{-3}$])."}
  knitr::include_graphics(c("figure/appendixD/ggg7.pdf"))
 ```
 
@@ -1571,7 +1571,7 @@ knitr::include_graphics(c("figure/appendixD/ggg13.pdf"))
 knitr::include_graphics(c("figure/appendixD/ggg14.pdf"))
 ```
 
-```{r , echo=FALSE, fig.cap="", out.width = '100%', fig.align="center",fig.cap="Species $G_{Asw}$ responses to SWC. Curves are fitted using a VPD reference level of 1 kPa."}
+```{r , echo=FALSE, fig.cap="", out.width = '100%', fig.align="center",fig.cap="Species $G_{\\text{Asw}}$ responses to SWC. Curves are fitted using a VPD reference level of 1 kPa."}
  knitr::include_graphics(c("figure/appendixD/ggg15.pdf"))
 ```
 
@@ -2125,7 +2125,7 @@ df <- df[order(df$`$\\text{Species}$`),]
   colnames(table_total)[6] <- "$R^2$"
   colnames(table_total)[3] <- "$\\text{N}\\;\\text{Species}$"
 
-  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "",caption.short = "Results of the linear models relating water use parameters calculated using $G'_{Asw}$ to water relations traits.", caption = "Results of the linear models relating water use parameters calculated using $G'_{Asw}$ to water relations traits. Parameters are explained by individual traits using simple linear models with number of species-days as weighting factor.")%>%
+  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "",caption.short = "Results of the linear models relating water use parameters calculated using $G'_{\\text{Asw}}$ to water relations traits.", caption = "Results of the linear models relating water use parameters calculated using $G'_{\\text{Asw}}$ to water relations traits. Parameters are explained by individual traits using simple linear models with number of species-days as weighting factor.")%>%
     kableExtra::kable_styling(latex_options = "scale_down")%>%
     collapse_rows(1) %>%
    add_footnote("Statistical significant levels: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001.",notation = "none")
@@ -2208,7 +2208,7 @@ load(file = "~/PhD/Thesis_book_format/index/data/appendixD/data_hydra2_rew.RData
   colnames(table_total)[7] <- "$\\beta_{\\text{H}}$"
   colnames(table_total)[3] <- "$\\text{N}\\;\\text{Species}$"
 
-  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "", caption.short = "Results of the linear models relating water use parameters calculated using $G'_{Asw}$, water relations traits, climate  and tree height.",caption = "Results of the linear models relating water use parameters calculated using $G'_{Asw}$, water relations traits, climate  and tree height. Water use parameters are explained by individual traits, MAP (mean annual precipitation) and $H$ (tree height) using simple linear models using number of species-days as weighting factor. $\\beta$ values are the slopes for each explanatory variable. NI = not included variable after model selection.")%>%
+  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "", caption.short = "Results of the linear models relating water use parameters calculated using $G'_{\\text{Asw}}$, water relations traits, climate  and tree height.",caption = "Results of the linear models relating water use parameters calculated using $G'_{\\text{Asw}}$, water relations traits, climate  and tree height. Water use parameters are explained by individual traits, MAP (mean annual precipitation) and $H$ (tree height) using simple linear models using number of species-days as weighting factor. $\\beta$ values are the slopes for each explanatory variable. NI = not included variable after model selection.")%>%
     kableExtra::kable_styling(latex_options = "scale_down")%>%
     collapse_rows(1) %>%
    add_footnote("Statistical significant levels: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001.",notation = "none")
