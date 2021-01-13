@@ -9,12 +9,66 @@ If you feel it necessary to include an appendix, it goes here.
 
 # Appendix Chapter 2
 \newpage
+---
+nocite: | 
+@Alarcon2005,
+@Ballester2011,
+@Barrett1995,
+@Bleby2004,
+@Braun1999,
+@Burgess2001,
+@Bush2010,
+@Cain2009,
+@Caspari1993,
+@Caterina2014,
+@Chan2015,
+@Cohen1981,
+@Cohen1998,
+@Dragoni2005,
+@Dye1996,
+@Fernandez1999,
+@Fernandez2006,
+@Fuchs2017,
+@Gonzales-Altozano1998,
+@Granier1985,
+@Green1988,
+@Gutierrez1994,
+@Gutierrez-Soto2012,
+@Hatton1995,
+@Heilman1990,
+@Herbst2007,
+@Hultine2010,
+@Intrigliolo2009,
+@IsarangkoolNaAyutthaya2010,
+@Uddling2009,
+@Lu2002,
+@Lu1998,
+@Madurapperuma2009,
+@Mitchell2009,
+@Montague2006,
+@Nadezhdina1998,
+@Nortes2009,
+@Paudel2013,
+@Peters2018,
+@Prendergast2007,
+@Shackel1992,
+@Smith1995,
+@Sperling2012,
+@Steppe2010,
+@Sun2012,
+@Swanson1981,
+@Urban2012,
+@Vellame2010
+...
 
 ##Figures A
 \setlength{\abovecaptionskip}{0pt}
 
+
+(ref:apa11) Representation of the cumulative number of studies using different sap flow methods between 1957 and 2017 (adapted and updated from Potatos et al. (2016)). CAG: calibrated average gradient; CHP: compensation heat pulse (early heat pulse methods have been considered CHP, [@Edwards1997]); HFD: head field deformation; HR: heat ratio, SF+: sapflow+; SHB: stem heat balance; TD: thermal dissipation; THB: trunk heat balance; Tmax: T-max heat pulse; TTD: transient thermal dissipation. Notice the logarithmic scale on the y-axis.
+
 \setlength{\abovecaptionskip}{15pt}
-```{r apa11, echo=FALSE,  out.width = '80%',fig.pos="hbt!", fig.align="center", fig.scap="Representation of the cumulative number of studies using different sap flow methods between 1957 and 2017",fig.cap="Representation of the cumulative number of studies using different sap flow methods between 1957 and 2017 (adapted and updated from Poyatos et al. 2016). CAG: calibrated average gradient; CHP: compensation heat pulse (early heat pulse methods have been considered CHP, Edwards et al. 1997); HFD: head field deformation; HR: heat ratio, SF+: sapflow+; SHB: stem heat balance; TD: thermal dissipation; THB: trunk heat balance; Tmax: T-max heat pulse; TTD: transient thermal dissipation. Notice the logarithmic scale on the y-axis."}
+```{r apa11, echo=FALSE,  out.width = '80%',fig.pos="hbt!", fig.align="center", fig.scap="Representation of the cumulative number of studies using different sap flow methods between 1957 and 2017",fig.cap="(ref:apa11)"}
 knitr::include_graphics(path = "figure/appendixA/fig1.png")
 ```
 \setlength{\abovecaptionskip}{0pt}
@@ -634,7 +688,7 @@ knitr::include_graphics(path = "figure/appendixC/gg_biomes.pdf")
 \newpage
 
 \setlength{\abovecaptionskip}{15pt}
-```{r , echo=FALSE,  out.width = '100%',fig.pos="H", fig.align="center", fig.scap="Global projection of climatic, soil and stand structure variables.",fig.cap="Global projection of climatic, soil and stand structure variables. log(PPET): logarithm of precipitation over potential evapotraspiration [log(mm \\text{$mm^{-1}$})]; log(\\text{$P-PET_{sd}$}): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration [log(mm)]; Clay: percentage of clay in the soil; Total N: total nitrogen in the soil [g \\text{$kg^{-1}$}];  Bedrock [cm]; Stand height [m]; LAI: leaf area index [\\text{$m^2$ $m^{-2}$}]. Total N values above 5 g \\text{$kg^{-1}$} were truncated."}
+```{r , echo=FALSE,  out.width = '100%',fig.pos="H", fig.align="center", fig.scap="Global projection of climatic, soil and stand structure variables.",fig.cap="Global projection of climatic, soil and stand structure variables. log(PPET): logarithm of precipitation over potential evapotraspiration [log(mm $\\text{mm}^{-1}$)]; log($\\text{P-PET}_{\\text{sd}}$): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration [log(mm)]; Clay: percentage of clay in the soil; Total N: total nitrogen in the soil [g $\\text{kg}^{-1}$];  Bedrock [cm]; Stand height [m]; LAI: leaf area index [$\\text{m}^2$ $\\text{m}^{-2}$]. Total N values above 5 g $\\text{kg}^{-1}$ were truncated."}
 knitr::include_graphics(path = "figure/appendixC/var_maps.png")
 ```
 \setlength{\abovecaptionskip}{0pt}
@@ -642,7 +696,7 @@ knitr::include_graphics(path = "figure/appendixC/var_maps.png")
 \newpage
 
 \setlength{\abovecaptionskip}{15pt}
-```{r , echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome.",fig.cap="Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome. Coloured lines are biome average models calculated from the models predictions using LMM with $G_{Asw}$ as response variable and the neperian logarithm of the environmental constrains as explanatory variables. Dashed line shows standard error of the average models calculated with bootstrap prediction using 100 simulations."}
+```{r , echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome.",fig.cap="Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome. Coloured lines are biome average models calculated from the models predictions using LMM with $G_{\\text{Asw}}$ as response variable and the neperian logarithm of the environmental constrains as explanatory variables. Dashed line shows standard error of the average models calculated with bootstrap prediction using 100 simulations."}
 knitr::include_graphics(path = "figure/appendixC/spa_plots.pdf")
 ```
 \setlength{\abovecaptionskip}{0pt}
@@ -696,7 +750,7 @@ table2 <- read_delim("data/appendixC/plot_treatment.csv",
 
 
 knitr::kable(table2, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
-             digits=2 , align = 'l', caption.short = "SAPFLUXNET stand treatments included in the this study (Poyatos $et$ $al.$ 2020).", caption = "SAPFLUXNET stand treatments included in the this study (Poyatos $et$ $al.$ 2020).")%>%
+             digits=2 , align = 'l', caption.short = "SAPFLUXNET stand treatments included in the this study.", caption = "SAPFLUXNET stand treatments included in the this study (Chapter 3).")%>%
     kableExtra::kable_styling(latex_options = c("HOLD_position","scale_down"))
 ```
 \newpage
@@ -1595,7 +1649,7 @@ knitr::include_graphics(c("figure/appendixD/ggg14.pdf"))
 <!-- ``` -->
 
 
-```{r corrplot, echo=FALSE,  fig.scap="Scatterplot between $G_{\\text{REF}}$ and $\\beta_{\\text{VPD}}$ parameters.", fig.cap="Scatterplot between $G_{\\text{REF}}$ and $\\beta_{\\text{VPD}}$ parameters. Grey line is global relationship. Blue and red lines are angiosperms and gymnosperms relationships, respectively. Shadow areas are 95\\% confidence interval.", fig.align='center',out.width = '100%'}
+```{r corrplot, echo=FALSE,  fig.scap="Scatterplot between $G_{\\text{REF}}$ and $\\beta_{\\text{VPD}}$ parameters.", fig.cap="Scatterplot between $G_{\\text{REF}}$ and $\\beta_{\\text{VPD}}$ parameters. Grey line is global relationship. Blue and red lines are angiosperms and gymnosperms relationships, respectively. Shadow areas are 95\\% confidence interval.", fig.align='center',out.width = '70%'}
 knitr::include_graphics(c("figure/appendixD/fig_Gref_b1.pdf"))
 ```
 
@@ -2029,7 +2083,7 @@ knitr::include_graphics(c("figure/appendixD/figanggym.pdf"))
 plot_treat <- readr::read_csv(file="~/PhD/Thesis_book_format/index/data/appendixD/plot_treatment.csv")
 
     knitr::kable(plot_treat,"latex",booktabs = T, escape = FALSE,longtable = FALSE,linesep = "",
-                 caption = "SAPFLUXNET plot treatments included in this study (Poyatos $et$ $al.$ 2020).") %>% 
+                 caption = "SAPFLUXNET plot treatments included in this study (Chapter 3).") %>% 
       kableExtra::kable_styling(latex_options = "HOLD_position")
 
 ```
