@@ -9,61 +9,9 @@ If you feel it necessary to include an appendix, it goes here.
 
 # Appendix Chapter 2
 \newpage
----
-nocite: | 
-@Alarcon2005,
-@Ballester2011,
-@Barrett1995,
-@Bleby2004,
-@Braun1999,
-@Burgess2001,
-@Bush2010,
-@Cain2009,
-@Caspari1993,
-@Caterina2014,
-@Chan2015,
-@Cohen1981,
-@Cohen1998,
-@Dragoni2005,
-@Dye1996,
-@Fernandez1999,
-@Fernandez2006,
-@Fuchs2017,
-@Gonzales-Altozano1998,
-@Granier1985,
-@Green1988,
-@Gutierrez1994,
-@Gutierrez-Soto2012,
-@Hatton1995,
-@Heilman1990,
-@Herbst2007,
-@Hultine2010,
-@Intrigliolo2009,
-@IsarangkoolNaAyutthaya2010,
-@Uddling2009,
-@Lu2002,
-@Lu1998,
-@Madurapperuma2009,
-@Mitchell2009,
-@Montague2006,
-@Nadezhdina1998,
-@Nortes2009,
-@Paudel2013,
-@Peters2018,
-@Prendergast2007,
-@Shackel1992,
-@Smith1995,
-@Sperling2012,
-@Steppe2010,
-@Sun2012,
-@Swanson1981,
-@Urban2012,
-@Vellame2010
-...
 
 ##Figures A
 \setlength{\abovecaptionskip}{0pt}
-
 
 (ref:apa11) Representation of the cumulative number of studies using different sap flow methods between 1957 and 2017 (adapted and updated from Potatos et al. (2016)). CAG: calibrated average gradient; CHP: compensation heat pulse (early heat pulse methods have been considered CHP, [@Edwards1997]); HFD: head field deformation; HR: heat ratio, SF+: sapflow+; SHB: stem heat balance; TD: thermal dissipation; THB: trunk heat balance; Tmax: T-max heat pulse; TTD: transient thermal dissipation. Notice the logarithmic scale on the y-axis.
 
@@ -451,7 +399,7 @@ table3[c(6:8),4]<-c('stems $\\text{ha}^-1$',
 colnames(table3) <- capitalize_str(colnames(table3))
 
   knitr::kable(table3,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
-             digits=2 , align = 'c', caption.short = "Description of site metadata variables.", caption = "Description of site metadata variables.")%>%
+             digits=2 , align = 'c', caption.short = "Description of stand metadata variables.", caption = "Description of stand metadata variables.")%>%
     kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>% 
     column_spec(c(2), width = '20em')
 
@@ -729,7 +677,7 @@ table1 <- table1 %>%
                 )
 
 knitr::kable(table1, "latex", booktabs = TRUE, escape = FALSE, longtable = TRUE, linesep = "",
-             digits=2 , align = 'c', caption.short = "SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram.", caption = "SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram. *Indicates that the biome was manually adjusted and confirmed by SAPFLUXNET contributors.")%>%
+             digits=2 , align = 'c', caption.short = "SAPFLUXNET sites included in the study.", caption = "SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram. *Indicates that the biome was manually adjusted and confirmed by SAPFLUXNET contributors.")%>%
     kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 6)
 ```
 \newpage
@@ -2082,8 +2030,7 @@ knitr::include_graphics(c("figure/appendixD/figanggym.pdf"))
 
 plot_treat <- readr::read_csv(file="~/PhD/Thesis_book_format/index/data/appendixD/plot_treatment.csv")
 
-    knitr::kable(plot_treat,"latex",booktabs = T, escape = FALSE,longtable = FALSE,linesep = "",
-                 caption = "SAPFLUXNET plot treatments included in this study (Chapter 3).") %>% 
+    knitr::kable(plot_treat,"latex",booktabs = T, escape = FALSE,longtable = FALSE,linesep = "", caption.short = "SAPFLUXNET plot treatments included in this study.", caption = "SAPFLUXNET plot treatments included in this study (Chapter 3).") %>% 
       kableExtra::kable_styling(latex_options = "HOLD_position")
 
 ```

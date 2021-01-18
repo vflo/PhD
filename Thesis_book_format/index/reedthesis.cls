@@ -64,7 +64,7 @@
 % Add ',fontsize=\small' for more characters per line
 \usepackage{framed}
 \definecolor{shadecolor}{RGB}{248,248,248}
-\definecolor{customgrey}{RGB}{60,60,60}
+\definecolor{customgrey}{RGB}{80,80,80}
 % \newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
 % \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
 % \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{{#1}}}

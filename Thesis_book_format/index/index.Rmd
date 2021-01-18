@@ -48,9 +48,13 @@ dedication: |
 # Specify the location of the bibliography below
 bibliography: bib/thesis.bib
 # Download your specific csl file and refer to it in the line below.
-csl: csl/apa.csl
+csl: csl/NewPhytologist.csl
 lot: true
 lof: true
+
+nocite: |
+  @Alarcon2005, @Ballester2011 ,@Barrett1995, @Bleby2004, @Braun1999, @Burgess2001, @Bush2010, @Cain2009, @Caspari1993, @Caterina2014, @Chan2015, @Cohen1981, @Cohen1998, @Dragoni2005, @Dye1996, @Fernandez1999, @Fernandez2006, @Fuchs2017, @Gonzales-Altozano1998, @Granier1985, @Green1988, @Gutierrez1994, @Gutierrez-Soto2012, @Hatton1995, @Heilman1990, @Herbst2007, @Hultine2010, @Intrigliolo2009, @IsarangkoolNaAyutthaya2010, @Uddling2009, @Lu2002, @Lu1998, @Madurapperuma2009, @Mitchell2009, @Montague2006, @Nadezhdina1998, @Nortes2009, @Paudel2013, @Peters2018, @Prendergast2007, @Shackel1992, @Smith1995, @Sperling2012, @Steppe2010, @Sun2012, @Swanson1981, @Urban2012, @Vellame2010
+
 # If you prefer blank lines between paragraphs, un-silence lines  40-41 (this requires package tikz)
 header-includes:
  - \usepackage{tikz}
