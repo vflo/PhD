@@ -1,0 +1,25 @@
+# Acronyms {-}
+
+AEMET: Agencia Estatal de Meteorología (Spanish Meteorological Agency)\newline
+AIC:Akaike Information Criterion\newline
+AUC: Area Under ROC (Receiver-Operator Characteristic) Curve\newline
+BRT: Boosted Regression Trees\newline
+CD: Climatic Disequilibrium\newline
+CIC: Community Inferred Climate\newline
+CPH: Centre-Periphery Hypothesis (also known as distance-abundance hypothesis)\newline
+ECS: Episodic Climatic Suitability\newline
+ENM: Ecological Niche Models\newline
+GAM: Generalized Additive Models\newline
+GBIF: Global Biodiversity Information Facility\newline
+GLM: Generalized Linear Models\newline
+HCS: Historical Climatic Suitability\newline
+IPCC: Intergovernmental Panel on Climate Change\newline
+IUSS: International Union of Soil Sciences\newline
+MESS: Multivariate Environmental Suitability Surface\newline
+OC: Observed climate\newline
+PCA: Principal Component Analysis\newline
+RGC: Remaining Green Canopy\newline
+SDM: Species Distribution Models\newline
+VIF: Variance Inflation Factor\newline
+
+

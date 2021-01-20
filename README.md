@@ -14,3 +14,5 @@ Contact Information: v.flo@creaf.uab.cat ; CREAF, E08193 Bellaterra (Cerdanyola 
 This repository contains all the R code used in Victor Flo's PhD Thesis project (December 2020): It allows to reproduce all the models, tables of results and figures.
 
 Is being made public both to act as supplementary code and data for publications and the PhD thesis of Victor Flo and in order for other researchers to replicate the results.
+
+PDF in A4 format can be found in ../Thesis_A4_format/index/_book/thesis.pdf

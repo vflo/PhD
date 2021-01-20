@@ -1,0 +1,17 @@
+Variable,Description,Type,Units
+env_time_zone,Time zone of site used in the TIMESTAMPS,Character,Fixed values
+env_time_daylight,Is daylight saving time applied to the original timestamp?,Logical,Fixed values
+env_timestep,Sub-daily timestep of environmental measurements,Numeric,minutes
+env_ta,Location of air temperature sensor,Character,Fixed values
+env_rh,Location of relative humidity sensor,Character,Fixed values
+env_vpd,Location of vapour pressure deficit measurements,Character,Fixed values
+env_sw_in,Location of shortwave incoming radiation sensor,Character,Fixed values
+env_ppfd_in,Location of incoming photosynthetic photon flux density sensor,Character,Fixed values
+env_netrad,Location of net radiation sensor,Character,Fixed values
+env_ws,Location of wind speed sensor,Character,Fixed values
+env_precip,Location of precipitation measurements,Character,Fixed values
+env_swc_shallow_depth,Average depth for shallow soil water content measures,Numeric,cm
+env_swc_deep_depth,Average depth for deep soil water content measures,Numeric,cm
+env_plant_watpot,Availability of water potential values for the same measured plants during the sap flow measurements period,Character,Fixed values
+env_leafarea_seasonal,Availability of seasonal course of leaf area data,Character,Fixed values
+env_remarks,Remarks and commentaries useful to grasp some environmental-specific peculiarities,Character,None

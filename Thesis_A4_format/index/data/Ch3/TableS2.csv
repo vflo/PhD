@@ -1,0 +1,24 @@
+Variable,Description,Type,Units
+si_name,Site name given by contributors,Character,None
+si_country,Country code (ISO),Character,Fixed values
+si_contact_firstname,Contributor first name,Character,None
+si_contact_lastname,Contributor last name,Character,None
+si_contact_email,Contributor email,Character,None
+si_contact_institution,Contributor affiliation,Character,None
+si_addcontr_firstname,Additional contributor first name,Character,None
+si_addcontr_lastname,Additional contributor last name,Character,None
+si_addcontr_email,Additional contributor email,Character,None
+si_addcontr_institution,Additional contributor affiliation,Character,None
+si_lat,Site latitude (i.e. 42.36),Numeric,"Latitude, decimal format (WGS84)"
+si_long,Site longitude (i.e. -8.23),Numeric,"Longitude, decimal format (WGS84)"
+si_elev,Elevation above sea level,Numeric,meters
+si_paper,"Paper with relevant information on the dataset, as DOI links or DOI codes",Character,DOI link
+si_dist_mgmt,Recent and historic disturbance and management events that affected the measurement years,Character,Fixed values
+si_igbp,Vegetation type based on IGBP classification,Character,Fixed values
+si_flux_network,Logical indicating if site is participating in the FLUXNET network,Logical,Fixed values
+si_dendro_network,Logical indicating if site is participating in the DENDROGLOBAL network,Logical,Fixed values
+si_remarks,Remarks and commentaries useful to grasp some site-specific peculiarities,Character,None
+si_code,"Sapfluxnet site code, unique for each site",Character,Fixed value
+si_mat,"Site annual mean temperature, as obtained from CHELSA",Numeric,Celsius degrees
+si_map,"Site annual mean precipitation, as obtained from CHELSA",Numeric,mm
+si_biome,"Biome classification based on Whittaker (1970) , based on MAT and MAP obtained from CHELSA.",Character,sapfluxnet calculated

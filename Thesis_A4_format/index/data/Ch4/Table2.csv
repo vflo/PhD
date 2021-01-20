@@ -1,0 +1,5 @@
+$G_{Asw}$  coupling;Intercept [\%];log(PPET);log($\text{P-PET}_{\text{sd}}$);Clay;Total Nitrogen;Bedrock depth;Stand Height;LAI;$\text{R}^2$
+$\text{R}^2_{\text{VPD}}$;80.242 \text{*}\text{*}\text{*};4.862 \text{.};-8.642 \text{*};0.313 \text{*}\text{*};1.930 \text{*};NI;0.603 \text{*}\text{*}\text{*};-3.322 \text{*}\text{*}\text{*};0.255
+$\text{R}^2_{\text{SWC}}$;53.978 \text{*}\text{*}\text{*};10.850 \text{*}\text{*}\text{*};NI;0.314 \text{*}\text{*}\text{*};NI;-0.120 \text{ns};0.348 \text{*}\text{*};NI;0.353
+$\text{R}^2_{\text{PPFD}}$;47.591 \text{*}\text{*};7.531 \text{*};-6.501 \text{.};0.323 \text{*}\text{*};1.603 \text{.};NI;0.788 \text{*}\text{*}\text{*};-2.202 \text{*};0.352
+$\text{R}^2_{\text{TOTAL}}$;54.464 \text{*}\text{*}\text{*};4.698 \text{*};NI;0.248 \text{*}\text{*};1.416 \text{.};NI;0.228 \text{.};NI;0.191

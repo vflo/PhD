@@ -1,0 +1,18 @@
+Variable,Description,Type,Units
+st_name,Stand name given by contributors,Character,None
+st_growth_condition,Growth condition with respect to stand origin and management,Character,Fixed values
+st_treatment,Treatment applied at stand level,Character,None
+st_age,Mean stand age at the moment of sap flow measurements,Numeric,years
+st_height,Canopy height,Numeric,meters
+st_density,Total stem density for stand,Numeric,stems/ha
+st_basal_area,Total stand basal area,Numeric,m2/ha
+st_lai,"Total maximum stand leaf area (one-sided, projected)",Numeric,m2/m2
+st_aspect,Aspect the stand is facing (exposure),Character,Fixed values
+st_terrain,Slope and/or relief of the stand,Character,Fixed values
+st_soil_depth,Soil total depth,Numeric,cm
+st_soil_texture,"Soil texture class, based on simplified USDA classification",Character,Fixed values
+st_sand_perc,"Soil sand content, % mass",Numeric,% percentage
+st_silt_perc,"Soil silt content, % mass",Numeric,% percentage
+st_clay_perc,"Soil clay content, % mass",Numeric,% percentage
+st_remarks,Remarks and commentaries useful to grasp some stand-specific peculiarities,Character,None
+st_USDA_soil_texture,USDA soil classification based on the percentages provided by the contributor,Character,sapfluxnet calculated

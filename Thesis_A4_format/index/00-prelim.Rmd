@@ -1,0 +1,25 @@
+<!-- # Preliminary Content {-} -->
+
+<!-- # Acknowledgements {-} -->
+\setlength{\parindent}{30pt}
+\setlength{\parskip}{0.4cm plus4mm minus3mm}
+\vspace*{4.5cm}
+A reproducible copy of the thesis can be found online at https://github.com/vflo/PhD
+\vspace*{\fill}
+<!-- ## Preface {-} -->
+
+<!-- This is an example of a thesis setup to use the reed thesis document class -->
+<!-- (for LaTeX) and the R bookdown package, in general. -->
+
+<!-- \newpage -->
+<!-- \begin{flushright} -->
+
+<!-- \begin{flushright} -->
+<!-- \begin{vplace}[0.7] -->
+<!-- *Lo que nos diferencia de otros seres vivos\newline -->
+<!-- no es la capacidad de perturbar el planeta\newline -->
+<!-- sino la voluntad de salvarlo.*\newline -->
+<!-- \end{vplace} -->
+<!-- \end{flushright} -->
+
+<!-- `r if(!knitr:::is_latex_output()) '## Abstract {-}'` -->

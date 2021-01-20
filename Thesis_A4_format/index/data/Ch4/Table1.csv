@@ -1,0 +1,6 @@
+Biome;$\text{R}^2_{\text{VPD}}$;$\text{R}^2_{\text{SWC}}$;$\text{R}^2_{\text{PPFD}}$;$\text{R}^2_{\text{TOTAL}}$ ;$\text{R}^2_{\text{VPD}}  - \text{R}^2_{\text{SWC}}$ ;$\text{R}^2_{\text{VPD}}  - \text{R}^2_{\text{PPFD}}$ ;$\text{R}^2_{\text{SWC}}  - \text{R}^2_{\text{PPFD}}$ ;Number of sites
+DRY;0.439$^\text{A}$;0.225$^{\text{A}}$;0.210$^{\text{A}}$;0.502$^{\text{A}}$;0.215$^{\text{A}} \text{*}\text{*}\text{*}$;0.229$^{\text{AB}} \text{*}\text{*}\text{*}$;0.015$^{\text{AB}}$;7
+WOOD;0.514$^{\text{AB}}$;0.390$^{\text{B}}$;0.295$^{\text{AB}}$;0.652$^{\text{B}}$;0.124$^{\text{A}} \text{*}\text{*}\text{*}$;0.219$^{\text{B}}\text{*}\text{*}\text{*}$;0.095$^{\text{B}}\text{*}\text{*}\text{*}$;29
+TEMP;0.567$^{\text{B}}$;0.452$^{\text{B}}$;0.417$^{\text{C}}$;0.666$^{\text{B}}$;0.116$^{\text{A}} \text{*}\text{*}\text{*}$;0.150$^{\text{A}}\text{*}\text{*}\text{*}$;0.034$^{\text{A}}\text{*}$;70
+BOR;0.622$^{\text{AB}}$;0.453$^{\text{AB}}$;0.499$^{\text{BC}}$;0.650$^{\text{AB}}$;0.168$^{\text{A}}\text{.}$;0.122$^{\text{AB}}\text{.}$;-0.046$^{\text{AB}}$;8
+TROP;0.651$^{\text{B}}$;0.413$^{\text{B}}$;0.444$^{\text{C}}$;0.696$^{\text{AB}}$;0.238$^{\text{A}}\text{*}\text{*}\text{*}$;0.203$^{\text{AB}} \text{*}\text{*}\text{*}$;-0.031$^{\text{A}}$;8

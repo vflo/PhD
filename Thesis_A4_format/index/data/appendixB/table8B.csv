@@ -1,0 +1,203 @@
+si\_code,si\_name,si\_lat,si\_long,si\_elev,nspecies
+ARG\_MAZ,Mazaruca\_Patagonia,-51.58,-72.29,550,1
+ARG\_TRE,Tres Marias,-51.32,-72.19,460,1
+AUS\_BRI\_BRI,Britannia Creek,-37.87,145.85,707,1
+AUS\_CAN\_ST1\_EUC,Cann River,-37.58,149.17,180,1
+AUS\_CAN\_ST2\_MIX,Cann River,-37.58,149.17,180,2
+AUS\_CAN\_ST3\_ACA,Cann River,-37.58,149.17,180,1
+AUS\_CAR\_THI\_00F,Carrajung,-38.38,146.68,610,1
+AUS\_CAR\_THI\_0P0,Carrajung,-38.38,146.68,610,1
+AUS\_CAR\_THI\_0PF,Carrajung,-38.38,146.68,610,1
+AUS\_CAR\_THI\_CON,Carrajung,-38.38,146.68,610,1
+AUS\_CAR\_THI\_T00,Carrajung,-38.38,146.68,610,1
+AUS\_CAR\_THI\_T0F,Carrajung,-38.38,146.68,610,1
+AUS\_CAR\_THI\_TP0,Carrajung,-38.38,146.68,610,1
+AUS\_CAR\_THI\_TPF,Carrajung,-38.38,146.68,610,1
+AUS\_ELL\_HB\_HIG,Ella,-36.78,146.58,705,2
+AUS\_ELL\_MB\_MOD,Ella,-36.78,146.58,693,1
+AUS\_ELL\_UNB,Ella,-36.78,146.58,737,1
+AUS\_KAR,Karijini NP,-22.62,118.22,710,1
+AUS\_MAR\_HSD\_HIG,Maroondah,-37.64,145.58,468,2
+AUS\_MAR\_HSW\_HIG,Maroondah,-37.65,145.57,297,2
+AUS\_MAR\_MSD\_MOD,Maroondah,-37.64,145.58,467,2
+AUS\_MAR\_MSW\_MOD,Maroondah,-37.65,145.57,261,2
+AUS\_MAR\_UBD,Maroondah,-37.69,145.56,303,3
+AUS\_MAR\_UBW,Maroondah,-37.89,145.57,336,3
+AUS\_RIC\_EUC\_ELE,Richmond NSW EucFACE,-33.62,150.74,23,1
+AUS\_WOM,WombatStateForest,-37.42,144.09,705,2
+AUT\_PAT\_FOR,Patscherkofel,47.21,11.45,1950,1
+AUT\_PAT\_KRU,Patscherkofel,47.21,11.45,2180,1
+AUT\_PAT\_TRE,Patscherkofel,47.21,11.45,2110,1
+AUT\_TSC,Tschirgant south,47.23,10.84,750,1
+BRA\_CAM,Campos do Jordão,-22.69,-45.52,2000,1
+BRA\_CAX\_CON,Caxiuana,-1.79,-51.43,15,8
+BRA\_SAN,Santa Virgínia (PESM),-23.28,-45.18,1000,4
+CAN\_TUR\_P39\_POS,TUR,42.71,-80.36,184,1
+CAN\_TUR\_P39\_PRE,TUR,42.71,-80.36,184,1
+CAN\_TUR\_P74,TUR,42.71,-80.35,184,1
+CHE\_DAV\_SEE,Davos,46.82,9.86,1650,1
+CHE\_LOT\_NOR,Lotschental,46.39,7.76,1300,2
+CHE\_PFY\_CON,Pfynwald,46.3,7.6,615,1
+CHE\_PFY\_IRR,Pfynwald,46.3,7.6,615,1
+CHN\_ARG\_GWD,Arghan,40.75,89.99,830,1
+CHN\_ARG\_GWS,Arghan,41.38,89.94,830,1
+CHN\_HOR\_AFF,Horqin,42.72,122.37,226,1
+CHN\_YIN\_ST1,Yingbazar ,42.45,85.72,900,1
+CHN\_YIN\_ST2\_DRO,Yingbazar ,42.11,85.13,930,1
+CHN\_YIN\_ST3\_DRO,Yingbazar ,42.29,85.99,930,1
+CHN\_YUN\_YUN,Yunxiao,23.92,117.42,0,2
+COL\_MAC\_SAF\_RAD,Macagual Universidad de la Amazonia,1.5,-75.36,360,1
+CRI\_TAM\_TOW,TAMU Soltis Center,10.39,-84.63,600,17
+CZE\_BIK,Bik,49.49,18.53,875,1
+CZE\_BIL\_BIL,Bilovice,49.25,16.69,320,1
+CZE\_KRT\_KRT,Krtiny,49.32,16.75,480,1
+CZE\_LAN,Lanžhot,48.68,16.95,150,3
+CZE\_LIZ\_LES,Liz,49.07,13.68,858,1
+CZE\_RAJ\_RAJ,Rajec,49.44,16.7,600,1
+CZE\_SOB\_SOB,Sobesice,49.25,16.69,320,1
+CZE\_STI,Stitna nad Vlari,49.04,17.97,550,1
+CZE\_UTE\_BEE,Utechov,49.28,16.65,420,1
+CZE\_UTE\_BNA,Utechov,49.28,16.65,390,1
+CZE\_UTE\_BPO,Utechov,49.28,16.65,370,1
+CZE\_UTE\_SPR,Utechov,49.28,16.65,360,1
+DEU\_HIN\_OAK,Hinnensee,53.33,13.19,90,1
+DEU\_HIN\_TER,Hinnensee,53.33,13.19,95,2
+DEU\_MER\_BEE\_NON,Merzalben,49.27,7.81,550,1
+DEU\_MER\_BEE\_THI,Merzalben,49.27,7.81,550,1
+DEU\_MER\_DOU\_NON,Merzalben,49.27,7.81,550,1
+DEU\_MER\_DOU\_THI,Merzalben,49.27,7.81,550,1
+DEU\_MER\_MIX\_NON,Merzalben,49.27,7.81,550,2
+DEU\_MER\_MIX\_THI,Merzalben,49.27,7.81,550,2
+DEU\_STE\_2P3,Stechlin,53.1,13,78,1
+DEU\_STE\_4P5,Stechlin,53.1,13,78,1
+ESP\_ALT\_ARM,Alto Tajo,40.78,-2.33,1079,3
+ESP\_ALT\_HUE,Alto Tajo,40.79,-2.29,907,2
+ESP\_ALT\_TRI,Alto Tajo,40.8,-2.23,981,2
+ESP\_CAN,Can Balasc,41.43,2.07,270,4
+ESP\_GUA\_VAL,Guadarrama,40.9,-4.03,1140,1
+ESP\_LAH\_COM,LaHarina,37.74,-3.38,180,1
+ESP\_LAS,"Las Canadas, Teide natinal park tenerife",28.31,-16.57,2070,1
+ESP\_MAJ\_MAI,Majadas del Tietar,39.94,-5.77,260,1
+ESP\_MAJ\_NOR\_LM1,Majadas del Tietar,39.94,-5.77,260,1
+ESP\_MON\_SIE\_NAT,Montejo,41.12,-3.5,1400,3
+ESP\_RIN,Rinconada experimental catchment,40.6,-6.02,1200,1
+ESP\_RON\_PIL,Ronda,36.69,-5.02,1734,2
+ESP\_SAN\_A2\_45I,Sanabria orchard,37.25,-5.8,49,1
+ESP\_SAN\_A\_45I,Sanabria orchard,37.25,-5.8,49,1
+ESP\_SAN\_B\_100,Sanabria orchard,37.25,-5.8,49,1
+ESP\_SAN\_B2\_100,Sanabria orchard,37.25,-5.8,49,1
+ESP\_TIL\_MIX,Tillar,41.33,1.01,1018,2
+ESP\_TIL\_OAK,Tillar,41.33,1.01,1011,1
+ESP\_TIL\_PIN,Tillar,41.33,1.01,1065,1
+ESP\_VAL\_BAR,Vallcebre,42.2,1.82,1102,1
+ESP\_VAL\_SOR,Vallcebre,42.2,1.81,1257,1
+ESP\_YUN\_C1,Yunquera,36.72,-4.97,1220,1
+ESP\_YUN\_C2,Yunquera,36.72,-4.97,1180,1
+ESP\_YUN\_T1\_THI,Yunquera,36.72,-4.97,1190,1
+ESP\_YUN\_T3\_THI,Yunquera,36.72,-4.97,1185,1
+FIN\_HYY\_SME,Hyytiala Forest Field Station,61.85,24.29,185,2
+FIN\_PET,Petsikko,69.49,27.23,251,1
+FRA\_FON,Fontainebleau-Barbeau,48.48,2.78,105,2
+FRA\_HES\_HE1\_NON,Hesse,48.67,7.06,300,1
+FRA\_HES\_HE2\_NON,Hesse,48.67,7.06,300,1
+FRA\_PUE,Puechabon,43.74,3.6,270,1
+GBR\_ABE\_PLO,Aberfeldy,56.62,-3.8,340,1
+GBR\_DEV\_CON,Devilla,56.03,-3.72,75,1
+GBR\_DEV\_DRO,Devilla,56.03,-3.72,75,1
+GBR\_GUI\_ST1,Guisachan,57.27,-4.82,300,1
+GBR\_GUI\_ST2,Guisachan,57.27,-4.82,300,1
+GBR\_GUI\_ST3,Guisachan,57.27,-4.82,300,1
+GUF\_GUY\_GUY,Guyaflux,5.28,-52.92,40,6
+GUF\_GUY\_ST2,Guyaflux,5.28,-52.91,45,7
+GUF\_NOU\_PET,Nouragues station,4.08,-52.68,120,10
+HUN\_SIK,Sikfokut,47.93,20.44,330,2
+IDN\_JAM\_OIL,Jambi,-2.07,102.79,71,1
+IDN\_JAM\_RUB,Jambi,-2.1,102.78,90,1
+IDN\_PON\_STE,Pono,-1.49,120.06,1050,8
+ISR\_YAT\_YAT,Yatir,31.34,35.05,650,1
+ITA\_FEI\_S17,Feichtwald-Matsch,46.69,10.61,1715,1
+ITA\_KAE\_S20,Kaelbergangl-Matsch,46.7,10.61,1990,1
+ITA\_MAT\_S21,Matscher Alm-Matsch,46.74,10.69,2100,2
+ITA\_MUN,Muntatschinig-Matsch,46.68,10.58,1160,1
+ITA\_REN,Renon,46.59,11.43,1794,3
+ITA\_RUN\_N20,Runer Koepfl-Matsch,46.7,10.64,2030,2
+ITA\_TOR,Torgnon,45.82,7.56,2100,1
+JPN\_EBE\_HYB,Ebetsu,43.08,141.52,40,1
+JPN\_EBE\_SUG,Ebetsu,43.08,141.52,40,1
+KOR\_TAE\_TC1\_LOW,Taehwa,37.3,127.32,160,1
+KOR\_TAE\_TC2\_MED,Taehwa,37.3,127.32,160,1
+KOR\_TAE\_TC3\_EXT,Taehwa,37.3,127.32,160,1
+MDG\_SEM\_TAL,Semi-mature forest,-18.93,48.71,950,6
+MDG\_YOU\_SHO,Young secondary forest,-18.95,48.4,990,1
+MEX\_COR\_YP,Cortadura,19.49,-97.04,2180,1
+MEX\_VER\_BSJ,VERACRUZ\_BSJ,19.51,-96.98,1440,5
+MEX\_VER\_BSM,VERACRUZ\_BSM,19.53,-96.99,1524,2
+NLD\_LOO,Loobos,52.17,5.74,25,1
+NLD\_SPE\_DOU,Speulderbos,52.25,5.69,50,1
+NZL\_HUA\_HUA,Huapai,-36.8,174.49,90,1
+PRT\_LEZ\_ARN,LEZIRIAS,38.83,-8.82,15,1
+PRT\_MIT,MITRA II,38.54,-8,235,1
+PRT\_PIN,Pinheiro da Cruz,38.25,-8.76,5,2
+RUS\_CHE\_LOW,Cherskii,68.74,161.5,90,1
+RUS\_CHE\_Y4,CHE,68.74,161.41,6,1
+RUS\_FYO,Fyodorovskoye,56.46,32.92,260,3
+RUS\_POG\_VAR,Pogorelsky Bor,56.36,92.95,243,3
+SEN\_SOU\_IRR,Souilène,16.34,-15.43,10,1
+SEN\_SOU\_POS,Souilène,16.34,-15.43,10,1
+SEN\_SOU\_PRE,Souilène,16.34,-15.43,10,1
+SWE\_NOR\_ST1\_AF1,Norunda,60.09,17.48,45,2
+SWE\_NOR\_ST1\_AF2,Norunda,60.09,17.48,45,2
+SWE\_NOR\_ST1\_BEF,Norunda,60.09,17.48,45,2
+SWE\_NOR\_ST2,Norunda,60.09,17.48,45,2
+SWE\_NOR\_ST3,Norunda,60.09,17.48,45,2
+SWE\_NOR\_ST4\_AFT,Norunda,60.08,17.48,45,3
+SWE\_NOR\_ST4\_BEF,Norunda,60.08,17.48,45,2
+SWE\_NOR\_ST5\_REF,Norunda,60.08,17.48,45,3
+SWE\_SKO\_MIN,Skogaryd,58.36,12.15,76,1
+SWE\_SKY\_38Y,Skyttorp,60.13,17.84,50,1
+SWE\_SKY\_68Y,Skyttorp,60.1,17.83,50,2
+SWE\_SVA\_MIX\_NON,Svartberget,64.26,19.77,267,2
+THA\_KHU,Khu-Muang,15.27,103.08,150,1
+USA\_BNZ\_BLA,BNZSPRC1,64.7,-148.32,50,1
+USA\_CHE\_ASP,ChEAS,45.94,-90.27,477,6
+USA\_CHE\_MAP,ChEAS,45.95,-90.26,1565,2
+USA\_DUK\_HAR,Duke Blackwood Hardwood,36.98,-79.09,163,6
+USA\_HIL\_HF1\_POS,Hill Demonstration Forest,36.22,-78.86,174,5
+USA\_HIL\_HF1\_PRE,Hill Demonstration Forest,36.22,-78.86,174,5
+USA\_HIL\_HF2,Hill Demonstration Forest,36.22,-78.86,174,7
+USA\_HUY\_LIN\_NON,Huyck Preserve  Lincoln Pond,42.53,-74.16,NA,1
+USA\_INM,INMMSF,39.32,-86.41,286,6
+USA\_MOR\_SF,Morgan-Monroe State Forest,39.32,-86.41,275,4
+USA\_NWH,NWhiteRiver,34.58,-91.26,48,2
+USA\_ORN\_ST1\_AMB,ORNL-FACE,35.9,-84.33,227,1
+USA\_ORN\_ST2\_AMB,ORNL-FACE,35.9,-84.33,227,1
+USA\_ORN\_ST3\_ELE,ORNL-FACE,35.9,-84.33,227,1
+USA\_ORN\_ST4\_ELE,ORNL-FACE,35.9,-84.33,227,1
+USA\_PAR\_FER,Parker Tract,35.8,-76.67,5,1
+USA\_PER\_PER,Perry,30.21,-83.87,14,1
+USA\_PJS\_P04\_AMB,"PJSEV -Rainfall Manipulation Experiment - Sevilleta NWR, USA",34.39,-106.53,1911,2
+USA\_PJS\_P08\_AMB,"PJSEV -Rainfall Manipulation Experiment - Sevilleta NWR, USA",34.39,-106.53,1911,2
+USA\_PJS\_P12\_AMB,"PJSEV -Rainfall Manipulation Experiment - Sevilleta NWR, USA",34.39,-106.53,1911,2
+USA\_SIL\_OAK\_1PR,Silas Little Experimental Forest premortality,39.92,-74.6,33,4
+USA\_SIL\_OAK\_2PR,Silas Little Experimental Forest premortality,39.92,-74.6,33,4
+USA\_SIL\_OAK\_POS,Silas Little Experimental Forest premortality,39.92,-74.6,33,5
+USA\_SMI\_SCB,Smithsonian Conservation Biology Insitute,38.89,-78.15,273,3
+USA\_SMI\_SER,Smithsonian Environmental Research Center,38.89,-76.56,19,5
+USA\_SWH,SWhiteRiver,34.11,-91.13,44,2
+USA\_SYL\_HL1,Sylvania Wilderness,46.24,-89.35,500,3
+USA\_SYL\_HL2,Sylvania Wilderness,46.24,-89.35,500,4
+USA\_TNB,TNBSF,36.47,-84.7,454,4
+USA\_TNO,TNOAK,35.97,-84.28,340,5
+USA\_TNP,TNPINE,35.96,-84.29,342,5
+USA\_TNY,TNYPOP,35.69,-83.5,850,3
+USA\_UMB\_CON,UMBS,45.56,-84.71,236,5
+USA\_UMB\_GIR,UMB,45.56,-84.7,239,4
+USA\_WIL\_WC1,Willow Creek,45.81,-90.09,520,5
+USA\_WIL\_WC2,Willow Creek,45.81,-90.09,520,4
+USA\_WVF,WVFEF,39.06,-79.69,844,5
+UZB\_YAN\_DIS,Yangibazar,41.65,60.62,101,2
+ZAF\_FRA\_FRA,Franshoek South Africa,-33.88,19.06,190,1
+ZAF\_NOO\_E3\_IRR,Nooitgedacht farm,-33.2,19.34,1089,1
+ZAF\_RAD,Radyn EGVV,-34.08,19.11,409,1
+ZAF\_SOU\_SOU,Southfield EGVV,-34.09,19.09,389,1
+ZAF\_WEL\_SOR,Wellington Western Cape,-33.48,18.96,81,1

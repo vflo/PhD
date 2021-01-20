@@ -1,0 +1,26 @@
+Variable,Description,Type,Units
+pl_name,Plant code assigned by contributors,Character,None
+pl_species,Species identity of the measured plant,Character,"Scientific name without author abbreviation, as accepted by The Plant List"
+pl_treatment,Experimental treatment (if any),Character,None
+pl_dbh,Diameter at breast height of measured plants,Numeric,cm
+pl_height,Height of measured plants,Numeric,m
+pl_age,Plant age at the moment of measure,Numeric,years
+pl_social,Plant social status,Character,Fixed values
+pl_sapw_area,Cross-sectional sapwood area,Numeric,cm2
+pl_sapw_depth,"Sapwood depth, measured at breast height",Numeric,cm
+pl_bark_thick,Plant bark thickness,Numeric,mm
+pl_leaf_area,Leaf area of each measured plant,Numeric,m2
+pl_sens_meth,Sap flow measures method,Character,Fixed values
+pl_sens_man,Sap flow measures sensor manufacturer,Character,Fixed values
+pl_sens_cor_grad,Correction for natural temperature gradients method,Character,Fixed values
+pl_sens_cor_zero,Zero flow determination method,Character,Fixed values
+pl_sens_calib,Was species-specific calibration used?,Logical,Fixed values
+pl_sap_units,"Sapfluxnet-harmonised units for sap flow at the sapwood, leaf and plant level",Character,Fixed values
+pl_sap_units_orig,Original sap flow units provided by the contributors,Character,Fixed values
+pl_sens_length,Length of the needles or electrodes forming the sensor,Numeric,mm
+pl_sens_hgt,"Sensor installation height, measured from the ground",Numeric,m
+pl_sens_timestep,Subdaily time step of sensor measures,Numeric,minutes
+pl_radial_int,Integration of radial variation in sap flow along sapwood depth,Character,Fixed values
+pl_azimut_int,Integration of azimuthal variation of sap flow along stem circumference,Character,Fixed values
+pl_remarks,Remarks and commentaries useful to grasp some plant-specific peculiarities,Character,None
+pl_code,"Sapfluxnet plant code, unique for each plant",Character,Fixed value

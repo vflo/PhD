@@ -1,0 +1,2220 @@
+`r if(knitr:::is_latex_output()) '\\appendix'`
+
+`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
+
+<!--
+If you feel it necessary to include an appendix, it goes here.
+-->
+
+
+# Appendix Chapter 2
+\newpage
+
+##Figures A
+\setlength{\abovecaptionskip}{0pt}
+
+(ref:apa11) Representation of the cumulative number of studies using different sap flow methods between 1957 and 2017 (adapted and updated from Potatos et al. (2016)). CAG: calibrated average gradient; CHP: compensation heat pulse (early heat pulse methods have been considered CHP, [@Edwards1997]); HFD: head field deformation; HR: heat ratio, SF+: sapflow+; SHB: stem heat balance; TD: thermal dissipation; THB: trunk heat balance; Tmax: T-max heat pulse; TTD: transient thermal dissipation. Notice the logarithmic scale on the y-axis.
+
+\setlength{\abovecaptionskip}{15pt}
+```{r apa11, echo=FALSE,  out.width = '60%',fig.pos="hbt!", fig.align="center", fig.scap="Representation of the cumulative number of studies using different sap flow methods between 1957 and 2017",fig.cap="(ref:apa11)"}
+knitr::include_graphics(path = "figure/appendixA/fig1.png")
+```
+\setlength{\abovecaptionskip}{0pt}
+\newpage
+
+
+\setlength{\abovecaptionskip}{15pt}
+```{r apa122, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Relationship between root mean square error (RMSE) and sap flux density.",fig.cap="Relationship between root mean square error (RMSE) and sap flux density (mean calibration range) and for different sap flux density methods, as predicted by the LMM model presented in Table 3."}
+knitr::include_graphics(path = "figure/appendixA/fig2.png")
+```
+\setlength{\abovecaptionskip}{0pt}
+
+\newpage
+```{r apa13, echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Predictions of the LMM models calculated from least-squares means of the intercept ($\\beta_{0}$) of the linear model.",fig.cap="Predictions of the LMM models calculated from least-squares means of the intercept ($\\beta_{0}$) of the linear model (Eq. 3). Different letters indicate significant differences between factors levels evaluated with Tukey’s test. Horizontal, dotted lines indicate reference, perfect calibration values for a given metric. Asterisks (*) indicate significant (p<0.05) departure from those reference values."}
+knitr::include_graphics(path = "figure/appendixA/fig3.png")
+```
+\newpage
+
+##Tables A
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+# table1 <- read_delim("data/appendixA/tableS1.csv",
+#     ",", escape_double = FALSE, col_types = cols(X1 = col_skip()),
+#     trim_ws = TRUE)#be careful now is sep"," change it if you prefer
+
+table1 <- read_delim("data/appendixA/tableS1.csv",
+    ",", escape_double = FALSE, 
+    trim_ws = TRUE)%>%
+  dplyr::select(-X1)
+
+knitr::kable(table1,"latex",booktabs = T, escape = FALSE,longtable = TRUE,linesep = "",
+             digits=2 ,
+                 caption.short = "Summary table of the studies used in the analyses.",
+                 caption = "Summary table of the studies used in the analyses presented in the paper. Sap flow method, species, calibration material, porosity and average stem/tree diameter are reported.") %>%
+    kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 8)%>%
+  column_spec(c(2,6), width = "3em") %>% 
+  # column_spec(c(3), width = "11em")%>% 
+  column_spec(c(4), width = "6em")%>% 
+  column_spec(c(1), width = "12em")
+```
+
+
+
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+# table1 <- read_delim("data/appendixA/tableS1.csv",
+#     ",", escape_double = FALSE, col_types = cols(X1 = col_skip()),
+#     trim_ws = TRUE)#be careful now is sep"," change it if you prefer
+
+table2 <- read_delim("data/appendixA/tableS2.csv",
+    ",", escape_double = FALSE, 
+    trim_ws = TRUE)
+
+knitr::kable(table2, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c',
+                 caption.short = "Anova summary of the LMM models.",
+                 caption = "Anova summary of the LMM models, using the same structure as objective 1, comparing calibrations reported in SFD and SF units (Units) for CHP and TD. CM (Calibration material).")%>%
+    kableExtra::kable_styling(latex_options = c("hold_position"),font_size = 6)%>%
+    # collapse_rows(columns = 1:2, valign = "middle", latex_hline = "full")%>% 
+    # kable_styling(full_width = TRUE)%>% 
+    # column_spec(c(3:8), width = "3em") %>%
+    # column_spec(c(1), width = '3em') %>%
+    # column_spec(c(2), width = '8em') %>%
+    # column_spec(9, width = '7em') %>%
+    # kable_styling(full_width = TRUE) %>%
+    collapse_rows(columns = 1:2, valign = "top", latex_hline = "full")
+```
+
+\newpage
+<!-- \newgeometry{layout=a4paper,left=1in,right=0.2in,top=0.2in,bottom=0.2in,nohead} -->
+\begin{landscape}
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+table3 <- read_delim("data/appendixA/tableS3.csv",
+    ";", escape_double = FALSE,
+    trim_ws = TRUE,
+    skip = 1)
+
+colnames(table3) <- c("Coefficients", rep(c("Estimate","Conf. Int.", "p-value"),4))
+
+options(knitr.kable.NA = '')
+
+knitr::kable(table3, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Summary of the LMM models of Ln-Ratio (accuracy), Slope (proportional bias), Slope (ln-ln) (linearity) and Z-Cor (precision) as a function of Methods and Calibration material.", caption = "Summary of the LMM models of Ln-Ratio (accuracy), Slope (proportional bias), Slope (ln-ln) (linearity) and Z-Cor (precision) as a function of Methods and Calibration material (CM; Whole plant: whole plant on a container or lysimeter; No-roots: whole plant without roots). CHP is the reference level for the variable Method and Stem segment is the reference level for CM, corresponding to the model intercept. All other coefficient estimates indicate the difference relative to the intercept. $\\sigma^{2}$ is the within-groups random variability (residuals of the model). $\\tau_{00}$ is the between-group random variability. N is the number of levels within random groups. ICC is the Intraclass Correlation Coefficients of each random group. $R^{2}m$ and $R^{2}c$ are the variability explained by the fixed and the random factors, respectively.")%>%
+    kableExtra::kable_styling(latex_options = "scale_down",font_size = 5)
+    # add_header_above(c(" "=1,'Ln-Ratio'=2,'Slope'=5,'Slope (ln-ln)'=8,'Z-Cor'=11))
+
+```
+
+\end{landscape}
+<!-- \restoregeometry -->
+
+\newpage
+
+# Appendix Chapter 3
+\newpage
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# library(raster)
+library(flextable)
+library(pander)
+library(magrittr)
+library(readxl)
+library(tidyverse)
+library(ggrepel)
+library(cowplot)
+library(ggspatial)
+
+CapStr <- function(y) {
+  c <- strsplit(y, " ")[[1]]
+  paste(toupper(substring(y, 1,1)), substring(y, 2),
+      sep="", collapse=" ")
+}
+
+capitalize_str <- function(charcter_string){
+  sapply(charcter_string, CapStr)
+}
+
+source('~/PhD/Chapter3/Supplementary/metadata_wrangling.R')
+load('~/PhD/Chapter3/Supplementary/maps_base.RData')
+```
+
+
+
+##Figures B
+
+\setlength{\abovecaptionskip}{15pt}
+```{r, echo=FALSE,fig.align='center',out.width = '80%', fig.scap="Overview of the data QC process.", fig.cap='Overview of the data QC process, showing file management and identifying automatic (in yellow) and manual steps (in red).  The column on the left shows the different updates of the status file for each dataset and the column on the right shows generated data reports and steps requiring feedback or manual changes.'}
+# Doesn't work for Word visualisation
+#knitr::include_graphics('resources/QC_summary2.svg')
+
+knitr::include_graphics('figure/appendixB/QCsummary2.png')
+
+```
+\setlength{\abovecaptionskip}{0pt}
+\newpage
+
+\setlength{\abovecaptionskip}{15pt}
+```{r, echo=FALSE,  out.width = '70%', fig.align='center', fig.scap="Structure of sfn\\_data objects.", fig.cap="(a) Structure of sfn\\_data objects, which are based on the S4 class. Boxes in the figure represent different slots where data are stored. Each object is identified by the 'si\\_code', stored as a slot in the object, with the format of a character vector. Slots storing time series of data and the associated data flags are of class 'tibble' and have all the same number of rows (\\textit{i}), corresponding to the the number of timesteps in the dataset and labelled with two POSIXct timestamp vectors TIMESTAMP, solar\\_TIMESTAMP).The slot storing sap flow data, 'sapf\\_data' contains(\\textit{j}) columns and environmental data ('env\\_data') contains \\textit{k} columns, corresponding to the number of environmental variables present. Slots with the suffix 'md' refer to the different metadata and all are objects of class 'tibble' with different dimensions. For example, the number of rows in plant\\_md' depends on the number of plants in the dataset (and this is depicted by the different length of the box). More information on the 'sfn\\_data' class objects can be found in the vignette 'sfn-data-classes' of the package \\textit{sapfluxnetr} (Granda et al. 2020). (b) Summary of an sfn\\_data object, showing highlights of site metadata, data dimensions, timestamp span and flags present on the data."}
+# Doesn't work for Word visualisation
+
+#knitr::include_graphics('resources/QC_summary2.svg')
+
+knitr::include_graphics('figure/appendixB/schematics.png')
+
+```
+\setlength{\abovecaptionskip}{0pt}
+\newpage
+
+\setlength{\abovecaptionskip}{15pt}
+```{r, echo=FALSE,  out.width = '100%', fig.align='center', fig.scap="Example screenshot of the app used for handling outliers and out of range values in time series.", fig.cap='Example screenshot of the app used for handling outliers and out of range values in time series. The left column shows dataset and variable selection. The central part shows the time series, with out of range values in red and possible outliers in yellow. Rows to replace or remove are selected in a table and written to a text file when done.'}
+# Doesn't work for Word visualisation
+
+#knitr::include_graphics('resources/QC_summary2.svg')
+
+knitr::include_graphics('figure/appendixB/outapp.png')
+
+```
+\setlength{\abovecaptionskip}{0pt}
+\newpage
+
+\setlength{\abovecaptionskip}{15pt}
+```{r regionalmaps, out.width = '100%',echo=FALSE, message=FALSE, warning=FALSE,fig.scap='Detailed geographic distribution of SAPFLUXNET datasets', fig.cap="Detailed geographic distribution of SAPFLUXNET datasets. Datasets are labelled by dataset number in Table S4. Woodland area from Crowther et al. (2015) shown in green."}
+
+source('~/PhD/Chapter3/Supplementary/sfn_datapaper_functions.R')
+# a) Site labels
+
+# b) Select countries to plot
+#
+# countries_sfn <- unique(sapply(strsplit(sfn_allsites$si_code,"_"),"[[",1))
+# countries_label <- c('ARG','BRA','COL','CRI','CHN','GUF','IDN','ISR','JPN','KOR','MDG','MEX','NZL','RUS','SEN','THA','UZB')
+# countries_europe <- c('AUT','CHE','CZE','DEU','ESP','FIN','FRA','GBR','HUN','ITA','NLD','PRT','SWE')
+# countries_america <- c('CAN','USA')
+# countries_austral <- c('AUS')
+# countries_africa <- c('MDG','ZAF')
+#
+#
+# # c) Add numeric codes
+#
+# sfn_allsites_country<- sfn_allsites %>%
+#   mutate(country=sapply(strsplit(si_code,"_"),"[[",1),
+#          num_code = as.integer(factor(si_code)))
+#
+#
+# sfn_allsites_country %>%
+#   dplyr::filter(country%in%countries_europe | si_code%in%c('RUS_FYO')) %>%
+#   dplyr::filter(si_code%ni%c('ESP_LAS','FIN_PET')) -> sfn_sites_europe
+#
+#
+# sfn_allsites_country %>%
+#   dplyr::filter(country%in%countries_label
+#                 | si_code%in%c('ESP_LAS','FIN_PET','USA_BNZ_BLA','AUS_KAR')) -> sfn_sites_world
+#
+# sfn_allsites_country %>%
+#   dplyr::filter(country%in%countries_america & si_code%ni%c('USA_BNZ_BLA')) -> sfn_sites_america
+#
+# # 3. Map, numeric codes, ggrepel not aligned ------------------------------------------------------
+#
+# # world
+# sfnsites_world_dr <- globforest_rec_0_1  +
+#   geom_point(data=sfn_allsites,aes(x=si_long,y=si_lat),shape=21,color='black',fill='royalblue',alpha=0.5)+
+#   geom_text_repel(data = sfn_sites_world,
+#                   aes(si_long, si_lat, label = num_code), size = 3,
+#                   segment.alpha=0.5,  nudge_x = -0.35,direction = "both",
+#                   box.padding = unit(0.1, 'lines'), force = 0.5)+geom_label_repel()+guides(fill='none')+xlab(NULL)+ylab(NULL)
+#
+# # europe
+# sfnsites_europe_dr<- globforest_rec_0_1  +
+#   geom_point(data=sfn_allsites,aes(x=si_long,y=si_lat),shape=21,color='black',fill='royalblue',alpha=0.5)+
+#   geom_text_repel(data = sfn_sites_europe,
+#                   aes(si_long, si_lat, label = num_code), size = 3,
+#                   segment.alpha=0.5,  nudge_y = -0.35,direction = "both",
+#                   box.padding = unit(0.1, 'lines'), force = 0.5)+
+#   coord_sf(xlim = c(-20, 40), ylim = c(32, 67), expand = FALSE)+
+#   geom_label_repel()+guides(fill='none')+xlab(NULL)+ylab(NULL)
+#
+# # america
+# sfnsites_america_dr<- globforest_rec_0_1  +
+#   geom_point(data=sfn_allsites,aes(x=si_long,y=si_lat),shape=21,color='black',fill='royalblue',alpha=0.5)+
+#   geom_text_repel(data = sfn_sites_america,
+#                   aes(si_long, si_lat, label = num_code), size = 3,
+#                   segment.alpha=0.5,  nudge_x = -0.35,direction = "both",
+#                   box.padding = unit(0.1, 'lines'), force = 0.5)+
+#   coord_sf(xlim = c(-130, -60), ylim = c(30, 55), expand = FALSE)+
+#   geom_label_repel()+guides(fill='none')+xlab(NULL)+ylab(NULL)
+#
+# # austral
+# sfnsites_austral_dr<- globforest_rec_0_1  +
+#   geom_point(data=sfn_allsites,aes(x=si_long,y=si_lat),shape=21,color='black',fill='royalblue',alpha=0.5)+
+#   geom_text_repel(data = subset(sfn_allsites_country,country%in%countries_austral),
+#                   aes(si_long, si_lat, label = num_code), size = 3,
+#                   segment.alpha=0.5,  nudge_x = -0.35,
+#                   box.padding = unit(0.1, 'lines'), force = 0.5)+
+#   coord_sf(xlim = c(110, 155), ylim = c(-45, -10), expand = FALSE)+
+#   geom_label_repel()+guides(fill='none')+xlab(NULL)+ylab(NULL)
+#
+# # africa
+# sfnsites_africa_dr<- globforest_rec_0_1  +
+#   geom_point(data=sfn_allsites,aes(x=si_long,y=si_lat),shape=21,color='black',fill='royalblue',alpha=0.5)+
+#   geom_text_repel(data = subset(sfn_allsites_country,country%in%countries_africa), aes(si_long, si_lat, label = num_code), size = 3,
+#                   box.padding = unit(0.1, 'lines'), force = 0.5)+
+#   coord_sf(xlim = c(10, 50), ylim = c(-40, -10), expand = FALSE)+
+#   geom_label_repel()+guides(fill='none')+xlab(NULL)+ylab(NULL)
+#
+#
+#
+# # e) Build figure
+#
+# plot_grid(
+#   plot_grid(sfnsites_world_dr,ncol=1,nrow=1,labels=c('a)')),
+#   plot_grid(sfnsites_europe_dr,sfnsites_austral_dr,ncol=2,nrow=1,rel_widths=c(1,0.7),labels=c('b)','c)')), #problem here?
+#   plot_grid(sfnsites_america_dr,sfnsites_africa_dr,ncol=2,nrow=1,rel_widths=c(1,0.7),labels=c('d)','e)')),
+#   nrow=3,rel_heights=c(1,1,0.7))
+
+knitr::include_graphics('figure/appendixB/regionalmaps.png')
+
+```
+\setlength{\abovecaptionskip}{0pt}
+
+##Tables B
+
+```{r tableQC1, echo=FALSE}
+
+readxl::read_xlsx('~/PhD/Chapter3/Supplementary/resources/table_QC1_checks.xlsx',1) %>%
+  knitr::kable("latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Data checks implemented in the first level of data quality control (QC1).", caption = "Data checks implemented in the first level of data quality control (QC1).")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>% 
+    column_spec(c(2), width = '20em') 
+
+```
+
+\newpage
+
+```{r tabsitemd, echo=FALSE}
+
+sapfluxnetr:::.metadata_architecture() %>%
+  magrittr::extract2(., 'site_md') %>%
+  purrr::map_dfr(magrittr::extract, c('description', 'type', 'units')) %>%
+  dplyr::mutate(
+    variable = sapfluxnetr:::.metadata_architecture() %>%
+      magrittr::extract2(., 'site_md') %>%
+      names()
+  ) %>%
+  dplyr::select(variable, everything()) -> table2
+table2$variable <- c('si\\_name',
+                     'si\\_country',
+                     'si\\_contact\\_firstname',
+                     'si\\_contact\\_lastname',	
+                     'si\\_contact\\_email',	
+                     'si\\_contact\\_institution',
+                     'si\\_addcontr\\_firstname',	
+                     'si\\_addcontr\\_lastname',
+                     'si\\_addcontr\\_email',
+                     'si\\_addcontr\\_institution',
+                     'si\\_lat',	
+                     'si\\_long',	
+                     'si\\_elev',	
+                     'si\\_paper',	
+                     'si\\_dist\\_mgmt',	
+                     'si\\_igbp',	
+                     'si\\_flux\\_network',
+                     'si\\_dendro\\_network',	
+                     'si\\_remarks',	
+                     'si\\_code',
+                     'si\\_mat',	
+                     'si\\_map',	
+                     'si\\_biome')
+  
+colnames(table2) <- capitalize_str(colnames(table2))
+  # mutate_all(~gsub("_", "\\_", .)) %>% 
+  knitr::kable(table2,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Description of site metadata variables.", caption = "Description of site metadata variables.")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position"),font_size = 12) %>% 
+    column_spec(c(2), width = '20em') %>% 
+    column_spec(c(4), width = '8em')
+
+```
+\newpage
+
+```{r tabstandmd, echo=FALSE}
+
+sapfluxnetr:::.metadata_architecture() %>%
+  magrittr::extract2(., 'stand_md') %>%
+  purrr::map_dfr(magrittr::extract, c('description', 'type', 'units')) %>%
+  dplyr::mutate(
+    variable = sapfluxnetr:::.metadata_architecture() %>%
+      magrittr::extract2(., 'stand_md') %>%
+      names()
+  )  %>%
+  dplyr::select(variable, everything()) -> table3
+  
+table3$variable <- c('st\\_name',
+                     'st\\_growth\\_condition',
+                     'st\\_treatment',
+                     'st\\_age',
+                     'st\\_height',
+                     'st\\_density',
+                     'st\\_basal\\_area',
+                     'st\\_lai',
+                     'st\\_aspect',
+                     'st\\_terrain',
+                     'st\\_soil\\_depth',
+                     'st\\_soil\\_texture',
+                     'st\\_sand\\_perc',
+                     'st\\_silt\\_perc',
+                     'st\\_clay\\_perc',
+                     'st\\_remarks',
+                     'st\\_USDA\\_soil\\_texture')
+
+table3[c(13:15),2]<-c('Soil sand content, \\% mass',
+                      'Soil silt content, \\% mass',
+                      'Soil clay content, \\% mass')
+
+table3[c(13:15),4]<-c('\\% percentage',
+                      '\\% percentage',
+                      '\\% percentage')
+
+table3[c(6:8),4]<-c('stems $\\text{ha}^-1$',
+                      '$\\text{m}^2$ $\\text{ha}^{-1}$',
+                      '$\\text{m}^2$ $\\text{m}^{-2}$')
+
+colnames(table3) <- capitalize_str(colnames(table3))
+
+  knitr::kable(table3,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Description of stand metadata variables.", caption = "Description of stand metadata variables.")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>% 
+    column_spec(c(2), width = '20em')
+
+```
+\newpage
+
+```{r tabspeciesmd, echo=FALSE}
+
+sapfluxnetr:::.metadata_architecture() %>%
+  magrittr::extract2(., 'species_md') %>%
+  purrr::map_dfr(magrittr::extract, c('description', 'type', 'units')) %>%
+  dplyr::mutate(
+    variable = sapfluxnetr:::.metadata_architecture() %>%
+      magrittr::extract2(., 'species_md') %>%
+      names()
+  ) %>%
+  dplyr::select(variable, everything()) -> table4
+
+table4$variable <- c('sp\\_name',
+                     'sp\\_ntrees',
+                     'sp\\_leaf\\_habit',
+                     'sp\\_basal\\_area\\_perc')
+
+table4[4,4]<-c('\\% percentage')
+
+colnames(table4) <- capitalize_str(colnames(table4))
+
+    knitr::kable(table4,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Description of species metadata variables.", caption = "Description of species metadata variables.")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>%
+    column_spec(c(2,4), width = '20em')
+
+```
+
+
+```{r tabplantmd, echo=FALSE}
+
+sapfluxnetr:::.metadata_architecture() %>%
+  magrittr::extract2(., 'plant_md') %>%
+  purrr::map_dfr(magrittr::extract, c('description', 'type', 'units')) %>%
+  dplyr::mutate(
+    variable = sapfluxnetr:::.metadata_architecture() %>%
+      magrittr::extract2(., 'plant_md') %>%
+      names()
+  ) %>%
+  dplyr::select(variable, everything())-> table5
+
+table5$variable <- c('pl\\_name',
+                     'pl\\_species',
+                     'pl\\_treatment',
+                     'pl\\_dbh',
+                     'pl\\_height',
+                     'pl\\_age',
+                     'pl\\_social',
+                     'pl\\_sapw\\_area',
+                     'pl\\_sapw\\_depth',
+                     'pl\\_bark\\_thick',
+                     'pl\\_leaf\\_area',
+                     'pl\\_sens\\_meth',
+                     'pl\\_sens\\_man',
+                     'pl\\_sens\\_cor\\_grad',
+                     'pl\\_sens\\_cor\\_zero',
+                     'pl\\_sens\\_calib',
+                     'pl\\_sap\\_units',
+                     'pl\\_sap\\_units\\_orig',
+                     'pl\\_sens\\_length',
+                     'pl\\_sens\\_hgt',
+                     'pl\\_sens\\_timestep',
+                     'pl\\_radial\\_int',
+                     'pl\\_azimut\\_int',
+                     'pl\\_remarks',
+                     'pl\\_code')
+
+table5[c(8,11),4]<-c('$\\text{cm}^2$',
+                      '$\\text{m}^2$')
+
+colnames(table5) <- capitalize_str(colnames(table5))
+
+    knitr::kable(table5,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Description of plant metadata variables.", caption = "Description of plant metadata variables.")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>%
+    column_spec(c(2), width = '20em')%>%
+    column_spec(c(4), width = '12em')
+
+```
+\newpage
+
+```{r tabenvmd, echo=FALSE}
+
+sapfluxnetr:::.metadata_architecture() %>%
+  magrittr::extract2(., 'env_md') %>%
+  purrr::map_dfr(magrittr::extract, c('description', 'type', 'units')) %>%
+  dplyr::mutate(
+    variable = sapfluxnetr:::.metadata_architecture() %>%
+      magrittr::extract2(., 'env_md') %>%
+      names()
+  ) %>%
+  dplyr::select(variable, everything()) -> table6
+
+table6$variable <- c('env\\_time\\_zone',
+                     'env\\_time\\_daylight',
+                     'env\\_timestep',
+                     'env\\_ta',
+                     'env\\_rh',
+                     'env\\_vpd',
+                     'env\\_sw\\_in',
+                     'env\\_ppfd\\_in',
+                     'env\\_netrad',
+                     'env\\_ws',
+                     'env\\_precip',
+                     'env\\_swc\\_shallow\\_depth',
+                     'env\\_swc\\_deep\\_depth',
+                     'env\\_plant\\_watpot',
+                     'env\\_leafarea\\_seasonal',
+                     'env\\_remarks'
+                    )
+
+colnames(table6) <- capitalize_str(colnames(table6))
+
+    knitr::kable(table6,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Description of environmental metadata variables.", caption = "Description of environmental metadata variables.")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>%
+    column_spec(c(2), width = '20em')
+
+
+
+
+```
+\newpage
+
+```{r tableQC2, echo=FALSE}
+
+readxl::read_xlsx('~/PhD/Chapter3/Supplementary/resources/table_QC2_checks.xlsx',1)->table7
+table7[1,2] <-"Sap flow expressed in $\\text{cm}^3$ $\\text{h}^{-1}$, sap flow per unit leaf\\/sapwood area in $\\text{cm}^3$ $\\text{cm}^{-2}$ $\\text{h}^{-1}$" 
+
+table7[4,2] <-"Interconversion between global radiation (sw\\_in) and photosynthetically active radiation (ppfd\\_in)"
+
+  knitr::kable(table7, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Data checks implemented in the second level of data quality control (QC2).", caption = "Data checks implemented in the second level of data quality control (QC2).")%>%
+    kableExtra::kable_styling(latex_options = c("scale_down","HOLD_position")) %>% 
+    column_spec(c(2), width = '20em') 
+```
+\newpage
+
+```{r tabsites, echo=FALSE, message=FALSE, warning=FALSE}
+
+#  sfn_sites_nspecies %>%
+#    left_join(sfn_allsites %>% dplyr::select(si_code,si_name,si_elev)) %>%
+#    mutate(country=sapply(strsplit(si_code,"_"),"[[",1),
+#           si_elev=as.integer(si_elev),
+#           num_code = as.integer(factor(si_code)))%>%
+#    mutate_at(vars(si_lat,si_long),round,2) %>%
+#    dplyr::select(num_code,si_code,si_name,si_lat, si_long,si_elev,nspecies) -> table8
+# #underbars must be modified manually as \\_
+# write_csv(table8,path = "data/table8B.csv")
+
+table8 <- read_csv("data/appendixB/table8B.csv")
+
+colnames(table8) <- c(colnames(table8)[-6],"\\# species")
+
+  knitr::kable(table8, "latex", booktabs = TRUE, escape = FALSE, longtable = TRUE, linesep = "",
+             digits=2 , align = c('l',rep('c',5)), caption.short = "Datasets in the SAPFLUXNET database identified by numeric code, dataset code and site name.", caption = "Datasets in the SAPFLUXNET database identified by numeric code, dataset code and site name. Number of species per dataset, geographic coordinates and elevation are also shown. Negative coordinate values are shown for Southern and Western Hemispheres.")%>%
+    kableExtra::kable_styling(latex_options = c("repeat_header","HOLD_position"),font_size = 8) %>% 
+    column_spec(c(2), width = '12em')
+
+```
+\newpage
+
+<!-- \newgeometry{layout=a4paper,left=2in,right=0.2in,top=0.2in,bottom=0.2in,nohead} -->
+\begin{landscape}
+```{r tabntreesspecies, echo=FALSE, message=FALSE, warning=FALSE}
+
+sfn_species_ntrees %>%
+  left_join(sfn_nspecies_dataset,by=c('species'='sp_name')) %>%
+  dplyr::select(species,n_trees,n_sites) -> sfn_species_ntrees_reduced
+
+sfn_species_ntrees_reduced$species <- paste0("$",
+                                             gsub(" ","$ $",sfn_species_ntrees_reduced$species),
+                                             "$")
+
+colnames(sfn_species_ntrees_reduced) <- c("Species", "\\# trees", "\\# sites")
+
+data.frame(sfn_species_ntrees_reduced[1:58,],
+          sfn_species_ntrees_reduced[59:116,],
+           sfn_species_ntrees_reduced[117:174,],check.names = FALSE) %>% 
+  knitr::kable("latex", booktabs = TRUE, escape = FALSE, longtable = TRUE, linesep = "",
+             digits=2 , align = rep(c('l','c','c'),3), caption.short = "Number of plants and number of datasets for each species present in the SAPFLUXNET database.", caption = "Number of plants and number of datasets for each species present in the SAPFLUXNET database.")%>%
+    kableExtra::kable_styling(latex_options = c("repeat_header","HOLD_position"),font_size = 8,
+                              position = "center") %>% 
+  column_spec(c(1,4,7),width = "12em") %>%
+  column_spec(c(2,3,5,6,8,9),width = "3.5em")
+
+```
+\newpage
+\end{landscape}
+<!-- \restoregeometry -->
+```{r tabntreesgenus, echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE, results="asis"}
+sfn_genus_ntrees$genus_f<- paste0("$",sfn_genus_ntrees$genus_f,"$")
+
+table10 <- data.frame(sfn_genus_ntrees[1:32,],
+          sfn_genus_ntrees[33:64,],
+        rbind(sfn_genus_ntrees[65:95,],as_tibble_row(c(genus_f=NA,n_trees=''))),
+        check.names = FALSE)
+
+
+colnames(table10) <- c("Genus", "\\# trees","Genus", "\\# trees","Genus", "\\# trees")
+
+knitr::kable(table10,"latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = rep(c('l','c'),3), caption.short = "Number of plants per genus present in the SAPFLUXNET database.", caption = "Number of plants per genus present in the SAPFLUXNET database.")%>%
+    kableExtra::kable_styling(latex_options = c("repeat_header","HOLD_position"),font_size = 8,
+                              position = "center")
+
+```
+\newpage
+
+# Appendix Chapter 4
+\newpage
+
+##Figures C
+\setlength{\abovecaptionskip}{15pt}
+```{r , echo=FALSE,  out.width = '100%',fig.pos="H", fig.align="center", fig.scap="SAPFLUXNET global scaling relationship between basal area and sapwood area. Shaded areas are 95\\% model confidence interval.",fig.cap="SAPFLUXNET global scaling relationship between basal area and sapwood area. Shaded areas are 95\\% model confidence interval."}
+knitr::include_graphics(path = "figure/appendixC/dbh_sw.pdf")
+```
+\setlength{\abovecaptionskip}{0pt}
+
+\newpage
+
+\setlength{\abovecaptionskip}{15pt}
+```{r , echo=FALSE,  out.width = '100%',fig.pos="H", fig.align="center", fig.scap="Bioclimatic distribution of the SAPFLUXNET datasets used in the study.",fig.cap="Bioclimatic distribution of the SAPFLUXNET datasets used in the study. Points show the different datasets in a Whittaker diagram showing the classification of the aggregated biomes used in the study."}
+knitr::include_graphics(path = "figure/appendixC/gg_biomes.pdf")
+```
+\setlength{\abovecaptionskip}{0pt}
+
+\newpage
+
+\setlength{\abovecaptionskip}{15pt}
+```{r , echo=FALSE,  out.width = '100%',fig.pos="H", fig.align="center", fig.scap="Global projection of climatic, soil and stand structure variables.",fig.cap="Global projection of climatic, soil and stand structure variables. log(PPET): logarithm of precipitation over potential evapotraspiration [log(mm $\\text{mm}^{-1}$)]; log($\\text{P-PET}_{\\text{sd}}$): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration [log(mm)]; Clay: percentage of clay in the soil; Total N: total nitrogen in the soil [g $\\text{kg}^{-1}$];  Bedrock [cm]; Stand height [m]; LAI: leaf area index [$\\text{m}^2$ $\\text{m}^{-2}$]. Total N values above 5 g $\\text{kg}^{-1}$ were truncated."}
+knitr::include_graphics(path = "figure/appendixC/var_maps.png")
+```
+\setlength{\abovecaptionskip}{0pt}
+
+\newpage
+
+\setlength{\abovecaptionskip}{15pt}
+```{r , echo=FALSE,  out.width = '100%',fig.pos="hbt!", fig.align="center", fig.scap="Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome.",fig.cap="Log relationships of the three environmental variables estimated with the TOTAL model (VPD + SWC + PPFD) and grouped by biome. Coloured lines are biome average models calculated from the models predictions using LMM with $G_{\\text{Asw}}$ as response variable and the neperian logarithm of the environmental constrains as explanatory variables. Dashed line shows standard error of the average models calculated with bootstrap prediction using 100 simulations."}
+knitr::include_graphics(path = "figure/appendixC/spa_plots.pdf")
+```
+\setlength{\abovecaptionskip}{0pt}
+\newpage
+
+##Tables C
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+# table1 <- read_delim("data/appendixA/tableS1.csv",
+#     ",", escape_double = FALSE, col_types = cols(X1 = col_skip()),
+#     trim_ws = TRUE)#be careful now is sep"," change it if you prefer
+
+table1 <- read_delim("data/appendixC/resume_table.csv",
+    ",", escape_double = FALSE, 
+    trim_ws = TRUE)
+table1 <- table1 %>% 
+  # mutate (si_code = gsub("_","\_",si_code)) %>% 
+  dplyr::rename(`Site code`=si_code,
+                Latitude=si_lat,
+                Longitude=si_long,
+                Biome = si_biome,
+                `\\# Tree-days`=n_days_complete,
+                `\\# Species`=`n species`,
+                `\\# Trees`=`n trees`
+                )
+
+knitr::kable(table1, "latex", booktabs = TRUE, escape = FALSE, longtable = TRUE, linesep = "",
+             digits=2 , align = 'c', caption.short = "SAPFLUXNET sites included in the study.", caption = "SAPFLUXNET sites included in the study. Biome was calculated using Whittaker diagram. *Indicates that the biome was manually adjusted and confirmed by SAPFLUXNET contributors.")%>%
+    kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 8)
+```
+\newpage
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+# table1 <- read_delim("data/appendixA/tableS1.csv",
+#     ",", escape_double = FALSE, col_types = cols(X1 = col_skip()),
+#     trim_ws = TRUE)#be careful now is sep"," change it if you prefer
+
+table2 <- read_delim("data/appendixC/plot_treatment.csv",
+    ",", escape_double = FALSE, 
+    trim_ws = TRUE)
+
+
+knitr::kable(table2, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = 'l', caption.short = "SAPFLUXNET stand treatments included in the this study.", caption = "SAPFLUXNET stand treatments included in the this study (Chapter 3).")%>%
+    kableExtra::kable_styling(latex_options = c("HOLD_position"),font_size = 12)
+```
+\newpage
+
+<!-- \newgeometry{layout=a4paper,left=1in,right=0.2in,top=0.2in,bottom=0.2in,nohead} -->
+\begin{landscape}
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+# table1 <- read_delim("data/appendixA/tableS1.csv",
+#     ",", escape_double = FALSE, col_types = cols(X1 = col_skip()),
+#     trim_ws = TRUE)#be careful now is sep"," change it if you prefer
+
+table3 <- read_delim("data/appendixC/resume_table2.csv",
+    ",", escape_double = FALSE, 
+    trim_ws = TRUE)
+
+
+knitr::kable(table3, "latex", booktabs = TRUE, escape = FALSE, longtable = TRUE, linesep = "",
+             digits=2 , align = 'c', caption.short = "Summary table of plot level.", caption = "Summary table of site level $\\text{R}^2_{\\text{VPD}}$, $\\text{R}^2_{\\text{SWC}}$, $\\text{R}^2_{\\text{PPFD}}$, climate, soil properties and vegetation structure data. PPET is in [mm $\\text{mm}^{-1}$], $\\text{P-PET}_{\\text{sd}}$ is in [mm], Clay and Sand are in [\\%], Total N is in [g $\\text{kg}^{-1}$], Stand height is in [m], LAI is in [$\\text{m}^2_{\\text{leaves}}\\;\\text{m}^2_{\\text{soil}}$]. Letters show data source: a = SAPFLUXNET, b = Global rasters, c = SAPFLUXNET plant height.")%>%
+    kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 6) %>% 
+  row_spec(0, angle = 45) %>% 
+  column_spec(c(2:14), width = "3.5em")%>% 
+  column_spec(c(1), width = "8em")
+```
+\end{landscape}
+<!-- \restoregeometry -->
+\newpage
+
+
+```{r, echo = FALSE, message=FALSE,warning=FALSE}
+
+library(readr)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+# table1 <- read_delim("data/appendixA/tableS1.csv",
+#     ",", escape_double = FALSE, col_types = cols(X1 = col_skip()),
+#     trim_ws = TRUE)#be careful now is sep"," change it if you prefer
+
+table4 <- read_delim("data/appendixC/tableS4.csv",
+    ";", escape_double = FALSE, 
+    trim_ws = TRUE)
+
+
+knitr::kable(table4, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "",
+             digits=2 , align = c('l','c'), caption.short = "Table of equivalence between Whittaker biomes and the groups of biomes used in the study.", caption = "Table of equivalence between Whittaker biomes and the groups of biomes used in the study.")%>%
+    kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 12)
+```
+\newpage
+
+
+<!-- ```{r, echo = FALSE, message=FALSE,warning=FALSE} -->
+
+<!-- library(readr) -->
+<!-- library(tidyverse) -->
+<!-- library(knitr) -->
+<!-- library(kableExtra) -->
+<!-- # table1 <- read_delim("data/appendixA/tableS1.csv", -->
+<!-- #     ",", escape_double = FALSE, col_types = cols(X1 = col_skip()), -->
+<!-- #     trim_ws = TRUE)#be careful now is sep"," change it if you prefer -->
+
+<!-- table5 <- read_delim("data/appendixC/TableS5.csv", -->
+<!--     ",", escape_double = FALSE,  -->
+<!--     trim_ws = TRUE) -->
+
+<!-- table5[,1] <- c('$\\text{R}^2_{\\text{VPD}}$', -->
+<!--                 '$\\text{R}^2_{\\text{SWC}}$', -->
+<!--                 '$\\text{R}^2_{\\text{PPFD}}$', -->
+<!--                 '$\\text{R}^2_{\\text{TOTAL}}$') -->
+
+
+<!-- knitr::kable(table5, "latex", booktabs = TRUE, escape = FALSE, longtable = FALSE, linesep = "", -->
+<!--              digits=2 , align = 'c', caption.short = "Average contribution of the predictors in models of individual coupling ($\\text{R}^2_{\\text{VPD}}$, $\\text{R}^2_{\\text{SWC}}$, $\\text{R}^2_{\\text{PPFD}}$ and $\\text{R}^2_{\\text{TOTAL}}$) estimated using dominance analysis.", caption = "Average contribution of the predictors in models of individual coupling ($\\text{R}^2_{\\text{VPD}}$, $\\text{R}^2_{\\text{SWC}}$, $\\text{R}^2_{\\text{PPFD}}$ and $\\text{R}^2_{\\text{TOTAL}}$) estimated using dominance analysis. log(PPET): logarithm of precipitation over potential evapotraspiration, log($\\text{P-PET}_{\\text{sd}}$): logarithm of the standard deviation of the difference between precipitation and potential evapotranspiration, LAI: leaf area index. NI means that the variable was not included in the model after model selection.")%>% -->
+<!--     kableExtra::kable_styling(latex_options = c("repeat_header"),font_size = 6) -->
+<!-- ``` -->
+<!-- \newpage -->
+
+# Appendix Chapter 5
+\newpage
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(fig.pos = 'H')
+
+library(sapfluxnetr)
+library(tidyverse)
+library(taxonlookup)
+library(lubridate)
+source('~/PhD/Chapter5/weighted_var.R')
+source('~/PhD/Chapter5/table_results_traits_param.R')
+# source('~/Chapter_3_mod/table_results_traits_param_PPET_DBH.R')
+# source('~/Chapter_3_mod/table_results_traits_param_PPET_height.R')
+source('~/PhD/Chapter5/table_results_traits_param_MAP_height.R')
+# source('~/Chapter_3_mod/table_results_traits_param_PPET_height_clay.R')
+source('~/PhD/Chapter5/table_results_group_param.R')
+source('~/PhD/Chapter5/plot_traits_function.R')
+# source('~/PhD/Chapter5/plot_traits_no_se_function.R')
+library(lmerTest)
+library(magrittr)
+library(rlang)
+# library(brms)
+library(sjstats)
+library(sjPlot)
+library(sjmisc)
+library(ggplot2)
+theme_set(theme_bw())
+theme_update(panel.grid = element_blank())
+library(viridis)
+library(ggrepel)
+library(grid)
+library(gridExtra)
+library(knitr)
+# options(kableExtra.latex.load_packages = FALSE)
+library(kableExtra)
+library(xtable)
+library(ggsci)
+library(lavaan)
+library(semPlot)
+library(semTools)
+```
+
+```{r echo = FALSE, message=FALSE,warning=FALSE}
+
+
+#### 0.1 DATA PROCESS ------------
+# load(file = "~/Chapter_3_mod/data/model_G_aero.RData")
+#   # df_estimates <- ranef(model)[['pl_species']]
+#   df_estimates_G_Aero <- coef(model)[['pl_species']]
+#   df_estimates_G_Aero <- df_estimates_G_Aero %>% rownames_to_column(var='pl_species')
+#   colnames(df_estimates_G_Aero) <- c("pl_species","Int_G_aero","b1_G_aero","b2_G_aero")
+# 
+# load(file = "~/Chapter_3_mod/data/model.RData")
+#   # df_estimates <- ranef(model)[['pl_species']]
+#   df_estimates <- coef(model)[['pl_species']]
+#   df_estimates <- df_estimates %>% rownames_to_column(var='pl_species')
+#   re_mod <- merTools::REsim(model)
+#   re_mod <- re_mod %>% 
+#     filter(groupFctr == "pl_species") %>% 
+#     select(groupID,sd,term) %>% 
+#     pivot_wider(names_from = term, values_from = sd)
+#   colnames(re_mod) <- c('pl_species','swc_sd','vpd_sd','b0_sd')
+#   # df_estimates[which(df_estimates$pl_species ==
+#   #                      'Larix kaempferi x Larix gmelinii'),'pl_species']<-'Larix kaempferi'
+# 
+# 
+#   
+# # int <- model %>% fixef()
+# # 
+# # pl_sp_pl_cd <- ranef(model)[['pl_species:pl_code']] %>% rownames_to_column(var='pl_sp_pl_cd')
+# # 
+# # library(stringr)
+# # sep_pl_sp<- str_split_fixed(pl_sp_pl_cd$pl_sp_pl_cd,":",2)
+# # colnames(sep_pl_sp) <- c("pl_species","pl_code")
+# # pl_sp_pl_cd <- pl_sp_pl_cd %>% select(int_pl =`(Intercept)`) %>% cbind(sep_pl_sp)
+# # pl_sp_pl_cd %>% 
+# #   group_by(pl_species) %>% 
+# #   summarise(int_pl = mean(int_pl))->int_pl
+# # 
+# # df_estimates <- df_estimates %>% 
+# #   left_join(int_pl,by="pl_species") %>% 
+# #   cbind(int = int) %>% 
+# #   mutate(`(Intercept)` = `(Intercept)` + int + int_pl)
+# #
+# 
+# load(file = "~/Chapter_3_mod/data/species_data_binned_swc_G_aero.RData")
+#   df3 <- df2 %>%
+#     group_by(pl_code) %>%
+#     summarise( pl_species = unique(pl_species),
+#                n_day_plant = unique(n_day_plant))%>%
+#     group_by(pl_species) %>%
+#     summarise(n_trees_G_aero = n_distinct(pl_code),
+#               n_G_aero = sum(n_day_plant))
+# 
+# load(file = "~/Chapter_3_mod/data/species_data_binned_swc.RData")
+#   df2 <- df2 %>%
+#     group_by(pl_code) %>%
+#     summarise(pl_species = unique(pl_species),
+#               n_day_plant = unique(n_day_plant),
+#               pl_height = unique(pl_height),
+#               st_height = unique(st_height),
+#               si_clay = unique(si_clay),
+#               si_sand = unique(si_sand),
+#               clay_soil = unique(clay_soil),
+#               sand_soil = unique(sand_soil),
+#               max_swc = unique(max_swc),
+#               # swc_min = min(swc),
+#               # swc_max = max(swc),
+#               # vpd_min = min(vpd_mean),
+#               # vpd_max = max(vpd_mean),
+#               n = n(),
+#               si_long = unique(si_long),
+#               si_lat = unique(si_lat),
+#               MAP = unique(MAP),
+#               MAT = unique(MAT)/10,
+#               PET = unique(PET),
+#               PPET = MAP/PET) %>%
+#     group_by(pl_species) %>%
+#     summarise(pl_height =  weighted.mean(pl_height,n,na.rm = TRUE),
+#               st_height =  weighted.mean(st_height,n,na.rm = TRUE),
+#               st_clay =  weighted.mean(si_clay,n,na.rm = TRUE),
+#               st_sand =  weighted.mean(si_sand,n,na.rm = TRUE),
+#               clay_soil =  weighted.mean(clay_soil,n,na.rm = TRUE),
+#               sand_soil =  weighted.mean(sand_soil,n,na.rm = TRUE),
+#               max_swc = max(max_swc),
+#               # swc_min = min(swc_min),
+#               # swc_max = max(swc_max),
+#               # range_swc = swc_max-swc_min,
+#               # vpd_min = min(vpd_min),
+#               # vpd_max = max(vpd_max),
+#               # range_vpd = vpd_max-vpd_min,
+#               MAT =  weighted.mean(MAT,n,na.rm = TRUE),
+#               MAP =  weighted.mean(MAP,n,na.rm = TRUE),
+#               PET =  weighted.mean(PET,n,na.rm = TRUE),
+#               PPET =  weighted.mean(PPET,n,na.rm = TRUE),
+#               si_lat =  weighted.mean(si_lat,n,na.rm = TRUE),
+#               si_long =  weighted.mean(si_long,n,na.rm = TRUE),
+#               n_trees = n_distinct(pl_code),
+#               n = sum(n_day_plant)) %>% 
+#     mutate(clay = coalesce(st_clay,clay_soil),
+#            sand = coalesce(st_sand,sand_soil))
+# 
+# load(file = "~/Chapter_3/data/sfn_metadata.RData")
+#   plant_md <- sfn_metadata[["plant_md"]]
+#   site_md <- sfn_metadata[["site_md"]]
+#   stand_md <- sfn_metadata[["stand_md"]]
+#   species_md <- sfn_metadata[["species_md"]] %>%
+#     dplyr::mutate(pl_species = .data$sp_name)
+#   env_md <- sfn_metadata[["env_md"]]
+# 
+# metadata <- plant_md %>%
+#   dplyr::left_join(site_md,by = "si_code") %>%
+#   dplyr::left_join(stand_md, by = "si_code") %>%
+#   dplyr::left_join(species_md, by = c("si_code", "pl_species")) %>%
+#   dplyr::left_join(env_md, by = "si_code") %>%
+#   dplyr::select(.data$si_code,.data$pl_code,dplyr::everything())
+# 
+# ## Plant taxonizer
+# metadata <- metadata %>% mutate(pl_species = fct_recode(pl_species,
+#                                                         "Vouacapoua americana"="Vacapoua americana"),
+#                                 pl_species = as.character(pl_species))
+# 
+# metadata %>%
+#   pull(pl_species) %>%
+#   unique() %>%
+#   lookup_table(missing_action = 'NA', by_species = TRUE) %>%
+#   rownames_to_column('pl_species') %>%
+#   left_join(metadata, ., by = 'pl_species') -> tidy_metrics_plant_phylo
+# 
+# 
+# ## Joining and mutate
+# data_species <- tidy_metrics_plant_phylo  %>%
+#   group_by(pl_species) %>%
+#   summarise(
+#          group = group %>% unique(),
+#          family = family %>% unique(),
+#          genus = genus %>% unique())
+# 
+# 
+# data_species <- df2 %>%
+#   left_join(df3, by = c('pl_species'))%>%
+#   left_join(df_estimates, by = c('pl_species'))%>%
+#   left_join(re_mod, by = c('pl_species'))%>%
+#   left_join(df_estimates_G_Aero, by = c('pl_species'))%>%
+#   left_join(data_species, by = c('pl_species'))
+# 
+# data_species$group[is.na(data_species$group)] <- 'Angiosperms'
+# 
+# ## HYDRATRY import
+# 
+# hydra <- read_csv("~/[databases]/Hydratry/HydraTRY_Pablo_2019.csv")
+# unique(data_species$pl_species)[unique(data_species$pl_species) %in% hydra$Species] %>%
+#   data.frame()-> plants_list
+# 
+# data_hydra <- hydra %>% filter(Species %in%(plants_list$.)) %>% rename( pl_species = Species) %>%
+#   dplyr::select(pl_species,HSM,P50,MinWP_pd,Hv,Amass,Aarea,Ks,SLA,PItlp,Rd,gmax)
+# 
+# 
+# xylem <- read_csv("~/[databases]/Xylem_functional_traits/Xylem_functional_traits.csv",
+#                   col_types = cols(Hv = col_double(), KL = col_double(),
+#                                    Ks = col_double(), SLA = col_double(),
+#                                    Sapwood_capacitance = col_double(),
+#                                    Total_stomata_density = col_double()))
+# xylem_data <- xylem %>%
+#   filter(pl_species %in% unique(data_species$pl_species)) %>%
+#   dplyr::select(pl_species,P50,ψp_min_predawn,Hv,Ks,SLA) %>%
+#   mutate(MinWP_pd = ψp_min_predawn,
+#          HSM = MinWP_pd - P50) %>%
+#   group_by(pl_species) %>%
+#   summarise(P50 = mean(P50, na.rm = TRUE),
+#             MinWP_pd = mean( MinWP_pd, na.rm = TRUE),
+#             HSM = mean(HSM, na.rm =TRUE),
+#             Hv = mean(Hv, na.rm = TRUE),
+#             Ks = mean(Ks, na.rm = TRUE),
+#             SLA = mean(SLA, na.rm = TRUE)/10) %>%
+#   mutate(Hv = Hv*10^4)
+# 
+# 
+# globamax <- read_csv("~/[databases]/Xylem_functional_traits/globamax_data.csv")
+# 
+# A_data <- globamax %>% filter(pl_species %in% unique(data_species$pl_species)) %>%
+#   dplyr::select(-Location,-Country,-Latitude,-Longitude,-Dataset,
+#                 -ELEV,-Cite,-Continent) %>%
+#   group_by(pl_species) %>%
+#   summarise(Amass = mean(Amass,na.rm = TRUE)*10^-3,#from nanomol g-1 s-1 to micromol g-1 s-1
+#             Aarea = mean(Aarea,na.rm = TRUE))
+# 
+# data_hydra %>% merge(xylem_data,all = TRUE) %>% merge(A_data,all = TRUE) %>%
+#   group_by(pl_species) %>% summarise_all(mean,na.rm = TRUE) -> data_hydra
+# 
+# data_hydra <- data_hydra %>% right_join(data_species)
+# 
+# leaf_area <- read_delim("~/[databases]/Leafsize/wright_leafsize_reduced.csv",
+#     ";", escape_double = FALSE, trim_ws = TRUE) %>%
+#   select(pl_species = Genus_species, leaf_size = Whole_leaf_size) %>%
+#   group_by(pl_species) %>%
+#   summarise(leaf_size = mean(leaf_size,na.rm = TRUE))
+# 
+# 
+# data_hydra <- data_hydra %>% left_join(leaf_area, by = "pl_species")
+# 
+# # data_hydra %>% 
+# #   ggplot(aes(max_swc))+
+# #   geom_density(color='grey20',fill="transparent")+
+# #   geom_vline(xintercept = data_hydra$max_swc %>% mean(),color="red",linetype=2)+
+# #   geom_vline(xintercept = data_hydra$max_swc %>% median(),color="red",linetype=1)
+# 
+# data_hydra <- data_hydra  %>%
+#   mutate("-P50" = -P50,
+#          sp_name = vegan::make.cepnames(pl_species),
+#          b1 = -`log(vpd_mean)`,
+#          b2 =`log(swc)`,
+#          Gref = `(Intercept)` + b2*log(0.5),
+#          Gref_sd = b0_sd + swc_sd*log(0.5),
+#          b1_b0 = b1/Gref,
+#          b2_b0 = b2/Gref,
+#          b1_G_aero = -b1_G_aero,
+#          G_ref_G_aero = Int_G_aero + b2_G_aero*log(0.5),
+#          Gref_se = Gref_sd/sqrt(n),
+#          vpd_se = vpd_sd/sqrt(n),
+#          swc_se = swc_sd/sqrt(n),
+#          PItlp = abs(PItlp)
+# #         )%>%
+# # filter(
+# #   pl_species != 'Picea mariana',
+# #   pl_species != 'Pinus halepensis',
+#   # b1<=0,
+#   # b2<=0
+#        )
+# 
+# 
+# save(data_hydra, file = "~/PhD/Thesis_book_format/index/data/appendixD/data_hydra.RData")
+load(file = "~/PhD/Thesis_book_format/index/data/appendixD/data_hydra.RData")
+
+data_hydra2 <- data_hydra %>% filter(Gref<quantile(Gref,0.999),
+                                     b1<quantile(b1,0.999),
+                                     b2<quantile(b2,0.999))
+
+data_hydra3 <- data_hydra2 %>% filter(G_ref_G_aero<546.5,
+                                      b1_G_aero<1332.4,
+                                      b1_G_aero>0,
+                                      b2_G_aero<115.7)
+
+```
+
+
+##Notes D
+\normalsize
+
+Notes S1: Whole-tree stomatal conductance ($G'_{\text{Asw}}$) calculation procedure.
+
+To account for aerodynamic effect on whole-tree canopy conductance ($G_{\text{Asw}}$) in trees were wind speed was available, we substracted from $G_{\text{Asw}}$ (calculated with eq. 2 of the main text) the aerodynamic conductance calculated following Tan *et al*. 2019. We first calculate the aerodynamic conductance for momentum (eq. 14 in Tan *et al.* 2019):
+
+\begin{equation}
+g_{aM} = {{\kappa^{2}\ u} \over{ln[(z-d)/z_{0M}]\ ln[(z-d)/z_{0H}]}}
+\end{equation}
+
+Where $\kappa$ is the Von Karman constant and equivalent to 0.41 and $u$ is wind speed [$\text{m}\ \text{s}^{-1}$] and:
+\begin{equation}
+z = tree\ height\ + 2,\ d = 0.6(tree\ height),\ z_{0M}= 0.1(tree\ height),\ z_{0H}= 0.135(z_{0M})
+\end{equation}
+Lately, we calculated the boundary layer conductance following eq. 10 in Tan *et al.* (2019):
+\begin{equation}
+g_{bN} = {{\kappa\ u*} \over {ln\left({z_{0M}} \over {z_{0H}}\right)}}
+\end{equation}
+Where $u*$ [$\text{m}\ \text{s}^{-1}$] is the friction velocity calculated inverting eq. 2 in Chu *et al.* 2018:
+\begin{equation}
+u* = {\kappa \ u \over {ln[(z-d)/z_{0M}] + ln(1.25)}}
+\end{equation}
+Ultimately, $G'_{\text{Asw}}$ was calculated as:
+\begin{equation}
+G'_{Asw}= \left({1 \over 1/G_{Asw} \ - (1/g_{aM} + 1/g_{bN})}\right)
+\end{equation}
+Being $G_{Asw}$ in [$\text{m} \ \text{s}^{-1}$]. Finally, $G'_{Asw}$ was transformed to [$\text{mol} \ \text{m}^{-2}_{\text{Asw}} \ \text{s}^{-1}$].
+
+
+\newpage
+
+##Figures D
+
+
+
+```{r echo=FALSE,fig.scap="PCA plot of water relations traits using imputations.", fig.cap= "PCA plot of water relations traits using imputations. $ln(|\\Psi_{\\text{P50}}|)$: logarithm of absolute water potential at 50\\% water conductivity loss; $ln(K_{\\text{s}})$: logarithm of maximum sapwood water conductivity; $ln(Hv)$: logarithm of Huber value; $|\\Psi_{\\text{TLP}}|$: absolute water potential at turgor-loss point; $R_{\\text{depth}}$: rooting depth; $ln(L_{\\text{s}})$: logarithm of individual leaf area.",  fig.align='center'}
+knitr::include_graphics(c("figure/appendixD/figpca.pdf"))
+```
+
+\newpage
+
+<!-- ```{r spparam,echo = FALSE,include = FALSE} -->
+
+<!--   ## 7.1 SP_PARAM Without z transformation -------- -->
+
+<!-- data_hydra2 %>% -->
+<!--   filter(!is.na(b1)) %>% -->
+<!--   mutate(mean_Gref = weighted.mean(Gref, n)) %>% -->
+<!--   arrange(Gref) %>% -->
+<!--   mutate(sp_name = factor(sp_name, unique(sp_name))) %>% -->
+<!--   ggplot(aes(x=Gref,y = sp_name))+ -->
+<!--   # geom_errorbarh(aes(y = sp_name, -->
+<!--   #                    xmin = Gref - se_Gref, -->
+<!--   #                    xmax = Gref + se_Gref))+ -->
+<!--   geom_point(aes(color = group),shape =21,size = 2) + -->
+<!--   geom_vline(aes(xintercept = mean_Gref), linetype=2,color = "grey40")+ -->
+<!--   geom_vline(aes(xintercept = 0), linetype=2,color = "red")+ -->
+<!--   xlab(bquote(~italic(.('G'))[REF]~"[mol "~m^{-2}~" "~s^{-1}~"]"))+ -->
+<!--   ylab(bquote("Species"))+ -->
+<!--   # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
+<!--   scale_color_npg()+ -->
+<!--   theme(legend.position = 'none', -->
+<!--         axis.text.y = element_text(face = "italic",size = 4))+ -->
+<!--   NULL->p1 -->
+
+
+<!-- data_hydra2 %>% -->
+<!--   filter(!is.na(b1)) %>% -->
+<!--   mutate(mean_b1 = weighted.mean(b1,n)) %>% -->
+<!--   arrange(b1) %>% -->
+<!--   mutate(sp_name = factor(sp_name, unique(sp_name))) %>% -->
+<!--   ggplot(aes(x = b1, y = sp_name))+ -->
+<!--   # geom_errorbarh(aes(y = sp_name, -->
+<!--   #                    xmin = b1 - se_b1, -->
+<!--   #                    xmax = b1 + se_b1))+ -->
+<!--   geom_point(aes(color = group),shape =21,size = 2) + -->
+<!--   geom_vline(aes(xintercept = mean_b1), linetype=2,color = "grey40")+ -->
+<!--   geom_vline(aes(xintercept = 0), linetype=2,color = "red")+ -->
+<!--   xlab(bquote(~italic("\u03B2")[VPD]~"[mol "~m^{-2}~" "~s^{-1}~"]"))+ -->
+<!--   ylab(bquote("Species"))+ -->
+<!-- # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
+<!--   scale_color_npg()+ -->
+<!--   theme(legend.position = 'none', -->
+<!--         axis.text.y = element_text(face = "italic",size = 4))+ -->
+<!--   NULL->p2 -->
+
+<!-- data_hydra2 %>% -->
+<!--   filter(!is.na(b2)) %>% -->
+<!--   mutate(mean_b2 = weighted.mean(b2,n)) %>% -->
+<!--   arrange(b2) %>% -->
+<!--   mutate(sp_name = factor(sp_name, unique(sp_name))) %>% -->
+<!--   ggplot(aes(x = b2, y = sp_name))+ -->
+<!--   # geom_errorbarh(aes(y = sp_name, -->
+<!--   #                    xmin = b2 - se_b2, -->
+<!--   #                    xmax = b2 + se_b2))+ -->
+<!--   geom_point(aes(color = group),shape =21,size = 2) + -->
+<!--   geom_vline(aes(xintercept = mean_b2), linetype=2,color = "grey40")+ -->
+<!--   geom_vline(aes(xintercept = 0), linetype=2,color = "red")+ -->
+<!--   xlab(bquote(~italic("\u03B2")[SWC]~"[mol "~m^{-2}~" "~s^{-1}~"]"))+ -->
+<!--   ylab(bquote("Species"))+ -->
+<!-- # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
+<!--   scale_color_npg()+ -->
+<!--   theme(legend.position = 'none', -->
+<!--         axis.text.y = element_text(face = "italic",size = 4))+ -->
+<!--   NULL->p3 -->
+
+
+
+<!-- arrangeGrob(cbind(ggplotGrob(p1), ggplotGrob(p2), -->
+<!--                       ggplotGrob(p3), size = "last"))->fig17 -->
+
+
+<!-- ggsave("figure/appendixD/fig17.pdf",fig17,device = cairo_pdf,units = "cm",width = 24,height=17) -->
+
+<!-- ``` -->
+
+
+<!-- \newgeometry{layout=a4paper,left=1in,right=0.2in,top=0.2in,bottom=0.2in,nohead} -->
+\begin{landscape}
+
+```{r spparamplot, echo=FALSE, out.width = '90%', fig.scap="Water use parameters at the species level.", fig.cap="Water use parameters at the species level. Grey dashed lines are the weighted mean of the parameters",  fig.align='center'}
+knitr::include_graphics(c("figure/appendixD/fig17.pdf"))
+```
+
+
+\end{landscape}
+<!-- \restoregeometry -->
+
+
+
+
+<!-- ```{r , echo =FALSE,include=FALSE,message=FALSE,warnings=FALSE} -->
+
+<!-- load(file = "data/appendixD/model.RData") -->
+
+<!-- # int <- model %>% fixef() -->
+<!-- # -->
+<!-- # pl_sp_pl_cd <- ranef(model)[['pl_species:pl_code']] %>% rownames_to_column(var='pl_sp_pl_cd') -->
+<!-- # -->
+<!-- # library(stringr) -->
+<!-- # sep_pl_sp<- str_split_fixed(pl_sp_pl_cd$pl_sp_pl_cd,":",2) -->
+<!-- # colnames(sep_pl_sp) <- c("pl_species","pl_code") -->
+<!-- # pl_sp_pl_cd <- pl_sp_pl_cd %>% select(int_pl =`(Intercept)`) %>% cbind(sep_pl_sp) -->
+<!-- # pl_sp_pl_cd %>% -->
+<!-- #   group_by(pl_species) %>% -->
+<!-- #   summarise(int_pl = mean(int_pl))->int_pl -->
+
+<!-- data_mod <- model@frame %>% -->
+<!--   left_join(data_hydra %>% -->
+<!--               select(-c(`log(vpd_mean)`, -->
+<!--                         `log(swc)`)),by="pl_species") %>% -->
+<!--   # left_join(int_pl,by="pl_species") %>% -->
+<!--   split(.[['pl_species']]) -->
+
+<!-- pred_vpd <-purrr::map(data_mod,function(x){ -->
+<!--   faa <-x %>% -->
+<!--     summarise(max_vpd = max(`log(vpd_mean)`,na.rm=TRUE), -->
+<!--               min_vpd = min(`log(vpd_mean)`,na.rm=TRUE), -->
+<!--               mean_swc = mean(`log(swc)`,na.rm = TRUE), -->
+<!--               pl_species = unique(pl_species), -->
+<!--               `(Intercept)` = unique(`(Intercept)`), -->
+<!--               b1 = -unique(b1), -->
+<!--               b2 = unique(b2)) -->
+<!--   G_pred_vpd1 = faa$`(Intercept)` + faa$b1*(seq(faa$min_vpd,faa$max_vpd,0.005))+ -->
+<!--     faa$b2*log(0.1) -->
+<!--   G_pred_vpd2 = faa$`(Intercept)` + faa$b1*(seq(faa$min_vpd,faa$max_vpd,0.005))+ -->
+<!--     faa$b2*log(0.2) -->
+<!--   G_pred_vpd3 = faa$`(Intercept)` + faa$b1*(seq(faa$min_vpd,faa$max_vpd,0.005))+ -->
+<!--     faa$b2*log(0.3) -->
+
+<!--   df <- tibble(G_pred_vpd1 = G_pred_vpd1, -->
+<!--                G_pred_vpd2 = G_pred_vpd2, -->
+<!--                G_pred_vpd3 = G_pred_vpd3, -->
+<!--                vpd_pred = seq(faa$min_vpd,faa$max_vpd,0.005)) %>% -->
+<!--     cbind(faa) -->
+
+<!--   return(df) -->
+<!-- }) %>% bind_rows() -->
+
+<!-- pred_swc <-purrr::map(data_mod,function(x){ -->
+<!--   faa <-x %>% -->
+<!--     summarise(max_swc = max(`log(swc)`,na.rm = TRUE), -->
+<!--               min_swc = min(`log(swc)`,na.rm = TRUE), -->
+<!--               mean_vpd = mean(`log(vpd_mean)`,na.rm=TRUE), -->
+<!--               pl_species = unique(pl_species), -->
+<!--               `(Intercept)` = unique(`(Intercept)`), -->
+<!--               b1 = -unique(b1), -->
+<!--               b2 = unique(b2)) -->
+
+<!--   G_pred_swc =  faa$`(Intercept)` + faa$b2*(seq(faa$min_swc,faa$max_swc,0.001)) -->
+
+<!--   df <- tibble(G_pred_swc = G_pred_swc, -->
+<!--                swc_pred = seq(faa$min_swc,faa$max_swc,0.001)) %>% -->
+<!--     cbind(faa) -->
+
+<!--   return(df) -->
+<!-- }) %>% bind_rows() -->
+
+<!-- ggg1 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(vpd_mean)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd1,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#8B5A00")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd2,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#CD8400")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd3,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#F3BB54")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 1)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = 'VPD [kPa]')+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!-- ggg2 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(vpd_mean)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd1,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#8B5A00")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd2,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#CD8400")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd3,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#F3BB54")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 2)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = 'VPD [kPa]')+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!-- ggg3 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(vpd_mean)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd1,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#8B5A00")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd2,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#CD8400")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd3,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#F3BB54")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 3)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = 'VPD [kPa]')+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!-- ggg4 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(vpd_mean)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd1,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#8B5A00")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd2,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#CD8400")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd3,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#F3BB54")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 4)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = 'VPD [kPa]')+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!-- ggg5 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(vpd_mean)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd1,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#8B5A00")+ -->
+<!--   geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd2,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#CD8400")+ -->
+<!--   geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd3,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#F3BB54")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 5)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = 'VPD [kPa]')+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!-- ggg6 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(vpd_mean)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd1,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#8B5A00")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd2,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#CD8400")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd3,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#F3BB54")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 6)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = 'VPD [kPa]')+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!-- ggg7 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(vpd_mean)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd1,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#8B5A00")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd2,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#CD8400")+ -->
+<!--     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd3,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="#F3BB54")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 7)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = 'VPD [kPa]')+ -->
+<!--   theme(strip.background =element_blank()) -->
+<!-- # -->
+<!-- # ggg8 <- data_mod %>% -->
+<!-- #   bind_rows() %>% -->
+<!-- #   as_tibble() %>% -->
+<!-- #   ggplot()+ -->
+<!-- #   geom_point(aes(x=exp(`log(vpd_mean)`),y=G_sw,group = pl_species), -->
+<!-- #                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!-- #   geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd1,group = pl_species), -->
+<!-- #             size=1,show.legend=FALSE,color="#8B5A00")+ -->
+<!-- #     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd2,group = pl_species), -->
+<!-- #             size=1,show.legend=FALSE,color="#CD8400")+ -->
+<!-- #     geom_line(data = pred_vpd, aes(x=exp(vpd_pred),y=G_pred_vpd3,group = pl_species), -->
+<!-- #             size=1,show.legend=FALSE,color="#F3BB54")+ -->
+<!-- #   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 8)+ -->
+<!-- #   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = 'VPD [kPa]')+ -->
+<!-- #   theme(strip.background =element_blank()) -->
+
+<!--   ggsave("figure/appendixD/ggg1.pdf",ggg1,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg2.pdf",ggg2,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg3.pdf",ggg3,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg4.pdf",ggg4,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg5.pdf",ggg5,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg6.pdf",ggg6,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg7.pdf",ggg7,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   # ggsave("images/ggg8.pdf",ggg8,device = 'pdf',units = "cm",width = 16,height=22) -->
+
+
+<!--   ggg9 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(swc)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_swc, aes(x=exp(swc_pred),y=G_pred_swc,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="grey40")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 1)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = expression(paste('SWC ',"[",m^{3}, m^{-3},"]")))+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!--   ggg10 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(swc)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_swc, aes(x=exp(swc_pred),y=G_pred_swc,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="grey40")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 2)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), -->
+<!--        x = expression(paste('SWC ',"[",m^{3}, m^{-3},"]")))+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!--   ggg11 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(swc)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_swc, aes(x=exp(swc_pred),y=G_pred_swc,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="grey40")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 3)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = expression(paste('SWC ',"[",m^{3}, m^{-3},"]")))+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!--   ggg12 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(swc)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_swc, aes(x=exp(swc_pred),y=G_pred_swc,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="grey40")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 4)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = expression(paste('SWC ',"[",m^{3}, m^{-3},"]")))+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!--   ggg13 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(swc)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_swc, aes(x=exp(swc_pred),y=G_pred_swc,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="grey40")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 5)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = expression(paste('SWC ',"[",m^{3}, m^{-3},"]")))+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!--   ggg14 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(swc)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_swc, aes(x=exp(swc_pred),y=G_pred_swc,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="grey40")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 6)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = expression(paste('SWC ',"[",m^{3}, m^{-3},"]")))+ -->
+<!--   theme(strip.background =element_blank()) -->
+
+<!--   ggg15 <- data_mod %>% -->
+<!--   bind_rows() %>% -->
+<!--   as_tibble() %>% -->
+<!--   ggplot()+ -->
+<!--   geom_point(aes(x=exp(`log(swc)`),y=G_sw,group = pl_species), -->
+<!--                color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   geom_line(data = pred_swc, aes(x=exp(swc_pred),y=G_pred_swc,group = pl_species), -->
+<!--             size=1,show.legend=FALSE,color="grey40")+ -->
+<!--   ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 7)+ -->
+<!--   labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = expression(paste('SWC ',"[",m^{3}, m^{-3},"]")))+ -->
+<!--   theme(strip.background =element_blank()) -->
+<!--   # -->
+<!--   # ggg16 <- data_mod %>% -->
+<!--   # bind_rows() %>% -->
+<!--   # as_tibble() %>% -->
+<!--   # ggplot()+ -->
+<!--   # geom_point(aes(x=exp(`log(swc)`),y=G_sw,group = pl_species), -->
+<!--   #              color = 'grey', alpha = 0.6, show.legend =FALSE)+ -->
+<!--   # geom_line(data = pred_swc, aes(x=exp(swc_pred),y=G_pred_swc,group = pl_species), -->
+<!--   #           size=1,show.legend=FALSE,color="grey40")+ -->
+<!--   # ggforce::facet_wrap_paginate(.~pl_species,scale = "free",nrow = 7,ncol=3,page = 8)+ -->
+<!--   # labs(y = expression(italic(G)[Asw]~paste(" [mol ",m^{-2}," ", s^{-1},"]")), x = expression(paste('swc ',"[",m^{-3}, m^{-3},"]")))+ -->
+<!--   # theme(strip.background =element_blank()) -->
+
+
+<!--   ggsave("figure/appendixD/ggg9.pdf",ggg9,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg10.pdf",ggg10,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg11.pdf",ggg11,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg12.pdf",ggg12,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg13.pdf",ggg13,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg14.pdf",ggg14,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   ggsave("figure/appendixD/ggg15.pdf",ggg15,device = 'pdf',units = "cm",width = 16,height=22) -->
+<!--   # ggsave("images/ggg16.pdf",ggg16,device = 'pdf',units = "cm",width = 16,height=22) -->
+
+<!-- ``` -->
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg1.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg2.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg3.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg4.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg5.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg6.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center", fig.cap="Species $G_{\\text{Asw}}$ responses to VPD. Each species have different curves representing distinct levels of SWC (from dark to light, 0.1, 0.2, 0.3 [$\\text{m}^3\\; \\text{m}^{-3}$])."}
+ knitr::include_graphics(c("figure/appendixD/ggg7.pdf"))
+```
+
+<!-- ```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center", fig.cap="Species G responses to VPD. Each species has different curves representing distinct levels of soil moisture (swc). From dark to light, swc values are 0.1, 0.2, 0.3 [$m^3 m^{-3}$]. Grey dots are binning mean values."} -->
+<!--  knitr::include_graphics(c("images/ggg8.pdf")) -->
+<!-- ``` -->
+
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg9.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg10.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg11.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg12.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg13.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%',fig.align="center"}
+knitr::include_graphics(c("figure/appendixD/ggg14.pdf"))
+```
+
+```{r , echo=FALSE, fig.cap="", out.width = '100%', fig.align="center",fig.cap="Species $G_{\\text{Asw}}$ responses to SWC. Curves are fitted using a VPD reference level of 1 kPa."}
+ knitr::include_graphics(c("figure/appendixD/ggg15.pdf"))
+```
+
+
+
+<!-- ```{r corr, echo =FALSE, include=FALSE} -->
+
+<!-- data_hydra2 %>% filter(!is.na(b1)) %>% -->
+<!--   ggplot(aes(x=Gref, y=b1, color = group))+ -->
+<!--   # geom_vline(aes(xintercept = 0),color="grey40",alpha = 0.7,linetype = 2)+ -->
+<!--   geom_point(aes(size = n),show.legend = FALSE,alpha=0.5)+ -->
+<!--   geom_smooth(aes(weight = n), method = "lm",color = 'grey40',fill="grey60")+ -->
+<!--   geom_smooth(aes(color = group, weight = n,fill=group), method = "lm",show.legend = FALSE,alpha=0.5)+ -->
+<!-- # scale_color_manual(values = c("#bb3200","#00afbb"))+ -->
+<!--   scale_color_npg()+ -->
+<!--   xlab(bquote(italic(.('G'))[REF]~"[mol "~m^{-2}~" "~s^{-1}~"]"))+ -->
+<!--   ylab(bquote(~italic("\u03B2")[VPD]~"[mol "~m^{-2}~" "~s^{-1}~"]"))->fig_Gref_b1 -->
+
+<!--   ggsave("figure/appendixD/fig_Gref_b1.pdf",fig_Gref_b1,device = cairo_pdf,units = "cm",width = 8,height=8) -->
+
+<!-- ``` -->
+
+
+```{r corrplot, echo=FALSE,  fig.scap="Scatterplot between $G_{\\text{REF}}$ and $\\beta_{\\text{VPD}}$ parameters.", fig.cap="Scatterplot between $G_{\\text{REF}}$ and $\\beta_{\\text{VPD}}$ parameters. Grey line is global relationship. Blue and red lines are angiosperms and gymnosperms relationships, respectively. Shadow areas are 95\\% confidence interval.", fig.align='center',out.width = '50%'}
+knitr::include_graphics(c("figure/appendixD/fig_Gref_b1.pdf"))
+```
+
+
+
+
+
+
+<!-- ```{r climatetraits, echo = FALSE, include = FALSE} -->
+
+<!-- ## 3.0 CLIMATE vs TRAITS -------------------- -->
+
+<!-- data_hydra2 %>% -->
+<!--   filter(!is.na(b1)) %>% -->
+<!--   mutate(MAT = MAT, -->
+<!--          MAP = MAP, -->
+<!--          PPET = PPET, -->
+<!--          Hv = log(Hv), -->
+<!--          Ls = leaf_size %>% log(), -->
+<!--          PItlp = -PItlp) %>% -->
+<!--   select(Hv,P50,Ks,Rd,Ls,PItlp,MAT,MAP,PPET) %>% -->
+<!--   gather(clim_par,value,-Hv,-P50,-Ks,-Rd,-Ls,-PItlp)%>% -->
+<!--   gather(trait,tr_value,-clim_par,-value) %>% -->
+<!--   filter(!is.na(tr_value))-> data_hydra_clim_trait -->
+<!-- data_hydra_clim_trait$trait <- factor(data_hydra_clim_trait$trait, -->
+<!--                                       levels = c('P50','Hv','Ks','PItlp','Rd','Ls') ) -->
+<!-- data_hydra_clim_trait$clim_par <- factor(data_hydra_clim_trait$clim_par, -->
+<!--                                           levels = c('MAT','MAP','PPET') ) -->
+<!-- data_hydra_clim_trait <- data_hydra_clim_trait[order(data_hydra_clim_trait$clim_par,  -->
+<!--                                                      data_hydra_clim_trait$trait),] -->
+
+
+
+
+<!-- data_hydra_clim_trait  %>% -->
+<!--   ggplot(aes(x=value,y=tr_value))+ -->
+<!--   geom_point()+ -->
+<!--   geom_smooth(method = 'lm')+ -->
+<!--   facet_grid( trait ~ clim_par, scale='free')  -> g -->
+<!--   ggplot_build(g) -> gg -->
+
+<!-- gg1 <- gg$data[[1]] %>% cbind (data_hydra_clim_trait) -->
+<!-- gg2 <- gg$data[[2]] %>% left_join(gg1 %>% select(PANEL,trait,clim_par) %>% unique()) -->
+
+
+<!-- clim_par_names <- c( -->
+<!--   `MAT` = '"MAT ["~degree*C~"]"', -->
+<!--   `MAP` = '"MAP [mm "~year^{-1}~"]"', -->
+<!--   `PPET` = '"PPET"' -->
+<!-- ) -->
+
+<!-- trait_names <- c( -->
+<!--   `Hv` = '"ln("~italic(Hv)~")"', -->
+<!--   `P50` = '~Psi[P50]~ "[MPa]"', -->
+<!--   `Rd` = '~italic(R)[depth]~ "[m]"', -->
+<!--   `Ks` = '~italic(K)[s]~" [Kg"~m^-{1}*MPa^-{1}*s^-{1}~"]"', -->
+<!--   `PItlp` = '~Psi[TLP]~" ["~MPa~"]"', -->
+<!--   `Ls` = '"ln("~italic(L)[s]~")"' -->
+<!-- ) -->
+
+<!-- ggplot()+ -->
+<!--   geom_point(data = gg1, aes(x=value,y=tr_value),alpha=0.6,color = 'grey')+ -->
+<!--   geom_line(data = gg2,aes(x=x,y=y),size=1,show.legend=FALSE, color= "grey40")+ -->
+<!--   ggplot2::geom_line(data = gg2, aes(x = x, y = ymin), size = 0.3,linetype=2, color= "grey40") + -->
+<!--   ggplot2::geom_line(data = gg2, aes(x = x, y = ymax), size = 0.3,linetype=2, color= "grey40") + -->
+<!--   facet_grid( trait ~ clim_par, scale='free', -->
+<!--               labeller = labeller(trait = as_labeller(trait_names, label_parsed), -->
+<!--                                   clim_par = as_labeller(clim_par_names, label_parsed)))+ -->
+<!--   theme(strip.background =element_blank(), -->
+<!--         axis.title = element_blank(), -->
+<!--         strip.text.y = element_text(size = 9))->gg_final -->
+
+<!-- # Calculate correlation for each group -->
+<!-- cors <- plyr::ddply(data_hydra_clim_trait, c( "clim_par","trait"), -->
+<!--                     summarise, cor = round(cor( value,tr_value,use = 'complete.obs'), 2)) -->
+
+<!-- data_hydra_clim_trait %>% -->
+<!--   split(list(.$trait,.$clim_par), drop = TRUE) %>% -->
+<!--   purrr::map(function(x){ -->
+<!--     ff <- x %>% select(value,tr_value) %>% -->
+<!--       as.matrix() -->
+<!--     Hmisc::rcorr(ff) -> res -->
+<!--     res$P[1,2]-> res -->
+<!--     return(res) -->
+<!--     } -->
+<!--   ) %>% bind_rows() %>% t()->sig_cor -->
+
+<!-- sig_cor <- symnum(sig_cor,corr = FALSE,na = FALSE, -->
+<!--        cutpoints = c(0,0.001, 0.01, 0.05, 0.1, 1), -->
+<!--        symbols = c("***", "**", "*", ".", " ")) -->
+
+<!-- colnames(sig_cor) <- "sig_cor" -->
+
+<!-- data_hydra_clim_trait %>% -->
+<!--   group_by(trait) %>% -->
+<!--   summarise(max_tr_value = max(tr_value,na.rm = TRUE)) -> position_trait -->
+<!-- data_hydra_clim_trait %>% -->
+<!--   group_by(clim_par) %>% -->
+<!--   summarise(min_value = min(value,na.rm = TRUE)) -> position_clim -->
+
+<!-- cors %>% cbind(sig_cor) %>% -->
+<!--   left_join(position_trait) %>% -->
+<!--   left_join(position_clim)-> cors -->
+<!-- cors$max_tr_value[which(cors$trait == "P50")] <- -5 -->
+
+<!-- gg_final+ -->
+<!--   geom_text(data=cors, aes(label=paste("r =", cor, sig_cor, sep=" "),x=min_value,y=max_tr_value), -->
+<!--             vjust = 1.5,hjust=-0.1)->fig7 -->
+
+<!--   ggsave("figure/appendixD/fig7.pdf",fig7,device = cairo_pdf,units = "cm",width = 18,height=23) -->
+
+<!-- ``` -->
+
+```{r climatetraitsplot, echo=FALSE, fig.scap="Species' climatic variables and water relations traits relationships.",fig.cap="Species' climatic variables and water relations traits relationships. MAP: mean annual precipitation, MAT: mean annual temperature, PPET: mean annual precipitation over potential evapotranspiration. All climatic variables were calculated as the weighted average of the characteristic plots of the trees of each species, using tree-days as weighting factor.", fig.align='center',out.width = '100%'}
+knitr::include_graphics(c("figure/appendixD/fig7.pdf"))
+```
+
+<!-- ```{r climateparam, echo = FALSE, include = FALSE} -->
+
+<!-- ## 3.1 CLIMATE vs PARAM -------------------- -->
+
+<!-- data_hydra2 %>% -->
+<!--   mutate(MAT = MAT, -->
+<!--          MAP = MAP, -->
+<!--          b2 = (b2), -->
+<!--          b2_b0 = (b2_b0))%>% -->
+<!--   select(MAT,MAP,PPET,Gref,b1,b2) %>% -->
+<!--   gather(clim_par,value,-Gref,-b1,-b2)%>% -->
+<!--   gather(trait,tr_value,-clim_par,-value) %>% -->
+<!--  filter(!is.na(tr_value))-> data_hydra_clim_trait -->
+<!--   data_hydra_clim_trait$trait <- factor(data_hydra_clim_trait$trait, -->
+<!--                                         levels = c('Gref','b1', -->
+<!--                                                    'b2') ) -->
+<!--   data_hydra_clim_trait$clim_par <- factor(data_hydra_clim_trait$clim_par, -->
+<!--                                            levels = c('MAT','MAP','PPET') ) -->
+<!--   data_hydra_clim_trait <- data_hydra_clim_trait[order(data_hydra_clim_trait$clim_par,  -->
+<!--                                                        data_hydra_clim_trait$trait),] -->
+
+
+<!-- data_hydra_clim_trait  %>% -->
+<!--   ggplot(aes(x=value,y=tr_value))+ -->
+<!--   geom_point()+ -->
+<!--   geom_smooth(method = 'lm')+ -->
+<!--   facet_grid( trait ~ clim_par, scale='free')  -> g -->
+<!--   ggplot_build(g) -> gg -->
+
+<!-- gg1 <- gg$data[[1]] %>% cbind (data_hydra_clim_trait) -->
+<!-- gg2 <- gg$data[[2]] %>% left_join(gg1 %>% select(PANEL,trait,clim_par) %>% unique()) -->
+
+
+<!-- clim_par_names <- c( -->
+<!--   `MAT` = '"MAT ["~degree*C~"]"', -->
+<!--   `MAP` = '"MAP [mm "~year^{-1}~"]"', -->
+<!--   `PPET` = '"PPET"' -->
+<!-- ) -->
+
+<!-- trait_names <- c( -->
+<!--   `Gref` = '~italic(G)[REF]~"[mol "~m^{-2}~" "~s^{-1}~"]"', -->
+<!--   `b1` = '~italic("\u03B2")[VPD]~"[mol "~m^{-2}~" "~s^{-1}~"]"', -->
+<!--   `b2` = '~italic("\u03B2")[SWC]~"[mol "~m^{-2}~" "~s^{-1}~"]"' -->
+<!--   ) -->
+
+<!-- ggplot()+ -->
+<!--   geom_point(data = gg1, aes(x=value,y=tr_value),alpha=0.6,color = 'grey')+ -->
+<!--   geom_line(data = gg2,aes(x=x,y=y),size=1,show.legend=FALSE, color= "grey40")+ -->
+<!--   ggplot2::geom_line(data = gg2, aes(x = x, y = ymin), size = 0.3,linetype=2, color= "grey40") + -->
+<!--   ggplot2::geom_line(data = gg2, aes(x = x, y = ymax), size = 0.3,linetype=2, color= "grey40") + -->
+<!--   facet_grid( trait ~ clim_par, scale='free', -->
+<!--               labeller = labeller(trait = as_labeller(trait_names, label_parsed), -->
+<!--                                   clim_par = as_labeller(clim_par_names, label_parsed)))+ -->
+<!--   theme(strip.background =element_blank(), -->
+<!--         axis.title = element_blank(), -->
+<!--         strip.text.y = element_text(size = 9))->gg_final -->
+
+<!-- # Calculate correlation for each group -->
+<!-- cors <- plyr::ddply(data_hydra_clim_trait, c( "clim_par","trait"), -->
+<!--                     summarise, cor = round(cor( value,tr_value,use = 'complete.obs'), 2)) -->
+
+<!-- data_hydra_clim_trait %>% -->
+<!--   split(list(.$trait,.$clim_par), drop = TRUE) %>% -->
+<!--   purrr::map(function(x){ -->
+<!--     ff <- x %>% select(value,tr_value) %>% -->
+<!--       as.matrix() -->
+<!--     Hmisc::rcorr(ff) -> res -->
+<!--     res$P[1,2]-> res -->
+<!--     return(res) -->
+<!--     } -->
+<!--   ) %>% bind_rows() %>% t()->sig_cor -->
+
+<!-- sig_cor <- symnum(sig_cor,corr = FALSE,na = FALSE, -->
+<!--        cutpoints = c(0,0.001, 0.01, 0.05, 0.1, 1), -->
+<!--        symbols = c("***", "**", "*", ".", " ")) -->
+
+<!-- colnames(sig_cor) <- "sig_cor" -->
+
+<!-- data_hydra_clim_trait %>% -->
+<!--   group_by(trait) %>% -->
+<!--   summarise(max_tr_value = max(tr_value,na.rm = TRUE)) -> position_trait -->
+<!-- data_hydra_clim_trait %>% -->
+<!--   group_by(clim_par) %>% -->
+<!--   summarise(min_value = min(value,na.rm = TRUE)) -> position_clim -->
+
+<!-- cors %>% cbind(sig_cor) %>% -->
+<!--   left_join(position_trait) %>% -->
+<!--   left_join(position_clim)-> cors -->
+<!-- cors$max_tr_value[which(cors$trait == "P50")] <- -5 -->
+
+<!-- gg_final+ -->
+<!--   geom_text(data=cors, aes(label=paste("r =", cor, sig_cor, sep=" "),x=min_value,y=max_tr_value), -->
+<!--             vjust = 1.5,hjust=-0.1)->fig20 -->
+
+<!--   ggsave("figure/appendixD/fig22.pdf",fig20,device = cairo_pdf,units = "cm",width = 18,height=22) -->
+
+<!-- ``` -->
+
+```{r climateparamplot, echo=FALSE, fig.scap="Species' climatic variables and water use parameters relationships.",fig.cap="Species' climatic variables and water use parameters relationships. MAP: mean annual precipitation, MAT: mean annual temperature, PPET: mean annual precipitation over potential evapotranspiration. All climatic variables were calculated as the weighted average of the characteristic plots of the trees of each species, using tree-days as weighting factor.", fig.align='center',out.width = '100%'}
+knitr::include_graphics(c("figure/appendixD/fig22.pdf"))
+```
+
+
+<!-- ```{r angiogymnoplotsAOV,echo = FALSE,warning=FALSE,message=FALSE} -->
+<!-- #### 6.0 ANGIO - GYMNO PLOTS -------------------- -->
+
+<!--     table_results_group_param(data_hydra2 %>% mutate(PItlp = -PItlp, -->
+<!--                                                      leaf_size = log(leaf_size), -->
+<!--                                                      Hv = log(Hv)), -->
+<!--                                 # filter(r2>0) %>% -->
+<!--                                 # mutate(b2 = log(b2)), -->
+<!--                           c("P50" ,'Ks','Hv',"PItlp",'Rd','leaf_size' -->
+<!--                             ), -->
+<!--                           "n") %>% -->
+<!--     mutate(Parameter = recode_factor(Parameter, -->
+<!--                                      `b1` = "$\\beta_{\\text{VPD}}$", -->
+<!--                                      `b2` = "$\\beta_{\\text{SWC}}$", -->
+<!--                                      `Gref` = "$G_{\\text{REF}}$") -->
+<!--                              )-> table_res -->
+
+<!-- ## 6.1 Group parameters comparation ------------ -->
+<!-- P50_m <- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   summarise(P50_m= weighted.mean(P50,n,na.rm = TRUE)) -->
+<!-- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   mutate(sum_we = sum(n, na.rm = TRUE), -->
+<!--          n = n/sum_we) %>% -->
+<!--   ungroup() %>% -->
+<!--   ggplot(aes(y= P50,x = group#,fill = group,weights = n -->
+<!--              ))+ -->
+<!--   geom_boxplot(aes(fill = group), alpha = 0.7, show.legend = FALSE)+ -->
+<!--   # geom_violin(trim = FALSE,show.legend =FALSE,draw_quantiles = 0.5) + -->
+<!--   # geom_violin(fill = 'transparent',draw_quantiles = c(0.25, 0.75),linetype = "dashed",trim = FALSE)+ -->
+<!--   # geom_point(aes(size = n),alpha = 0.4,shape = 21,fill='white',show.legend = FALSE)+ -->
+<!--   geom_point(data = P50_m, aes(x=group,y= P50_m), size=3,  shape = 4,inherit.aes = FALSE)+ -->
+<!--   geom_segment(aes(x = 1, y = 0, xend = 2, yend = 0), color = "grey60")+ -->
+<!--   annotate("text",x= 1.5, y = 0.5, label = table_res[1,4])+ -->
+<!--   ylab(bquote(~Psi[P50]~" [kPa]"))+ -->
+<!--   xlab(bquote("Group"))+ -->
+<!--   scale_size(range = c(2,8))+ -->
+<!--   # scale_fill_manual(values = c("#bb3200","#00afbb"))+ -->
+<!--   scale_fill_npg()+ -->
+<!--   theme(axis.title.x = element_blank(), axis.text.x = element_blank())+ -->
+<!--   NULL -> P50 -->
+
+<!-- Ks_m <- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   summarise(Ks_m= weighted.mean(Ks,n,na.rm = TRUE)) -->
+<!-- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   mutate(sum_we = sum(n, na.rm = TRUE), -->
+<!--          n = n/sum_we) %>% -->
+<!--   ungroup() %>% -->
+<!--   ggplot(aes(y=Ks,x = group#,fill = group,weights = n -->
+<!--              ))+ -->
+<!--   geom_boxplot(aes(fill = group), alpha = 0.7, show.legend = FALSE)+ -->
+<!--   # geom_violin(trim = FALSE,show.legend =FALSE,draw_quantiles = 0.5) + -->
+<!--   # geom_violin(fill = 'transparent',draw_quantiles = c(0.25, 0.75),linetype = "dashed",trim = FALSE)+ -->
+<!--   # geom_point(aes(size = n),alpha = 0.4,shape = 21,fill='white',show.legend = FALSE)+ -->
+<!--   geom_point(data = Ks_m, aes(x=group,y=Ks_m), size=3,  shape = 4,inherit.aes = FALSE)+ -->
+<!--   geom_segment(aes(x = 1, y = 7.5, xend = 2, yend = 7.5), color = "grey60")+ -->
+<!--   annotate("text",x= 1.5, y = 8.1, label = table_res[2,4])+ -->
+<!--   ylab(bquote(~italic(K)[s]~" [Kg"~m^-{1}*MPa^-{1}*s^-{1}~"]"))+ -->
+<!--   xlab(bquote("Group"))+ -->
+<!--   scale_size(range = c(2,8))+ -->
+<!--   # scale_fill_manual(values = c("#bb3200","#00afbb"))+ -->
+<!--   scale_fill_npg()+ -->
+<!--   theme(axis.title.x = element_blank(), axis.text.x = element_blank())+ -->
+<!--   NULL-> Ks -->
+
+<!-- Hv_m <- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   summarise(Hv_m= weighted.mean(log(Hv),n,na.rm = TRUE)) -->
+<!-- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   mutate(sum_we = sum(n, na.rm = TRUE), -->
+<!--          n = n/sum_we) %>% -->
+<!--   ungroup() %>% -->
+<!--   ggplot(aes(y=log(Hv),x = group#,fill = group,weights = n -->
+<!--              ))+ -->
+<!--   geom_boxplot(aes(fill = group), alpha = 0.7, show.legend = FALSE)+ -->
+<!--   # geom_violin(trim = FALSE,show.legend =FALSE,draw_quantiles = 0.5) + -->
+<!--   # geom_violin(fill = 'transparent',draw_quantiles = c(0.25, 0.75),linetype = "dashed",trim = FALSE)+ -->
+<!--   # geom_point(aes(size = n),alpha = 0.4,shape = 21,fill='white',show.legend = FALSE)+ -->
+<!--   geom_point(data = Hv_m, aes(x=group,y=Hv_m), size=3,  shape = 4,inherit.aes = FALSE)+ -->
+<!--   geom_segment(aes(x = 1, y = 3.5, xend = 2, yend = 3.5), color = "grey60")+ -->
+<!--   annotate("text",x= 1.5, y = 3.8, label = table_res[3,4])+ -->
+<!--   ylab(bquote("ln("~italic(Hv)~")"))+ -->
+<!--   xlab(bquote("Group"))+ -->
+<!--   scale_size(range = c(2,8))+ -->
+<!--   # scale_fill_manual(values = c("#bb3200","#00afbb"))+ -->
+<!--   scale_fill_npg()+ -->
+<!--   theme(axis.title.x = element_blank(), axis.text.x = element_blank())+ -->
+<!--   NULL-> Hv -->
+
+<!-- PItlp_m <- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   summarise(PItlp_m= weighted.mean(-PItlp,n,na.rm = TRUE)) -->
+<!-- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   mutate(sum_we = sum(n, na.rm = TRUE), -->
+<!--          n = n/sum_we) %>% -->
+<!--   ungroup() %>% -->
+<!--   ggplot(aes(y= -PItlp,x = group#,fill = group,weights = n -->
+<!--              ))+ -->
+<!--   geom_boxplot(aes(fill = group), alpha = 0.7, show.legend = FALSE)+ -->
+<!--   # geom_violin(trim = FALSE,show.legend =FALSE,draw_quantiles = 0.5) + -->
+<!--   # geom_violin(fill = 'transparent',draw_quantiles = c(0.25, 0.75),linetype = "dashed",trim = FALSE)+ -->
+<!--   # geom_point(aes(size = n),alpha = 0.4,shape = 21,fill='white',show.legend = FALSE)+ -->
+<!--   geom_point(data = PItlp_m, aes(x=group,y= PItlp_m), size=3,  shape = 4,inherit.aes = FALSE)+ -->
+<!--   # geom_segment(aes(x = 1, y = 4.5, xend = 2, yend = 4.5), color = "grey60")+ -->
+<!--   # annotate("text",x= 1.5, y = 4.9, label = table_res[4,4])+ -->
+<!--   ylab(bquote(~Psi[TLP]~"["~MPa~"]"))+ -->
+<!--   xlab(bquote("Group"))+ -->
+<!--   scale_size(range = c(2,8))+ -->
+<!--   # scale_fill_manual(values = c("#bb3200","#00afbb"))+ -->
+<!--   scale_fill_npg()+ -->
+<!--   theme(axis.title.x = element_blank(), axis.text.x = element_blank())+ -->
+<!--   NULL -> TLP -->
+
+<!-- Rd_m <- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   summarise(Rd_m= weighted.mean(Rd,n,na.rm = TRUE)) -->
+<!-- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   mutate(sum_we = sum(n, na.rm = TRUE), -->
+<!--          n = n/sum_we) %>% -->
+<!--   ungroup() %>% -->
+<!--   ggplot(aes(y=Rd,x = group#,fill = group,weights = n -->
+<!--              ))+ -->
+<!--   geom_boxplot(aes(fill = group), alpha = 0.7, show.legend = FALSE)+ -->
+<!--   # geom_violin(trim = FALSE,show.legend =FALSE,draw_quantiles = 0.5) + -->
+<!--   # geom_violin(fill = 'transparent',draw_quantiles = c(0.25, 0.75),linetype = "dashed",trim = FALSE)+ -->
+<!--   # geom_point(aes(size = n),alpha = 0.4,shape = 21,fill='white',show.legend = FALSE)+ -->
+<!--   geom_point(data = Rd_m, aes(x=group,y=Rd_m), size=3,  shape = 4,inherit.aes = FALSE)+ -->
+<!--   geom_segment(aes(x = 1, y = 1.6, xend = 2, yend = 1.6), color = "grey60")+ -->
+<!--   annotate("text",x= 1.5, y = 1.7, label = table_res[5,4])+ -->
+<!--   ylab(bquote(~italic(R)[depth]~ "[m]"))+ -->
+<!--   xlab(bquote("Group"))+ -->
+<!--   scale_size(range = c(2,8))+ -->
+<!--   # scale_fill_manual(values = c("#bb3200","#00afbb"))+ -->
+<!--   scale_fill_npg()+ -->
+<!--   # theme(axis.title.x = element_blank(), axis.text.x = element_blank())+ -->
+<!--   NULL-> Rd -->
+
+<!-- Ls_m <- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   summarise(Ls_m= weighted.mean(log(leaf_size),n,na.rm = TRUE)) -->
+<!-- data_hydra2 %>% -->
+<!--   # filter(r2>0) %>% -->
+<!--   group_by(group) %>% -->
+<!--   mutate(sum_we = sum(n, na.rm = TRUE), -->
+<!--          n = n/sum_we) %>% -->
+<!--   ungroup() %>% -->
+<!--   ggplot(aes(y=log(leaf_size),x = group#,fill = group,weights = n -->
+<!--              ))+ -->
+<!--   geom_boxplot(aes(fill = group), alpha = 0.7, show.legend = FALSE)+ -->
+<!--   # geom_violin(trim = FALSE,show.legend =FALSE,draw_quantiles = 0.5) + -->
+<!--   # geom_violin(fill = 'transparent',draw_quantiles = c(0.25, 0.75),linetype = "dashed",trim = FALSE)+ -->
+<!--   # geom_point(aes(size = n),alpha = 0.4,shape = 21,fill='white',show.legend = FALSE)+ -->
+<!--   geom_point(data = Ls_m, aes(x=group,y=Ls_m), size=3,  shape = 4,inherit.aes = FALSE)+ -->
+<!--   geom_segment(aes(x = 1, y = 8, xend = 2, yend = 8), color = "grey60")+ -->
+<!--   annotate("text",x= 1.5, y = 8.5, label = table_res[6,4])+ -->
+<!--   ylab(bquote("ln("~italic(L)[s]~")"))+ -->
+<!--   xlab(bquote("Group"))+ -->
+<!--   scale_size(range = c(2,8))+ -->
+<!--   # scale_fill_manual(values = c("#bb3200","#00afbb"))+ -->
+<!--   scale_fill_npg()+ -->
+<!--   # theme(axis.title.x = element_blank(), axis.text.x = element_blank())+ -->
+<!--   NULL-> Ls -->
+
+<!-- grid::grid.newpage() -->
+<!-- arrangeGrob(cbind(rbind(ggplotGrob(P50), -->
+<!--                         ggplotGrob(Hv), -->
+<!--                         ggplotGrob(Rd), -->
+<!--                         size = "last"), -->
+<!--                   rbind(ggplotGrob(Ks), -->
+<!--                         ggplotGrob(TLP), -->
+<!--                         ggplotGrob(Ls), -->
+<!--                         size = "last"), -->
+<!--                   size = "last" -->
+<!--             ))->figanggym -->
+
+<!-- ggsave("figure/appendixD/figanggym.pdf",figanggym,device = cairo_pdf,units = "cm",width = 16,height=18) -->
+<!-- # ggsave("figure/appendixD/figanggym.png",figanggym,device = 'png',units = "cm",width = 16,height=18) -->
+
+<!-- ``` -->
+
+```{r angiogymnoplotsAOVplot, echo=FALSE,fig.scap="Boxplots of water relations traits for angiosperms and gymnosperms.", fig.cap="Boxplots of water relations traits for angiosperms and gymnosperms. Statistical significance level is showed as symbols: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001. Crosses are weighted means of each trait by groups", fig.align='center',out.width = '100%'}
+knitr::include_graphics(c("figure/appendixD/figanggym.pdf"))
+```
+
+
+\newpage
+
+##Tables D
+
+
+
+```{r plottreatment, echo=F, message = FALSE, warning=FALSE}
+
+plot_treat <- readr::read_csv(file="~/PhD/Thesis_book_format/index/data/appendixD/plot_treatment.csv")
+
+    knitr::kable(plot_treat,"latex",booktabs = T, escape = FALSE,longtable = FALSE,linesep = "", caption.short = "SAPFLUXNET plot treatments included in this study.", caption = "SAPFLUXNET plot treatments included in this study (Chapter 3).") %>% 
+      kableExtra::kable_styling(latex_options = "HOLD_position")
+
+```
+
+\newpage
+
+```{r tabledata, echo=F, message = FALSE}
+
+load(file='~/PhD/Thesis_book_format/index/data/appendixD/species_data_binned_swc.RData')
+
+n_sites <- df2 %>% group_by(pl_species) %>% summarise(n_sites=n_distinct(si_code))
+
+# data_hydra[ is.na(data_hydra) ] <- NA
+data_hydra2 %>%left_join(n_sites,by="pl_species") %>%
+    # filter(r2>=0) %>%
+    mutate(
+      # species = paste('*',pl_species,'*',sep=""),
+      P50 = P50 %>% round(3),
+      Ks = Ks %>% round(3),
+      PItlp = -PItlp %>% round(3),
+      Hv = Hv %>% round(3),
+      # Amass = Amass %>% round(3),
+      # Aarea = Aarea %>% round(3)
+      Rd = Rd %>% round(3),
+      Ls = leaf_size %>% round(3)
+      ) %>%
+    dplyr::select("$\\text{Species}$" = pl_species,
+           "$\\text{CEP names}$" = sp_name,
+           "$\\text{Group}$" = group,
+           "$\\# \\; \\text{tree-days}$" = n,
+           "$\\# \\; \\text{trees}$" = n_trees,
+           "$\\# \\; \\text{plots}$" = n_sites,
+           "$\\Psi_{\\text{P50}}$" = P50,
+           "$K_{\\text{s}}$" = Ks,
+           "$\\Psi_{\\text{TLP}}$" = PItlp,
+           "$Hv$" = Hv,
+           "$R_{\\text{depth}}$" = Rd,
+           "$L_{\\text{s}}$" = Ls
+           # "$A_{mass}$" = Amass,
+           # "$A_{area}$" = Aarea
+           ) -> df
+
+is.nan.data.frame <- function(x)
+  do.call(cbind, lapply(x, is.nan))
+
+df[is.nan(df)] <- NA
+df <- df[order(df$`$\\text{Species}$`),]
+
+    knitr::kable(df,"latex",booktabs = T, escape = FALSE,longtable = TRUE,linesep = "",caption.short = "Species resume table.",
+                 caption = "Species resume table. CEP names are Cornell Ecology Programs species names. $\\Psi_{\\text{P50}}$: water potential at 50\\% water conductivity loss [MPa], $K_\\text{s}$: maximum sapwood water conductivity[Kg\\;$\\text{m}^{-1}\\;\\text{MPa}^{-1}\\;\\text{s}^{-1}$], $Hv$: Huber value [$\\text{cm}^2_{\\text{Asw}}\\;\\text{m}^{-2}_{\\text{leaf}\\;\\text{area}}$], $\\Psi_{\\text{TLP}}$: water potential at turgor-loss point [MPa], $R_{\\text{depth}}$: rooting depth [m], $L_{\\text{s}}$: individual leaf area [$\\text{cm}^2$].") %>%
+    kableExtra::kable_styling(latex_options = c("repeat_header"),
+                              font_size = 4.5,
+                              position = "center")%>%
+      row_spec(0, angle = 45) %>%
+      column_spec(1, italic =T,width = "10em") %>% 
+      column_spec(c(4),width = "3em")%>% 
+      column_spec(c(5:6),width = "2em")%>% 
+      column_spec(c(2:3),width = "4em")%>% 
+      column_spec(c(7:12),width = "3em")
+
+
+```
+
+\newpage
+
+
+
+```{r tab1, echo=FALSE}
+
+  table_results_traits_param(data_hydra3,
+                             c("G_ref_G_aero","b1_G_aero","b2_G_aero"),
+                             c("-P50",'Ks','Hv','PItlp','Rd','leaf_size'),
+                             c(FALSE,FALSE,FALSE),
+                             c(TRUE,TRUE,TRUE,FALSE,FALSE,TRUE),
+                             "n_G_aero") %>%
+    mutate(Parameter = recode_factor(Parameter,
+                                     `G_ref_G_aero` = "$G_{\\text{REF}}\'$",
+                                     `b1_G_aero` = "$\\beta_{\\text{VPD}}\'$",
+                                     `b2_G_aero` = "$\\beta_{\\text{SWC}}\'$"
+                                     ),
+           Trait = recode_factor(Trait,
+                                 `ln(-P50)` = "$ln(\\rvert\\Psi_{\\text{P50}}\\rvert)$",
+                                 `Rd` = "$R_{\\text{depth}}$",
+                                 `ln(Hv)` = "$ln(Hv)$",
+                                 `ln(Ks)` = "$ln(K_{\\text{s}})$",
+                                 `PItlp` = "$\\rvert\\Psi_{\\text{TLP}}\\rvert$",
+                                 `ln(leaf_size)`= "$ln(L_{\\text{s}})$"
+                                 ),
+           R2 = case_when(R2<0~0,
+                          R2>=0~R2)
+
+                             )-> table_total
+
+  colnames(table_total)[6] <- "$R^2$"
+  colnames(table_total)[3] <- "$\\text{N}\\;\\text{Species}$"
+
+  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "",caption.short = "Results of the linear models relating water use parameters calculated using $G'_{\\text{Asw}}$ to water relations traits.", caption = "Results of the linear models relating water use parameters calculated using $G'_{\\text{Asw}}$ to water relations traits. Parameters are explained by individual traits using simple linear models with number of species-days as weighting factor.")%>%
+    kableExtra::kable_styling(latex_options = c("HOLD_position"),font_size = 12)%>%
+    collapse_rows(1) %>%
+   add_footnote("Statistical significant levels: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001.",notation = "none")
+
+
+```
+
+\newpage
+
+```{r tablaresultados, echo=FALSE}
+
+load(file = "~/PhD/Thesis_book_format/index/data/appendixD/data_hydra2_rew.RData")
+
+  table_results_traits_param(data_hydra2_rew,
+                             c("Gref","b1","b2"),
+                             c("-P50",'Ks','Hv','PItlp','Rd','leaf_size'),
+                             c(FALSE,FALSE,FALSE),
+                             c(TRUE,TRUE,TRUE,FALSE,FALSE,TRUE),
+                             "n") %>%
+    mutate(Parameter = recode_factor(Parameter,
+                                     `Gref` = "$G_{\\text{REF}}$",
+                                     `b1` = "$\\beta_{\\text{VPD}}$",
+                                     `b2` = "$\\beta_{\\text{REW}}$"
+                                     ),
+           Trait = recode_factor(Trait,
+                                 `ln(-P50)` = "$ln(\\rvert\\Psi_{\\text{P50}}\\rvert)$",
+                                 `Rd` = "$R_{\\text{depth}}$",
+                                 `ln(Hv)` = "$ln(Hv)$",
+                                 `ln(Ks)` = "$ln(K_{\\text{s}})$",
+                                 `PItlp` = "$\\rvert\\Psi_{\\text{TLP}}\\rvert$",
+                                 `ln(leaf_size)`= "$ln(L_{\\text{s}})$"
+                                 ),
+           R2 = case_when(R2<0~0,
+                          R2>=0~R2)
+
+                             )-> table_total
+
+  colnames(table_total)[6] <- "$R^2$"
+  colnames(table_total)[3] <- "$\\text{N}\\;\\text{Species}$"
+
+  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "", caption.short = "Results of the linear models relating water use parameters to water relations traits using REW instead of SWC.", caption = "Results of the linear models relating water use parameters to water relations traits using REW instead of SWC. Parameters are explained by individual traits using simple linear models with number of species-days as weighting factor.")%>%
+    kableExtra::kable_styling(latex_options = c("HOLD_position"),font_size = 12)%>%
+    collapse_rows(1) %>%
+   add_footnote("Statistical significant levels: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001.",notation = "none")
+
+```
+
+\newpage
+
+
+```{r tablaresultadosPPETDBHaero, echo=FALSE,message=FALSE}
+
+  table_results_traits_param_MAP_height(data_hydra3,
+                             c("G_ref_G_aero","b1_G_aero","b2_G_aero"),
+                             c("-P50",'Ks','Hv','PItlp','Rd','leaf_size'),
+                             c(FALSE,FALSE,FALSE),
+                             c(TRUE,TRUE,TRUE,FALSE,FALSE,TRUE),
+                             "n") %>%
+    mutate(Parameter = recode_factor(Parameter,
+                                     `G_ref_G_aero` = "$G_{\\text{REF}}\'$",
+                                     `b1_G_aero` = "$\\beta_{\\text{VPD}}\'$",
+                                     `b2_G_aero` = "$\\beta_{\\text{SWC}}\'$"
+                                     ),
+           Trait = recode_factor(Trait,
+                                 `ln(-P50)` = "$ln(\\rvert\\Psi_{\\text{P50}}\\rvert)$",
+                                 `Rd` = "$R_{\\text{depth}}$",
+                                 `ln(Hv)` = "$ln(Hv)$",
+                                 `ln(Ks)` = "$ln(K_{\\text{s}})$",
+                                 `PItlp` = "$\\rvert\\Psi_{\\text{TLP}}\\rvert$",
+                                 `ln(leaf_size)`= "$ln(L_{\\text{s}})$"
+                                 ),
+           R2 = case_when(R2<0~0,
+                          R2>=0~R2)
+
+                             )-> table_total
+
+  colnames(table_total)[8] <- "$R^2$"
+  colnames(table_total)[5] <- "$\\beta_{\\text{trait}}$"
+  colnames(table_total)[6] <- "$\\beta_{\\text{MAP}}$"
+  # colnames(table_total)[8] <- "$\\beta_{Clay}$"
+  colnames(table_total)[7] <- "$\\beta_{\\text{H}}$"
+  colnames(table_total)[3] <- "$\\text{N}\\;\\text{Species}$"
+
+  knitr::kable(table_total,booktabs = T, escape = FALSE,linesep = "", caption.short = "Results of the linear models relating water use parameters calculated using $G'_{\\text{Asw}}$, water relations traits, climate  and tree height.",caption = "Results of the linear models relating water use parameters calculated using $G'_{\\text{Asw}}$, water relations traits, climate  and tree height. Water use parameters are explained by individual traits, MAP (mean annual precipitation) and $H$ (tree height) using simple linear models using number of species-days as weighting factor. $\\beta$ values are the slopes for each explanatory variable. NI = not included variable after model selection.")%>%
+    kableExtra::kable_styling(latex_options = c("HOLD_position","scale_down"))%>%
+    collapse_rows(1) %>%
+   add_footnote("Statistical significant levels: ., P < 0.1; *, P < 0.05; **, P < 0.01; ***, P < 0.001.",notation = "none")
+
+
+```
+
+

@@ -1,0 +1,7 @@
+\contentsline {chapter}{ 1: division: `Biology'}{1}{chapter.1}
+\contentsline {subsection}{\numberline {1.0.1}Sap flow calibration datasets}{1}{subsection.1.0.1}
+\contentsline {subsection}{\numberline {1.0.2}Calibration assessment}{1}{subsection.1.0.2}
+\contentsline {subsection}{\numberline {1.0.3}Statistical analyses}{1}{subsection.1.0.3}
+\contentsline {subsection}{\numberline {1.0.4}Calibration performance compared among methods and families of methods}{1}{subsection.1.0.4}
+\contentsline {subsection}{\numberline {1.0.5}Influence of wood traits}{1}{subsection.1.0.5}
+\contentsline {chapter}{References}{3}{chapter*.8}

@@ -1,0 +1,95 @@
+\contentsline {chapter}{ 1: Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Transpiration and earth system functioning}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Transpiration across scales}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Water transport in plants}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Upscaling to the stand and ecosystem levels}{5}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Transpiration quantification}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Transpiration in a changing world}{7}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Research aims and outline}{8}{section.1.5}%
+\contentsline {chapter}{ 2: Bias and uncertainty in sap flow methods}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Material and methods}{15}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Sap flow calibration datasets}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Calibration assessment}{16}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Statistical analyses}{19}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Results}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Calibration performance compared among methods and families of methods}{20}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Influence of wood traits}{23}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Discussion}{24}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Sap flow measurement errors across methods and methodological families}{25}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}The performance of sap flow calibrations is largely unrelated to species wood traits}{27}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Implications and recommendations}{30}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Conclusions}{31}{section.2.5}%
+\contentsline {chapter}{ 3: The SAPFLUXNET database}{35}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{37}{section.3.1}%
+\contentsline {section}{\numberline {3.2}The SAPFLUXNET data workflow}{38}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}An overview of sap flow measurements}{38}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Data compilation}{40}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Data harmonisation and quality control: QC1}{40}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Data harmonisation and quality control: QC2}{42}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Data structure}{42}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}The SAPFLUXNET database}{43}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Data coverage}{43}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Methodological aspects}{45}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Plant characteristics}{48}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Stand characteristics}{48}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Temporal characteristics}{50}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Availability of environmental data}{51}{subsection.3.3.6}%
+\contentsline {section}{\numberline {3.4}Potential applications}{52}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Applications in plant ecophysiology and functional ecology}{52}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Applications in ecosystem ecology and ecohydrology}{56}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Limitations and future developments}{58}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Limitations}{58}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Outlook}{59}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Data availability, access and feedback}{59}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Conclusion}{60}{section.3.7}%
+\contentsline {chapter}{ 4: Analysis of hydrometeorological drivers.}{63}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{65}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Material and methods}{66}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Sapflow and environmental data}{66}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Data filtering}{66}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Whole-tree canopy conductance calculation}{67}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Hydrometeorological coupling quantification}{67}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Biome classification and site-level bioclimatic data}{68}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Statistical analyses}{68}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Results}{69}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Discussion}{72}{section.4.4}%
+\contentsline {chapter}{ 5: Climate and functional traits mediate tree water use strategies}{77}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{79}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Material and methods}{81}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Sap flow data}{81}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Evaporative demand and soil water availability data}{81}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Data filtering}{83}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Whole-tree canopy conductance calculation}{83}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Traits and climatic data}{84}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}\(\textbf {G}_{\textbf {Asw}}\) sensitivity to soil water availability and water demand}{84}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}Statistical analyses}{85}{subsection.5.2.7}%
+\contentsline {section}{\numberline {5.3}Results}{87}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Water use parameters and differences between angiosperms and gymnosperms}{87}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Coordination with hydraulic and allocation traits}{88}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Discussion}{91}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Climate influence on water use strategies across species}{92}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Water use parameters}{93}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Coordination between water use parameters and water relations traits}{93}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Conclusions}{95}{subsection.5.4.4}%
+\contentsline {chapter}{ 6: General discussion and conclusions}{97}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Improving sap flow techniques to obtain reliable estimates of tree level transpiration}{98}{section.6.1}%
+\contentsline {section}{\numberline {6.2}The SAPLUXNET database. What next?}{99}{section.6.2}%
+\contentsline {section}{\numberline {6.3}The hydroclimatic drivers of transpiration and their complexity}{100}{section.6.3}%
+\contentsline {section}{\numberline {6.4}On the use of plant traits to characterize water use strategies at the global level}{101}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Towards a global characterization of plant water use strategies.}{102}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Conclusions}{103}{section.6.6}%
+\contentsline {chapter}{Appendix A: Appendix Chapter 2}{105}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Figures A}{106}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Tables A}{109}{section.A.2}%
+\contentsline {chapter}{Appendix B: Appendix Chapter 3}{113}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Figures B}{114}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Tables B}{119}{section.B.2}%
+\contentsline {chapter}{Appendix C: Appendix Chapter 4}{135}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Figures C}{136}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Tables C}{140}{section.C.2}%
+\contentsline {chapter}{Appendix D: Appendix Chapter 5}{149}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Notes D}{150}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Figures D}{151}{section.D.2}%
+\contentsline {section}{\numberline {D.3}Tables D}{172}{section.D.3}%
+\contentsline {chapter}{References}{179}{appendix*.92}%
